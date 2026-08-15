@@ -1,16 +1,6 @@
 {
-  "experiment_id": "v03-scratch-001",
-  "model": {
-    "model_name": "UniPilot Mini v0.3",
-    "vocab_size": 512,
-    "context_length": 256,
-    "embedding_dim": 384,
-    "n_layers": 11,
-    "n_heads": 6,
-    "ffn_dim": 1536,
-    "dropout": 0.1,
-    "bias": true
-  },
+  "experiment_id": "v03-long-001",
+  "model": {"model_name": "UniPilot Mini v0.3", "vocab_size": 512, "context_length": 256, "embedding_dim": 384, "n_layers": 11, "n_heads": 6, "ffn_dim": 1536, "dropout": 0.1, "bias": true},
   "tokenizer": "tokenizer/vocab-v02-512.json",
   "dataset_version": "unipilot-dataset-v03",
   "seed": 42,
@@ -24,11 +14,11 @@
   "max_records_per_stage": 5000,
   "log_interval": 100,
   "eval_interval": 500,
-  "checkpoint_steps": [1000, 2500, 5000, 10000, 20000, 30000, 50000],
+  "checkpoint_steps": [10000, 20000, 30000, 50000],
   "stages": [
     {"name": "A", "start_step": 0, "end_step": 1000, "learning_rate": 0.0003, "warmup_steps": 100, "assistant_only_loss": false, "replay": {}, "data_dir": "data/v03/stage_a"},
     {"name": "B", "start_step": 1000, "end_step": 2000, "learning_rate": 0.00015, "warmup_steps": 100, "assistant_only_loss": false, "replay": {"A": 0.15}, "data_dir": "data/v03/stage_b"},
-    {"name": "C", "start_step": 2000, "end_step": 5000, "learning_rate": 0.00008, "warmup_steps": 100, "assistant_only_loss": true, "replay": {"A": 0.10, "B": 0.20}, "data_dir": "data/v03/stage_c"}
+    {"name": "C", "start_step": 2000, "end_step": 50000, "learning_rate": 0.000005, "warmup_steps": 0, "assistant_only_loss": true, "replay": {"A": 0.10, "B": 0.20}, "data_dir": "data/v03/stage_c"}
   ],
   "generation": {"temperature": 0.7, "top_k": 40, "top_p": 0.9, "repetition_penalty": 1.0, "max_new_tokens": 128}
 }

@@ -110,8 +110,9 @@ def main():
         "university_validation_loss", "conversation_validation_loss", "learning_rate", "gradient_norm", "gradient_clipping_count",
         "nan_count", "inf_count", "tokens_per_second", "step_time_seconds", "memory_usage_mb", "eta_seconds"]
     process = psutil.Process(); max_records = settings["max_records_per_stage"] if args.max_records is None else args.max_records
-    loader_cache = {}; validation_cache = {}; iterator = None; current_stage_name = None; recent_losses = []; clipping_count = nan_count = inf_count = 0
-    validation_history = []; checkpoint_steps = set(settings["checkpoint_steps"]) | {stage["end_step"] for stage in settings["stages"]}
+    loader_cache = {}; validation_cache = {}; active_iterators = {}; current_stage_name = None; recent_losses = []; clipping_count = nan_count = inf_count = 0
+    validation_history_by_stage = {}; explosion_streak = 0
+    checkpoint_steps = set(settings["checkpoint_steps"]) | {stage["end_step"] for stage in settings["stages"]} | set(range(settings["eval_interval"], args.max_steps + 1, settings["eval_interval"]))
     mode = "a" if args.resume_run and log_path.exists() else "w"
     with log_path.open(mode, newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fields)
@@ -119,20 +120,31 @@ def main():
         while global_step < args.max_steps:
             stage = stage_for_step(settings["stages"], global_step)
             if stage["name"] != current_stage_name:
-                if stage["name"] not in loader_cache:
-                    train_loader, train_set = make_loader(stage, "train", tokenizer, config, settings["batch_size"], max_records, settings["seed"])
-                    val_loader, val_set = make_loader(stage, "validation", tokenizer, config, settings["batch_size"], 200, settings["seed"])
-                    loader_cache[stage["name"]] = (train_loader, val_loader, len(train_set), len(val_set))
-                iterator = iter(loader_cache[stage["name"]][0]); current_stage_name = stage["name"]
+                active_names = [stage["name"], *stage.get("replay", {}).keys()]
+                for active_name in active_names:
+                    active_stage = next(item for item in settings["stages"] if item["name"] == active_name)
+                    if active_name not in loader_cache:
+                        record_limit = max_records if active_name == stage["name"] else min(1000, max_records)
+                        train_loader, train_set = make_loader(active_stage, "train", tokenizer, config, settings["batch_size"], record_limit, settings["seed"])
+                        val_loader, val_set = make_loader(active_stage, "validation", tokenizer, config, settings["batch_size"], 200, settings["seed"])
+                        loader_cache[active_name] = (train_loader, val_loader, len(train_set), len(val_set))
+                    active_iterators[active_name] = iter(loader_cache[active_name][0])
+                current_stage_name = stage["name"]
                 print(json.dumps({"event": "stage_start", "stage": stage["name"], "step": global_step,
-                                  "train_samples": loader_cache[stage["name"]][2], "validation_samples": loader_cache[stage["name"]][3]}), flush=True)
+                                  "train_samples": loader_cache[stage["name"]][2], "validation_samples": loader_cache[stage["name"]][3],
+                                  "replay": stage.get("replay", {})}), flush=True)
             lr = learning_rate(stage, global_step)
             for group in optimizer.param_groups: group["lr"] = lr
             started = time.perf_counter(); optimizer.zero_grad(set_to_none=True); token_count = 0; micro_losses = []
-            for _ in range(settings["gradient_accumulation"]):
-                try: inputs, targets, _, _ = next(iterator)
+            for micro_index in range(settings["gradient_accumulation"]):
+                selector = random.Random(settings["seed"] + global_step * 1009 + micro_index).random()
+                chosen_stage = stage["name"]; cumulative = 0.0
+                for replay_name, probability in stage.get("replay", {}).items():
+                    cumulative += probability
+                    if selector < cumulative: chosen_stage = replay_name; break
+                try: inputs, targets, _, _ = next(active_iterators[chosen_stage])
                 except StopIteration:
-                    iterator = iter(loader_cache[stage["name"]][0]); inputs, targets, _, _ = next(iterator)
+                    active_iterators[chosen_stage] = iter(loader_cache[chosen_stage][0]); inputs, targets, _, _ = next(active_iterators[chosen_stage])
                 inputs, targets = inputs.to(device), targets.to(device)
                 with torch.autocast(device_type=device, dtype=torch.float16, enabled=amp_enabled):
                     _, loss = model(inputs, targets); scaled = loss / settings["gradient_accumulation"]
@@ -144,9 +156,12 @@ def main():
             if not math.isfinite(grad_norm): raise RuntimeError("non-finite gradient norm detected; training stopped")
             if grad_norm > settings["gradient_clip"]: clipping_count += 1
             scaler.step(optimizer); scaler.update(); global_step += 1; elapsed = time.perf_counter() - started
-            current_loss = sum(micro_losses) / len(micro_losses); recent_losses.append(current_loss)
+            current_loss = sum(micro_losses) / len(micro_losses)
+            baseline = sum(recent_losses) / len(recent_losses) if recent_losses else current_loss
+            explosion_streak = explosion_streak + 1 if global_step > 100 and current_loss > max(10.0, 4 * baseline) else 0
+            recent_losses.append(current_loss)
             if len(recent_losses) > 100: recent_losses.pop(0)
-            if global_step > 100 and current_loss > 3 * sum(recent_losses) / len(recent_losses): raise RuntimeError("loss explosion detected")
+            if explosion_streak >= 5: raise RuntimeError("loss explosion detected for five consecutive steps")
             should_eval = global_step % settings["eval_interval"] == 0 or global_step in checkpoint_steps or global_step == args.max_steps
             stats = {}
             if should_eval:
@@ -159,9 +174,11 @@ def main():
                             validation_cache[check_stage["name"]], _ = make_loader(check_stage, "validation", tokenizer, config, 1, 50, settings["seed"])
                         val_loader = validation_cache[check_stage["name"]]
                     separated[check_stage["name"]] = validation_loss(model, val_loader, device, min(10, settings["validation_batches"]))
-                if validation_history and stage_val > validation_history[-1] * 1.5:
-                    print(json.dumps({"warning": "validation_loss_increase", "previous": validation_history[-1], "current": stage_val}), flush=True)
-                validation_history.append(stage_val)
+                previous_stage_val = validation_history_by_stage.get(stage["name"])
+                if previous_stage_val is not None and stage_val > previous_stage_val * 1.5:
+                    print(json.dumps({"warning": "validation_loss_increase", "stage": stage["name"],
+                                      "previous": previous_stage_val, "current": stage_val}), flush=True)
+                validation_history_by_stage[stage["name"]] = stage_val
                 eta = (args.max_steps - global_step) * elapsed
                 stats = {"step": global_step, "stage": stage["name"], "train_loss": sum(recent_losses) / len(recent_losses),
                          "stage_validation_loss": stage_val, "general_validation_loss": separated["A"],

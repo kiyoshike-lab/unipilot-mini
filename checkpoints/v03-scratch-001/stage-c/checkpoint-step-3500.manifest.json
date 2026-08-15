@@ -1,0 +1,70 @@
+{
+  "model": "UniPilot Mini v0.3",
+  "parameters": 19814784,
+  "tokenizer": "bpe-512",
+  "tokenizer_version": "unipilot-byte-bpe-v02-512",
+  "dataset": "unipilot-dataset-v03",
+  "stage": "C",
+  "step": 3500,
+  "experiment_id": "v03-scratch-001",
+  "initialization": "scratch-v03",
+  "random_seed": 42,
+  "model_config": {
+    "model_name": "UniPilot Mini v0.3-c-3500",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "weight_decay": 0.1,
+    "learning_rate": 4.59879414435325e-05
+  },
+  "scheduler": {
+    "name": "per-stage warmup cosine",
+    "stage_config": {
+      "name": "C",
+      "start_step": 2000,
+      "end_step": 5000,
+      "learning_rate": 8e-05,
+      "warmup_steps": 100,
+      "assistant_only_loss": true,
+      "replay": {
+        "A": 0.1,
+        "B": 0.2
+      },
+      "data_dir": "data/v03/stage_c"
+    }
+  },
+  "generation": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 64
+  },
+  "git_commit": "b8b60b1975356684abc6359a584ae431fbbe1d7b",
+  "metrics": {
+    "step": 3500,
+    "stage": "C",
+    "train_loss": 0.3378797587426379,
+    "stage_validation_loss": 0.2737997640040703,
+    "general_validation_loss": 3.6166974544525146,
+    "university_validation_loss": 0.18141295835375787,
+    "conversation_validation_loss": 0.3016402430832386,
+    "learning_rate": 4.59879414435325e-05,
+    "gradient_norm": 3.149932622909546,
+    "gradient_clipping_count": 1988,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 183.50886568170725,
+    "step_time_seconds": 0.1362331999989692,
+    "memory_usage_mb": 835.64453125,
+    "eta_seconds": 204.34979999845382
+  }
+}

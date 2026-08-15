@@ -3,7 +3,9 @@ __pycache__/
 .venv/
 web/node_modules/
 web/.next/
+web/*.tsbuildinfo
 checkpoints/*.pt
 checkpoints/**/*.pt
+checkpoints/v03-dry-run/
 checkpoints/v0.1/
 *.pyc
