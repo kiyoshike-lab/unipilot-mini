@@ -46,7 +46,7 @@ def validation(model, loader, device, eos_id, eos_weight, batches=30):
 
 
 def save(path: Path, model, optimizer, step, loss, settings, args, stats):
-    manifest = {"model": "UniPilot Mini v0.4", "parameters": model.parameter_count(), "experiment_id": args.experiment_id,
+    manifest = {"model": "UniPilot Mini v0.4", "parameters": model.parameter_count(), "stage": "Clean C", "experiment_id": args.experiment_id,
                 "base_checkpoint": args.base_checkpoint, "dataset_version": settings["dataset_version"],
                 "evaluation_version": settings["evaluation_version"], "eos_weight": args.eos_weight, "step": step,
                 "seed": settings["seed"], "generation": settings["generation"], "git_commit": git_commit(),

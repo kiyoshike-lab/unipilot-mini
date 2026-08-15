@@ -48,7 +48,7 @@ def model_info():
             "tokenizer": manifest.get("tokenizer_version", "unipilot-byte-bpe-v02-512"), "vocab_size": runtime["tokenizer"].vocab_size,
             "context_length": config.context_length, "layers": config.n_layers, "heads": config.n_heads,
             "step": runtime["payload"].get("step", 0), "validation_loss": runtime["payload"].get("loss"),
-            "stage": manifest.get("stage", "legacy"), "experiment_id": manifest.get("experiment_id"),
+            "stage": manifest.get("stage", "Clean C" if runtime["payload"].get("v04_manifest") else "legacy"), "experiment_id": manifest.get("experiment_id"),
             "device": runtime["device"], "external_ai_api": "OFF"}
 
 
