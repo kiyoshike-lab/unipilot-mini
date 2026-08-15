@@ -1,0 +1,48 @@
+{
+  "model": "UniPilot Mini v0.4",
+  "parameters": 19814784,
+  "experiment_id": "v04-eos15",
+  "base_checkpoint": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-2000.pt",
+  "dataset_version": "unipilot-clean-conversation-v04",
+  "evaluation_version": "unipilot-eval-v03-300",
+  "eos_weight": 1.5,
+  "step": 1000,
+  "seed": 42,
+  "generation": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 64
+  },
+  "git_commit": "a9c5a7bbd55567251e6b1ad97e7eb9af7d6beee6",
+  "model_config": {
+    "model_name": "UniPilot Mini v0.4-v04-eos15-1000",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 2.8442202208906994e-05,
+    "weight_decay": 0.1
+  },
+  "metrics": {
+    "step": 1000,
+    "loss": 0.17737658163532616,
+    "validation_loss": 0.2580579114456972,
+    "learning_rate": 2.8442202208906994e-05,
+    "gradient_norm": 3.8052942752838135,
+    "gradient_clipping_count": 495,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 313.8999524844838,
+    "step_time_seconds": 0.30264420000094105,
+    "memory_usage_mb": 751.3828125
+  }
+}

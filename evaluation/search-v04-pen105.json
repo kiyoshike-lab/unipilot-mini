@@ -1,0 +1,2546 @@
+{
+  "model": "UniPilot Mini v0.4-v04-eos15-2000",
+  "checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "step": 2000,
+  "experiment_id": "v04-eos15",
+  "eos_weight": 1.5,
+  "dataset_version": "unipilot-clean-conversation-v04",
+  "evaluation_version": "unipilot-eval-v03-300",
+  "validation_loss": 0.10155425939398507,
+  "perplexity": 1.1068899759418807,
+  "generation_settings": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 64,
+    "seed": 42
+  },
+  "metrics": {
+    "response_not_empty": 1.0,
+    "eos_reached_rate": 0.68,
+    "average_generated_tokens": 57.86,
+    "runaway_generation_rate": 0.32,
+    "repetition_rate": 0.0009808612440191378,
+    "japanese_character_ratio": 0.9828740323290703,
+    "keyword_relevance": 38.0,
+    "category_keyword_hit": 33.5,
+    "forbidden_keyword_hits": 1,
+    "relevance_score": 51.484389829900664,
+    "category_accuracy": 0.32,
+    "meaningful_response_rate": 0.54,
+    "broken_response_rate": 0.0,
+    "email_structure_rate": 0.05,
+    "generation_tokens_per_second": 12.216142815569743,
+    "too_short_response_rate": 0.0,
+    "average_response_characters": 41.54,
+    "bigram_repetition_rate": 0.005158888090880609,
+    "trigram_repetition_rate": 0.0009808612440191378,
+    "fourgram_repetition_rate": 0.0,
+    "broken_byte_rate": 0.0,
+    "symbol_noise_rate": 0.0011287758346581877,
+    "invalid_sequence_rate": 0.0
+  },
+  "generations": [
+    {
+      "id": "fixed-v03-assignment-00",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？",
+      "category": "assignment",
+      "intent": "ASK_DEADLINE",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "時間が少ないなら、情報科学の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのが",
+      "tokens": 64,
+      "seconds": 5.792645800000173,
+      "tokens_per_sec": 11.048491865323111,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 1.0,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "assignment",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-attendance-00",
+      "prompt": "欠席が増えて出席状況が不安です。",
+      "category": "attendance",
+      "intent": "ASK_ATTENDANCE",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "落ち着いて、締切、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+      "tokens": 56,
+      "seconds": 4.532467199998791,
+      "tokens_per_sec": 12.355301765893625,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "schedule",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-credit-00",
+      "prompt": "必修科目の単位が心配です。",
+      "category": "credit",
+      "intent": "ASK_CREDIT",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "落ち着いて、統計学の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務",
+      "tokens": 64,
+      "seconds": 5.0329942999997,
+      "tokens_per_sec": 12.716088313472522,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "credit",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-email-00",
+      "prompt": "教授に今日休むとメールしたいです。",
+      "category": "email",
+      "intent": "ASK_EMAIL",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "試験範囲"
+      ],
+      "held_out": true,
+      "answer": "本優先したいのは、締切、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+      "tokens": 57,
+      "seconds": 4.3818088000007265,
+      "tokens_per_sec": 13.008326607037384,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "schedule",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": 0.0
+    },
+    {
+      "id": "fixed-v03-exam-00",
+      "prompt": "明日試験だけど、まだ何もしていません。",
+      "category": "exam",
+      "intent": "ASK_EXAM_PLAN",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "件名：基礎演習のご連絡\n\n○先生\nお世試験範囲を確認し、残り8日なら苦手な",
+      "tokens": 64,
+      "seconds": 5.564284600000974,
+      "tokens_per_sec": 11.5019278489078,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9117647058823529,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.029411764705882353,
+        "isolated_artifact_ratio": 0.029411764705882353,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.029411764705882353,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.6666666666666666,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 64.39628482972137,
+      "predicted_category": "email",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-general-00",
+      "prompt": "明日の試験は何時ですか？",
+      "category": "general",
+      "intent": "ASK_UNKNOWN_INFO",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "forbidden_keywords": [
+        "午前9時です",
+        "午後1時です"
+      ],
+      "held_out": true,
+      "answer": "締切を確認する順番は、締切、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+      "tokens": 60,
+      "seconds": 4.656489699998929,
+      "tokens_per_sec": 12.885242718353657,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.021276595744680882,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "schedule",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-registration-00",
+      "prompt": "履修科目をどう選べばいい？",
+      "category": "registration",
+      "intent": "ASK_REGISTRATION",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "時間が少ないなら、基礎演習の履修は必修区分、時間割、シラバス、卒業要件を順に確認して決めてください。",
+      "tokens": 62,
+      "seconds": 5.0901255999997375,
+      "tokens_per_sec": 12.180445999211335,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.020408163265306145,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "registration",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-report-00",
+      "prompt": "レポートの構成が決まりません。",
+      "category": "report",
+      "intent": "ASK_REPORT",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "欠席メール"
+      ],
+      "held_out": true,
+      "answer": "の一歩は、日本史のレポートは問い、資料、構成を先に決め、本文を書いた後に引",
+      "tokens": 64,
+      "seconds": 5.345257000000856,
+      "tokens_per_sec": 11.973231595784776,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.6666666666666666,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 85.0,
+      "predicted_category": "report",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-schedule-00",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？",
+      "category": "schedule",
+      "intent": "ASK_DAILY_PLAN",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "確認する順番は、学の英語の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのが",
+      "tokens": 64,
+      "seconds": 5.527771900000516,
+      "tokens_per_sec": 11.577901758210034,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "assignment",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-study-00",
+      "prompt": "試験勉強の計画を立てたいです。",
+      "category": "study",
+      "intent": "ASK_STUDY_PLAN",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "その状況では、締切を確認すると、統計学の試験範囲を確認し、残り8日なら苦手な部分と重要問題に",
+      "tokens": 64,
+      "seconds": 5.264180699999997,
+      "tokens_per_sec": 12.15763736985701,
+      "eos_reached": false,
+      "repetition_rate": 0.022727272727272707,
+      "japanese_character_ratio": 0.9782608695652174,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0444444444444444,
+        "3": 0.022727272727272707,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-assignment-01",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は生物学で、残り8日です。",
+      "category": "assignment",
+      "intent": "ASK_DEADLINE",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "線形代数の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+      "tokens": 64,
+      "seconds": 6.156805100003112,
+      "tokens_per_sec": 10.39500178428056,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 1.0,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "assignment",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-attendance-01",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は生物学で、残り8日です。",
+      "category": "attendance",
+      "intent": "ASK_ATTENDANCE",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 4.384865800002444,
+      "tokens_per_sec": 11.402857528723485,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-credit-01",
+      "prompt": "必修科目の単位が心配です。 科目はプログラミングで、残り8日です。",
+      "category": "credit",
+      "intent": "ASK_CREDIT",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "本史の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 56,
+      "seconds": 4.967764099998021,
+      "tokens_per_sec": 11.27267697756065,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-email-01",
+      "prompt": "教授に今日休むとメールしたいです。 科目は情報科学で、残り8日です。",
+      "category": "email",
+      "intent": "ASK_EMAIL",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "試験範囲"
+      ],
+      "held_out": true,
+      "answer": "話語の落ち着いて、目的を一つ決め、使える時間を確認して短い計画にすると動きやすくなります。",
+      "tokens": 58,
+      "seconds": 5.104759899997589,
+      "tokens_per_sec": 11.361944760619867,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "study",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": 0.0
+    },
+    {
+      "id": "fixed-v03-exam-01",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は心理学で、残り8日です。",
+      "category": "exam",
+      "intent": "ASK_EXAM_PLAN",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 5.137002499999653,
+      "tokens_per_sec": 10.511966852265235,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "exam",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-general-01",
+      "prompt": "明日の試験は何時ですか？ 科目は日本史で、残り8日です。",
+      "category": "general",
+      "intent": "ASK_UNKNOWN_INFO",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "forbidden_keywords": [
+        "午前9時です",
+        "午後1時です"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 4.2483733000008215,
+      "tokens_per_sec": 11.769210582316374,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-registration-01",
+      "prompt": "履修科目をどう選べばいい？ 科目は教育学で、残り8日です。",
+      "category": "registration",
+      "intent": "ASK_REGISTRATION",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 4.588638000001083,
+      "tokens_per_sec": 10.896479521807603,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-report-01",
+      "prompt": "レポートの構成が決まりません。 科目はプログラミングで、残り8日です。",
+      "category": "report",
+      "intent": "ASK_REPORT",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "欠席メール"
+      ],
+      "held_out": true,
+      "answer": "件を一つ決め、目け、最つを決め、必要なら近いものから提を進めるのがおすすめです。",
+      "tokens": 49,
+      "seconds": 4.402008299999579,
+      "tokens_per_sec": 11.131282964642452,
+      "eos_reached": true,
+      "repetition_rate": 0.02631578947368418,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.05128205128205132,
+        "3": 0.02631578947368418,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "unknown",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-schedule-01",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は社会学で、残り8日です。",
+      "category": "schedule",
+      "intent": "ASK_DAILY_PLAN",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 4.564741599999252,
+      "tokens_per_sec": 10.953522538933681,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-study-01",
+      "prompt": "試験勉強の計画を立てたいです。 科目は情報科学で、残り8日です。",
+      "category": "study",
+      "intent": "ASK_STUDY_PLAN",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 5.170985200002178,
+      "tokens_per_sec": 10.4428842689353,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-assignment-02",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は会計学で、残り1日です。",
+      "category": "assignment",
+      "intent": "ASK_DEADLINE",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "今できることは、法学の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめ",
+      "tokens": 64,
+      "seconds": 6.306041800002276,
+      "tokens_per_sec": 10.148997109403382,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 1.0,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "assignment",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-attendance-02",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は会計学で、残り1日です。",
+      "category": "attendance",
+      "intent": "ASK_ATTENDANCE",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "癬史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 57,
+      "seconds": 4.573482100000547,
+      "tokens_per_sec": 12.463151435531623,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-credit-02",
+      "prompt": "必修科目の単位が心配です。 科目は法学で、残り1日です。",
+      "category": "credit",
+      "intent": "ASK_CREDIT",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "落ち着いて、生物学の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務",
+      "tokens": 64,
+      "seconds": 4.972133699997357,
+      "tokens_per_sec": 12.87173753996881,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "credit",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-email-02",
+      "prompt": "教授に今日休むとメールしたいです。 科目は社会学で、残り1日です。",
+      "category": "email",
+      "intent": "ASK_EMAIL",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "試験範囲"
+      ],
+      "held_out": true,
+      "answer": "珲の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすめです。",
+      "tokens": 57,
+      "seconds": 4.506638100003329,
+      "tokens_per_sec": 12.648009166735154,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "assignment",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": 0.25
+    },
+    {
+      "id": "fixed-v03-exam-02",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は日本史で、残り1日です。",
+      "category": "exam",
+      "intent": "ASK_EXAM_PLAN",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "無学試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 4.508629199997813,
+      "tokens_per_sec": 11.977032841828331,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "exam",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-general-02",
+      "prompt": "明日の試験は何時ですか？ 科目は生物学で、残り1日です。",
+      "category": "general",
+      "intent": "ASK_UNKNOWN_INFO",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "forbidden_keywords": [
+        "午前9時です",
+        "午後1時です"
+      ],
+      "held_out": true,
+      "answer": "英語の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 56,
+      "seconds": 4.521518599998672,
+      "tokens_per_sec": 12.38521942606107,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-registration-02",
+      "prompt": "履修科目をどう選べばいい？ 科目は文学で、残り1日です。",
+      "category": "registration",
+      "intent": "ASK_REGISTRATION",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "本史ののは、心理学の履修は必修区分、時間割、シラバス、卒業要件を順に確認して決めてください。",
+      "tokens": 54,
+      "seconds": 4.2559240000009595,
+      "tokens_per_sec": 12.688196499746665,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "registration",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-report-02",
+      "prompt": "レポートの構成が決まりません。 科目は法学で、残り1日です。",
+      "category": "report",
+      "intent": "ASK_REPORT",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "欠席メール"
+      ],
+      "held_out": true,
+      "answer": "史は25分だけ勉強し、最後に要点を復習する計画にすると続けやすいです。",
+      "tokens": 44,
+      "seconds": 3.5137641000001167,
+      "tokens_per_sec": 12.52218383129321,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9428571428571428,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.02941176470588236,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 24.887218045112782,
+      "predicted_category": "study",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-schedule-02",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は哲学で、残り1日です。",
+      "category": "schedule",
+      "intent": "ASK_DAILY_PLAN",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "今できることは、情報科学の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 64,
+      "seconds": 5.378030199997738,
+      "tokens_per_sec": 11.900267871315954,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.98,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-study-02",
+      "prompt": "試験勉強の計画を立てたいです。 科目は社会学で、残り1日です。",
+      "category": "study",
+      "intent": "ASK_STUDY_PLAN",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "発表は経区論試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って",
+      "tokens": 64,
+      "seconds": 5.473799600000348,
+      "tokens_per_sec": 11.692061214662651,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9714285714285714,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-assignment-03",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は基礎演習で、残り8日です。",
+      "category": "assignment",
+      "intent": "ASK_DEADLINE",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "線史の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+      "tokens": 61,
+      "seconds": 5.150848100001895,
+      "tokens_per_sec": 11.842709941296379,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 1.0,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "assignment",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-attendance-03",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は基礎演習で、残り8日です。",
+      "category": "attendance",
+      "intent": "ASK_ATTENDANCE",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 4.168841599999723,
+      "tokens_per_sec": 11.993739459902558,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-credit-03",
+      "prompt": "必修科目の単位が心配です。 科目は教育学で、残り8日です。",
+      "category": "credit",
+      "intent": "ASK_CREDIT",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "ちの状況では、日本史の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務",
+      "tokens": 64,
+      "seconds": 4.912394200000563,
+      "tokens_per_sec": 13.028270410382104,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "credit",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-email-03",
+      "prompt": "教授に今日休むとメールしたいです。 科目は哲学で、残り8日です。",
+      "category": "email",
+      "intent": "ASK_EMAIL",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "試験範囲"
+      ],
+      "held_out": true,
+      "answer": "今できることは、統計学のレポートは問い、資料、構成を先に決め、本文を書いた後に引用を確認してください。",
+      "tokens": 64,
+      "seconds": 5.019339000002219,
+      "tokens_per_sec": 12.750682908640302,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "report",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": 0.0
+    },
+    {
+      "id": "fixed-v03-exam-03",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は生物学で、残り8日です。",
+      "category": "exam",
+      "intent": "ASK_EXAM_PLAN",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "ご連絡\n○先生\nお世試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って",
+      "tokens": 64,
+      "seconds": 5.561358000002656,
+      "tokens_per_sec": 11.507980604731692,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9459459459459459,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.02702702702702703,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.02702702702702703,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.6666666666666666,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 84.93598862019914,
+      "predicted_category": "exam",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-general-03",
+      "prompt": "明日の試験は何時ですか？ 科目は会計学で、残り8日です。",
+      "category": "general",
+      "intent": "ASK_UNKNOWN_INFO",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "forbidden_keywords": [
+        "午前9時です",
+        "午後1時です"
+      ],
+      "held_out": true,
+      "answer": "落ち着いて、線形代数の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞",
+      "tokens": 64,
+      "seconds": 5.193881099999999,
+      "tokens_per_sec": 12.322191973166273,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9736842105263158,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-registration-03",
+      "prompt": "履修科目をどう選べばいい？ 科目は線形代数で、残り8日です。",
+      "category": "registration",
+      "intent": "ASK_REGISTRATION",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "珲の史の出席条件は授業ごとに異なります。シラバスと出席記録を確認し、担当教員へ相談してください。",
+      "tokens": 63,
+      "seconds": 5.1058574999988195,
+      "tokens_per_sec": 12.338769736526052,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.021276595744680882,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "attendance",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-report-03",
+      "prompt": "レポートの構成が決まりません。 科目は教育学で、残り8日です。",
+      "category": "report",
+      "intent": "ASK_REPORT",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "欠席メール"
+      ],
+      "held_out": true,
+      "answer": "史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 4.484019800001988,
+      "tokens_per_sec": 12.04276573443678,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-schedule-03",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目はデータ分析で、残り8日です。",
+      "category": "schedule",
+      "intent": "ASK_DAILY_PLAN",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "英語の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 56,
+      "seconds": 4.9244417999980215,
+      "tokens_per_sec": 11.371847261962259,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-study-03",
+      "prompt": "試験勉強の計画を立てたいです。 科目は哲学で、残り8日です。",
+      "category": "study",
+      "intent": "ASK_STUDY_PLAN",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "本史は、日本史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 64,
+      "seconds": 5.282927899999777,
+      "tokens_per_sec": 12.11449431289848,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9777777777777777,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.022727272727272707,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-assignment-04",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は統計学で、残り1日です。",
+      "category": "assignment",
+      "intent": "ASK_DEADLINE",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "本史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 56,
+      "seconds": 4.5406361000023026,
+      "tokens_per_sec": 12.333073773511954,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-attendance-04",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は統計学で、残り1日です。",
+      "category": "attendance",
+      "intent": "ASK_ATTENDANCE",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 50,
+      "seconds": 3.9396308999967005,
+      "tokens_per_sec": 12.691544276404644,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.972972972972973,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-credit-04",
+      "prompt": "必修科目の単位が心配です。 科目は文学で、残り1日です。",
+      "category": "credit",
+      "intent": "ASK_CREDIT",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "forbidden_keywords": [
+        "必ず単位",
+        "出席率70%"
+      ],
+      "held_out": true,
+      "answer": "英語の語のそいて、心理学の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教",
+      "tokens": 64,
+      "seconds": 5.0358629999973346,
+      "tokens_per_sec": 12.708844541647355,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.022727272727272707,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.6666666666666666,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 85.0,
+      "predicted_category": "credit",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-email-04",
+      "prompt": "教授に今日休むとメールしたいです。 科目はデータ分析で、残り1日です。",
+      "category": "email",
+      "intent": "ASK_EMAIL",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "試験範囲"
+      ],
+      "held_out": true,
+      "answer": "線形代数の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 61,
+      "seconds": 5.0922065999984625,
+      "tokens_per_sec": 11.979089772205711,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9761904761904762,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 1,
+      "relevance_score": 5.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": 0.0
+    },
+    {
+      "id": "fixed-v03-exam-04",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は会計学で、残り1日です。",
+      "category": "exam",
+      "intent": "ASK_EXAM_PLAN",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "史の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 4.465783600000577,
+      "tokens_per_sec": 12.091942833950355,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "exam",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-general-04",
+      "prompt": "明日の試験は何時ですか？ 科目は基礎演習で、残り1日です。",
+      "category": "general",
+      "intent": "ASK_UNKNOWN_INFO",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "forbidden_keywords": [
+        "午前9時です",
+        "午後1時です"
+      ],
+      "held_out": true,
+      "answer": "くの試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 54,
+      "seconds": 4.267447099999117,
+      "tokens_per_sec": 12.653935417268833,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9743589743589743,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.25,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-registration-04",
+      "prompt": "履修科目をどう選べばいい？ 科目は物理学で、残り1日です。",
+      "category": "registration",
+      "intent": "ASK_REGISTRATION",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "史の履修は必修区分、時間割、シラバス、卒業要件を順に確認して決めてください。",
+      "tokens": 45,
+      "seconds": 3.497626799999125,
+      "tokens_per_sec": 12.865866649927105,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 1.0,
+      "category_keyword_rate": 0.75,
+      "forbidden_hits": 0,
+      "relevance_score": 100.0,
+      "predicted_category": "registration",
+      "category_correct": true,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-report-04",
+      "prompt": "レポートの構成が決まりません。 科目は文学で、残り1日です。",
+      "category": "report",
+      "intent": "ASK_REPORT",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "forbidden_keywords": [
+        "履修登録",
+        "欠席メール"
+      ],
+      "held_out": true,
+      "answer": "本史の史の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 60,
+      "seconds": 4.8043532999981835,
+      "tokens_per_sec": 12.488673553633678,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9761904761904762,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.024390243902439046,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-schedule-04",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は微積分で、残り1日です。",
+      "category": "schedule",
+      "intent": "ASK_DAILY_PLAN",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "必ず単位"
+      ],
+      "held_out": true,
+      "answer": "だけ史の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 57,
+      "seconds": 3.7969281999976374,
+      "tokens_per_sec": 15.012135336147644,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975609756097561,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.0,
+      "category_keyword_rate": 0.0,
+      "forbidden_hits": 0,
+      "relevance_score": 25.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": false,
+      "email_structure_rate": null
+    },
+    {
+      "id": "fixed-v03-study-04",
+      "prompt": "試験勉強の計画を立てたいです。 科目はデータ分析で、残り1日です。",
+      "category": "study",
+      "intent": "ASK_STUDY_PLAN",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "forbidden_keywords": [
+        "欠席メール",
+        "履修登録"
+      ],
+      "held_out": true,
+      "answer": "本史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+      "tokens": 56,
+      "seconds": 2.5653592000016943,
+      "tokens_per_sec": 21.829301721163656,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.975,
+      "broken": {
+        "invalid_utf8": false,
+        "replacement_characters": 0,
+        "control_characters": 0,
+        "excessive_symbol_ratio": 0.0,
+        "isolated_artifact_ratio": 0.0,
+        "broken": false
+      },
+      "ngram_repetition": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "broken_generation": {
+        "broken_byte_rate": 0.0,
+        "symbol_noise_rate": 0.0,
+        "invalid_sequence_rate": 0.0,
+        "excessive_character_repetition": false
+      },
+      "expected_keyword_rate": 0.3333333333333333,
+      "category_keyword_rate": 0.5,
+      "forbidden_hits": 0,
+      "relevance_score": 40.0,
+      "predicted_category": "exam",
+      "category_correct": false,
+      "meaningful_response": true,
+      "email_structure_rate": null
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "v03_metrics": {
+    "response_not_empty": 1.0,
+    "eos_reached_rate": 0.16333333333333333,
+    "average_generated_tokens": 121.47666666666667,
+    "runaway_generation_rate": 0.8366666666666667,
+    "repetition_rate": 0.0838867456010683,
+    "japanese_character_ratio": 0.9569520144630342,
+    "keyword_relevance": 23.222222222222225,
+    "category_keyword_hit": 20.861111111111114,
+    "forbidden_keyword_hits": 4,
+    "relevance_score": 40.67009613792436,
+    "category_accuracy": 0.18333333333333332,
+    "meaningful_response_rate": 0.29,
+    "broken_response_rate": 0.0,
+    "email_structure_rate": 0.4666666666666667,
+    "generation_tokens_per_second": 23.58292234026479
+  },
+  "v04_metrics": {
+    "response_not_empty": 1.0,
+    "eos_reached_rate": 0.9966666666666667,
+    "average_generated_tokens": 57.77333333333333,
+    "runaway_generation_rate": 0.0033333333333333335,
+    "repetition_rate": 0.002452228905646038,
+    "japanese_character_ratio": 0.9832800622073942,
+    "keyword_relevance": 35.55555555555556,
+    "category_keyword_hit": 31.25,
+    "forbidden_keyword_hits": 20,
+    "relevance_score": 48.22038800982551,
+    "category_accuracy": 0.2866666666666667,
+    "meaningful_response_rate": 0.52,
+    "broken_response_rate": 0.0,
+    "email_structure_rate": 0.03333333333333333,
+    "generation_tokens_per_second": 24.853580649018078,
+    "too_short_response_rate": 0.0,
+    "average_response_characters": 42.95666666666666,
+    "bigram_repetition_rate": 0.007423261488778257,
+    "trigram_repetition_rate": 0.002452228905646038,
+    "fourgram_repetition_rate": 0.0005509326676374734,
+    "broken_byte_rate": 0.0,
+    "symbol_noise_rate": 0.0012798314911221871,
+    "invalid_sequence_rate": 0.0
+  },
+  "comparisons": [
+    {
+      "id": "special-v04-00",
+      "prompt": "明日試験なんだけど何したらいい？",
+      "category": "exam",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "v03": {
+        "answer": "件名：状況を整理しましょう。まご連絡\n○○○先生\nお世話になっております。○○学の〉です。ご連絡\n○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業に遅れる見込み",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 23.533834586466163,
+        "predicted_category": "email",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、統計学の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "expected_keyword_rate": 1.0,
+        "category_keyword_rate": 0.75,
+        "forbidden_hits": 0,
+        "relevance_score": 100.0,
+        "predicted_category": "exam",
+        "category_correct": true,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-01",
+      "prompt": "課題が3つあるんだけどどれからやればいい？",
+      "category": "assignment",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "v03": {
+        "answer": "件名：状況を整理しましょう。件名：授ってあります。○○○先生\nお世話になっております。○○学部の〉です。本日の話になっております。○学部の〈学生氏名〉です。授業を欠席いたします。直前の連絡とな",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 23.961218836565095,
+        "predicted_category": "email",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、線形代数の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+        "eos_reached": true,
+        "expected_keyword_rate": 1.0,
+        "category_keyword_rate": 1.0,
+        "forbidden_hits": 0,
+        "relevance_score": 100.0,
+        "predicted_category": "assignment",
+        "category_correct": true,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-02",
+      "prompt": "教授に欠席メールを送りたい",
+      "category": "email",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "v03": {
+        "answer": "件名トってずーレレートってロいのトって牉ロのログートってトは、資料集め、資料集め、構成、執筆、引用確認、推敲に分けます。残り8日なら、まず構成を作るのがおすすす",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.3333333333333333,
+        "category_keyword_rate": 0.2,
+        "forbidden_hits": 0,
+        "relevance_score": 40.0,
+        "predicted_category": "report",
+        "category_correct": false,
+        "meaningful_response": true,
+        "email_structure_rate": 0.25
+      },
+      "v04": {
+        "answer": "最初の一歩は、締切、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "schedule",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": 0.0
+      }
+    },
+    {
+      "id": "special-v04-03",
+      "prompt": "単位が心配",
+      "category": "credit",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "v03": {
+        "answer": "件ります。件名＼授業欠大学ご連絡\n\n\n○○○先生\nお世話の』っております。○○先生\nお世話になっております。○○学部の〈学生氏名〉です。ご相談しましましたく、あり時間をあ",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 23.815789473684212,
+        "predicted_category": "email",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "締切を確認すると、情報科学は25分だけ勉強し、最後に要点を復習する計画にすると続けやすいです。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "study",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-04",
+      "prompt": "レポートが終わらない",
+      "category": "report",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "v03": {
+        "answer": "件名トって畏い手順に分けると進めると進めると進めやすい手順に分けると進めやすいです。ログログラミングの出席条件は授業によって異なります。シラバスと出席記録を確認し、欠席の扱いが不明なら担当教員へ相談してください。分",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "attendance",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "最初の一歩は、締切を確認すると、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "schedule",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-05",
+      "prompt": "履修をどう決めればいい？",
+      "category": "registration",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "件名：状況を整理し手順に分けると進めるお試験時間の情報が登録されていないため、現在は分かりません。時間割や大学の案内を確認してください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "general",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、法学の履修は必修区分、時間割、シラバス、卒業要件を順に確認して決めてください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 1.0,
+        "category_keyword_rate": 0.75,
+        "forbidden_hits": 0,
+        "relevance_score": 100.0,
+        "predicted_category": "registration",
+        "category_correct": true,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-06",
+      "prompt": "空きコマ何したらいい？",
+      "category": "study",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "v03": {
+        "answer": "件名＼状況を整理しましょう。ト業を決学のレロい手順に分けると進めると進めやすいです。ポータ分けると進めやすいです。情報科学のレポートは、問いの確認、資料集め、構成、執筆、引用確認、推敲に分けます。残り8日なら、ま",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.25,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "report",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、線形代数のレポートは問い、資料、構成を先に決め、本文を書いた後に引用を確認してください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.25,
+        "forbidden_hits": 0,
+        "relevance_score": 25.0,
+        "predicted_category": "report",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-07",
+      "prompt": "明日の試験って何時？",
+      "category": "general",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "v03": {
+        "answer": "形のご連絡\n\n\n○○先生\n○○先生\nお世談のお世話になっております。○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業を欠席いたく、面質",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.0,
+        "category_keyword_rate": 0.0,
+        "forbidden_hits": 0,
+        "relevance_score": 23.533834586466163,
+        "predicted_category": "email",
+        "category_correct": false,
+        "meaningful_response": false,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "今できることは、締切を確認すると、情報科学の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.6666666666666666,
+        "category_keyword_rate": 0.5,
+        "forbidden_hits": 0,
+        "relevance_score": 65.0,
+        "predicted_category": "assignment",
+        "category_correct": false,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-08",
+      "prompt": "今日何したらいい？",
+      "category": "schedule",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "v03": {
+        "answer": "を大心理学の大学に分けると進めると進めやすいです。短い手順に分けると進めやすいです。哲学の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。無理な場合",
+        "eos_reached": false,
+        "expected_keyword_rate": 0.3333333333333333,
+        "category_keyword_rate": 0.25,
+        "forbidden_hits": 0,
+        "relevance_score": 40.0,
+        "predicted_category": "assignment",
+        "category_correct": false,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "締切を確認すると、締切を確認すると、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.6666666666666666,
+        "category_keyword_rate": 0.5,
+        "forbidden_hits": 0,
+        "relevance_score": 85.0,
+        "predicted_category": "schedule",
+        "category_correct": true,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "special-v04-09",
+      "prompt": "出席が少なくて心配",
+      "category": "attendance",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "今できることを大学を大学を大学ず状況を整理しましょう。日本史の出席条件は授業によって異なります。シラバスと出席記録を確認し、欠席の扱いが不明なら担当教員へ相談してください。無理な場合は担当者へ早めに",
+        "eos_reached": false,
+        "expected_keyword_rate": 1.0,
+        "category_keyword_rate": 1.0,
+        "forbidden_hits": 0,
+        "relevance_score": 100.0,
+        "predicted_category": "attendance",
+        "category_correct": true,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      },
+      "v04": {
+        "answer": "落ち着いて、締切を確認すると、線形代数の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務へ相談してください。",
+        "eos_reached": true,
+        "expected_keyword_rate": 0.3333333333333333,
+        "category_keyword_rate": 0.3333333333333333,
+        "forbidden_hits": 0,
+        "relevance_score": 40.0,
+        "predicted_category": "credit",
+        "category_correct": false,
+        "meaningful_response": true,
+        "email_structure_rate": null
+      }
+    },
+    {
+      "id": "fixed-v03-assignment-00",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？",
+      "category": "assignment",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "v03": {
+        "answer": "件名＼状況を整理しましょう。微ります。件名：授業内容についてのご連絡\n\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業について込みです。日の授業に遅容についてです。氏出れるな時間の",
+        "eos_reached": false,
+        "relevance_score": 24.4872490504612,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "おすすめは、統計学の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-assignment-01",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は生物学で、残り8日です。",
+      "category": "assignment",
+      "expected_keywords": [
+        "課題",
+        "締切",
+        "提出"
+      ],
+      "v03": {
+        "answer": "焦らことをず、確認から始めましょう。日本史の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認すると安心です。研究",
+        "eos_reached": false,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      },
+      "v04": {
+        "answer": "線形代数の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすすめです。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-attendance-00",
+      "prompt": "欠席が増えて出席状況が不安です。",
+      "category": "attendance",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "まず状況を整理しましょう。焦らず状況を整理しましょう。教質問い手順に分の出勉学の出席条件は授業によって異なります。シラバスと出席記録を確認し、欠席の扱いが不明なら担当教員へ相談してください。最後に条件をもう一度確認してください。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      },
+      "v04": {
+        "answer": "その状況では、線形代数の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務へ相談してください。",
+        "eos_reached": true,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-attendance-01",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は生物学で、残り8日です。",
+      "category": "attendance",
+      "expected_keywords": [
+        "出席",
+        "欠席",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "焦らのの情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の勉強は、今日の目標を一つに絞り、短い集中と休憩を繰り返します。最後に復習し、次回の計画を一行で",
+        "eos_reached": false,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-credit-00",
+      "prompt": "必修科目の単位が心配です。",
+      "category": "credit",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "v03": {
+        "answer": "件名＼大○です。件名：授業欠席い手順に分けると進めると進めると進のご連絡\n○○先生\nお世話になっております。○○学験範囲を確認し、名〉です。授業啰名〉です。授業を欠",
+        "eos_reached": false,
+        "relevance_score": 24.013157894736842,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "落ち着いて、締切を確認すると、生物学の単位条件は断定できません。シラバスを確認し、不明なら担当教員か教務へ相談してください。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-credit-01",
+      "prompt": "必修科目の単位が心配です。 科目はプログラミングで、残り8日です。",
+      "category": "credit",
+      "expected_keywords": [
+        "単位",
+        "シラバス",
+        "教務"
+      ],
+      "v03": {
+        "answer": "今できるずートってします。件名：遅を整理しましょう。トって物ロいのず、資料集め、構成、執筆中中と休憩を入修に分けると進めやすいです。終わった項目を記録すると進捗が分かります。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-email-00",
+      "prompt": "教授に今日休むとメールしたいです。",
+      "category": "email",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "v03": {
+        "answer": "件名トってってって短い手順に分けると進めると進めやすい手順に分けると進めやすいです。ポータ分位条件は明業や大学によって異なります。シラバスで評価方法を確認し、不明点は担当教員や教務へ相談してください。無理な",
+        "eos_reached": false,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "短く整理すると、心理学のレポートは問い、資料、構成を先に決め、本文を書いた後に引用を確認してください。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-email-01",
+      "prompt": "教授に今日休むとメールしたいです。 科目は情報科学で、残り8日です。",
+      "category": "email",
+      "expected_keywords": [
+        "件名",
+        "先生",
+        "連絡"
+      ],
+      "v03": {
+        "answer": "短い手順に分けると進めるず状況を整理しましょう。ロい手順に分けると進めやすいです。物理学のレポートは、問いの確認、資料集め、構成、執筆、引用確認、推敲に分けます。残り1日なら、まず構成を作るのがおすすめです。分からない",
+        "eos_reached": false,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "本史の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 5.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-exam-00",
+      "prompt": "明日試験だけど、まだ何もしていません。",
+      "category": "exam",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "v03": {
+        "answer": "件名に分の情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一",
+        "eos_reached": false,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      },
+      "v04": {
+        "answer": "件名：席条件は授業ご連絡\n○先生\nお世試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 99.91228070175438,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-exam-01",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は心理学で、残り8日です。",
+      "category": "exam",
+      "expected_keywords": [
+        "試験",
+        "範囲",
+        "復習"
+      ],
+      "v03": {
+        "answer": "今できることを順番に分けると進めやすいです。心理学の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認すると安心です。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "本史の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-general-00",
+      "prompt": "明日の試験は何時ですか？",
+      "category": "general",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "v03": {
+        "answer": "報がご連絡\n○○○先生\nお世話がおります。○○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業啰名〉です。授業内容について質問がご質問が",
+        "eos_reached": false,
+        "relevance_score": 23.410237923576062,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "締切を確認する順番は、締切、重要度、残り作業を並べ、今日終える一つを決めて予定に入れてください。",
+        "eos_reached": true,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-general-01",
+      "prompt": "明日の試験は何時ですか？ 科目は日本史で、残り8日です。",
+      "category": "general",
+      "expected_keywords": [
+        "確認",
+        "情報",
+        "分かりません"
+      ],
+      "v03": {
+        "answer": "本の情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の案内を確認してください。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      },
+      "v04": {
+        "answer": "試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-registration-00",
+      "prompt": "履修科目をどう選べばいい？",
+      "category": "registration",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "件名：状況を整理しましょう。件名：授ってお世話めましょう。心理学の出件名：授業欠ります。○○先生\nお世話になっております。○○学部の〈学生氏名〉です。本日の授業内容について込ご相談しましたく、",
+        "eos_reached": false,
+        "relevance_score": 24.29362880886427,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "時間が少ないないなら、基礎演習は25分だけ勉強し、最後に要点を復習する計画にすると続けやすいです。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-registration-01",
+      "prompt": "履修科目をどう選べばいい？ 科目は教育学で、残り8日です。",
+      "category": "registration",
+      "expected_keywords": [
+        "履修",
+        "必修",
+        "シラバス"
+      ],
+      "v03": {
+        "answer": "今できることをことを順番になって番に分けると進めやすいです。情報科学の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一日ごとの範囲を決めると安心です。予定には",
+        "eos_reached": false,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "史の履修は必修区分、時間割、シラバス、卒業要件を順に確認して決めてください。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-report-00",
+      "prompt": "レポートの構成が決まりません。",
+      "category": "report",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "v03": {
+        "answer": "件名レロいのートってートって牉トってンタ分けると進めると進めやすい手順に分けると進めやすいです。ログミングの試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に",
+        "eos_reached": false,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、線形代数のレポートは問い、資料、構成を先に決め、本文を書いた後に引用を確認してください。",
+        "eos_reached": true,
+        "relevance_score": 100.0,
+        "meaningful_response": true,
+        "category_correct": true
+      }
+    },
+    {
+      "id": "fixed-v03-report-01",
+      "prompt": "レポートの構成が決まりません。 科目はプログラミングで、残り8日です。",
+      "category": "report",
+      "expected_keywords": [
+        "レポート",
+        "構成",
+        "引用"
+      ],
+      "v03": {
+        "answer": "件名よって短い手順に分けると進めやすい手順に分けると進めやすいです。ポータ分析の確認、資料集め、構成、執筆、引用確認、推敲に分けます。残り1日なら、まず構成を作るのがおすすめです。無理な場合は担",
+        "eos_reached": false,
+        "relevance_score": 85.0,
+        "meaningful_response": true,
+        "category_correct": true
+      },
+      "v04": {
+        "answer": "本席記録を確認し、り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-schedule-00",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？",
+      "category": "schedule",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "v03": {
+        "answer": "\n報に分けると進めると進めると進めやすい手順に分けると進めやすいです。統計学の課題は、提出締切と形式を先に確認します。残り1日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認す",
+        "eos_reached": false,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "無理なく進めるなら、経済学の試験範囲を確認し、残り1日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-schedule-01",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は社会学で、残り8日です。",
+      "category": "schedule",
+      "expected_keywords": [
+        "予定",
+        "締切",
+        "優先"
+      ],
+      "v03": {
+        "answer": "件名：授業授業大学ご連絡\n\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業を欠席いたします。直について質問出れる見りまこ。おすいです。分からないとないです。無理",
+        "eos_reached": false,
+        "relevance_score": 24.51905626134301,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "線形代数の課題は締切と作業量を比べ、期限が近いものから提出準備を進めるのがおすめです。",
+        "eos_reached": true,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-study-00",
+      "prompt": "試験勉強の計画を立てたいです。",
+      "category": "study",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "v03": {
+        "answer": "件名：授業に分けると進めると進めると進めやすいです。質問名：授業内容についてのご相談\n○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業内容について質問がご相談しましましましましま",
+        "eos_reached": false,
+        "relevance_score": 24.626038781163437,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "締切を確認すると、統計学の試験範囲を確認し、残り8日なら苦手な部分と重要問題に絞って復習しましょう。",
+        "eos_reached": true,
+        "relevance_score": 40.0,
+        "meaningful_response": true,
+        "category_correct": false
+      }
+    },
+    {
+      "id": "fixed-v03-study-01",
+      "prompt": "試験勉強の計画を立てたいです。 科目は情報科学で、残り8日です。",
+      "category": "study",
+      "expected_keywords": [
+        "勉強",
+        "復習",
+        "計画"
+      ],
+      "v03": {
+        "answer": "件名：授業授業欠席のご連絡\n○○先生\nお世話になっております。○○先生\nお世話になっております。○学部の〈学生氏名〉です。本日の授業に遅れる見質内れる見迷します。",
+        "eos_reached": false,
+        "relevance_score": 24.170040485829958,
+        "meaningful_response": false,
+        "category_correct": false
+      },
+      "v04": {
+        "answer": "発表は経授業になってごとに異ります。シラバスと出席記録を確認し、担当教員へ相談してください。",
+        "eos_reached": true,
+        "relevance_score": 25.0,
+        "meaningful_response": false,
+        "category_correct": false
+      }
+    }
+  ]
+}

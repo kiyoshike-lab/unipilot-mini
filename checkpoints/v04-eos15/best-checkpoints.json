@@ -1,0 +1,19 @@
+{
+  "semantic": {
+    "checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+    "meaningful_response_rate": 0.52,
+    "eos_reached_rate": 0.9966666666666667,
+    "runaway_generation_rate": 0.0033333333333333335,
+    "keyword_relevance": 35.55555555555556,
+    "category_accuracy": 0.2866666666666667
+  },
+  "validation": {
+    "checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+    "value": 0.10155425939398507
+  },
+  "human": {
+    "status": "PENDING",
+    "checkpoint": null,
+    "value": null
+  }
+}
