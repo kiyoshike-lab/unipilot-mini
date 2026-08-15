@@ -4,8 +4,8 @@ from inference.generate import generate_text, load_model, model_summary
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--checkpoint", default="checkpoints/sanity-100/checkpoint-step-100.pt")
-    parser.add_argument("--tokenizer", default="tokenizer/vocab.json")
+    parser.add_argument("--checkpoint", default="checkpoints/unipilot-v02-step-1000/checkpoint-step-1000.pt")
+    parser.add_argument("--tokenizer", default="tokenizer/vocab-v02-512.json")
     parser.add_argument("--device", default="auto")
     args = parser.parse_args()
     model, tokenizer, device, payload = load_model(args.checkpoint, args.tokenizer, args.device)

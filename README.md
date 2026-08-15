@@ -118,6 +118,53 @@ python -m scripts.benchmark --checkpoint checkpoints/v0.1/checkpoint-step-N.pt -
 
 100Mへは設定だけでなく、学習データの質と量、validation分離、GPUメモリを増やす必要があります。例としてembedding 640、layers 16、heads 10、FFN 2560（語彙・weight tyingにより約85〜100M）を出発点にし、gradient accumulationとcheckpointingを追加します。300M/1Bでは単一の一般向けPCを超えるため、分散学習、より大規模で権利確認済みのコーパス、長期評価が必要です。
 
+## v0.2: データ・評価・段階学習
+
+v0.2ではモデル構造を変えず、学習データを50,000件へ拡張しました。大学データ30,000件、一般日本語20,000件です。課題、試験、勉強計画、単位、教授メール、履修、出席、レポート、プレゼン、大学生活、予定管理へ分け、90/5/5でTrain/Validation/Testを分離しています。template familyごとにsplitを固定するため、同じ派生系列がtestへ漏れません。
+
+```powershell
+python -m scripts.generate_dataset_v02
+python -m scripts.check_dataset
+python -m tokenizer.train_tokenizer_v02
+python -m scripts.analyze_tokenizer --tokenizer tokenizer/vocab-v02-512.json --output evaluation/tokenizer-analysis-v02-512.json
+```
+
+既存384語彙はsanity/v0.1 checkpoint互換用に保持しています。測定では384語彙が1.57 tokens/文字、追加512語彙が0.85 tokens/文字だったため、v0.2は512語彙を使用します。UNKはいずれも0です。1024/2048候補は `scripts/compare_tokenizers.py` で同条件比較できます。
+
+### 学習stage
+
+`training.train_v02` は通常文、大学説明文、会話を40/30/30でweighted samplingでき、会話では既定でAssistant回答部分だけをloss対象にします。
+
+```powershell
+# 段階実行
+.\train-v02-100.bat
+.\train-v02-500.bat
+.\train-v02-1000.bat
+
+# 個別stage（長時間学習向け）
+python -m training.train_v02 --stage general --max-steps 1000 --max-records 0 --output-dir checkpoints/v02-general
+python -m training.train_v02 --stage university --max-steps 2000 --max-records 0 --resume checkpoints/v02-general/checkpoint-step-1000.pt --output-dir checkpoints/v02-university
+python -m training.train_v02 --stage conversation --max-steps 3000 --max-records 0 --resume checkpoints/v02-university/checkpoint-step-2000.pt --output-dir checkpoints/v02-conversation
+```
+
+`--max-records 0` は45,000件すべてを使います。既定の段階確認では初期化時間を抑えるため最大2,000 recordを読みます。CUDA OOM時はエラーに安全なbatch sizeを表示します。RTX 2070 SUPERではCUDA版PyTorchを導入し、batch 1〜2とgradient accumulation 4〜8を出発点にしてください。
+
+### 固定評価と比較
+
+固定評価300問は学習に使いません。loss/PPLに加え、非空回答、EOS、反復率、平均長、keyword relevance、日本語文字率を計測します。
+
+```powershell
+python -m evaluation.evaluate_v02 --checkpoint checkpoints/unipilot-v02-step-1000/checkpoint-step-1000.pt --output evaluation/results-v02-1000.json
+python -m evaluation.compare_checkpoints evaluation/results-v02-100.json evaluation/results-v02-500.json evaluation/results-v02-1000.json
+python evaluation/plot_v02.py checkpoints/unipilot-v02-step-100/training_log.csv checkpoints/unipilot-v02-step-500/training_log.csv checkpoints/unipilot-v02-step-1000/training_log.csv
+```
+
+1000 stepまでの実測ではlossは改善しましたが、自然な回答品質にはまだ達していません。詳細は `DATASET_REPORT_V02.md`、`TRAINING_REPORT_V02.md`、`EVALUATION_REPORT_V02.md` を参照してください。モデルを50M/100Mへ拡大する前に、19.8Mモデルを全データでより長く学習することを推奨します。
+
+### v0.2 API
+
+既存endpointに `GET /checkpoints`、`POST /model/load`、`GET /evaluation/latest` を追加しました。model切替は `UNIPILOT_DEV_MODE=1` のときだけ有効で、`checkpoints/` 外のファイルは読み込めません。Webの「比較」ページからローカルcheckpointを選べます。本番相当ではdeveloper modeを設定せず、起動時に指定した1モデルだけを使ってください。
+
 ## 制約
 
 小規模な合成データだけでは一般知識、事実性、長文理解、複雑な推論は身につきません。出力が不自然、反復的、または誤っている可能性があります。改善は学習済みモデルの流用ではなく、権利確認済みデータの拡充、重複削除、応答品質評価、モデル規模と学習stepの段階的増加で行います。

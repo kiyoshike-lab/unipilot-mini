@@ -12,3 +12,8 @@ class GenerateRequest(BaseModel):
 
 class ChatRequest(GenerateRequest):
     pass
+
+
+class ModelLoadRequest(BaseModel):
+    checkpoint: str = Field(min_length=1, max_length=500)
+    tokenizer: str = Field(default="tokenizer/vocab-v02-512.json", min_length=1, max_length=500)
