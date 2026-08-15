@@ -1,0 +1,11 @@
+{
+  "model_name": "UniPilot Mini sanity",
+  "vocab_size": 384,
+  "context_length": 64,
+  "embedding_dim": 64,
+  "n_layers": 2,
+  "n_heads": 4,
+  "ffn_dim": 256,
+  "dropout": 0.1,
+  "bias": true
+}

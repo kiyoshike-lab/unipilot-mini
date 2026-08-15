@@ -1,0 +1,39 @@
+{
+  "model": "UniPilot Mini sanity",
+  "parameters": 128768,
+  "device": "cpu",
+  "checkpoint_bytes": 1580903,
+  "estimated_model_bytes_fp32": 515072,
+  "process_rss_after_load_bytes": 217128960,
+  "model_load_rss_delta_bytes": 5156864,
+  "generation_tokens_per_sec_mean": 417.1749453821567,
+  "training": {
+    "step_time_ms": 20.60276000000158,
+    "tokens_per_sec": 20527.832193355043
+  },
+  "samples": [
+    {
+      "prompt": "明日試験です",
+      "text": "ことははにやるとずを分けったい。い\n\n\n\n\n\n\n",
+      "tokens": 35,
+      "seconds": 0.09384399999999005,
+      "tokens_per_sec": 372.95937939563225
+    },
+    {
+      "prompt": "大学の課題が終わらない",
+      "text": "\nめ囆翂その刚作りをがに殗しし",
+      "tokens": 40,
+      "seconds": 0.09877640000013344,
+      "tokens_per_sec": 404.9550297433999
+    },
+    {
+      "prompt": "単位が心配です",
+      "text": "\nをその殗定迠確認はつずをに組あォるを",
+      "tokens": 40,
+      "seconds": 0.08445759999995062,
+      "tokens_per_sec": 473.6104270074379
+    }
+  ],
+  "checkpoint_step": 100,
+  "external_ai_api": "OFF"
+}

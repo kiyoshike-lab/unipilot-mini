@@ -1,0 +1,11 @@
+{
+  "model_name": "UniPilot Mini v0.1",
+  "vocab_size": 512,
+  "context_length": 256,
+  "embedding_dim": 384,
+  "n_layers": 11,
+  "n_heads": 6,
+  "ffn_dim": 1536,
+  "dropout": 0.1,
+  "bias": true
+}

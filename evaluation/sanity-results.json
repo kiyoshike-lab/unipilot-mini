@@ -1,0 +1,50 @@
+{
+  "checkpoint": "checkpoints/sanity-100/checkpoint-step-100.pt",
+  "step": 100,
+  "validation_loss": 3.1485350138800485,
+  "perplexity": 23.3019025997613,
+  "generations": [
+    {
+      "prompt": "今日何をしたらいい？",
+      "answer": "ま杆を確認しの直している、覱っつをを分けとめ",
+      "tokens": 40,
+      "seconds": 0.1296355999993466,
+      "tokens_per_sec": 308.55721730914667
+    },
+    {
+      "prompt": "大学の課題が終わらない",
+      "answer": "\n\nややるとっうめ、敂を見を、ぉ必頡",
+      "tokens": 40,
+      "seconds": 0.09903659999963565,
+      "tokens_per_sec": 403.8910867310384
+    },
+    {
+      "prompt": "明日試験です",
+      "answer": "\nく分けるとでを件堅哅珡囆や訇れぉに免宍",
+      "tokens": 40,
+      "seconds": 0.13170589999936055,
+      "tokens_per_sec": 303.706971367222
+    },
+    {
+      "prompt": "教授に欠席メールを書きたい",
+      "answer": "\n\n\nめ鱉ややるをの杚戉憌は率と安",
+      "tokens": 40,
+      "seconds": 0.09721919999992679,
+      "tokens_per_sec": 411.4413613774864
+    },
+    {
+      "prompt": "単位が心配です",
+      "answer": "、を一から二ば所とし雩認、進めてください。",
+      "tokens": 30,
+      "seconds": 0.07258610000008048,
+      "tokens_per_sec": 413.30227137105777
+    },
+    {
+      "prompt": "レポートはどう進めればいい？",
+      "answer": "\n\n\n\nくを、",
+      "tokens": 11,
+      "seconds": 0.03162849999989703,
+      "tokens_per_sec": 347.78759663075425
+    }
+  ]
+}
