@@ -1,0 +1,281 @@
+{
+  "checkpoint": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-5000.pt",
+  "prompt_count": 10,
+  "recommended": {
+    "config": {
+      "temperature": 0.7,
+      "top_k": 40,
+      "top_p": 0.95,
+      "repetition_penalty": 1.1
+    },
+    "metrics": {
+      "response_not_empty": 1.0,
+      "eos_reached_rate": 0.0,
+      "average_generated_tokens": 64.0,
+      "runaway_generation_rate": 1.0,
+      "repetition_rate": 0.07313255176945564,
+      "japanese_character_ratio": 0.9350934704797182,
+      "keyword_relevance": 23.333333333333332,
+      "category_keyword_hit": 16.0,
+      "forbidden_keyword_hits": 0,
+      "relevance_score": 40.9370714175468,
+      "category_accuracy": 0.2,
+      "meaningful_response_rate": 0.6,
+      "broken_response_rate": 0.0,
+      "email_structure_rate": 0.75,
+      "generation_tokens_per_second": 27.855778846232045
+    }
+  },
+  "all_results": [
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.07313255176945564,
+        "japanese_character_ratio": 0.9350934704797182,
+        "keyword_relevance": 23.333333333333332,
+        "category_keyword_hit": 16.0,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 40.9370714175468,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 27.855778846232045
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.09455175662942523,
+        "japanese_character_ratio": 0.9417666876134618,
+        "keyword_relevance": 16.666666666666664,
+        "category_keyword_hit": 11.000000000000002,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 38.08992514276895,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 28.66556387833341
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.09455175662942523,
+        "japanese_character_ratio": 0.9417666876134618,
+        "keyword_relevance": 16.666666666666664,
+        "category_keyword_hit": 11.000000000000002,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 38.08992514276895,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 28.13142703311133
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 60,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.09455175662942523,
+        "japanese_character_ratio": 0.9417666876134618,
+        "keyword_relevance": 16.666666666666664,
+        "category_keyword_hit": 11.000000000000002,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 38.08992514276895,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 28.24901718428116
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.85,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.08393753992825201,
+        "japanese_character_ratio": 0.9412549210112697,
+        "keyword_relevance": 16.666666666666664,
+        "category_keyword_hit": 11.000000000000002,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 38.08184461747118,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 27.735995302615102
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.0
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.14170259038953076,
+        "japanese_character_ratio": 0.9488830463249067,
+        "keyword_relevance": 13.333333333333332,
+        "category_keyword_hit": 11.499999999999998,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 36.573007164194436,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.5,
+        "generation_tokens_per_second": 28.592287759830164
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.09037717739378773,
+        "japanese_character_ratio": 0.9495132711749366,
+        "keyword_relevance": 13.333333333333332,
+        "category_keyword_hit": 9.5,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 35.589119319303514,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.6,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.25,
+        "generation_tokens_per_second": 27.828962298555382
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.07249845116718182,
+        "japanese_character_ratio": 0.9300863836922068,
+        "keyword_relevance": 13.333333333333332,
+        "category_keyword_hit": 8.5,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 35.403379630526445,
+        "category_accuracy": 0.2,
+        "meaningful_response_rate": 0.5,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 27.729418867821295
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.9,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.11615892349355753,
+        "japanese_character_ratio": 0.956768044511947,
+        "keyword_relevance": 13.333333333333332,
+        "category_keyword_hit": 8.5,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 33.69061490499231,
+        "category_accuracy": 0.1,
+        "meaningful_response_rate": 0.7,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.75,
+        "generation_tokens_per_second": 28.669720994806557
+      }
+    },
+    {
+      "config": {
+        "temperature": 0.5,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1
+      },
+      "metrics": {
+        "response_not_empty": 1.0,
+        "eos_reached_rate": 0.0,
+        "average_generated_tokens": 64.0,
+        "runaway_generation_rate": 1.0,
+        "repetition_rate": 0.08005465648802573,
+        "japanese_character_ratio": 0.95920340624288,
+        "keyword_relevance": 6.666666666666666,
+        "category_keyword_hit": 4.5,
+        "forbidden_keyword_hits": 0,
+        "relevance_score": 29.695574162679424,
+        "category_accuracy": 0.1,
+        "meaningful_response_rate": 0.7,
+        "broken_response_rate": 0.0,
+        "email_structure_rate": 0.25,
+        "generation_tokens_per_second": 28.68768032025804
+      }
+    }
+  ]
+}

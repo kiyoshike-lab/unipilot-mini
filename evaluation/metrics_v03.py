@@ -52,7 +52,10 @@ def semantic_score(answer: str, item: dict) -> dict:
         fields = ["件名" in answer, "先生" in answer, any(word in answer for word in ["欠席", "遅刻", "課題", "相談", "質問", "連絡"]),
                   any(word in answer for word in ["よろしく", "お願いいたします"])]
         email_rate = sum(fields) / 4
-    meaningful = score >= 25 and jp_ratio >= 0.9 and len(answer) >= 15 and forbidden_hits == 0 and not broken
+    # Fluency alone is not evidence that the answer addresses the prompt.  Require
+    # at least one prompt-specific keyword or a correctly inferred category.
+    relevance_evidence = expected_hits > 0 or category_correct
+    meaningful = score >= 25 and relevance_evidence and jp_ratio >= 0.9 and len(answer) >= 15 and forbidden_hits == 0 and not broken
     return {"expected_keyword_rate": expected_hits / max(1, len(expected)), "category_keyword_rate": category_hits / max(1, len(category_words)),
             "forbidden_hits": forbidden_hits, "relevance_score": score, "predicted_category": predicted,
             "category_correct": category_correct, "meaningful_response": meaningful, "email_structure_rate": email_rate}

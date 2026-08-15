@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import os
+import csv
+import json
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -8,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.schemas import ChatRequest, GenerateRequest, ModelLoadRequest
 
 
-app = FastAPI(title="UniPilot Mini Local API", version="0.1.0")
+app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint": None, "payload": {}}
@@ -16,7 +18,7 @@ runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint
 
 def load_runtime(checkpoint: str | None = None):
     from inference.generate import load_model
-    checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT", "checkpoints/unipilot-v02-step-1000/checkpoint-step-1000.pt")
+    checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT", "checkpoints/v03-scratch-001/stage-c/checkpoint-step-5000.pt")
     tokenizer = os.getenv("UNIPILOT_TOKENIZER", "tokenizer/vocab-v02-512.json")
     if not Path(checkpoint).exists():
         return
@@ -41,10 +43,12 @@ def model_info():
     if model is None:
         return {"model": "UniPilot Mini", "loaded": False, "checkpoint": runtime["checkpoint"], "external_ai_api": "OFF"}
     config = model.config
+    manifest = runtime["payload"].get("v03_manifest", {})
     return {"model": config.model_name, "loaded": True, "parameters": model.parameter_count(), "checkpoint": runtime["checkpoint"],
-            "tokenizer": "unipilot-byte-bpe-v1", "vocab_size": runtime["tokenizer"].vocab_size,
+            "tokenizer": manifest.get("tokenizer_version", "unipilot-byte-bpe-v02-512"), "vocab_size": runtime["tokenizer"].vocab_size,
             "context_length": config.context_length, "layers": config.n_layers, "heads": config.n_heads,
             "step": runtime["payload"].get("step", 0), "validation_loss": runtime["payload"].get("loss"),
+            "stage": manifest.get("stage", "legacy"), "experiment_id": manifest.get("experiment_id"),
             "device": runtime["device"], "external_ai_api": "OFF"}
 
 
@@ -91,8 +95,27 @@ def model_load(request: ModelLoadRequest):
 
 @app.get("/evaluation/latest")
 def evaluation_latest():
-    files = list(Path("evaluation").glob("*results*.json"))
+    preferred = Path("evaluation/results-v03-5000.json")
+    files = [path for path in Path("evaluation").glob("*results*.json") if "human" not in path.name]
     if not files: raise HTTPException(404, "no evaluation result found")
-    latest = max(files, key=lambda path: path.stat().st_mtime)
-    import json
+    latest = preferred if preferred.exists() else max(files, key=lambda path: path.stat().st_mtime)
     return {"file": str(latest).replace("\\", "/"), "result": json.loads(latest.read_text(encoding="utf-8"))}
+
+
+@app.get("/evaluation/comparison")
+def evaluation_comparison():
+    path = Path("evaluation/v02-v03-generations.json")
+    if not path.exists(): raise HTTPException(404, "comparison result not found")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+@app.get("/training/latest")
+def training_latest():
+    path = Path("checkpoints/v03-scratch-001/training_log.csv")
+    if not path.exists(): raise HTTPException(404, "v0.3 training log not found")
+    with path.open(encoding="utf-8") as file:
+        rows = list(csv.DictReader(file))
+    if not rows: raise HTTPException(404, "v0.3 training log is empty")
+    row = rows[-1]
+    numeric = {"step", "train_loss", "stage_validation_loss", "tokens_per_second", "eta_seconds"}
+    return {key: float(value) if key in numeric else value for key, value in row.items() if key in numeric | {"stage"}}

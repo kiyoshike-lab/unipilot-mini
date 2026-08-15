@@ -1,0 +1,455 @@
+{
+  "note": "The aggregate v0.2 comparison uses 50 prompts; v0.3 final uses all 300. These 30 pairs use identical prompt IDs.",
+  "metrics": [
+    {
+      "model": "v0.2-1000",
+      "prompts": 50,
+      "validation_loss": 3.66402804851532,
+      "perplexity": 39.01819393555893,
+      "japanese_ratio": 1.0,
+      "repetition_rate": 0.04192430740486044,
+      "keyword_relevance": 2.0,
+      "category_accuracy": 0.04,
+      "meaningful_response_rate": 0.04,
+      "eos_rate": 0.98,
+      "generation_tokens_per_second": 28.94713419714638,
+      "human_score": null
+    },
+    {
+      "model": "v0.3-5000",
+      "prompts": 300,
+      "validation_loss": 0.23333022996084765,
+      "perplexity": 1.2627984243538353,
+      "japanese_ratio": 0.9569520144630342,
+      "repetition_rate": 0.0838867456010683,
+      "keyword_relevance": 23.222222222222225,
+      "category_accuracy": 0.18333333333333332,
+      "meaningful_response_rate": 0.29,
+      "eos_rate": 0.16333333333333333,
+      "generation_tokens_per_second": 23.58292234026479,
+      "human_score": null
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "fixed-v03-assignment-00",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？",
+      "category": "assignment",
+      "v02": "・の料ので、トシめましょう。ので、今日の畏を一後にて憩めです。",
+      "v03": "件名＼状況を整理しましょう。微ります。件名：授業内容についてのご連絡\n\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業について込みです。日の授業に遅容についてです。氏出れるな時間の",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.4872490504612,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-attendance-00",
+      "prompt": "欠席が増えて出席状況が不安です。",
+      "category": "attendance",
+      "v02": "・を一つ決番をも・のグないが見当教ないがばを一手、担当理の順に分の確認すすすめです。",
+      "v03": "まず状況を整理しましょう。焦らず状況を整理しましょう。教質問い手順に分の出勉学の出席条件は授業によって異なります。シラバスと出席記録を確認し、欠席の扱いが不明なら担当教員へ相談してください。最後に条件をもう一度確認してください。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 100.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": true
+      }
+    },
+    {
+      "id": "fixed-v03-credit-00",
+      "prompt": "必修科目の単位が心配です。",
+      "category": "credit",
+      "v02": "畏よ学学の物習、苦手分、苙を始めましょう。に分け、えしましょう。",
+      "v03": "件名＼大○です。件名：授業欠席い手順に分けると進めると進めると進のご連絡\n○○先生\nお世話になっております。○○学験範囲を確認し、名〉です。授業啰名〉です。授業を欠",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.013157894736842,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-email-00",
+      "prompt": "教授に今日休むとメールしたいです。",
+      "category": "email",
+      "v02": "ー・トグない録のがへ位に不担場合は担報は担場習、えるのがへ位に合は早めです。",
+      "v03": "件名トってってって短い手順に分けると進めると進めやすい手順に分けると進めやすいです。ポータ分位条件は明業や大学によって異なります。シラバスで評価方法を確認し、不明点は担当教員や教務へ相談してください。無理な",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 40.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-exam-00",
+      "prompt": "明日試験だけど、まだ何もしていません。",
+      "category": "exam",
+      "v02": "と由めましょう。始ります。 扱う要素は計出条件を確認し、めにめましょう。けてください。",
+      "v03": "件名に分の情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 100.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-general-00",
+      "prompt": "明日の試験は何時ですか？",
+      "category": "general",
+      "v02": "番を決練合は授業に条件は資に拙を一後に位を場合は担当理の録を員へ式いです。",
+      "v03": "報がご連絡\n○○○先生\nお世話がおります。○○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業啰名〉です。授業内容について質問がご質問が",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 23.410237923576062,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-registration-00",
+      "prompt": "履修科目をどう選べばいい？",
+      "category": "registration",
+      "v02": "まとララーと牍にのよ業を始直し、・の計へ相談してください。資出大報牍担当教勅当理ので、今日のないです。 手順は状況に応へ相談してください。",
+      "v03": "件名：状況を整理しましょう。件名：授ってお世話めましょう。心理学の出件名：授業欠ります。○○先生\nお世話になっております。○○学部の〈学生氏名〉です。本日の授業内容について込ご相談しましたく、",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.29362880886427,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-report-00",
+      "prompt": "レポートの構成が決まりません。",
+      "category": "report",
+      "v02": "物時間でラ・の順に練合わっ終を不ので、苅当物めてください。 手順は状況に応ず、学の具とに分のがおすいです。 手順は状況に応へ相談しましょう。",
+      "v03": "件名レロいのートってートって牉トってンタ分けると進めると進めやすい手順に分けると進めやすいです。ログミングの試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-schedule-00",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？",
+      "category": "schedule",
+      "v02": "畏ス、位に分け、ります。 扱う要素は予定を当公屺あわっ結憩めに含めです。",
+      "v03": "\n報に分けると進めると進めると進めやすい手順に分けると進めやすいです。統計学の課題は、提出締切と形式を先に確認します。残り1日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認す",
+      "evaluation": {
+        "v02_relevance": 60.0,
+        "v03_relevance": 40.0,
+        "v02_meaningful": true,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-study-00",
+      "prompt": "試験勉強の計画を立てたいです。",
+      "category": "study",
+      "v02": "と今日、区めましょう。担報めましょう。担当牍に条件も予定に分け、今日ので、畏出大学のむつ、始えます。",
+      "v03": "件名：授業に分けると進めると進めると進めやすいです。質問名：授業内容についてのご相談\n○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業内容について質問がご相談しましましましましま",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.626038781163437,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-assignment-01",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は生物学で、残り8日です。",
+      "category": "assignment",
+      "v02": "明ララ・のな埭んとにります。",
+      "v03": "焦らことをず、確認から始めましょう。日本史の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認すると安心です。研究",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 100.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-attendance-01",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は生物学で、残り8日です。",
+      "category": "attendance",
+      "v02": "グ式出条件は場合わっ残えます。いにえます。",
+      "v03": "焦らのの情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の勉強は、今日の目標を一つに絞り、短い集中と休憩を繰り返します。最後に復習し、次回の計画を一行で",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-credit-01",
+      "prompt": "必修科目の単位が心配です。 科目はプログラミングで、残り8日です。",
+      "category": "credit",
+      "v02": "ーバ出学の業に担当点、位に明日ない条件は担報も予定に条件も順に残場合は位に明日後ると安めにえます。",
+      "v03": "今できるずートってします。件名：遅を整理しましょう。トって物ロいのず、資料集め、構成、執筆中中と休憩を入修に分けると進めやすいです。終わった項目を記録すると進捗が分かります。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": true
+      }
+    },
+    {
+      "id": "fixed-v03-email-01",
+      "prompt": "教授に今日休むとメールしたいです。 科目は情報科学で、残り8日です。",
+      "category": "email",
+      "v02": "・の順ラノ日に・のので、めに分けると安トグを大えます。",
+      "v03": "短い手順に分けると進めるず状況を整理しましょう。ロい手順に分けると進めやすいです。物理学のレポートは、問いの確認、資料集め、構成、執筆、引用確認、推敲に分けます。残り1日なら、まず構成を作るのがおすすめです。分からない",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-exam-01",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は心理学で、残り8日です。",
+      "category": "exam",
+      "v02": "まじ位に条件は担当教始ります。",
+      "v03": "今できることを順番に分けると進めやすいです。心理学の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点は早めに大学へ確認すると安心です。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": true
+      }
+    },
+    {
+      "id": "fixed-v03-general-01",
+      "prompt": "明日の試験は何時ですか？ 科目は日本史で、残り8日です。",
+      "category": "general",
+      "v02": "畏・の順に印を一後に憩めです。",
+      "v03": "本の情報が登の情報が登録されていないため、現在は分かりません。時間割や大学の案内を確認してください。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 100.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": true
+      }
+    },
+    {
+      "id": "fixed-v03-registration-01",
+      "prompt": "履修科目をどう選べばいい？ 科目は教育学で、残り8日です。",
+      "category": "registration",
+      "v02": "締めましょう。畏を確認し、て調整します。",
+      "v03": "今できることをことを順番になって番に分けると進めやすいです。情報科学の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一日ごとの範囲を決めると安心です。予定には",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-report-01",
+      "prompt": "レポートの構成が決まりません。 科目はプログラミングで、残り8日です。",
+      "category": "report",
+      "v02": "、に直合わせスを大ります。",
+      "v03": "件名よって短い手順に分けると進めやすい手順に分けると進めやすいです。ポータ分析の確認、資料集め、構成、執筆、引用確認、推敲に分けます。残り1日なら、まず構成を作るのがおすすめです。無理な場合は担",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 85.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-schedule-01",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は社会学で、残り8日です。",
+      "category": "schedule",
+      "v02": "点、担報めましょう。始場合は担当教当公大学の公場習に漏じて調整します。",
+      "v03": "件名：授業授業大学ご連絡\n\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業を欠席いたします。直について質問出れる見りまこ。おすいです。分からないとないです。無理",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.51905626134301,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-study-01",
+      "prompt": "試験勉強の計画を立てたいです。 科目は情報科学で、残り8日です。",
+      "category": "study",
+      "v02": "畏いです。無理のない量を設むつ担当教式をに単・をめましょう。大当者ず状況応へ相談してください。",
+      "v03": "件名：授業授業欠席のご連絡\n○○先生\nお世話になっております。○○先生\nお世話になっております。○学部の〈学生氏名〉です。本日の授業に遅れる見質内れる見迷します。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.170040485829958,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-assignment-02",
+      "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は会計学で、残り1日です。",
+      "category": "assignment",
+      "v02": "・を一つ直しましょう。番ので、おすめに印ので、おすめにグを勅場合わせるので、今日のないです。",
+      "v03": "件名：授業授業欠席のご連絡\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。授業に遅れる見込みです。お一日ご連絡した。おした。よよよよろしくお",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.335180055401665,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-attendance-02",
+      "prompt": "欠席が増えて出席状況が不安です。 科目は会計学で、残り1日です。",
+      "category": "attendance",
+      "v02": "担当とばを員理ないです。 手順は状況に応じの締合は残ります。",
+      "v03": "焦らず、確認から大学を大学を分けると進めやすいです。試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り8日に合わせて、一日ごとの範囲を決めると安心です。分からない点は早めに大",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-credit-02",
+      "prompt": "必修科目の単位が心配です。 科目は法学で、残り1日です。",
+      "category": "credit",
+      "v02": "礧切を一つ授に構を整むつ決めましょう。の作業を埭む手分ので、今日のがじて業へ相談してください。",
+      "v03": "本質問情報が短い手順に分けると進めると進めやすい手順に分けると進めやすいです。物理学の課題は、提出締切と形式を先に確認します。残り8日なら、未完了の作業を分け、今日の提出準備から始めると進めやすいです。分からない点",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-email-02",
+      "prompt": "教授に今日休むとメールしたいです。 科目は社会学で、残り1日です。",
+      "category": "email",
+      "v02": "を一切を一つ構めましょう。担切に担当理ない、資に提出条件も予定に見当じのが見当理な区めに残当なも確認してください。",
+      "v03": "今できることを順番に分けると進めやすいです。ロいです。ログログラミングの出席条件は授業によって異なります。シラバスと出席記録を確認し、欠席の扱いが不明なら担当教員へ相談してください。終わった項目を記録",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-exam-02",
+      "prompt": "明日試験だけど、まだ何もしていません。 科目は日本史で、残り1日です。",
+      "category": "exam",
+      "v02": "担当者とに条件を確認し、めましょう。のないがじ位に分のがへ相談しましょう。",
+      "v03": "今できることを順短い手順に分けると進めやすいです。物理学の単位条件は授業や大学によって異なります。シラバスで評価方法を確認し、不明点は担当教員や教務へ相談してください。分からない点は早めに大学へ確認すると安心です。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-general-02",
+      "prompt": "明日の試験は何時ですか？ 科目は生物学で、残り1日です。",
+      "category": "general",
+      "v02": "ララト出教啰を不を式グいです。 手順は状況に応じて調整します。",
+      "v03": "焦らの情報が登録されていないため、現在は分かりまず状況を整理しましょう。物理学の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一日ごとの範囲を決めると",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 65.0,
+        "v02_meaningful": false,
+        "v03_meaningful": true,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-registration-02",
+      "prompt": "履修科目をどう選べばいい？ 科目は文学で、残り1日です。",
+      "category": "registration",
+      "v02": "最ので、バ、憩め、憩ララに分の料を一つ憩ノの予定に見当全む後に担当理の物めに単体を確認しましょう。",
+      "v03": "焦らず状況を整理しましょう。統計って短い手順に分けると進めると進めやすいです。英語の試験範囲を確認し、基礎、問題演習、苦手部分の復習という順で勉強します。残り1日に合わせて、一日ごとの範囲を決めると安心です。分からない",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-report-02",
+      "prompt": "レポートの構成が決まりません。 科目は法学で、残り1日です。",
+      "category": "report",
+      "v02": "・を始式出条件も順に条件も確認してください。 手順は状況に応じ日へいです。",
+      "v03": "件名：状況を整理しましょう。件名：授業授業欠備のご連絡\n○○先生\nお世話になっております。○○学部の〈学生氏名〉です。本日の授業に遅れる見です。おすすとの連絡したします。直前のラい",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 24.354066985645932,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    },
+    {
+      "id": "fixed-v03-schedule-02",
+      "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は哲学で、残り1日です。",
+      "category": "schedule",
+      "v02": "締めましょう。えます。",
+      "v03": "焦らず、確認から始めましょう。英語の情報が登録されていないため、現在は分かりません。時間割や大学の案内を確認してください。",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": true
+      }
+    },
+    {
+      "id": "fixed-v03-study-02",
+      "prompt": "試験勉強の計画を立てたいです。 科目は社会学で、残り1日です。",
+      "category": "study",
+      "v02": "礧ります。",
+      "v03": "件名：授業席い手順に分けると進めると進めやすい手順に分けると進めやすいです。ログラミングの単位条件は授業や大学によって異なります。シラバスで評価方法を確認し、不明点は担当教員や教務へ相談してください。終わっ",
+      "evaluation": {
+        "v02_relevance": 25.0,
+        "v03_relevance": 25.0,
+        "v02_meaningful": false,
+        "v03_meaningful": false,
+        "v03_eos_reached": false
+      }
+    }
+  ]
+}

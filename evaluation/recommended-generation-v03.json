@@ -1,0 +1,10 @@
+{
+  "checkpoint": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-5000.pt",
+  "selection_source": "evaluation/generation-search-v03-128.json",
+  "temperature": 0.7,
+  "top_k": 40,
+  "top_p": 0.9,
+  "repetition_penalty": 1.0,
+  "max_new_tokens": 128,
+  "warning": "Semantic relevance improved, but EOS and repetition targets were not met; do not treat this as production-ready."
+}

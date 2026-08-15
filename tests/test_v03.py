@@ -31,6 +31,8 @@ def test_semantic_keyword_and_category_metrics():
     result = semantic_score("試験範囲を確認して復習しましょう。", item)
     assert result["expected_keyword_rate"] == 1 and result["category_correct"] and result["relevance_score"] >= 50
     assert infer_category("課題の締切を確認します")[0] == "assignment"
+    unrelated = semantic_score("これは自然な日本語の文章ですが、内容は別です。", item)
+    assert unrelated["meaningful_response"] is False
 
 
 def test_broken_text_metric():

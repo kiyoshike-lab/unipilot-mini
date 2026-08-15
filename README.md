@@ -165,6 +165,47 @@ python evaluation/plot_v02.py checkpoints/unipilot-v02-step-100/training_log.csv
 
 既存endpointに `GET /checkpoints`、`POST /model/load`、`GET /evaluation/latest` を追加しました。model切替は `UNIPILOT_DEV_MODE=1` のときだけ有効で、`checkpoints/` 外のファイルは読み込めません。Webの「比較」ページからローカルcheckpointを選べます。本番相当ではdeveloper modeを設定せず、起動時に指定した1モデルだけを使ってください。
 
+## v0.3: 意味対応を重視したCurriculum Learning
+
+v0.3は19,814,784 parameters、11 layers、6 heads、context 256、512 vocabを固定し、データ品質、A/B/C curriculum、Stage Cのassistant-only loss、EOS検査、semantic評価だけを追加した版です。外部AIや事前学習済みモデルは使いません。
+
+### 1. データ準備
+
+```powershell
+.\prepare-v03.bat
+```
+
+42,000件をStage A General Japanese 20,000、Stage B University Text 10,000、Stage C University Conversation 12,000へ分けます。validatorは重複、split leak、format、intent、会話EOS、品質scoreを検査します。
+
+### 2. Stage A / B / C
+
+```powershell
+.\train-v03-stage-a.bat
+.\train-v03-stage-b.bat
+.\train-v03-stage-c.bat
+```
+
+各batは直前stageのcheckpointをresumeし、1,000、2,000、5,000 stepで保存します。scratch実験とv0.2継続実験は `--initialization scratch-v03` / `--initialization resume-v02` で区別できます。学習済み5kから長期実験を行うコマンドは `train-v03-10000.bat`、`train-v03-20000.bat`、`train-v03-30000.bat`、`train-v03-50000.bat` です。ただし現在の5kモデルはEOS・反復の停止条件を満たさないため、データ改善前の実行は推奨しません。
+
+### 3. 評価
+
+```powershell
+.\evaluate-v03.bat
+python -m evaluation.build_v03_artifacts
+```
+
+固定300問でexpected/category/forbidden keyword、0–100 relevance、category accuracy、meaningful response、EOS、runaway、反復、日本語比率、broken text、メール構造を測定します。人手評価は `evaluation/human-eval-v03.json` の50件へ0–4を入力できます。
+
+### 4. チャットとWeb
+
+```powershell
+.\chat-v03.bat
+.\start-api.bat
+.\start-web.bat
+```
+
+開発者ページには最終評価、training monitor、v0.2/v0.3比較を表示します。APIには `GET /training/latest` と `GET /evaluation/comparison` もあります。最終5kモデルは意味的関連性が改善しましたが、日本語の混線、反復、途中終了が残る研究用checkpointです。
+
 ## 制約
 
 小規模な合成データだけでは一般知識、事実性、長文理解、複雑な推論は身につきません。出力が不自然、反復的、または誤っている可能性があります。改善は学習済みモデルの流用ではなく、権利確認済みデータの拡充、重複削除、応答品質評価、モデル規模と学習stepの段階的増加で行います。
