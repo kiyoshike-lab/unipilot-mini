@@ -1,0 +1,36 @@
+{
+  "total_samples": 50000,
+  "unique_samples": 50000,
+  "duplicates": 0,
+  "duplicate_rate": 0.0,
+  "near_duplicate_pairs_by_canonical_form": 0,
+  "average_input_length": 107.43578,
+  "average_output_length": 120.48856,
+  "category_distribution": {
+    "professor_email": 3000,
+    "exams": 4500,
+    "attendance": 2100,
+    "credits": 3000,
+    "general_japanese": 20000,
+    "presentations": 1500,
+    "campus_life": 1500,
+    "assignments": 4500,
+    "schedule": 1500,
+    "study_planning": 4500,
+    "registration": 2400,
+    "reports": 1500
+  },
+  "kind_distribution": {
+    "dialogue": 20000,
+    "university_text": 10000,
+    "general": 20000
+  },
+  "split_distribution": {
+    "train": 45000,
+    "validation": 2500,
+    "test": 2500
+  },
+  "invalid_samples": 0,
+  "template_family_leaks": 0,
+  "leaked_families": []
+}
