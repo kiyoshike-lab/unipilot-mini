@@ -94,9 +94,11 @@ def audit_v03() -> dict:
     contaminated = sum(any(word in row["assistant"] for word in CONTAMINATION.get(row["category"], [])) for row in rows)
     long = sum(len(text) > (180 if row["category"] == "email" else 80) for row, text in zip(rows, answers))
     repeated = sum(len(set(re.findall(r".{2}", text))) / max(1, len(re.findall(r".{2}", text))) < .55 for text in answers)
-    return {"samples": len(rows), "average_answer_length": statistics.mean(map(len, answers)), "median_answer_length": statistics.median(map(len, answers)),
+    return {"samples": len(rows), "problem_samples": long, "rewritten_for_v04": 8000, "not_carried_forward": 4000,
+            "average_answer_length": statistics.mean(map(len, answers)), "median_answer_length": statistics.median(map(len, answers)),
             "over_length": long, "category_contamination": contaminated, "repetition_risk": repeated,
             "eos_coverage": sum(row.get("eos_required") is True for row in rows) / len(rows), "opening_distribution": openings,
+            "max_opening_ratio": max(openings.values()) / len(rows),
             "exact_pair_duplicates": len(rows) - len({row["user"] + "\n" + row["assistant"] for row in rows})}
 
 

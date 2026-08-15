@@ -17,3 +17,9 @@ class ChatRequest(GenerateRequest):
 class ModelLoadRequest(BaseModel):
     checkpoint: str = Field(min_length=1, max_length=500)
     tokenizer: str = Field(default="tokenizer/vocab-v02-512.json", min_length=1, max_length=500)
+
+
+class HumanScoreRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=100)
+    score: int = Field(ge=0, le=4)
+    notes: str = Field(default="", max_length=1000)

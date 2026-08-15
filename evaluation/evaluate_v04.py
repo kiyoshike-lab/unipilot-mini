@@ -57,7 +57,7 @@ def main():
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     base_human = json.loads(Path("evaluation/human-eval-v03.json").read_text(encoding="utf-8"))
     by_id = {row["id"]: row for row in rows}
-    human = [{**item, "model_answer": by_id[item["id"]]["answer"]} for item in base_human]
+    human = [{**item, "model_answer": by_id.get(item["id"], {}).get("answer", item.get("model_answer", ""))} for item in base_human]
     output.with_name(output.stem + "-human.json").write_text(json.dumps(human, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({key: value for key, value in result.items() if key != "generations"}, ensure_ascii=True, indent=2))
 

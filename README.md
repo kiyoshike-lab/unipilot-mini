@@ -209,3 +209,16 @@ python -m evaluation.build_v03_artifacts
 ## 制約
 
 小規模な合成データだけでは一般知識、事実性、長文理解、複雑な推論は身につきません。出力が不自然、反復的、または誤っている可能性があります。改善は学習済みモデルの流用ではなく、権利確認済みデータの拡充、重複削除、応答品質評価、モデル規模と学習stepの段階的増加で行います。
+
+## v0.4: Clean ConversationとEOS学習
+
+v0.4はモデル構造と512 vocabを固定し、Stage B checkpointから8,000件のClean Stage Cだけを最大2,000 step学習します。
+
+```powershell
+.\prepare-v04.bat
+.\train-v04.bat
+.\evaluate-v04.bat
+.\chat-v04.bat
+```
+
+CleanデータはEOS・自然終止100%、pair重複0、カテゴリ混線0、最大opening 7.44%です。推奨設定はEOS weight 1.5、temperature 0.7、top-k 40、top-p 0.9、repetition penalty 1.1、max new tokens 96です。開発者ページではv0.3/v0.4比較と人手評価50問の0–4採点ができます。人間が採点するまではHuman Scoreを`PENDING`として扱います。
