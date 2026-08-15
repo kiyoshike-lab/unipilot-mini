@@ -1,0 +1,59 @@
+{
+  "dataset_version": "unipilot-dataset-v03",
+  "total_samples": 42000,
+  "stage_counts": {
+    "A": 20000,
+    "B": 10000,
+    "C": 12000
+  },
+  "split_counts": {
+    "test": 2100,
+    "train": 37800,
+    "validation": 2100
+  },
+  "kind_counts": {
+    "general": 20000,
+    "university_text": 10000,
+    "conversation": 12000
+  },
+  "category_counts": {
+    "general_japanese": 20000,
+    "attendance": 1900,
+    "email": 2200,
+    "exam": 2800,
+    "credit": 2000,
+    "registration": 1900,
+    "report": 1900,
+    "assignment": 2800,
+    "study": 2600,
+    "schedule": 2000,
+    "general": 1900
+  },
+  "intents": {
+    "NONE": 20000,
+    "ASK_ATTENDANCE": 1900,
+    "ASK_EMAIL": 2200,
+    "ASK_EXAM_PLAN": 2800,
+    "ASK_CREDIT": 2000,
+    "ASK_REGISTRATION": 1900,
+    "ASK_REPORT": 1900,
+    "ASK_DEADLINE": 2800,
+    "ASK_STUDY_PLAN": 2600,
+    "ASK_DAILY_PLAN": 2000,
+    "ASK_UNKNOWN_INFO": 1900
+  },
+  "exact_duplicates": 0,
+  "template_family_leaks": 0,
+  "invalid_samples": 0,
+  "conversation_eos_valid_rate": 1.0,
+  "unique_answer_rate": 0.13416666666666666,
+  "average_quality": {
+    "length_score": 0.9989714285714286,
+    "diversity_score": 0.870843505032977,
+    "keyword_alignment": 0.5238095238095238
+  },
+  "fixed_prompts": 300,
+  "fixed_prompt_schema_errors": 0,
+  "human_eval_items": 50,
+  "invalid_examples": []
+}

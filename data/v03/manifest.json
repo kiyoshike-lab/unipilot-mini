@@ -1,0 +1,32 @@
+{
+  "dataset": "unipilot-dataset-v03",
+  "source_dataset": "unipilot-dataset-v02",
+  "source_samples": 50000,
+  "final_samples": 42000,
+  "excluded_from_v02_target": 8000,
+  "stages": {
+    "stage_a": 20000,
+    "stage_b": 10000,
+    "stage_c": 12000
+  },
+  "splits": {
+    "train": 37800,
+    "validation": 2100,
+    "test": 2100
+  },
+  "intents": [
+    "ASK_ATTENDANCE",
+    "ASK_CREDIT",
+    "ASK_DAILY_PLAN",
+    "ASK_DEADLINE",
+    "ASK_EMAIL",
+    "ASK_EXAM_PLAN",
+    "ASK_REGISTRATION",
+    "ASK_REPORT",
+    "ASK_STUDY_PLAN",
+    "ASK_UNKNOWN_INFO"
+  ],
+  "license": "CC0-1.0",
+  "generator": "local rule-based",
+  "seed": 3032026
+}

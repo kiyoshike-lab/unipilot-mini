@@ -1,0 +1,4802 @@
+[
+  {
+    "id": "fixed-v03-assignment-00",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-01",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は生物学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-02",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は会計学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-03",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は基礎演習で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-04",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は統計学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-05",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は化学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-06",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は情報科学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-07",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は社会学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-08",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は哲学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-09",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目はデータ分析で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-10",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は微積分で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-11",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は英語で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-12",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は経済学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-13",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目はプログラミングで、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-14",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は法学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-15",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は教育学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-16",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は文学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-17",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は線形代数で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-18",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は物理学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-19",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は心理学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-20",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は日本史で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-21",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は生物学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-22",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は会計学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-23",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は基礎演習で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-24",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は統計学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-25",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は化学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-26",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は情報科学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-27",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は社会学で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-28",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目は哲学で、残り1日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-assignment-29",
+    "prompt": "課題が3つあるんだけど、どれからやればいい？ 科目はデータ分析で、残り8日です。",
+    "category": "assignment",
+    "intent": "ASK_DEADLINE",
+    "expected_keywords": [
+      "課題",
+      "締切",
+      "提出"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-00",
+    "prompt": "明日試験だけど、まだ何もしていません。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-01",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は心理学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-02",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は日本史で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-03",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は生物学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-04",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は会計学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-05",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は基礎演習で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-06",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は統計学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-07",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は化学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-08",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は情報科学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-09",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は社会学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-10",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は哲学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-11",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目はデータ分析で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-12",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は微積分で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-13",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は英語で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-14",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は経済学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-15",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目はプログラミングで、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-16",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は法学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-17",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は教育学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-18",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は文学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-19",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は線形代数で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-20",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は物理学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-21",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は心理学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-22",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は日本史で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-23",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は生物学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-24",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は会計学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-25",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は基礎演習で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-26",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は統計学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-27",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は化学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-28",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は情報科学で、残り1日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-exam-29",
+    "prompt": "明日試験だけど、まだ何もしていません。 科目は社会学で、残り8日です。",
+    "category": "exam",
+    "intent": "ASK_EXAM_PLAN",
+    "expected_keywords": [
+      "試験",
+      "範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-00",
+    "prompt": "必修科目の単位が心配です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-01",
+    "prompt": "必修科目の単位が心配です。 科目はプログラミングで、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-02",
+    "prompt": "必修科目の単位が心配です。 科目は法学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-03",
+    "prompt": "必修科目の単位が心配です。 科目は教育学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-04",
+    "prompt": "必修科目の単位が心配です。 科目は文学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-05",
+    "prompt": "必修科目の単位が心配です。 科目は線形代数で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-06",
+    "prompt": "必修科目の単位が心配です。 科目は物理学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-07",
+    "prompt": "必修科目の単位が心配です。 科目は心理学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-08",
+    "prompt": "必修科目の単位が心配です。 科目は日本史で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-09",
+    "prompt": "必修科目の単位が心配です。 科目は生物学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-10",
+    "prompt": "必修科目の単位が心配です。 科目は会計学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-11",
+    "prompt": "必修科目の単位が心配です。 科目は基礎演習で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-12",
+    "prompt": "必修科目の単位が心配です。 科目は統計学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-13",
+    "prompt": "必修科目の単位が心配です。 科目は化学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-14",
+    "prompt": "必修科目の単位が心配です。 科目は情報科学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-15",
+    "prompt": "必修科目の単位が心配です。 科目は社会学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-16",
+    "prompt": "必修科目の単位が心配です。 科目は哲学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-17",
+    "prompt": "必修科目の単位が心配です。 科目はデータ分析で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-18",
+    "prompt": "必修科目の単位が心配です。 科目は微積分で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-19",
+    "prompt": "必修科目の単位が心配です。 科目は英語で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-20",
+    "prompt": "必修科目の単位が心配です。 科目は経済学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-21",
+    "prompt": "必修科目の単位が心配です。 科目はプログラミングで、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-22",
+    "prompt": "必修科目の単位が心配です。 科目は法学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-23",
+    "prompt": "必修科目の単位が心配です。 科目は教育学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-24",
+    "prompt": "必修科目の単位が心配です。 科目は文学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-25",
+    "prompt": "必修科目の単位が心配です。 科目は線形代数で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-26",
+    "prompt": "必修科目の単位が心配です。 科目は物理学で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-27",
+    "prompt": "必修科目の単位が心配です。 科目は心理学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-28",
+    "prompt": "必修科目の単位が心配です。 科目は日本史で、残り1日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-credit-29",
+    "prompt": "必修科目の単位が心配です。 科目は生物学で、残り8日です。",
+    "category": "credit",
+    "intent": "ASK_CREDIT",
+    "expected_keywords": [
+      "単位",
+      "シラバス",
+      "教務"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-00",
+    "prompt": "教授に今日休むとメールしたいです。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-01",
+    "prompt": "教授に今日休むとメールしたいです。 科目は情報科学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-02",
+    "prompt": "教授に今日休むとメールしたいです。 科目は社会学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-03",
+    "prompt": "教授に今日休むとメールしたいです。 科目は哲学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-04",
+    "prompt": "教授に今日休むとメールしたいです。 科目はデータ分析で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-05",
+    "prompt": "教授に今日休むとメールしたいです。 科目は微積分で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-06",
+    "prompt": "教授に今日休むとメールしたいです。 科目は英語で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-07",
+    "prompt": "教授に今日休むとメールしたいです。 科目は経済学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-08",
+    "prompt": "教授に今日休むとメールしたいです。 科目はプログラミングで、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-09",
+    "prompt": "教授に今日休むとメールしたいです。 科目は法学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-10",
+    "prompt": "教授に今日休むとメールしたいです。 科目は教育学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-11",
+    "prompt": "教授に今日休むとメールしたいです。 科目は文学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-12",
+    "prompt": "教授に今日休むとメールしたいです。 科目は線形代数で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-13",
+    "prompt": "教授に今日休むとメールしたいです。 科目は物理学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-14",
+    "prompt": "教授に今日休むとメールしたいです。 科目は心理学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-15",
+    "prompt": "教授に今日休むとメールしたいです。 科目は日本史で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-16",
+    "prompt": "教授に今日休むとメールしたいです。 科目は生物学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-17",
+    "prompt": "教授に今日休むとメールしたいです。 科目は会計学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-18",
+    "prompt": "教授に今日休むとメールしたいです。 科目は基礎演習で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-19",
+    "prompt": "教授に今日休むとメールしたいです。 科目は統計学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-20",
+    "prompt": "教授に今日休むとメールしたいです。 科目は化学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-21",
+    "prompt": "教授に今日休むとメールしたいです。 科目は情報科学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-22",
+    "prompt": "教授に今日休むとメールしたいです。 科目は社会学で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-23",
+    "prompt": "教授に今日休むとメールしたいです。 科目は哲学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-24",
+    "prompt": "教授に今日休むとメールしたいです。 科目はデータ分析で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-25",
+    "prompt": "教授に今日休むとメールしたいです。 科目は微積分で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-26",
+    "prompt": "教授に今日休むとメールしたいです。 科目は英語で、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-27",
+    "prompt": "教授に今日休むとメールしたいです。 科目は経済学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-28",
+    "prompt": "教授に今日休むとメールしたいです。 科目はプログラミングで、残り1日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-email-29",
+    "prompt": "教授に今日休むとメールしたいです。 科目は法学で、残り8日です。",
+    "category": "email",
+    "intent": "ASK_EMAIL",
+    "expected_keywords": [
+      "件名",
+      "先生",
+      "連絡"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "試験範囲"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-00",
+    "prompt": "欠席が増えて出席状況が不安です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-01",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は生物学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-02",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は会計学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-03",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は基礎演習で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-04",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は統計学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-05",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は化学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-06",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は情報科学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-07",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は社会学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-08",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は哲学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-09",
+    "prompt": "欠席が増えて出席状況が不安です。 科目はデータ分析で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-10",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は微積分で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-11",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は英語で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-12",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は経済学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-13",
+    "prompt": "欠席が増えて出席状況が不安です。 科目はプログラミングで、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-14",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は法学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-15",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は教育学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-16",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は文学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-17",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は線形代数で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-18",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は物理学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-19",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は心理学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-20",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は日本史で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-21",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は生物学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-22",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は会計学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-23",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は基礎演習で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-24",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は統計学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-25",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は化学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-26",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は情報科学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-27",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は社会学で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-28",
+    "prompt": "欠席が増えて出席状況が不安です。 科目は哲学で、残り1日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-attendance-29",
+    "prompt": "欠席が増えて出席状況が不安です。 科目はデータ分析で、残り8日です。",
+    "category": "attendance",
+    "intent": "ASK_ATTENDANCE",
+    "expected_keywords": [
+      "出席",
+      "欠席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "必ず単位",
+      "出席率70%"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-00",
+    "prompt": "履修科目をどう選べばいい？",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-01",
+    "prompt": "履修科目をどう選べばいい？ 科目は教育学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-02",
+    "prompt": "履修科目をどう選べばいい？ 科目は文学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-03",
+    "prompt": "履修科目をどう選べばいい？ 科目は線形代数で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-04",
+    "prompt": "履修科目をどう選べばいい？ 科目は物理学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-05",
+    "prompt": "履修科目をどう選べばいい？ 科目は心理学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-06",
+    "prompt": "履修科目をどう選べばいい？ 科目は日本史で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-07",
+    "prompt": "履修科目をどう選べばいい？ 科目は生物学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-08",
+    "prompt": "履修科目をどう選べばいい？ 科目は会計学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-09",
+    "prompt": "履修科目をどう選べばいい？ 科目は基礎演習で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-10",
+    "prompt": "履修科目をどう選べばいい？ 科目は統計学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-11",
+    "prompt": "履修科目をどう選べばいい？ 科目は化学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-12",
+    "prompt": "履修科目をどう選べばいい？ 科目は情報科学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-13",
+    "prompt": "履修科目をどう選べばいい？ 科目は社会学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-14",
+    "prompt": "履修科目をどう選べばいい？ 科目は哲学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-15",
+    "prompt": "履修科目をどう選べばいい？ 科目はデータ分析で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-16",
+    "prompt": "履修科目をどう選べばいい？ 科目は微積分で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-17",
+    "prompt": "履修科目をどう選べばいい？ 科目は英語で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-18",
+    "prompt": "履修科目をどう選べばいい？ 科目は経済学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-19",
+    "prompt": "履修科目をどう選べばいい？ 科目はプログラミングで、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-20",
+    "prompt": "履修科目をどう選べばいい？ 科目は法学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-21",
+    "prompt": "履修科目をどう選べばいい？ 科目は教育学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-22",
+    "prompt": "履修科目をどう選べばいい？ 科目は文学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-23",
+    "prompt": "履修科目をどう選べばいい？ 科目は線形代数で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-24",
+    "prompt": "履修科目をどう選べばいい？ 科目は物理学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-25",
+    "prompt": "履修科目をどう選べばいい？ 科目は心理学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-26",
+    "prompt": "履修科目をどう選べばいい？ 科目は日本史で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-27",
+    "prompt": "履修科目をどう選べばいい？ 科目は生物学で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-28",
+    "prompt": "履修科目をどう選べばいい？ 科目は会計学で、残り1日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-registration-29",
+    "prompt": "履修科目をどう選べばいい？ 科目は基礎演習で、残り8日です。",
+    "category": "registration",
+    "intent": "ASK_REGISTRATION",
+    "expected_keywords": [
+      "履修",
+      "必修",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-00",
+    "prompt": "レポートの構成が決まりません。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-01",
+    "prompt": "レポートの構成が決まりません。 科目はプログラミングで、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-02",
+    "prompt": "レポートの構成が決まりません。 科目は法学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-03",
+    "prompt": "レポートの構成が決まりません。 科目は教育学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-04",
+    "prompt": "レポートの構成が決まりません。 科目は文学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-05",
+    "prompt": "レポートの構成が決まりません。 科目は線形代数で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-06",
+    "prompt": "レポートの構成が決まりません。 科目は物理学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-07",
+    "prompt": "レポートの構成が決まりません。 科目は心理学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-08",
+    "prompt": "レポートの構成が決まりません。 科目は日本史で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-09",
+    "prompt": "レポートの構成が決まりません。 科目は生物学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-10",
+    "prompt": "レポートの構成が決まりません。 科目は会計学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-11",
+    "prompt": "レポートの構成が決まりません。 科目は基礎演習で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-12",
+    "prompt": "レポートの構成が決まりません。 科目は統計学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-13",
+    "prompt": "レポートの構成が決まりません。 科目は化学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-14",
+    "prompt": "レポートの構成が決まりません。 科目は情報科学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-15",
+    "prompt": "レポートの構成が決まりません。 科目は社会学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-16",
+    "prompt": "レポートの構成が決まりません。 科目は哲学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-17",
+    "prompt": "レポートの構成が決まりません。 科目はデータ分析で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-18",
+    "prompt": "レポートの構成が決まりません。 科目は微積分で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-19",
+    "prompt": "レポートの構成が決まりません。 科目は英語で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-20",
+    "prompt": "レポートの構成が決まりません。 科目は経済学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-21",
+    "prompt": "レポートの構成が決まりません。 科目はプログラミングで、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-22",
+    "prompt": "レポートの構成が決まりません。 科目は法学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-23",
+    "prompt": "レポートの構成が決まりません。 科目は教育学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-24",
+    "prompt": "レポートの構成が決まりません。 科目は文学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-25",
+    "prompt": "レポートの構成が決まりません。 科目は線形代数で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-26",
+    "prompt": "レポートの構成が決まりません。 科目は物理学で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-27",
+    "prompt": "レポートの構成が決まりません。 科目は心理学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-28",
+    "prompt": "レポートの構成が決まりません。 科目は日本史で、残り1日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-report-29",
+    "prompt": "レポートの構成が決まりません。 科目は生物学で、残り8日です。",
+    "category": "report",
+    "intent": "ASK_REPORT",
+    "expected_keywords": [
+      "レポート",
+      "構成",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "履修登録",
+      "欠席メール"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-00",
+    "prompt": "試験勉強の計画を立てたいです。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-01",
+    "prompt": "試験勉強の計画を立てたいです。 科目は情報科学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-02",
+    "prompt": "試験勉強の計画を立てたいです。 科目は社会学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-03",
+    "prompt": "試験勉強の計画を立てたいです。 科目は哲学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-04",
+    "prompt": "試験勉強の計画を立てたいです。 科目はデータ分析で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-05",
+    "prompt": "試験勉強の計画を立てたいです。 科目は微積分で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-06",
+    "prompt": "試験勉強の計画を立てたいです。 科目は英語で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-07",
+    "prompt": "試験勉強の計画を立てたいです。 科目は経済学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-08",
+    "prompt": "試験勉強の計画を立てたいです。 科目はプログラミングで、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-09",
+    "prompt": "試験勉強の計画を立てたいです。 科目は法学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-10",
+    "prompt": "試験勉強の計画を立てたいです。 科目は教育学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-11",
+    "prompt": "試験勉強の計画を立てたいです。 科目は文学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-12",
+    "prompt": "試験勉強の計画を立てたいです。 科目は線形代数で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-13",
+    "prompt": "試験勉強の計画を立てたいです。 科目は物理学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-14",
+    "prompt": "試験勉強の計画を立てたいです。 科目は心理学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-15",
+    "prompt": "試験勉強の計画を立てたいです。 科目は日本史で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-16",
+    "prompt": "試験勉強の計画を立てたいです。 科目は生物学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-17",
+    "prompt": "試験勉強の計画を立てたいです。 科目は会計学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-18",
+    "prompt": "試験勉強の計画を立てたいです。 科目は基礎演習で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-19",
+    "prompt": "試験勉強の計画を立てたいです。 科目は統計学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-20",
+    "prompt": "試験勉強の計画を立てたいです。 科目は化学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-21",
+    "prompt": "試験勉強の計画を立てたいです。 科目は情報科学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-22",
+    "prompt": "試験勉強の計画を立てたいです。 科目は社会学で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-23",
+    "prompt": "試験勉強の計画を立てたいです。 科目は哲学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-24",
+    "prompt": "試験勉強の計画を立てたいです。 科目はデータ分析で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-25",
+    "prompt": "試験勉強の計画を立てたいです。 科目は微積分で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-26",
+    "prompt": "試験勉強の計画を立てたいです。 科目は英語で、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-27",
+    "prompt": "試験勉強の計画を立てたいです。 科目は経済学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-28",
+    "prompt": "試験勉強の計画を立てたいです。 科目はプログラミングで、残り1日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-study-29",
+    "prompt": "試験勉強の計画を立てたいです。 科目は法学で、残り8日です。",
+    "category": "study",
+    "intent": "ASK_STUDY_PLAN",
+    "expected_keywords": [
+      "勉強",
+      "復習",
+      "計画"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "履修登録"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-00",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-01",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は社会学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-02",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は哲学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-03",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目はデータ分析で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-04",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は微積分で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-05",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は英語で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-06",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は経済学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-07",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目はプログラミングで、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-08",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は法学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-09",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は教育学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-10",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は文学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-11",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は線形代数で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-12",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は物理学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-13",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は心理学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-14",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は日本史で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-15",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は生物学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-16",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は会計学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-17",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は基礎演習で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-18",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は統計学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-19",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は化学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-20",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は情報科学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-21",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は社会学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-22",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は哲学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-23",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目はデータ分析で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-24",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は微積分で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-25",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は英語で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-26",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は経済学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-27",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目はプログラミングで、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-28",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は法学で、残り1日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-schedule-29",
+    "prompt": "締切と試験が重なっています。今日の優先順位は？ 科目は教育学で、残り8日です。",
+    "category": "schedule",
+    "intent": "ASK_DAILY_PLAN",
+    "expected_keywords": [
+      "予定",
+      "締切",
+      "優先"
+    ],
+    "forbidden_keywords": [
+      "欠席メール",
+      "必ず単位"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-00",
+    "prompt": "明日の試験は何時ですか？",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-01",
+    "prompt": "明日の試験は何時ですか？ 科目は日本史で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-02",
+    "prompt": "明日の試験は何時ですか？ 科目は生物学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-03",
+    "prompt": "明日の試験は何時ですか？ 科目は会計学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-04",
+    "prompt": "明日の試験は何時ですか？ 科目は基礎演習で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-05",
+    "prompt": "明日の試験は何時ですか？ 科目は統計学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-06",
+    "prompt": "明日の試験は何時ですか？ 科目は化学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-07",
+    "prompt": "明日の試験は何時ですか？ 科目は情報科学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-08",
+    "prompt": "明日の試験は何時ですか？ 科目は社会学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-09",
+    "prompt": "明日の試験は何時ですか？ 科目は哲学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-10",
+    "prompt": "明日の試験は何時ですか？ 科目はデータ分析で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-11",
+    "prompt": "明日の試験は何時ですか？ 科目は微積分で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-12",
+    "prompt": "明日の試験は何時ですか？ 科目は英語で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-13",
+    "prompt": "明日の試験は何時ですか？ 科目は経済学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-14",
+    "prompt": "明日の試験は何時ですか？ 科目はプログラミングで、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-15",
+    "prompt": "明日の試験は何時ですか？ 科目は法学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-16",
+    "prompt": "明日の試験は何時ですか？ 科目は教育学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-17",
+    "prompt": "明日の試験は何時ですか？ 科目は文学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-18",
+    "prompt": "明日の試験は何時ですか？ 科目は線形代数で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-19",
+    "prompt": "明日の試験は何時ですか？ 科目は物理学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-20",
+    "prompt": "明日の試験は何時ですか？ 科目は心理学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-21",
+    "prompt": "明日の試験は何時ですか？ 科目は日本史で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-22",
+    "prompt": "明日の試験は何時ですか？ 科目は生物学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-23",
+    "prompt": "明日の試験は何時ですか？ 科目は会計学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-24",
+    "prompt": "明日の試験は何時ですか？ 科目は基礎演習で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-25",
+    "prompt": "明日の試験は何時ですか？ 科目は統計学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-26",
+    "prompt": "明日の試験は何時ですか？ 科目は化学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-27",
+    "prompt": "明日の試験は何時ですか？ 科目は情報科学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-28",
+    "prompt": "明日の試験は何時ですか？ 科目は社会学で、残り1日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "fixed-v03-general-29",
+    "prompt": "明日の試験は何時ですか？ 科目は哲学で、残り8日です。",
+    "category": "general",
+    "intent": "ASK_UNKNOWN_INFO",
+    "expected_keywords": [
+      "確認",
+      "情報",
+      "分かりません"
+    ],
+    "forbidden_keywords": [
+      "午前9時です",
+      "午後1時です"
+    ],
+    "held_out": true
+  }
+]
