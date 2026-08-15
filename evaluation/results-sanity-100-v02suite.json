@@ -1,0 +1,405 @@
+{
+  "model": "UniPilot Mini sanity",
+  "checkpoint": "checkpoints/sanity-100/checkpoint-step-100.pt",
+  "step": 100,
+  "validation_loss": 4.416992628574372,
+  "perplexity": 82.84675936092381,
+  "generation_settings": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 64
+  },
+  "metrics": {
+    "response_not_empty": 1.0,
+    "eos_reached": 0.2,
+    "repetition_rate": 0.0,
+    "average_length": 26.95,
+    "keyword_relevance": 0.0,
+    "japanese_character_ratio": 0.9935165692007797,
+    "repetition_failures": 0
+  },
+  "generations": [
+    {
+      "id": "fixed-v02-assignments-00",
+      "category": "assignments",
+      "prompt": "課題と締切の相談です。社会学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "課題",
+        "締切",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "\n最やしてください。",
+      "tokens": 14,
+      "seconds": 0.10996100000011211,
+      "tokens_per_sec": 127.31786724371119,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-attendance-00",
+      "category": "attendance",
+      "prompt": "出席状況の相談です。日本史について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "出席",
+        "シラバス",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\n\n\n\n\n\n\n\nれ宍うかがな緡穄ると琚",
+      "tokens": 64,
+      "seconds": 0.2416905999998562,
+      "tokens_per_sec": 264.8013617411603,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-campus_life-00",
+      "category": "campus_life",
+      "prompt": "大学生活の相談の相談です。社会学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "相談",
+        "予定",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "\n今\n確認、れことやれず杸安件を確認ししたい。\n\n\nを杆時业にその堆",
+      "tokens": 64,
+      "seconds": 0.1770845000000918,
+      "tokens_per_sec": 361.409383655638,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-credits-00",
+      "category": "credits",
+      "prompt": "単位の確認の相談です。心理学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "単位",
+        "シラバス",
+        "心理学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\nや条、箙、还つを確認ォをし、その後れつ拡窓彠頋",
+      "tokens": 64,
+      "seconds": 0.1757711999998719,
+      "tokens_per_sec": 364.10970625475983,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-exams-00",
+      "category": "exams",
+      "prompt": "試験の相談です。化学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "試験",
+        "復習",
+        "化学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n算冩める业れから今早めはめめにを心堚確認めると一か、定",
+      "tokens": 64,
+      "seconds": 0.19173469999986992,
+      "tokens_per_sec": 333.794560922167,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-professor_email-00",
+      "category": "professor_email",
+      "prompt": "教授への連絡の相談です。教育学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "件名",
+        "連絡",
+        "教育学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\n忋、確認れへ熆集なを2二を污頸をつつし",
+      "tokens": 53,
+      "seconds": 0.16476299999976618,
+      "tokens_per_sec": 321.6741622820367,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9473684210526315,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-registration-00",
+      "category": "registration",
+      "prompt": "履修登録の相談です。法学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "履修",
+        "シラバス",
+        "法学"
+      ],
+      "held_out": true,
+      "answer": "\n\n今週そのを囆めめ三三醆め点とししを円篘と溌せる直しすに",
+      "tokens": 64,
+      "seconds": 0.19078999999965163,
+      "tokens_per_sec": 335.44735049068015,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-reports-00",
+      "category": "reports",
+      "prompt": "レポートの相談です。心理学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "レポート",
+        "構成",
+        "心理学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\n\n\nまず憆限み逆一ぉをや、必かれれか集めジ",
+      "tokens": 64,
+      "seconds": 0.18426089999957185,
+      "tokens_per_sec": 347.33359057808093,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-schedule-00",
+      "category": "schedule",
+      "prompt": "予定管理の相談です。情報科学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "予定",
+        "締切",
+        "情報科学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\n\n迷教、を確認をず焙一か\nながを一つシの",
+      "tokens": 64,
+      "seconds": 0.15965800000049057,
+      "tokens_per_sec": 400.856831476051,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-study_planning-00",
+      "category": "study_planning",
+      "prompt": "勉強計画の相談です。哲学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "計画",
+        "復習",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "す。\n\n\nす逝の1分入り熩をかとことを一か直てください。",
+      "tokens": 41,
+      "seconds": 0.10972960000071907,
+      "tokens_per_sec": 373.64576194327987,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.96,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-assignments-01",
+      "category": "assignments",
+      "prompt": "課題と締切の相談です。哲学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "課題",
+        "締切",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "\nす。\n\n\n\n箆を一ををはをに行し、は安汱を三を確認とず忛雠巆う決め",
+      "tokens": 64,
+      "seconds": 0.16687020000063058,
+      "tokens_per_sec": 383.53163117056346,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-attendance-01",
+      "category": "attendance",
+      "prompt": "出席状況の相談です。生物学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "出席",
+        "シラバス",
+        "生物学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n今汆にず价錌、必せ杆不を確認し",
+      "tokens": 45,
+      "seconds": 0.13135500000043976,
+      "tokens_per_sec": 342.58307639487913,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-campus_life-01",
+      "category": "campus_life",
+      "prompt": "大学生活の相談の相談です。哲学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "相談",
+        "予定",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\nす。\n\n\n\n\n\n\n\nと、かず忶忂珛とへ覈不るで",
+      "tokens": 64,
+      "seconds": 0.32906090000051336,
+      "tokens_per_sec": 194.49287350730566,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-credits-01",
+      "category": "credits",
+      "prompt": "単位の確認の相談です。日本史のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "単位",
+        "シラバス",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\n\n\n最刌にるれがはら篷を宱宓と憩をつ捰ら週やめが",
+      "tokens": 64,
+      "seconds": 0.16800919999968755,
+      "tokens_per_sec": 380.93152041744753,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-exams-01",
+      "category": "exams",
+      "prompt": "試験の相談です。情報科学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "試験",
+        "復習",
+        "情報科学"
+      ],
+      "held_out": true,
+      "answer": "\n\n緾をにあ締めはつと欅堓行しているとない彆確認にをてはるを",
+      "tokens": 64,
+      "seconds": 0.18067619999965245,
+      "tokens_per_sec": 354.2248508664844,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-professor_email-01",
+      "category": "professor_email",
+      "prompt": "教授への連絡の相談です。文学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "件名",
+        "連絡",
+        "文学"
+      ],
+      "held_out": true,
+      "answer": "\n最初の1分頝のを覉めの斐曆めつやうぱめする三をて必囆を",
+      "tokens": 64,
+      "seconds": 0.1768474000000424,
+      "tokens_per_sec": 361.8939266281815,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9629629629629629,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-registration-01",
+      "category": "registration",
+      "prompt": "履修登録の相談です。教育学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "履修",
+        "シラバス",
+        "教育学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n佉迗を嚿宙にが、ギれつを兴には初の",
+      "tokens": 64,
+      "seconds": 0.2597446999998283,
+      "tokens_per_sec": 246.39578786416934,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-reports-01",
+      "category": "reports",
+      "prompt": "レポートの相談です。日本史のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "レポート",
+        "構成",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n箎をとそのるとと必直して緐仿進めめを安かをに弑が、の",
+      "tokens": 64,
+      "seconds": 0.20902039999964472,
+      "tokens_per_sec": 306.19020918584397,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-schedule-01",
+      "category": "schedule",
+      "prompt": "予定管理の相談です。社会学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "予定",
+        "締切",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "\n\n\n\n\nやるとは早めめるは逛い兠めに惙傐を作を確認ををを囱",
+      "tokens": 64,
+      "seconds": 0.16074589999971067,
+      "tokens_per_sec": 398.1439028934187,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-study_planning-01",
+      "category": "study_planning",
+      "prompt": "勉強計画の相談です。データ分析のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "計画",
+        "復習",
+        "データ分析"
+      ],
+      "held_out": true,
+      "answer": "\n\n今るばが一ことを誋やるつ、ぱやる緛とと手盔しましょう。ずをくてはめめ",
+      "tokens": 64,
+      "seconds": 0.18168919999970967,
+      "tokens_per_sec": 352.24988606974034,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    }
+  ]
+}

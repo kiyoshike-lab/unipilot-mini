@@ -45,6 +45,9 @@ TOPICS = {
     "professor_email": "教授への連絡", "registration": "履修登録", "attendance": "出席状況",
     "reports": "レポート", "presentations": "プレゼン", "campus_life": "大学生活の相談", "schedule": "予定管理",
 }
+EVAL_KEYWORDS = {"assignments": ["課題", "締切"], "exams": ["試験", "復習"], "credits": ["単位", "シラバス"],
+                 "registration": ["履修", "シラバス"], "professor_email": ["件名", "連絡"], "attendance": ["出席", "シラバス"],
+                 "reports": ["レポート", "構成"], "schedule": ["予定", "締切"], "study_planning": ["計画", "復習"], "campus_life": ["相談", "予定"]}
 
 
 def split_for_family(family: int) -> str:
@@ -191,7 +194,7 @@ def fixed_prompts() -> list[dict]:
                 "{days}日後までに{subject}の準備をしたいです。最初の一歩を教えて。",
             ][index % 3].format(subject=subject, days=days)
             prompts.append({"id": f"fixed-v02-{category}-{index:02d}", "category": category, "prompt": f"{TOPICS[category]}の相談です。{wording}",
-                            "keywords": [TOPICS[category], subject], "held_out": True})
+                            "keywords": EVAL_KEYWORDS[category] + [subject], "held_out": True})
     return prompts
 
 

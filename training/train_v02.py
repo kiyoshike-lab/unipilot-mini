@@ -94,7 +94,14 @@ def main():
         payload = torch.load(args.resume, map_location=device, weights_only=False)
         model.load_state_dict(payload["model_state"]); optimizer.load_state_dict(payload["optimizer_state"])
         global_step = int(payload["step"])
-    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lambda step: warmup_cosine_multiplier(step + global_step, train_cfg["warmup_steps"], max_steps))
+    if global_step:
+        # A staged resume starts from the checkpoint LR and decays smoothly; it must not jump back to the base LR.
+        for group in optimizer.param_groups: group["initial_lr"] = group["lr"]
+        remaining_steps = max(1, max_steps - global_step)
+        scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lambda step: warmup_cosine_multiplier(step, 0, remaining_steps))
+    else:
+        # The first 100-step stage performs warmup; later stages continue from the saved LR.
+        scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lambda step: warmup_cosine_multiplier(step, train_cfg["warmup_steps"], max_steps))
     amp = device == "cuda" and train_cfg["precision"] in {"auto", "fp16"}
     scaler = torch.amp.GradScaler("cuda", enabled=amp)
     log_path = output_dir / "training_log.csv"

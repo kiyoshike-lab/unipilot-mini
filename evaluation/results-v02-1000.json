@@ -1,0 +1,405 @@
+{
+  "model": "UniPilot Mini v0.2-1000",
+  "checkpoint": "checkpoints/unipilot-v02-step-1000/checkpoint-step-1000.pt",
+  "step": 1000,
+  "validation_loss": 2.7282154262065887,
+  "perplexity": 15.305548752387377,
+  "generation_settings": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 64
+  },
+  "metrics": {
+    "response_not_empty": 1.0,
+    "eos_reached": 0.25,
+    "repetition_rate": 0.019278569974001118,
+    "average_length": 48.85,
+    "keyword_relevance": 0.0,
+    "japanese_character_ratio": 0.9863139824338095,
+    "repetition_failures": 0
+  },
+  "generations": [
+    {
+      "id": "fixed-v02-assignments-00",
+      "category": "assignments",
+      "prompt": "課題と締切の相談です。社会学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "課題",
+        "締切",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "無理なめに進めです。物おすると安ず、担当を確認しましょう。最つえます。",
+      "tokens": 38,
+      "seconds": 1.2542272000000594,
+      "tokens_per_sec": 30.2975409877877,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-attendance-00",
+      "category": "attendance",
+      "prompt": "出席状況の相談です。日本史について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "出席",
+        "シラバス",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "まばなります。 扱う要素は野ラめやすい練習の録切にて調整します。",
+      "tokens": 37,
+      "seconds": 1.0676336999995328,
+      "tokens_per_sec": 34.65608101356878,
+      "eos_reached": true,
+      "repetition_rate": 0.03448275862068961,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-campus_life-00",
+      "category": "campus_life",
+      "prompt": "大学生活の相談の相談です。社会学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "相談",
+        "予定",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "畏出条件も物おすいです。",
+      "tokens": 16,
+      "seconds": 0.3751220000003741,
+      "tokens_per_sec": 42.652790292182395,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-credits-00",
+      "category": "credits",
+      "prompt": "単位の確認の相談です。心理学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "単位",
+        "シラバス",
+        "心理学"
+      ],
+      "held_out": true,
+      "answer": "物めです。物へ漟締切料を一初に条件を確認し、学のグないまへスを一後に位に憩め、ラバ出",
+      "tokens": 64,
+      "seconds": 2.147040100000595,
+      "tokens_per_sec": 29.808479124345308,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-exams-00",
+      "category": "exams",
+      "prompt": "試験の相談です。化学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "試験",
+        "復習",
+        "化学"
+      ],
+      "held_out": true,
+      "answer": "最初に牍を確認すすめや析出大ずけ、畏よ出夎学はも予定に分の順く式を確認し、苦手分の",
+      "tokens": 64,
+      "seconds": 1.8597539000002143,
+      "tokens_per_sec": 34.413155418032794,
+      "eos_reached": false,
+      "repetition_rate": 0.02564102564102566,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-professor_email-00",
+      "category": "professor_email",
+      "prompt": "教授への連絡の相談です。教育学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "件名",
+        "連絡",
+        "教育学"
+      ],
+      "held_out": true,
+      "answer": "終わっためれおすすめです。番を決部ス、を確認し、残ります。 手順は状況に応あと用物・作業からない合は",
+      "tokens": 64,
+      "seconds": 1.9637219000005643,
+      "tokens_per_sec": 32.591172915055644,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-registration-00",
+      "category": "registration",
+      "prompt": "履修登録の相談です。法学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "履修",
+        "シラバス",
+        "法学"
+      ],
+      "held_out": true,
+      "answer": "今から剩ります。終は20%からも練習安具・資出弟む手するの作業に条件を確認し、憩ばさ情当理の",
+      "tokens": 64,
+      "seconds": 1.8037566000002698,
+      "tokens_per_sec": 35.4815056532519,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9347826086956522,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-reports-00",
+      "category": "reports",
+      "prompt": "レポートの相談です。心理学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "レポート",
+        "構成",
+        "心理学"
+      ],
+      "held_out": true,
+      "answer": "練習、ば進めに条件も礎日に分けると室えるを行う想定です。",
+      "tokens": 28,
+      "seconds": 0.8057903000008082,
+      "tokens_per_sec": 34.748494738608684,
+      "eos_reached": true,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-schedule-00",
+      "category": "schedule",
+      "prompt": "予定管理の相談です。情報科学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "予定",
+        "締切",
+        "情報科学"
+      ],
+      "held_out": true,
+      "answer": "無理なります。統めに条件は早ミむ後にすい畏出始当わっ明日付て調整します。",
+      "tokens": 51,
+      "seconds": 1.8648384999996779,
+      "tokens_per_sec": 27.348212727273065,
+      "eos_reached": true,
+      "repetition_rate": 0.02941176470588236,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-study_planning-00",
+      "category": "study_planning",
+      "prompt": "勉強計画の相談です。哲学について相談です。1日以内に何を優先するといい？",
+      "keywords": [
+        "計画",
+        "復習",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "ト学について考えるときは、期限まで20%からでも予定に分けると安理ない物時間でも締めましょう。大じ日めです。無理の題くとがおすめ、残",
+      "tokens": 64,
+      "seconds": 2.00601480000023,
+      "tokens_per_sec": 31.904051754749098,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9545454545454546,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-assignments-01",
+      "category": "assignments",
+      "prompt": "課題と締切の相談です。哲学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "課題",
+        "締切",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "無理なります。 扱う要素は物バ出大直習宅を使い、目標は「作業からでも礧えるのがへ行くの後にについて考えるときは、期限まで1日、進捗ラ時間でも畏スは25分け",
+      "tokens": 64,
+      "seconds": 2.1621022999997876,
+      "tokens_per_sec": 29.60081953569278,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9605263157894737,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-attendance-01",
+      "category": "attendance",
+      "prompt": "出席状況の相談です。生物学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "出席",
+        "シラバス",
+        "生物学"
+      ],
+      "held_out": true,
+      "answer": "締も確認してください。休残めましょう。哲を中ス法を書く始めましょう。問いです。無理のがへ相談しましょう。内目に分け、できるのつ憩",
+      "tokens": 64,
+      "seconds": 2.0212805999999546,
+      "tokens_per_sec": 31.663095168479547,
+      "eos_reached": false,
+      "repetition_rate": 0.11290322580645162,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-campus_life-01",
+      "category": "campus_life",
+      "prompt": "大学生活の相談の相談です。哲学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "相談",
+        "予定",
+        "哲学"
+      ],
+      "held_out": true,
+      "answer": "無理ない物めです。短むつ、も順を決めましょう。返すすいです。無を訓を確認しましょう。締切い時間で苅当牍に名条件も",
+      "tokens": 64,
+      "seconds": 2.183496099999502,
+      "tokens_per_sec": 29.310791990887733,
+      "eos_reached": false,
+      "repetition_rate": 0.07407407407407407,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-credits-01",
+      "category": "credits",
+      "prompt": "単位の確認の相談です。日本史のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "単位",
+        "シラバス",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "自安ラず状況を整理しましょう。練習宅を使い、目標は「資料理の録学は20%です。番を決めです。無理の順珐出条件も畏らへ行",
+      "tokens": 64,
+      "seconds": 2.050499399999353,
+      "tokens_per_sec": 31.21190866967344,
+      "eos_reached": false,
+      "repetition_rate": 0.01754385964912286,
+      "japanese_character_ratio": 0.9491525423728814,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-exams-01",
+      "category": "exams",
+      "prompt": "試験の相談です。情報科学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "試験",
+        "復習",
+        "情報科学"
+      ],
+      "held_out": true,
+      "answer": "物を付ー出屋えるの順いです。終法を決めたい」です。最手野日から式人めましょう。具合わっためやすると",
+      "tokens": 64,
+      "seconds": 2.3547257000000172,
+      "tokens_per_sec": 27.17938654171037,
+      "eos_reached": false,
+      "repetition_rate": 0.021276595744680882,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-professor_email-01",
+      "category": "professor_email",
+      "prompt": "教授への連絡の相談です。文学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "件名",
+        "連絡",
+        "文学"
+      ],
+      "held_out": true,
+      "answer": "締めです。 扱う要素は予定に番を汋直習、でも牍に名と物めです。 手順は状況に応おすいまみ分ので、畏いです。最手分の大学の",
+      "tokens": 64,
+      "seconds": 2.0991229000001113,
+      "tokens_per_sec": 30.488924683731767,
+      "eos_reached": false,
+      "repetition_rate": 0.0535714285714286,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-registration-01",
+      "category": "registration",
+      "prompt": "履修登録の相談です。教育学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "履修",
+        "シラバス",
+        "教育学"
+      ],
+      "held_out": true,
+      "answer": "今から進めれず記位学は早めに畏出条件も範囲と今日学のーラ習、大ります。 扱う要素は終は屺めましょう。進捗",
+      "tokens": 64,
+      "seconds": 2.402193300000363,
+      "tokens_per_sec": 26.642318917461942,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-reports-01",
+      "category": "reports",
+      "prompt": "レポートの相談です。日本史のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "レポート",
+        "構成",
+        "日本史"
+      ],
+      "held_out": true,
+      "answer": "く・遅を使い、目標は「作業からでも番を決めれず、今日の順に分ので、資料理の予定に条件を確認し、一つ、でも予定にまずけると宅を",
+      "tokens": 64,
+      "seconds": 2.3537258999995174,
+      "tokens_per_sec": 27.190931620378194,
+      "eos_reached": false,
+      "repetition_rate": 0.01666666666666672,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-schedule-01",
+      "category": "schedule",
+      "prompt": "予定管理の相談です。社会学のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "予定",
+        "締切",
+        "社会学"
+      ],
+      "held_out": true,
+      "answer": "焦初手分録ン料を中むつ憩時間でも順番を決めましょう。進捗がこ理な大項目に条件を確認し、今日は200%です。結出",
+      "tokens": 64,
+      "seconds": 2.2985412999996697,
+      "tokens_per_sec": 27.843745944442762,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 0.9272727272727272,
+      "keyword_relevance": 0.0
+    },
+    {
+      "id": "fixed-v02-study_planning-01",
+      "category": "study_planning",
+      "prompt": "勉強計画の相談です。データ分析のことで困っています。残り8日ならどう動けばいい？",
+      "keywords": [
+        "計画",
+        "復習",
+        "データ分析"
+      ],
+      "held_out": true,
+      "answer": "牍に名に分のがず、今日を決めてください。終法をも一後に憅を使い、目標は「資料を中シしましょう。料じの作業から始",
+      "tokens": 64,
+      "seconds": 2.6033583999997063,
+      "tokens_per_sec": 24.583630129454022,
+      "eos_reached": false,
+      "repetition_rate": 0.0,
+      "japanese_character_ratio": 1.0,
+      "keyword_relevance": 0.0
+    }
+  ]
+}
