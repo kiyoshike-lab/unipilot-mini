@@ -27,6 +27,7 @@ def generate_text(model, tokenizer, prompt: str, max_new_tokens: int = 100, temp
                   top_k: int = 40, top_p: float = 0.95, repetition_penalty: float = 1.1):
     ids = tokenizer.encode(prompt)
     prompt_length = len(ids)
+    eos_reached = False
     started = time.perf_counter()
     device = next(model.parameters()).device
     for _ in range(max_new_tokens):
@@ -36,10 +37,12 @@ def generate_text(model, tokenizer, prompt: str, max_new_tokens: int = 100, temp
         next_id = sample_next_token(next_logits, temperature, top_k, top_p)
         ids.append(next_id)
         if next_id == tokenizer.eos_id:
+            eos_reached = True
             break
     elapsed = time.perf_counter() - started
     generated = ids[prompt_length:]
-    return tokenizer.decode(generated, skip_special=True), {"tokens": len(generated), "seconds": elapsed, "tokens_per_sec": len(generated) / max(elapsed, 1e-9)}
+    return tokenizer.decode(generated, skip_special=True), {"tokens": len(generated), "seconds": elapsed,
+        "tokens_per_sec": len(generated) / max(elapsed, 1e-9), "eos_reached": eos_reached}
 
 
 def model_summary(model, device, payload):

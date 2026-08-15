@@ -61,3 +61,48 @@ def split_documents(documents: list[str], validation_ratio: float = 0.1, seed: i
     random.Random(seed).shuffle(documents)
     boundary = max(1, int(len(documents) * (1 - validation_ratio)))
     return documents[:boundary], documents[boundary:]
+
+
+class V02LanguageModelDataset(Dataset):
+    """Pre-split v0.2 records with optional assistant-response-only loss masking."""
+
+    def __init__(self, path: str | Path, tokenizer, context_length: int, assistant_only: bool = True, kinds: set[str] | None = None, max_records: int = 0):
+        self.context_length = context_length
+        self.samples: list[tuple[list[int], list[int], str]] = []
+        self.kind_counts: dict[str, int] = {}
+        for line in Path(path).read_text(encoding="utf-8").splitlines():
+            row = json.loads(line)
+            kind = row.get("kind", "general")
+            if kinds and kind not in kinds:
+                continue
+            if kind == "dialogue":
+                prefix = f"<BOS><USER>\n{row['user']}\n<ASSISTANT>\n"
+                prefix_ids = tokenizer.encode(prefix)
+                ids = prefix_ids + tokenizer.encode(row["assistant"]) + [tokenizer.eos_id]
+                first_learned_target = len(prefix_ids)
+            else:
+                ids = tokenizer.encode(row["text"], add_bos=True, add_eos=True)
+                first_learned_target = 1
+            for start in range(0, max(1, len(ids) - 1), context_length):
+                chunk = ids[start:start + context_length + 1]
+                if len(chunk) < 2:
+                    continue
+                inputs, targets = chunk[:-1], chunk[1:]
+                if assistant_only and kind == "dialogue":
+                    for local_index in range(len(targets)):
+                        target_absolute_index = start + local_index + 1
+                        if target_absolute_index < first_learned_target:
+                            targets[local_index] = -100
+                if all(target == -100 for target in targets):
+                    continue
+                padding = context_length - len(inputs)
+                self.samples.append((inputs + [tokenizer.pad_id] * padding, targets + [-100] * padding, kind))
+                self.kind_counts[kind] = self.kind_counts.get(kind, 0) + 1
+            if max_records and sum(self.kind_counts.values()) >= max_records:
+                break
+
+    def __len__(self): return len(self.samples)
+
+    def __getitem__(self, index):
+        inputs, targets, kind = self.samples[index]
+        return torch.tensor(inputs), torch.tensor(targets), kind

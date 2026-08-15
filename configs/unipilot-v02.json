@@ -1,0 +1,38 @@
+{
+  "model": {
+    "model_name": "UniPilot Mini v0.2",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "training": {
+    "batch_size": "auto",
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1,
+    "warmup_steps": 100,
+    "max_steps": 1000,
+    "eval_interval": 100,
+    "checkpoint_interval": 100,
+    "validation_batches": 20,
+    "max_train_records_for_staged_run": 2000,
+    "max_validation_records": 200,
+    "gradient_clip": 1.0,
+    "seed": 42,
+    "device": "auto",
+    "precision": "auto",
+    "assistant_only_loss": true,
+    "mix": {"general": 0.4, "university_text": 0.3, "dialogue": 0.3}
+  },
+  "data": {
+    "train": "data/train/v02.jsonl",
+    "validation": "data/validation/v02.jsonl",
+    "test": "data/test/v02.jsonl",
+    "tokenizer": "tokenizer/vocab-v02-512.json"
+  }
+}
