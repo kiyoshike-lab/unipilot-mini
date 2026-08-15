@@ -1,0 +1,16 @@
+{
+  "model": {"model_name": "UniPilot Mini v0.4", "vocab_size": 512, "context_length": 256, "embedding_dim": 384, "n_layers": 11, "n_heads": 6, "ffn_dim": 1536, "dropout": 0.1, "bias": true},
+  "tokenizer": "tokenizer/vocab-v02-512.json",
+  "dataset": "data/v04/stage_c",
+  "dataset_version": "unipilot-clean-conversation-v04",
+  "evaluation_version": "unipilot-eval-v03-300",
+  "base_checkpoint": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-2000.pt",
+  "seed": 42,
+  "learning_rate": 0.00005,
+  "warmup_steps": 50,
+  "weight_decay": 0.1,
+  "gradient_clip": 1.0,
+  "batch_size": 1,
+  "checkpoint_steps": [500, 1000, 2000],
+  "generation": {"temperature": 0.7, "top_k": 40, "top_p": 0.9, "repetition_penalty": 1.1, "max_new_tokens": 64}
+}
