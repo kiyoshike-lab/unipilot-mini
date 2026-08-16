@@ -12,7 +12,7 @@ export default function Home() {
     const question = input.trim(); setMessages(value => [...value, { role: "user", text: question }]); setInput(""); setBusy(true); setError("");
     try {
       const response = await fetch(`${API}/chat`, { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: question, max_new_tokens: 20, temperature: .7, top_k: 40, top_p: .9, repetition_penalty: 1.0 }) });
+        body: JSON.stringify({ prompt: question, max_new_tokens: 64, temperature: .7, top_k: 40, top_p: .9, repetition_penalty: 1.0 }) });
       if (!response.ok) throw new Error(`Local API error: ${response.status}`);
       const data = await response.json(); setMessages(value => [...value, { role: "assistant", text: data.text || "応答が空でした。" }]);
     } catch (reason) { setError(reason instanceof Error ? reason.message : "Local APIに接続できません"); }
