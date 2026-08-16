@@ -11,7 +11,7 @@ from api.schemas import ChatRequest, GenerateRequest, HumanScoreRequest, ModelLo
 
 
 app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://unipilot-mini-pjgy.vercel.app"],
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint": None, "payload": {}}
 
