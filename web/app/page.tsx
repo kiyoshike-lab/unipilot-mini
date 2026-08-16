@@ -19,7 +19,7 @@ export default function Home() {
     finally { setBusy(false); }
   }
   return <main className="mx-auto flex min-h-[calc(100vh-65px)] max-w-5xl flex-col px-4 py-8">
-    <header className="mb-7 flex items-end justify-between"><div><p className="mb-1 text-xs font-semibold uppercase tracking-[.24em] text-cyan-400">University assistant</p>
+    <header className="mb-7 flex items-end justify-between"><div><p className="mb-1 text-xs font-semibold uppercase tracking-[.24em] text-cyan-400">University Assistant</p>
       <h1 className="text-3xl font-bold">大学生活専用AI</h1></div><div className="rounded-full border border-emerald-700/60 bg-emerald-950/50 px-3 py-1 text-sm text-emerald-300"><span className="mr-2">●</span>Local</div></header>
     <section className="flex-1 space-y-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-2xl shadow-cyan-950/20">
       {messages.map((message, index) => <div key={index} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
