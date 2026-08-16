@@ -28,9 +28,6 @@ def load_model(checkpoint_path: str, tokenizer_path: str = "tokenizer/vocab.json
     import gc
     gc.collect()
 
-    if resolved_device == "cpu":
-        torch.set_num_threads(1)
-
     return model, tokenizer, resolved_device, payload
 
 
