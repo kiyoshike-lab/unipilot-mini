@@ -56,7 +56,12 @@ def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     from inference.generate import generate_text
-    prompt = f"<BOS><USER>\n{request.prompt}\n<ASSISTANT>\n" if chat else request.prompt
+    system_text = "あなたは大学生活を支援する完全ローカルのUniPilot Miniです。情報がない場合は推測せず、確認方法を案内します。"
+    prompt = (
+        f"<BOS><SYSTEM>\n{system_text}\n"
+        f"<USER>\n{request.prompt}\n"
+        f"<ASSISTANT>\n"
+    ) if chat else request.prompt
     text, metrics = generate_text(runtime["model"], runtime["tokenizer"], prompt, request.max_new_tokens,
                                   request.temperature, request.top_k, request.top_p, request.repetition_penalty)
     return {"text": text, "model": "UniPilot Mini", "local": True, "metrics": metrics}
