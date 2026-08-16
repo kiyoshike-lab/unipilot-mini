@@ -18,7 +18,19 @@ def load_model(checkpoint_path: str, tokenizer_path: str = "tokenizer/vocab.json
     config = ModelConfig(**payload["config"])
     tokenizer = BPETokenizer.load(tokenizer_path)
     model = UniPilotTransformer(config).to(resolved_device)
-    model.load_state_dict(payload["model_state"]); model.eval()
+    model.load_state_dict(payload["model_state"])
+    model.eval()
+
+    # Inferenceでは学習用optimizer stateと重複model stateを保持しない
+    payload.pop("optimizer_state", None)
+    payload.pop("model_state", None)
+
+    import gc
+    gc.collect()
+
+    if resolved_device == "cpu":
+        torch.set_num_threads(1)
+
     return model, tokenizer, resolved_device, payload
 
 
