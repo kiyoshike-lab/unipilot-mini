@@ -1,0 +1,635 @@
+{
+  "training_examples": 420,
+  "evaluation_questions": 300,
+  "results": [
+    {
+      "method": "rules",
+      "questions": 300,
+      "accuracy": 0.84,
+      "mean_latency_ms": 0.013437200000529023,
+      "per_category_accuracy": {
+        "ai_usage": 0.8571428571428571,
+        "assignment": 0.9166666666666666,
+        "attendance": 1.0,
+        "campus_life": 1.0,
+        "career": 0.813953488372093,
+        "citation": 0.64,
+        "credit": 1.0,
+        "exam": 0.631578947368421,
+        "general": 1.0,
+        "gpa": 1.0,
+        "internship": 0.8333333333333334,
+        "lateness": 1.0,
+        "math": 0.8333333333333334,
+        "presentation": 0.9166666666666666,
+        "professor_email": 1.0,
+        "programming": 1.0,
+        "registration": 1.0,
+        "report": 0.8947368421052632,
+        "scholarship": 0.8461538461538461,
+        "statistics": 0.0,
+        "study": 0.64
+      },
+      "top_confusions": [
+        {
+          "expected": "citation",
+          "predicted": "general",
+          "count": 8
+        },
+        {
+          "expected": "career",
+          "predicted": "general",
+          "count": 7
+        },
+        {
+          "expected": "exam",
+          "predicted": "attendance",
+          "count": 6
+        },
+        {
+          "expected": "study",
+          "predicted": "exam",
+          "count": 5
+        },
+        {
+          "expected": "statistics",
+          "predicted": "study",
+          "count": 5
+        },
+        {
+          "expected": "study",
+          "predicted": "general",
+          "count": 3
+        },
+        {
+          "expected": "report",
+          "predicted": "general",
+          "count": 2
+        },
+        {
+          "expected": "scholarship",
+          "predicted": "general",
+          "count": 2
+        },
+        {
+          "expected": "exam",
+          "predicted": "general",
+          "count": 1
+        },
+        {
+          "expected": "assignment",
+          "predicted": "general",
+          "count": 1
+        },
+        {
+          "expected": "presentation",
+          "predicted": "general",
+          "count": 1
+        },
+        {
+          "expected": "internship",
+          "predicted": "general",
+          "count": 1
+        }
+      ],
+      "mistakes": [
+        {
+          "id": "v06-eval-000-0",
+          "prompt": "試験勉強を効率よく進めるには？ 要点を短く教えてください。",
+          "expected": "study",
+          "predicted": "exam"
+        },
+        {
+          "id": "v06-eval-000-1",
+          "prompt": "大学生活について質問です。試験勉強を効率よく進めるには？",
+          "expected": "study",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-000-2",
+          "prompt": "試験勉強を効率よく進めるには？ まず何を確認すべきですか。",
+          "expected": "study",
+          "predicted": "exam"
+        },
+        {
+          "id": "v06-eval-000-3",
+          "prompt": "試験勉強を効率よく進めるには？ 一般的な対応を教えてください。",
+          "expected": "study",
+          "predicted": "exam"
+        },
+        {
+          "id": "v06-eval-000-4",
+          "prompt": "試験勉強を効率よく進めるには？ 根拠なく条件を作らずに答えてください。",
+          "expected": "study",
+          "predicted": "exam"
+        },
+        {
+          "id": "v06-eval-000-5",
+          "prompt": "試験勉強を効率よく進めるには？ 結論と次の行動を教えてください。",
+          "expected": "study",
+          "predicted": "exam"
+        },
+        {
+          "id": "v06-eval-002-1",
+          "prompt": "大学生活について質問です。集中できないときはどうする？",
+          "expected": "study",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-003-1",
+          "prompt": "大学生活について質問です。試験まで一週間です。どう計画する？",
+          "expected": "exam",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-004-0",
+          "prompt": "試験を欠席しそうです 要点を短く教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-1",
+          "prompt": "大学生活について質問です。試験を欠席しそうです",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-2",
+          "prompt": "試験を欠席しそうです まず何を確認すべきですか。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-3",
+          "prompt": "試験を欠席しそうです 一般的な対応を教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-4",
+          "prompt": "試験を欠席しそうです 根拠なく条件を作らずに答えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-5",
+          "prompt": "試験を欠席しそうです 結論と次の行動を教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-008-1",
+          "prompt": "大学生活について質問です。課題が多くて終わりません",
+          "expected": "assignment",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-010-1",
+          "prompt": "大学生活について質問です。レポートは何から書けばいい？",
+          "expected": "report",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-013-1",
+          "prompt": "大学生活について質問です。Webサイトを引用するときの注意は？",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-018-1",
+          "prompt": "大学生活について質問です。卒論のテーマが決まりません",
+          "expected": "report",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-019-1",
+          "prompt": "大学生活について質問です。プレゼン資料を見やすくしたい",
+          "expected": "presentation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-024-1",
+          "prompt": "大学生活について質問です。インターンはどう探す？",
+          "expected": "internship",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-025-1",
+          "prompt": "大学生活について質問です。就職活動は何から始める？",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-026-1",
+          "prompt": "大学生活について質問です。ESがうまく書けません",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-027-1",
+          "prompt": "大学生活について質問です。面接の練習方法を教えて",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-028-1",
+          "prompt": "大学生活について質問です。自己PRには何を書く？",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-029-1",
+          "prompt": "大学生活について質問です。資格は取った方がいい？",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-030-1",
+          "prompt": "大学生活について質問です。TOEICの勉強方法を教えて",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-031-1",
+          "prompt": "大学生活について質問です。留学を考えています",
+          "expected": "career",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-032-1",
+          "prompt": "大学生活について質問です。奨学金について知りたい",
+          "expected": "scholarship",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-033-1",
+          "prompt": "大学生活について質問です。学費の支払いが厳しいです",
+          "expected": "scholarship",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-035-1",
+          "prompt": "大学生活について質問です。時間管理が苦手です",
+          "expected": "study",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-039-1",
+          "prompt": "大学生活について質問です。AIを勉強にどう活用すればいい？",
+          "expected": "ai_usage",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-0",
+          "prompt": "ネットの情報が正しいか見分けたい 要点を短く教えてください。",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-1",
+          "prompt": "大学生活について質問です。ネットの情報が正しいか見分けたい",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-2",
+          "prompt": "ネットの情報が正しいか見分けたい まず何を確認すべきですか。",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-3",
+          "prompt": "ネットの情報が正しいか見分けたい 一般的な対応を教えてください。",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-4",
+          "prompt": "ネットの情報が正しいか見分けたい 根拠なく条件を作らずに答えてください。",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-040-5",
+          "prompt": "ネットの情報が正しいか見分けたい 結論と次の行動を教えてください。",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-041-1",
+          "prompt": "大学生活について質問です。著作権で気を付けることは？",
+          "expected": "citation",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-042-0",
+          "prompt": "統計の勉強は何から始める？ 要点を短く教えてください。",
+          "expected": "statistics",
+          "predicted": "study"
+        },
+        {
+          "id": "v06-eval-042-1",
+          "prompt": "大学生活について質問です。統計の勉強は何から始める？",
+          "expected": "statistics",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-042-2",
+          "prompt": "統計の勉強は何から始める？ まず何を確認すべきですか。",
+          "expected": "statistics",
+          "predicted": "study"
+        },
+        {
+          "id": "v06-eval-042-3",
+          "prompt": "統計の勉強は何から始める？ 一般的な対応を教えてください。",
+          "expected": "statistics",
+          "predicted": "study"
+        },
+        {
+          "id": "v06-eval-042-4",
+          "prompt": "統計の勉強は何から始める？ 根拠なく条件を作らずに答えてください。",
+          "expected": "statistics",
+          "predicted": "study"
+        },
+        {
+          "id": "v06-eval-042-5",
+          "prompt": "統計の勉強は何から始める？ 結論と次の行動を教えてください。",
+          "expected": "statistics",
+          "predicted": "study"
+        },
+        {
+          "id": "v06-eval-043-1",
+          "prompt": "大学生活について質問です。大学数学が難しいです",
+          "expected": "math",
+          "predicted": "general"
+        },
+        {
+          "id": "v06-eval-special-4",
+          "prompt": "検索で見つけた画像を発表で使う前に何を確認する？",
+          "expected": "citation",
+          "predicted": "presentation"
+        },
+        {
+          "id": "v06-eval-special-9",
+          "prompt": "留学先の単位が認定されるか不明なときの確認先は？",
+          "expected": "career",
+          "predicted": "credit"
+        },
+        {
+          "id": "v06-eval-special-11",
+          "prompt": "複数の締切を同時に抱えたときの優先順位は？",
+          "expected": "study",
+          "predicted": "assignment"
+        }
+      ]
+    },
+    {
+      "method": "bm25",
+      "questions": 300,
+      "accuracy": 1.0,
+      "mean_latency_ms": 1.7038539333334484,
+      "per_category_accuracy": {
+        "ai_usage": 1.0,
+        "assignment": 1.0,
+        "attendance": 1.0,
+        "campus_life": 1.0,
+        "career": 1.0,
+        "citation": 1.0,
+        "credit": 1.0,
+        "exam": 1.0,
+        "general": 1.0,
+        "gpa": 1.0,
+        "internship": 1.0,
+        "lateness": 1.0,
+        "math": 1.0,
+        "presentation": 1.0,
+        "professor_email": 1.0,
+        "programming": 1.0,
+        "registration": 1.0,
+        "report": 1.0,
+        "scholarship": 1.0,
+        "statistics": 1.0,
+        "study": 1.0
+      },
+      "top_confusions": [],
+      "mistakes": []
+    },
+    {
+      "method": "tfidf",
+      "questions": 300,
+      "accuracy": 0.9766666666666667,
+      "mean_latency_ms": 0.19428633333397252,
+      "per_category_accuracy": {
+        "ai_usage": 1.0,
+        "assignment": 1.0,
+        "attendance": 1.0,
+        "campus_life": 1.0,
+        "career": 0.8372093023255814,
+        "citation": 1.0,
+        "credit": 1.0,
+        "exam": 1.0,
+        "general": 1.0,
+        "gpa": 1.0,
+        "internship": 1.0,
+        "lateness": 1.0,
+        "math": 1.0,
+        "presentation": 1.0,
+        "professor_email": 1.0,
+        "programming": 1.0,
+        "registration": 1.0,
+        "report": 1.0,
+        "scholarship": 1.0,
+        "statistics": 1.0,
+        "study": 1.0
+      },
+      "top_confusions": [
+        {
+          "expected": "career",
+          "predicted": "statistics",
+          "count": 6
+        },
+        {
+          "expected": "career",
+          "predicted": "citation",
+          "count": 1
+        }
+      ],
+      "mistakes": [
+        {
+          "id": "v06-eval-025-0",
+          "prompt": "就職活動は何から始める？ 要点を短く教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-1",
+          "prompt": "大学生活について質問です。就職活動は何から始める？",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-2",
+          "prompt": "就職活動は何から始める？ まず何を確認すべきですか。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-3",
+          "prompt": "就職活動は何から始める？ 一般的な対応を教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-4",
+          "prompt": "就職活動は何から始める？ 根拠なく条件を作らずに答えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-5",
+          "prompt": "就職活動は何から始める？ 結論と次の行動を教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-special-9",
+          "prompt": "留学先の単位が認定されるか不明なときの確認先は？",
+          "expected": "career",
+          "predicted": "citation"
+        }
+      ]
+    },
+    {
+      "method": "hybrid",
+      "questions": 300,
+      "accuracy": 0.9566666666666667,
+      "mean_latency_ms": 0.2182905333332504,
+      "per_category_accuracy": {
+        "ai_usage": 1.0,
+        "assignment": 1.0,
+        "attendance": 1.0,
+        "campus_life": 1.0,
+        "career": 0.8372093023255814,
+        "citation": 1.0,
+        "credit": 1.0,
+        "exam": 0.6842105263157895,
+        "general": 1.0,
+        "gpa": 1.0,
+        "internship": 1.0,
+        "lateness": 1.0,
+        "math": 1.0,
+        "presentation": 1.0,
+        "professor_email": 1.0,
+        "programming": 1.0,
+        "registration": 1.0,
+        "report": 1.0,
+        "scholarship": 1.0,
+        "statistics": 1.0,
+        "study": 1.0
+      },
+      "top_confusions": [
+        {
+          "expected": "exam",
+          "predicted": "attendance",
+          "count": 6
+        },
+        {
+          "expected": "career",
+          "predicted": "statistics",
+          "count": 6
+        },
+        {
+          "expected": "career",
+          "predicted": "citation",
+          "count": 1
+        }
+      ],
+      "mistakes": [
+        {
+          "id": "v06-eval-004-0",
+          "prompt": "試験を欠席しそうです 要点を短く教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-1",
+          "prompt": "大学生活について質問です。試験を欠席しそうです",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-2",
+          "prompt": "試験を欠席しそうです まず何を確認すべきですか。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-3",
+          "prompt": "試験を欠席しそうです 一般的な対応を教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-4",
+          "prompt": "試験を欠席しそうです 根拠なく条件を作らずに答えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-004-5",
+          "prompt": "試験を欠席しそうです 結論と次の行動を教えてください。",
+          "expected": "exam",
+          "predicted": "attendance"
+        },
+        {
+          "id": "v06-eval-025-0",
+          "prompt": "就職活動は何から始める？ 要点を短く教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-1",
+          "prompt": "大学生活について質問です。就職活動は何から始める？",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-2",
+          "prompt": "就職活動は何から始める？ まず何を確認すべきですか。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-3",
+          "prompt": "就職活動は何から始める？ 一般的な対応を教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-4",
+          "prompt": "就職活動は何から始める？ 根拠なく条件を作らずに答えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-025-5",
+          "prompt": "就職活動は何から始める？ 結論と次の行動を教えてください。",
+          "expected": "career",
+          "predicted": "statistics"
+        },
+        {
+          "id": "v06-eval-special-9",
+          "prompt": "留学先の単位が認定されるか不明なときの確認先は？",
+          "expected": "career",
+          "predicted": "citation"
+        }
+      ]
+    }
+  ],
+  "selected_method": "bm25",
+  "selected_accuracy": 1.0,
+  "selected_mean_latency_ms": 1.7038539333334484,
+  "target_accuracy": 0.9,
+  "target_passed": true,
+  "limitation": "Evaluation questions are held-out phrasings but share semantic seed families with part of the FAQ corpus."
+}

@@ -1,0 +1,13 @@
+{
+  "candidate": "UniPilot Mini v0.7-grounded-500 + local BM25 + validator",
+  "production_model_before": "v0.4 step 2000",
+  "production_model_after": "v0.4 step 2000",
+  "same_300_automatic_targets_passed": true,
+  "representative_human_spot_check_passed": true,
+  "clearly_better_than_v04_plus_bm25": false,
+  "render_free_benchmark_completed": false,
+  "production_promoted": false,
+  "push_performed": false,
+  "decision": "REJECT_PRODUCTION_PROMOTION",
+  "reason": "The reviewed-FAQ fast path gives v0.4+BM25 and v0.7+BM25 the same 96% relevance and correctness. Forced generation is slightly slower and v0.7 does not improve quality over v0.4. The raw v0.7 model remains weak without grounded answer selection, so the requested clear-improvement gate is not met."
+}

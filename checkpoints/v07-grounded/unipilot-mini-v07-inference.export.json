@@ -1,0 +1,19 @@
+{
+  "source": "checkpoints/v07-grounded/checkpoint-step-500.pt",
+  "output": "checkpoints/v07-grounded/unipilot-mini-v07-inference.pt",
+  "source_size_mb": 226.92279720306396,
+  "output_size_mb": 75.63928890228271,
+  "kept_keys": [
+    "config",
+    "inference_only",
+    "loss",
+    "model_state",
+    "source_checkpoint",
+    "step",
+    "tokenizer_version",
+    "v07_manifest"
+  ],
+  "removed_keys": [
+    "optimizer_state"
+  ]
+}

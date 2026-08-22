@@ -1,0 +1,52 @@
+{
+  "dataset_version": "unipilot-grounded-routing-v07",
+  "semantic_seed_count": 84,
+  "faq_questions": 420,
+  "direct_answer_rows": 2100,
+  "corrected_rows": 840,
+  "knowledge_documents": 444,
+  "direct_split_distribution": {
+    "validation": 150,
+    "test": 200,
+    "train": 1750
+  },
+  "category_distribution": {
+    "study": 30,
+    "exam": 25,
+    "lateness": 5,
+    "attendance": 10,
+    "assignment": 15,
+    "report": 25,
+    "citation": 35,
+    "professor_email": 20,
+    "campus_life": 60,
+    "presentation": 20,
+    "internship": 10,
+    "career": 50,
+    "scholarship": 20,
+    "programming": 10,
+    "ai_usage": 15,
+    "statistics": 5,
+    "math": 5,
+    "registration": 20,
+    "credit": 15,
+    "gpa": 15,
+    "general": 10
+  },
+  "bad_reason_distribution": {
+    "wrong category": 140,
+    "invented subject": 140,
+    "unrelated advice": 140,
+    "university-specific hallucination": 140,
+    "incomplete answer": 140,
+    "excessive generic response": 140
+  },
+  "faq_pair_duplicates": 0,
+  "faq_answer_duplicates": 336,
+  "direct_pair_duplicates": 0,
+  "split_family_leakage": 0,
+  "knowledge_missing_required_fields": 0,
+  "broken_text": 0,
+  "external_llm_used": false,
+  "quality_note": "420 FAQ phrasings are based on 84 reviewed semantic answer seeds; counts are reported separately to avoid overstating semantic diversity."
+}

@@ -1,0 +1,38 @@
+{
+  "model": "UniPilot Mini v0.7 candidate",
+  "parameters": 19814784,
+  "stage": "context-grounded direct answer",
+  "experiment_id": "grounded",
+  "base_checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "dataset_version": "unipilot-grounded-routing-v07",
+  "evaluation_version": "unipilot-eval-v07-300",
+  "step": 500,
+  "seed": 7072026,
+  "git_commit": "827150f19b9bdc69ed5389f5c87c795dfd86ecdb",
+  "model_config": {
+    "model_name": "UniPilot Mini v0.7-grounded-500",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "production_promoted": false,
+  "pipeline_required": true,
+  "metrics": {
+    "step": 500,
+    "loss": 3.737699938165024,
+    "validation_loss": 5.563429511778536,
+    "learning_rate": 6.343498130752869e-07,
+    "gradient_norm": 4.1731038093566895,
+    "gradient_clipping_count": 437,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 307.1314527252355,
+    "step_time_seconds": 0.21489170000131708,
+    "memory_usage_mb": 726.72265625
+  }
+}

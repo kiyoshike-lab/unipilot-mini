@@ -1,0 +1,65 @@
+{
+  "checkpoint": "checkpoints/v07-grounded/unipilot-mini-v07-inference.pt",
+  "parameters": 19814784,
+  "candidate_generation": [
+    {
+      "candidates": 1,
+      "questions": 21,
+      "total_seconds": 2.921027700000195,
+      "mean_seconds": 0.13909655714286645,
+      "mean_raw_tokens_per_second": 19.069755276035057,
+      "grounded_selection_rate": 1.0,
+      "fallback_rate": 0.0,
+      "peak_rss_mb": 311.45703125
+    },
+    {
+      "candidates": 2,
+      "questions": 21,
+      "total_seconds": 5.618922499999826,
+      "mean_seconds": 0.2675677380952298,
+      "mean_raw_tokens_per_second": 18.98765600491036,
+      "grounded_selection_rate": 1.0,
+      "fallback_rate": 0.0,
+      "peak_rss_mb": 311.59765625
+    },
+    {
+      "candidates": 3,
+      "questions": 21,
+      "total_seconds": 8.266462499999761,
+      "mean_seconds": 0.3936410714285601,
+      "mean_raw_tokens_per_second": 19.080045794341157,
+      "grounded_selection_rate": 1.0,
+      "fallback_rate": 0.0,
+      "peak_rss_mb": 311.5546875
+    }
+  ],
+  "context_candidates": [
+    {
+      "context": 256,
+      "full_prompt_fit_rate": 0.24,
+      "mean_full_prompt_tokens": 270.06333333333333,
+      "p95_full_prompt_tokens": 302,
+      "position_parameter_delta_mb": 0.0,
+      "attention_memory_relative_to_256": 1.0
+    },
+    {
+      "context": 512,
+      "full_prompt_fit_rate": 1.0,
+      "mean_full_prompt_tokens": 270.06333333333333,
+      "p95_full_prompt_tokens": 302,
+      "position_parameter_delta_mb": 0.375,
+      "attention_memory_relative_to_256": 4.0
+    },
+    {
+      "context": 1024,
+      "full_prompt_fit_rate": 1.0,
+      "mean_full_prompt_tokens": 270.06333333333333,
+      "p95_full_prompt_tokens": 302,
+      "position_parameter_delta_mb": 1.125,
+      "attention_memory_relative_to_256": 16.0
+    }
+  ],
+  "selected_candidates": 1,
+  "selected_context": 256,
+  "decision": "Multiple model candidates have identical grounded-selection quality and linear latency cost. FAQ fast path avoids generation; non-FAQ path keeps one candidate."
+}

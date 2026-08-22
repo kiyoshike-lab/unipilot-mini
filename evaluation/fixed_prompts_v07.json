@@ -1,0 +1,6302 @@
+[
+  {
+    "id": "v06-eval-000-0",
+    "category": "study",
+    "prompt": "試験勉強を効率よく進めるには？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-000-1",
+    "category": "study",
+    "prompt": "大学生活について質問です。試験勉強を効率よく進めるには？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-000-2",
+    "category": "study",
+    "prompt": "試験勉強を効率よく進めるには？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-000-3",
+    "category": "study",
+    "prompt": "試験勉強を効率よく進めるには？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-000-4",
+    "category": "study",
+    "prompt": "試験勉強を効率よく進めるには？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-000-5",
+    "category": "study",
+    "prompt": "試験勉強を効率よく進めるには？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-0",
+    "category": "study",
+    "prompt": "勉強しても覚えられません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-1",
+    "category": "study",
+    "prompt": "大学生活について質問です。勉強しても覚えられません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-2",
+    "category": "study",
+    "prompt": "勉強しても覚えられません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-3",
+    "category": "study",
+    "prompt": "勉強しても覚えられません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-4",
+    "category": "study",
+    "prompt": "勉強しても覚えられません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-001-5",
+    "category": "study",
+    "prompt": "勉強しても覚えられません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-0",
+    "category": "study",
+    "prompt": "集中できないときはどうする？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-1",
+    "category": "study",
+    "prompt": "大学生活について質問です。集中できないときはどうする？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-2",
+    "category": "study",
+    "prompt": "集中できないときはどうする？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-3",
+    "category": "study",
+    "prompt": "集中できないときはどうする？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-4",
+    "category": "study",
+    "prompt": "集中できないときはどうする？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-002-5",
+    "category": "study",
+    "prompt": "集中できないときはどうする？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-0",
+    "category": "exam",
+    "prompt": "試験まで一週間です。どう計画する？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-1",
+    "category": "exam",
+    "prompt": "大学生活について質問です。試験まで一週間です。どう計画する？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-2",
+    "category": "exam",
+    "prompt": "試験まで一週間です。どう計画する？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-3",
+    "category": "exam",
+    "prompt": "試験まで一週間です。どう計画する？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-4",
+    "category": "exam",
+    "prompt": "試験まで一週間です。どう計画する？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-003-5",
+    "category": "exam",
+    "prompt": "試験まで一週間です。どう計画する？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-0",
+    "category": "exam",
+    "prompt": "試験を欠席しそうです 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-1",
+    "category": "exam",
+    "prompt": "大学生活について質問です。試験を欠席しそうです",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-2",
+    "category": "exam",
+    "prompt": "試験を欠席しそうです まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-3",
+    "category": "exam",
+    "prompt": "試験を欠席しそうです 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-4",
+    "category": "exam",
+    "prompt": "試験を欠席しそうです 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-004-5",
+    "category": "exam",
+    "prompt": "試験を欠席しそうです 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-0",
+    "category": "exam",
+    "prompt": "追試や再試験は受けられますか？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-1",
+    "category": "exam",
+    "prompt": "大学生活について質問です。追試や再試験は受けられますか？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-2",
+    "category": "exam",
+    "prompt": "追試や再試験は受けられますか？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-3",
+    "category": "exam",
+    "prompt": "追試や再試験は受けられますか？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-4",
+    "category": "exam",
+    "prompt": "追試や再試験は受けられますか？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-005-5",
+    "category": "exam",
+    "prompt": "追試や再試験は受けられますか？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-0",
+    "category": "lateness",
+    "prompt": "授業に遅刻しそうです 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-1",
+    "category": "lateness",
+    "prompt": "大学生活について質問です。授業に遅刻しそうです",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-2",
+    "category": "lateness",
+    "prompt": "授業に遅刻しそうです まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-3",
+    "category": "lateness",
+    "prompt": "授業に遅刻しそうです 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-4",
+    "category": "lateness",
+    "prompt": "授業に遅刻しそうです 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-006-5",
+    "category": "lateness",
+    "prompt": "授業に遅刻しそうです 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "lateness",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-0",
+    "category": "attendance",
+    "prompt": "欠席が増えて不安です 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-1",
+    "category": "attendance",
+    "prompt": "大学生活について質問です。欠席が増えて不安です",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-2",
+    "category": "attendance",
+    "prompt": "欠席が増えて不安です まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-3",
+    "category": "attendance",
+    "prompt": "欠席が増えて不安です 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-4",
+    "category": "attendance",
+    "prompt": "欠席が増えて不安です 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-007-5",
+    "category": "attendance",
+    "prompt": "欠席が増えて不安です 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出席",
+      "シラバス"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "attendance",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-0",
+    "category": "assignment",
+    "prompt": "課題が多くて終わりません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-1",
+    "category": "assignment",
+    "prompt": "大学生活について質問です。課題が多くて終わりません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-2",
+    "category": "assignment",
+    "prompt": "課題が多くて終わりません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-3",
+    "category": "assignment",
+    "prompt": "課題が多くて終わりません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-4",
+    "category": "assignment",
+    "prompt": "課題が多くて終わりません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-008-5",
+    "category": "assignment",
+    "prompt": "課題が多くて終わりません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-0",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-1",
+    "category": "assignment",
+    "prompt": "大学生活について質問です。課題の締切に間に合わないかもしれません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-2",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-3",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-4",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-009-5",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "課題"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "assignment",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-0",
+    "category": "report",
+    "prompt": "レポートは何から書けばいい？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-1",
+    "category": "report",
+    "prompt": "大学生活について質問です。レポートは何から書けばいい？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-2",
+    "category": "report",
+    "prompt": "レポートは何から書けばいい？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-3",
+    "category": "report",
+    "prompt": "レポートは何から書けばいい？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-4",
+    "category": "report",
+    "prompt": "レポートは何から書けばいい？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-010-5",
+    "category": "report",
+    "prompt": "レポートは何から書けばいい？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-0",
+    "category": "report",
+    "prompt": "参考文献リストの作り方を教えて 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-1",
+    "category": "report",
+    "prompt": "大学生活について質問です。参考文献リストの作り方を教えて",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-2",
+    "category": "report",
+    "prompt": "参考文献リストの作り方を教えて まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-3",
+    "category": "report",
+    "prompt": "参考文献リストの作り方を教えて 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-4",
+    "category": "report",
+    "prompt": "参考文献リストの作り方を教えて 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-011-5",
+    "category": "report",
+    "prompt": "参考文献リストの作り方を教えて 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-0",
+    "category": "citation",
+    "prompt": "引用とコピペの違いは？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-1",
+    "category": "citation",
+    "prompt": "大学生活について質問です。引用とコピペの違いは？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-2",
+    "category": "citation",
+    "prompt": "引用とコピペの違いは？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-3",
+    "category": "citation",
+    "prompt": "引用とコピペの違いは？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-4",
+    "category": "citation",
+    "prompt": "引用とコピペの違いは？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-012-5",
+    "category": "citation",
+    "prompt": "引用とコピペの違いは？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-0",
+    "category": "citation",
+    "prompt": "Webサイトを引用するときの注意は？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-1",
+    "category": "citation",
+    "prompt": "大学生活について質問です。Webサイトを引用するときの注意は？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-2",
+    "category": "citation",
+    "prompt": "Webサイトを引用するときの注意は？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-3",
+    "category": "citation",
+    "prompt": "Webサイトを引用するときの注意は？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-4",
+    "category": "citation",
+    "prompt": "Webサイトを引用するときの注意は？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-013-5",
+    "category": "citation",
+    "prompt": "Webサイトを引用するときの注意は？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "citation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-0",
+    "category": "professor_email",
+    "prompt": "先生に質問するメールを書きたい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-1",
+    "category": "professor_email",
+    "prompt": "大学生活について質問です。先生に質問するメールを書きたい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-2",
+    "category": "professor_email",
+    "prompt": "先生に質問するメールを書きたい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-3",
+    "category": "professor_email",
+    "prompt": "先生に質問するメールを書きたい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-4",
+    "category": "professor_email",
+    "prompt": "先生に質問するメールを書きたい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-014-5",
+    "category": "professor_email",
+    "prompt": "先生に質問するメールを書きたい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-0",
+    "category": "professor_email",
+    "prompt": "課題提出が遅れる連絡文を作って 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-1",
+    "category": "professor_email",
+    "prompt": "大学生活について質問です。課題提出が遅れる連絡文を作って",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-2",
+    "category": "professor_email",
+    "prompt": "課題提出が遅れる連絡文を作って まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-3",
+    "category": "professor_email",
+    "prompt": "課題提出が遅れる連絡文を作って 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-4",
+    "category": "professor_email",
+    "prompt": "課題提出が遅れる連絡文を作って 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-015-5",
+    "category": "professor_email",
+    "prompt": "課題提出が遅れる連絡文を作って 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-0",
+    "category": "campus_life",
+    "prompt": "ゼミはどう選べばいい？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。ゼミはどう選べばいい？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-2",
+    "category": "campus_life",
+    "prompt": "ゼミはどう選べばいい？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-3",
+    "category": "campus_life",
+    "prompt": "ゼミはどう選べばいい？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-4",
+    "category": "campus_life",
+    "prompt": "ゼミはどう選べばいい？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-016-5",
+    "category": "campus_life",
+    "prompt": "ゼミはどう選べばいい？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "研究",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "seminar",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-0",
+    "category": "campus_life",
+    "prompt": "研究室訪問では何を聞く？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。研究室訪問では何を聞く？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-2",
+    "category": "campus_life",
+    "prompt": "研究室訪問では何を聞く？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-3",
+    "category": "campus_life",
+    "prompt": "研究室訪問では何を聞く？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-4",
+    "category": "campus_life",
+    "prompt": "研究室訪問では何を聞く？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-017-5",
+    "category": "campus_life",
+    "prompt": "研究室訪問では何を聞く？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "研究",
+      "質問"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "laboratory",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-0",
+    "category": "report",
+    "prompt": "卒論のテーマが決まりません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-1",
+    "category": "report",
+    "prompt": "大学生活について質問です。卒論のテーマが決まりません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-2",
+    "category": "report",
+    "prompt": "卒論のテーマが決まりません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-3",
+    "category": "report",
+    "prompt": "卒論のテーマが決まりません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-4",
+    "category": "report",
+    "prompt": "卒論のテーマが決まりません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-018-5",
+    "category": "report",
+    "prompt": "卒論のテーマが決まりません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "先行研究",
+      "相談"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "thesis",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-0",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-1",
+    "category": "presentation",
+    "prompt": "大学生活について質問です。プレゼン資料を見やすくしたい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-2",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-3",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-4",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-019-5",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "presentation",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-0",
+    "category": "presentation",
+    "prompt": "グループワークが進みません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-1",
+    "category": "presentation",
+    "prompt": "大学生活について質問です。グループワークが進みません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-2",
+    "category": "presentation",
+    "prompt": "グループワークが進みません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-3",
+    "category": "presentation",
+    "prompt": "グループワークが進みません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-4",
+    "category": "presentation",
+    "prompt": "グループワークが進みません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-020-5",
+    "category": "presentation",
+    "prompt": "グループワークが進みません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "担当",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "group_work",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-0",
+    "category": "campus_life",
+    "prompt": "大学で友達ができません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。大学で友達ができません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-2",
+    "category": "campus_life",
+    "prompt": "大学で友達ができません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-3",
+    "category": "campus_life",
+    "prompt": "大学で友達ができません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-4",
+    "category": "campus_life",
+    "prompt": "大学で友達ができません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-021-5",
+    "category": "campus_life",
+    "prompt": "大学で友達ができません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "相談",
+      "無理"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "relationships",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-0",
+    "category": "campus_life",
+    "prompt": "サークル選びで迷っています 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。サークル選びで迷っています",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-2",
+    "category": "campus_life",
+    "prompt": "サークル選びで迷っています まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-3",
+    "category": "campus_life",
+    "prompt": "サークル選びで迷っています 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-4",
+    "category": "campus_life",
+    "prompt": "サークル選びで迷っています 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-022-5",
+    "category": "campus_life",
+    "prompt": "サークル選びで迷っています 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "費用",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "club",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-0",
+    "category": "campus_life",
+    "prompt": "アルバイトと学業を両立したい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。アルバイトと学業を両立したい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-2",
+    "category": "campus_life",
+    "prompt": "アルバイトと学業を両立したい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-3",
+    "category": "campus_life",
+    "prompt": "アルバイトと学業を両立したい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-4",
+    "category": "campus_life",
+    "prompt": "アルバイトと学業を両立したい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-023-5",
+    "category": "campus_life",
+    "prompt": "アルバイトと学業を両立したい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "授業",
+      "調整"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "part_time",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-0",
+    "category": "internship",
+    "prompt": "インターンはどう探す？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-1",
+    "category": "internship",
+    "prompt": "大学生活について質問です。インターンはどう探す？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-2",
+    "category": "internship",
+    "prompt": "インターンはどう探す？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-3",
+    "category": "internship",
+    "prompt": "インターンはどう探す？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-4",
+    "category": "internship",
+    "prompt": "インターンはどう探す？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-024-5",
+    "category": "internship",
+    "prompt": "インターンはどう探す？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "internship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-0",
+    "category": "career",
+    "prompt": "就職活動は何から始める？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。就職活動は何から始める？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-2",
+    "category": "career",
+    "prompt": "就職活動は何から始める？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-3",
+    "category": "career",
+    "prompt": "就職活動は何から始める？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-4",
+    "category": "career",
+    "prompt": "就職活動は何から始める？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-025-5",
+    "category": "career",
+    "prompt": "就職活動は何から始める？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "career",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-0",
+    "category": "career",
+    "prompt": "ESがうまく書けません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。ESがうまく書けません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-2",
+    "category": "career",
+    "prompt": "ESがうまく書けません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-3",
+    "category": "career",
+    "prompt": "ESがうまく書けません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-4",
+    "category": "career",
+    "prompt": "ESがうまく書けません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-026-5",
+    "category": "career",
+    "prompt": "ESがうまく書けません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "結論",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "es",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-0",
+    "category": "career",
+    "prompt": "面接の練習方法を教えて 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。面接の練習方法を教えて",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-2",
+    "category": "career",
+    "prompt": "面接の練習方法を教えて まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-3",
+    "category": "career",
+    "prompt": "面接の練習方法を教えて 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-4",
+    "category": "career",
+    "prompt": "面接の練習方法を教えて 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-027-5",
+    "category": "career",
+    "prompt": "面接の練習方法を教えて 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "具体",
+      "練習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "interview",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-0",
+    "category": "career",
+    "prompt": "自己PRには何を書く？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。自己PRには何を書く？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-2",
+    "category": "career",
+    "prompt": "自己PRには何を書く？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-3",
+    "category": "career",
+    "prompt": "自己PRには何を書く？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-4",
+    "category": "career",
+    "prompt": "自己PRには何を書く？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-028-5",
+    "category": "career",
+    "prompt": "自己PRには何を書く？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "強み",
+      "具体"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "self_pr",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-0",
+    "category": "career",
+    "prompt": "資格は取った方がいい？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。資格は取った方がいい？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-2",
+    "category": "career",
+    "prompt": "資格は取った方がいい？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-3",
+    "category": "career",
+    "prompt": "資格は取った方がいい？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-4",
+    "category": "career",
+    "prompt": "資格は取った方がいい？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-029-5",
+    "category": "career",
+    "prompt": "資格は取った方がいい？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "目的",
+      "判断"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "qualification",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-0",
+    "category": "career",
+    "prompt": "TOEICの勉強方法を教えて 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。TOEICの勉強方法を教えて",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-2",
+    "category": "career",
+    "prompt": "TOEICの勉強方法を教えて まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-3",
+    "category": "career",
+    "prompt": "TOEICの勉強方法を教えて 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-4",
+    "category": "career",
+    "prompt": "TOEICの勉強方法を教えて 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-030-5",
+    "category": "career",
+    "prompt": "TOEICの勉強方法を教えて 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "復習",
+      "演習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "english",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-0",
+    "category": "career",
+    "prompt": "留学を考えています 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-1",
+    "category": "career",
+    "prompt": "大学生活について質問です。留学を考えています",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-2",
+    "category": "career",
+    "prompt": "留学を考えています まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-3",
+    "category": "career",
+    "prompt": "留学を考えています 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-4",
+    "category": "career",
+    "prompt": "留学を考えています 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-031-5",
+    "category": "career",
+    "prompt": "留学を考えています 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-0",
+    "category": "scholarship",
+    "prompt": "奨学金について知りたい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-1",
+    "category": "scholarship",
+    "prompt": "大学生活について質問です。奨学金について知りたい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-2",
+    "category": "scholarship",
+    "prompt": "奨学金について知りたい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-3",
+    "category": "scholarship",
+    "prompt": "奨学金について知りたい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-4",
+    "category": "scholarship",
+    "prompt": "奨学金について知りたい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-032-5",
+    "category": "scholarship",
+    "prompt": "奨学金について知りたい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-0",
+    "category": "scholarship",
+    "prompt": "学費の支払いが厳しいです 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-1",
+    "category": "scholarship",
+    "prompt": "大学生活について質問です。学費の支払いが厳しいです",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-2",
+    "category": "scholarship",
+    "prompt": "学費の支払いが厳しいです まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-3",
+    "category": "scholarship",
+    "prompt": "学費の支払いが厳しいです 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-4",
+    "category": "scholarship",
+    "prompt": "学費の支払いが厳しいです 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-033-5",
+    "category": "scholarship",
+    "prompt": "学費の支払いが厳しいです 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "相談",
+      "期限"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "tuition",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-0",
+    "category": "campus_life",
+    "prompt": "一人暮らしの生活費を管理したい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。一人暮らしの生活費を管理したい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-2",
+    "category": "campus_life",
+    "prompt": "一人暮らしの生活費を管理したい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-3",
+    "category": "campus_life",
+    "prompt": "一人暮らしの生活費を管理したい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-4",
+    "category": "campus_life",
+    "prompt": "一人暮らしの生活費を管理したい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-034-5",
+    "category": "campus_life",
+    "prompt": "一人暮らしの生活費を管理したい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "支出",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "living",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-0",
+    "category": "study",
+    "prompt": "時間管理が苦手です 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-1",
+    "category": "study",
+    "prompt": "大学生活について質問です。時間管理が苦手です",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-2",
+    "category": "study",
+    "prompt": "時間管理が苦手です まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-3",
+    "category": "study",
+    "prompt": "時間管理が苦手です 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-4",
+    "category": "study",
+    "prompt": "時間管理が苦手です 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-035-5",
+    "category": "study",
+    "prompt": "時間管理が苦手です 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-0",
+    "category": "campus_life",
+    "prompt": "大学図書館を活用したい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。大学図書館を活用したい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-2",
+    "category": "campus_life",
+    "prompt": "大学図書館を活用したい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-3",
+    "category": "campus_life",
+    "prompt": "大学図書館を活用したい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-4",
+    "category": "campus_life",
+    "prompt": "大学図書館を活用したい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-036-5",
+    "category": "campus_life",
+    "prompt": "大学図書館を活用したい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "図書館",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "library",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-0",
+    "category": "campus_life",
+    "prompt": "大学用PCはどう選ぶ？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-1",
+    "category": "campus_life",
+    "prompt": "大学生活について質問です。大学用PCはどう選ぶ？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-2",
+    "category": "campus_life",
+    "prompt": "大学用PCはどう選ぶ？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-3",
+    "category": "campus_life",
+    "prompt": "大学用PCはどう選ぶ？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-4",
+    "category": "campus_life",
+    "prompt": "大学用PCはどう選ぶ？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-037-5",
+    "category": "campus_life",
+    "prompt": "大学用PCはどう選ぶ？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "推奨",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "pc",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-0",
+    "category": "programming",
+    "prompt": "プログラミングのエラーが直せません 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-1",
+    "category": "programming",
+    "prompt": "大学生活について質問です。プログラミングのエラーが直せません",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-2",
+    "category": "programming",
+    "prompt": "プログラミングのエラーが直せません まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-3",
+    "category": "programming",
+    "prompt": "プログラミングのエラーが直せません 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-4",
+    "category": "programming",
+    "prompt": "プログラミングのエラーが直せません 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-038-5",
+    "category": "programming",
+    "prompt": "プログラミングのエラーが直せません 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-0",
+    "category": "ai_usage",
+    "prompt": "AIを勉強にどう活用すればいい？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-1",
+    "category": "ai_usage",
+    "prompt": "大学生活について質問です。AIを勉強にどう活用すればいい？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-2",
+    "category": "ai_usage",
+    "prompt": "AIを勉強にどう活用すればいい？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-3",
+    "category": "ai_usage",
+    "prompt": "AIを勉強にどう活用すればいい？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-4",
+    "category": "ai_usage",
+    "prompt": "AIを勉強にどう活用すればいい？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-039-5",
+    "category": "ai_usage",
+    "prompt": "AIを勉強にどう活用すればいい？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-0",
+    "category": "citation",
+    "prompt": "ネットの情報が正しいか見分けたい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-1",
+    "category": "citation",
+    "prompt": "大学生活について質問です。ネットの情報が正しいか見分けたい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-2",
+    "category": "citation",
+    "prompt": "ネットの情報が正しいか見分けたい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-3",
+    "category": "citation",
+    "prompt": "ネットの情報が正しいか見分けたい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-4",
+    "category": "citation",
+    "prompt": "ネットの情報が正しいか見分けたい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-040-5",
+    "category": "citation",
+    "prompt": "ネットの情報が正しいか見分けたい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "根拠",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "literacy",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-0",
+    "category": "citation",
+    "prompt": "著作権で気を付けることは？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-1",
+    "category": "citation",
+    "prompt": "大学生活について質問です。著作権で気を付けることは？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-2",
+    "category": "citation",
+    "prompt": "著作権で気を付けることは？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-3",
+    "category": "citation",
+    "prompt": "著作権で気を付けることは？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-4",
+    "category": "citation",
+    "prompt": "著作権で気を付けることは？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-041-5",
+    "category": "citation",
+    "prompt": "著作権で気を付けることは？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "出典",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-0",
+    "category": "statistics",
+    "prompt": "統計の勉強は何から始める？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-1",
+    "category": "statistics",
+    "prompt": "大学生活について質問です。統計の勉強は何から始める？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-2",
+    "category": "statistics",
+    "prompt": "統計の勉強は何から始める？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-3",
+    "category": "statistics",
+    "prompt": "統計の勉強は何から始める？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-4",
+    "category": "statistics",
+    "prompt": "統計の勉強は何から始める？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-042-5",
+    "category": "statistics",
+    "prompt": "統計の勉強は何から始める？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "前提",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "statistics",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-0",
+    "category": "math",
+    "prompt": "大学数学が難しいです 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-1",
+    "category": "math",
+    "prompt": "大学生活について質問です。大学数学が難しいです",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-2",
+    "category": "math",
+    "prompt": "大学数学が難しいです まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-3",
+    "category": "math",
+    "prompt": "大学数学が難しいです 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-4",
+    "category": "math",
+    "prompt": "大学数学が難しいです 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-043-5",
+    "category": "math",
+    "prompt": "大学数学が難しいです 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "定義",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "math",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-0",
+    "category": "registration",
+    "prompt": "履修科目はどう決めればいい？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-1",
+    "category": "registration",
+    "prompt": "大学生活について質問です。履修科目はどう決めればいい？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-2",
+    "category": "registration",
+    "prompt": "履修科目はどう決めればいい？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-3",
+    "category": "registration",
+    "prompt": "履修科目はどう決めればいい？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-4",
+    "category": "registration",
+    "prompt": "履修科目はどう決めればいい？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-044-5",
+    "category": "registration",
+    "prompt": "履修科目はどう決めればいい？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": false,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-0",
+    "category": "registration",
+    "prompt": "履修登録を変更できますか？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-1",
+    "category": "registration",
+    "prompt": "大学生活について質問です。履修登録を変更できますか？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-2",
+    "category": "registration",
+    "prompt": "履修登録を変更できますか？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-3",
+    "category": "registration",
+    "prompt": "履修登録を変更できますか？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-4",
+    "category": "registration",
+    "prompt": "履修登録を変更できますか？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-045-5",
+    "category": "registration",
+    "prompt": "履修登録を変更できますか？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-0",
+    "category": "credit",
+    "prompt": "卒業に必要な単位を確認したい 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-1",
+    "category": "credit",
+    "prompt": "大学生活について質問です。卒業に必要な単位を確認したい",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-2",
+    "category": "credit",
+    "prompt": "卒業に必要な単位を確認したい まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-3",
+    "category": "credit",
+    "prompt": "卒業に必要な単位を確認したい 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-4",
+    "category": "credit",
+    "prompt": "卒業に必要な単位を確認したい 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-046-5",
+    "category": "credit",
+    "prompt": "卒業に必要な単位を確認したい 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-0",
+    "category": "gpa",
+    "prompt": "GPAは成績にどう関係しますか？ 要点を短く教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-1",
+    "category": "gpa",
+    "prompt": "大学生活について質問です。GPAは成績にどう関係しますか？",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-2",
+    "category": "gpa",
+    "prompt": "GPAは成績にどう関係しますか？ まず何を確認すべきですか。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-3",
+    "category": "gpa",
+    "prompt": "GPAは成績にどう関係しますか？ 一般的な対応を教えてください。",
+    "difficulty": "easy",
+    "length_type": "simple",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-4",
+    "category": "gpa",
+    "prompt": "GPAは成績にどう関係しますか？ 根拠なく条件を作らずに答えてください。",
+    "difficulty": "normal",
+    "length_type": "normal",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-047-5",
+    "category": "gpa",
+    "prompt": "GPAは成績にどう関係しますか？ 結論と次の行動を教えてください。",
+    "difficulty": "hard",
+    "length_type": "detailed",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "gpa",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-0",
+    "category": "exam",
+    "prompt": "試験が二つあります。科目を決めつけず優先順位を教えて。",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "exam",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-1",
+    "category": "credit",
+    "prompt": "単位不足が心配です。留年と断定せず確認順を教えて。",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "credit",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-2",
+    "category": "registration",
+    "prompt": "今年の履修変更期限を知らない場合、どう案内する？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "履修",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "registration",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-3",
+    "category": "ai_usage",
+    "prompt": "AIの回答を事実確認せず提出してもいい？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "ルール"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "ai",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-4",
+    "category": "citation",
+    "prompt": "検索で見つけた画像を発表で使う前に何を確認する？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "確認",
+      "出典"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "copyright",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-5",
+    "category": "general",
+    "prompt": "大学制度の最新情報が手元にないとき、どう答える？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "公式",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "general",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-6",
+    "category": "professor_email",
+    "prompt": "欠席連絡で個人情報を書きすぎないメールの要点は？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "email",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-7",
+    "category": "report",
+    "prompt": "短い締切でも盗用を避けてレポートを進める順番は？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "出典",
+      "結論"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "report",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-8",
+    "category": "scholarship",
+    "prompt": "奨学金が返済不要か不明なとき、何を比べる？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "返還",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "scholarship",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-9",
+    "category": "career",
+    "prompt": "留学先の単位が認定されるか不明なときの確認先は？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "単位",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "study_abroad",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-10",
+    "category": "programming",
+    "prompt": "個人情報を含むエラーを安全に相談する方法は？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "エラー",
+      "確認"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "programming",
+    "evaluation_version": "unipilot-eval-v07-300"
+  },
+  {
+    "id": "v06-eval-special-11",
+    "category": "study",
+    "prompt": "複数の締切を同時に抱えたときの優先順位は？",
+    "difficulty": "hard",
+    "length_type": "normal",
+    "expected_keywords": [
+      "締切",
+      "予定"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学",
+      "心理学",
+      "情報科学"
+    ],
+    "requires_uncertainty": true,
+    "held_out": true,
+    "source_category": "time_management",
+    "evaluation_version": "unipilot-eval-v07-300"
+  }
+]

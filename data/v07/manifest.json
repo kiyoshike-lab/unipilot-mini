@@ -1,0 +1,11 @@
+{
+  "dataset_version": "unipilot-grounded-routing-v07",
+  "faq": "data/v07/faq/faq.jsonl",
+  "direct_training": "data/v07/training",
+  "corrected": "data/v07/corrected/corrected.jsonl",
+  "knowledge": "data/v07/knowledge/documents.jsonl",
+  "classifier": "data/v07/classifier/train.jsonl",
+  "quality_report": "evaluation/dataset-quality-v07.json",
+  "external_llm_used": false,
+  "production_enabled": false
+}

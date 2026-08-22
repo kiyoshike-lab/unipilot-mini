@@ -1,0 +1,21 @@
+{
+  "result": "evaluation/results-v07-bm25-v07suite.json",
+  "review_type": "non-blinded representative manual spot check",
+  "reviewed": 10,
+  "mean_score_0_to_5": 4.6,
+  "target": 3.5,
+  "passed": true,
+  "limitations": "The sample is small and all selected answers are retrieved from the reviewed FAQ corpus. It does not establish quality on unseen questions or replace the unscored 300-item human form.",
+  "items": [
+    {"category": "exam", "score": 4.5, "note": "Direct one-week study plan with no invented subject."},
+    {"category": "credit", "score": 4.5, "note": "Correctly directs the student to entry-year requirements and the academic office."},
+    {"category": "gpa", "score": 5.0, "note": "Short definition plus an appropriate university-specific caveat."},
+    {"category": "professor_email", "score": 4.5, "note": "Provides the requested email structure directly."},
+    {"category": "report", "score": 4.5, "note": "Gives a practical writing order and source-recording advice."},
+    {"category": "citation", "score": 5.0, "note": "Clearly distinguishes citation from unattributed copying."},
+    {"category": "study", "score": 4.5, "note": "Relevant study method and explicitly avoids inventing a subject."},
+    {"category": "career", "score": 4.5, "note": "Direct starting actions and a correct timing caveat."},
+    {"category": "programming", "score": 4.5, "note": "Useful debugging and question-preparation steps."},
+    {"category": "ai_usage", "score": 4.5, "note": "Appropriate rule checking and source verification guidance."}
+  ]
+}
