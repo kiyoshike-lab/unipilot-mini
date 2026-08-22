@@ -1,0 +1,100 @@
+{
+  "tokenizer_candidates": [
+    {
+      "requested_vocab_size": 512,
+      "actual_vocab_size": 512,
+      "target_reached": true,
+      "training_sample_texts": 400,
+      "training_seconds": 2.223083700000643,
+      "mean_tokens": 53.9775,
+      "tokens_per_character": 1.18801584681413,
+      "byte_fragment_rate": 0.4478717984345329,
+      "exact_roundtrip_rate": 1.0,
+      "random_untrained_model_tokens_per_second": 106.64704361020696,
+      "parameter_count_at_20m_architecture": 19814784,
+      "japanese_naturalness_note": "Compression and exact round-trip only; an untrained tokenizer cannot establish generated Japanese quality."
+    },
+    {
+      "requested_vocab_size": 1024,
+      "actual_vocab_size": 1024,
+      "target_reached": true,
+      "training_sample_texts": 400,
+      "training_seconds": 4.591515999998592,
+      "mean_tokens": 39.56,
+      "tokens_per_character": 0.8706943985913943,
+      "byte_fragment_rate": 0.29082406471183014,
+      "exact_roundtrip_rate": 1.0,
+      "random_untrained_model_tokens_per_second": 105.37629876559575,
+      "parameter_count_at_20m_architecture": 20011392,
+      "japanese_naturalness_note": "Compression and exact round-trip only; an untrained tokenizer cannot establish generated Japanese quality."
+    },
+    {
+      "requested_vocab_size": 2048,
+      "actual_vocab_size": 2048,
+      "target_reached": true,
+      "training_sample_texts": 400,
+      "training_seconds": 6.7699817000011535,
+      "mean_tokens": 37.4475,
+      "tokens_per_character": 0.8241994057444701,
+      "byte_fragment_rate": 0.2721810534748648,
+      "exact_roundtrip_rate": 1.0,
+      "random_untrained_model_tokens_per_second": 96.407611381426,
+      "parameter_count_at_20m_architecture": 20404608,
+      "japanese_naturalness_note": "Compression and exact round-trip only; an untrained tokenizer cannot establish generated Japanese quality."
+    },
+    {
+      "requested_vocab_size": 4096,
+      "actual_vocab_size": 2812,
+      "target_reached": false,
+      "training_sample_texts": 400,
+      "training_seconds": 7.297550000001138,
+      "mean_tokens": 37.285,
+      "tokens_per_character": 0.8206228678331683,
+      "byte_fragment_rate": 0.27095346654150465,
+      "exact_roundtrip_rate": 1.0,
+      "random_untrained_model_tokens_per_second": 99.17511101324774,
+      "parameter_count_at_20m_architecture": 20697984,
+      "japanese_naturalness_note": "Compression and exact round-trip only; an untrained tokenizer cannot establish generated Japanese quality."
+    }
+  ],
+  "context_candidates": [
+    {
+      "context": 256,
+      "fit_rate": 0.84,
+      "mean_sequence_tokens": 209.43,
+      "p95_sequence_tokens": 270,
+      "parameter_count": 19814784,
+      "fp32_position_parameter_delta_mb": 0.0,
+      "attention_score_memory_relative_to_256": 1.0
+    },
+    {
+      "context": 512,
+      "fit_rate": 1.0,
+      "mean_sequence_tokens": 209.43,
+      "p95_sequence_tokens": 270,
+      "parameter_count": 19913088,
+      "fp32_position_parameter_delta_mb": 0.375,
+      "attention_score_memory_relative_to_256": 4.0
+    },
+    {
+      "context": 1024,
+      "fit_rate": 1.0,
+      "mean_sequence_tokens": 209.43,
+      "p95_sequence_tokens": 270,
+      "parameter_count": 20109696,
+      "fp32_position_parameter_delta_mb": 1.125,
+      "attention_score_memory_relative_to_256": 16.0
+    }
+  ],
+  "mini_choice": {
+    "vocab": 512,
+    "context": 256,
+    "reason": "Required for exact v0.4 weight compatibility and the 512 MB production envelope."
+  },
+  "standard_candidate": {
+    "vocab": 1024,
+    "context": 512,
+    "reason": "Better compression/detail capacity, but requires scratch/converted training and more RAM."
+  },
+  "warning": "Random-model speed is an architecture cost probe, not a quality benchmark."
+}

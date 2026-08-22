@@ -1,0 +1,22 @@
+{
+  "checkpoint": "checkpoints/v06-preserve-generic/checkpoint-step-2000.pt",
+  "review_type": "non-blinded representative manual spot check",
+  "reviewed": 10,
+  "acceptable": 1,
+  "mean_overall_quality_0_to_5": 1.6,
+  "target": 4.0,
+  "passed": false,
+  "limitations": "This is a small manual audit, not the completed 300-item blinded human evaluation. The full unscored form is results-v06-generic-2000-human.json.",
+  "items": [
+    {"category": "study", "score": 2, "acceptable": false, "note": "Relevant study plan, but invents that one day remains."},
+    {"category": "exam", "score": 1, "acceptable": false, "note": "Question says one week; answer incorrectly changes it to one day."},
+    {"category": "gpa", "score": 1, "acceptable": false, "note": "Answers about attendance rather than GPA and is truncated."},
+    {"category": "email", "score": 1, "acceptable": false, "note": "Answers with an exam study plan rather than an email structure."},
+    {"category": "credit", "score": 2, "acceptable": false, "note": "Partly relevant, but awkward and incomplete."},
+    {"category": "report", "score": 4, "acceptable": true, "note": "Directly gives a usable report-writing order; opening is slightly awkward."},
+    {"category": "citation", "score": 1, "acceptable": false, "note": "Answers with an exam study plan rather than explaining citation."},
+    {"category": "ai", "score": 1, "acceptable": false, "note": "Answers about course registration rather than AI use."},
+    {"category": "career", "score": 1, "acceptable": false, "note": "Answers with a generic study timer rather than job-search steps."},
+    {"category": "programming", "score": 2, "acceptable": false, "note": "Answers about report structure rather than debugging."}
+  ]
+}

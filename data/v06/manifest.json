@@ -1,0 +1,19 @@
+{
+  "dataset_version": "unipilot-quality-preserving-curriculum-v06",
+  "license": "CC0-1.0",
+  "design": "quality-preserving v0.4 replay plus authored instruction, hard, and negative-correction examples",
+  "training_rows": 724,
+  "reviewed_growth_target": 5000,
+  "growth_target_met": false,
+  "growth_policy": "Do not reach the target through answer duplication or mechanical paraphrase padding.",
+  "knowledge_data": "data/v06/knowledge (separate; never presented as current university-specific rules)",
+  "curriculum": {
+    "A": "filtered v0.4 natural/basic replay",
+    "B": "stable university/general knowledge instruction",
+    "C": "direct instruction following",
+    "D": "multi-constraint cases",
+    "E": "hallucination corrections"
+  },
+  "quality_report": "evaluation/dataset-quality-v06.json",
+  "evaluation": "evaluation/fixed_prompts_v06.json"
+}

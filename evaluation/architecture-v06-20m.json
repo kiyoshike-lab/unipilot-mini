@@ -1,0 +1,28 @@
+{
+  "candidate": "20m",
+  "config": {
+    "model_name": "UniPilot candidate 20m",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.0,
+    "bias": true
+  },
+  "parameters": 19814784,
+  "parameter_millions": 19.814784,
+  "sanity_train_steps": 1,
+  "sanity_loss": 6.392115592956543,
+  "gradient_norm": 12.346807479858398,
+  "step_seconds": 0.285259600000245,
+  "inference_tokens_per_second_4_token_probe": 95.33092940509648,
+  "rss_before_mb": 202.234375,
+  "rss_after_model_mb": 281.0625,
+  "rss_after_optimizer_step_mb": 605.65234375,
+  "rss_delta_optimizer_step_mb": 403.41796875,
+  "estimated_fp32_inference_checkpoint_mb": 75.58740234375,
+  "render_free_512mb_feasible": true,
+  "feasibility_basis": "Only 20m leaves measured runtime headroom under 512 MB; larger candidates are design probes, not production candidates."
+}

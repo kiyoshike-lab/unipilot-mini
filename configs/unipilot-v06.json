@@ -1,0 +1,38 @@
+{
+  "model": {
+    "model_name": "UniPilot Mini v0.6 candidate",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/vocab-v02-512.json",
+  "dataset": "data/v06",
+  "dataset_version": "unipilot-quality-preserving-curriculum-v06",
+  "evaluation_version": "unipilot-eval-v06-300-rubric12",
+  "base_checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "seed": 6062026,
+  "learning_rate": 0.000002,
+  "warmup_steps": 50,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "batch_size": 1,
+  "checkpoint_steps": [500, 1000, 2000, 5000, 10000],
+  "stage_schedule": [
+    {"until_fraction": 0.20, "weights": {"A": 0.75, "B": 0.25}},
+    {"until_fraction": 0.45, "weights": {"A": 0.60, "B": 0.10, "C": 0.30}},
+    {"until_fraction": 0.70, "weights": {"A": 0.55, "B": 0.08, "C": 0.27, "D": 0.10}},
+    {"until_fraction": 1.00, "weights": {"A": 0.55, "B": 0.07, "C": 0.23, "D": 0.07, "E": 0.08}}
+  ],
+  "generation": {
+    "temperature": 0.0,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 64
+  }
+}

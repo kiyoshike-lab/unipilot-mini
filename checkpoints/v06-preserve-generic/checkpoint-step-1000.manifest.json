@@ -1,0 +1,45 @@
+{
+  "model": "UniPilot Mini v0.6 candidate",
+  "parameters": 19814784,
+  "stage": "quality-preserving curriculum A-E",
+  "experiment_id": "preserve-generic",
+  "base_checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "dataset_version": "unipilot-quality-preserving-curriculum-v06",
+  "evaluation_version": "unipilot-eval-v06-300-rubric12",
+  "eos_weight": 1.5,
+  "step": 1000,
+  "seed": 6062026,
+  "git_commit": "b4c21da8976e2c2f95fbcca0499cd915aed8a9df",
+  "model_config": {
+    "model_name": "UniPilot Mini v0.6-preserve-generic-1000",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "production_promoted": false,
+  "metrics": {
+    "step": 1000,
+    "loss": 2.100446417648345,
+    "validation_loss": 4.625220463826106,
+    "learning_rate": 1.9643553568613944e-06,
+    "gradient_norm": 3.374121904373169,
+    "gradient_clipping_count": 499,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 267.5256021999965,
+    "step_time_seconds": 0.20558780000010302,
+    "memory_usage_mb": 685.859375,
+    "stage_counts": {
+      "A": 276,
+      "C": 111,
+      "B": 44,
+      "D": 36,
+      "E": 33
+    }
+  }
+}

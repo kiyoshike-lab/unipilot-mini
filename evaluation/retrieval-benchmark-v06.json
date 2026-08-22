@@ -1,0 +1,233 @@
+{
+  "corpus": "data/v06/knowledge/wikipedia.jsonl",
+  "documents": 18,
+  "build_seconds": 0.004507399999965855,
+  "top3_accuracy": 1.0,
+  "cases": [
+    {
+      "query": "GPAとは何ですか",
+      "expected_titles": [
+        "GPA"
+      ],
+      "results": [
+        {
+          "score": 4.602059510356627,
+          "id": "wikipedia-ja-59837",
+          "title": "GPA",
+          "text": "グレード・ポイント・アベレージ (Grade Point Average、GPA) とは、各科目の成績から特定の方式によって算出された学生の成績評価値のこと、あるいはその成績評価方式のことをいう。\n米国の大学や高校などで一般的に使われており、留学、就職の際にその人の学力を測る指標となる。日本の大学においても一般的に導入されている。",
+          "source_url": "https://ja.wikipedia.org/wiki/GPA",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 0.4596015711282418,
+          "id": "wikipedia-ja-65239",
+          "title": "学位",
+          "text": "学位（がくい、英: degree〈ディグリー〉）とは、大学など高等教育機関や国家の学術評価機関等において、教育課程の修了者又はそれと同等の者に対して学術上の能力または研究業績に基づき授与される称号もしくは栄誉称号をいう。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AD%A6%E4%BD%8D",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 0.45922105852513506,
+          "id": "wikipedia-ja-68522",
+          "title": "情報リテラシー",
+          "text": "情報リテラシー（じょうほうリテラシー、英: information literacy）とは、情報と識字（リテラシー）を合わせた言葉で、情報を自己の目的に適合するように使用できる能力のことである。 \n「情報活用能力」や「情報活用力」とも表現するが、文部科学省が定義する「情報活用能力」とは意味合いが異なる。また「情報＝IT」との連想やインターネットの利用時において情報リテラシーが要求される等の理由からコンピュータ・リテラシー、他にもITリテラシー(情報技術リテラシー、information technology literacy)、ネットリテラシーとの表現がある。しかし、以下に定義されるように、本来必ずしもコンピュータと直結するものではなく、情報モラルと大きく同じ意味だと認識されている。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.07240000013553072
+    },
+    {
+      "query": "卒業論文の意味",
+      "expected_titles": [
+        "卒業論文"
+      ],
+      "results": [
+        {
+          "score": 15.465376692223483,
+          "id": "wikipedia-ja-8653",
+          "title": "卒業論文",
+          "text": "卒業論文（そつぎょうろんぶん、英: graduation thesis）とは、大学, 短期大学および高等専門学校に所属する、主に最終学年の学生が、その最終学年の1年間を通して行う卒業研究の成果として学校に提出する論文のことである（期間や方法が異なる場合もある）。\n一部の高等学校や中学校も卒業論文の提出を課している。略称は、卒論（そつろん）。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8D%92%E6%A5%AD%E8%AB%96%E6%96%87",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 6.115204038355093,
+          "id": "wikipedia-ja-486063",
+          "title": "レポート",
+          "text": "レポート、リポート（report）は、「報告（する）」の意。\n転じて、以下の意味でも使用される。\n\n調査や研究等の報告書。\n転じて、ゲーム『ポケットモンスター』ではセーブの名称として用いられている。\n学校で課題として提出する小論文。\nテレビ、ラジオなどの番組で、ある現場の実況を中継で伝えること。この意味では「リポート」が多く用いられる。伝える人はリポーター。\n放送や無線通信において、信号の受信状況を示す数字や符号。ベリカードに記載されるSINPOコード、QSLカードに記載されるRSTコード（RSTレポート）などがある。\nインターネットの掲示板などにおいての悪意あるコメントの報告。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 2.399865657353904,
+          "id": "wikipedia-ja-976242",
+          "title": "プレゼンテーション",
+          "text": "プレゼンテーション（英: presentation）は、英語で「表現」、「紹介」、「提示」などの意味。情報伝達手段の一種である。相手に情報を提示し、理解を得るようにするための手段。特に視覚情報が重視され、視覚情報伝達手段の一種と定義されている場合もある。日本語ではプレゼンと略称されることも多く、特に広告業界ではこの略語で早くから浸透している。\n上でも少し触れたように、定義はかなり狭く捉えたものがあり、多くの専門用語辞書類を紐解けば、むしろ狭義の場合が多いことに気づく。しかしそれらは、その用語辞書自体が、ビジネス、情報通信技術、広告などといった、前提としての上位分野の定義があらかじめ絞られていることに留意する必要がある。そういった分野的限定がない一般辞書類では、まずは広く定義されており、その後で視覚情報が重視されることを説明している。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.04160000025876798
+    },
+    {
+      "query": "著作物を引用する方法",
+      "expected_titles": [
+        "引用",
+        "著作権"
+      ],
+      "results": [
+        {
+          "score": 13.403730574327511,
+          "id": "wikipedia-ja-40127",
+          "title": "引用",
+          "text": "引用（いんよう、英語：citation, quotation）とは、広義には、自己のオリジナル作品のなかで他人の著作を副次的に紹介する行為、先人の芸術作品やその要素を副次的に自己の作品に取り入れること。報道や批評、研究などの目的で、自らの著作物に他の著作物の一部を採録したり、ポストモダン建築で過去の様式を取り込んだりすることを指す。狭義には、各国の著作権法の引用の要件を満たして行われる合法な無断転載等のこと。引用は権利者に無断で行われるもので、法（日本では著作権法第32条）で認められた合法な行為であり、権利者は引用を拒否することはできない。権利者が拒否できるのは、著作権法の引用の要件を満たさない違法な無断転載等に限られる。本項では著作権法で認められる引用（狭義の引用）について記述する。\n科学論文においては、引用はむしろ内容そのものを参照することを指す場合が多い。下記を参照のこと。\n\n以下で条数のみの記載は、著作権法である。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 2.9454531607041443,
+          "id": "wikipedia-ja-672884",
+          "title": "シラバス",
+          "text": "シラバス・梗概（英: syllabus）とは、\n\n日本では教師が学生に示す講義・授業の授業計画のこと。\nアメリカ合衆国では、各回講義内容から教員連絡方法まで、個別講義の受講に関して必要な情報をすべて盛り込んだメモのこと。\n本項では両方を記述する。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A9%E3%83%90%E3%82%B9",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 2.7736957367078534,
+          "id": "wikipedia-ja-8653",
+          "title": "卒業論文",
+          "text": "卒業論文（そつぎょうろんぶん、英: graduation thesis）とは、大学, 短期大学および高等専門学校に所属する、主に最終学年の学生が、その最終学年の1年間を通して行う卒業研究の成果として学校に提出する論文のことである（期間や方法が異なる場合もある）。\n一部の高等学校や中学校も卒業論文の提出を課している。略称は、卒論（そつろん）。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8D%92%E6%A5%AD%E8%AB%96%E6%96%87",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.0501000004078378
+    },
+    {
+      "query": "人工知能について知りたい",
+      "expected_titles": [
+        "人工知能"
+      ],
+      "results": [
+        {
+          "score": 16.43749201675123,
+          "id": "wikipedia-ja-70",
+          "title": "人工知能",
+          "text": "人工知能（じんこうちのう、英: artificial intelligence）、AI（エーアイ）は、「『計算（computation）』という概念と『コンピュータ（computer）』という道具を用いて『知能』を研究する計算機科学（computer science）の一分野」を指す語。「言語の理解や推論、問題解決などの知的行動を人間に代わってコンピュータに行わせる技術」、または、「計算機（コンピュータ）による知的な情報処理システムの設計や実現に関する研究分野」ともされる。命名者はジョン・マッカーシー。『日本大百科全書（ニッポニカ）』で情報工学者の佐藤理史は次のように説明した。\n\nAIの研究開発は「人工知能学」とも呼ばれる。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 4.749459746897654,
+          "id": "wikipedia-ja-40127",
+          "title": "引用",
+          "text": "引用（いんよう、英語：citation, quotation）とは、広義には、自己のオリジナル作品のなかで他人の著作を副次的に紹介する行為、先人の芸術作品やその要素を副次的に自己の作品に取り入れること。報道や批評、研究などの目的で、自らの著作物に他の著作物の一部を採録したり、ポストモダン建築で過去の様式を取り込んだりすることを指す。狭義には、各国の著作権法の引用の要件を満たして行われる合法な無断転載等のこと。引用は権利者に無断で行われるもので、法（日本では著作権法第32条）で認められた合法な行為であり、権利者は引用を拒否することはできない。権利者が拒否できるのは、著作権法の引用の要件を満たさない違法な無断転載等に限られる。本項では著作権法で認められる引用（狭義の引用）について記述する。\n科学論文においては、引用はむしろ内容そのものを参照することを指す場合が多い。下記を参照のこと。\n\n以下で条数のみの記載は、著作権法である。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 1.0945182048642552,
+          "id": "wikipedia-ja-2671",
+          "title": "学習",
+          "text": "学習（がくしゅう）とは、知識、行動、スキル（能力）、価値観、選好（好き嫌い）を、新しく獲得したり、修正したりすることである。生理学や心理学においては、経験によって動物（人間を含め）の行動が変容することを指す。繰り返し行う学習を練習（れんしゅう）という。又は一度行った学習をもういちど学習することを、復習という。先延ばしは、学習において克服すべき最大の問題である。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AD%A6%E7%BF%92",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.044100000195612665
+    },
+    {
+      "query": "図書館とは",
+      "expected_titles": [
+        "図書館"
+      ],
+      "results": [
+        {
+          "score": 13.191954423514359,
+          "id": "wikipedia-ja-2579",
+          "title": "図書館",
+          "text": "図書館（としょかん）とは、書籍や雑誌、点字資料、映像・録音といった視聴覚資料等を収集・保管し、利用者への貸出や閲覧などの供する施設もしくは機関である。\n日本語の「図書館」は、明治中期に英語のライブラリ（英: library）から訳された訳語（和製漢語）である。図版の「図」、書籍の「書」を取って、図書とし、図書を保存する建物という意味であった。他の西洋言語では、独: Bibliothek、仏: bibliothèqueなどという。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E6%9B%B8%E9%A4%A8",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 0.4596015711282418,
+          "id": "wikipedia-ja-65239",
+          "title": "学位",
+          "text": "学位（がくい、英: degree〈ディグリー〉）とは、大学など高等教育機関や国家の学術評価機関等において、教育課程の修了者又はそれと同等の者に対して学術上の能力または研究業績に基づき授与される称号もしくは栄誉称号をいう。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AD%A6%E4%BD%8D",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 0.45922105852513506,
+          "id": "wikipedia-ja-68522",
+          "title": "情報リテラシー",
+          "text": "情報リテラシー（じょうほうリテラシー、英: information literacy）とは、情報と識字（リテラシー）を合わせた言葉で、情報を自己の目的に適合するように使用できる能力のことである。 \n「情報活用能力」や「情報活用力」とも表現するが、文部科学省が定義する「情報活用能力」とは意味合いが異なる。また「情報＝IT」との連想やインターネットの利用時において情報リテラシーが要求される等の理由からコンピュータ・リテラシー、他にもITリテラシー(情報技術リテラシー、information technology literacy)、ネットリテラシーとの表現がある。しかし、以下に定義されるように、本来必ずしもコンピュータと直結するものではなく、情報モラルと大きく同じ意味だと認識されている。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.0335000004270114
+    },
+    {
+      "query": "就職活動の概要",
+      "expected_titles": [
+        "就職活動"
+      ],
+      "results": [
+        {
+          "score": 15.664034481931102,
+          "id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "text": "就職活動（しゅうしょくかつどう、英: job hunting）は、職業に就くための活動の総称。略す場合は「就活（しゅうかつ）」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間（働かない期間、離職期間、あるいは失業期間）を経て、再び就職することを再就職という。\n就職活動のあり方は、世界を見渡せば多様である。\n在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。\n日本のような「横並び一斉スタートの新卒一括採用」などというシステムは世界では少数派であり、大学等の高等教育の講義（学問）を自ら欠席（放棄）してまで、学生が就職活動に専念するのは世界で日本と韓国のみである。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 2.0778371584539435,
+          "id": "wikipedia-ja-59837",
+          "title": "GPA",
+          "text": "グレード・ポイント・アベレージ (Grade Point Average、GPA) とは、各科目の成績から特定の方式によって算出された学生の成績評価値のこと、あるいはその成績評価方式のことをいう。\n米国の大学や高校などで一般的に使われており、留学、就職の際にその人の学力を測る指標となる。日本の大学においても一般的に導入されている。",
+          "source_url": "https://ja.wikipedia.org/wiki/GPA",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        },
+        {
+          "score": 1.626623229534714,
+          "id": "wikipedia-ja-203029",
+          "title": "履歴書",
+          "text": "履歴書（りれきしょ 英語：résumé, resume）は、\n学業や職業の経歴など人物の状況を記した書類のことで、就職や転職時に選考用の資料として用いられる。\n昭和30年頃までは特定の用紙はなく、必要事項を全て筆で縦書きしていた(履歴書用紙が出来た時期や詳細は不明)。\nまた、学歴や職歴によって給与や資格などを決定する手続き（査定）において、それを証明する各種の書類とともに提出する。多くの企業では応募時の提出を求めているが、企業側で用意した独自の書類（エントリーシートなど）に履歴書と同等の内容を記入させる企業もあり、必ずしも履歴書が必要とは限らない。",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B1%A5%E6%AD%B4%E6%9B%B8",
+          "license": "CC BY-SA 4.0",
+          "usage_guard": "Not authoritative for current, university-specific rules; verify those with official current sources."
+        }
+      ],
+      "top3_hit": true,
+      "latency_ms": 0.02809999932651408
+    }
+  ],
+  "production_enabled": false,
+  "reason": "Offline candidate only; current-rule answers still require current official sources."
+}

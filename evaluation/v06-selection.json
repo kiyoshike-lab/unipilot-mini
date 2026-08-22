@@ -1,0 +1,77 @@
+{
+  "baseline": "evaluation/results-v04-v06suite.json",
+  "kpi": {
+    "natural_rate": 0.95,
+    "completion_rate": 0.9,
+    "relevance_rate": 0.85,
+    "keyword_rate": 0.8,
+    "category_accuracy": 0.8,
+    "unnecessary_information_rate_max": 0.05,
+    "runaway_rate_max": 0.01,
+    "repetition_rate_max": 0.02,
+    "eos_rate": 0.9
+  },
+  "stages": [
+    {
+      "result": "evaluation/results-v06-generic-500.json",
+      "checkpoint": "checkpoints\\v06-preserve-generic\\checkpoint-step-500.pt",
+      "step": 500,
+      "quality_score": 4.721047837490593,
+      "kpi_pass": {
+        "natural": true,
+        "completion": false,
+        "relevance": false,
+        "keyword": false,
+        "category": false,
+        "unnecessary": true,
+        "runaway": false,
+        "repetition": true,
+        "eos": false
+      },
+      "regressions_over_2pp_vs_previous": []
+    },
+    {
+      "result": "evaluation/results-v06-generic-1000.json",
+      "checkpoint": "checkpoints\\v06-preserve-generic\\checkpoint-step-1000.pt",
+      "step": 1000,
+      "quality_score": 4.954953968839262,
+      "kpi_pass": {
+        "natural": true,
+        "completion": false,
+        "relevance": false,
+        "keyword": false,
+        "category": false,
+        "unnecessary": true,
+        "runaway": false,
+        "repetition": true,
+        "eos": false
+      },
+      "regressions_over_2pp_vs_previous": []
+    },
+    {
+      "result": "evaluation/results-v06-generic-2000.json",
+      "checkpoint": "checkpoints\\v06-preserve-generic\\checkpoint-step-2000.pt",
+      "step": 2000,
+      "quality_score": 5.051270366910637,
+      "kpi_pass": {
+        "natural": true,
+        "completion": true,
+        "relevance": false,
+        "keyword": false,
+        "category": false,
+        "unnecessary": true,
+        "runaway": false,
+        "repetition": true,
+        "eos": true
+      },
+      "regressions_over_2pp_vs_previous": []
+    }
+  ],
+  "automatic_best_result": "evaluation/results-v06-generic-2000.json",
+  "automatic_best_checkpoint": "checkpoints\\v06-preserve-generic\\checkpoint-step-2000.pt",
+  "automatic_best_step": 2000,
+  "production_promotion": false,
+  "production_model": "v0.4",
+  "stop_reason": "KPI gate failed; 5000/10000 would overfit the 798-row core without evidence of closing the relevance gap.",
+  "human_gate": "Not passed: representative manual audit is below 4/5 and full blinded human scoring is incomplete."
+}

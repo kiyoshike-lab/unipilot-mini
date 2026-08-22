@@ -1,0 +1,19 @@
+{
+  "source": "checkpoints/v06-preserve-generic/checkpoint-step-2000.pt",
+  "output": "checkpoints/v06-preserve-generic/unipilot-mini-v06-best-candidate-inference.pt",
+  "source_size_mb": 226.92350482940674,
+  "output_size_mb": 75.64144229888916,
+  "kept_keys": [
+    "config",
+    "inference_only",
+    "loss",
+    "model_state",
+    "source_checkpoint",
+    "step",
+    "tokenizer_version",
+    "v06_manifest"
+  ],
+  "removed_keys": [
+    "optimizer_state"
+  ]
+}

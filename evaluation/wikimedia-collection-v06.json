@@ -1,0 +1,89 @@
+{
+  "source": "Japanese Wikipedia via official MediaWiki Action API",
+  "api": "https://ja.wikipedia.org/w/api.php",
+  "retrieved_at": "2026-08-22T15:03:09.309958+00:00",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "requested": 37,
+  "accepted": 18,
+  "excluded": [
+    {
+      "title": "単位 (大学)",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "著作権",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "統計学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "プログラミング",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "電子メール",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "計算機科学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "英語",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "記憶",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "線型代数学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "試験",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "資格",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "ゼミナール",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "留学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "研究室",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "確率論",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "面接",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "電子図書館",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "盗用",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "タイムマネジメント",
+      "reason": "missing, disambiguation, or too short"
+    }
+  ],
+  "output": "data/v06/knowledge/wikipedia.jsonl",
+  "usage": "Separate knowledge corpus. Current university rules and deadlines always require official verification."
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "mode": "optimized",
+  "checkpoint": "checkpoints\\v06-preserve-generic\\unipilot-mini-v06-best-candidate-inference.pt",
+  "checkpoint_size_mb": 75.64144229888916,
+  "model": "UniPilot Mini v0.6-preserve-generic-2000",
+  "parameters": 19814784,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.330500199999733,
+  "rss_before_load_mb": 202.1953125,
+  "rss_after_load_mb": 281.87890625,
+  "model_load_rss_delta_mb": 79.68359375,
+  "peak_rss_mb": 310.40234375,
+  "mean_tokens_per_second": 57.25457341702253,
+  "bottleneck": "see per-case timings",
+  "checkpoint_metadata": {
+    "step": 2000,
+    "loss": 4.161831156565593
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 101,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.0029666999998880783,
+      "generation_seconds": 0.08748599999853468,
+      "first_token_seconds": 0.05285519999961252,
+      "seconds_per_token": 0.017497199999706937,
+      "tokens_per_second": 57.15200146404849,
+      "peak_rss_mb": 294.70703125,
+      "eos_reached": false,
+      "text": "締切"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 149,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.004385600001114653,
+      "generation_seconds": 0.2485651000006328,
+      "first_token_seconds": 0.07488130000092497,
+      "seconds_per_token": 0.01242825500003164,
+      "tokens_per_second": 80.46181865414366,
+      "peak_rss_mb": 302.28125,
+      "eos_reached": true,
+      "text": "は目的を一つ決め、使える時間"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 203,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.006119300000136718,
+      "generation_seconds": 1.8740904000005685,
+      "first_token_seconds": 0.0999441999992996,
+      "seconds_per_token": 0.029282662500008882,
+      "tokens_per_second": 34.14990013287544,
+      "peak_rss_mb": 310.40234375,
+      "eos_reached": true,
+      "text": "を先に先にすると動きやすくなです。を屺めです。動スレレライラレドのラドのバをで"
+    }
+  ]
+}
