@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 
 from api.schemas import ChatRequest, GenerateRequest, HumanScoreRequest, ModelLoadRequest
 
@@ -18,7 +19,9 @@ runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint
 
 def load_runtime(checkpoint: str | None = None):
     from inference.generate import load_model
-    checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT", "checkpoints/v04-eos15/checkpoint-step-2000.pt")
+    inference_checkpoint = Path("checkpoints/v04-eos15/unipilot-mini-v04-inference.pt")
+    default_checkpoint = inference_checkpoint if inference_checkpoint.exists() else Path("checkpoints/v04-eos15/checkpoint-step-2000.pt")
+    checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT", str(default_checkpoint))
     tokenizer = os.getenv("UNIPILOT_TOKENIZER", "tokenizer/vocab-v02-512.json")
     if not Path(checkpoint).exists():
         return
@@ -52,16 +55,16 @@ def model_info():
             "device": runtime["device"], "external_ai_api": "OFF"}
 
 
+def chat_prompt(prompt: str) -> str:
+    system_text = "あなたは大学生活を支援する完全ローカルのUniPilot Miniです。情報がない場合は推測せず、確認方法を案内します。"
+    return f"<BOS><SYSTEM>\n{system_text}\n<USER>\n{prompt}\n<ASSISTANT>\n"
+
+
 def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     from inference.generate import generate_text
-    system_text = "あなたは大学生活を支援する完全ローカルのUniPilot Miniです。情報がない場合は推測せず、確認方法を案内します。"
-    prompt = (
-        f"<BOS><SYSTEM>\n{system_text}\n"
-        f"<USER>\n{request.prompt}\n"
-        f"<ASSISTANT>\n"
-    ) if chat else request.prompt
+    prompt = chat_prompt(request.prompt) if chat else request.prompt
     text, metrics = generate_text(runtime["model"], runtime["tokenizer"], prompt, request.max_new_tokens,
                                   request.temperature, request.top_k, request.top_p, request.repetition_penalty)
     return {"text": text, "model": "UniPilot Mini", "local": True, "metrics": metrics}
@@ -73,6 +76,22 @@ def generate(request: GenerateRequest): return run_generation(request, False)
 
 @app.post("/chat")
 def chat(request: ChatRequest): return run_generation(request, True)
+
+
+@app.post("/chat/stream")
+def chat_stream(request: ChatRequest):
+    if runtime["model"] is None:
+        raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
+    from inference.generate import iter_generate_text
+
+    def events():
+        for snapshot in iter_generate_text(
+            runtime["model"], runtime["tokenizer"], chat_prompt(request.prompt), request.max_new_tokens,
+            request.temperature, request.top_k, request.top_p, request.repetition_penalty,
+        ):
+            yield json.dumps(snapshot, ensure_ascii=False) + "\n"
+
+    return StreamingResponse(events(), media_type="application/x-ndjson", headers={"Cache-Control": "no-cache"})
 
 
 @app.get("/checkpoints")

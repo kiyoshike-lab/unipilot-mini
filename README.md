@@ -210,6 +210,16 @@ python -m evaluation.build_v03_artifacts
 
 小規模な合成データだけでは一般知識、事実性、長文理解、複雑な推論は身につきません。出力が不自然、反復的、または誤っている可能性があります。改善は学習済みモデルの流用ではなく、権利確認済みデータの拡充、重複削除、応答品質評価、モデル規模と学習stepの段階的増加で行います。
 
+## CPU推論とRender
+
+推論はKV cache、`torch.inference_mode()`、checkpointのmmapロードを使用します。学習checkpointを削除せず、Render向けにoptimizerを除いた同一重みの推論専用版を作れます。
+
+```powershell
+python -m scripts.export_inference_checkpoint --input checkpoints/v04-eos15/checkpoint-step-2000.pt --output checkpoints/v04-eos15/unipilot-mini-v04-inference.pt
+```
+
+Renderではbuild commandを`pip install -r requirements-prod.txt`、start commandを`uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1`とし、`UNIPILOT_CPU_THREADS=1`を設定してください。配布先から推論専用checkpointを取得する場合は、`UNIPILOT_CHECKPOINT`にそのパスを指定します。`POST /chat`は互換維持され、`POST /chat/stream`はNDJSONで累積回答を逐次返します。
+
 ## v0.4: Clean ConversationとEOS学習
 
 v0.4はモデル構造と512 vocabを固定し、Stage B checkpointから8,000件のClean Stage Cだけを最大2,000 step学習します。

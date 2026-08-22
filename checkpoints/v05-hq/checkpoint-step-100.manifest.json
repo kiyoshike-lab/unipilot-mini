@@ -1,0 +1,37 @@
+{
+  "model": "UniPilot Mini v0.5",
+  "parameters": 19814784,
+  "stage": "High-quality conversation",
+  "experiment_id": "v05-hq",
+  "base_checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "dataset_version": "unipilot-high-quality-conversation-v05",
+  "evaluation_version": "unipilot-eval-v05-60",
+  "eos_weight": 1.5,
+  "step": 100,
+  "seed": 5052026,
+  "git_commit": "c2c909c41b6f622ac0087a9f2b5515c188b80c76",
+  "model_config": {
+    "model_name": "UniPilot Mini v0.5-v05-hq-100",
+    "vocab_size": 512,
+    "context_length": 256,
+    "embedding_dim": 384,
+    "n_layers": 11,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "metrics": {
+    "step": 100,
+    "loss": 4.559343444108963,
+    "validation_loss": 4.215697129567464,
+    "learning_rate": 2.006938673833494e-06,
+    "gradient_norm": 8.111089706420898,
+    "gradient_clipping_count": 100,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 229.971163083996,
+    "step_time_seconds": 0.4087469000000965,
+    "memory_usage_mb": 668.44921875
+  }
+}

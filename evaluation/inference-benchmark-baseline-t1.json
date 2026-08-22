@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "mode": "legacy",
+  "checkpoint": "checkpoints/v04-eos15/unipilot-mini-v04-inference.pt",
+  "checkpoint_size_mb": 75.63947200775146,
+  "model": "UniPilot Mini v0.4-v04-eos15-2000",
+  "parameters": 19814784,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.29650169999990794,
+  "rss_before_load_mb": 202.0625,
+  "rss_after_load_mb": 281.69140625,
+  "model_load_rss_delta_mb": 79.62890625,
+  "peak_rss_mb": 297.44140625,
+  "mean_tokens_per_second": 13.310918064697612,
+  "bottleneck": "full prompt and all prior generated tokens are recomputed through every Transformer layer for each token",
+  "checkpoint_metadata": {
+    "step": 2000,
+    "loss": 0.11260527501969288
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 101,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.0029537999998865416,
+      "model_forward_seconds": 0.2634443999997984,
+      "sampling_seconds": 0.0009955000002719316,
+      "generation_seconds": 0.2646780000000035,
+      "seconds_per_token": 0.05293560000000071,
+      "tokens_per_second": 18.890878728114664,
+      "peak_rss_mb": 288.125,
+      "eos_reached": false,
+      "text": "本優"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 149,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.004370699999981298,
+      "model_forward_seconds": 1.610063899999659,
+      "sampling_seconds": 0.0033376000001226203,
+      "generation_seconds": 1.6144627000001037,
+      "seconds_per_token": 0.08072313500000519,
+      "tokens_per_second": 12.388022343284064,
+      "peak_rss_mb": 291.6796875,
+      "eos_reached": true,
+      "text": "は25分だけ勉強習する計"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 203,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.006060800000113886,
+      "model_forward_seconds": 7.382148800000323,
+      "sampling_seconds": 0.010345300000608404,
+      "generation_seconds": 7.395549600000095,
+      "seconds_per_token": 0.11555546250000148,
+      "tokens_per_second": 8.65385312269411,
+      "peak_rss_mb": 297.44140625,
+      "eos_reached": true,
+      "text": "を先に先にすると、心分かります。を順きやすくなります。を一つを決めてきやすると動ス、します。レラ習しましょう。"
+    }
+  ]
+}

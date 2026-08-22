@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "mode": "optimized",
+  "checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "checkpoint_size_mb": 226.923565864563,
+  "model": "UniPilot Mini v0.4-v04-eos15-2000",
+  "parameters": 19814784,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.36490490000005593,
+  "rss_before_load_mb": 202.2109375,
+  "rss_after_load_mb": 282.24609375,
+  "model_load_rss_delta_mb": 80.03515625,
+  "peak_rss_mb": 309.60546875,
+  "mean_tokens_per_second": 57.07474452157705,
+  "bottleneck": "see per-case timings",
+  "checkpoint_metadata": {
+    "step": 2000,
+    "loss": 0.11260527501969288
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 101,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.003063299999894298,
+      "generation_seconds": 0.09014540000021043,
+      "seconds_per_token": 0.018029080000042087,
+      "tokens_per_second": 55.46594723622424,
+      "peak_rss_mb": 295.14453125,
+      "eos_reached": false,
+      "text": "本優"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 149,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.004375700000082361,
+      "generation_seconds": 0.24458409999988362,
+      "seconds_per_token": 0.012229204999994182,
+      "tokens_per_second": 81.77146429391574,
+      "peak_rss_mb": 302.82421875,
+      "eos_reached": true,
+      "text": "は25分だけ勉強習する計"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 203,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.006067799999982526,
+      "generation_seconds": 1.883082800000011,
+      "seconds_per_token": 0.029423168750000173,
+      "tokens_per_second": 33.986822034591164,
+      "peak_rss_mb": 309.60546875,
+      "eos_reached": true,
+      "text": "を先に先にすると、心分かります。を順きやすくなります。を一つを決めてきやすると動ス、します。レラ習しましょう。"
+    }
+  ]
+}

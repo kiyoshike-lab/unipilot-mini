@@ -1,0 +1,41 @@
+{
+  "source": "Japanese Wikipedia via official MediaWiki Action API",
+  "api": "https://ja.wikipedia.org/w/api.php",
+  "retrieved_at": "2026-08-22T13:33:19.758244+00:00",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "requested": 25,
+  "accepted": 18,
+  "excluded": [
+    {
+      "title": "単位 (大学)",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "経営学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "プログラミング",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "計算機科学",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "記憶",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "試験",
+      "reason": "missing, disambiguation, or too short"
+    },
+    {
+      "title": "面接",
+      "reason": "missing, disambiguation, or too short"
+    }
+  ],
+  "output": "data/v05/knowledge/wikipedia.jsonl",
+  "usage": "knowledge data kept separate from instruction/chat data"
+}

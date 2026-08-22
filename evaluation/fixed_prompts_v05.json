@@ -1,0 +1,641 @@
+[
+  {
+    "id": "required-v05-00",
+    "category": "study",
+    "prompt": "テストを効率よく勉強する方法を教えてください",
+    "expected_keywords": [
+      "試験範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-01",
+    "category": "lateness",
+    "prompt": "大学のテストに遅刻したらどうすればいい？",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-02",
+    "category": "gpa",
+    "prompt": "GPAって何？",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-03",
+    "category": "email",
+    "prompt": "教授に欠席メールを送りたい",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-04",
+    "category": "credit",
+    "prompt": "単位を落としそうです",
+    "expected_keywords": [
+      "シラバス",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-05",
+    "category": "citation",
+    "prompt": "レポートの引用方法を教えて",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-06",
+    "category": "registration",
+    "prompt": "履修登録を忘れました",
+    "expected_keywords": [
+      "教務",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-07",
+    "category": "general",
+    "prompt": "大学1年生は何をした方がいい？",
+    "expected_keywords": [
+      "授業",
+      "計画"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-08",
+    "category": "career",
+    "prompt": "就活はいつから始めればいい？",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "required-v05-09",
+    "category": "ai",
+    "prompt": "生成AIをレポートに使ってもいい？",
+    "expected_keywords": [
+      "ルール",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-000",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-001",
+    "category": "assignment",
+    "prompt": "課題の締切に間に合わないかもしれません 短く教えてください。",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-002",
+    "category": "assignment",
+    "prompt": "大学生活の相談です。課題の締切に間に合わないかもしれません",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-003",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-004",
+    "category": "presentation",
+    "prompt": "プレゼン資料を見やすくしたい 短く教えてください。",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-005",
+    "category": "presentation",
+    "prompt": "大学生活の相談です。プレゼン資料を見やすくしたい",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-006",
+    "category": "qualification",
+    "prompt": "資格は取った方がいい？",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-007",
+    "category": "qualification",
+    "prompt": "資格は取った方がいい？ 短く教えてください。",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-008",
+    "category": "qualification",
+    "prompt": "大学生活の相談です。資格は取った方がいい？",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-009",
+    "category": "ai",
+    "prompt": "AIを勉強にどう活用すればいい？",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-010",
+    "category": "ai",
+    "prompt": "AIを勉強にどう活用すればいい？ 短く教えてください。",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "broad-v05-011",
+    "category": "ai",
+    "prompt": "大学生活の相談です。AIを勉強にどう活用すればいい？",
+    "expected_keywords": [],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-000",
+    "category": "study",
+    "prompt": "大学生活の相談です。テストを効率よく勉強する方法を教えてください 簡潔に答えてください。",
+    "expected_keywords": [
+      "試験範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-001",
+    "category": "lateness",
+    "prompt": "大学生活の相談です。大学のテストに遅刻したらどうすればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-002",
+    "category": "gpa",
+    "prompt": "大学生活の相談です。GPAって何？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-003",
+    "category": "email",
+    "prompt": "大学生活の相談です。教授に欠席メールを送りたい 簡潔に答えてください。",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-004",
+    "category": "credit",
+    "prompt": "大学生活の相談です。単位を落としそうです 簡潔に答えてください。",
+    "expected_keywords": [
+      "シラバス",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-005",
+    "category": "citation",
+    "prompt": "大学生活の相談です。レポートの引用方法を教えて 簡潔に答えてください。",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-006",
+    "category": "registration",
+    "prompt": "大学生活の相談です。履修登録を忘れました 簡潔に答えてください。",
+    "expected_keywords": [
+      "教務",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-007",
+    "category": "general",
+    "prompt": "大学生活の相談です。大学1年生は何をした方がいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "授業",
+      "計画"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-008",
+    "category": "career",
+    "prompt": "大学生活の相談です。就活はいつから始めればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-009",
+    "category": "ai",
+    "prompt": "大学生活の相談です。生成AIをレポートに使ってもいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "ルール",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-010",
+    "category": "study",
+    "prompt": "大学生活の相談です。テストを効率よく勉強する方法を教えてください 簡潔に答えてください。",
+    "expected_keywords": [
+      "試験範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-011",
+    "category": "lateness",
+    "prompt": "大学生活の相談です。大学のテストに遅刻したらどうすればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-012",
+    "category": "gpa",
+    "prompt": "大学生活の相談です。GPAって何？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-013",
+    "category": "email",
+    "prompt": "大学生活の相談です。教授に欠席メールを送りたい 簡潔に答えてください。",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-014",
+    "category": "credit",
+    "prompt": "大学生活の相談です。単位を落としそうです 簡潔に答えてください。",
+    "expected_keywords": [
+      "シラバス",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-015",
+    "category": "citation",
+    "prompt": "大学生活の相談です。レポートの引用方法を教えて 簡潔に答えてください。",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-016",
+    "category": "registration",
+    "prompt": "大学生活の相談です。履修登録を忘れました 簡潔に答えてください。",
+    "expected_keywords": [
+      "教務",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-017",
+    "category": "general",
+    "prompt": "大学生活の相談です。大学1年生は何をした方がいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "授業",
+      "計画"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-018",
+    "category": "career",
+    "prompt": "大学生活の相談です。就活はいつから始めればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-019",
+    "category": "ai",
+    "prompt": "大学生活の相談です。生成AIをレポートに使ってもいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "ルール",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-020",
+    "category": "study",
+    "prompt": "大学生活の相談です。テストを効率よく勉強する方法を教えてください 簡潔に答えてください。",
+    "expected_keywords": [
+      "試験範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-021",
+    "category": "lateness",
+    "prompt": "大学生活の相談です。大学のテストに遅刻したらどうすればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-022",
+    "category": "gpa",
+    "prompt": "大学生活の相談です。GPAって何？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-023",
+    "category": "email",
+    "prompt": "大学生活の相談です。教授に欠席メールを送りたい 簡潔に答えてください。",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-024",
+    "category": "credit",
+    "prompt": "大学生活の相談です。単位を落としそうです 簡潔に答えてください。",
+    "expected_keywords": [
+      "シラバス",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-025",
+    "category": "citation",
+    "prompt": "大学生活の相談です。レポートの引用方法を教えて 簡潔に答えてください。",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-026",
+    "category": "registration",
+    "prompt": "大学生活の相談です。履修登録を忘れました 簡潔に答えてください。",
+    "expected_keywords": [
+      "教務",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-027",
+    "category": "general",
+    "prompt": "大学生活の相談です。大学1年生は何をした方がいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "授業",
+      "計画"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-028",
+    "category": "career",
+    "prompt": "大学生活の相談です。就活はいつから始めればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "キャリア",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-029",
+    "category": "ai",
+    "prompt": "大学生活の相談です。生成AIをレポートに使ってもいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "ルール",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-030",
+    "category": "study",
+    "prompt": "大学生活の相談です。テストを効率よく勉強する方法を教えてください 簡潔に答えてください。",
+    "expected_keywords": [
+      "試験範囲",
+      "復習"
+    ],
+    "forbidden_keywords": [
+      "法学",
+      "経済学"
+    ],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-031",
+    "category": "lateness",
+    "prompt": "大学生活の相談です。大学のテストに遅刻したらどうすればいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "連絡",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-032",
+    "category": "gpa",
+    "prompt": "大学生活の相談です。GPAって何？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "成績",
+      "平均"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-033",
+    "category": "email",
+    "prompt": "大学生活の相談です。教授に欠席メールを送りたい 簡潔に答えてください。",
+    "expected_keywords": [
+      "件名",
+      "氏名"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-034",
+    "category": "credit",
+    "prompt": "大学生活の相談です。単位を落としそうです 簡潔に答えてください。",
+    "expected_keywords": [
+      "シラバス",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-035",
+    "category": "citation",
+    "prompt": "大学生活の相談です。レポートの引用方法を教えて 簡潔に答えてください。",
+    "expected_keywords": [
+      "出典",
+      "引用"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-036",
+    "category": "registration",
+    "prompt": "大学生活の相談です。履修登録を忘れました 簡潔に答えてください。",
+    "expected_keywords": [
+      "教務",
+      "確認"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  },
+  {
+    "id": "paraphrase-v05-037",
+    "category": "general",
+    "prompt": "大学生活の相談です。大学1年生は何をした方がいい？ 簡潔に答えてください。",
+    "expected_keywords": [
+      "授業",
+      "計画"
+    ],
+    "forbidden_keywords": [],
+    "held_out": true
+  }
+]

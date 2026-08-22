@@ -11,10 +11,26 @@ export default function Home() {
     event.preventDefault(); if (!input.trim() || busy) return;
     const question = input.trim(); setMessages(value => [...value, { role: "user", text: question }]); setInput(""); setBusy(true); setError("");
     try {
-      const response = await fetch(`${API}/chat`, { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: question, max_new_tokens: 32, temperature: .7, top_k: 40, top_p: .9, repetition_penalty: 1.0 }) });
-      if (!response.ok) throw new Error(`Local API error: ${response.status}`);
-      const data = await response.json(); setMessages(value => [...value, { role: "assistant", text: data.text || "応答が空でした。" }]);
+      const requestBody = JSON.stringify({ prompt: question, max_new_tokens: 32, temperature: .7, top_k: 40, top_p: .9, repetition_penalty: 1.0 });
+      const stream = await fetch(`${API}/chat/stream`, { method: "POST", headers: { "Content-Type": "application/json" }, body: requestBody });
+      if (!stream.ok || !stream.body) {
+        const response = await fetch(`${API}/chat`, { method: "POST", headers: { "Content-Type": "application/json" }, body: requestBody });
+        if (!response.ok) throw new Error(`Local API error: ${response.status}`);
+        const data = await response.json(); setMessages(value => [...value, { role: "assistant", text: data.text || "応答が空でした。" }]);
+      } else {
+        setMessages(value => [...value, { role: "assistant", text: "" }]);
+        const reader = stream.body.getReader(); const decoder = new TextDecoder(); let buffer = ""; let finalText = "";
+        while (true) {
+          const { done, value } = await reader.read(); buffer += decoder.decode(value, { stream: !done });
+          const lines = buffer.split("\n"); buffer = lines.pop() ?? "";
+          for (const line of lines) if (line.trim()) {
+            const snapshot = JSON.parse(line); finalText = snapshot.text ?? finalText;
+            setMessages(items => items.map((item, index) => index === items.length - 1 ? { ...item, text: finalText } : item));
+          }
+          if (done) break;
+        }
+        if (!finalText) setMessages(items => items.map((item, index) => index === items.length - 1 ? { ...item, text: "応答が空でした。" } : item));
+      }
     } catch (reason) { setError(reason instanceof Error ? reason.message : "Local APIに接続できません"); }
     finally { setBusy(false); }
   }

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "mode": "optimized",
+  "checkpoint": "checkpoints/v04-eos15/unipilot-mini-v04-inference.pt",
+  "checkpoint_size_mb": 75.63947200775146,
+  "model": "UniPilot Mini v0.4-v04-eos15-2000",
+  "parameters": 19814784,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.29418699999996534,
+  "rss_before_load_mb": 202.04296875,
+  "rss_after_load_mb": 281.7109375,
+  "model_load_rss_delta_mb": 79.66796875,
+  "peak_rss_mb": 311.65625,
+  "mean_tokens_per_second": 57.07670465232962,
+  "bottleneck": "see per-case timings",
+  "checkpoint_metadata": {
+    "step": 2000,
+    "loss": 0.11260527501969288
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 101,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.003007599999818922,
+      "generation_seconds": 0.08949749999987944,
+      "first_token_seconds": 0.05368459999999686,
+      "seconds_per_token": 0.017899499999975886,
+      "tokens_per_second": 55.86748233198397,
+      "peak_rss_mb": 294.54296875,
+      "eos_reached": false,
+      "text": "本優"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 149,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.004392399999915142,
+      "generation_seconds": 0.24723059999996622,
+      "first_token_seconds": 0.07574069999986932,
+      "seconds_per_token": 0.012361529999998311,
+      "tokens_per_second": 80.89613502536795,
+      "peak_rss_mb": 302.1015625,
+      "eos_reached": true,
+      "text": "は25分だけ勉強習する計"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 203,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.006099799999901734,
+      "generation_seconds": 1.856875700000046,
+      "first_token_seconds": 0.09890450000011697,
+      "seconds_per_token": 0.02901368281250072,
+      "tokens_per_second": 34.46649659963691,
+      "peak_rss_mb": 311.65625,
+      "eos_reached": true,
+      "text": "を先に先にすると、心分かります。を順きやすくなります。を一つを決めてきやすると動ス、します。レラ習しましょう。"
+    }
+  ]
+}

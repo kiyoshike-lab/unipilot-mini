@@ -33,16 +33,26 @@ class UniPilotTransformer(nn.Module):
         elif isinstance(module, nn.Embedding):
             nn.init.normal_(module.weight, mean=0.0, std=0.02)
 
-    def forward(self, token_ids: torch.Tensor, targets: torch.Tensor | None = None):
-        if token_ids.size(1) > self.config.context_length:
+    def forward(self, token_ids: torch.Tensor, targets: torch.Tensor | None = None,
+                past_key_values=None, use_cache: bool = False):
+        past_length = 0 if past_key_values is None else past_key_values[0][0].size(2)
+        if past_length + token_ids.size(1) > self.config.context_length:
             raise ValueError(f"sequence length exceeds context length {self.config.context_length}")
-        hidden = self.embeddings(token_ids)
-        for block in self.blocks:
-            hidden = block(hidden)
+        if past_key_values is not None and len(past_key_values) != len(self.blocks):
+            raise ValueError("past_key_values must contain one entry per Transformer block")
+        hidden = self.embeddings(token_ids, position_offset=past_length)
+        presents = []
+        for index, block in enumerate(self.blocks):
+            past = None if past_key_values is None else past_key_values[index]
+            hidden, present = block(hidden, past, use_cache)
+            if use_cache:
+                presents.append(present)
         logits = self.output(self.final_norm(hidden))
         loss = None
         if targets is not None:
             loss = F.cross_entropy(logits.reshape(-1, logits.size(-1)), targets.reshape(-1), ignore_index=-100)
+        if use_cache:
+            return logits, loss, tuple(presents)
         return logits, loss
 
     def parameter_count(self) -> int:

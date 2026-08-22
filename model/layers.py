@@ -24,6 +24,7 @@ class TransformerBlock(nn.Module):
         self.norm2 = nn.LayerNorm(embedding_dim)
         self.feed_forward = FeedForward(embedding_dim, ffn_dim, dropout, bias)
 
-    def forward(self, x):
-        x = x + self.attention(self.norm1(x))
-        return x + self.feed_forward(self.norm2(x))
+    def forward(self, x, past_key_value=None, use_cache: bool = False):
+        attended, present = self.attention(self.norm1(x), past_key_value, use_cache)
+        x = x + attended
+        return x + self.feed_forward(self.norm2(x)), present

@@ -25,6 +25,7 @@ def apply_repetition_penalty(logits: torch.Tensor, previous_ids: list[int], pena
     if penalty <= 1:
         return logits
     logits = logits.clone()
-    for token_id in set(previous_ids):
-        logits[token_id] = logits[token_id] / penalty if logits[token_id] > 0 else logits[token_id] * penalty
+    token_ids = torch.tensor(list(set(previous_ids)), dtype=torch.long, device=logits.device)
+    selected = logits[token_ids]
+    logits[token_ids] = torch.where(selected > 0, selected / penalty, selected * penalty)
     return logits

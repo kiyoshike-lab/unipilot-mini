@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "mode": "optimized",
+  "checkpoint": "checkpoints/v04-eos15/checkpoint-step-2000.pt",
+  "checkpoint_size_mb": 226.923565864563,
+  "model": "UniPilot Mini v0.4-v04-eos15-2000",
+  "parameters": 19814784,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.4106076000000485,
+  "rss_before_load_mb": 201.90234375,
+  "rss_after_load_mb": 508.82421875,
+  "model_load_rss_delta_mb": 306.921875,
+  "peak_rss_mb": 521.0,
+  "mean_tokens_per_second": 55.639632476456065,
+  "bottleneck": "see per-case timings",
+  "checkpoint_metadata": {
+    "step": 2000,
+    "loss": 0.11260527501969288
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 101,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.0029619999999113134,
+      "generation_seconds": 0.0961055000000215,
+      "seconds_per_token": 0.0192211000000043,
+      "tokens_per_second": 52.026158752609184,
+      "peak_rss_mb": 511.2421875,
+      "eos_reached": false,
+      "text": "本優"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 149,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.004350400000021182,
+      "generation_seconds": 0.24857750000001033,
+      "seconds_per_token": 0.012428875000000516,
+      "tokens_per_second": 80.4578049099342,
+      "peak_rss_mb": 516.48828125,
+      "eos_reached": true,
+      "text": "は25分だけ勉強習する計"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 203,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.006086600000003273,
+      "generation_seconds": 1.858577700000069,
+      "seconds_per_token": 0.029040276562501077,
+      "tokens_per_second": 34.43493376682483,
+      "peak_rss_mb": 521.0,
+      "eos_reached": true,
+      "text": "を先に先にすると、心分かります。を順きやすくなります。を一つを決めてきやすると動ス、します。レラ習しましょう。"
+    }
+  ]
+}

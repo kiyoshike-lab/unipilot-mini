@@ -1,0 +1,19 @@
+{
+  "source": "checkpoints/v05-hq-replay/checkpoint-step-500.pt",
+  "output": "checkpoints/v05-hq-replay/unipilot-mini-v05-inference.pt",
+  "source_size_mb": 226.92279720306396,
+  "output_size_mb": 75.63922786712646,
+  "kept_keys": [
+    "config",
+    "inference_only",
+    "loss",
+    "model_state",
+    "source_checkpoint",
+    "step",
+    "tokenizer_version",
+    "v05_manifest"
+  ],
+  "removed_keys": [
+    "optimizer_state"
+  ]
+}
