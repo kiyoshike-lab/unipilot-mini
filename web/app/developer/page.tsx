@@ -24,7 +24,7 @@ export default function Developer() {
       {model: "v0.3-5000", ...comparisonData.v03_metrics}, {model: "v0.4-2000", ...comparisonData.v04_metrics}
     ]}); setHumanItems(humanData.items ?? []);
   }
-  useEffect(() => { refresh().catch(() => setMessage("Local APIに接続できません")); }, []);
+  useEffect(() => { refresh().catch(() => setMessage("UniPilot Mini APIに接続できません")); }, []);
   async function load() {
     setMessage("読み込み中…"); const isV01 = selected.includes("v01") || selected.includes("sanity");
     const response = await fetch(`${API}/model/load`, { method: "POST", headers: { "Content-Type": "application/json" },

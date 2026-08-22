@@ -6,6 +6,12 @@ import api.main as api_main
 from model.config import ModelConfig
 from model.transformer import UniPilotTransformer
 from tokenizer.tokenizer import BPETokenizer
+from training.dataset_v03 import SYSTEM_TEXT
+
+
+def test_chat_prompt_matches_training_format():
+    expected = f"<BOS><SYSTEM>\n{SYSTEM_TEXT}\n<USER>\n確認\n<ASSISTANT>\n"
+    assert api_main.chat_prompt("確認") == expected
 
 
 def test_chat_stream_uses_loaded_model_and_keeps_chat_compatible(monkeypatch):

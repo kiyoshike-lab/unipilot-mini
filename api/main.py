@@ -26,6 +26,9 @@ def load_runtime(checkpoint: str | None = None):
     if not Path(checkpoint).exists():
         return
     model, token, device, payload = load_model(checkpoint, tokenizer)
+    expected_version = os.getenv("UNIPILOT_EXPECT_MODEL_VERSION", "v0.4" if os.getenv("RENDER") else "")
+    if expected_version and expected_version not in model.config.model_name:
+        raise RuntimeError(f"production checkpoint must be {expected_version}, got {model.config.model_name}")
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=checkpoint, payload=payload)
 
 

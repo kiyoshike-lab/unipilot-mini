@@ -218,7 +218,7 @@ python -m evaluation.build_v03_artifacts
 python -m scripts.export_inference_checkpoint --input checkpoints/v04-eos15/checkpoint-step-2000.pt --output checkpoints/v04-eos15/unipilot-mini-v04-inference.pt
 ```
 
-Renderではbuild commandを`pip install -r requirements-prod.txt`、start commandを`uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1`とし、`UNIPILOT_CPU_THREADS=1`を設定してください。配布先から推論専用checkpointを取得する場合は、`UNIPILOT_CHECKPOINT`にそのパスを指定します。`POST /chat`は互換維持され、`POST /chat/stream`はNDJSONで累積回答を逐次返します。
+Renderではbuild commandを`bash scripts/render_build.sh`、start commandを`python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1`とし、`UNIPILOT_CHECKPOINT=checkpoints/v04-eos15/unipilot-mini-v04-inference.pt`、`UNIPILOT_TOKENIZER=tokenizer/vocab-v02-512.json`、`UNIPILOT_CPU_THREADS=1`、`UNIPILOT_EXPECT_MODEL_VERSION=v0.4`を設定してください。build時にGitHub Releaseからv0.4推論専用checkpointを取得し、SHA256を検証します。`POST /chat`は互換維持され、`POST /chat/stream`はNDJSONで累積回答を逐次返します。
 
 ## v0.4: Clean ConversationとEOS学習
 
