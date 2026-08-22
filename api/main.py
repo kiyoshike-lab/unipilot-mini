@@ -21,7 +21,13 @@ def load_runtime(checkpoint: str | None = None):
     from inference.generate import load_model
     inference_checkpoint = Path("checkpoints/v04-eos15/unipilot-mini-v04-inference.pt")
     default_checkpoint = inference_checkpoint if inference_checkpoint.exists() else Path("checkpoints/v04-eos15/checkpoint-step-2000.pt")
-    checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT", str(default_checkpoint))
+    configured_checkpoint = checkpoint or os.getenv("UNIPILOT_CHECKPOINT")
+    if os.getenv("RENDER"):
+        from scripts.download_production_checkpoint import ensure_checkpoint
+        ensure_checkpoint(inference_checkpoint)
+        if configured_checkpoint is None or Path(configured_checkpoint).name == "checkpoint-step-2000.pt":
+            configured_checkpoint = str(inference_checkpoint)
+    checkpoint = configured_checkpoint or str(default_checkpoint)
     tokenizer = os.getenv("UNIPILOT_TOKENIZER", "tokenizer/vocab-v02-512.json")
     if not Path(checkpoint).exists():
         return

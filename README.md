@@ -28,7 +28,7 @@ Python 3.11〜3.13を推奨します。PowerShellで次を実行してくださ�
 cd path\to\unipilot-mini
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 cd web
 npm install
 cd ..

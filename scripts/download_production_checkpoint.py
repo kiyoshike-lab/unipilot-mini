@@ -18,20 +18,16 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Download and verify the production v0.4 inference checkpoint.")
-    parser.add_argument("--url", default=V04_INFERENCE_URL)
-    parser.add_argument("--sha256", default=V04_INFERENCE_SHA256)
-    parser.add_argument("--output", default="checkpoints/v04-eos15/unipilot-mini-v04-inference.pt")
-    args = parser.parse_args()
-    output = Path(args.output)
+def ensure_checkpoint(output: str | Path, url: str = V04_INFERENCE_URL,
+                      expected_sha256: str = V04_INFERENCE_SHA256) -> Path:
+    output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
-    expected = args.sha256.lower()
+    expected = expected_sha256.lower()
     if output.exists() and sha256(output) == expected:
         print(f"checkpoint already verified: {output}")
-        return
+        return output
     temporary = output.with_suffix(output.suffix + ".download")
-    request = urllib.request.Request(args.url, headers={"User-Agent": "UniPilot-Mini-Render-build/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "UniPilot-Mini-Render-build/1.0"})
     try:
         with urllib.request.urlopen(request, timeout=180) as response, temporary.open("wb") as file:
             while chunk := response.read(1024 * 1024):
@@ -44,6 +40,16 @@ def main() -> None:
         if temporary.exists():
             temporary.unlink()
     print(f"checkpoint downloaded and verified: {output}")
+    return output
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Download and verify the production v0.4 inference checkpoint.")
+    parser.add_argument("--url", default=V04_INFERENCE_URL)
+    parser.add_argument("--sha256", default=V04_INFERENCE_SHA256)
+    parser.add_argument("--output", default="checkpoints/v04-eos15/unipilot-mini-v04-inference.pt")
+    args = parser.parse_args()
+    ensure_checkpoint(args.output, args.url, args.sha256)
 
 
 if __name__ == "__main__":
