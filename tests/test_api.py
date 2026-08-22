@@ -7,6 +7,7 @@ def test_health_endpoint():
         response = client.get("/health")
     assert response.status_code == 200
     assert response.json()["external_ai_api"] == "OFF"
+    assert "rss_mb" in response.json() and "peak_rss_mb" in response.json()
 
 
 def test_v03_evaluation_and_training_endpoints():

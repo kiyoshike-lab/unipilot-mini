@@ -4,6 +4,7 @@ import os
 import csv
 import json
 from pathlib import Path
+import sys
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -15,6 +16,23 @@ app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://unipilot-mini-pjgy.vercel.app"],
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint": None, "payload": {}}
+
+
+def process_memory() -> dict:
+    current = peak = None
+    try:
+        page_size = os.sysconf("SC_PAGE_SIZE")
+        resident_pages = int(Path("/proc/self/statm").read_text(encoding="ascii").split()[1])
+        current = resident_pages * page_size / 1024**2
+    except (AttributeError, IndexError, OSError, ValueError):
+        pass
+    try:
+        import resource
+        raw_peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        peak = raw_peak / (1024**2 if sys.platform == "darwin" else 1024)
+    except (ImportError, OSError, ValueError):
+        pass
+    return {"rss_mb": current, "peak_rss_mb": peak}
 
 
 def load_runtime(checkpoint: str | None = None):
@@ -46,7 +64,7 @@ def startup():
 @app.get("/health")
 def health():
     return {"status": "ok", "model": "UniPilot Mini", "local": True, "external_ai_api": "OFF", "loaded": runtime["model"] is not None,
-            "developer_mode": os.getenv("UNIPILOT_DEV_MODE") == "1"}
+            "developer_mode": os.getenv("UNIPILOT_DEV_MODE") == "1", **process_memory()}
 
 
 @app.get("/model-info")
