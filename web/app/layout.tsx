@@ -8,7 +8,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <nav className="border-b border-slate-800 bg-slate-950/80 px-6 py-4 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between">
         <Link href="/" className="font-semibold tracking-wide">UniPilot Mini</Link>
-        <div className="flex gap-5 text-sm text-slate-300"><Link href="/">チャット</Link><Link href="/settings">モデル情報</Link><Link href="/developer">比較</Link></div>
+        <div className="flex gap-5 text-sm text-slate-300"><Link href="/">チャット</Link><Link href="/settings">モデル情報</Link><Link href="/developer">比較</Link><Link href="/campus-eval">Campus評価</Link></div>
       </div>
     </nav>{children}</body></html>;
 }

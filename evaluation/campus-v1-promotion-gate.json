@@ -1,0 +1,63 @@
+{
+  "candidate": "UniPilot Campus v1",
+  "production_before": "UniPilot Mini v0.4 step 2000",
+  "production_after": "UniPilot Mini v0.4 step 2000",
+  "thresholds": {
+    "relevance": 0.9,
+    "correctness": 0.85,
+    "category_accuracy": 0.95,
+    "hallucination_max": 0.01,
+    "completion": 0.98,
+    "natural_japanese": 0.98,
+    "actionable_score": 4.0,
+    "human_score": 4.0,
+    "faq_tool_p95_seconds": 1.0
+  },
+  "measured": {
+    "questions": 1000,
+    "correctness": 0.686,
+    "relevance": 0.688,
+    "category_accuracy": 0.688,
+    "hallucination": 0.0,
+    "completion": 1.0,
+    "natural_japanese": 1.0,
+    "actionable_score": 3.681,
+    "human_score": null,
+    "mean_response_seconds": 0.03060424259999763,
+    "p95_response_seconds": 0.19240460000037274,
+    "peak_rss_mb": 346.00390625,
+    "route_distribution": {
+      "faq": 410,
+      "tool": 465,
+      "model": 104,
+      "safety": 21
+    },
+    "tool_mean_seconds": 0.004204800645156963,
+    "tool_p95_seconds": 0.0055557000005137525,
+    "faq_mean_seconds": 0.008163928292671655,
+    "faq_p95_seconds": 0.010650999999597843,
+    "official_mean_seconds": null,
+    "official_p95_seconds": null,
+    "safety_mean_seconds": 0.004133247619089768,
+    "safety_p95_seconds": 0.004816000000573695,
+    "model_mean_seconds": 0.24245193750003252,
+    "model_p95_seconds": 0.4775804999999309
+  },
+  "checks": {
+    "relevance": false,
+    "correctness": false,
+    "category_accuracy": false,
+    "hallucination": true,
+    "completion": true,
+    "natural_japanese": true,
+    "actionable_score": false,
+    "human_score": false,
+    "faq_latency": true,
+    "tool_latency": true
+  },
+  "decision": "REJECT_PRODUCTION_PROMOTION",
+  "production_promoted": false,
+  "push_performed": false,
+  "deployment_performed": false,
+  "reason": "Category, relevance, correctness, actionable score, and human score gates are not met."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "unipilot-campus-v1",
+  "production_enabled": false,
+  "model": "v0.4",
+  "faq": "data/campus_v1/faq/faq.jsonl",
+  "router": "data/campus_v1/router/train.jsonl",
+  "router_development": "data/campus_v1/router/dev.json",
+  "blind": "data/campus_v1/blind/evaluation.json",
+  "manual_comparison": "data/campus_v1/benchmark/chatgpt-gemini-manual-100.json",
+  "official_university_knowledge": "knowledge/universities",
+  "external_ai_api": "OFF"
+}

@@ -1,0 +1,137 @@
+{
+  "blind": "data/campus_v1/blind/evaluation.json",
+  "questions": 1000,
+  "automatic_scoring_limit": "Lexical, deterministic-tool, source and safety proxy; no human score is fabricated.",
+  "variants": {
+    "a": {
+      "label": "v0.4 model only",
+      "questions": 1000,
+      "correctness": 0.08,
+      "relevance": 0.133,
+      "category_accuracy": 0.353,
+      "hallucination": 0.28,
+      "completion": 0.953,
+      "natural_japanese": 0.99,
+      "actionable_score": 1.1985,
+      "human_score": null,
+      "mean_response_seconds": 0.3415358341000219,
+      "p95_response_seconds": 0.4182854999999108,
+      "peak_rss_mb": 315.23046875,
+      "route_distribution": {
+        "model": 1000
+      },
+      "model_route_latency": {
+        "questions": 1000,
+        "mean_seconds": 0.3415358341000219,
+        "p95_seconds": 0.4182854999999108
+      },
+      "grounded_route_latency": {
+        "questions": 0,
+        "mean_seconds": null,
+        "p95_seconds": null
+      }
+    },
+    "b": {
+      "label": "v0.4 Grounded",
+      "questions": 1000,
+      "correctness": 0.154,
+      "relevance": 0.301,
+      "category_accuracy": 0.353,
+      "hallucination": 0.0,
+      "completion": 1.0,
+      "natural_japanese": 1.0,
+      "actionable_score": 2.724,
+      "human_score": null,
+      "mean_response_seconds": 0.028300060299996405,
+      "p95_response_seconds": 0.08945839999978489,
+      "peak_rss_mb": 313.4765625,
+      "route_distribution": {
+        "model": 234,
+        "grounded": 766
+      },
+      "model_route_latency": {
+        "questions": 234,
+        "mean_seconds": 0.11088862478633237,
+        "p95_seconds": 0.36864280000008876
+      },
+      "grounded_route_latency": {
+        "questions": 766,
+        "mean_seconds": 0.0030706554830217114,
+        "p95_seconds": 0.003890299999511626
+      }
+    },
+    "c": {
+      "label": "v0.7 Grounded",
+      "questions": 1000,
+      "correctness": 0.154,
+      "relevance": 0.301,
+      "category_accuracy": 0.353,
+      "hallucination": 0.0,
+      "completion": 0.999,
+      "natural_japanese": 1.0,
+      "actionable_score": 2.7225,
+      "human_score": null,
+      "mean_response_seconds": 0.032230249399975035,
+      "p95_response_seconds": 0.10650170000008075,
+      "peak_rss_mb": 314.0546875,
+      "route_distribution": {
+        "model": 234,
+        "grounded": 766
+      },
+      "model_route_latency": {
+        "questions": 234,
+        "mean_seconds": 0.12774780854696527,
+        "p95_seconds": 0.3775471999997535
+      },
+      "grounded_route_latency": {
+        "questions": 766,
+        "mean_seconds": 0.0030512561357508637,
+        "p95_seconds": 0.003942400000596535
+      }
+    },
+    "d": {
+      "label": "Campus v1",
+      "questions": 1000,
+      "correctness": 0.686,
+      "relevance": 0.688,
+      "category_accuracy": 0.688,
+      "hallucination": 0.0,
+      "completion": 1.0,
+      "natural_japanese": 1.0,
+      "actionable_score": 3.681,
+      "human_score": null,
+      "mean_response_seconds": 0.03060424259999763,
+      "p95_response_seconds": 0.19240460000037274,
+      "peak_rss_mb": 346.00390625,
+      "route_distribution": {
+        "faq": 410,
+        "tool": 465,
+        "model": 104,
+        "safety": 21
+      },
+      "tool_mean_seconds": 0.004204800645156963,
+      "tool_p95_seconds": 0.0055557000005137525,
+      "faq_mean_seconds": 0.008163928292671655,
+      "faq_p95_seconds": 0.010650999999597843,
+      "official_mean_seconds": null,
+      "official_p95_seconds": null,
+      "safety_mean_seconds": 0.004133247619089768,
+      "safety_p95_seconds": 0.004816000000573695,
+      "model_mean_seconds": 0.24245193750003252,
+      "model_p95_seconds": 0.4775804999999309,
+      "model_route_latency": {
+        "questions": 104,
+        "mean_seconds": 0.24245193750003252,
+        "p95_seconds": 0.4775804999999309
+      },
+      "grounded_route_latency": {
+        "questions": 0,
+        "mean_seconds": null,
+        "p95_seconds": null
+      }
+    }
+  },
+  "promotion_gate": "evaluation/campus-v1-promotion-gate.json",
+  "production_changed": false,
+  "external_ai_api": "OFF"
+}

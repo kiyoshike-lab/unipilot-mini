@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
-from api.schemas import ChatRequest, GenerateRequest, HumanScoreRequest, ModelLoadRequest
+from api.schemas import CampusHumanScoreRequest, ChatRequest, GenerateRequest, HumanScoreRequest, ModelLoadRequest
 
 
 app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
@@ -62,6 +62,9 @@ def load_runtime(checkpoint: str | None = None):
         from pipeline.v08 import V08Pipeline
         pipeline = V08Pipeline(model, token, retrieval_method=os.getenv("UNIPILOT_RETRIEVAL_METHOD", "tfidf"),
                                top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "3"))))
+    elif pipeline_version == "campus-v1":
+        from pipeline.campus_v1 import UniPilotCampusV1
+        pipeline = UniPilotCampusV1(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=checkpoint, payload=payload, pipeline=pipeline)
 
 
@@ -102,14 +105,21 @@ def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if chat and runtime["pipeline"] is not None:
-        if runtime["pipeline"].version == "v0.8":
+        if runtime["pipeline"].version == "campus-v1":
+            result = runtime["pipeline"].answer(
+                request.prompt, request.max_new_tokens, request.temperature, request.top_k,
+                request.top_p, request.repetition_penalty, request.response_mode,
+                request.session_id, request.tool_inputs,
+            )
+        elif runtime["pipeline"].version == "v0.8":
             result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                                                 request.top_p, request.repetition_penalty, request.response_mode)
         else:
             result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                                                 request.top_p, request.repetition_penalty,
                                                 candidates=max(1, int(os.getenv("UNIPILOT_V07_CANDIDATES", "1"))))
-        model_label = runtime["model"].config.model_name if runtime["pipeline"].version == "v0.8" else "UniPilot Mini"
+        model_label = "UniPilot Campus v1" if runtime["pipeline"].version == "campus-v1" else (
+            runtime["model"].config.model_name if runtime["pipeline"].version == "v0.8" else "UniPilot Mini")
         return {**result, "model": model_label, "local": True, "metrics": result["generation_metrics"]}
     from inference.generate import generate_text
     prompt = chat_prompt(request.prompt) if chat else request.prompt
@@ -131,6 +141,15 @@ def chat_stream(request: ChatRequest):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if runtime["pipeline"] is not None:
+        if runtime["pipeline"].version == "campus-v1":
+            def campus_events():
+                for snapshot in runtime["pipeline"].iter_answer(
+                        request.prompt, request.max_new_tokens, request.temperature, request.top_k,
+                        request.top_p, request.repetition_penalty, request.response_mode,
+                        request.session_id, request.tool_inputs):
+                    yield json.dumps(snapshot, ensure_ascii=False) + "\n"
+            return StreamingResponse(campus_events(), media_type="application/x-ndjson",
+                                     headers={"Cache-Control": "no-cache"})
         if runtime["pipeline"].version == "v0.8":
             def standard_events():
                 for snapshot in runtime["pipeline"].iter_answer(
@@ -190,6 +209,9 @@ def model_load(request: ModelLoadRequest):
         from pipeline.v08 import V08Pipeline
         pipeline = V08Pipeline(model, token, retrieval_method=os.getenv("UNIPILOT_RETRIEVAL_METHOD", "tfidf"),
                                top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "3"))))
+    elif pipeline_version == "campus-v1":
+        from pipeline.campus_v1 import UniPilotCampusV1
+        pipeline = UniPilotCampusV1(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=str(candidate.relative_to(Path.cwd())),
                    payload=payload, pipeline=pipeline)
     return model_info()
@@ -238,6 +260,68 @@ def human_eval_v04_score(request: HumanScoreRequest):
     temporary = HUMAN_V04.with_suffix(".tmp")
     temporary.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8"); temporary.replace(HUMAN_V04)
     return {"saved": True, "item_id": request.item_id, "score": request.score}
+
+
+HUMAN_CAMPUS = Path("evaluation/human-comparison-campus-v1.json")
+
+
+@app.get("/human-eval/campus")
+def human_eval_campus():
+    if not HUMAN_CAMPUS.exists():
+        raise HTTPException(404, "Campus human comparison file not found")
+    rows = json.loads(HUMAN_CAMPUS.read_text(encoding="utf-8"))
+    completed = sum(row.get("scores", {}).get("campus") is not None for row in rows)
+    return {"status": "COMPLETE" if completed == len(rows) else "PENDING", "completed": completed,
+            "total": len(rows), "items": rows}
+
+
+@app.post("/human-eval/campus")
+def human_eval_campus_score(request: CampusHumanScoreRequest):
+    if not HUMAN_CAMPUS.exists():
+        raise HTTPException(404, "Campus human comparison file not found")
+    rows = json.loads(HUMAN_CAMPUS.read_text(encoding="utf-8")); found = False
+    for row in rows:
+        if row["id"] == request.item_id:
+            row["scores"] = {"campus": request.campus_score, "chatgpt": request.chatgpt_score,
+                             "gemini": request.gemini_score}
+            row["winners"] = {"correct": request.correct_winner, "specific": request.specific_winner,
+                              "usable": request.usable_winner, "fast": request.fast_winner,
+                              "student_preference": request.student_preference}
+            row["chatgpt_answer"] = request.chatgpt_answer
+            row["gemini_answer"] = request.gemini_answer
+            row["notes"] = request.notes
+            found = True
+            break
+    if not found:
+        raise HTTPException(404, "Campus human evaluation item not found")
+    temporary = HUMAN_CAMPUS.with_suffix(".tmp")
+    temporary.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary.replace(HUMAN_CAMPUS)
+    return {"saved": True, "item_id": request.item_id, "score": request.campus_score}
+
+
+@app.get("/campus/session/{session_id}")
+def campus_session(session_id: str):
+    pipeline = runtime.get("pipeline")
+    if pipeline is None or getattr(pipeline, "version", None) != "campus-v1":
+        raise HTTPException(404, "Campus v1 mode is not enabled")
+    return {"session_id": session_id, "state": pipeline.sessions.get(session_id)}
+
+
+@app.delete("/campus/session/{session_id}")
+def campus_session_delete(session_id: str):
+    pipeline = runtime.get("pipeline")
+    if pipeline is None or getattr(pipeline, "version", None) != "campus-v1":
+        raise HTTPException(404, "Campus v1 mode is not enabled")
+    return {"deleted": pipeline.sessions.delete(session_id)}
+
+
+@app.get("/campus/benchmark")
+def campus_benchmark():
+    path = Path("evaluation/campus-v1-benchmark.json")
+    if not path.exists():
+        raise HTTPException(404, "Campus benchmark not found")
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 @app.get("/training/latest")

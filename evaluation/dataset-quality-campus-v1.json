@@ -1,0 +1,21 @@
+{
+  "dataset_version": "unipilot-campus-v1",
+  "faq_semantic_scenarios": 1000,
+  "faq_categories": 33,
+  "router_training_examples": 1103,
+  "router_development_questions": 350,
+  "blind_questions": 1000,
+  "blind_difficulty": {
+    "easy": 300,
+    "medium": 300,
+    "hard": 250,
+    "compound": 150
+  },
+  "manual_chatgpt_gemini_questions": 100,
+  "public_knowledge_documents": 24,
+  "exact_faq_blind_overlap": 0,
+  "blind_semantic_seed_duplicates": 0,
+  "external_llm_used": false,
+  "external_teacher_generation_used": false,
+  "quality_limit": "The 1,000 FAQ rows combine distinct university concerns with operational constraints. They are not paraphrase copies, but they are programmatically composed and require row-by-row student/expert review before production promotion."
+}

@@ -1,0 +1,4216 @@
+[
+  {
+    "id": "campus-manual-000",
+    "question": "持ち込みのことで困ってる。初心者です",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.010021900000538153,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-001",
+    "question": "診断書のことで困ってる。初心者です",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.010133800000403426,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-002",
+    "question": "提出遅れるって先生に送りたい。口語で教えて",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0048427000001538545,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-003",
+    "question": "課題忘れそうだから締切まとめたい。口語で教えて",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. まず条件と期限を整理してください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.010003299999880255,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-004",
+    "question": "志望動機を整理したい。今すぐ対応したい",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004383399999824178,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-005",
+    "question": "アルバイトやばい。最初の一歩だけ知りたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009906600000249455,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-006",
+    "question": "数学やばい。初心者です",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. まず条件と期限を整理してください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007096799999999348,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-007",
+    "question": "試験やばい。初心者です",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008085399999799847,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-008",
+    "question": "欠席やばい。初心者です",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007249500000398257,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-009",
+    "question": "レポート遅延のメール。口語で教えて",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0038618999997197534,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-010",
+    "question": "締切一覧を作りたい。口語で教えて",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004462900000362424,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-011",
+    "question": "es何書けばいい。今すぐ対応したい",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0038334999999278807,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-012",
+    "question": "賃金のことで困ってる。最初の一歩だけ知りたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "必要点数を計算するため、現在までの獲得点、目標点、残り評価の割合を入力してください。例：現在40点、合格60点、残り評価30%。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005410699999629287,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-013",
+    "question": "数式のことで困ってる。初心者です",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：目的と業務内容を明確にし、学業・条件・安全面を比較します。\n今やること：1. 企業公式情報で期間、業務、報酬、場所を確認します。 2. 授業日程と重ならないか確認します。 3. まず条件と期限を整理してください。\n注意：参加だけで採用や単位認定につながるとは断定しません。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009453699999539822,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-014",
+    "question": "持ち込みのことで困ってる。口語で教えて",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009343599999738217,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-015",
+    "question": "診断書のことで困ってる。口語で教えて",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008322599999701197,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-016",
+    "question": "提出遅れるって先生に送りたい。短く教えて",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004972200000338489,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-017",
+    "question": "課題忘れそうだから締切まとめたい。短く教えて",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. まず条件と期限を整理してください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009572199999638542,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-018",
+    "question": "志望動機を整理したい。初心者です",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004120100000363891,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-019",
+    "question": "アルバイトやばい。今すぐ対応したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.006966299999476178,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-020",
+    "question": "数学やばい。口語で教えて",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. まず条件と期限を整理してください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005845300000146381,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-021",
+    "question": "試験やばい。口語で教えて",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. まず条件と期限を整理してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005622099999527563,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-022",
+    "question": "欠席やばい。口語で教えて",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005749599999944621,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-023",
+    "question": "レポート遅延のメール。短く教えて",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0028498000001491164,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-024",
+    "question": "締切一覧を作りたい。短く教えて",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0034256999997523963,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-025",
+    "question": "es何書けばいい。初心者です",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0045393000000331085,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-026",
+    "question": "賃金のことで困ってる。今すぐ対応したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009324399999968591,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-027",
+    "question": "数式のことで困ってる。口語で教えて",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：目的と業務内容を明確にし、学業・条件・安全面を比較します。\n今やること：1. 企業公式情報で期間、業務、報酬、場所を確認します。 2. 授業日程と重ならないか確認します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：参加だけで採用や単位認定につながるとは断定しません。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007913499999631313,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-028",
+    "question": "持ち込みのことで困ってる。短く教えて",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007543699999587261,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-029",
+    "question": "診断書のことで困ってる。短く教えて",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007376700000349956,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-030",
+    "question": "提出遅れるって先生に送りたい。順番に整理して",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004704400000264286,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-031",
+    "question": "複数の期限を整理して。順番に整理して",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0024639000002935063,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-032",
+    "question": "志望動機を整理したい。必要な情報も教えて",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005157400000825874,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-033",
+    "question": "アルバイトどうしよ。期限も確認したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.006152200000542507,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-034",
+    "question": "数学やばい。大学ごとの差に注意して",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.1749417999999423,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-035",
+    "question": "試験、何からやる？。大学ごとの差に注意して",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.1549126999998407,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-036",
+    "question": "欠席やばい。大学ごとの差に注意して",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.18494850000024599,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-037",
+    "question": "レポート遅延のメール。順番に整理して",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0027078000002802582,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-038",
+    "question": "提出期限を順番にして。順番に整理して",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0022702999995090067,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-039",
+    "question": "es何書けばいい。必要な情報も教えて",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：目的、時期、費用、語学、単位の五点を公式情報で照合します。\n今やること：1. 大学の国際担当と派遣先の募集要項を確認します。 2. 総費用と資金計画、期限を一覧にします。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：制度、渡航条件、安全情報は更新されるため最新情報を使います。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008514999999533757,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-040",
+    "question": "アルバイト、何からやる？。期限も確認したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008786200000031386,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-041",
+    "question": "数式のことで困ってる。大学ごとの差に注意して",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.1348625999999058,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-042",
+    "question": "試験どうしよ。大学ごとの差に注意して",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ご連絡となります。○話める見ります。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.37279400000079477,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-043",
+    "question": "診断書のことで困ってる。大学ごとの差に注意して",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008533000000170432,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-044",
+    "question": "提出遅れるって先生に送りたい。授業と両立したい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004276799999388459,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-045",
+    "question": "複数の期限を整理して。授業と両立したい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003493500000331551,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-046",
+    "question": "志望動機を整理したい。大学ごとの差に注意して",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003659900000457128,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-047",
+    "question": "アルバイトどうしよ。必要な情報も教えて",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008391700000174751,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-048",
+    "question": "数学やばい。順番に整理して",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. まず条件と期限を整理してください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005343299999367446,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-049",
+    "question": "試験、何からやる？。順番に整理して",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003921300000001793,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-050",
+    "question": "欠席やばい。順番に整理して",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0029936999999335967,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-051",
+    "question": "レポート遅延のメール。授業と両立したい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003449499999987893,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-052",
+    "question": "提出期限を順番にして。授業と両立したい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003933300000426243,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-053",
+    "question": "es何書けばいい。大学ごとの差に注意して",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0036177000001771376,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-054",
+    "question": "アルバイト、何からやる？。必要な情報も教えて",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.010261099999297585,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-055",
+    "question": "数式のことで困ってる。順番に整理して",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003774800000428513,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-056",
+    "question": "試験どうしよ。順番に整理して",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0023044999998091953,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-057",
+    "question": "診断書のことで困ってる。順番に整理して",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007670499999221647,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-058",
+    "question": "提出遅れるって先生に送りたい。期限も確認したい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005042499999944994,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-059",
+    "question": "複数の期限を整理して。期限も確認したい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0032369000000471715,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-060",
+    "question": "志望動機を整理したい。失敗した場合の次の手も知りたい",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004251999999723921,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-061",
+    "question": "アルバイトやばい。複数の条件を比較したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007570299999315466,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-062",
+    "question": "数学どうしよ。根拠と確認先も必要",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.20727500000066357,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-063",
+    "question": "試験、何からやる？。根拠と確認先も必要",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007449700000506709,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-064",
+    "question": "欠席やばい。根拠と確認先も必要",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0069084999995538965,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-065",
+    "question": "締切に間に合わない相談文。誤字があるけど意図を読んで",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：安全を優先し、到着見込みと事実を指定先へすぐ連絡します。\n今やること：1. 授業・試験案内で遅刻時の連絡方法を確認します。 2. 交通情報や遅延証明など事実を保存します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：入室可否や欠席扱いを一律には判断できません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009019200000693672,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-066",
+    "question": "複数の期限を整理して。誤字があるけど意図を読んで",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0039455999994970625,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-067",
+    "question": "es何書けばいい。失敗した場合の次の手も知りたい",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004636200000277313,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-068",
+    "question": "賃金のことで困ってる。複数の条件を比較したい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.00923620000048686,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-069",
+    "question": "数学、何からやる？。根拠と確認先も必要",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. まず条件と期限を整理してください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007752599999548693,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-070",
+    "question": "試験どうしよ。根拠と確認先も必要",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.22409670000070037,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-071",
+    "question": "診断書のことで困ってる。根拠と確認先も必要",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008619399999588495,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-072",
+    "question": "課題忘れた謝るメール作って。誤字があるけど意図を読んで",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004611399999703281,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-073",
+    "question": "提出期限を順番にして。誤字があるけど意図を読んで",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003830799999377632,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-074",
+    "question": "志望動機を整理したい。根拠と確認先も必要",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.003945999999814376,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-075",
+    "question": "アルバイトやばい。失敗した場合の次の手も知りたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008897000000615662,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-076",
+    "question": "数学どうしよ。誤字があるけど意図を読んで",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "大学ごとに条件が異なる可能性があります。現在年度の学生便覧・履修要項・シラバスを確認し、不明点は担当教員または教務窓口へ確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.21473769999920478,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-077",
+    "question": "試験、何からやる？。誤字があるけど意図を読んで",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007975700000315555,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-078",
+    "question": "欠席やばい。誤字があるけど意図を読んで",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.00694030000067869,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-079",
+    "question": "締切に間に合わない相談文。情報が一部不明で断定は避けたい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：安全を優先し、到着見込みと事実を指定先へすぐ連絡します。\n今やること：1. 授業・試験案内で遅刻時の連絡方法を確認します。 2. 交通情報や遅延証明など事実を保存します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：入室可否や欠席扱いを一律には判断できません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009417299999768147,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-080",
+    "question": "複数の期限を整理して。情報が一部不明で断定は避けたい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0045809000002918765,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-081",
+    "question": "es何書けばいい。根拠と確認先も必要",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0038577999994231504,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-082",
+    "question": "賃金のことで困ってる。失敗した場合の次の手も知りたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "必要点数を計算するため、現在までの獲得点、目標点、残り評価の割合を入力してください。例：現在40点、合格60点、残り評価30%。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005386300000282063,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-083",
+    "question": "数学、何からやる？。誤字があるけど意図を読んで",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008908700000574754,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-084",
+    "question": "試験どうしよ。誤字があるけど意図を読んで",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "おります。○話になっております。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.39102750000074593,
+    "campus_route": "model"
+  },
+  {
+    "id": "campus-manual-085",
+    "question": "欠席やばい。期限・負担・成績への影響をまとめて判断したい",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／欠席のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［日付］の授業を［理由］のため欠席いたします。\n必要な資料や対応がありましたら、ご教示いただけますと幸いです。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004657099999349157,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-086",
+    "question": "締切に間に合わない相談文。今すぐの対応と今週の計画を分けたい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：安全を優先し、到着見込みと事実を指定先へすぐ連絡します。\n今やること：1. 授業・試験案内で遅刻時の連絡方法を確認します。 2. 交通情報や遅延証明など事実を保存します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：入室可否や欠席扱いを一律には判断できません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009743499999785854,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-087",
+    "question": "締切一覧を作りたい。今すぐの対応と今週の計画を分けたい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004585499999848253,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-088",
+    "question": "志望動機を整理したい。学業と就活の両方を崩したくない",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004507599999669765,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-089",
+    "question": "アルバイトどうしよ。欠席連絡と締切対応を同時にしたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／欠席のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［日付］の授業を［理由］のため欠席いたします。\n必要な資料や対応がありましたら、ご教示いただけますと幸いです。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004376300000330957,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-090",
+    "question": "数学どうしよ。期限・負担・成績への影響をまとめて判断したい",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.014749299999493815,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-091",
+    "question": "試験、何からやる？。期限・負担・成績への影響をまとめて判断したい",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.010060799999337178,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-092",
+    "question": "診断書のことで困ってる。期限・負担・成績への影響をまとめて判断したい",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.011045900000681286,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-093",
+    "question": "課題忘れた謝るメール作って。今すぐの対応と今週の計画を分けたい",
+    "category": "late_submission_email",
+    "required_key_points": [
+      "件名",
+      "先生",
+      "氏名"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005715999999665655,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-094",
+    "question": "課題忘れそうだから締切まとめたい。今すぐの対応と今週の計画を分けたい",
+    "category": "deadline_organizer",
+    "required_key_points": [
+      "締切整理",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.005706500000087544,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-095",
+    "question": "es何書けばいい。学業と就活の両方を崩したくない",
+    "category": "es_outline",
+    "required_key_points": [
+      "ES構成",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "就活スケジュール案：\n1. 今週：締切一覧と経験素材を整理\n2. 2週間以内：企業研究とES初稿\n3. 応募前：大学キャリア窓口で確認\n4. 面接前：想定質問と逆質問を練習\n5. 毎週：授業・課題時間を先に確保\n企業ごとの公式締切を入力すれば日付順に整理できます。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.004676800000197545,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-096",
+    "question": "アルバイト、何からやる？。欠席連絡と締切対応を同時にしたい",
+    "category": "part_time_job",
+    "required_key_points": [
+      "アルバイト",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／欠席のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［日付］の授業を［理由］のため欠席いたします。\n必要な資料や対応がありましたら、ご教示いただけますと幸いです。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.0054555999995500315,
+    "campus_route": "tool"
+  },
+  {
+    "id": "campus-manual-097",
+    "question": "数学、何からやる？。期限・負担・成績への影響をまとめて判断したい",
+    "category": "math",
+    "required_key_points": [
+      "数学",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.009914600000229257,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-098",
+    "question": "試験どうしよ。期限・負担・成績への影響をまとめて判断したい",
+    "category": "exam",
+    "required_key_points": [
+      "試験",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.007840100000066741,
+    "campus_route": "faq"
+  },
+  {
+    "id": "campus-manual-099",
+    "question": "欠席やばい。今すぐの対応と今週の計画を分けたい",
+    "category": "attendance",
+    "required_key_points": [
+      "欠席",
+      "確認"
+    ],
+    "forbidden_claims": [
+      "どの大学でも",
+      "必ず認められる",
+      "全国の大学で"
+    ],
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": null,
+    "gemini_answer": null,
+    "scores": {
+      "campus": null,
+      "chatgpt": null,
+      "gemini": null
+    },
+    "winners": {
+      "correct": null,
+      "specific": null,
+      "usable": null,
+      "fast": null,
+      "student_preference": null
+    },
+    "notes": "",
+    "manual_only": true,
+    "external_api_calls": false,
+    "rubric": {
+      "0": "役に立たない",
+      "1": "一般論だけ",
+      "2": "多少参考になる",
+      "3": "次に何をするか分かる",
+      "4": "そのまま使える",
+      "5": "完成物・計算結果・具体的計画まで出る"
+    },
+    "campus_latency_seconds": 0.008297099999253987,
+    "campus_route": "faq"
+  }
+]
