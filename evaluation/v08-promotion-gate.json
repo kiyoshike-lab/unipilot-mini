@@ -1,0 +1,30 @@
+{
+  "candidate": "UniPilot Standard v0.8-a-100",
+  "production_before": "UniPilot Mini v0.4 step 2000",
+  "production_after": "UniPilot Mini v0.4 step 2000",
+  "thresholds": {
+    "relevance": 0.80,
+    "correctness": 0.80,
+    "category": 0.90,
+    "natural_japanese": 0.98,
+    "completion": 0.95,
+    "eos": 0.95,
+    "hallucination_max": 0.02,
+    "blind_human_score": 4.0
+  },
+  "measured": {
+    "relevance": 0.005681818181818182,
+    "correctness": 0.0,
+    "category": 0.12121212121212122,
+    "natural_japanese": 1.0,
+    "completion": 0.0,
+    "eos": 1.0,
+    "hallucination": 0.0,
+    "blind_human_score": null
+  },
+  "decision": "REJECT_PRODUCTION_PROMOTION",
+  "production_promoted": false,
+  "push_performed": false,
+  "deployment_performed": false,
+  "reason": "The scratch Standard model learned a natural opening phrase and EOS but not useful university answers. Retrieval, category routing, length targets, correctness, and completion also fail the independent blind gates."
+}

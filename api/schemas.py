@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -11,7 +13,7 @@ class GenerateRequest(BaseModel):
 
 
 class ChatRequest(GenerateRequest):
-    pass
+    response_mode: Literal["auto", "short", "normal", "detailed"] = "auto"
 
 
 class ModelLoadRequest(BaseModel):

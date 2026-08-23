@@ -1,0 +1,25 @@
+{
+  "dataset_version": "unipilot-standard-v08-structured-scenarios",
+  "system": "あなたは大学生活支援に特化した完全ローカルのUniPilot Standardです。検索文脈に根拠がある場合はそれを使い、不足する情報は推測せず確認方法を案内します。",
+  "files": {
+    "conversation/conversation.jsonl": 6000,
+    "corrected/corrected.jsonl": 3300,
+    "knowledge/documents.jsonl": 774,
+    "classifier/train.jsonl": 2796
+  },
+  "curriculum": {
+    "A": 2000,
+    "B": 3300,
+    "C": 9900,
+    "D": 3300,
+    "E": 1000,
+    "F": 3300
+  },
+  "blind": "data/v08/blind/evaluation.json",
+  "retrieval_development": "data/v08/retrieval/dev.json",
+  "manual_comparison": "data/v08/benchmarks/chatgpt-gemini-manual.json",
+  "quality_report": "evaluation/dataset-quality-v08.json",
+  "production_enabled": false,
+  "external_ai_api": "OFF",
+  "license_policy": "Project-authored rows are CC0; inherited public knowledge retains per-row source and license."
+}

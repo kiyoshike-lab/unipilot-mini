@@ -1,0 +1,35 @@
+{
+  "supported": true,
+  "implementation": "torch.ao.quantization.quantize_dynamic",
+  "fp32": {
+    "checkpoint_bytes": 179754961,
+    "rss_after_load_mb": 382.17578125,
+    "probe": {
+      "text": "整理すると、主張階因、反対意見、ぶします。述べます。ると、主張、根拠、反対意見、判断条件の順に整理します。整理します。の順に分け、原された結果を",
+      "seconds": 1.222998700000062,
+      "tokens": 64,
+      "tokens_per_sec": 52.33039086631634,
+      "eos_reached": true,
+      "kv_cache": true
+    }
+  },
+  "dynamic_int8": {
+    "state_dict_bytes": 48196312,
+    "rss_after_fp32_deleted_mb": 639.23046875,
+    "probe": {
+      "text": "整理すると、主張階因、反対意見、ぶします。述べます。ると、主張、根拠、反対意見、判断条件の順に整理します。整理します。の順に分け、原された結果を",
+      "seconds": 1.7916331000001264,
+      "tokens": 64,
+      "tokens_per_sec": 35.721599472568066,
+      "eos_reached": true,
+      "kv_cache": true
+    }
+  },
+  "size_reduction": 0.7318777087882431,
+  "rss_reduction": -0.6726085223381748,
+  "tokens_per_second_ratio": 0.6826167143261507,
+  "fixed_prompt_top1_agreement": 1.0,
+  "generated_text_exact_match": true,
+  "adopted": false,
+  "decision": "Do not adopt from a failed Stage-A quality checkpoint; repeat quantization quality evaluation after a usable FP32 checkpoint exists."
+}

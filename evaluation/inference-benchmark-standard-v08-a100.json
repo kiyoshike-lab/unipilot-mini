@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "mode": "optimized",
+  "checkpoint": "checkpoints/standard-v08-scratch/unipilot-standard-v08-a100-inference.pt",
+  "checkpoint_size_mb": 171.42768955230713,
+  "model": "UniPilot Standard v0.8-a-100",
+  "parameters": 44920832,
+  "device": "cpu",
+  "python": "3.14.5",
+  "pytorch": "2.12.0+cpu",
+  "cpu_count_logical": 8,
+  "torch_threads": 1,
+  "torch_interop_threads": 8,
+  "load_seconds": 0.631494599999769,
+  "rss_before_load_mb": 201.7578125,
+  "rss_after_load_mb": 382.11328125,
+  "model_load_rss_delta_mb": 180.35546875,
+  "peak_rss_mb": 408.921875,
+  "mean_tokens_per_second": 48.11679189809964,
+  "bottleneck": "see per-case timings",
+  "checkpoint_metadata": {
+    "step": 100,
+    "loss": 2.8331362505753837
+  },
+  "cases": [
+    {
+      "name": "short",
+      "prompt_tokens": 69,
+      "requested_tokens": 5,
+      "generated_tokens": 5,
+      "tokenizer_seconds": 0.006749199999831035,
+      "generation_seconds": 0.138230300000032,
+      "first_token_seconds": 0.0794581999998627,
+      "seconds_per_token": 0.0276460600000064,
+      "tokens_per_second": 36.171519558293966,
+      "peak_rss_mb": 394.83984375,
+      "eos_reached": false,
+      "text": "要点から述べます。"
+    },
+    {
+      "name": "medium",
+      "prompt_tokens": 96,
+      "requested_tokens": 20,
+      "generated_tokens": 20,
+      "tokenizer_seconds": 0.009313699999893288,
+      "generation_seconds": 0.38371649999999136,
+      "first_token_seconds": 0.10260500000003958,
+      "seconds_per_token": 0.019185824999999566,
+      "tokens_per_second": 52.121813891246404,
+      "peak_rss_mb": 405.578125,
+      "eos_reached": true,
+      "text": "要点から述べます。因、反対意見、主張、"
+    },
+    {
+      "name": "long",
+      "prompt_tokens": 145,
+      "requested_tokens": 64,
+      "generated_tokens": 64,
+      "tokenizer_seconds": 0.01468879999993078,
+      "generation_seconds": 1.1416942000000745,
+      "first_token_seconds": 0.14757020000024568,
+      "seconds_per_token": 0.017838971875001164,
+      "tokens_per_second": 56.057042244758556,
+      "peak_rss_mb": 408.921875,
+      "eos_reached": true,
+      "text": "要点から述べます。ない部は、主張、根拠と確認方法を続けます。します。します。ない部分は断定しません。、根拠と確認方法を続けます。、段、根拠、では、判断条件の順に整理します。"
+    }
+  ]
+}

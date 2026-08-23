@@ -1,0 +1,36 @@
+{
+  "model": {
+    "model_name": "UniPilot Standard v0.8 scratch",
+    "vocab_size": 1024,
+    "context_length": 512,
+    "embedding_dim": 512,
+    "n_layers": 14,
+    "n_heads": 8,
+    "ffn_dim": 2048,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/vocab-standard-v08-1024.json",
+  "dataset_version": "unipilot-standard-v08-structured-scenarios",
+  "evaluation_version": "unipilot-standard-v08-blind-528",
+  "seed": 8082026,
+  "batch_size": 1,
+  "learning_rate": 0.0003,
+  "warmup_steps": 100,
+  "weight_decay": 0.1,
+  "gradient_clip": 1.0,
+  "eos_weight": 1.5,
+  "evaluation_interval": 100,
+  "checkpoint_steps": [100, 500, 1000, 2000, 5000, 10000],
+  "stages": [
+    {"name": "A", "data_dir": "data/v08/curriculum/A", "start_step": 0, "end_step": 1000, "replay": {}},
+    {"name": "B", "data_dir": "data/v08/curriculum/B", "start_step": 1000, "end_step": 2500, "replay": {"A": 0.20}},
+    {"name": "C", "data_dir": "data/v08/curriculum/C", "start_step": 2500, "end_step": 4500, "replay": {"A": 0.10, "B": 0.20}},
+    {"name": "D", "data_dir": "data/v08/curriculum/D", "start_step": 4500, "end_step": 6500, "replay": {"A": 0.10, "B": 0.15, "C": 0.20}},
+    {"name": "E", "data_dir": "data/v08/curriculum/E", "start_step": 6500, "end_step": 8000, "replay": {"A": 0.10, "B": 0.10, "C": 0.20, "D": 0.20}},
+    {"name": "F", "data_dir": "data/v08/curriculum/F", "start_step": 8000, "end_step": 10000, "replay": {"A": 0.10, "B": 0.10, "C": 0.15, "D": 0.20, "E": 0.15}}
+  ],
+  "production_enabled": false,
+  "render_free_target": false,
+  "external_pretrained_model": false
+}

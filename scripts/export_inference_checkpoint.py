@@ -9,7 +9,7 @@ import torch
 
 KEEP_KEYS = (
     "model_state", "config", "tokenizer_version", "step", "loss",
-    "v02_manifest", "v03_manifest", "v04_manifest", "v05_manifest", "v06_manifest", "v07_manifest",
+    "v02_manifest", "v03_manifest", "v04_manifest", "v05_manifest", "v06_manifest", "v07_manifest", "v08_manifest",
 )
 
 

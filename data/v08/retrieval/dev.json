@@ -1,0 +1,3382 @@
+[
+  {
+    "id": "v08-retrieval-dev-exam-00-00",
+    "prompt": "大学生活の相談です。明日が試験状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-00-01",
+    "prompt": "明日が試験場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-00-04",
+    "prompt": "明日が試験場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-01-06",
+    "prompt": "大学生活の相談です。一週間前の計画状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-03-04",
+    "prompt": "大学生活の相談です。過去問がない状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-04-04",
+    "prompt": "記述式対策場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-04-05",
+    "prompt": "記述式対策場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-05-01",
+    "prompt": "オンライン試験場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-05-07",
+    "prompt": "オンライン試験場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-07-01",
+    "prompt": "大学生活の相談です。複数科目状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-exam-08-04",
+    "prompt": "大学生活の相談です。追試相談状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "exam",
+    "relevant_document_ids": [
+      "v08-knowledge-exam-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-00-04",
+    "prompt": "締切が明日場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-02-05",
+    "prompt": "大学生活の相談です。課題が多すぎる状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-03-00",
+    "prompt": "指示が曖昧場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-03-08",
+    "prompt": "大学生活の相談です。指示が曖昧状況で、再発を防ぎたいです。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-03-09",
+    "prompt": "大学生活の相談です。指示が曖昧状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-05-07",
+    "prompt": "大学生活の相談です。共同課題が停滞状況で、相手への連絡も必要です。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-08-04",
+    "prompt": "大学生活の相談です。途中で行き詰まった状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-08-09",
+    "prompt": "途中で行き詰まった場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-09-01",
+    "prompt": "提出サイトが動かない場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-09-03",
+    "prompt": "大学生活の相談です。提出サイトが動かない状況で、すでに問題が起きているです。優先順位は？",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-09-05",
+    "prompt": "提出サイトが動かない場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-assignment-09-06",
+    "prompt": "提出サイトが動かない場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "assignment",
+    "relevant_document_ids": [
+      "v08-knowledge-assignment-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-00-02",
+    "prompt": "大学生活の相談です。単位を落としそう状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-00-07",
+    "prompt": "大学生活の相談です。単位を落としそう状況で、相手への連絡も必要です。優先順位は？",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-01-07",
+    "prompt": "大学生活の相談です。卒業単位が不足状況で、相手への連絡も必要です。優先順位は？",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-02-02",
+    "prompt": "大学生活の相談です。必修を落とした状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-02-04",
+    "prompt": "必修を落とした場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-05-04",
+    "prompt": "再履修が必要場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-credit-08-06",
+    "prompt": "大学生活の相談です。集中講義の単位状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "credit",
+    "relevant_document_ids": [
+      "v08-knowledge-credit-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-02-00",
+    "prompt": "計算方法場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-02-06",
+    "prompt": "大学生活の相談です。計算方法状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-04-03",
+    "prompt": "大学生活の相談です。就活での扱い状況で、すでに問題が起きているです。優先順位は？",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-04-06",
+    "prompt": "大学生活の相談です。就活での扱い状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-06-07",
+    "prompt": "大学生活の相談です。交換留学の基準状況で、相手への連絡も必要です。優先順位は？",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-07-02",
+    "prompt": "成績公開後の確認場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-07-03",
+    "prompt": "成績公開後の確認場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-07-05",
+    "prompt": "成績公開後の確認場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-gpa-07-09",
+    "prompt": "成績公開後の確認場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "gpa",
+    "relevant_document_ids": [
+      "v08-knowledge-gpa-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-00-04",
+    "prompt": "履修登録を忘れた場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-01-07",
+    "prompt": "時間割が重複場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-01-08",
+    "prompt": "大学生活の相談です。時間割が重複状況で、再発を防ぎたいです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-02-03",
+    "prompt": "大学生活の相談です。必修が満席状況で、すでに問題が起きているです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-02-04",
+    "prompt": "必修が満席場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-03-02",
+    "prompt": "大学生活の相談です。履修変更したい状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-03-03",
+    "prompt": "大学生活の相談です。履修変更したい状況で、すでに問題が起きているです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-04-00",
+    "prompt": "履修上限場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-05-00",
+    "prompt": "大学生活の相談です。抽選に落ちた状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-06-05",
+    "prompt": "大学生活の相談です。他学部科目状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-07-01",
+    "prompt": "前提科目場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-08-05",
+    "prompt": "登録画面エラー場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-08-08",
+    "prompt": "大学生活の相談です。登録画面エラー状況で、再発を防ぎたいです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-08-09",
+    "prompt": "大学生活の相談です。登録画面エラー状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-registration-09-04",
+    "prompt": "シラバス比較場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "registration",
+    "relevant_document_ids": [
+      "v08-knowledge-registration-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-00-08",
+    "prompt": "大学生活の相談です。欠席が続く状況で、再発を防ぎたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-01-00",
+    "prompt": "大学生活の相談です。病気で欠席状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-01-04",
+    "prompt": "大学生活の相談です。病気で欠席状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-01-08",
+    "prompt": "大学生活の相談です。病気で欠席状況で、再発を防ぎたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-02-07",
+    "prompt": "公欠になるか場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-02-09",
+    "prompt": "公欠になるか場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-05-08",
+    "prompt": "大学生活の相談です。忌引で欠席状況で、再発を防ぎたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-05-09",
+    "prompt": "大学生活の相談です。忌引で欠席状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-06-09",
+    "prompt": "大学生活の相談です。実習を欠席状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-07-08",
+    "prompt": "遅刻が欠席扱い場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-08-09",
+    "prompt": "大学生活の相談です。診断書が必要か状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-attendance-09-03",
+    "prompt": "欠席分を補いたい場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "attendance",
+    "relevant_document_ids": [
+      "v08-knowledge-attendance-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-00-05",
+    "prompt": "大学生活の相談です。授業に遅れそう状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-00-07",
+    "prompt": "授業に遅れそう場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-00-09",
+    "prompt": "授業に遅れそう場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-03-07",
+    "prompt": "オンライン接続遅延場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-04-03",
+    "prompt": "大学生活の相談です。実習に遅刻状況で、すでに問題が起きているです。優先順位は？",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-04-05",
+    "prompt": "大学生活の相談です。実習に遅刻状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-05-01",
+    "prompt": "発表に遅刻場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-06-09",
+    "prompt": "待ち合わせに遅刻場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-07-04",
+    "prompt": "遅刻連絡場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-lateness-08-06",
+    "prompt": "大学生活の相談です。遅延証明状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "lateness",
+    "relevant_document_ids": [
+      "v08-knowledge-lateness-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-00-00",
+    "prompt": "大学生活の相談です。欠席連絡状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-00-04",
+    "prompt": "大学生活の相談です。欠席連絡状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-03-09",
+    "prompt": "締切相談場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-04-02",
+    "prompt": "質問メール場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-05-00",
+    "prompt": "お礼メール場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-05-03",
+    "prompt": "大学生活の相談です。お礼メール状況で、すでに問題が起きているです。優先順位は？",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-06-09",
+    "prompt": "大学生活の相談です。返信がない状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-07-07",
+    "prompt": "件名の付け方場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-07-09",
+    "prompt": "件名の付け方場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-08-09",
+    "prompt": "大学生活の相談です。添付ファイル状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-09-01",
+    "prompt": "再送したい場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-professor_email-09-04",
+    "prompt": "再送したい場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "professor_email",
+    "relevant_document_ids": [
+      "v08-knowledge-professor_email-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-00-01",
+    "prompt": "構成が決まらない場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-00-04",
+    "prompt": "大学生活の相談です。構成が決まらない状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-00-05",
+    "prompt": "構成が決まらない場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-03-04",
+    "prompt": "大学生活の相談です。字数が不足状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-03-07",
+    "prompt": "大学生活の相談です。字数が不足状況で、相手への連絡も必要です。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-03-09",
+    "prompt": "大学生活の相談です。字数が不足状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-04-03",
+    "prompt": "大学生活の相談です。結論が弱い状況で、すでに問題が起きているです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-05-04",
+    "prompt": "大学生活の相談です。序論の書き方状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-05-06",
+    "prompt": "序論の書き方場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-06-09",
+    "prompt": "大学生活の相談です。推敲したい状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-07-02",
+    "prompt": "大学生活の相談です。参考文献整理状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-07-09",
+    "prompt": "大学生活の相談です。参考文献整理状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-report-08-01",
+    "prompt": "大学生活の相談です。締切直前状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "report",
+    "relevant_document_ids": [
+      "v08-knowledge-report-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-04-02",
+    "prompt": "大学生活の相談です。孫引き状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-04-06",
+    "prompt": "孫引き場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-00",
+    "prompt": "大学生活の相談です。ページ番号状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-01",
+    "prompt": "ページ番号場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-02",
+    "prompt": "大学生活の相談です。ページ番号状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-06",
+    "prompt": "大学生活の相談です。ページ番号状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-07",
+    "prompt": "ページ番号場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-05-09",
+    "prompt": "大学生活の相談です。ページ番号状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-08-05",
+    "prompt": "参考文献形式場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-citation-08-06",
+    "prompt": "大学生活の相談です。参考文献形式状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "citation",
+    "relevant_document_ids": [
+      "v08-knowledge-citation-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-00-00",
+    "prompt": "スライドが読みにくい場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-00-02",
+    "prompt": "スライドが読みにくい場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-02-01",
+    "prompt": "大学生活の相談です。発表が緊張状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-03-08",
+    "prompt": "構成が散らかる場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-06-00",
+    "prompt": "共同発表場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-06-09",
+    "prompt": "共同発表場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-07-02",
+    "prompt": "大学生活の相談です。オンライン発表状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-presentation-07-06",
+    "prompt": "オンライン発表場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "presentation",
+    "relevant_document_ids": [
+      "v08-knowledge-presentation-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-00-08",
+    "prompt": "大学生活の相談です。ゼミ選び状況で、再発を防ぎたいです。優先順位は？",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-01-03",
+    "prompt": "大学生活の相談です。志望理由状況で、すでに問題が起きているです。優先順位は？",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-01-04",
+    "prompt": "志望理由場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-03-09",
+    "prompt": "大学生活の相談です。活動内容状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-05-01",
+    "prompt": "大学生活の相談です。議論に入れない状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-06-03",
+    "prompt": "文献講読場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-seminar-07-08",
+    "prompt": "ゼミ変更場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "seminar",
+    "relevant_document_ids": [
+      "v08-knowledge-seminar-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-00-05",
+    "prompt": "大学生活の相談です。研究室選び状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-02-03",
+    "prompt": "設備場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-03-08",
+    "prompt": "大学生活の相談です。指導頻度状況で、再発を防ぎたいです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-04-08",
+    "prompt": "コアタイム場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-05-05",
+    "prompt": "研究室訪問場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-05-07",
+    "prompt": "研究室訪問場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-06-03",
+    "prompt": "大学生活の相談です。院進学状況で、すでに問題が起きているです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-06-04",
+    "prompt": "大学生活の相談です。院進学状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-07-04",
+    "prompt": "大学生活の相談です。配属希望状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-08-08",
+    "prompt": "在学生へ質問場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-laboratory-09-08",
+    "prompt": "大学生活の相談です。活動が合わない状況で、再発を防ぎたいです。優先順位は？",
+    "category": "laboratory",
+    "relevant_document_ids": [
+      "v08-knowledge-laboratory-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-00-03",
+    "prompt": "テーマ決定場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-02-08",
+    "prompt": "先行研究場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-03-03",
+    "prompt": "大学生活の相談です。調査方法状況で、すでに問題が起きているです。優先順位は？",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-04-00",
+    "prompt": "中間発表場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-05-04",
+    "prompt": "分析が進まない場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-05-07",
+    "prompt": "分析が進まない場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-07-00",
+    "prompt": "大学生活の相談です。締切管理状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-07-01",
+    "prompt": "大学生活の相談です。締切管理状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-07-03",
+    "prompt": "大学生活の相談です。締切管理状況で、すでに問題が起きているです。優先順位は？",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-thesis-09-02",
+    "prompt": "参考文献管理場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "thesis",
+    "relevant_document_ids": [
+      "v08-knowledge-thesis-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-00-01",
+    "prompt": "就活開始時期場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-01-04",
+    "prompt": "大学生活の相談です。自己分析状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-02-05",
+    "prompt": "大学生活の相談です。企業研究状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-03-00",
+    "prompt": "ES作成場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-03-03",
+    "prompt": "ES作成場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-05-01",
+    "prompt": "内定比較場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-06-03",
+    "prompt": "大学生活の相談です。業界選び状況で、すでに問題が起きているです。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-06-04",
+    "prompt": "業界選び場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-06-07",
+    "prompt": "業界選び場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-07-00",
+    "prompt": "大学生活の相談です。説明会状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-07-01",
+    "prompt": "大学生活の相談です。説明会状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-career-08-06",
+    "prompt": "大学生活の相談です。不採用が続く状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "career",
+    "relevant_document_ids": [
+      "v08-knowledge-career-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-00-02",
+    "prompt": "探し方場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-00-04",
+    "prompt": "大学生活の相談です。探し方状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-02-04",
+    "prompt": "大学生活の相談です。選考準備状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-05-00",
+    "prompt": "大学生活の相談です。長期か短期状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-05-02",
+    "prompt": "長期か短期場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-internship-08-09",
+    "prompt": "振り返り場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "internship",
+    "relevant_document_ids": [
+      "v08-knowledge-internship-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-01-07",
+    "prompt": "勉強計画場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-03-08",
+    "prompt": "大学生活の相談です。就活への効果状況で、再発を防ぎたいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-04-00",
+    "prompt": "大学生活の相談です。複数資格状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-05-00",
+    "prompt": "大学生活の相談です。独学か講座状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-05-05",
+    "prompt": "大学生活の相談です。独学か講座状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-05-07",
+    "prompt": "独学か講座場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-05-08",
+    "prompt": "大学生活の相談です。独学か講座状況で、再発を防ぎたいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-08-06",
+    "prompt": "不合格後場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-09-05",
+    "prompt": "大学生活の相談です。学業との両立状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-qualification-09-08",
+    "prompt": "学業との両立場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "qualification",
+    "relevant_document_ids": [
+      "v08-knowledge-qualification-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-00-00",
+    "prompt": "目標点場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-00-04",
+    "prompt": "目標点場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-03-05",
+    "prompt": "大学生活の相談です。リーディング状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-04-01",
+    "prompt": "時間配分場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-04-03",
+    "prompt": "大学生活の相談です。時間配分状況で、すでに問題が起きているです。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-04-04",
+    "prompt": "大学生活の相談です。時間配分状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-05-06",
+    "prompt": "大学生活の相談です。単語学習状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-06-00",
+    "prompt": "大学生活の相談です。模試活用状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-08-05",
+    "prompt": "点数が伸びない場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-toeic-09-09",
+    "prompt": "大学生活の相談です。就活で使う状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "toeic",
+    "relevant_document_ids": [
+      "v08-knowledge-toeic-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-00-04",
+    "prompt": "留学先選び場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-01-04",
+    "prompt": "費用場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-01-09",
+    "prompt": "費用場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-02-02",
+    "prompt": "大学生活の相談です。語学要件状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-02-05",
+    "prompt": "大学生活の相談です。語学要件状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-03-01",
+    "prompt": "大学生活の相談です。単位認定状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-03-05",
+    "prompt": "単位認定場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-05-09",
+    "prompt": "大学生活の相談です。奨学金状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-06-06",
+    "prompt": "安全情報場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-07-00",
+    "prompt": "大学生活の相談です。住居状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-07-01",
+    "prompt": "住居場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-07-06",
+    "prompt": "大学生活の相談です。住居状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-07-09",
+    "prompt": "大学生活の相談です。住居状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study_abroad-08-02",
+    "prompt": "大学生活の相談です。休学との違い状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "study_abroad",
+    "relevant_document_ids": [
+      "v08-knowledge-study_abroad-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-00-07",
+    "prompt": "大学生活の相談です。給付と貸与状況で、相手への連絡も必要です。優先順位は？",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-01-01",
+    "prompt": "大学生活の相談です。申請期限状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-01-06",
+    "prompt": "申請期限場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-02-01",
+    "prompt": "家計基準場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-02-04",
+    "prompt": "大学生活の相談です。家計基準状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-03-09",
+    "prompt": "学業基準場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-04-09",
+    "prompt": "大学生活の相談です。併用できるか状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-06-03",
+    "prompt": "継続手続き場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-07-00",
+    "prompt": "休学時場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-07-07",
+    "prompt": "休学時場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-scholarship-09-00",
+    "prompt": "大学生活の相談です。緊急支援状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "scholarship",
+    "relevant_document_ids": [
+      "v08-knowledge-scholarship-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-00-03",
+    "prompt": "支払いが難しい場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-01-02",
+    "prompt": "大学生活の相談です。納付期限状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-03-04",
+    "prompt": "大学生活の相談です。延納状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-04-01",
+    "prompt": "減免場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-05-07",
+    "prompt": "大学生活の相談です。休学中の費用状況で、相手への連絡も必要です。優先順位は？",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-tuition-09-05",
+    "prompt": "家計急変場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "tuition",
+    "relevant_document_ids": [
+      "v08-knowledge-tuition-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-00-02",
+    "prompt": "大学生活の相談です。探し方状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-02-08",
+    "prompt": "大学生活の相談です。労働条件状況で、再発を防ぎたいです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-03-07",
+    "prompt": "シフト過多場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-04-06",
+    "prompt": "賃金未払い場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-05-00",
+    "prompt": "大学生活の相談です。辞めたい状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-05-03",
+    "prompt": "辞めたい場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-05-04",
+    "prompt": "大学生活の相談です。辞めたい状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-06-02",
+    "prompt": "大学生活の相談です。扶養が不安状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-06-09",
+    "prompt": "大学生活の相談です。扶養が不安状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-07-09",
+    "prompt": "深夜勤務場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-08-06",
+    "prompt": "大学生活の相談です。試験期間状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-part_time-09-09",
+    "prompt": "大学生活の相談です。怪しい求人状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "part_time",
+    "relevant_document_ids": [
+      "v08-knowledge-part_time-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-00-02",
+    "prompt": "大学生活の相談です。大学に慣れない状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-02-03",
+    "prompt": "大学生活の相談です。一人暮らし状況で、すでに問題が起きているです。優先順位は？",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-02-08",
+    "prompt": "一人暮らし場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-05-00",
+    "prompt": "食生活場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-05-01",
+    "prompt": "食生活場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-06-03",
+    "prompt": "通学が大変場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-08-08",
+    "prompt": "大学生活の相談です。孤立感状況で、再発を防ぎたいです。優先順位は？",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-campus_life-09-01",
+    "prompt": "生活リズム場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "campus_life",
+    "relevant_document_ids": [
+      "v08-knowledge-campus_life-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-00-04",
+    "prompt": "大学生活の相談です。友達ができない状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-01-06",
+    "prompt": "大学生活の相談です。グループで孤立状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-01-09",
+    "prompt": "大学生活の相談です。グループで孤立状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-02-06",
+    "prompt": "大学生活の相談です。断り方状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-06-00",
+    "prompt": "大学生活の相談です。SNSで困る状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-06-01",
+    "prompt": "SNSで困る場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-06-08",
+    "prompt": "SNSで困る場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-07-04",
+    "prompt": "共同作業の不満場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-relationships-09-08",
+    "prompt": "大学生活の相談です。相談相手がいない状況で、再発を防ぎたいです。優先順位は？",
+    "category": "relationships",
+    "relevant_document_ids": [
+      "v08-knowledge-relationships-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-00-01",
+    "prompt": "大学生活の相談です。締切が重なる状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-00-04",
+    "prompt": "大学生活の相談です。締切が重なる状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-01-07",
+    "prompt": "大学生活の相談です。予定を忘れる状況で、相手への連絡も必要です。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-01-08",
+    "prompt": "予定を忘れる場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-01-09",
+    "prompt": "大学生活の相談です。予定を忘れる状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-03-09",
+    "prompt": "大学生活の相談です。朝起きられない状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-04-07",
+    "prompt": "大学生活の相談です。移動時間状況で、相手への連絡も必要です。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-05-03",
+    "prompt": "授業と仕事場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-07-02",
+    "prompt": "大学生活の相談です。計画倒れ状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-07-07",
+    "prompt": "計画倒れ場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-07-09",
+    "prompt": "計画倒れ場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-time_management-09-06",
+    "prompt": "大学生活の相談です。長期課題状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "time_management",
+    "relevant_document_ids": [
+      "v08-knowledge-time_management-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-00-05",
+    "prompt": "大学生活の相談です。集中できない状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-00-06",
+    "prompt": "集中できない場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-01-04",
+    "prompt": "大学生活の相談です。覚えられない状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-02-01",
+    "prompt": "大学生活の相談です。復習方法状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-02-03",
+    "prompt": "大学生活の相談です。復習方法状況で、すでに問題が起きているです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-02-05",
+    "prompt": "大学生活の相談です。復習方法状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-04-09",
+    "prompt": "問題演習場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-05-02",
+    "prompt": "大学生活の相談です。勉強場所状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-06-07",
+    "prompt": "モチベーション場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-07-07",
+    "prompt": "大学生活の相談です。苦手科目状況で、相手への連絡も必要です。優先順位は？",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-08-02",
+    "prompt": "計画作成場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-study-08-05",
+    "prompt": "計画作成場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "study",
+    "relevant_document_ids": [
+      "v08-knowledge-study-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-03-07",
+    "prompt": "故障場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-04-01",
+    "prompt": "バックアップ場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-04-05",
+    "prompt": "大学生活の相談です。バックアップ状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-04-07",
+    "prompt": "バックアップ場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-05-03",
+    "prompt": "大学生活の相談です。Wi-Fi接続状況で、すでに問題が起きているです。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-05-08",
+    "prompt": "Wi-Fi接続場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-06-09",
+    "prompt": "ソフト導入場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-07-05",
+    "prompt": "大学生活の相談です。セキュリティ状況で、複数の選択肢を比較したいです。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-07-06",
+    "prompt": "大学生活の相談です。セキュリティ状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-07-07",
+    "prompt": "大学生活の相談です。セキュリティ状況で、相手への連絡も必要です。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-pc-08-06",
+    "prompt": "大学生活の相談です。オンライン授業状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "pc",
+    "relevant_document_ids": [
+      "v08-knowledge-pc-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-00-03",
+    "prompt": "大学生活の相談です。エラーが出る状況で、すでに問題が起きているです。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-01-07",
+    "prompt": "大学生活の相談です。デバッグ状況で、相手への連絡も必要です。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-03-04",
+    "prompt": "大学生活の相談です。課題設計状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-04-02",
+    "prompt": "コードが読めない場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-04-03",
+    "prompt": "コードが読めない場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-04-04",
+    "prompt": "コードが読めない場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-05-02",
+    "prompt": "大学生活の相談です。テストを書く状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-08-00",
+    "prompt": "質問方法場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-09-03",
+    "prompt": "大学生活の相談です。ライブラリ選び状況で、すでに問題が起きているです。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-09-06",
+    "prompt": "大学生活の相談です。ライブラリ選び状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-programming-09-08",
+    "prompt": "ライブラリ選び場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "programming",
+    "relevant_document_ids": [
+      "v08-knowledge-programming-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-00-06",
+    "prompt": "大学生活の相談です。課題に使えるか状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-00-09",
+    "prompt": "大学生活の相談です。課題に使えるか状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-02-01",
+    "prompt": "コード生成場合について、期限が近く時間が少ないので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-04-00",
+    "prompt": "誤情報場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-04-06",
+    "prompt": "誤情報場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-05-08",
+    "prompt": "個人情報場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-06-00",
+    "prompt": "大学生活の相談です。アイデア出し状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-06-05",
+    "prompt": "アイデア出し場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-06-07",
+    "prompt": "アイデア出し場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-07-00",
+    "prompt": "翻訳場合について、まず基本だけ知りたいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-07-03",
+    "prompt": "大学生活の相談です。翻訳状況で、すでに問題が起きているです。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-07-05",
+    "prompt": "翻訳場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-08-01",
+    "prompt": "大学生活の相談です。試験利用状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-08-02",
+    "prompt": "試験利用場合について、大学ごとの規則が分からないので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-08-03",
+    "prompt": "試験利用場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-09-03",
+    "prompt": "大学生活の相談です。利用申告状況で、すでに問題が起きているです。優先順位は？",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-ai_usage-09-05",
+    "prompt": "利用申告場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "ai_usage",
+    "relevant_document_ids": [
+      "v08-knowledge-ai_usage-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-00-02",
+    "prompt": "大学生活の相談です。情報の信頼性状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-00-03",
+    "prompt": "情報の信頼性場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-01-01",
+    "prompt": "大学生活の相談です。偽情報状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-01-05",
+    "prompt": "偽情報場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-02-04",
+    "prompt": "大学生活の相談です。一次資料状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-04-09",
+    "prompt": "大学生活の相談です。広告記事状況で、理由も含めて詳しく知りたいです。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-06-07",
+    "prompt": "大学生活の相談です。画像の出所状況で、相手への連絡も必要です。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-information_literacy-08-07",
+    "prompt": "大学生活の相談です。更新日状況で、相手への連絡も必要です。優先順位は？",
+    "category": "information_literacy",
+    "relevant_document_ids": [
+      "v08-knowledge-information_literacy-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-00-01",
+    "prompt": "大学生活の相談です。平均と中央値状況で、期限が近く時間が少ないです。優先順位は？",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-01-03",
+    "prompt": "分散場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-03-00",
+    "prompt": "大学生活の相談です。相関状況で、まず基本だけ知りたいです。優先順位は？",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-04-06",
+    "prompt": "回帰場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-05-05",
+    "prompt": "仮説検定場合について、複数の選択肢を比較したいので対応を教えてください。",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-06-08",
+    "prompt": "大学生活の相談です。標本抽出状況で、再発を防ぎたいです。優先順位は？",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-06"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-08-07",
+    "prompt": "欠損値場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-09-03",
+    "prompt": "大学生活の相談です。ソフト出力状況で、すでに問題が起きているです。優先順位は？",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-statistics-09-09",
+    "prompt": "ソフト出力場合について、理由も含めて詳しく知りたいので対応を教えてください。",
+    "category": "statistics",
+    "relevant_document_ids": [
+      "v08-knowledge-statistics-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-math-01-08",
+    "prompt": "大学生活の相談です。証明が読めない状況で、再発を防ぎたいです。優先順位は？",
+    "category": "math",
+    "relevant_document_ids": [
+      "v08-knowledge-math-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-math-03-02",
+    "prompt": "大学生活の相談です。積分状況で、大学ごとの規則が分からないです。優先順位は？",
+    "category": "math",
+    "relevant_document_ids": [
+      "v08-knowledge-math-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-math-07-08",
+    "prompt": "演習不足場合について、再発を防ぎたいので対応を教えてください。",
+    "category": "math",
+    "relevant_document_ids": [
+      "v08-knowledge-math-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-math-08-06",
+    "prompt": "大学生活の相談です。途中式状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "math",
+    "relevant_document_ids": [
+      "v08-knowledge-math-08"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-00-04",
+    "prompt": "大学生活の相談です。幅広く学びたい状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-00"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-01-04",
+    "prompt": "ニュースを理解場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-01-06",
+    "prompt": "ニュースを理解場合について、体調や生活との両立が不安ので対応を教えてください。",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-01"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-02-04",
+    "prompt": "歴史の流れ場合について、初めてで手順が分からないので対応を教えてください。",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-02"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-03-07",
+    "prompt": "科学記事場合について、相手への連絡も必要ので対応を教えてください。",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-03"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-04-04",
+    "prompt": "大学生活の相談です。社会制度状況で、初めてで手順が分からないです。優先順位は？",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-04"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-05-06",
+    "prompt": "大学生活の相談です。哲学入門状況で、体調や生活との両立が不安です。優先順位は？",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-05"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-07-07",
+    "prompt": "大学生活の相談です。読書選び状況で、相手への連絡も必要です。優先順位は？",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-07"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  },
+  {
+    "id": "v08-retrieval-dev-general_education-09-03",
+    "prompt": "専門外授業場合について、すでに問題が起きているので対応を教えてください。",
+    "category": "general_education",
+    "relevant_document_ids": [
+      "v08-knowledge-general_education-09"
+    ],
+    "source_split": "validation",
+    "tuning_allowed": true
+  }
+]

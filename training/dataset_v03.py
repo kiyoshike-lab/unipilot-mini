@@ -17,10 +17,11 @@ class CurriculumDataset(Dataset):
             row = json.loads(line); kind = row["kind"]
             if kind == "conversation":
                 # v0.4 also has a structured metadata field named ``context``.
-                # Only v0.7 retrieval-grounding rows use prompt-ready text here.
+                # Retrieval-grounding rows use prompt-ready text here.
                 context = row.get("context") if isinstance(row.get("context"), str) else None
                 context_block = f"<CONTEXT>\n{context}\n" if context else ""
-                prefix = f"<BOS><SYSTEM>\n{SYSTEM_TEXT}\n{context_block}<USER>\n{row['user']}\n<ASSISTANT>\n"
+                system_text = row.get("system", SYSTEM_TEXT)
+                prefix = f"<BOS><SYSTEM>\n{system_text}\n{context_block}<USER>\n{row['user']}\n<ASSISTANT>\n"
                 prefix_ids = tokenizer.encode(prefix)
                 ids = prefix_ids + tokenizer.encode(row["assistant"]) + [tokenizer.eos_id]
                 first_assistant_token = len(prefix_ids)

@@ -1,0 +1,19 @@
+{
+  "source": "checkpoints/standard-v08-scratch/stage-a/checkpoint-step-100.pt",
+  "output": "checkpoints/standard-v08-scratch/unipilot-standard-v08-a100-inference.pt",
+  "source_size_mb": 514.2823247909546,
+  "output_size_mb": 171.42768955230713,
+  "kept_keys": [
+    "config",
+    "inference_only",
+    "loss",
+    "model_state",
+    "source_checkpoint",
+    "step",
+    "tokenizer_version",
+    "v08_manifest"
+  ],
+  "removed_keys": [
+    "optimizer_state"
+  ]
+}

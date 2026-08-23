@@ -54,9 +54,14 @@ def load_runtime(checkpoint: str | None = None):
     if expected_version and expected_version not in model.config.model_name:
         raise RuntimeError(f"production checkpoint must be {expected_version}, got {model.config.model_name}")
     pipeline = None
-    if os.getenv("UNIPILOT_PIPELINE_VERSION") == "v0.7":
+    pipeline_version = os.getenv("UNIPILOT_PIPELINE_VERSION")
+    if pipeline_version == "v0.7":
         from pipeline.v07 import V07Pipeline
         pipeline = V07Pipeline(model, token, top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "1"))))
+    elif pipeline_version == "v0.8":
+        from pipeline.v08 import V08Pipeline
+        pipeline = V08Pipeline(model, token, retrieval_method=os.getenv("UNIPILOT_RETRIEVAL_METHOD", "tfidf"),
+                               top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "3"))))
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=checkpoint, payload=payload, pipeline=pipeline)
 
 
@@ -77,7 +82,7 @@ def model_info():
     if model is None:
         return {"model": "UniPilot Mini", "loaded": False, "checkpoint": runtime["checkpoint"], "external_ai_api": "OFF"}
     config = model.config
-    manifest = (runtime["payload"].get("v07_manifest") or runtime["payload"].get("v06_manifest") or
+    manifest = (runtime["payload"].get("v08_manifest") or runtime["payload"].get("v07_manifest") or runtime["payload"].get("v06_manifest") or
                 runtime["payload"].get("v04_manifest") or runtime["payload"].get("v03_manifest", {}))
     return {"model": config.model_name, "loaded": True, "parameters": model.parameter_count(), "checkpoint": runtime["checkpoint"],
             "tokenizer": manifest.get("tokenizer_version", "unipilot-byte-bpe-v02-512"), "vocab_size": runtime["tokenizer"].vocab_size,
@@ -97,10 +102,15 @@ def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if chat and runtime["pipeline"] is not None:
-        result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
-                                            request.top_p, request.repetition_penalty,
-                                            candidates=max(1, int(os.getenv("UNIPILOT_V07_CANDIDATES", "1"))))
-        return {**result, "model": "UniPilot Mini", "local": True, "metrics": result["generation_metrics"]}
+        if runtime["pipeline"].version == "v0.8":
+            result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
+                                                request.top_p, request.repetition_penalty, request.response_mode)
+        else:
+            result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
+                                                request.top_p, request.repetition_penalty,
+                                                candidates=max(1, int(os.getenv("UNIPILOT_V07_CANDIDATES", "1"))))
+        model_label = runtime["model"].config.model_name if runtime["pipeline"].version == "v0.8" else "UniPilot Mini"
+        return {**result, "model": model_label, "local": True, "metrics": result["generation_metrics"]}
     from inference.generate import generate_text
     prompt = chat_prompt(request.prompt) if chat else request.prompt
     text, metrics = generate_text(runtime["model"], runtime["tokenizer"], prompt, request.max_new_tokens,
@@ -121,6 +131,14 @@ def chat_stream(request: ChatRequest):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if runtime["pipeline"] is not None:
+        if runtime["pipeline"].version == "v0.8":
+            def standard_events():
+                for snapshot in runtime["pipeline"].iter_answer(
+                        request.prompt, request.max_new_tokens, request.temperature, request.top_k,
+                        request.top_p, request.repetition_penalty, request.response_mode):
+                    yield json.dumps(snapshot, ensure_ascii=False) + "\n"
+            return StreamingResponse(standard_events(), media_type="application/x-ndjson",
+                                     headers={"Cache-Control": "no-cache"})
         def grounded_events():
             result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                                                 request.top_p, request.repetition_penalty,
@@ -164,9 +182,14 @@ def model_load(request: ModelLoadRequest):
     from inference.generate import load_model
     model, token, device, payload = load_model(str(candidate), str(tokenizer_path))
     pipeline = None
-    if os.getenv("UNIPILOT_PIPELINE_VERSION") == "v0.7":
+    pipeline_version = os.getenv("UNIPILOT_PIPELINE_VERSION")
+    if pipeline_version == "v0.7":
         from pipeline.v07 import V07Pipeline
         pipeline = V07Pipeline(model, token, top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "1"))))
+    elif pipeline_version == "v0.8":
+        from pipeline.v08 import V08Pipeline
+        pipeline = V08Pipeline(model, token, retrieval_method=os.getenv("UNIPILOT_RETRIEVAL_METHOD", "tfidf"),
+                               top_k=max(1, int(os.getenv("UNIPILOT_RAG_TOP_K", "3"))))
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=str(candidate.relative_to(Path.cwd())),
                    payload=payload, pipeline=pipeline)
     return model_info()

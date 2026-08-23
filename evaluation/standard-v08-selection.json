@@ -1,0 +1,39 @@
+{
+  "architecture": {
+    "selected": "a-45m",
+    "parameters": 44920832,
+    "config": {"layers": 14, "hidden": 512, "heads": 8, "head_dimension": 64, "ffn": 2048},
+    "reason": "All candidates exceed 20 tok/s, but a-45m is fastest at 44.33 tok/s, has the smallest 171.41 MiB FP32 checkpoint, and the lowest measured optimizer-step RSS at 1020.84 MiB. No trained quality evidence justifies paying for b-51m or c-58m yet."
+  },
+  "tokenizer": {
+    "selected_vocab": 1024,
+    "tokens_per_character": 0.9215840098233168,
+    "reason": "2048 improves compression by 20.51% but misses the speed-retention gate, adds parameters, and is unnecessary for the first bounded Standard experiment."
+  },
+  "context": {
+    "selected": 512,
+    "reason": "512 provides four times the attention work of 256 but remains practical. Context 1024 takes 1.543 seconds for the full-context forward probe, uses a 56 MiB FP32 KV cache, and has 16x the 256 attention work."
+  },
+  "retrieval": {
+    "selected_for_experiment": "tfidf",
+    "development_recall_at_3": 0.4911242603550296,
+    "blind_recall_at_1": 0.045454545454545456,
+    "blind_recall_at_3": 0.08333333333333333,
+    "mrr_at_10": 0.08059914622414621,
+    "production_ready": false
+  },
+  "training": {
+    "executed_through_step": 100,
+    "stage": "A",
+    "continued_to_500": false,
+    "reason": "Corrected 528-question blind evaluation found 0.57% relevance and 0% completion. The bounded quality stop prevented later stages and longer runs."
+  },
+  "quantization": {
+    "dynamic_int8_adopted": false,
+    "size_reduction": 0.7318777087882431,
+    "speed_ratio_to_fp32": 0.6826167143261507,
+    "reason": "The probe is slower and the FP32 source checkpoint has failed quality gates; quantization quality cannot be accepted from this checkpoint."
+  },
+  "production_enabled": false,
+  "external_ai_api": "OFF"
+}

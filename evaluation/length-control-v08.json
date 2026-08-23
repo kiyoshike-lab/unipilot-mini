@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "mode": "short",
+      "target_tokens": [
+        40,
+        80
+      ],
+      "samples": 100,
+      "mean_tokens": 14.75,
+      "min_tokens": 2,
+      "max_tokens": 45,
+      "p05_tokens": 2,
+      "p95_tokens": 39,
+      "target_hit_rate": 0.05
+    },
+    {
+      "mode": "normal",
+      "target_tokens": [
+        100,
+        200
+      ],
+      "samples": 100,
+      "mean_tokens": 34.72,
+      "min_tokens": 22,
+      "max_tokens": 69,
+      "p05_tokens": 24,
+      "p95_tokens": 60,
+      "target_hit_rate": 0.0
+    },
+    {
+      "mode": "detailed",
+      "target_tokens": [
+        200,
+        400
+      ],
+      "samples": 100,
+      "mean_tokens": 83.31,
+      "min_tokens": 61,
+      "max_tokens": 141,
+      "p05_tokens": 63,
+      "p95_tokens": 133,
+      "target_hit_rate": 0.0
+    }
+  ],
+  "all_targets_passed": false,
+  "decision": "API modes and hard caps are implemented, but training answer lengths must be rewritten before long training if targets are not met."
+}

@@ -1,0 +1,13 @@
+{
+  "context": 512,
+  "parameters": 44920832,
+  "position_embedding_parameters": 262144,
+  "full_context_forward_seconds": 0.635458299999982,
+  "full_context_forward_tokens_per_second": 805.7177001229104,
+  "rss_before_mb": 202.3046875,
+  "rss_after_model_mb": 381.3515625,
+  "rss_after_full_forward_mb": 415.625,
+  "full_forward_rss_delta_mb": 213.3203125,
+  "attention_memory_relative_to_256": 4.0,
+  "kv_cache_mb_fp32": 28.0
+}

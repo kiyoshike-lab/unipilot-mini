@@ -34,10 +34,10 @@ class BPETokenizer:
     def eos_id(self): return self.special_to_id["<EOS>"]
 
     def train(self, texts: list[str], vocab_size: int = 512, min_frequency: int = 2) -> None:
-        if vocab_size < len(SPECIAL_TOKENS) + 256:
+        if vocab_size < len(self.special_tokens) + 256:
             raise ValueError("byte-level vocabulary requires at least 263 tokens")
         sequences = [list(text.encode("utf-8")) for text in texts if text]
-        offset = len(SPECIAL_TOKENS)
+        offset = len(self.special_tokens)
         sequences = [[value + offset for value in seq] for seq in sequences]
         self.merges = []
         self.token_bytes = {i + offset: bytes([i]) for i in range(256)}

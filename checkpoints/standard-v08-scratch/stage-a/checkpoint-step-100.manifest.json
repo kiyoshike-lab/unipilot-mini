@@ -1,0 +1,135 @@
+{
+  "model": "UniPilot Standard v0.8 candidate",
+  "parameters": 44920832,
+  "stage": "A",
+  "step": 100,
+  "initialization": "scratch-no-pretrained-model",
+  "tokenizer_version": "unipilot-standard-byte-bpe-v08-1024",
+  "dataset_version": "unipilot-standard-v08-structured-scenarios",
+  "evaluation_version": "unipilot-standard-v08-blind-528",
+  "seed": 8082026,
+  "git_commit": "488754b2a49e6031e6930180bae680e5e8267900",
+  "model_config": {
+    "model_name": "UniPilot Standard v0.8-a-100",
+    "vocab_size": 1024,
+    "context_length": 512,
+    "embedding_dim": 512,
+    "n_layers": 14,
+    "n_heads": 8,
+    "ffn_dim": 2048,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "training_metrics": {
+    "step": 100,
+    "stage": "A",
+    "loss": 4.735799796581269,
+    "validation_loss": 2.8331362505753837,
+    "learning_rate": 0.0003,
+    "gradient_norm": 13.877079010009766,
+    "gradient_clipping_count": 100,
+    "nan_count": 0,
+    "inf_count": 0,
+    "tokens_per_second": 68.64496728240445,
+    "step_time_seconds": 0.4224635999999009,
+    "memory_usage_mb": 1076.07421875
+  },
+  "blind_generation_probe": {
+    "questions": 8,
+    "natural_rate": 1.0,
+    "completion_rate": 0.0,
+    "relevance_proxy_rate": 1.0,
+    "eos_rate": 1.0,
+    "mean_tokens_per_second": 49.40501142834895,
+    "rows": [
+      {
+        "id": "v08-blind-exam-0-0",
+        "category": "exam",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 33.54890367774168
+      },
+      {
+        "id": "v08-blind-registration-0-2",
+        "category": "registration",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 50.726359191702436
+      },
+      {
+        "id": "v08-blind-report-0-4",
+        "category": "report",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 53.13750391885921
+      },
+      {
+        "id": "v08-blind-laboratory-0-6",
+        "category": "laboratory",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 51.296870377947485
+      },
+      {
+        "id": "v08-blind-qualification-1-0",
+        "category": "qualification",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 50.04729469349681
+      },
+      {
+        "id": "v08-blind-tuition-1-2",
+        "category": "tuition",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 50.7648142303981
+      },
+      {
+        "id": "v08-blind-time_management-1-4",
+        "category": "time_management",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 53.60157945992358
+      },
+      {
+        "id": "v08-blind-ai_usage-1-6",
+        "category": "ai_usage",
+        "text": "要点から述べます。",
+        "natural": true,
+        "complete": false,
+        "relevant": true,
+        "eos": true,
+        "tokens_per_second": 52.11676587672232
+      }
+    ],
+    "limit": "Eight-item automatic early-stop probe; not the 528-question blind evaluation or human score."
+  },
+  "initial_continue_recommended": true,
+  "continue_recommended": false,
+  "post_run_probe_audit": "The initial relevance proxy matched generic Japanese bigrams in '要点から述べます。' and was invalid. The corrected 528-question blind evaluation gives 0.57% relevance and 0% correctness/completion, so training was stopped after step 100.",
+  "production_promoted": false,
+  "render_free_target": false,
+  "external_pretrained_model": false,
+  "external_ai_api": "OFF"
+}

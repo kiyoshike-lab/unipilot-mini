@@ -1,0 +1,39 @@
+{
+  "checkpoint": "checkpoints/standard-v08-scratch/unipilot-standard-v08-a100-inference.pt",
+  "questions": 3,
+  "mean_first_event_seconds": 0.21198689999998047,
+  "max_first_event_seconds": 0.308188699999846,
+  "mean_total_seconds": 0.3019621333332907,
+  "peak_rss_mb": 539.390625,
+  "incremental_events_before_final_validation": true,
+  "rows": [
+    {
+      "prompt": "GPAとは何ですか？",
+      "first_event_seconds": 0.308188699999846,
+      "total_seconds": 0.4194966999998542,
+      "events": 7,
+      "last_phase": "validated_replacement",
+      "fallback_used": true,
+      "final_text": "確認できる情報だけでは断定できません。現在年度の大学公式案内を確認し、必要なら担当教員または該当窓口へ相談してください。"
+    },
+    {
+      "prompt": "教授へ欠席メールを作ってください。",
+      "first_event_seconds": 0.1714271999999255,
+      "total_seconds": 0.2523255999999492,
+      "events": 7,
+      "last_phase": "validated_replacement",
+      "fallback_used": true,
+      "final_text": "確認できる情報だけでは断定できません。現在年度の大学公式案内を確認し、必要なら担当教員または該当窓口へ相談してください。"
+    },
+    {
+      "prompt": "明日試験なのに課題も終わっていません。優先順位を教えてください。",
+      "first_event_seconds": 0.15634480000016993,
+      "total_seconds": 0.23406410000006872,
+      "events": 7,
+      "last_phase": "validated_replacement",
+      "fallback_used": true,
+      "final_text": "確認できる情報だけでは断定できません。現在年度の大学公式案内を確認し、必要なら担当教員または該当窓口へ相談してください。"
+    }
+  ],
+  "external_ai_api": "OFF"
+}

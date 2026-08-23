@@ -1,0 +1,38 @@
+{
+  "dataset_version": "unipilot-standard-v08-structured-scenarios",
+  "categories": 33,
+  "semantic_scenario_cells": 3300,
+  "semantic_structure": "33 categories x 10 distinct concerns x 10 distinct constraints",
+  "high_quality_instruction_rows": 9900,
+  "corrected_rows": 3300,
+  "conversation_rows": 6000,
+  "compound_rows": 1000,
+  "general_japanese_rows": 2000,
+  "knowledge_documents": 774,
+  "standard_project_knowledge_documents": 330,
+  "blind_questions": 528,
+  "retrieval_development_questions": 338,
+  "blind_difficulty": {
+    "simple": 132,
+    "medium": 132,
+    "hard": 132,
+    "compound": 132
+  },
+  "chatgpt_gemini_manual_questions": 100,
+  "exact_train_blind_question_overlap": 0,
+  "exact_knowledge_title_blind_overlap": 0,
+  "instruction_pair_duplicates": 0,
+  "corrected_reason_distribution": {
+    "unrelated advice": 420,
+    "invented subject": 388,
+    "excessive generic response": 399,
+    "university-specific hallucination": 437,
+    "incomplete answer": 412,
+    "wrong category": 419,
+    "unsupported date or fee": 443,
+    "ignores compound constraint": 382
+  },
+  "external_llm_used": false,
+  "external_pretrained_model_used": false,
+  "quality_limit": "Scenario cells combine independently authored concern and constraint inventories. They are semantically broader than paraphrase-only rows, but are still programmatically composed and have not received row-by-row human review. Counts must not be described as 3,300 independently authored answers."
+}

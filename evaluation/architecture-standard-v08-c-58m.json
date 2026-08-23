@@ -1,0 +1,43 @@
+{
+  "candidate": "c-58m",
+  "config": {
+    "model_name": "UniPilot Standard v0.8 c-58m",
+    "vocab_size": 1024,
+    "context_length": 512,
+    "embedding_dim": 576,
+    "n_layers": 14,
+    "n_heads": 9,
+    "ffn_dim": 2304,
+    "dropout": 0.0,
+    "bias": true
+  },
+  "parameters": 56729088,
+  "parameter_millions": 56.729088,
+  "head_dimension": 64,
+  "context_512_supported": true,
+  "inference": {
+    "forward_sequence_tokens": 256,
+    "forward_seconds": 0.3249147000001358,
+    "forward_tokens_per_second": 787.8991009021538,
+    "generation_probe_tokens": 16,
+    "generation_seconds": 0.4037308000001758,
+    "generation_tokens_per_second": 39.63036756173429,
+    "first_token_seconds": 0.12619230000018433
+  },
+  "rss_before_mb": 202.42578125,
+  "rss_after_model_mb": 427.78125,
+  "rss_after_inference_mb": 450.71875,
+  "rss_after_optimizer_step_mb": 1201.8515625,
+  "model_rss_delta_mb": 225.35546875,
+  "training_rss_delta_mb": 999.42578125,
+  "training_sequence_length": 128,
+  "training_step_seconds": 0.930554900000061,
+  "sanity_loss": 7.021207809448242,
+  "gradient_norm": 7.3323893547058105,
+  "checkpoint_bytes": 226968387,
+  "checkpoint_mb": 216.4539213180542,
+  "kv_cache_512_bytes_fp32": 33030144,
+  "kv_cache_512_mb_fp32": 31.5,
+  "estimated_kv_cache_1024_mb_fp32": 63.0,
+  "render_free_512mb_target": false
+}
