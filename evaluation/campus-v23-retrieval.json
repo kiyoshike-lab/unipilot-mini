@@ -1,0 +1,109 @@
+{
+  "schema_version": "campus-v23-retrieval-v1",
+  "generated_at": "2026-08-24T15:29:53.483505+00:00",
+  "development_set": {
+    "questions": 300,
+    "v2_2_false_match_rate": 0.23
+  },
+  "final_holdout": true,
+  "final_source_linked_questions": 500,
+  "final_negative_questions": 67,
+  "metric_policy": "Recall uses raw top-k; False Match counts accepted wrong top-1; False No Match counts LOW/REJECT",
+  "strategies": {
+    "bm25": {
+      "questions": 500,
+      "recall_at_1": 0.508,
+      "recall_at_3": 0.538,
+      "recall_at_5": 0.538,
+      "mrr": 0.5223,
+      "false_match_rate": 0.07,
+      "false_no_match_rate": 0.426,
+      "negative_query_accept_rate": 0.1045,
+      "average_latency_ms": 45.447,
+      "confidence_counts": {
+        "HIGH": 278,
+        "REJECT": 209,
+        "LOW": 4,
+        "MEDIUM": 9
+      }
+    },
+    "tfidf": {
+      "questions": 500,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "false_match_rate": 0.0,
+      "false_no_match_rate": 0.002,
+      "negative_query_accept_rate": 0.0,
+      "average_latency_ms": 45.634,
+      "confidence_counts": {
+        "HIGH": 499,
+        "LOW": 1
+      }
+    },
+    "current_reranked": {
+      "questions": 500,
+      "recall_at_1": 0.998,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.999,
+      "false_match_rate": 0.002,
+      "false_no_match_rate": 0.0,
+      "negative_query_accept_rate": 0.1045,
+      "average_latency_ms": 45.694,
+      "confidence_counts": {
+        "HIGH": 498,
+        "MEDIUM": 2
+      }
+    },
+    "hybrid": {
+      "questions": 500,
+      "recall_at_1": 0.998,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.999,
+      "false_match_rate": 0.0,
+      "false_no_match_rate": 0.002,
+      "negative_query_accept_rate": 0.1045,
+      "average_latency_ms": 74.412,
+      "confidence_counts": {
+        "HIGH": 497,
+        "LOW": 1,
+        "MEDIUM": 2
+      }
+    },
+    "category_aware_hybrid": {
+      "questions": 500,
+      "recall_at_1": 0.998,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.999,
+      "false_match_rate": 0.0,
+      "false_no_match_rate": 0.002,
+      "negative_query_accept_rate": 0.1045,
+      "average_latency_ms": 74.956,
+      "confidence_counts": {
+        "HIGH": 497,
+        "LOW": 1,
+        "MEDIUM": 2
+      }
+    },
+    "multi_query_hybrid": {
+      "questions": 500,
+      "recall_at_1": 0.998,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "mrr": 0.999,
+      "false_match_rate": 0.0,
+      "false_no_match_rate": 0.002,
+      "negative_query_accept_rate": 0.1045,
+      "average_latency_ms": 122.55,
+      "confidence_counts": {
+        "HIGH": 499,
+        "LOW": 1
+      }
+    }
+  },
+  "selected": "tfidf"
+}

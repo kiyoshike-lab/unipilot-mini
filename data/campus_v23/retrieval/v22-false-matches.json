@@ -1,0 +1,4157 @@
+{
+  "schema_version": "campus-v23-v22-false-match-analysis-v1",
+  "generated_at": "2026-08-24T14:45:53.079656+00:00",
+  "development_data": true,
+  "baseline_method": "v2.2 reranked",
+  "summary": {
+    "questions": 300,
+    "false_matches": 69,
+    "false_match_rate": 0.23,
+    "cause_counts": {
+      "CATEGORY_MISMATCH": 39,
+      "LEXICAL_COLLISION": 30
+    }
+  },
+  "items": [
+    {
+      "id": "campus-v22-knowledge-0082",
+      "query": "大学生活の相談についての質問です。大学生活の相談の観点で、大学生活の基礎として、『東大の授業が知りたい – 東京大学 大学総合教育研究センター — UTokyo OCW』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "university_system",
+      "expected_category": "campus_life",
+      "expected_source": "https://www.he.u-tokyo.ac.jp/purpose/utokyo-class/",
+      "retrieved_chunk_id": "wikipedia-ja-8529-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-8529",
+      "retrieved_chunk": "定義(ていぎ)は、ある言葉の正確な意味や用法について、人々の間で共通認識を定めるよう行われる作業。一般的にそれは「○○とは・・・・・である」という言い換えの形で表現される。コミュニケーションを円滑で取り違いなく行うために必要とされる。基本的に定義が決められる場合は1つである。これは、複数の場合、矛盾が生じるからである。ただし例外もある(例:電子掲示板用語の「キャップ」、CDソフトに付く帯の「キャップ」など)。",
+      "retrieved_title": "定義",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+      "retrieved_category": "relationship",
+      "retrieval_score": 0.6700416717869412,
+      "rerank_score": 0.6700416717869412,
+      "category": "campus_life",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6700416717869412
+        },
+        {
+          "id": "mext-reform-r5-001-chunk-001",
+          "parent_id": "mext-reform-r5-001",
+          "title": "大学における教育内容等の改革状況について(令和5年度):文部科学省 — 大学における教育内容等の改革状況について(令和5年度)",
+          "category": "campus_life",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/1417336_00013.htm",
+          "score": 0.5065958539218642
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.50474787611268
+        },
+        {
+          "id": "mext-reform-r5-003-chunk-003",
+          "parent_id": "mext-reform-r5-003",
+          "title": "大学における教育内容等の改革状況について(令和5年度):文部科学省 — 1 個別回答データ",
+          "category": "campus_life",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/1417336_00013.htm",
+          "score": 0.5007375600517485
+        },
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4940463080503802
+        }
+      ],
+      "latency_ms": 179.10549999942305
+    },
+    {
+      "id": "campus-v22-knowledge-0262",
+      "query": "試験勉強と学習計画についての質問です。試験勉強と学習計画の観点で、勉強計画を改善するため、『ご利用に当たって | 筑波大学オープンコースウェア|TSUKUBA OCW — TSUKUBA OCWの利用に当たって』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "exam_assignment",
+      "expected_category": "study_plan",
+      "expected_source": "https://ocw.tsukuba.ac.jp/guide/",
+      "retrieved_chunk_id": "wikipedia-ja-6727-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-6727",
+      "retrieved_chunk": "筑波大学(つくばだいがく、英語: University of Tsukuba)は、茨城県つくば市にある国立大学である。第二次世界大戦前の旧制時代からの歴史を持つ旧官立大学の一校であり、広島大学と共に旧二文理大の一校である。また、文部科学省が実施しているスーパーグローバル大学事業のトップ型指定校ならびに指定国立大学法人に指定されている。JSコーポレーションが毎月公表している2025年1月31日集計の「大学人気ランキング」では国公立大学で全国2位になっている。",
+      "retrieved_title": "筑波大学",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6",
+      "retrieved_category": "campus_life",
+      "retrieval_score": 0.731300193840247,
+      "rerank_score": 0.731300193840247,
+      "category": "study_plan",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-6727-chunk-001",
+          "parent_id": "wikipedia-ja-6727",
+          "title": "筑波大学",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6",
+          "score": 0.731300193840247
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6751405105765106
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.45938631281046316
+        },
+        {
+          "id": "mext-gpa-qa-004-chunk-001",
+          "parent_id": "mext-gpa-qa-004",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 「シラバス」とは",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4253870803315978
+        },
+        {
+          "id": "mext-gpa-qa-002-chunk-004",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.3908891082650158
+        }
+      ],
+      "latency_ms": 166.20280000279308
+    },
+    {
+      "id": "campus-v22-knowledge-0400",
+      "query": "試験勉強と学習計画についての質問です。試験勉強と学習計画の観点で、勉強計画を改善するため、『ご利用に当たって | 筑波大学オープンコースウェア|TSUKUBA OCW — TSUKUBA OCWの利用に当たって』を学ぶときの基本概念と確認すべき点を詳しく教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "exam_assignment",
+      "expected_category": "study_plan",
+      "expected_source": "https://ocw.tsukuba.ac.jp/guide/",
+      "retrieved_chunk_id": "wikipedia-ja-6727-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-6727",
+      "retrieved_chunk": "筑波大学(つくばだいがく、英語: University of Tsukuba)は、茨城県つくば市にある国立大学である。第二次世界大戦前の旧制時代からの歴史を持つ旧官立大学の一校であり、広島大学と共に旧二文理大の一校である。また、文部科学省が実施しているスーパーグローバル大学事業のトップ型指定校ならびに指定国立大学法人に指定されている。JSコーポレーションが毎月公表している2025年1月31日集計の「大学人気ランキング」では国公立大学で全国2位になっている。",
+      "retrieved_title": "筑波大学",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6",
+      "retrieved_category": "campus_life",
+      "retrieval_score": 0.6980257812514773,
+      "rerank_score": 0.6980257812514773,
+      "category": "study_plan",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-6727-chunk-001",
+          "parent_id": "wikipedia-ja-6727",
+          "title": "筑波大学",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6",
+          "score": 0.6980257812514773
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.685236550883846
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4591278193479459
+        },
+        {
+          "id": "mext-gpa-qa-004-chunk-001",
+          "parent_id": "mext-gpa-qa-004",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 「シラバス」とは",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.42494854235409496
+        },
+        {
+          "id": "mext-gpa-qa-002-chunk-004",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.3903992592223343
+        }
+      ],
+      "latency_ms": 177.62800000127754
+    },
+    {
+      "id": "campus-v22-knowledge-0403",
+      "query": "英語の面談の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.46397638951542386,
+      "rerank_score": 0.46397638951542386,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.46397638951542386
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.42770635365061915
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4248531879221171
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.42471720462216933
+        },
+        {
+          "id": "mhlw-student-parttime-001-chunk-001",
+          "parent_id": "mhlw-student-parttime-001",
+          "title": "令和7年度「アルバイトの労働条件を確かめよう!」キャンペーンを全国で実施します|報道発表資料|厚生労働省 — キャンペーンの概要",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/newpage_54645.html",
+          "score": 0.42171628733924893
+        }
+      ],
+      "latency_ms": 131.6160000023956
+    },
+    {
+      "id": "campus-v22-knowledge-0406",
+      "query": "心理学の面談の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4635649419294783,
+      "rerank_score": 0.4635649419294783,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4635649419294783
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.42726562361406806
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4245549130826052
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.4244020884792423
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.42375844731941537
+        }
+      ],
+      "latency_ms": 134.2216000011831
+    },
+    {
+      "id": "campus-v22-knowledge-0409",
+      "query": "ゼミの面談の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.46434747179919644,
+      "rerank_score": 0.46434747179919644,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.46434747179919644
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4281023669812851
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.42512220033686643
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.42500140611457116
+        },
+        {
+          "id": "mhlw-student-parttime-001-chunk-001",
+          "parent_id": "mhlw-student-parttime-001",
+          "title": "令和7年度「アルバイトの労働条件を確かめよう!」キャンペーンを全国で実施します|報道発表資料|厚生労働省 — キャンペーンの概要",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/newpage_54645.html",
+          "score": 0.4219710422369011
+        }
+      ],
+      "latency_ms": 133.5497000000032
+    },
+    {
+      "id": "campus-v22-knowledge-0412",
+      "query": "統計学の課題内容の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-98768-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-98768",
+      "retrieved_chunk": "統計(とうけい、英: statistic)は、社会の状態を数値によって精確に知りたいという要求に応えるため、実測したデータを元に計算した数値、あるいはそれを多数ひとまとめにしたものである。通常、関心の対象となる人々や事物の全数もしくはその一部について個別に情報を集め、計算をおこない、その結果を印刷物または機械可読な電子ファイルなどのかたちで公表する。この結果がじゅうぶんな信頼を得ている場合、それ自体で対象の状態を精確に反映したものとみなされる。",
+      "retrieved_title": "統計",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+      "retrieved_category": "campus_life",
+      "retrieval_score": 0.7479665096058586,
+      "rerank_score": 0.7479665096058586,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-98768-chunk-001",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.7479665096058586
+        },
+        {
+          "id": "wikipedia-ja-1031-chunk-001",
+          "parent_id": "wikipedia-ja-1031",
+          "title": "統計学",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%AD%A6",
+          "score": 0.7290995801990303
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-002",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.6290727070490009
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.46323951339350455
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4238660223459335
+        }
+      ],
+      "latency_ms": 132.81360000109999
+    },
+    {
+      "id": "campus-v22-knowledge-0415",
+      "query": "経済学の課題内容の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-1110-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-1110",
+      "retrieved_chunk": "経済学(けいざいがく、英: economics)とは、経済・経済現象を対象とする学問であり、社会科学の一領域である。英語圏では従来political economy(政治経済学)と呼ばれてきたが、19 世紀後半以降、economics(経済学)と呼ばれるようになった。原語であるeconomicsという語彙は、新古典派経済学者アルフレッド・マーシャルの主著『経済学原理』(英: Principles of Economics, 1890年)によって誕生・普及したとされている。",
+      "retrieved_title": "経済学",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E5%AD%A6",
+      "retrieved_category": "general",
+      "retrieval_score": 0.7174889967397039,
+      "rerank_score": 0.7174889967397039,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-1110-chunk-001",
+          "parent_id": "wikipedia-ja-1110",
+          "title": "経済学",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E5%AD%A6",
+          "score": 0.7174889967397039
+        },
+        {
+          "id": "wikipedia-ja-5787-chunk-001",
+          "parent_id": "wikipedia-ja-5787",
+          "title": "経済",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88",
+          "score": 0.574163570220967
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.46330412269748766
+        },
+        {
+          "id": "mext-student-support-001-chunk-001",
+          "parent_id": "mext-student-support-001",
+          "title": "経済的に困難な学生が活用可能な支援策",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.4405324433408836
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-001",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.43302176495170996
+        }
+      ],
+      "latency_ms": 132.8323999987333
+    },
+    {
+      "id": "campus-v22-knowledge-0418",
+      "query": "研究方法の課題内容の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-income-tax-basics-006-chunk-001",
+      "retrieved_parent_id": "nta-income-tax-basics-006",
+      "retrieved_chunk": "申告期限までに、確定申告書(還付申告書)を提出してください。なお、国税庁ホームページの「確定申告書等作成コーナー」では、画面の案内に沿って金額を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されますので、ぜひご利用ください。上記の「申告等の期限」までに確定申告をできなかった場合や、確定申告の内容に誤りがあることに気付いた場合の取扱いについては、コード2024「確定申告を忘れたとき」または、コード2026「確定申告を間違えたとき」を参照してください。◆パンフレット・手引き ・確定申告書等の様式・手引き等",
+      "retrieved_title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4633894754167065,
+      "rerank_score": 0.4633894754167065,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4633894754167065
+        },
+        {
+          "id": "mhlw-young-employment-003-chunk-001",
+          "parent_id": "mhlw-young-employment-003",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 青少年の雇用機会の確保及び職場への定着に関して事業主、特定地方公共団体、職業紹介事業者等その他の関係者が適切に対処するための指針",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4481386762449835
+        },
+        {
+          "id": "mext-reform-r5-001-chunk-001",
+          "parent_id": "mext-reform-r5-001",
+          "title": "大学における教育内容等の改革状況について(令和5年度):文部科学省 — 大学における教育内容等の改革状況について(令和5年度)",
+          "category": "campus_life",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/1417336_00013.htm",
+          "score": 0.4433075537724064
+        },
+        {
+          "id": "nta-working-student-001-chunk-003",
+          "parent_id": "nta-working-student-001",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.44234801685124925
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.42699512846288123
+        }
+      ],
+      "latency_ms": 135.34209999852465
+    },
+    {
+      "id": "campus-v22-knowledge-0421",
+      "query": "基礎演習の授業資料の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mext-gpa-qa-002-chunk-002",
+      "retrieved_parent_id": "mext-gpa-qa-002",
+      "retrieved_chunk": "このため、大学は学生に対し、シラバス等により、それぞれの授業の年間スケジュールや毎回の講義内容を詳細に明示し、講義の前提として読んでおくべき文献を指示することなどにより、学生の準備学修・復習について適切な指示を与えることが求められます。また、大学での授業内容についても、単に授業に出席しさえすれば授業内容が全て理解できるようなものとするのではなく、授業外の学修を行うことを前提として設計することが求められます。",
+      "retrieved_title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+      "retrieved_source": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+      "retrieved_category": "gpa",
+      "retrieval_score": 0.4576854341401687,
+      "rerank_score": 0.4576854341401687,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mext-gpa-qa-002-chunk-002",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4576854341401687
+        },
+        {
+          "id": "digital-open-data-008-chunk-001",
+          "parent_id": "digital-open-data-008",
+          "title": "オープンデータ|デジタル庁 — オープンデータ取組の質評価指標(ベータ版)・研修資料",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4500587565626547
+        },
+        {
+          "id": "nta-working-student-003-chunk-001",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.44851761930486456
+        },
+        {
+          "id": "mext-gpa-qa-003-chunk-001",
+          "parent_id": "mext-gpa-qa-003",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.43342229867015747
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4191451157544277
+        }
+      ],
+      "latency_ms": 135.1704000007885
+    },
+    {
+      "id": "campus-v22-knowledge-0424",
+      "query": "情報科学の授業資料の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mext-gpa-qa-002-chunk-002",
+      "retrieved_parent_id": "mext-gpa-qa-002",
+      "retrieved_chunk": "このため、大学は学生に対し、シラバス等により、それぞれの授業の年間スケジュールや毎回の講義内容を詳細に明示し、講義の前提として読んでおくべき文献を指示することなどにより、学生の準備学修・復習について適切な指示を与えることが求められます。また、大学での授業内容についても、単に授業に出席しさえすれば授業内容が全て理解できるようなものとするのではなく、授業外の学修を行うことを前提として設計することが求められます。",
+      "retrieved_title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+      "retrieved_source": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+      "retrieved_category": "gpa",
+      "retrieval_score": 0.4585193970673357,
+      "rerank_score": 0.4585193970673357,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mext-gpa-qa-002-chunk-002",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4585193970673357
+        },
+        {
+          "id": "digital-open-data-008-chunk-001",
+          "parent_id": "digital-open-data-008",
+          "title": "オープンデータ|デジタル庁 — オープンデータ取組の質評価指標(ベータ版)・研修資料",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.44966656936001315
+        },
+        {
+          "id": "nta-working-student-003-chunk-001",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4478393167423921
+        },
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4295258058843018
+        },
+        {
+          "id": "mext-gpa-qa-003-chunk-002",
+          "parent_id": "mext-gpa-qa-003",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4245897027475789
+        }
+      ],
+      "latency_ms": 136.8886999989627
+    },
+    {
+      "id": "campus-v22-knowledge-0427",
+      "query": "線形代数の授業資料の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mext-gpa-qa-002-chunk-002",
+      "retrieved_parent_id": "mext-gpa-qa-002",
+      "retrieved_chunk": "このため、大学は学生に対し、シラバス等により、それぞれの授業の年間スケジュールや毎回の講義内容を詳細に明示し、講義の前提として読んでおくべき文献を指示することなどにより、学生の準備学修・復習について適切な指示を与えることが求められます。また、大学での授業内容についても、単に授業に出席しさえすれば授業内容が全て理解できるようなものとするのではなく、授業外の学修を行うことを前提として設計することが求められます。",
+      "retrieved_title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+      "retrieved_source": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+      "retrieved_category": "gpa",
+      "retrieval_score": 0.4570606392933193,
+      "rerank_score": 0.4570606392933193,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mext-gpa-qa-002-chunk-002",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4570606392933193
+        },
+        {
+          "id": "digital-open-data-008-chunk-001",
+          "parent_id": "digital-open-data-008",
+          "title": "オープンデータ|デジタル庁 — オープンデータ取組の質評価指標(ベータ版)・研修資料",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4494162386326187
+        },
+        {
+          "id": "nta-working-student-003-chunk-001",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4474079972588223
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.41826712946907196
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-001",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.41198523623706695
+        }
+      ],
+      "latency_ms": 137.01889999720152
+    },
+    {
+      "id": "campus-v22-knowledge-0430",
+      "query": "卒業研究の授業資料の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mext-gpa-qa-002-chunk-002",
+      "retrieved_parent_id": "mext-gpa-qa-002",
+      "retrieved_chunk": "このため、大学は学生に対し、シラバス等により、それぞれの授業の年間スケジュールや毎回の講義内容を詳細に明示し、講義の前提として読んでおくべき文献を指示することなどにより、学生の準備学修・復習について適切な指示を与えることが求められます。また、大学での授業内容についても、単に授業に出席しさえすれば授業内容が全て理解できるようなものとするのではなく、授業外の学修を行うことを前提として設計することが求められます。",
+      "retrieved_title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+      "retrieved_source": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+      "retrieved_category": "gpa",
+      "retrieval_score": 0.4524913342086524,
+      "rerank_score": 0.4524913342086524,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mext-gpa-qa-002-chunk-002",
+          "parent_id": "mext-gpa-qa-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.4524913342086524
+        },
+        {
+          "id": "digital-open-data-008-chunk-001",
+          "parent_id": "digital-open-data-008",
+          "title": "オープンデータ|デジタル庁 — オープンデータ取組の質評価指標(ベータ版)・研修資料",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.45013396846044706
+        },
+        {
+          "id": "nta-working-student-003-chunk-001",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.44864806093577936
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.42154446890953845
+        },
+        {
+          "id": "mext-gpa-qa-003-chunk-001",
+          "parent_id": "mext-gpa-qa-003",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "category": "gpa",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "score": 0.42142565710029556
+        }
+      ],
+      "latency_ms": 134.43480000205454
+    },
+    {
+      "id": "campus-v22-knowledge-0433",
+      "query": "英語の研究テーマの相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4614152812946096,
+      "rerank_score": 0.4614152812946096,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4614152812946096
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4249346524458395
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.424458783523908
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.42299653796321546
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.4227557238121492
+        }
+      ],
+      "latency_ms": 133.44119999965187
+    },
+    {
+      "id": "campus-v22-knowledge-0436",
+      "query": "心理学の研究テーマの相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4602753189131217,
+      "rerank_score": 0.4602753189131217,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4602753189131217
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4247290972469574
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4236790792856424
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.4234268333631267
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4221701335608017
+        }
+      ],
+      "latency_ms": 136.0845999988669
+    },
+    {
+      "id": "campus-v22-knowledge-0439",
+      "query": "ゼミの研究テーマの相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4616784575381607,
+      "rerank_score": 0.4616784575381607,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4616784575381607
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4252225962290207
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.42469702363714024
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4231873249662019
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.4229572831008911
+        }
+      ],
+      "latency_ms": 134.30979999975534
+    },
+    {
+      "id": "campus-v22-knowledge-0442",
+      "query": "統計学の履修前の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-98768-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-98768",
+      "retrieved_chunk": "統計(とうけい、英: statistic)は、社会の状態を数値によって精確に知りたいという要求に応えるため、実測したデータを元に計算した数値、あるいはそれを多数ひとまとめにしたものである。通常、関心の対象となる人々や事物の全数もしくはその一部について個別に情報を集め、計算をおこない、その結果を印刷物または機械可読な電子ファイルなどのかたちで公表する。この結果がじゅうぶんな信頼を得ている場合、それ自体で対象の状態を精確に反映したものとみなされる。",
+      "retrieved_title": "統計",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+      "retrieved_category": "campus_life",
+      "retrieval_score": 0.7573603673984365,
+      "rerank_score": 0.7573603673984365,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-98768-chunk-001",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.7573603673984365
+        },
+        {
+          "id": "wikipedia-ja-1031-chunk-001",
+          "parent_id": "wikipedia-ja-1031",
+          "title": "統計学",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%AD%A6",
+          "score": 0.739178539661096
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-002",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.6288922253875213
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.45244906887751213
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4418741539239257
+        }
+      ],
+      "latency_ms": 136.15019999997457
+    },
+    {
+      "id": "campus-v22-knowledge-0445",
+      "query": "経済学の履修前の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-1110-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-1110",
+      "retrieved_chunk": "経済学(けいざいがく、英: economics)とは、経済・経済現象を対象とする学問であり、社会科学の一領域である。英語圏では従来political economy(政治経済学)と呼ばれてきたが、19 世紀後半以降、economics(経済学)と呼ばれるようになった。原語であるeconomicsという語彙は、新古典派経済学者アルフレッド・マーシャルの主著『経済学原理』(英: Principles of Economics, 1890年)によって誕生・普及したとされている。",
+      "retrieved_title": "経済学",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E5%AD%A6",
+      "retrieved_category": "general",
+      "retrieval_score": 0.7274796770936073,
+      "rerank_score": 0.7274796770936073,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-1110-chunk-001",
+          "parent_id": "wikipedia-ja-1110",
+          "title": "経済学",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E5%AD%A6",
+          "score": 0.7274796770936073
+        },
+        {
+          "id": "wikipedia-ja-5787-chunk-001",
+          "parent_id": "wikipedia-ja-5787",
+          "title": "経済",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88",
+          "score": 0.5741080955561593
+        },
+        {
+          "id": "mext-student-support-001-chunk-001",
+          "parent_id": "mext-student-support-001",
+          "title": "経済的に困難な学生が活用可能な支援策",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.45840822170602014
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.44994170468523687
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4394862993507346
+        }
+      ],
+      "latency_ms": 135.13099999909173
+    },
+    {
+      "id": "campus-v22-knowledge-0448",
+      "query": "研究方法の履修前の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-income-tax-basics-006-chunk-001",
+      "retrieved_parent_id": "nta-income-tax-basics-006",
+      "retrieved_chunk": "申告期限までに、確定申告書(還付申告書)を提出してください。なお、国税庁ホームページの「確定申告書等作成コーナー」では、画面の案内に沿って金額を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されますので、ぜひご利用ください。上記の「申告等の期限」までに確定申告をできなかった場合や、確定申告の内容に誤りがあることに気付いた場合の取扱いについては、コード2024「確定申告を忘れたとき」または、コード2026「確定申告を間違えたとき」を参照してください。◆パンフレット・手引き ・確定申告書等の様式・手引き等",
+      "retrieved_title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.45258548248026875,
+      "rerank_score": 0.45258548248026875,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.45258548248026875
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4420087540454195
+        },
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.43759499397854096
+        },
+        {
+          "id": "nta-working-student-001-chunk-003",
+          "parent_id": "nta-working-student-001",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4293389571321709
+        },
+        {
+          "id": "mext-reform-r5-001-chunk-001",
+          "parent_id": "mext-reform-r5-001",
+          "title": "大学における教育内容等の改革状況について(令和5年度):文部科学省 — 大学における教育内容等の改革状況について(令和5年度)",
+          "category": "campus_life",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/1417336_00013.htm",
+          "score": 0.42679469518185165
+        }
+      ],
+      "latency_ms": 134.89860000117915
+    },
+    {
+      "id": "campus-v22-knowledge-0451",
+      "query": "基礎演習の発表順の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-001-chunk-001",
+      "retrieved_parent_id": "mhlw-young-employment-001",
+      "retrieved_chunk": "学卒者等を雇用するに当たっては、採用活動の方法や時期が取りきめられています。大学等卒業・修了予定者の就職・採用活動時期について 令和6年度大学等卒業予定者に係る求人票、求人要項等は、令和6年4月1日以降に展示・公開します。ハローワークが作成する求人情報、ガイドブック等の発行は、令和6年4月1日以降とします。高校卒業予定者の就職に係る推薦及び選考開始期日について 高校生の採用選考を行う企業の皆さまはこちらもご確認ください。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.4489915170878168,
+      "rerank_score": 0.4489915170878168,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4489915170878168
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.44883761464017713
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.42448390447317674
+        },
+        {
+          "id": "mext-student-support-003-chunk-003",
+          "parent_id": "mext-student-support-003",
+          "title": "経済的に困難な学生が活用可能な支援策 — 主に低所得世帯の学生が活用可能な支援制度",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.41148638348460675
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.41112931389301866
+        }
+      ],
+      "latency_ms": 134.49979999859352
+    },
+    {
+      "id": "campus-v22-knowledge-0454",
+      "query": "情報科学の発表順の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-001-chunk-001",
+      "retrieved_parent_id": "mhlw-young-employment-001",
+      "retrieved_chunk": "学卒者等を雇用するに当たっては、採用活動の方法や時期が取りきめられています。大学等卒業・修了予定者の就職・採用活動時期について 令和6年度大学等卒業予定者に係る求人票、求人要項等は、令和6年4月1日以降に展示・公開します。ハローワークが作成する求人情報、ガイドブック等の発行は、令和6年4月1日以降とします。高校卒業予定者の就職に係る推薦及び選考開始期日について 高校生の採用選考を行う企業の皆さまはこちらもご確認ください。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.43852966209159017,
+      "rerank_score": 0.43852966209159017,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.43852966209159017
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.43156168008827644
+        },
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4290898997138255
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4213612765489131
+        },
+        {
+          "id": "mext-reform-r5-001-chunk-001",
+          "parent_id": "mext-reform-r5-001",
+          "title": "大学における教育内容等の改革状況について(令和5年度):文部科学省 — 大学における教育内容等の改革状況について(令和5年度)",
+          "category": "campus_life",
+          "source_url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/1417336_00013.htm",
+          "score": 0.4017360274899976
+        }
+      ],
+      "latency_ms": 138.55840000178432
+    },
+    {
+      "id": "campus-v22-knowledge-0457",
+      "query": "線形代数の発表順の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-001-chunk-001",
+      "retrieved_parent_id": "mhlw-young-employment-001",
+      "retrieved_chunk": "学卒者等を雇用するに当たっては、採用活動の方法や時期が取りきめられています。大学等卒業・修了予定者の就職・採用活動時期について 令和6年度大学等卒業予定者に係る求人票、求人要項等は、令和6年4月1日以降に展示・公開します。ハローワークが作成する求人情報、ガイドブック等の発行は、令和6年4月1日以降とします。高校卒業予定者の就職に係る推薦及び選考開始期日について 高校生の採用選考を行う企業の皆さまはこちらもご確認ください。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.44837043273501365,
+      "rerank_score": 0.44837043273501365,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.44837043273501365
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.447812139841378
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4234658226195629
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.41082093861276336
+        },
+        {
+          "id": "mext-student-support-003-chunk-003",
+          "parent_id": "mext-student-support-003",
+          "title": "経済的に困難な学生が活用可能な支援策 — 主に低所得世帯の学生が活用可能な支援制度",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.4107270905255709
+        }
+      ],
+      "latency_ms": 136.3530999988143
+    },
+    {
+      "id": "campus-v22-knowledge-0460",
+      "query": "卒業研究の発表順の確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-001-chunk-001",
+      "retrieved_parent_id": "mhlw-young-employment-001",
+      "retrieved_chunk": "学卒者等を雇用するに当たっては、採用活動の方法や時期が取りきめられています。大学等卒業・修了予定者の就職・採用活動時期について 令和6年度大学等卒業予定者に係る求人票、求人要項等は、令和6年4月1日以降に展示・公開します。ハローワークが作成する求人情報、ガイドブック等の発行は、令和6年4月1日以降とします。高校卒業予定者の就職に係る推薦及び選考開始期日について 高校生の採用選考を行う企業の皆さまはこちらもご確認ください。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.4597211289291975,
+      "rerank_score": 0.4597211289291975,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4597211289291975
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4424622523659524
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.42204264123570034
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.41898153556822015
+        },
+        {
+          "id": "mext-student-support-003-chunk-003",
+          "parent_id": "mext-student-support-003",
+          "title": "経済的に困難な学生が活用可能な支援策 — 主に低所得世帯の学生が活用可能な支援制度",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.40629164820069047
+        }
+      ],
+      "latency_ms": 133.31749999997555
+    },
+    {
+      "id": "campus-v22-knowledge-0463",
+      "query": "英語の再提出の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.46571414296172553,
+      "rerank_score": 0.46571414296172553,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.46571414296172553
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.438393720024591
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4252581205747521
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.41087977552246624
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.4047225671835687
+        }
+      ],
+      "latency_ms": 135.3043000017351
+    },
+    {
+      "id": "campus-v22-knowledge-0466",
+      "query": "心理学の再提出の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.46527788873101894,
+      "rerank_score": 0.46527788873101894,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.46527788873101894
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4379267223657096
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.424941862404586
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.423699884054458
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.4044128529627198
+        }
+      ],
+      "latency_ms": 135.8124999969732
+    },
+    {
+      "id": "campus-v22-knowledge-0469",
+      "query": "ゼミの再提出の相談について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-working-student-003-chunk-003",
+      "retrieved_parent_id": "nta-working-student-003",
+      "retrieved_chunk": "画面の案内に沿って金額等を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されます。国税に関するご相談は、国税局電話相談センター等で行っていますので、税についての相談窓口をご覧になって、電話相談をご利用ください。",
+      "retrieved_title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.46610737384939027,
+      "rerank_score": 0.46610737384939027,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-working-student-003-chunk-003",
+          "parent_id": "nta-working-student-003",
+          "title": "No.1175 勤労学生控除|国税庁 — 勤労学生控除の対象となる人の範囲",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.46610737384939027
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4388131386327334
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-002",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4255431893998366
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.41099698223786485
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-003-chunk-001",
+          "parent_id": "mhlw-labor-navi-jobseeker-003",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ハローワークで探す",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "score": 0.40500173742287976
+        }
+      ],
+      "latency_ms": 135.30069999978878
+    },
+    {
+      "id": "campus-v22-knowledge-0472",
+      "query": "統計学の参考文献の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 0.8378488674554722,
+      "rerank_score": 0.8378488674554722,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 0.8378488674554722
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-001",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.7399991796922438
+        },
+        {
+          "id": "wikipedia-ja-1031-chunk-001",
+          "parent_id": "wikipedia-ja-1031",
+          "title": "統計学",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%AD%A6",
+          "score": 0.7205090320586114
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-002",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.6286190194662048
+        },
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-001",
+          "parent_id": "mhlw-labor-law-manga-001",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "score": 0.4226999756536639
+        }
+      ],
+      "latency_ms": 133.3013999974355
+    },
+    {
+      "id": "campus-v22-knowledge-0475",
+      "query": "経済学の参考文献の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 0.8379269185999453,
+      "rerank_score": 0.8379269185999453,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 0.8379269185999453
+        },
+        {
+          "id": "wikipedia-ja-1110-chunk-001",
+          "parent_id": "wikipedia-ja-1110",
+          "title": "経済学",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E5%AD%A6",
+          "score": 0.7075471352467838
+        },
+        {
+          "id": "wikipedia-ja-5787-chunk-001",
+          "parent_id": "wikipedia-ja-5787",
+          "title": "経済",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88",
+          "score": 0.5740241592839105
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4258478296985494
+        },
+        {
+          "id": "mext-student-support-001-chunk-001",
+          "parent_id": "mext-student-support-001",
+          "title": "経済的に困難な学生が活用可能な支援策",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.4215444571157251
+        }
+      ],
+      "latency_ms": 135.38530000005267
+    },
+    {
+      "id": "campus-v22-knowledge-0478",
+      "query": "研究方法の参考文献の質問について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 0.8380299951281082,
+      "rerank_score": 0.8380299951281082,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 0.8380299951281082
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4212917110666159
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4163412425517081
+        },
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-001",
+          "parent_id": "mhlw-labor-law-manga-001",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "score": 0.4112383396230693
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.40743379182306827
+        }
+      ],
+      "latency_ms": 135.7148999995843
+    },
+    {
+      "id": "campus-v22-knowledge-0481",
+      "query": "基礎演習のオフィスアワーの確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-004-chunk-002",
+      "retrieved_parent_id": "mhlw-young-employment-004",
+      "retrieved_chunk": "企業の特色や求める人材像、採用関係の最新情報等を、ハローワークインターネットサービスのサイトに掲載して就職活動中の対象者に伝えることができます。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.45911626785882353,
+      "rerank_score": 0.45911626785882353,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.45911626785882353
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4587159852804087
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.44725201327283004
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4462713921669612
+        },
+        {
+          "id": "mhlw-hellowork-005-chunk-001",
+          "parent_id": "mhlw-hellowork-005",
+          "title": "求人多数、未経験の転職もサポート!仕事を探す人のハローワーク|厚生労働省 — 直接企業に聞きづらい事を代わりに確認",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/hellowork/",
+          "score": 0.4117664896444061
+        }
+      ],
+      "latency_ms": 135.720999998739
+    },
+    {
+      "id": "campus-v22-knowledge-0484",
+      "query": "情報科学のオフィスアワーの確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-004-chunk-002",
+      "retrieved_parent_id": "mhlw-young-employment-004",
+      "retrieved_chunk": "企業の特色や求める人材像、採用関係の最新情報等を、ハローワークインターネットサービスのサイトに掲載して就職活動中の対象者に伝えることができます。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.456332974180615,
+      "rerank_score": 0.456332974180615,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.456332974180615
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4408895391178457
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4325140149757154
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.43033685231822383
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4209691576693072
+        }
+      ],
+      "latency_ms": 136.0112999973353
+    },
+    {
+      "id": "campus-v22-knowledge-0487",
+      "query": "線形代数のオフィスアワーの確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-004-chunk-002",
+      "retrieved_parent_id": "mhlw-young-employment-004",
+      "retrieved_chunk": "企業の特色や求める人材像、採用関係の最新情報等を、ハローワークインターネットサービスのサイトに掲載して就職活動中の対象者に伝えることができます。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.45824582869934494,
+      "rerank_score": 0.45824582869934494,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.45824582869934494
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.45774321417671293
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4463834807717342
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.44538462987541705
+        },
+        {
+          "id": "mhlw-hellowork-005-chunk-001",
+          "parent_id": "mhlw-hellowork-005",
+          "title": "求人多数、未経験の転職もサポート!仕事を探す人のハローワーク|厚生労働省 — 直接企業に聞きづらい事を代わりに確認",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/hellowork/",
+          "score": 0.41130753386621743
+        }
+      ],
+      "latency_ms": 136.5272000002733
+    },
+    {
+      "id": "campus-v22-knowledge-0490",
+      "query": "卒業研究のオフィスアワーの確認について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "mhlw-young-employment-001-chunk-001",
+      "retrieved_parent_id": "mhlw-young-employment-001",
+      "retrieved_chunk": "学卒者等を雇用するに当たっては、採用活動の方法や時期が取りきめられています。大学等卒業・修了予定者の就職・採用活動時期について 令和6年度大学等卒業予定者に係る求人票、求人要項等は、令和6年4月1日以降に展示・公開します。ハローワークが作成する求人情報、ガイドブック等の発行は、令和6年4月1日以降とします。高校卒業予定者の就職に係る推薦及び選考開始期日について 高校生の採用選考を行う企業の皆さまはこちらもご確認ください。",
+      "retrieved_title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+      "retrieved_source": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.45833070032094547,
+      "rerank_score": 0.45833070032094547,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.45833070032094547
+        },
+        {
+          "id": "mhlw-young-employment-004-chunk-002",
+          "parent_id": "mhlw-young-employment-004",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 新卒応援ハローワークによる学卒者求人の募集等について",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4561611148450819
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4558797468020811
+        },
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4445486690493814
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.4215106295241672
+        }
+      ],
+      "latency_ms": 136.12620000276365
+    },
+    {
+      "id": "campus-v22-knowledge-0493",
+      "query": "英語の進捗報告について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-income-tax-basics-006-chunk-001",
+      "retrieved_parent_id": "nta-income-tax-basics-006",
+      "retrieved_chunk": "申告期限までに、確定申告書(還付申告書)を提出してください。なお、国税庁ホームページの「確定申告書等作成コーナー」では、画面の案内に沿って金額を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されますので、ぜひご利用ください。上記の「申告等の期限」までに確定申告をできなかった場合や、確定申告の内容に誤りがあることに気付いた場合の取扱いについては、コード2024「確定申告を忘れたとき」または、コード2026「確定申告を間違えたとき」を参照してください。◆パンフレット・手引き ・確定申告書等の様式・手引き等",
+      "retrieved_title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.459267606950578,
+      "rerank_score": 0.459267606950578,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.459267606950578
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-001",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.45665757216992076
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.44848107511831115
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.44280047622255847
+        },
+        {
+          "id": "mext-student-support-001-chunk-001",
+          "parent_id": "mext-student-support-001",
+          "title": "経済的に困難な学生が活用可能な支援策",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.41515695902901795
+        }
+      ],
+      "latency_ms": 132.2751999978209
+    },
+    {
+      "id": "campus-v22-knowledge-0496",
+      "query": "心理学の進捗報告について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-income-tax-basics-006-chunk-001",
+      "retrieved_parent_id": "nta-income-tax-basics-006",
+      "retrieved_chunk": "申告期限までに、確定申告書(還付申告書)を提出してください。なお、国税庁ホームページの「確定申告書等作成コーナー」では、画面の案内に沿って金額を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されますので、ぜひご利用ください。上記の「申告等の期限」までに確定申告をできなかった場合や、確定申告の内容に誤りがあることに気付いた場合の取扱いについては、コード2024「確定申告を忘れたとき」または、コード2026「確定申告を間違えたとき」を参照してください。◆パンフレット・手引き ・確定申告書等の様式・手引き等",
+      "retrieved_title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4583409685385835,
+      "rerank_score": 0.4583409685385835,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4583409685385835
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-001",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4557971395524274
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.4475508575986663
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4417556486020554
+        },
+        {
+          "id": "wikipedia-ja-1323367-chunk-001",
+          "parent_id": "wikipedia-ja-1323367",
+          "title": "ジャン・ティロール",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%83%AB",
+          "score": 0.424324425501571
+        }
+      ],
+      "latency_ms": 137.54779999726452
+    },
+    {
+      "id": "campus-v22-knowledge-0499",
+      "query": "ゼミの進捗報告について、要件を簡潔に伝える教授へのメール文面を作ってください。",
+      "expected_topic": "professor_email",
+      "expected_category": "professor_email",
+      "expected_source": null,
+      "retrieved_chunk_id": "nta-income-tax-basics-006-chunk-001",
+      "retrieved_parent_id": "nta-income-tax-basics-006",
+      "retrieved_chunk": "申告期限までに、確定申告書(還付申告書)を提出してください。なお、国税庁ホームページの「確定申告書等作成コーナー」では、画面の案内に沿って金額を入力することによりご自宅等で確定申告書等の作成・提出ができます。必要な付表や明細書も、入力することで自動的に作成されますので、ぜひご利用ください。上記の「申告等の期限」までに確定申告をできなかった場合や、確定申告の内容に誤りがあることに気付いた場合の取扱いについては、コード2024「確定申告を忘れたとき」または、コード2026「確定申告を間違えたとき」を参照してください。◆パンフレット・手引き ・確定申告書等の様式・手引き等",
+      "retrieved_title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+      "retrieved_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 0.4597510441126673,
+      "rerank_score": 0.4597510441126673,
+      "category": "professor_email",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "nta-income-tax-basics-006-chunk-001",
+          "parent_id": "nta-income-tax-basics-006",
+          "title": "No.1000 所得税のしくみ|国税庁 — 所得税および復興特別所得税の申告納税額の計算",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.4597510441126673
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-001",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.45710931714450465
+        },
+        {
+          "id": "mhlw-young-employment-010-chunk-003",
+          "parent_id": "mhlw-young-employment-010",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — インターンシップについて",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.44896945861427107
+        },
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "parent_id": "digital-open-data-012",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "category": "ai_usage",
+          "source_url": "https://www.digital.go.jp/resources/open_data",
+          "score": 0.4433795701033397
+        },
+        {
+          "id": "mext-student-support-001-chunk-001",
+          "parent_id": "mext-student-support-001",
+          "title": "経済的に困難な学生が活用可能な支援策",
+          "category": "scholarship",
+          "source_url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "score": 0.41567245891939286
+        }
+      ],
+      "latency_ms": 169.47830000208342
+    },
+    {
+      "id": "campus-v22-knowledge-0505",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『オープンソース』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0263273814571539,
+      "rerank_score": 1.0263273814571539,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0263273814571539
+        },
+        {
+          "id": "wikipedia-ja-1422-chunk-001",
+          "parent_id": "wikipedia-ja-1422",
+          "title": "オープンソース",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9",
+          "score": 0.9937189755802062
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8783718321437416
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7888277739311933
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6871778237730409
+        }
+      ],
+      "latency_ms": 175.21420000048238
+    },
+    {
+      "id": "campus-v22-knowledge-0511",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『ネット配信』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%83%E3%83%88%E9%85%8D%E4%BF%A1",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.028136518101013,
+      "rerank_score": 1.028136518101013,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.028136518101013
+        },
+        {
+          "id": "wikipedia-ja-8291-chunk-002",
+          "parent_id": "wikipedia-ja-8291",
+          "title": "ネット配信",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%83%E3%83%88%E9%85%8D%E4%BF%A1",
+          "score": 0.940248889501587
+        },
+        {
+          "id": "wikipedia-ja-8291-chunk-001",
+          "parent_id": "wikipedia-ja-8291",
+          "title": "ネット配信",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%83%E3%83%88%E9%85%8D%E4%BF%A1",
+          "score": 0.8877343298355294
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8792486264006746
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7895563287798166
+        }
+      ],
+      "latency_ms": 175.5961999988358
+    },
+    {
+      "id": "campus-v22-knowledge-0517",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『フェアユース』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%82%A2%E3%83%A6%E3%83%BC%E3%82%B9",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0273611357000842,
+      "rerank_score": 1.0273611357000842,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0273611357000842
+        },
+        {
+          "id": "wikipedia-ja-52451-chunk-001",
+          "parent_id": "wikipedia-ja-52451",
+          "title": "フェアユース",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%82%A2%E3%83%A6%E3%83%BC%E3%82%B9",
+          "score": 0.9814019377622732
+        },
+        {
+          "id": "wikipedia-ja-52451-chunk-002",
+          "parent_id": "wikipedia-ja-52451",
+          "title": "フェアユース",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%82%A2%E3%83%A6%E3%83%BC%E3%82%B9",
+          "score": 0.9678856012021088
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8792362537596009
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7895980609183777
+        }
+      ],
+      "latency_ms": 171.61339999802294
+    },
+    {
+      "id": "campus-v22-knowledge-0520",
+      "query": "大学レポートの構成についての質問です。大学レポートの構成の観点で、大学レポートを書くため、『東アジアDHポータル – 関西大学東アジアデジタルヒューマニティーズ研究 — The Programming Historian 日本語訳』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "report_citation",
+      "expected_category": "report_outline",
+      "expected_source": "https://www.dh.ku-orcas.kansai-u.ac.jp/",
+      "retrieved_chunk_id": "wikipedia-ja-8529-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-8529",
+      "retrieved_chunk": "定義(ていぎ)は、ある言葉の正確な意味や用法について、人々の間で共通認識を定めるよう行われる作業。一般的にそれは「○○とは・・・・・である」という言い換えの形で表現される。コミュニケーションを円滑で取り違いなく行うために必要とされる。基本的に定義が決められる場合は1つである。これは、複数の場合、矛盾が生じるからである。ただし例外もある(例:電子掲示板用語の「キャップ」、CDソフトに付く帯の「キャップ」など)。",
+      "retrieved_title": "定義",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+      "retrieved_category": "relationship",
+      "retrieval_score": 0.6496852714143275,
+      "rerank_score": 0.6496852714143275,
+      "category": "report_outline",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6496852714143275
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.5769432857071634
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4546896347422408
+        },
+        {
+          "id": "wikipedia-ja-4271797-chunk-001",
+          "parent_id": "wikipedia-ja-4271797",
+          "title": "コタツ記事",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%BF%E3%83%84%E8%A8%98%E4%BA%8B",
+          "score": 0.43243970142671817
+        },
+        {
+          "id": "wikipedia-ja-5390-chunk-002",
+          "parent_id": "wikipedia-ja-5390",
+          "title": "ウィクショナリー",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AA%E3%83%BC",
+          "score": 0.4287004847064465
+        }
+      ],
+      "latency_ms": 186.10809999881894
+    },
+    {
+      "id": "campus-v22-knowledge-0529",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『著作権』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0307427069505883,
+      "rerank_score": 1.0307427069505883,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0307427069505883
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9367421749244783
+        },
+        {
+          "id": "wikipedia-ja-161-chunk-002",
+          "parent_id": "wikipedia-ja-161",
+          "title": "著作権",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+          "score": 0.8904909028051372
+        },
+        {
+          "id": "wikipedia-ja-161-chunk-004",
+          "parent_id": "wikipedia-ja-161",
+          "title": "著作権",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+          "score": 0.8834113091391002
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8447830612894226
+        }
+      ],
+      "latency_ms": 174.81169999882695
+    },
+    {
+      "id": "campus-v22-knowledge-0541",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『ネイチャー』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3%E3%83%BC",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0204812332989426,
+      "rerank_score": 1.0204812332989426,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0204812332989426
+        },
+        {
+          "id": "wikipedia-ja-1262423-chunk-005",
+          "parent_id": "wikipedia-ja-1262423",
+          "title": "ネイチャー",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3%E3%83%BC",
+          "score": 0.9266630701830944
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9045907190202338
+        },
+        {
+          "id": "wikipedia-ja-1262423-chunk-004",
+          "parent_id": "wikipedia-ja-1262423",
+          "title": "ネイチャー",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3%E3%83%BC",
+          "score": 0.9024485450049345
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7633601294824591
+        }
+      ],
+      "latency_ms": 183.00730000191834
+    },
+    {
+      "id": "campus-v22-knowledge-0547",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『パロディ』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AD%E3%83%87%E3%82%A3",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0202912877267112,
+      "rerank_score": 1.0202912877267112,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0202912877267112
+        },
+        {
+          "id": "wikipedia-ja-132974-chunk-001",
+          "parent_id": "wikipedia-ja-132974",
+          "title": "パロディ",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AD%E3%83%87%E3%82%A3",
+          "score": 0.9190231815471964
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9041074317334437
+        },
+        {
+          "id": "wikipedia-ja-132974-chunk-002",
+          "parent_id": "wikipedia-ja-132974",
+          "title": "パロディ",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AD%E3%83%87%E3%82%A3",
+          "score": 0.8750997995979279
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7628879691867493
+        }
+      ],
+      "latency_ms": 212.29049999965355
+    },
+    {
+      "id": "campus-v22-knowledge-0553",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『国際放映』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%94%BE%E6%98%A0",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0198737315564277,
+      "rerank_score": 1.0198737315564277,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0198737315564277
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9037475809516288
+        },
+        {
+          "id": "wikipedia-ja-210431-chunk-001",
+          "parent_id": "wikipedia-ja-210431",
+          "title": "国際放映",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%94%BE%E6%98%A0",
+          "score": 0.8722154276385733
+        },
+        {
+          "id": "wikipedia-ja-210431-chunk-002",
+          "parent_id": "wikipedia-ja-210431",
+          "title": "国際放映",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E6%94%BE%E6%98%A0",
+          "score": 0.8234283838821737
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7625707385315799
+        }
+      ],
+      "latency_ms": 179.0977999989991
+    },
+    {
+      "id": "campus-v22-knowledge-0556",
+      "query": "大学レポートの構成についての質問です。大学レポートの構成の観点で、大学レポートを書くため、『東アジアDHポータル – 関西大学東アジアデジタルヒューマニティーズ研究 — このサイトについて』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "report_outline",
+      "expected_source": "https://www.dh.ku-orcas.kansai-u.ac.jp/",
+      "retrieved_chunk_id": "wikipedia-ja-8529-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-8529",
+      "retrieved_chunk": "定義(ていぎ)は、ある言葉の正確な意味や用法について、人々の間で共通認識を定めるよう行われる作業。一般的にそれは「○○とは・・・・・である」という言い換えの形で表現される。コミュニケーションを円滑で取り違いなく行うために必要とされる。基本的に定義が決められる場合は1つである。これは、複数の場合、矛盾が生じるからである。ただし例外もある(例:電子掲示板用語の「キャップ」、CDソフトに付く帯の「キャップ」など)。",
+      "retrieved_title": "定義",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+      "retrieved_category": "relationship",
+      "retrieval_score": 0.6866621955160558,
+      "rerank_score": 0.6866621955160558,
+      "category": "report_outline",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6866621955160558
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.5773405652031149
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4570073410424277
+        },
+        {
+          "id": "wikipedia-ja-4271797-chunk-001",
+          "parent_id": "wikipedia-ja-4271797",
+          "title": "コタツ記事",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%BF%E3%83%84%E8%A8%98%E4%BA%8B",
+          "score": 0.43510545403862155
+        },
+        {
+          "id": "wikipedia-ja-5390-chunk-002",
+          "parent_id": "wikipedia-ja-5390",
+          "title": "ウィクショナリー",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AA%E3%83%BC",
+          "score": 0.4292965799935882
+        }
+      ],
+      "latency_ms": 190.10599999819533
+    },
+    {
+      "id": "campus-v22-knowledge-0559",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『盗用』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E7%9B%97%E7%94%A8",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0210987129755673,
+      "rerank_score": 1.0210987129755673,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0210987129755673
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9293868930656521
+        },
+        {
+          "id": "wikipedia-ja-937280-chunk-001",
+          "parent_id": "wikipedia-ja-937280",
+          "title": "盗用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%9B%97%E7%94%A8",
+          "score": 0.9092019752571202
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7630742255619892
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.70844363105999
+        }
+      ],
+      "latency_ms": 178.61529999936465
+    },
+    {
+      "id": "campus-v22-knowledge-0562",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『著作権の保護期間』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AE%E4%BF%9D%E8%AD%B7%E6%9C%9F%E9%96%93",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0181208368800552,
+      "rerank_score": 1.0181208368800552,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0181208368800552
+        },
+        {
+          "id": "wikipedia-ja-53-chunk-002",
+          "parent_id": "wikipedia-ja-53",
+          "title": "著作権の保護期間",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AE%E4%BF%9D%E8%AD%B7%E6%9C%9F%E9%96%93",
+          "score": 1.0044700964332223
+        },
+        {
+          "id": "wikipedia-ja-53-chunk-001",
+          "parent_id": "wikipedia-ja-53",
+          "title": "著作権の保護期間",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AE%E4%BF%9D%E8%AD%B7%E6%9C%9F%E9%96%93",
+          "score": 0.9916644282057179
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9434571450220196
+        },
+        {
+          "id": "wikipedia-ja-161-chunk-004",
+          "parent_id": "wikipedia-ja-161",
+          "title": "著作権",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+          "score": 0.8847439825780467
+        }
+      ],
+      "latency_ms": 181.46509999860427
+    },
+    {
+      "id": "campus-v22-knowledge-0571",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『キャッチコピー』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%E3%82%B3%E3%83%94%E3%83%BC",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0416272828720656,
+      "rerank_score": 1.0416272828720656,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0416272828720656
+        },
+        {
+          "id": "wikipedia-ja-57665-chunk-002",
+          "parent_id": "wikipedia-ja-57665",
+          "title": "キャッチコピー",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%E3%82%B3%E3%83%94%E3%83%BC",
+          "score": 0.961318855498989
+        },
+        {
+          "id": "wikipedia-ja-57665-chunk-001",
+          "parent_id": "wikipedia-ja-57665",
+          "title": "キャッチコピー",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%E3%82%B3%E3%83%94%E3%83%BC",
+          "score": 0.9572139733594122
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.875463163899166
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7867170838690787
+        }
+      ],
+      "latency_ms": 189.71410000085598
+    },
+    {
+      "id": "campus-v22-knowledge-0577",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『パブリックドメイン』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0418141250480881,
+      "rerank_score": 1.0418141250480881,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0418141250480881
+        },
+        {
+          "id": "wikipedia-ja-191-chunk-003",
+          "parent_id": "wikipedia-ja-191",
+          "title": "パブリックドメイン",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3",
+          "score": 1.01047084329402
+        },
+        {
+          "id": "wikipedia-ja-191-chunk-001",
+          "parent_id": "wikipedia-ja-191",
+          "title": "パブリックドメイン",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3",
+          "score": 0.9662056714640045
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8759241873463132
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7871527372678087
+        }
+      ],
+      "latency_ms": 196.4144999983546
+    },
+    {
+      "id": "campus-v22-knowledge-0586",
+      "query": "大学レポートの構成についての質問です。大学レポートの構成の観点で、大学レポートを書くため、『東アジアDHポータル – 関西大学東アジアデジタルヒューマニティーズ研究 — DH教育・学習用リソース』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "report_outline",
+      "expected_source": "https://www.dh.ku-orcas.kansai-u.ac.jp/",
+      "retrieved_chunk_id": "wikipedia-ja-8529-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-8529",
+      "retrieved_chunk": "定義(ていぎ)は、ある言葉の正確な意味や用法について、人々の間で共通認識を定めるよう行われる作業。一般的にそれは「○○とは・・・・・である」という言い換えの形で表現される。コミュニケーションを円滑で取り違いなく行うために必要とされる。基本的に定義が決められる場合は1つである。これは、複数の場合、矛盾が生じるからである。ただし例外もある(例:電子掲示板用語の「キャップ」、CDソフトに付く帯の「キャップ」など)。",
+      "retrieved_title": "定義",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+      "retrieved_category": "relationship",
+      "retrieval_score": 0.6853359386875831,
+      "rerank_score": 0.6853359386875831,
+      "category": "report_outline",
+      "failure_reason": "CATEGORY_MISMATCH",
+      "top5": [
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6853359386875831
+        },
+        {
+          "id": "wikipedia-ja-1217979-chunk-002",
+          "parent_id": "wikipedia-ja-1217979",
+          "title": "事実",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E4%BA%8B%E5%AE%9F",
+          "score": 0.649850935594015
+        },
+        {
+          "id": "wikipedia-ja-73314-chunk-001",
+          "parent_id": "wikipedia-ja-73314",
+          "title": "論文",
+          "category": "report_outline",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E6%96%87",
+          "score": 0.5757479379255769
+        },
+        {
+          "id": "wikipedia-ja-1217979-chunk-001",
+          "parent_id": "wikipedia-ja-1217979",
+          "title": "事実",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E4%BA%8B%E5%AE%9F",
+          "score": 0.5733315135265611
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.4548732244662228
+        }
+      ],
+      "latency_ms": 182.41610000040964
+    },
+    {
+      "id": "campus-v22-knowledge-0589",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『引用』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0424640319559144,
+      "rerank_score": 1.0424640319559144,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0424640319559144
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8947423082718822
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8039200727230966
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7081692232609514
+        },
+        {
+          "id": "wikipedia-ja-1217979-chunk-002",
+          "parent_id": "wikipedia-ja-1217979",
+          "title": "事実",
+          "category": "general",
+          "source_url": "https://ja.wikipedia.org/wiki/%E4%BA%8B%E5%AE%9F",
+          "score": 0.6511553417271551
+        }
+      ],
+      "latency_ms": 169.36429999987013
+    },
+    {
+      "id": "campus-v22-knowledge-0592",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『編曲』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E7%B7%A8%E6%9B%B2",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.0441902795372557,
+      "rerank_score": 1.0441902795372557,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.0441902795372557
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.8762453289075997
+        },
+        {
+          "id": "wikipedia-ja-2704-chunk-001",
+          "parent_id": "wikipedia-ja-2704",
+          "title": "編曲",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B7%A8%E6%9B%B2",
+          "score": 0.7956991647550475
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-001",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.7873043649034964
+        },
+        {
+          "id": "wikipedia-ja-2704-chunk-002",
+          "parent_id": "wikipedia-ja-2704",
+          "title": "編曲",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B7%A8%E6%9B%B2",
+          "score": 0.773815862368946
+        }
+      ],
+      "latency_ms": 167.64909999983502
+    },
+    {
+      "id": "campus-v22-knowledge-0595",
+      "query": "引用と参考文献の確認についての質問です。引用と参考文献の確認の観点で、引用と参考文献を正しく扱うため、『著作権侵害』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "report_citation",
+      "expected_category": "citation_check",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E4%BE%B5%E5%AE%B3",
+      "retrieved_chunk_id": "wikipedia-ja-47665-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-47665",
+      "retrieved_chunk": "参考文献(さんこうぶんけん、英: reference, works cited, bibliography,source,authority など)とは、記事や書籍・学術論文執筆など、著述を行う際に参考にした図書や文献、新聞記事、またはその書誌事項を記したもの。本文中で言及されているものを「引用文献」、単に参考までに記述したものを「参考文献」と使い分ける場合もあるが、本記事では両者を区別せずに参考文献と呼ぶことにする。なお、参考や引用を行った出所を出典(しゅってん、英: source, citation)という。",
+      "retrieved_title": "参考文献",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+      "retrieved_category": "citation_check",
+      "retrieval_score": 1.04271850751541,
+      "rerank_score": 1.04271850751541,
+      "category": "citation_check",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-47665-chunk-001",
+          "parent_id": "wikipedia-ja-47665",
+          "title": "参考文献",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE",
+          "score": 1.04271850751541
+        },
+        {
+          "id": "wikipedia-ja-40127-chunk-002",
+          "parent_id": "wikipedia-ja-40127",
+          "title": "引用",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8",
+          "score": 0.9305352227982525
+        },
+        {
+          "id": "wikipedia-ja-574204-chunk-001",
+          "parent_id": "wikipedia-ja-574204",
+          "title": "著作権侵害",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E4%BE%B5%E5%AE%B3",
+          "score": 0.9184395203328147
+        },
+        {
+          "id": "wikipedia-ja-161-chunk-004",
+          "parent_id": "wikipedia-ja-161",
+          "title": "著作権",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+          "score": 0.8773251290875269
+        },
+        {
+          "id": "wikipedia-ja-161-chunk-002",
+          "parent_id": "wikipedia-ja-161",
+          "title": "著作権",
+          "category": "citation_check",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9",
+          "score": 0.8429889694981646
+        }
+      ],
+      "latency_ms": 166.43070000282023
+    },
+    {
+      "id": "campus-v22-knowledge-0607",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『リストラ』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 1.034805016938092,
+      "rerank_score": 1.034805016938092,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 1.034805016938092
+        },
+        {
+          "id": "wikipedia-ja-66279-chunk-001",
+          "parent_id": "wikipedia-ja-66279",
+          "title": "リストラ",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9",
+          "score": 0.935152509224437
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8804608728123277
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7361897371342211
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.6005251725183917
+        }
+      ],
+      "latency_ms": 161.58549999818206
+    },
+    {
+      "id": "campus-v22-knowledge-0613",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『内職』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 1.0190873204374633,
+      "rerank_score": 1.0190873204374633,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 1.0190873204374633
+        },
+        {
+          "id": "wikipedia-ja-785823-chunk-002",
+          "parent_id": "wikipedia-ja-785823",
+          "title": "内職",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+          "score": 0.9154188124624227
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8907450423445242
+        },
+        {
+          "id": "wikipedia-ja-785823-chunk-001",
+          "parent_id": "wikipedia-ja-785823",
+          "title": "内職",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+          "score": 0.8201048701915157
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7413719512552602
+        }
+      ],
+      "latency_ms": 160.0003999992623
+    },
+    {
+      "id": "campus-v22-knowledge-0619",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『常勤』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E5%8B%A4",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 1.0188875989254762,
+      "rerank_score": 1.0188875989254762,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 1.0188875989254762
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8907615571684909
+        },
+        {
+          "id": "wikipedia-ja-550039-chunk-001",
+          "parent_id": "wikipedia-ja-550039",
+          "title": "常勤",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E5%8B%A4",
+          "score": 0.7983150113909159
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7413735618947935
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.6008171949493276
+        }
+      ],
+      "latency_ms": 159.48539999953937
+    },
+    {
+      "id": "campus-v22-knowledge-0625",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『職務給』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 1.0186827583234648,
+      "rerank_score": 1.0186827583234648,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 1.0186827583234648
+        },
+        {
+          "id": "wikipedia-ja-1893977-chunk-002",
+          "parent_id": "wikipedia-ja-1893977",
+          "title": "職務給",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+          "score": 0.9276824342020933
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8904834578861303
+        },
+        {
+          "id": "wikipedia-ja-1893977-chunk-001",
+          "parent_id": "wikipedia-ja-1893977",
+          "title": "職務給",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+          "score": 0.8850324117392063
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7413463393512681
+        }
+      ],
+      "latency_ms": 157.81870000137133
+    },
+    {
+      "id": "campus-v22-knowledge-0628",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『退職強要』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E9%80%80%E8%81%B7%E5%BC%B7%E8%A6%81",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 1.0332676908093779,
+      "rerank_score": 1.0332676908093779,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 1.0332676908093779
+        },
+        {
+          "id": "wikipedia-ja-279204-chunk-001",
+          "parent_id": "wikipedia-ja-279204",
+          "title": "退職強要",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E9%80%80%E8%81%B7%E5%BC%B7%E8%A6%81",
+          "score": 1.0244503786935648
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.882665792740213
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7375125192618028
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.6001867978428248
+        }
+      ],
+      "latency_ms": 162.5395999981265
+    },
+    {
+      "id": "campus-v22-knowledge-0661",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『リストラ』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.8973751365130348,
+      "rerank_score": 0.8973751365130348,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8973751365130348
+        },
+        {
+          "id": "wikipedia-ja-66279-chunk-001",
+          "parent_id": "wikipedia-ja-66279",
+          "title": "リストラ",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9",
+          "score": 0.8344536217473723
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8031637985341731
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7056764482229626
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.6008745808635714
+        }
+      ],
+      "latency_ms": 168.01029999987804
+    },
+    {
+      "id": "campus-v22-knowledge-0667",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『内職』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.8858461757638766,
+      "rerank_score": 0.8858461757638766,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8858461757638766
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8008297843975362
+        },
+        {
+          "id": "wikipedia-ja-785823-chunk-002",
+          "parent_id": "wikipedia-ja-785823",
+          "title": "内職",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+          "score": 0.7766443042837541
+        },
+        {
+          "id": "wikipedia-ja-785823-chunk-001",
+          "parent_id": "wikipedia-ja-785823",
+          "title": "内職",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%86%85%E8%81%B7",
+          "score": 0.7296875381937963
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7035486303647335
+        }
+      ],
+      "latency_ms": 168.06130000259145
+    },
+    {
+      "id": "campus-v22-knowledge-0673",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『常勤』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E5%8B%A4",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.8856418396327118,
+      "rerank_score": 0.8856418396327118,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8856418396327118
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8033756422534951
+        },
+        {
+          "id": "wikipedia-ja-550039-chunk-001",
+          "parent_id": "wikipedia-ja-550039",
+          "title": "常勤",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E5%8B%A4",
+          "score": 0.7488040257725519
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7057104700607896
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "parent_id": "mhlw-young-employment-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "category": "career_schedule",
+          "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "score": 0.6010862626599842
+        }
+      ],
+      "latency_ms": 163.50109999984852
+    },
+    {
+      "id": "campus-v22-knowledge-0679",
+      "query": "就活の選考日程と面接予定についての質問です。就活の選考日程と面接予定の観点で、就職活動を進めるため、『職務給』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "career_internship",
+      "expected_category": "career_schedule",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+      "retrieved_chunk_id": "wikipedia-ja-199353-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-199353",
+      "retrieved_chunk": "就職活動(しゅうしょくかつどう、英: job hunting)は、職業に就くための活動の総称。略す場合は「就活(しゅうかつ)」という。また一般に、仕事をしていた人が一度退職し一定のブランク期間(働かない期間、離職期間、あるいは失業期間)を経て、再び就職することを再就職という。就職活動のあり方は、世界を見渡せば多様である。在学中に就職先が決まったという人の率は、韓国で42.3%、アメリカで46.3%、オーストラリアで48.8%、ロシアで56.9%に対して、日本では81.4%となっている。",
+      "retrieved_title": "就職活動",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+      "retrieved_category": "career_schedule",
+      "retrieval_score": 0.8855145478481129,
+      "rerank_score": 0.8855145478481129,
+      "category": "career_schedule",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-199353-chunk-001",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8855145478481129
+        },
+        {
+          "id": "wikipedia-ja-1893977-chunk-002",
+          "parent_id": "wikipedia-ja-1893977",
+          "title": "職務給",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+          "score": 0.8460824705369354
+        },
+        {
+          "id": "wikipedia-ja-1893977-chunk-001",
+          "parent_id": "wikipedia-ja-1893977",
+          "title": "職務給",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E8%81%B7%E5%8B%99%E7%B5%A6",
+          "score": 0.8117731611786763
+        },
+        {
+          "id": "wikipedia-ja-199353-chunk-002",
+          "parent_id": "wikipedia-ja-199353",
+          "title": "就職活動",
+          "category": "career_schedule",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95",
+          "score": 0.8032182968621978
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7056840472135298
+        }
+      ],
+      "latency_ms": 165.84680000232765
+    },
+    {
+      "id": "campus-v22-knowledge-0706",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『労働法』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%8A%B4%E5%83%8D%E6%B3%95",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "アルバイト(「労働」「仕事」を意味するドイツ語: Arbeit に由来する外来語)は、期間の定めのある労働契約(有期労働契約)に基づき、企業・公的機関などによって雇用される従業員または労働者を指す、日本や韓国における俗称である。略称としてバイトとも呼ばれるほか、アルバイト形態で働く人を指す和製造語として「アルバイター」「フリーアルバイター(フリーター)」が派生した。非正規雇用の雇用形態の一種とされているが、正規雇用(期間の定めのない労働契約)としてのアルバイト社員とする企業もある。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.0782242845972658,
+      "rerank_score": 1.0782242845972658,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0782242845972658
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0671371085738204
+        },
+        {
+          "id": "wikipedia-ja-7077-chunk-001",
+          "parent_id": "wikipedia-ja-7077",
+          "title": "労働法",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8A%B4%E5%83%8D%E6%B3%95",
+          "score": 0.9268175288781645
+        },
+        {
+          "id": "wikipedia-ja-7077-chunk-002",
+          "parent_id": "wikipedia-ja-7077",
+          "title": "労働法",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%8A%B4%E5%83%8D%E6%B3%95",
+          "score": 0.9102500838864814
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6950007761433525
+        }
+      ],
+      "latency_ms": 158.39369999957853
+    },
+    {
+      "id": "campus-v22-knowledge-0739",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『No.1180 扶養控除|国税庁 — 税について調べる』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1180.htm",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-002",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "「アルバイト」と「契約社員」の区別は慣習的なものであり、企業がそのように勝手に呼称を使い分けているだけに過ぎず、同一同格の労働者である(「パートタイム(非常勤)」と「アルバイト」の区分についても同様)。労働法的にはあくまで双方とも労働者であり、単に労働時間や契約期間が異なるに過ぎない。労働力調査においては勤め先での呼称にて集計されている。アルバイトであっても、年次有給休暇を始めとする労働者としての権利の行使、会社が正社員に提供する福利厚生などの対象になる。なお日本の健康保険法においては2か月以内、雇用保険法においては1か月以内の有期労働契約は、日雇いに区分される。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.0680163957522264,
+      "rerank_score": 1.0680163957522264,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0680163957522264
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0452007932325404
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.6953625040947117
+        },
+        {
+          "id": "nta-working-student-004-chunk-001",
+          "parent_id": "nta-working-student-004",
+          "title": "No.1175 勤労学生控除|国税庁 — 税について調べる",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1175.htm",
+          "score": 0.657048530476639
+        },
+        {
+          "id": "mhlw-student-parttime-001-chunk-002",
+          "parent_id": "mhlw-student-parttime-001",
+          "title": "令和7年度「アルバイトの労働条件を確かめよう!」キャンペーンを全国で実施します|報道発表資料|厚生労働省 — キャンペーンの概要",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/newpage_54645.html",
+          "score": 0.6374400852889047
+        }
+      ],
+      "latency_ms": 165.31310000209487
+    },
+    {
+      "id": "campus-v22-knowledge-0748",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『社畜』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E7%A4%BE%E7%95%9C",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "アルバイト(「労働」「仕事」を意味するドイツ語: Arbeit に由来する外来語)は、期間の定めのある労働契約(有期労働契約)に基づき、企業・公的機関などによって雇用される従業員または労働者を指す、日本や韓国における俗称である。略称としてバイトとも呼ばれるほか、アルバイト形態で働く人を指す和製造語として「アルバイター」「フリーアルバイター(フリーター)」が派生した。非正規雇用の雇用形態の一種とされているが、正規雇用(期間の定めのない労働契約)としてのアルバイト社員とする企業もある。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.061302431336502,
+      "rerank_score": 1.061302431336502,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.061302431336502
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0593710566843535
+        },
+        {
+          "id": "wikipedia-ja-1160203-chunk-001",
+          "parent_id": "wikipedia-ja-1160203",
+          "title": "社畜",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%A4%BE%E7%95%9C",
+          "score": 0.966869090371416
+        },
+        {
+          "id": "wikipedia-ja-1160203-chunk-002",
+          "parent_id": "wikipedia-ja-1160203",
+          "title": "社畜",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%A4%BE%E7%95%9C",
+          "score": 0.7491901009622964
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7208630834621306
+        }
+      ],
+      "latency_ms": 164.70059999846853
+    },
+    {
+      "id": "campus-v22-knowledge-0772",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『No.1000 所得税のしくみ|国税庁 — お酒に関する情報』について初学者が押さえるべき要点と注意点を教えてください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "アルバイト(「労働」「仕事」を意味するドイツ語: Arbeit に由来する外来語)は、期間の定めのある労働契約(有期労働契約)に基づき、企業・公的機関などによって雇用される従業員または労働者を指す、日本や韓国における俗称である。略称としてバイトとも呼ばれるほか、アルバイト形態で働く人を指す和製造語として「アルバイター」「フリーアルバイター(フリーター)」が派生した。非正規雇用の雇用形態の一種とされているが、正規雇用(期間の定めのない労働契約)としてのアルバイト社員とする企業もある。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.0395654608986415,
+      "rerank_score": 1.0395654608986415,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0395654608986415
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0363461595484333
+        },
+        {
+          "id": "nta-income-tax-basics-001-chunk-002",
+          "parent_id": "nta-income-tax-basics-001",
+          "title": "No.1000 所得税のしくみ|国税庁 — No.1000 所得税のしくみ",
+          "category": "part_time_job",
+          "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1000.htm",
+          "score": 0.7526582893210702
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7200657994258378
+        },
+        {
+          "id": "mhlw-student-parttime-001-chunk-002",
+          "parent_id": "mhlw-student-parttime-001",
+          "title": "令和7年度「アルバイトの労働条件を確かめよう!」キャンペーンを全国で実施します|報道発表資料|厚生労働省 — キャンペーンの概要",
+          "category": "part_time_job",
+          "source_url": "https://www.mhlw.go.jp/stf/newpage_54645.html",
+          "score": 0.634750501654162
+        }
+      ],
+      "latency_ms": 172.20090000046184
+    },
+    {
+      "id": "campus-v22-knowledge-0784",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『フリーター』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "アルバイト(「労働」「仕事」を意味するドイツ語: Arbeit に由来する外来語)は、期間の定めのある労働契約(有期労働契約)に基づき、企業・公的機関などによって雇用される従業員または労働者を指す、日本や韓国における俗称である。略称としてバイトとも呼ばれるほか、アルバイト形態で働く人を指す和製造語として「アルバイター」「フリーアルバイター(フリーター)」が派生した。非正規雇用の雇用形態の一種とされているが、正規雇用(期間の定めのない労働契約)としてのアルバイト社員とする企業もある。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.0798413710228314,
+      "rerank_score": 1.0798413710228314,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0798413710228314
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0585254154491446
+        },
+        {
+          "id": "wikipedia-ja-836110-chunk-001",
+          "parent_id": "wikipedia-ja-836110",
+          "title": "フリーター",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC",
+          "score": 0.9866353822264055
+        },
+        {
+          "id": "wikipedia-ja-836110-chunk-002",
+          "parent_id": "wikipedia-ja-836110",
+          "title": "フリーター",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC",
+          "score": 0.8576329227703502
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7310411099478626
+        }
+      ],
+      "latency_ms": 183.79409999761265
+    },
+    {
+      "id": "campus-v22-knowledge-0790",
+      "query": "学生アルバイトと労働条件についての質問です。学生アルバイトと労働条件の観点で、学生アルバイトで困らないため、『非常勤』が重要な理由を、事実と一般的な助言を分けて説明してください 初めて学ぶ学生向けに、定義も含めてください。",
+      "expected_topic": "scholarship_tuition",
+      "expected_category": "part_time_job",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%B8%B8%E5%8B%A4",
+      "retrieved_chunk_id": "wikipedia-ja-17968-chunk-002",
+      "retrieved_parent_id": "wikipedia-ja-17968",
+      "retrieved_chunk": "「アルバイト」と「契約社員」の区別は慣習的なものであり、企業がそのように勝手に呼称を使い分けているだけに過ぎず、同一同格の労働者である(「パートタイム(非常勤)」と「アルバイト」の区分についても同様)。労働法的にはあくまで双方とも労働者であり、単に労働時間や契約期間が異なるに過ぎない。労働力調査においては勤め先での呼称にて集計されている。アルバイトであっても、年次有給休暇を始めとする労働者としての権利の行使、会社が正社員に提供する福利厚生などの対象になる。なお日本の健康保険法においては2か月以内、雇用保険法においては1か月以内の有期労働契約は、日雇いに区分される。",
+      "retrieved_title": "アルバイト",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+      "retrieved_category": "part_time_job",
+      "retrieval_score": 1.074340974835875,
+      "rerank_score": 1.074340974835875,
+      "category": "part_time_job",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-17968-chunk-002",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.074340974835875
+        },
+        {
+          "id": "wikipedia-ja-17968-chunk-001",
+          "parent_id": "wikipedia-ja-17968",
+          "title": "アルバイト",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88",
+          "score": 1.0598732870339727
+        },
+        {
+          "id": "wikipedia-ja-940889-chunk-001",
+          "parent_id": "wikipedia-ja-940889",
+          "title": "非常勤",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%B8%B8%E5%8B%A4",
+          "score": 0.9510252141494715
+        },
+        {
+          "id": "wikipedia-ja-940889-chunk-002",
+          "parent_id": "wikipedia-ja-940889",
+          "title": "非常勤",
+          "category": "part_time_job",
+          "source_url": "https://ja.wikipedia.org/wiki/%E9%9D%9E%E5%B8%B8%E5%8B%A4",
+          "score": 0.8394435353851946
+        },
+        {
+          "id": "wikipedia-ja-8529-chunk-001",
+          "parent_id": "wikipedia-ja-8529",
+          "title": "定義",
+          "category": "relationship",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9",
+          "score": 0.7310955972959331
+        }
+      ],
+      "latency_ms": 166.0187000015867
+    },
+    {
+      "id": "campus-v22-knowledge-0880",
+      "query": "統計学と確率についての質問です。統計学と確率の観点で、大学統計の基礎として、『回帰分析』の定義と重要な点を根拠付きで説明してください。",
+      "expected_topic": "general_education",
+      "expected_category": "statistics",
+      "expected_source": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90",
+      "retrieved_chunk_id": "wikipedia-ja-1031-chunk-001",
+      "retrieved_parent_id": "wikipedia-ja-1031",
+      "retrieved_chunk": "統計学(とうけいがく、英: statistics)とは、統計に関する研究を行う学問である。経験的に得られたバラツキのあるデータから、応用数学の手法を用いて数値上の性質や規則性あるいは不規則性を見いだす。統計的手法は、実験計画、データの要約や解釈を行う上での根拠を提供するため、幅広い分野で応用されている。物理学・経済学・社会学・心理学・言語学といった人文科学・社会科学・自然科学(基礎科学)から、工学・医学・薬学といった応用科学まで、実証分析を伴う科学の分野において必須の学問となっている。また、科学哲学における重要なトピックの一つでもある。",
+      "retrieved_title": "統計学",
+      "retrieved_source": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%AD%A6",
+      "retrieved_category": "statistics",
+      "retrieval_score": 0.9730640903282411,
+      "rerank_score": 0.9730640903282411,
+      "category": "statistics",
+      "failure_reason": "LEXICAL_COLLISION",
+      "top5": [
+        {
+          "id": "wikipedia-ja-1031-chunk-001",
+          "parent_id": "wikipedia-ja-1031",
+          "title": "統計学",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%AD%A6",
+          "score": 0.9730640903282411
+        },
+        {
+          "id": "wikipedia-ja-33969-chunk-001",
+          "parent_id": "wikipedia-ja-33969",
+          "title": "回帰分析",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90",
+          "score": 0.9690613897869861
+        },
+        {
+          "id": "wikipedia-ja-33969-chunk-002",
+          "parent_id": "wikipedia-ja-33969",
+          "title": "回帰分析",
+          "category": "statistics",
+          "source_url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90",
+          "score": 0.870175515803824
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-002",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.7998442742946698
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-001",
+          "parent_id": "wikipedia-ja-98768",
+          "title": "統計",
+          "category": "campus_life",
+          "source_url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "score": 0.7033433239793244
+        }
+      ],
+      "latency_ms": 160.1111000018136
+    }
+  ]
+}

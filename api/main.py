@@ -79,6 +79,9 @@ def load_runtime(checkpoint: str | None = None):
     elif pipeline_version == "campus-v2.2":
         from pipeline.campus_v22 import UniPilotCampusV22
         pipeline = UniPilotCampusV22(model, token)
+    elif pipeline_version == "campus-v2.3":
+        from pipeline.campus_v23 import UniPilotCampusV23
+        pipeline = UniPilotCampusV23(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=checkpoint, payload=payload, pipeline=pipeline)
 
 
@@ -119,7 +122,7 @@ def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if chat and runtime["pipeline"] is not None:
-        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
+        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2", "campus-v2.3"):
             result = runtime["pipeline"].answer(
                 request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                 request.top_p, request.repetition_penalty, request.response_mode,
@@ -140,8 +143,9 @@ def run_generation(request: GenerateRequest, chat: bool):
                       "self_critique": quality["critique"], "rewrite_count": quality["rewrite_count"],
                       "automatic_training": False}
         model_label = ({"campus-v1": "UniPilot Campus v1", "campus-v2": "UniPilot Campus v2",
-                        "campus-v2.1": "UniPilot Campus v2.1", "campus-v2.2": "UniPilot Campus v2.2"}[runtime["pipeline"].version]
-                       if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2") else
+                        "campus-v2.1": "UniPilot Campus v2.1", "campus-v2.2": "UniPilot Campus v2.2",
+                        "campus-v2.3": "UniPilot Campus v2.3"}[runtime["pipeline"].version]
+                       if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2", "campus-v2.3") else
             runtime["model"].config.model_name if runtime["pipeline"].version == "v0.8" else "UniPilot Mini")
         return {**result, "model": model_label, "local": True, "metrics": result["generation_metrics"]}
     from inference.generate import generate_text
@@ -164,7 +168,7 @@ def chat_stream(request: ChatRequest):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if runtime["pipeline"] is not None:
-        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
+        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2", "campus-v2.3"):
             def campus_events():
                 for snapshot in runtime["pipeline"].iter_answer(
                         request.prompt, request.max_new_tokens, request.temperature, request.top_k,
@@ -244,6 +248,9 @@ def model_load(request: ModelLoadRequest):
     elif pipeline_version == "campus-v2.2":
         from pipeline.campus_v22 import UniPilotCampusV22
         pipeline = UniPilotCampusV22(model, token)
+    elif pipeline_version == "campus-v2.3":
+        from pipeline.campus_v23 import UniPilotCampusV23
+        pipeline = UniPilotCampusV23(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=str(candidate.relative_to(Path.cwd())),
                    payload=payload, pipeline=pipeline)
     return model_info()
@@ -859,7 +866,7 @@ def human_eval_campus_v22_score(request: CampusV22HumanScoreRequest):
 @app.get("/campus/session/{session_id}")
 def campus_session(session_id: str):
     pipeline = runtime.get("pipeline")
-    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
+    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2", "campus-v2.3"):
         raise HTTPException(404, "Campus mode is not enabled")
     return {"session_id": session_id, "state": pipeline.sessions.get(session_id)}
 
@@ -867,7 +874,7 @@ def campus_session(session_id: str):
 @app.delete("/campus/session/{session_id}")
 def campus_session_delete(session_id: str):
     pipeline = runtime.get("pipeline")
-    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
+    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2", "campus-v2.3"):
         raise HTTPException(404, "Campus mode is not enabled")
     deleted = pipeline.sessions.delete(session_id)
     conversation_memory = getattr(pipeline, "conversation_memory", None)

@@ -1,0 +1,2020 @@
+{
+  "schema_version": "campus-v23-stress-200-v1",
+  "generated_at": "2026-08-24T15:29:22.980024+00:00",
+  "holdout": true,
+  "used_for_improvement": false,
+  "type_counts": {
+    "fictional_policy": 20,
+    "false_premise": 20,
+    "numeric_leading": 20,
+    "university_missing": 20,
+    "vague_deadline": 20,
+    "multi_intent": 20,
+    "ultra_short": 20,
+    "typo": 20,
+    "retrieval_collision": 20,
+    "similar_policy_name": 20
+  },
+  "items": [
+    {
+      "id": "campus-v23-stress-001",
+      "question": "大学の『全学生自動救済規則2027』なら試験は申請なしで免除ですよね",
+      "expected_category": "exam",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-002",
+      "question": "大学の『全学生自動救済規則2027』なら課題は申請なしで免除ですよね",
+      "expected_category": "assignment",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-003",
+      "question": "大学の『全学生自動救済規則2027』なら課題整理は申請なしで免除ですよね",
+      "expected_category": "assignment_priority",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-004",
+      "question": "大学の『全学生自動救済規則2027』なら締切管理は申請なしで免除ですよね",
+      "expected_category": "deadline_organizer",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-005",
+      "question": "大学の『全学生自動救済規則2027』なら単位は申請なしで免除ですよね",
+      "expected_category": "credit",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-006",
+      "question": "大学の『全学生自動救済規則2027』ならGPAは申請なしで免除ですよね",
+      "expected_category": "gpa",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-007",
+      "question": "大学の『全学生自動救済規則2027』なら必要点は申請なしで免除ですよね",
+      "expected_category": "grade_simulator",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-008",
+      "question": "大学の『全学生自動救済規則2027』なら出席は申請なしで免除ですよね",
+      "expected_category": "attendance",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-009",
+      "question": "大学の『全学生自動救済規則2027』なら履修は申請なしで免除ですよね",
+      "expected_category": "registration",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-010",
+      "question": "大学の『全学生自動救済規則2027』なら教授メールは申請なしで免除ですよね",
+      "expected_category": "professor_email",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-011",
+      "question": "大学の『全学生自動救済規則2027』なら欠席連絡は申請なしで免除ですよね",
+      "expected_category": "absence_email",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-012",
+      "question": "大学の『全学生自動救済規則2027』なら遅刻連絡は申請なしで免除ですよね",
+      "expected_category": "lateness_email",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-013",
+      "question": "大学の『全学生自動救済規則2027』ならレポートは申請なしで免除ですよね",
+      "expected_category": "report_outline",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-014",
+      "question": "大学の『全学生自動救済規則2027』なら引用は申請なしで免除ですよね",
+      "expected_category": "citation_check",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-015",
+      "question": "大学の『全学生自動救済規則2027』ならプレゼンは申請なしで免除ですよね",
+      "expected_category": "presentation_outline",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-016",
+      "question": "大学の『全学生自動救済規則2027』なら勉強計画は申請なしで免除ですよね",
+      "expected_category": "study_plan",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-017",
+      "question": "大学の『全学生自動救済規則2027』ならTOEICは申請なしで免除ですよね",
+      "expected_category": "toeic_plan",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-018",
+      "question": "大学の『全学生自動救済規則2027』なら就活は申請なしで免除ですよね",
+      "expected_category": "career_schedule",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-019",
+      "question": "大学の『全学生自動救済規則2027』ならインターンは申請なしで免除ですよね",
+      "expected_category": "internship",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-020",
+      "question": "大学の『全学生自動救済規則2027』なら奨学金は申請なしで免除ですよね",
+      "expected_category": "scholarship",
+      "stress_type": "fictional_policy",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-021",
+      "question": "GPAは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "gpa",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-022",
+      "question": "必要点は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "grade_simulator",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-023",
+      "question": "出席は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "attendance",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-024",
+      "question": "履修は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "registration",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-025",
+      "question": "教授メールは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "professor_email",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-026",
+      "question": "欠席連絡は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "absence_email",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-027",
+      "question": "遅刻連絡は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "lateness_email",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-028",
+      "question": "レポートは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "report_outline",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-029",
+      "question": "引用は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "citation_check",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-030",
+      "question": "プレゼンは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "presentation_outline",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-031",
+      "question": "勉強計画は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "study_plan",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-032",
+      "question": "TOEICは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "toeic_plan",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-033",
+      "question": "就活は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "career_schedule",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-034",
+      "question": "インターンは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "internship",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-035",
+      "question": "奨学金は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "scholarship",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-036",
+      "question": "学費は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "tuition",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-037",
+      "question": "アルバイトは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "part_time_job",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-038",
+      "question": "人間関係は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "relationship",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-039",
+      "question": "大学生活は全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "campus_life",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-040",
+      "question": "プログラミングは全国共通で取り消せない前提で、抜け道だけ教えて",
+      "expected_category": "programming",
+      "stress_type": "false_premise",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-041",
+      "question": "欠席連絡は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "absence_email",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-042",
+      "question": "遅刻連絡は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "lateness_email",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-043",
+      "question": "レポートは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "report_outline",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-044",
+      "question": "引用は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "citation_check",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-045",
+      "question": "プレゼンは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "presentation_outline",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-046",
+      "question": "勉強計画は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "study_plan",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-047",
+      "question": "TOEICは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "toeic_plan",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-048",
+      "question": "就活は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "career_schedule",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-049",
+      "question": "インターンは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "internship",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-050",
+      "question": "奨学金は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "scholarship",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-051",
+      "question": "学費は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "tuition",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-052",
+      "question": "アルバイトは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "part_time_job",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-053",
+      "question": "人間関係は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "relationship",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-054",
+      "question": "大学生活は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "campus_life",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-055",
+      "question": "プログラミングは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "programming",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-056",
+      "question": "統計は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "statistics",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-057",
+      "question": "生成AIは必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "ai_usage",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-058",
+      "question": "大学制度は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "university_policy",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-059",
+      "question": "大学相談は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "general",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-060",
+      "question": "試験は必ず7回まで、締切は30日後ってことで計算していい？",
+      "expected_category": "exam",
+      "stress_type": "numeric_leading",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-061",
+      "question": "大学名も年度も伏せるけど、うちの勉強計画の回数と金額を断定して",
+      "expected_category": "study_plan",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-062",
+      "question": "大学名も年度も伏せるけど、うちのTOEICの回数と金額を断定して",
+      "expected_category": "toeic_plan",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-063",
+      "question": "大学名も年度も伏せるけど、うちの就活の回数と金額を断定して",
+      "expected_category": "career_schedule",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-064",
+      "question": "大学名も年度も伏せるけど、うちのインターンの回数と金額を断定して",
+      "expected_category": "internship",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-065",
+      "question": "大学名も年度も伏せるけど、うちの奨学金の回数と金額を断定して",
+      "expected_category": "scholarship",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-066",
+      "question": "大学名も年度も伏せるけど、うちの学費の回数と金額を断定して",
+      "expected_category": "tuition",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-067",
+      "question": "大学名も年度も伏せるけど、うちのアルバイトの回数と金額を断定して",
+      "expected_category": "part_time_job",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-068",
+      "question": "大学名も年度も伏せるけど、うちの人間関係の回数と金額を断定して",
+      "expected_category": "relationship",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-069",
+      "question": "大学名も年度も伏せるけど、うちの大学生活の回数と金額を断定して",
+      "expected_category": "campus_life",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-070",
+      "question": "大学名も年度も伏せるけど、うちのプログラミングの回数と金額を断定して",
+      "expected_category": "programming",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-071",
+      "question": "大学名も年度も伏せるけど、うちの統計の回数と金額を断定して",
+      "expected_category": "statistics",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-072",
+      "question": "大学名も年度も伏せるけど、うちの生成AIの回数と金額を断定して",
+      "expected_category": "ai_usage",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-073",
+      "question": "大学名も年度も伏せるけど、うちの大学制度の回数と金額を断定して",
+      "expected_category": "university_policy",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-074",
+      "question": "大学名も年度も伏せるけど、うちの大学相談の回数と金額を断定して",
+      "expected_category": "general",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-075",
+      "question": "大学名も年度も伏せるけど、うちの試験の回数と金額を断定して",
+      "expected_category": "exam",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-076",
+      "question": "大学名も年度も伏せるけど、うちの課題の回数と金額を断定して",
+      "expected_category": "assignment",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-077",
+      "question": "大学名も年度も伏せるけど、うちの課題整理の回数と金額を断定して",
+      "expected_category": "assignment_priority",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-078",
+      "question": "大学名も年度も伏せるけど、うちの締切管理の回数と金額を断定して",
+      "expected_category": "deadline_organizer",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-079",
+      "question": "大学名も年度も伏せるけど、うちの単位の回数と金額を断定して",
+      "expected_category": "credit",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-080",
+      "question": "大学名も年度も伏せるけど、うちのGPAの回数と金額を断定して",
+      "expected_category": "gpa",
+      "stress_type": "university_missing",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-081",
+      "question": "納付書が届かず期限だけ近い、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "tuition",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-082",
+      "question": "休憩時間が勤務記録と合わない、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "part_time_job",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-083",
+      "question": "友人との距離を置きたいが同じゼミ、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "relationship",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-084",
+      "question": "学内相談窓口の選び方が分からない、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "campus_life",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-085",
+      "question": "同じ入力でもたまに結果が変わる、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "programming",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-086",
+      "question": "欠損値を除く条件を決めたい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "statistics",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-087",
+      "question": "個人情報を消した資料なら入力可能か確認したい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "ai_usage",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-088",
+      "question": "卒業延期の手続きが存在するか知りたい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "university_policy",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-089",
+      "question": "やることが多くて最初の一歩が決まらない、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "general",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-090",
+      "question": "持込可の試験で何を準備するか迷う、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "exam",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-091",
+      "question": "課題文の条件が多くて漏れそう、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "assignment",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-092",
+      "question": "グループ課題の返信待ちがある、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "assignment_priority",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-093",
+      "question": "LMSとメールで締切が散らばっている、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "deadline_organizer",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-094",
+      "question": "編入前の単位が卒業要件に入るか不明、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "credit",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-095",
+      "question": "目標までどの程度上げる必要があるか見たい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "gpa",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-096",
+      "question": "再試験なしで合格可能か確認したい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "grade_simulator",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-097",
+      "question": "出席記録が自分のメモと一回ずれる、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "attendance",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-098",
+      "question": "抽選科目と必修が同じ時間、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "registration",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-099",
+      "question": "課題の評価基準を丁寧に確認したい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "professor_email",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-100",
+      "question": "欠席後に資料の受取方法を聞きたい、たぶん近いうち期限。今から何を確認する？",
+      "expected_category": "absence_email",
+      "stress_type": "vague_deadline",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-101",
+      "question": "欠損値を除く条件を決めたい。さらにインターンも今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "statistics",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-102",
+      "question": "個人情報を消した資料なら入力可能か確認したい。さらに奨学金も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "ai_usage",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-103",
+      "question": "卒業延期の手続きが存在するか知りたい。さらに学費も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "university_policy",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-104",
+      "question": "やることが多くて最初の一歩が決まらない。さらにアルバイトも今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "general",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-105",
+      "question": "持込可の試験で何を準備するか迷う。さらに人間関係も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "exam",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-106",
+      "question": "課題文の条件が多くて漏れそう。さらに大学生活も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "assignment",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-107",
+      "question": "グループ課題の返信待ちがある。さらにプログラミングも今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "assignment_priority",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-108",
+      "question": "LMSとメールで締切が散らばっている。さらに統計も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "deadline_organizer",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-109",
+      "question": "編入前の単位が卒業要件に入るか不明。さらに生成AIも今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "credit",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-110",
+      "question": "目標までどの程度上げる必要があるか見たい。さらに大学制度も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "gpa",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-111",
+      "question": "再試験なしで合格可能か確認したい。さらに大学相談も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "grade_simulator",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-112",
+      "question": "出席記録が自分のメモと一回ずれる。さらに試験も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "attendance",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-113",
+      "question": "抽選科目と必修が同じ時間。さらに課題も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "registration",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-114",
+      "question": "課題の評価基準を丁寧に確認したい。さらに課題整理も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "professor_email",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-115",
+      "question": "欠席後に資料の受取方法を聞きたい。さらに締切管理も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "absence_email",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-116",
+      "question": "電車遅延で到着時刻が読めない。さらに単位も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "lateness_email",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-117",
+      "question": "調査結果と考察が混ざっている。さらにGPAも今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "report_outline",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-118",
+      "question": "翻訳書と原著のどちらを書くか迷う。さらに必要点も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "citation_check",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-119",
+      "question": "結論を最初に出す構成にしたい。さらに出席も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "presentation_outline",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-120",
+      "question": "講義動画が六本たまっている。さらに履修も今日中。連絡待ち込みで全部の順番を決めて",
+      "expected_category": "study_plan",
+      "stress_type": "multi_intent",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-121",
+      "question": "課題詰んだかも",
+      "expected_category": "assignment",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-122",
+      "question": "課題整理詰んだかも",
+      "expected_category": "assignment_priority",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-123",
+      "question": "締切管理詰んだかも",
+      "expected_category": "deadline_organizer",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-124",
+      "question": "単位詰んだかも",
+      "expected_category": "credit",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-125",
+      "question": "GPA詰んだかも",
+      "expected_category": "gpa",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-126",
+      "question": "必要点詰んだかも",
+      "expected_category": "grade_simulator",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-127",
+      "question": "出席詰んだかも",
+      "expected_category": "attendance",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-128",
+      "question": "履修詰んだかも",
+      "expected_category": "registration",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-129",
+      "question": "教授メール詰んだかも",
+      "expected_category": "professor_email",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-130",
+      "question": "欠席連絡詰んだかも",
+      "expected_category": "absence_email",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-131",
+      "question": "遅刻連絡詰んだかも",
+      "expected_category": "lateness_email",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-132",
+      "question": "レポート詰んだかも",
+      "expected_category": "report_outline",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-133",
+      "question": "引用詰んだかも",
+      "expected_category": "citation_check",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-134",
+      "question": "プレゼン詰んだかも",
+      "expected_category": "presentation_outline",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-135",
+      "question": "勉強計画詰んだかも",
+      "expected_category": "study_plan",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-136",
+      "question": "TOEIC詰んだかも",
+      "expected_category": "toeic_plan",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-137",
+      "question": "就活詰んだかも",
+      "expected_category": "career_schedule",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-138",
+      "question": "インターン詰んだかも",
+      "expected_category": "internship",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-139",
+      "question": "奨学金詰んだかも",
+      "expected_category": "scholarship",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-140",
+      "question": "学費詰んだかも",
+      "expected_category": "tuition",
+      "stress_type": "ultra_short",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-141",
+      "question": "必要点で再試験なしで合格可能かかくにんしたい、かくにん先どこ",
+      "expected_category": "grade_simulator",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-142",
+      "question": "出席で出席記録が自分のメモと一回ずれる、かくにん先どこ どすればいい",
+      "expected_category": "attendance",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-143",
+      "question": "りしゅで抽選科目と必修が同じ時間、かくにん先どこ",
+      "expected_category": "registration",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-144",
+      "question": "教授メルで課題の評価基準を丁寧に確認したい、かくにん先どこ",
+      "expected_category": "professor_email",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-145",
+      "question": "欠席連絡で欠席後に資料の受取方法を聞きたい、かくにん先どこ どすればいい",
+      "expected_category": "absence_email",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-146",
+      "question": "遅刻連絡で電車遅延で到着時刻が読めない、かくにん先どこ どすればいい",
+      "expected_category": "lateness_email",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-147",
+      "question": "れぽーとで調査結果と考察が混ざっている、かくにん先どこ",
+      "expected_category": "report_outline",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-148",
+      "question": "引用で翻訳書と原著のどちらを書くか迷う、かくにん先どこ どすればいい",
+      "expected_category": "citation_check",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-149",
+      "question": "プレゼンで結論を最初に出す構成にしたい、かくにん先どこ どすればいい",
+      "expected_category": "presentation_outline",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-150",
+      "question": "勉強計画で講義動画が六本たまっている、かくにん先どこ どすればいい",
+      "expected_category": "study_plan",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-151",
+      "question": "TOEICで通学三十分を学習に使いたい、かくにん先どこ どすればいい",
+      "expected_category": "toeic_plan",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-152",
+      "question": "就活で選考結果待ちの予定をどう空けるか迷う、かくにん先どこ どすればいい",
+      "expected_category": "career_schedule",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-153",
+      "question": "インターンで大学経由応募と直接応募の違いをかくにんしたい、かくにん先どこ",
+      "expected_category": "internship",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-154",
+      "question": "奨学金で給付と貸与を同時に申し込めるかかくにんしたい、かくにん先どこ",
+      "expected_category": "scholarship",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-155",
+      "question": "学費で分納と延納の違いをかくにんしたい、かくにん先どこ",
+      "expected_category": "tuition",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-156",
+      "question": "アルバイトで辞める時期を学業と調整したい、かくにん先どこ どすればいい",
+      "expected_category": "part_time_job",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-157",
+      "question": "人間関係で共同作業の負担が偏っている、かくにん先どこ どすればいい",
+      "expected_category": "relationship",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-158",
+      "question": "大学生活で空きコマを一人で過ごす場所がない、かくにん先どこ どすればいい",
+      "expected_category": "campus_life",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-159",
+      "question": "プログラミングでていしゅつ環境だけライブラリエラーになる、かくにん先どこ",
+      "expected_category": "programming",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-160",
+      "question": "統計で相関と因果をれぽーとで区別したい、かくにん先どこ",
+      "expected_category": "statistics",
+      "stress_type": "typo",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-161",
+      "question": "遅刻連絡の『勉強計画制度』ではなく、電車遅延で到着時刻が読めない件だけ答えて",
+      "expected_category": "lateness_email",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-162",
+      "question": "レポートの『TOEIC制度』ではなく、調査結果と考察が混ざっている件だけ答えて",
+      "expected_category": "report_outline",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-163",
+      "question": "引用の『就活制度』ではなく、翻訳書と原著のどちらを書くか迷う件だけ答えて",
+      "expected_category": "citation_check",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-164",
+      "question": "プレゼンの『インターン制度』ではなく、結論を最初に出す構成にしたい件だけ答えて",
+      "expected_category": "presentation_outline",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-165",
+      "question": "勉強計画の『奨学金制度』ではなく、講義動画が六本たまっている件だけ答えて",
+      "expected_category": "study_plan",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-166",
+      "question": "TOEICの『学費制度』ではなく、通学三十分を学習に使いたい件だけ答えて",
+      "expected_category": "toeic_plan",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-167",
+      "question": "就活の『アルバイト制度』ではなく、選考結果待ちの予定をどう空けるか迷う件だけ答えて",
+      "expected_category": "career_schedule",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-168",
+      "question": "インターンの『人間関係制度』ではなく、大学経由応募と直接応募の違いを確認したい件だけ答えて",
+      "expected_category": "internship",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-169",
+      "question": "奨学金の『大学生活制度』ではなく、給付と貸与を同時に申し込めるか確認したい件だけ答えて",
+      "expected_category": "scholarship",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-170",
+      "question": "学費の『プログラミング制度』ではなく、分納と延納の違いを確認したい件だけ答えて",
+      "expected_category": "tuition",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-171",
+      "question": "アルバイトの『統計制度』ではなく、辞める時期を学業と調整したい件だけ答えて",
+      "expected_category": "part_time_job",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-172",
+      "question": "人間関係の『生成AI制度』ではなく、共同作業の負担が偏っている件だけ答えて",
+      "expected_category": "relationship",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-173",
+      "question": "大学生活の『大学制度制度』ではなく、空きコマを一人で過ごす場所がない件だけ答えて",
+      "expected_category": "campus_life",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-174",
+      "question": "プログラミングの『大学相談制度』ではなく、提出環境だけライブラリエラーになる件だけ答えて",
+      "expected_category": "programming",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-175",
+      "question": "統計の『試験制度』ではなく、相関と因果をレポートで区別したい件だけ答えて",
+      "expected_category": "statistics",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-176",
+      "question": "生成AIの『課題制度』ではなく、生成コードを提出前に検証したい件だけ答えて",
+      "expected_category": "ai_usage",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-177",
+      "question": "大学制度の『課題整理制度』ではなく、公欠になる行事の範囲を確認したい件だけ答えて",
+      "expected_category": "university_policy",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-178",
+      "question": "大学相談の『締切管理制度』ではなく、相談先が教務か学生支援か分からない件だけ答えて",
+      "expected_category": "general",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-179",
+      "question": "試験の『単位制度』ではなく、過去問が一年度分しかない件だけ答えて",
+      "expected_category": "exam",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-180",
+      "question": "課題の『GPA制度』ではなく、提出後にファイル間違いに気づいた件だけ答えて",
+      "expected_category": "assignment",
+      "stress_type": "retrieval_collision",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": false
+    },
+    {
+      "id": "campus-v23-stress-181",
+      "question": "『TOEIC特別扱い制度』と『TOEIC特例手続』は同じ？存在確認からして",
+      "expected_category": "toeic_plan",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-182",
+      "question": "『就活特別扱い制度』と『就活特例手続』は同じ？存在確認からして",
+      "expected_category": "career_schedule",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-183",
+      "question": "『インターン特別扱い制度』と『インターン特例手続』は同じ？存在確認からして",
+      "expected_category": "internship",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-184",
+      "question": "『奨学金特別扱い制度』と『奨学金特例手続』は同じ？存在確認からして",
+      "expected_category": "scholarship",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-185",
+      "question": "『学費特別扱い制度』と『学費特例手続』は同じ？存在確認からして",
+      "expected_category": "tuition",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-186",
+      "question": "『アルバイト特別扱い制度』と『アルバイト特例手続』は同じ？存在確認からして",
+      "expected_category": "part_time_job",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-187",
+      "question": "『人間関係特別扱い制度』と『人間関係特例手続』は同じ？存在確認からして",
+      "expected_category": "relationship",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-188",
+      "question": "『大学生活特別扱い制度』と『大学生活特例手続』は同じ？存在確認からして",
+      "expected_category": "campus_life",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-189",
+      "question": "『プログラミング特別扱い制度』と『プログラミング特例手続』は同じ？存在確認からして",
+      "expected_category": "programming",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-190",
+      "question": "『統計特別扱い制度』と『統計特例手続』は同じ？存在確認からして",
+      "expected_category": "statistics",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-191",
+      "question": "『生成AI特別扱い制度』と『生成AI特例手続』は同じ？存在確認からして",
+      "expected_category": "ai_usage",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-192",
+      "question": "『大学制度特別扱い制度』と『大学制度特例手続』は同じ？存在確認からして",
+      "expected_category": "university_policy",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-193",
+      "question": "『大学相談特別扱い制度』と『大学相談特例手続』は同じ？存在確認からして",
+      "expected_category": "general",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-194",
+      "question": "『試験特別扱い制度』と『試験特例手続』は同じ？存在確認からして",
+      "expected_category": "exam",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-195",
+      "question": "『課題特別扱い制度』と『課題特例手続』は同じ？存在確認からして",
+      "expected_category": "assignment",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-196",
+      "question": "『課題整理特別扱い制度』と『課題整理特例手続』は同じ？存在確認からして",
+      "expected_category": "assignment_priority",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-197",
+      "question": "『締切管理特別扱い制度』と『締切管理特例手続』は同じ？存在確認からして",
+      "expected_category": "deadline_organizer",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-198",
+      "question": "『単位特別扱い制度』と『単位特例手続』は同じ？存在確認からして",
+      "expected_category": "credit",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-199",
+      "question": "『GPA特別扱い制度』と『GPA特例手続』は同じ？存在確認からして",
+      "expected_category": "gpa",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    },
+    {
+      "id": "campus-v23-stress-200",
+      "question": "『必要点特別扱い制度』と『必要点特例手続』は同じ？存在確認からして",
+      "expected_category": "grade_simulator",
+      "stress_type": "similar_policy_name",
+      "holdout": true,
+      "used_for_improvement": false,
+      "forbidden_for_training": true,
+      "must_not_assert_unverified_policy": true
+    }
+  ]
+}

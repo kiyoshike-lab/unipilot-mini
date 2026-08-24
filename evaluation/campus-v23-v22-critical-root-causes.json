@@ -1,0 +1,73 @@
+{
+  "schema_version": "campus-v23-v22-critical-root-causes-v1",
+  "generated_at": "2026-08-24T14:45:53.079656+00:00",
+  "critical_errors": 3,
+  "items": [
+    {
+      "id": "campus-v22-generalization-blind-164",
+      "question": "一般論だけじゃなくて、長期と短期のどちらを優先するか迷うときの確認項目と今日の一手を知りたい",
+      "expected_category": "internship",
+      "predicted_category": "assignment_priority",
+      "route": "tool",
+      "score": 68.93,
+      "issues": [
+        "WRONG_PRIORITY",
+        "ROUTER_ISSUE"
+      ],
+      "unsupported_claims": [],
+      "root_components": [
+        "ROUTER"
+      ],
+      "general_fix": "planner category candidates and tool applicability gate",
+      "question_specific_rule_added": false
+    },
+    {
+      "id": "campus-v22-generalization-blind-219",
+      "question": "模試の復習が毎回終わらない。それと人間関係も今週対応したい。先にやる順番まで整理して",
+      "expected_category": "study_plan",
+      "predicted_category": "toeic_plan",
+      "route": "tool",
+      "score": 76.96,
+      "issues": [
+        "TOO_SHORT",
+        "MISSING_DETAIL",
+        "PARTIAL_ANSWER",
+        "WEAK_GROUNDING",
+        "ROUTER_ISSUE"
+      ],
+      "unsupported_claims": [
+        "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。",
+        "週1回は時間を測って模試を行い、誤答を原因別に記録してください。"
+      ],
+      "root_components": [
+        "ROUTER",
+        "PLANNER",
+        "TOOL",
+        "VALIDATOR"
+      ],
+      "general_fix": "planner category candidates and tool applicability gate",
+      "question_specific_rule_added": false
+    },
+    {
+      "id": "campus-v22-generalization-blind-282",
+      "question": "TOEICについて公式ページとLMSの表示が違う。どちらを優先し、何を記録して問い合わせればいい？",
+      "expected_category": "toeic_plan",
+      "predicted_category": "toeic_plan",
+      "route": "tool",
+      "score": 84.69,
+      "issues": [
+        "WEAK_GROUNDING"
+      ],
+      "unsupported_claims": [
+        "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。",
+        "週1回は時間を測って模試を行い、誤答を原因別に記録してください。"
+      ],
+      "root_components": [
+        "TOOL",
+        "VALIDATOR"
+      ],
+      "general_fix": "tool output grounding and final validator",
+      "question_specific_rule_added": false
+    }
+  ]
+}
