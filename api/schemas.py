@@ -70,6 +70,9 @@ class CampusV21IssueFlags(BaseModel):
     faq_error: bool = False
     retrieval_error: bool = False
     model_error: bool = False
+    too_long: bool = False
+    too_short: bool = False
+    other_error: bool = False
 
 
 class CampusV21PairwiseAxes(BaseModel):
@@ -102,6 +105,7 @@ class CampusV21HumanScoreRequest(CampusV2HumanScoreRequest):
     issues_reviewed: bool = True
     pairwise: CampusV21Pairwise = Field(default_factory=CampusV21Pairwise)
     ux: CampusV21UXEvaluation = Field(default_factory=CampusV21UXEvaluation)
+    other_issue: str = Field(default="", max_length=1000)
 
 
 class CampusV22HumanScoreRequest(BaseModel):

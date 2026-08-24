@@ -1,0 +1,237 @@
+{
+  "schema_version": "campus-v21-human-eval-v1",
+  "generated_at": "2026-08-24T12:44:02.509033+00:00",
+  "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+  "answer_logic_changed": false,
+  "production_changed": false,
+  "external_ai_api": "OFF",
+  "status": "PENDING",
+  "completed": 1,
+  "pending": 0,
+  "total": 1,
+  "averages_0_to_5": {
+    "correctness": 5.0,
+    "relevance": 5.0,
+    "actionable": 4.0,
+    "naturalness": 5.0,
+    "would_use_again": 4.0
+  },
+  "issue_counts": {
+    "critical_error": 0,
+    "university_policy_assertion": 0,
+    "router_error": 0,
+    "retrieval_error": 0,
+    "tool_error": 0,
+    "model_error": 0
+  },
+  "pairwise": {
+    "chatgpt": {
+      "win": 0,
+      "tie": 0,
+      "loss": 0,
+      "unscored": 5,
+      "by_axis": {
+        "correctness": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "specificity": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "actionability": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "readability": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "would_use": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        }
+      }
+    },
+    "gemini": {
+      "win": 0,
+      "tie": 0,
+      "loss": 0,
+      "unscored": 5,
+      "by_axis": {
+        "correctness": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "specificity": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "actionability": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "readability": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        },
+        "would_use": {
+          "win": 0,
+          "tie": 0,
+          "loss": 0,
+          "unscored": 1
+        }
+      }
+    }
+  },
+  "human_gate": {
+    "status": "PENDING",
+    "evaluated_only_when_complete": true,
+    "thresholds": {
+      "correctness": 4.2,
+      "relevance": 4.2,
+      "actionable": 4.2,
+      "naturalness": 4.2,
+      "would_use_again": 4.0
+    },
+    "threshold_checks": {
+      "correctness": false,
+      "relevance": false,
+      "actionable": false,
+      "naturalness": false,
+      "would_use_again": false
+    },
+    "critical_error_rate": 0.0,
+    "university_policy_assertion_rate": 0.0,
+    "rate_checks": {
+      "critical_error_rate": false,
+      "university_policy_assertion_rate": false
+    }
+  },
+  "automated_comparison": null,
+  "error_categories": [
+    {
+      "category": "KNOWLEDGE",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "事実誤りと大学固有制度の誤断定を優先して直す"
+    },
+    {
+      "category": "MODEL",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "Model回答品質の失敗例を優先して評価・改善する"
+    },
+    {
+      "category": "OTHER",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "その他の人手メモを確認して原因を再分類する"
+    },
+    {
+      "category": "RETRIEVAL",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "検索失敗・誤取得例を優先して検索条件を見直す"
+    },
+    {
+      "category": "ROUTER",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "Routerの誤分類例を優先して境界条件を見直す"
+    },
+    {
+      "category": "TOOL",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "Tool選択または計算結果の誤りを優先して直す"
+    },
+    {
+      "category": "UX",
+      "count": 0,
+      "item_ids": [],
+      "v2_2_recommendation": "冗長さ・不足・利用しづらさを優先して直す"
+    }
+  ],
+  "v2_2_priorities": [],
+  "items": [
+    {
+      "id": "v21-x",
+      "scores": {
+        "correctness": 5,
+        "relevance": 5,
+        "actionable": 4,
+        "naturalness": 5,
+        "would_use_again": 4
+      },
+      "competitor_scores": {
+        "chatgpt": null,
+        "gemini": null
+      },
+      "chatgpt_answer": "",
+      "gemini_answer": "",
+      "notes": "manual",
+      "issue_flags": {
+        "critical_error": false,
+        "factual_error": false,
+        "unanswered": false,
+        "university_policy_assertion": false,
+        "unnecessary_information": false,
+        "unusable_answer": false,
+        "router_error": false,
+        "tool_error": false,
+        "faq_error": false,
+        "retrieval_error": false,
+        "model_error": false,
+        "too_long": false,
+        "too_short": false,
+        "other_error": false
+      },
+      "issues_reviewed": true,
+      "pairwise": {
+        "chatgpt": {
+          "correctness": "unscored",
+          "specificity": "unscored",
+          "actionability": "unscored",
+          "readability": "unscored",
+          "would_use": "unscored"
+        },
+        "gemini": {
+          "correctness": "unscored",
+          "specificity": "unscored",
+          "actionability": "unscored",
+          "readability": "unscored",
+          "would_use": "unscored"
+        }
+      },
+      "ux": {
+        "tool_card": "not_evaluated",
+        "copy_action": "not_evaluated",
+        "input_flow": "not_evaluated",
+        "clarification": "not_evaluated",
+        "streaming": "not_evaluated",
+        "latency": "not_evaluated"
+      },
+      "other_issue": "",
+      "evaluation_status": "SCORED_MANUALLY"
+    }
+  ]
+}

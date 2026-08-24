@@ -111,3 +111,69 @@ def test_campus_v21_human_endpoint_persists_five_axes(tmp_path, monkeypatch):
     assert saved["issues_reviewed"] is True
     assert saved["evaluation_status"] == "SCORED_MANUALLY"
     assert set(saved["pairwise"]) == {"chatgpt", "gemini"}
+
+
+def human_row(index: int, score: int = 5, *, reviewed: bool = True) -> dict:
+    return {
+        "id": f"human-{index:03d}",
+        "scores": {"correctness": score, "relevance": score, "actionable": score,
+                   "naturalness": score, "would_use_again": score},
+        "issues_reviewed": reviewed,
+        "issue_flags": {},
+        "pairwise": {
+            "chatgpt": {axis: "unipilot" for axis in ("correctness", "specificity", "actionability",
+                                                         "readability", "would_use")},
+            "gemini": {axis: "tie" for axis in ("correctness", "specificity", "actionability",
+                                                  "readability", "would_use")},
+        },
+    }
+
+
+def test_v21_human_gate_is_pending_until_exactly_100_completed():
+    summary = api_main.build_campus_v21_human_summary([human_row(index) for index in range(99)])
+    assert summary["status"] == "PENDING"
+    assert summary["human_gate"]["status"] == "PENDING"
+    assert summary["automated_comparison"] is None
+    assert summary["v2_2_priorities"] == []
+
+
+def test_v21_human_gate_passes_and_compares_automated_only_after_100():
+    rows = [human_row(index) for index in range(100)]
+    summary = api_main.build_campus_v21_human_summary(rows)
+    assert summary["status"] == "COMPLETE"
+    assert summary["human_gate"]["status"] == "PASS"
+    assert summary["averages_0_to_5"] == {axis: 5.0 for axis in api_main.V21_HUMAN_AXES}
+    assert summary["automated_comparison"]["automated_correctness_percent"] == 99.2
+    assert summary["automated_comparison"]["human_correctness_percent"] == 100.0
+    assert summary["pairwise"]["chatgpt"]["win"] == 500
+    assert summary["pairwise"]["gemini"]["tie"] == 500
+
+
+def test_v21_human_gate_fails_thresholds_and_classifies_errors():
+    rows = [human_row(index, score=4) for index in range(100)]
+    rows[0]["issue_flags"] = {"critical_error": True, "router_error": True,
+                               "factual_error": True, "too_long": True}
+    rows[1]["issue_flags"] = {"university_policy_assertion": True, "retrieval_error": True,
+                               "tool_error": True, "model_error": True, "other_error": True}
+    summary = api_main.build_campus_v21_human_summary(rows)
+    assert summary["human_gate"]["status"] == "FAIL"
+    assert summary["human_gate"]["critical_error_rate"] == .01
+    assert summary["human_gate"]["university_policy_assertion_rate"] == .01
+    categories = {entry["category"]: entry["count"] for entry in summary["error_categories"]}
+    assert categories == {"ROUTER": 1, "RETRIEVAL": 1, "TOOL": 1, "MODEL": 1,
+                          "KNOWLEDGE": 2, "UX": 1, "OTHER": 1}
+    assert summary["v2_2_priorities"][0]["category"] == "KNOWLEDGE"
+
+
+def test_v21_partial_export_writes_required_json_and_markdown(tmp_path):
+    source = tmp_path / "human-comparison-campus-v21.json"
+    rows = [human_row(0)]
+    exported = api_main.export_campus_v21_human_results(rows, source)
+    results = tmp_path / "campus-v21-human-results.json"
+    report = tmp_path / "campus-v21-human-report.md"
+    assert results.exists() and report.exists()
+    payload = json.loads(results.read_text(encoding="utf-8"))
+    assert payload["human_gate"]["status"] == "PENDING"
+    assert payload["answer_logic_changed"] is False and payload["production_changed"] is False
+    assert "withheld until 100/100 completion" in report.read_text(encoding="utf-8")
+    assert exported["results_path"].endswith("campus-v21-human-results.json")

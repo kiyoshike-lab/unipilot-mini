@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import csv
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 import sys
 from fastapi import FastAPI, HTTPException
@@ -291,7 +292,175 @@ HUMAN_CAMPUS_V21 = Path("evaluation/human-comparison-campus-v21.json")
 HUMAN_CAMPUS_V21_MANIFEST = Path("evaluation/campus-v21-rc-manifest.json")
 HUMAN_CAMPUS_V21_AUDIT = Path("evaluation/campus-v21-human-audit.json")
 HUMAN_CAMPUS_V21_KNOWN_ISSUES = Path("evaluation/campus-v21-rc-known-issues.json")
+HUMAN_CAMPUS_V21_RESULTS = Path("evaluation/campus-v21-human-results.json")
+HUMAN_CAMPUS_V21_REPORT = Path("evaluation/campus-v21-human-report.md")
 HUMAN_CAMPUS_V22 = Path("data/campus_v22/benchmarks/human-knowledge-100.jsonl")
+
+V21_HUMAN_AXES = ("correctness", "relevance", "actionable", "naturalness", "would_use_again")
+V21_HUMAN_THRESHOLDS = {"correctness": 4.2, "relevance": 4.2, "actionable": 4.2,
+                        "naturalness": 4.2, "would_use_again": 4.0}
+V21_AUTOMATED_CORRECTNESS_PERCENT = 99.2
+
+
+def _campus_v21_item_complete(row: dict) -> bool:
+    scores = row.get("scores", {})
+    return bool(row.get("issues_reviewed")) and all(scores.get(axis) is not None for axis in V21_HUMAN_AXES)
+
+
+def _pairwise_counts(rows: list[dict], competitor: str) -> dict:
+    counts = {"win": 0, "tie": 0, "loss": 0, "unscored": 0}
+    by_axis = {axis: dict(counts) for axis in ("correctness", "specificity", "actionability", "readability", "would_use")}
+    for row in rows:
+        values = row.get("pairwise", {}).get(competitor, {})
+        for axis in by_axis:
+            choice = values.get(axis, "unscored")
+            result = {"unipilot": "win", "competitor": "loss", "tie": "tie"}.get(choice, "unscored")
+            counts[result] += 1
+            by_axis[axis][result] += 1
+    return {**counts, "by_axis": by_axis}
+
+
+def _campus_v21_error_categories(rows: list[dict]) -> list[dict]:
+    mappings = {
+        "ROUTER": ("router_error",),
+        "RETRIEVAL": ("retrieval_error",),
+        "TOOL": ("tool_error",),
+        "MODEL": ("model_error",),
+        "KNOWLEDGE": ("factual_error", "university_policy_assertion", "faq_error"),
+        "UX": ("unnecessary_information", "unusable_answer", "too_long", "too_short"),
+        "OTHER": ("unanswered", "other_error"),
+    }
+    recommendations = {
+        "ROUTER": "Routerの誤分類例を優先して境界条件を見直す",
+        "RETRIEVAL": "検索失敗・誤取得例を優先して検索条件を見直す",
+        "TOOL": "Tool選択または計算結果の誤りを優先して直す",
+        "MODEL": "Model回答品質の失敗例を優先して評価・改善する",
+        "KNOWLEDGE": "事実誤りと大学固有制度の誤断定を優先して直す",
+        "UX": "冗長さ・不足・利用しづらさを優先して直す",
+        "OTHER": "その他の人手メモを確認して原因を再分類する",
+    }
+    result = []
+    for category, keys in mappings.items():
+        item_ids = [row.get("id") for row in rows if any(row.get("issue_flags", {}).get(key) for key in keys)]
+        result.append({"category": category, "count": len(item_ids), "item_ids": item_ids,
+                       "v2_2_recommendation": recommendations[category]})
+    return sorted(result, key=lambda value: (-value["count"], value["category"]))
+
+
+def build_campus_v21_human_summary(rows: list[dict]) -> dict:
+    total = len(rows)
+    completed_rows = [row for row in rows if _campus_v21_item_complete(row)]
+    completed = len(completed_rows)
+    averages = {
+        axis: (round(sum(row["scores"][axis] for row in completed_rows) / completed, 3) if completed else None)
+        for axis in V21_HUMAN_AXES
+    }
+    issue_count = lambda key: sum(bool(row.get("issue_flags", {}).get(key)) for row in completed_rows)
+    critical_errors = issue_count("critical_error")
+    university_assertions = issue_count("university_policy_assertion")
+    fully_complete = total == 100 and completed == 100
+    threshold_checks = {axis: fully_complete and averages[axis] >= threshold
+                        for axis, threshold in V21_HUMAN_THRESHOLDS.items()}
+    critical_rate = round(critical_errors / completed, 4) if completed else None
+    university_rate = round(university_assertions / completed, 4) if completed else None
+    rate_checks = {
+        "critical_error_rate": fully_complete and critical_rate <= .01,
+        "university_policy_assertion_rate": fully_complete and university_rate <= .01,
+    }
+    gate_status = "PASS" if fully_complete and all(threshold_checks.values()) and all(rate_checks.values()) else (
+        "FAIL" if fully_complete else "PENDING")
+    automated_comparison = None
+    if fully_complete:
+        human_percent = round(averages["correctness"] / 5 * 100, 2)
+        gap = round(V21_AUTOMATED_CORRECTNESS_PERCENT - human_percent, 2)
+        if gap >= 3:
+            analysis = "自動評価が人手評価を3ポイント以上上回り、過大評価している可能性があります。"
+        elif gap > 0:
+            analysis = "自動評価が人手評価をわずかに上回ります。誤回答例を確認してください。"
+        else:
+            analysis = "自動評価が人手評価を上回る傾向は確認されませんでした。"
+        automated_comparison = {"automated_correctness_percent": V21_AUTOMATED_CORRECTNESS_PERCENT,
+                                "human_correctness_percent": human_percent,
+                                "gap_percentage_points": gap, "analysis": analysis}
+    errors = _campus_v21_error_categories(completed_rows)
+    return {
+        "status": "COMPLETE" if fully_complete else "PENDING",
+        "completed": completed,
+        "pending": max(total - completed, 0),
+        "total": total,
+        "averages_0_to_5": averages,
+        "issue_counts": {
+            "critical_error": critical_errors,
+            "university_policy_assertion": university_assertions,
+            "router_error": issue_count("router_error"),
+            "retrieval_error": issue_count("retrieval_error"),
+            "tool_error": issue_count("tool_error"),
+            "model_error": issue_count("model_error"),
+        },
+        "pairwise": {"chatgpt": _pairwise_counts(completed_rows, "chatgpt"),
+                     "gemini": _pairwise_counts(completed_rows, "gemini")},
+        "human_gate": {"status": gate_status, "evaluated_only_when_complete": True,
+                       "thresholds": V21_HUMAN_THRESHOLDS, "threshold_checks": threshold_checks,
+                       "critical_error_rate": critical_rate, "university_policy_assertion_rate": university_rate,
+                       "rate_checks": rate_checks},
+        "automated_comparison": automated_comparison,
+        "error_categories": errors,
+        "v2_2_priorities": errors if fully_complete else [],
+    }
+
+
+def _campus_v21_export_paths(source_path: Path) -> tuple[Path, Path]:
+    if source_path.resolve() == HUMAN_CAMPUS_V21.resolve():
+        return HUMAN_CAMPUS_V21_RESULTS, HUMAN_CAMPUS_V21_REPORT
+    return (source_path.with_name("campus-v21-human-results.json"),
+            source_path.with_name("campus-v21-human-report.md"))
+
+
+def _atomic_write(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(content, encoding="utf-8")
+    temporary.replace(path)
+
+
+def export_campus_v21_human_results(rows: list[dict], source_path: Path = HUMAN_CAMPUS_V21) -> dict:
+    summary = build_campus_v21_human_summary(rows)
+    results_path, report_path = _campus_v21_export_paths(source_path)
+    payload = {"schema_version": "campus-v21-human-eval-v1", "generated_at": datetime.now(timezone.utc).isoformat(),
+               "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+               "answer_logic_changed": False, "production_changed": False, "external_ai_api": "OFF",
+               **summary, "items": rows}
+    _atomic_write(results_path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    averages = summary["averages_0_to_5"]
+    issues = summary["issue_counts"]
+    lines = ["# Campus v2.1 Human Evaluation Report", "", f"- Status: {summary['status']}",
+             f"- Human Gate: {summary['human_gate']['status']}",
+             f"- Progress: {summary['completed']} / {summary['total']}", f"- Pending: {summary['pending']}",
+             "- RC answer logic changed: NO", "- Production changed: NO", "- External AI API: OFF", "",
+             "## 5-axis averages (0-5)", ""]
+    lines.extend(f"- {axis}: {averages[axis] if averages[axis] is not None else 'N/A'}" for axis in V21_HUMAN_AXES)
+    lines.extend(["", "## Error counts", "", f"- Critical: {issues['critical_error']}",
+                  f"- University policy assertion: {issues['university_policy_assertion']}",
+                  f"- Router: {issues['router_error']}", f"- Retrieval: {issues['retrieval_error']}",
+                  f"- Tool: {issues['tool_error']}", f"- Model: {issues['model_error']}", "",
+                  "## Pairwise totals", ""])
+    for competitor in ("chatgpt", "gemini"):
+        counts = summary["pairwise"][competitor]
+        lines.append(f"- {competitor.title()}: W {counts['win']} / T {counts['tie']} / L {counts['loss']}")
+    if summary["automated_comparison"]:
+        comparison = summary["automated_comparison"]
+        lines.extend(["", "## Automated vs human correctness", "",
+                      f"- Automated: {comparison['automated_correctness_percent']}%",
+                      f"- Human: {comparison['human_correctness_percent']}%",
+                      f"- Gap: {comparison['gap_percentage_points']} percentage points",
+                      f"- Analysis: {comparison['analysis']}", "", "## Campus v2.2 priorities", ""])
+        lines.extend(f"- {item['category']}: {item['count']} — {item['v2_2_recommendation']}"
+                     for item in summary["v2_2_priorities"])
+    else:
+        lines.extend(["", "Automated correctness comparison and Campus v2.2 priorities are withheld until 100/100 completion."])
+    _atomic_write(report_path, "\n".join(lines) + "\n")
+    return {"results_path": str(results_path).replace("\\", "/"),
+            "report_path": str(report_path).replace("\\", "/"), "summary": summary}
 
 
 @app.get("/human-eval/campus")
@@ -370,12 +539,11 @@ def human_eval_campus_v21():
     if not HUMAN_CAMPUS_V21.exists():
         raise HTTPException(404, "Campus v2.1 human comparison file not found")
     rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8"))
-    completed = sum(row.get("scores", {}).get("correctness") is not None for row in rows)
+    summary = build_campus_v21_human_summary(rows)
     issues_reviewed = sum(bool(row.get("issues_reviewed")) for row in rows)
     manifest = json.loads(HUMAN_CAMPUS_V21_MANIFEST.read_text(encoding="utf-8")) if HUMAN_CAMPUS_V21_MANIFEST.exists() else None
     audit = json.loads(HUMAN_CAMPUS_V21_AUDIT.read_text(encoding="utf-8")) if HUMAN_CAMPUS_V21_AUDIT.exists() else None
-    return {"status": "COMPLETE" if completed == len(rows) and issues_reviewed == len(rows) else "PENDING",
-            "completed": completed, "issues_reviewed": issues_reviewed, "total": len(rows), "items": rows,
+    return {**summary, "issues_reviewed": issues_reviewed, "items": rows,
             "manifest": manifest, "audit": audit, "external_ai_api": "OFF"}
 
 
@@ -396,6 +564,7 @@ def human_eval_campus_v21_score(request: CampusV21HumanScoreRequest):
             row["issues_reviewed"] = request.issues_reviewed
             row["pairwise"] = request.pairwise.model_dump()
             row["ux"] = request.ux.model_dump()
+            row["other_issue"] = request.other_issue
             row["notes"] = request.notes
             row["evaluation_status"] = "SCORED_MANUALLY" if request.issues_reviewed else "PENDING_ISSUE_REVIEW"
             found = True
@@ -406,7 +575,18 @@ def human_eval_campus_v21_score(request: CampusV21HumanScoreRequest):
     temporary.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     temporary.replace(HUMAN_CAMPUS_V21)
     saved = next(row for row in rows if row["id"] == request.item_id)
-    return {"saved": True, "item_id": request.item_id, "scores": saved["scores"]}
+    exported = export_campus_v21_human_results(rows, HUMAN_CAMPUS_V21)
+    return {"saved": True, "item_id": request.item_id, "scores": saved["scores"],
+            "summary": exported["summary"], "exports": {"results_path": exported["results_path"],
+                                                            "report_path": exported["report_path"]}}
+
+
+@app.post("/human-eval/campus-v21/export")
+def human_eval_campus_v21_export():
+    if not HUMAN_CAMPUS_V21.exists():
+        raise HTTPException(404, "Campus v2.1 human comparison file not found")
+    rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8"))
+    return export_campus_v21_human_results(rows, HUMAN_CAMPUS_V21)
 
 
 @app.get("/human-eval/campus-v21/known-issues")
