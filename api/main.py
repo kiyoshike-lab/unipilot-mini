@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
 from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, CampusV21HumanScoreRequest,
+                         CampusV21QuickScoreRequest,
                          CampusV22HumanScoreRequest,
                          CampusV21KnownIssueReviewRequest, ChatRequest, GenerateRequest, HumanScoreRequest,
                          ModelLoadRequest)
@@ -294,6 +295,9 @@ HUMAN_CAMPUS_V21_AUDIT = Path("evaluation/campus-v21-human-audit.json")
 HUMAN_CAMPUS_V21_KNOWN_ISSUES = Path("evaluation/campus-v21-rc-known-issues.json")
 HUMAN_CAMPUS_V21_RESULTS = Path("evaluation/campus-v21-human-results.json")
 HUMAN_CAMPUS_V21_REPORT = Path("evaluation/campus-v21-human-report.md")
+HUMAN_CAMPUS_V21_QUICK_SELECTION = Path("evaluation/campus-v21-quick-selection.json")
+HUMAN_CAMPUS_V21_QUICK_RESULTS = Path("evaluation/campus-v21-quick-human-results.json")
+HUMAN_CAMPUS_V21_QUICK_REPORT = Path("evaluation/campus-v21-quick-human-report.md")
 HUMAN_CAMPUS_V22 = Path("data/campus_v22/benchmarks/human-knowledge-100.jsonl")
 
 V21_HUMAN_AXES = ("correctness", "relevance", "actionable", "naturalness", "would_use_again")
@@ -463,6 +467,86 @@ def export_campus_v21_human_results(rows: list[dict], source_path: Path = HUMAN_
             "report_path": str(report_path).replace("\\", "/"), "summary": summary}
 
 
+def build_campus_v21_quick_summary(items: list[dict]) -> dict:
+    ratings = [item.get("quick_rating") for item in items]
+    counts = {rating: ratings.count(rating) for rating in ("good", "close", "bad")}
+    completed = sum(counts.values())
+    total = len(items)
+    rates = {rating: (round(count / completed * 100, 2) if completed else 0.0)
+             for rating, count in counts.items()}
+    if total != 20 or completed != 20:
+        gate_status, gate_label = "PENDING", "評価中"
+    elif rates["good"] >= 80 and rates["bad"] <= 5:
+        gate_status, gate_label = "PASS_CANDIDATE", "PASS候補"
+    elif rates["good"] < 65 or rates["bad"] >= 10:
+        gate_status, gate_label = "FAIL", "FAIL"
+    else:
+        gate_status, gate_label = "NEEDS_IMPROVEMENT", "要改善"
+    return {"status": "COMPLETE" if total == completed == 20 else "PENDING",
+            "completed": completed, "pending": max(total - completed, 0), "total": total,
+            "counts": counts, "rates_percent": rates,
+            "quick_human_gate": {"status": gate_status, "label": gate_label, "is_simplified": True,
+                                 "rules": {"pass_candidate": "good >= 80% and bad <= 5%",
+                                           "needs_improvement": "good 65-79% unless FAIL condition applies",
+                                           "fail": "good < 65% or bad >= 10%"}}}
+
+
+def _campus_v21_quick_items() -> list[dict]:
+    if not HUMAN_CAMPUS_V21.exists() or not HUMAN_CAMPUS_V21_QUICK_SELECTION.exists():
+        raise HTTPException(404, "Campus v2.1 quick evaluation data not found")
+    source_rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8"))
+    source_by_id = {row["id"]: row for row in source_rows}
+    selection = json.loads(HUMAN_CAMPUS_V21_QUICK_SELECTION.read_text(encoding="utf-8"))["items"]
+    if len(selection) != 20 or len({entry["item_id"] for entry in selection}) != 20:
+        raise HTTPException(500, "Campus v2.1 quick selection must contain 20 unique items")
+    saved_by_id = {}
+    if HUMAN_CAMPUS_V21_QUICK_RESULTS.exists():
+        saved = json.loads(HUMAN_CAMPUS_V21_QUICK_RESULTS.read_text(encoding="utf-8"))
+        saved_by_id = {item["item_id"]: item for item in saved.get("items", [])}
+    items = []
+    for entry in selection:
+        item_id = entry["item_id"]
+        if item_id not in source_by_id:
+            raise HTTPException(500, f"quick evaluation item not found: {item_id}")
+        saved = saved_by_id.get(item_id, {})
+        items.append({**source_by_id[item_id], "focus": entry["focus"],
+                      "quick_rating": saved.get("rating"), "quick_reason": saved.get("reason"),
+                      "quick_scored_at": saved.get("scored_at")})
+    return items
+
+
+def export_campus_v21_quick_results(items: list[dict], results_path: Path = HUMAN_CAMPUS_V21_QUICK_RESULTS,
+                                    report_path: Path = HUMAN_CAMPUS_V21_QUICK_REPORT) -> dict:
+    summary = build_campus_v21_quick_summary(items)
+    result_items = [{"item_id": item["id"], "source_id": item.get("source_id"),
+                     "question": item["question"], "category": item["category"],
+                     "difficulty": item.get("difficulty"), "evaluation_bucket": item.get("evaluation_bucket"),
+                     "focus": item["focus"], "campus_answer": item["campus_answer"],
+                     "campus_metadata": item.get("campus_metadata", {}), "rating": item.get("quick_rating"),
+                     "reason": item.get("quick_reason"), "scored_at": item.get("quick_scored_at")}
+                    for item in items]
+    payload = {"schema_version": "campus-v21-quick-human-eval-v1",
+               "generated_at": datetime.now(timezone.utc).isoformat(),
+               "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+               "evaluation_type": "simplified_20_question_human_gate", "answer_logic_changed": False,
+               "production_changed": False, "external_ai_api": "OFF", **summary, "items": result_items}
+    _atomic_write(results_path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    counts, rates = summary["counts"], summary["rates_percent"]
+    lines = ["# Campus v2.1 Quick Human Evaluation", "", "This is a simplified Human Gate based on 20 fixed questions.", "",
+             f"- Status: {summary['status']}", f"- Progress: {summary['completed']} / {summary['total']}",
+             f"- Quick Human Gate: {summary['quick_human_gate']['label']}",
+             f"- ◎ Good: {counts['good']} ({rates['good']:.2f}%)",
+             f"- △ Close: {counts['close']} ({rates['close']:.2f}%)",
+             f"- × Bad: {counts['bad']} ({rates['bad']:.2f}%)", "",
+             "## Gate rules", "", "- PASS candidate: ◎ >= 80% and × <= 5%",
+             "- Needs improvement: ◎ 65-79% unless the FAIL condition applies",
+             "- FAIL: ◎ < 65% or × >= 10%", "", "- RC answer logic changed: NO",
+             "- Production changed: NO", "- External AI API: OFF"]
+    _atomic_write(report_path, "\n".join(lines) + "\n")
+    return {"results_path": str(results_path).replace("\\", "/"),
+            "report_path": str(report_path).replace("\\", "/"), "summary": summary}
+
+
 @app.get("/human-eval/campus")
 def human_eval_campus():
     if not HUMAN_CAMPUS.exists():
@@ -587,6 +671,39 @@ def human_eval_campus_v21_export():
         raise HTTPException(404, "Campus v2.1 human comparison file not found")
     rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8"))
     return export_campus_v21_human_results(rows, HUMAN_CAMPUS_V21)
+
+
+@app.get("/human-eval/campus-v21/quick")
+def human_eval_campus_v21_quick():
+    items = _campus_v21_quick_items()
+    return {**build_campus_v21_quick_summary(items), "items": items, "external_ai_api": "OFF"}
+
+
+@app.post("/human-eval/campus-v21/quick")
+def human_eval_campus_v21_quick_score(request: CampusV21QuickScoreRequest):
+    items = _campus_v21_quick_items()
+    found = False
+    for item in items:
+        if item["id"] == request.item_id:
+            item["quick_rating"] = request.rating
+            item["quick_reason"] = request.reason if request.rating == "bad" else None
+            item["quick_scored_at"] = datetime.now(timezone.utc).isoformat()
+            found = True
+            break
+    if not found:
+        raise HTTPException(404, "Campus v2.1 quick evaluation item not found")
+    exported = export_campus_v21_quick_results(items, HUMAN_CAMPUS_V21_QUICK_RESULTS,
+                                               HUMAN_CAMPUS_V21_QUICK_REPORT)
+    return {"saved": True, "item_id": request.item_id, "rating": request.rating,
+            "reason": request.reason if request.rating == "bad" else None,
+            "summary": exported["summary"]}
+
+
+@app.post("/human-eval/campus-v21/quick/export")
+def human_eval_campus_v21_quick_export():
+    items = _campus_v21_quick_items()
+    return export_campus_v21_quick_results(items, HUMAN_CAMPUS_V21_QUICK_RESULTS,
+                                           HUMAN_CAMPUS_V21_QUICK_REPORT)
 
 
 @app.get("/human-eval/campus-v21/known-issues")

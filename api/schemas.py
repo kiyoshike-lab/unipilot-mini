@@ -108,6 +108,12 @@ class CampusV21HumanScoreRequest(CampusV2HumanScoreRequest):
     other_issue: str = Field(default="", max_length=1000)
 
 
+class CampusV21QuickScoreRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=100)
+    rating: Literal["good", "close", "bad"]
+    reason: Literal["incorrect", "unanswered", "too_short", "unclear", "router", "other"] | None = None
+
+
 class CampusV22HumanScoreRequest(BaseModel):
     item_id: str = Field(min_length=1, max_length=150)
     correctness: int = Field(ge=0, le=5)
