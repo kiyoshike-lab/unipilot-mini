@@ -1,0 +1,27 @@
+{
+  "version": "unipilot-campus-v2",
+  "router_train": 2250,
+  "router_dev": 420,
+  "router_train_compound": 500,
+  "faq_reviewed": 1000,
+  "blind": 2000,
+  "blind_distribution": {
+    "colloquial": 500,
+    "normal": 500,
+    "ambiguous": 300,
+    "compound": 400,
+    "hard_negation_typo": 300
+  },
+  "adversarial": 300,
+  "human": 100,
+  "human_distribution": {
+    "Easy": 25,
+    "Medium": 25,
+    "Hard": 25,
+    "Compound": 25
+  },
+  "train_blind_normalized_overlap": 0,
+  "blind_sha256": "c599d8a3af026d24ddf075d62070fdbf2d405e0872a0c680e49248788bb7e996",
+  "selection_policy": "method and thresholds are selected on router/dev.json; blind is run once after freeze",
+  "external_ai_api": "OFF"
+}

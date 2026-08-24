@@ -1,0 +1,514 @@
+{
+  "split": "adversarial",
+  "train": 2250,
+  "selection_policy": "highest dev accuracy with P95 below 20ms; ties prefer multi-intent/action-capable hierarchical hybrid",
+  "selected": "hierarchical_hybrid (frozen on dev)",
+  "results": [
+    {
+      "method": "hierarchical_hybrid",
+      "split": "adversarial",
+      "questions": 300,
+      "accuracy": 0.77,
+      "action_accuracy": 0.67,
+      "multi_intent_recall": 0.77,
+      "fit_seconds": 1.9809054000002106,
+      "mean_latency_ms": 1.6700296666605634,
+      "p95_latency_ms": 1.8468000000666507,
+      "p99_latency_ms": 2.1943999997802166,
+      "rss_before_mb": null,
+      "rss_after_fit_mb": null,
+      "rss_delta_mb": null,
+      "confidence_bands": {
+        "high": 181,
+        "low": 88,
+        "medium": 31
+      },
+      "sample_failures": [
+        {
+          "id": "campus-v2-adversarial-0001",
+          "question": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+          "expected": "exam",
+          "predicted": "lateness_email",
+          "confidence": 0.573812
+        },
+        {
+          "id": "campus-v2-adversarial-0002",
+          "question": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+          "expected": "scholarship",
+          "predicted": "report_outline",
+          "confidence": 0.555258
+        },
+        {
+          "id": "campus-v2-adversarial-0005",
+          "question": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+          "expected": "tuition",
+          "predicted": "gpa",
+          "confidence": 0.504744
+        },
+        {
+          "id": "campus-v2-adversarial-0006",
+          "question": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+          "expected": "study_plan",
+          "predicted": "late_submission_email",
+          "confidence": 0.588865
+        },
+        {
+          "id": "campus-v2-adversarial-0010",
+          "question": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+          "expected": "gpa",
+          "predicted": "grade_simulator",
+          "confidence": 0.922906
+        },
+        {
+          "id": "campus-v2-adversarial-0021",
+          "question": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+          "expected": "presentation_outline",
+          "predicted": "study_plan",
+          "confidence": 0.504155
+        },
+        {
+          "id": "campus-v2-adversarial-0026",
+          "question": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+          "expected": "statistics",
+          "predicted": "assignment_priority",
+          "confidence": 0.546585
+        },
+        {
+          "id": "campus-v2-adversarial-0029",
+          "question": "グループ課題で困ったじゃない。聞きたいのは公欠になる条件。誤解しないで",
+          "expected": "university_policy",
+          "predicted": "assignment",
+          "confidence": 0.594541
+        },
+        {
+          "id": "campus-v2-adversarial-0030",
+          "question": "当日の欠席連絡は不要で試験日までの英語学習。誤解しないで",
+          "expected": "toeic_plan",
+          "predicted": "absence_email",
+          "confidence": 0.881131
+        },
+        {
+          "id": "campus-v2-adversarial-0033",
+          "question": "課題でAIを使ってよいかじゃない。聞きたいのは初めてのインターン応募。誤解しないで",
+          "expected": "internship",
+          "predicted": "ai_usage",
+          "confidence": 0.530775
+        },
+        {
+          "id": "campus-v2-adversarial-0041",
+          "question": "直接引用と要約の違いじゃない。聞きたいのはあと何単位か計算したい。誤解しないで",
+          "expected": "credit",
+          "predicted": "citation_check",
+          "confidence": 0.574332
+        },
+        {
+          "id": "campus-v2-adversarial-0046",
+          "question": "プレゼンを短くまとめるは不要で今月の課題期限。誤解しないで",
+          "expected": "deadline_organizer",
+          "predicted": "presentation_outline",
+          "confidence": 0.519563
+        },
+        {
+          "id": "campus-v2-adversarial-0050",
+          "question": "一日の予定を組みたいは不要で欠席が増えて不安。誤解しないで",
+          "expected": "attendance",
+          "predicted": "schedule",
+          "confidence": 0.559911
+        },
+        {
+          "id": "campus-v2-adversarial-0065",
+          "question": "複数の締切をまとめるじゃない。聞きたいのは締切後の対応を尋ねるメール。誤解しないで",
+          "expected": "late_submission_email",
+          "predicted": "deadline_organizer",
+          "confidence": 0.835288
+        },
+        {
+          "id": "campus-v2-adversarial-0069",
+          "question": "ゼミへの遅刻メールじゃない。聞きたいのは追試の確認先。誤解しないで",
+          "expected": "exam",
+          "predicted": "lateness_email",
+          "confidence": 0.939995
+        },
+        {
+          "id": "campus-v2-adversarial-0070",
+          "question": "レポート構成を見直すは不要で奨学金申請の準備。誤解しないで",
+          "expected": "scholarship",
+          "predicted": "report_outline",
+          "confidence": 0.929491
+        },
+        {
+          "id": "campus-v2-adversarial-0073",
+          "question": "目標GPAに必要な成績じゃない。聞きたいのは納付書をなくした。誤解しないで",
+          "expected": "tuition",
+          "predicted": "gpa",
+          "confidence": 0.538326
+        },
+        {
+          "id": "campus-v2-adversarial-0078",
+          "question": "合格ラインのシミュレーションは不要で成績平均を上げたい。誤解しないで",
+          "expected": "gpa",
+          "predicted": "grade_simulator",
+          "confidence": 0.565241
+        },
+        {
+          "id": "campus-v2-adversarial-0089",
+          "question": "テスト勉強を始めたいじゃない。聞きたいのはプレゼンを短くまとめる。誤解しないで",
+          "expected": "presentation_outline",
+          "predicted": "study_plan",
+          "confidence": 0.512303
+        },
+        {
+          "id": "campus-v2-adversarial-0093",
+          "question": "先生にアポを取りたいじゃない。聞きたいのは先生へ休むと伝えたい。誤解しないで",
+          "expected": "absence_email",
+          "predicted": "professor_email",
+          "confidence": 0.531141
+        },
+        {
+          "id": "campus-v2-adversarial-0094",
+          "question": "課題の緊急度を決めたいは不要で統計検定の考え方。誤解しないで",
+          "expected": "statistics",
+          "predicted": "assignment_priority",
+          "confidence": 0.583255
+        },
+        {
+          "id": "campus-v2-adversarial-0097",
+          "question": "宿題が終わらないじゃない。聞きたいのは大学固有ルールを確認。誤解しないで",
+          "expected": "university_policy",
+          "predicted": "assignment",
+          "confidence": 0.534836
+        },
+        {
+          "id": "campus-v2-adversarial-0101",
+          "question": "AIに個人情報を入れないじゃない。聞きたいのはインターン面接準備。誤解しないで",
+          "expected": "internship",
+          "predicted": "ai_usage",
+          "confidence": 0.562472
+        },
+        {
+          "id": "campus-v2-adversarial-0102",
+          "question": "あと何単位か計算したいは不要で時間割を決めたい。誤解しないで",
+          "expected": "registration",
+          "predicted": "credit",
+          "confidence": 0.563307
+        },
+        {
+          "id": "campus-v2-adversarial-0106",
+          "question": "数式の途中式を確認は不要で課題の指示が分からない。誤解しないで",
+          "expected": "assignment",
+          "predicted": "math",
+          "confidence": 0.537674
+        },
+        {
+          "id": "campus-v2-adversarial-0109",
+          "question": "孫引きを避けたいじゃない。聞きたいのは取得単位の進捗。誤解しないで",
+          "expected": "credit",
+          "predicted": "citation_check",
+          "confidence": 0.592743
+        },
+        {
+          "id": "campus-v2-adversarial-0110",
+          "question": "納付書をなくしたは不要で給与明細の確認。誤解しないで",
+          "expected": "part_time_job",
+          "predicted": "tuition",
+          "confidence": 0.53757
+        },
+        {
+          "id": "campus-v2-adversarial-0118",
+          "question": "週の時間割を見直すは不要で授業を休んだ後の対応。誤解しないで",
+          "expected": "attendance",
+          "predicted": "schedule",
+          "confidence": 0.557048
+        },
+        {
+          "id": "campus-v2-adversarial-0126",
+          "question": "テスト直前の優先事項は不要で面接日程をまとめる。誤解しないで",
+          "expected": "career_schedule",
+          "predicted": "exam",
+          "confidence": 0.525081
+        },
+        {
+          "id": "campus-v2-adversarial-0129",
+          "question": "毎日一時間のTOEICじゃない。聞きたいのはエントリーシートの骨組み。誤解しないで",
+          "expected": "es_outline",
+          "predicted": "toeic_plan",
+          "confidence": 0.898929
+        },
+        {
+          "id": "campus-v2-adversarial-0134",
+          "question": "初めてのインターン応募は不要で公式案内の場所。誤解しないで",
+          "expected": "faq_search",
+          "predicted": "internship",
+          "confidence": 0.565371
+        },
+        {
+          "id": "campus-v2-adversarial-0137",
+          "question": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+          "expected": "exam",
+          "predicted": "lateness_email",
+          "confidence": 0.573812
+        },
+        {
+          "id": "campus-v2-adversarial-0138",
+          "question": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+          "expected": "scholarship",
+          "predicted": "report_outline",
+          "confidence": 0.555258
+        },
+        {
+          "id": "campus-v2-adversarial-0141",
+          "question": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+          "expected": "tuition",
+          "predicted": "gpa",
+          "confidence": 0.504744
+        },
+        {
+          "id": "campus-v2-adversarial-0142",
+          "question": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+          "expected": "study_plan",
+          "predicted": "late_submission_email",
+          "confidence": 0.588865
+        },
+        {
+          "id": "campus-v2-adversarial-0146",
+          "question": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+          "expected": "gpa",
+          "predicted": "grade_simulator",
+          "confidence": 0.922906
+        },
+        {
+          "id": "campus-v2-adversarial-0157",
+          "question": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+          "expected": "presentation_outline",
+          "predicted": "study_plan",
+          "confidence": 0.504155
+        },
+        {
+          "id": "campus-v2-adversarial-0162",
+          "question": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+          "expected": "statistics",
+          "predicted": "assignment_priority",
+          "confidence": 0.546585
+        },
+        {
+          "id": "campus-v2-adversarial-0165",
+          "question": "グループ課題で困ったじゃない。聞きたいのは公欠になる条件。誤解しないで",
+          "expected": "university_policy",
+          "predicted": "assignment",
+          "confidence": 0.594541
+        },
+        {
+          "id": "campus-v2-adversarial-0166",
+          "question": "当日の欠席連絡は不要で試験日までの英語学習。誤解しないで",
+          "expected": "toeic_plan",
+          "predicted": "absence_email",
+          "confidence": 0.881131
+        },
+        {
+          "id": "campus-v2-adversarial-0169",
+          "question": "課題でAIを使ってよいかじゃない。聞きたいのは初めてのインターン応募。誤解しないで",
+          "expected": "internship",
+          "predicted": "ai_usage",
+          "confidence": 0.530775
+        },
+        {
+          "id": "campus-v2-adversarial-0177",
+          "question": "直接引用と要約の違いじゃない。聞きたいのはあと何単位か計算したい。誤解しないで",
+          "expected": "credit",
+          "predicted": "citation_check",
+          "confidence": 0.574332
+        },
+        {
+          "id": "campus-v2-adversarial-0182",
+          "question": "プレゼンを短くまとめるは不要で今月の課題期限。誤解しないで",
+          "expected": "deadline_organizer",
+          "predicted": "presentation_outline",
+          "confidence": 0.519563
+        },
+        {
+          "id": "campus-v2-adversarial-0186",
+          "question": "一日の予定を組みたいは不要で欠席が増えて不安。誤解しないで",
+          "expected": "attendance",
+          "predicted": "schedule",
+          "confidence": 0.559911
+        },
+        {
+          "id": "campus-v2-adversarial-0201",
+          "question": "複数の締切をまとめるじゃない。聞きたいのは締切後の対応を尋ねるメール。誤解しないで",
+          "expected": "late_submission_email",
+          "predicted": "deadline_organizer",
+          "confidence": 0.835288
+        },
+        {
+          "id": "campus-v2-adversarial-0205",
+          "question": "ゼミへの遅刻メールじゃない。聞きたいのは追試の確認先。誤解しないで",
+          "expected": "exam",
+          "predicted": "lateness_email",
+          "confidence": 0.939995
+        },
+        {
+          "id": "campus-v2-adversarial-0206",
+          "question": "レポート構成を見直すは不要で奨学金申請の準備。誤解しないで",
+          "expected": "scholarship",
+          "predicted": "report_outline",
+          "confidence": 0.929491
+        },
+        {
+          "id": "campus-v2-adversarial-0209",
+          "question": "目標GPAに必要な成績じゃない。聞きたいのは納付書をなくした。誤解しないで",
+          "expected": "tuition",
+          "predicted": "gpa",
+          "confidence": 0.538326
+        },
+        {
+          "id": "campus-v2-adversarial-0214",
+          "question": "合格ラインのシミュレーションは不要で成績平均を上げたい。誤解しないで",
+          "expected": "gpa",
+          "predicted": "grade_simulator",
+          "confidence": 0.565241
+        },
+        {
+          "id": "campus-v2-adversarial-0225",
+          "question": "テスト勉強を始めたいじゃない。聞きたいのはプレゼンを短くまとめる。誤解しないで",
+          "expected": "presentation_outline",
+          "predicted": "study_plan",
+          "confidence": 0.512303
+        },
+        {
+          "id": "campus-v2-adversarial-0229",
+          "question": "先生にアポを取りたいじゃない。聞きたいのは先生へ休むと伝えたい。誤解しないで",
+          "expected": "absence_email",
+          "predicted": "professor_email",
+          "confidence": 0.531141
+        },
+        {
+          "id": "campus-v2-adversarial-0230",
+          "question": "課題の緊急度を決めたいは不要で統計検定の考え方。誤解しないで",
+          "expected": "statistics",
+          "predicted": "assignment_priority",
+          "confidence": 0.583255
+        },
+        {
+          "id": "campus-v2-adversarial-0233",
+          "question": "宿題が終わらないじゃない。聞きたいのは大学固有ルールを確認。誤解しないで",
+          "expected": "university_policy",
+          "predicted": "assignment",
+          "confidence": 0.534836
+        },
+        {
+          "id": "campus-v2-adversarial-0237",
+          "question": "AIに個人情報を入れないじゃない。聞きたいのはインターン面接準備。誤解しないで",
+          "expected": "internship",
+          "predicted": "ai_usage",
+          "confidence": 0.562472
+        },
+        {
+          "id": "campus-v2-adversarial-0238",
+          "question": "あと何単位か計算したいは不要で時間割を決めたい。誤解しないで",
+          "expected": "registration",
+          "predicted": "credit",
+          "confidence": 0.563307
+        },
+        {
+          "id": "campus-v2-adversarial-0242",
+          "question": "数式の途中式を確認は不要で課題の指示が分からない。誤解しないで",
+          "expected": "assignment",
+          "predicted": "math",
+          "confidence": 0.537674
+        },
+        {
+          "id": "campus-v2-adversarial-0245",
+          "question": "孫引きを避けたいじゃない。聞きたいのは取得単位の進捗。誤解しないで",
+          "expected": "credit",
+          "predicted": "citation_check",
+          "confidence": 0.592743
+        },
+        {
+          "id": "campus-v2-adversarial-0246",
+          "question": "納付書をなくしたは不要で給与明細の確認。誤解しないで",
+          "expected": "part_time_job",
+          "predicted": "tuition",
+          "confidence": 0.53757
+        },
+        {
+          "id": "campus-v2-adversarial-0254",
+          "question": "週の時間割を見直すは不要で授業を休んだ後の対応。誤解しないで",
+          "expected": "attendance",
+          "predicted": "schedule",
+          "confidence": 0.557048
+        },
+        {
+          "id": "campus-v2-adversarial-0262",
+          "question": "テスト直前の優先事項は不要で面接日程をまとめる。誤解しないで",
+          "expected": "career_schedule",
+          "predicted": "exam",
+          "confidence": 0.525081
+        },
+        {
+          "id": "campus-v2-adversarial-0265",
+          "question": "毎日一時間のTOEICじゃない。聞きたいのはエントリーシートの骨組み。誤解しないで",
+          "expected": "es_outline",
+          "predicted": "toeic_plan",
+          "confidence": 0.898929
+        },
+        {
+          "id": "campus-v2-adversarial-0270",
+          "question": "初めてのインターン応募は不要で公式案内の場所。誤解しないで",
+          "expected": "faq_search",
+          "predicted": "internship",
+          "confidence": 0.565371
+        },
+        {
+          "id": "campus-v2-adversarial-0273",
+          "question": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+          "expected": "exam",
+          "predicted": "lateness_email",
+          "confidence": 0.573812
+        },
+        {
+          "id": "campus-v2-adversarial-0274",
+          "question": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+          "expected": "scholarship",
+          "predicted": "report_outline",
+          "confidence": 0.555258
+        },
+        {
+          "id": "campus-v2-adversarial-0277",
+          "question": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+          "expected": "tuition",
+          "predicted": "gpa",
+          "confidence": 0.504744
+        },
+        {
+          "id": "campus-v2-adversarial-0278",
+          "question": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+          "expected": "study_plan",
+          "predicted": "late_submission_email",
+          "confidence": 0.588865
+        },
+        {
+          "id": "campus-v2-adversarial-0282",
+          "question": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+          "expected": "gpa",
+          "predicted": "grade_simulator",
+          "confidence": 0.922906
+        },
+        {
+          "id": "campus-v2-adversarial-0293",
+          "question": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+          "expected": "presentation_outline",
+          "predicted": "study_plan",
+          "confidence": 0.504155
+        },
+        {
+          "id": "campus-v2-adversarial-0298",
+          "question": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+          "expected": "statistics",
+          "predicted": "assignment_priority",
+          "confidence": 0.546585
+        }
+      ]
+    }
+  ],
+  "external_ai_api": "OFF"
+}

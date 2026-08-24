@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "campus-v2-adversarial-0000",
+    "prompt": "卒業までの単位を整理したいではなく履修上限を確認。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0001",
+    "prompt": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0002",
+    "prompt": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0003",
+    "prompt": "奨学金申請の準備の相談ではない。代わりに空きコマの使い方。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0004",
+    "prompt": "極限の勉強法ではなく宿題が終わらない。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0005",
+    "prompt": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0006",
+    "prompt": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0007",
+    "prompt": "引用の書き方の相談ではない。代わりに単位認定の確認。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0008",
+    "prompt": "学費の分納を相談ではなく学業時間を確保。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0009",
+    "prompt": "確率分布の違いじゃない。聞きたいのは課題の緊急度を決めたい。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0010",
+    "prompt": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0011",
+    "prompt": "時間割を決めたいの相談ではない。代わりに大学生活に慣れない。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0012",
+    "prompt": "研究発表のアウトラインではなく複数の締切をまとめる。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0013",
+    "prompt": "学業時間を確保じゃない。聞きたいのは残り評価で挽回できるか。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0014",
+    "prompt": "大学固有ルールを確認は不要でハラスメントの相談先。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0015",
+    "prompt": "欠席が増えて不安の相談ではない。代わりに卒論アウトライン。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0016",
+    "prompt": "空きコマの使い方ではなく体調不良で出席できない。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0017",
+    "prompt": "企業説明会の予定じゃない。聞きたいのはプログラミング学習の順番。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0018",
+    "prompt": "研究室の選び方は不要で引用の書き方。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0019",
+    "prompt": "公式案内の場所の相談ではない。代わりに寝坊したときの対応。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0020",
+    "prompt": "教室移動で遅れそうではなく課題でAIを使ってよいか。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0021",
+    "prompt": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0022",
+    "prompt": "エントリーシートの骨組みは不要で返信へのお礼メール。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0023",
+    "prompt": "大学で友達ができないの相談ではない。代わりに極限の勉強法。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0024",
+    "prompt": "試験範囲が広すぎるではなく学業優先で就活計画。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0025",
+    "prompt": "教員へ相談を伝えるじゃない。聞きたいのは当日の欠席連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0026",
+    "prompt": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0027",
+    "prompt": "試験日までの英語学習の相談ではない。代わりに自己PRの組み立て。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0028",
+    "prompt": "テストコードを書くではなく先生に遅れると伝えたい。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0029",
+    "prompt": "グループ課題で困ったじゃない。聞きたいのは公欠になる条件。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0030",
+    "prompt": "当日の欠席連絡は不要で試験日までの英語学習。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0031",
+    "prompt": "締切を一覧にしたいの相談ではない。代わりに課題の延長をお願いする文面。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0032",
+    "prompt": "応募前に確認することではなくどの窓口か確認。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0033",
+    "prompt": "課題でAIを使ってよいかじゃない。聞きたいのは初めてのインターン応募。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0034",
+    "prompt": "取得単位の進捗は不要で履修登録の組み方。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0035",
+    "prompt": "寝坊した遅刻連絡の相談ではない。代わりに試験範囲が広すぎる。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0036",
+    "prompt": "卒論アウトラインではなく貸与型の返還。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0037",
+    "prompt": "継続手続きの確認じゃない。聞きたいのは一日の予定を組みたい。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0038",
+    "prompt": "証明問題の読み方は不要で課題の要件を整理したい。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0039",
+    "prompt": "GPAの意味の相談ではない。代わりに延納手続きの確認。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0040",
+    "prompt": "締切を過ぎたお詫びではなく一か月の学習計画。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0041",
+    "prompt": "直接引用と要約の違いじゃない。聞きたいのはあと何単位か計算したい。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0042",
+    "prompt": "授業料減免を調べるは不要でバイトと授業の両立。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0043",
+    "prompt": "統計検定の考え方の相談ではない。代わりに締切と所要時間で並べたい。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0044",
+    "prompt": "再試験で必要な点ではなく目標GPAに必要な成績。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0045",
+    "prompt": "履修上限を確認じゃない。聞きたいのは研究室の選び方。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0046",
+    "prompt": "プレゼンを短くまとめるは不要で今月の課題期限。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0047",
+    "prompt": "バイトと授業の両立の相談ではない。代わりに再試験で必要な点。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0048",
+    "prompt": "欠席何回で不可かではなく断り方を考えたい。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0049",
+    "prompt": "出席率を確認したいじゃない。聞きたいのはレポート構成を見直す。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0050",
+    "prompt": "一日の予定を組みたいは不要で欠席が増えて不安。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0051",
+    "prompt": "面接日程をまとめるの相談ではない。代わりにコードをデバッグしたい。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0052",
+    "prompt": "学内施設の探し方ではなく直接引用と要約の違い。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0053",
+    "prompt": "どの窓口か確認じゃない。聞きたいのは遅延証明の出し方。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0054",
+    "prompt": "遅刻後にまずすることは不要で生成AIと引用。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0055",
+    "prompt": "試験まで7日の勉強計画の相談ではない。代わりに研究発表のアウトライン。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0056",
+    "prompt": "自己PRの組み立てではなく先生にアポを取りたい。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0057",
+    "prompt": "先輩との関係じゃない。聞きたいのは証明問題の読み方。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0058",
+    "prompt": "追試の確認先は不要で就活日程を整理。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0059",
+    "prompt": "返信へのお礼メールの相談ではない。代わりに体調不良で休む連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0060",
+    "prompt": "明日締切の課題を整理ではなく確率分布の違い。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0061",
+    "prompt": "単語と読解の時間配分じゃない。聞きたいのは学生時代の経験を書く。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0062",
+    "prompt": "プログラミング学習の順番は不要で寝坊した遅刻連絡。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0063",
+    "prompt": "課題の指示が分からないの相談ではない。代わりに再提出できるか。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0064",
+    "prompt": "体調不良で休む連絡ではなく単語と読解の時間配分。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0065",
+    "prompt": "複数の締切をまとめるじゃない。聞きたいのは締切後の対応を尋ねるメール。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0066",
+    "prompt": "インターン面接準備は不要でFAQから確認したい。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0067",
+    "prompt": "生成AIと引用の相談ではない。代わりに応募前に確認すること。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0068",
+    "prompt": "単位認定の確認ではなく抽選科目に外れた。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0069",
+    "prompt": "ゼミへの遅刻メールじゃない。聞きたいのは追試の確認先。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0070",
+    "prompt": "レポート構成を見直すは不要で奨学金申請の準備。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0071",
+    "prompt": "奨学金の種類の相談ではない。代わりに勉強時間を確保したい。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0072",
+    "prompt": "積分問題の復習ではなくグループ課題で困った。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0073",
+    "prompt": "目標GPAに必要な成績じゃない。聞きたいのは納付書をなくした。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0074",
+    "prompt": "レポートが間に合わない連絡は不要で試験まで7日の勉強計画。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0075",
+    "prompt": "コピペにならないか確認の相談ではない。代わりに卒業までの単位を整理したい。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0076",
+    "prompt": "延納手続きの確認ではなく試験前の勤務調整。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0077",
+    "prompt": "仮説検定の手順じゃない。聞きたいのは課題が多くて選べない。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0078",
+    "prompt": "合格ラインのシミュレーションは不要で成績平均を上げたい。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0079",
+    "prompt": "履修登録の組み方の相談ではない。代わりに学内施設の探し方。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0080",
+    "prompt": "10分プレゼンの時間配分ではなく提出日を管理したい。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0081",
+    "prompt": "試験前の勤務調整じゃない。聞きたいのは合格ラインのシミュレーション。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0082",
+    "prompt": "公欠になる条件は不要で大学で友達ができない。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0083",
+    "prompt": "授業を休んだ後の対応の相談ではない。代わりに2000字レポートの構成。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0084",
+    "prompt": "勉強時間を確保したいではなく出席率を確認したい。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0085",
+    "prompt": "学業優先で就活計画じゃない。聞きたいのは例外メッセージの読み方。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0086",
+    "prompt": "学生生活を整えたいは不要でコピペにならないか確認。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0087",
+    "prompt": "FAQから確認したいの相談ではない。代わりに教室移動で遅れそう。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0088",
+    "prompt": "寝坊したときの対応ではなくAIに個人情報を入れない。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0089",
+    "prompt": "テスト勉強を始めたいじゃない。聞きたいのはプレゼンを短くまとめる。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0090",
+    "prompt": "学生時代の経験を書くは不要で教授へ面談依頼メール。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0091",
+    "prompt": "ハラスメントの相談先の相談ではない。代わりに積分問題の復習。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0092",
+    "prompt": "暗記科目の復習ではなく企業説明会の予定。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0093",
+    "prompt": "先生にアポを取りたいじゃない。聞きたいのは先生へ休むと伝えたい。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0094",
+    "prompt": "課題の緊急度を決めたいは不要で統計検定の考え方。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0095",
+    "prompt": "TOEIC一か月計画の相談ではない。代わりに具体的な行動を整理。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0096",
+    "prompt": "コードをデバッグしたいではなくゼミへの遅刻メール。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0097",
+    "prompt": "宿題が終わらないじゃない。聞きたいのは大学固有ルールを確認。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0098",
+    "prompt": "先生へ休むと伝えたいは不要でTOEIC一か月計画。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0099",
+    "prompt": "今月の課題期限の相談ではない。代わりに締切を過ぎたお詫び。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0100",
+    "prompt": "募集要項を読みたいではなく手続きの確認先。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0101",
+    "prompt": "AIに個人情報を入れないじゃない。聞きたいのはインターン面接準備。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0102",
+    "prompt": "あと何単位か計算したいは不要で時間割を決めたい。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0103",
+    "prompt": "遅刻メールを作りたいの相談ではない。代わりに暗記科目の復習。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0104",
+    "prompt": "2000字レポートの構成ではなく継続手続きの確認。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0105",
+    "prompt": "貸与型の返還じゃない。聞きたいのは週の時間割を見直す。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0106",
+    "prompt": "数式の途中式を確認は不要で課題の指示が分からない。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0107",
+    "prompt": "成績平均を上げたいの相談ではない。代わりに学費の分納を相談。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0108",
+    "prompt": "課題の延長をお願いする文面ではなくテスト勉強を始めたい。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0109",
+    "prompt": "孫引きを避けたいじゃない。聞きたいのは取得単位の進捗。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0110",
+    "prompt": "納付書をなくしたは不要で給与明細の確認。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0111",
+    "prompt": "標準偏差の意味の相談ではない。代わりに明日締切の課題を整理。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0112",
+    "prompt": "現在40点で残り30パーセントではなく累積GPAを出したい。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0113",
+    "prompt": "抽選科目に外れたじゃない。聞きたいのは学生生活を整えたい。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0114",
+    "prompt": "導入と結論の作り方は不要で締切を一覧にしたい。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0115",
+    "prompt": "給与明細の確認の相談ではない。代わりに現在40点で残り30パーセント。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0116",
+    "prompt": "再提出できるかではなく先輩との関係。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0117",
+    "prompt": "体調不良で出席できないじゃない。聞きたいのは論点から構成を作る。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0118",
+    "prompt": "週の時間割を見直すは不要で授業を休んだ後の対応。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0119",
+    "prompt": "就活日程を整理の相談ではない。代わりにテストコードを書く。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0120",
+    "prompt": "大学生活に慣れないではなく孫引きを避けたい。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0121",
+    "prompt": "手続きの確認先じゃない。聞きたいのは遅刻後にまずすること。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0122",
+    "prompt": "遅延証明の出し方は不要で生成AIの授業利用。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0123",
+    "prompt": "三日で試験対策の相談ではない。代わりに10分プレゼンの時間配分。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0124",
+    "prompt": "具体的な行動を整理ではなく教員へ相談を伝える。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0125",
+    "prompt": "断り方を考えたいじゃない。聞きたいのは数式の途中式を確認。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0126",
+    "prompt": "テスト直前の優先事項は不要で面接日程をまとめる。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0127",
+    "prompt": "教授へ面談依頼メールの相談ではない。代わりに病院に行くので欠席連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0128",
+    "prompt": "締切と所要時間で並べたいではなく仮説検定の手順。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0129",
+    "prompt": "毎日一時間のTOEICじゃない。聞きたいのはエントリーシートの骨組み。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0130",
+    "prompt": "例外メッセージの読み方は不要で遅刻メールを作りたい。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0131",
+    "prompt": "課題の要件を整理したいの相談ではない。代わりに欠席何回で不可か。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0132",
+    "prompt": "病院に行くので欠席連絡ではなく毎日一時間のTOEIC。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0133",
+    "prompt": "提出日を管理したいじゃない。聞きたいのはレポートが間に合わない連絡。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0134",
+    "prompt": "初めてのインターン応募は不要で公式案内の場所。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0135",
+    "prompt": "生成AIの授業利用の相談ではない。代わりに募集要項を読みたい。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0136",
+    "prompt": "卒業までの単位を整理したいではなく履修上限を確認。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0137",
+    "prompt": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0138",
+    "prompt": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0139",
+    "prompt": "奨学金申請の準備の相談ではない。代わりに空きコマの使い方。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0140",
+    "prompt": "極限の勉強法ではなく宿題が終わらない。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0141",
+    "prompt": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0142",
+    "prompt": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0143",
+    "prompt": "引用の書き方の相談ではない。代わりに単位認定の確認。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0144",
+    "prompt": "学費の分納を相談ではなく学業時間を確保。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0145",
+    "prompt": "確率分布の違いじゃない。聞きたいのは課題の緊急度を決めたい。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0146",
+    "prompt": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0147",
+    "prompt": "時間割を決めたいの相談ではない。代わりに大学生活に慣れない。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0148",
+    "prompt": "研究発表のアウトラインではなく複数の締切をまとめる。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0149",
+    "prompt": "学業時間を確保じゃない。聞きたいのは残り評価で挽回できるか。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0150",
+    "prompt": "大学固有ルールを確認は不要でハラスメントの相談先。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0151",
+    "prompt": "欠席が増えて不安の相談ではない。代わりに卒論アウトライン。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0152",
+    "prompt": "空きコマの使い方ではなく体調不良で出席できない。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0153",
+    "prompt": "企業説明会の予定じゃない。聞きたいのはプログラミング学習の順番。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0154",
+    "prompt": "研究室の選び方は不要で引用の書き方。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0155",
+    "prompt": "公式案内の場所の相談ではない。代わりに寝坊したときの対応。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0156",
+    "prompt": "教室移動で遅れそうではなく課題でAIを使ってよいか。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0157",
+    "prompt": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0158",
+    "prompt": "エントリーシートの骨組みは不要で返信へのお礼メール。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0159",
+    "prompt": "大学で友達ができないの相談ではない。代わりに極限の勉強法。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0160",
+    "prompt": "試験範囲が広すぎるではなく学業優先で就活計画。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0161",
+    "prompt": "教員へ相談を伝えるじゃない。聞きたいのは当日の欠席連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0162",
+    "prompt": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0163",
+    "prompt": "試験日までの英語学習の相談ではない。代わりに自己PRの組み立て。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0164",
+    "prompt": "テストコードを書くではなく先生に遅れると伝えたい。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0165",
+    "prompt": "グループ課題で困ったじゃない。聞きたいのは公欠になる条件。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0166",
+    "prompt": "当日の欠席連絡は不要で試験日までの英語学習。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0167",
+    "prompt": "締切を一覧にしたいの相談ではない。代わりに課題の延長をお願いする文面。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0168",
+    "prompt": "応募前に確認することではなくどの窓口か確認。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0169",
+    "prompt": "課題でAIを使ってよいかじゃない。聞きたいのは初めてのインターン応募。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0170",
+    "prompt": "取得単位の進捗は不要で履修登録の組み方。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0171",
+    "prompt": "寝坊した遅刻連絡の相談ではない。代わりに試験範囲が広すぎる。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0172",
+    "prompt": "卒論アウトラインではなく貸与型の返還。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0173",
+    "prompt": "継続手続きの確認じゃない。聞きたいのは一日の予定を組みたい。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0174",
+    "prompt": "証明問題の読み方は不要で課題の要件を整理したい。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0175",
+    "prompt": "GPAの意味の相談ではない。代わりに延納手続きの確認。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0176",
+    "prompt": "締切を過ぎたお詫びではなく一か月の学習計画。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0177",
+    "prompt": "直接引用と要約の違いじゃない。聞きたいのはあと何単位か計算したい。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0178",
+    "prompt": "授業料減免を調べるは不要でバイトと授業の両立。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0179",
+    "prompt": "統計検定の考え方の相談ではない。代わりに締切と所要時間で並べたい。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0180",
+    "prompt": "再試験で必要な点ではなく目標GPAに必要な成績。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0181",
+    "prompt": "履修上限を確認じゃない。聞きたいのは研究室の選び方。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0182",
+    "prompt": "プレゼンを短くまとめるは不要で今月の課題期限。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0183",
+    "prompt": "バイトと授業の両立の相談ではない。代わりに再試験で必要な点。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0184",
+    "prompt": "欠席何回で不可かではなく断り方を考えたい。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0185",
+    "prompt": "出席率を確認したいじゃない。聞きたいのはレポート構成を見直す。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0186",
+    "prompt": "一日の予定を組みたいは不要で欠席が増えて不安。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0187",
+    "prompt": "面接日程をまとめるの相談ではない。代わりにコードをデバッグしたい。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0188",
+    "prompt": "学内施設の探し方ではなく直接引用と要約の違い。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0189",
+    "prompt": "どの窓口か確認じゃない。聞きたいのは遅延証明の出し方。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0190",
+    "prompt": "遅刻後にまずすることは不要で生成AIと引用。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0191",
+    "prompt": "試験まで7日の勉強計画の相談ではない。代わりに研究発表のアウトライン。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0192",
+    "prompt": "自己PRの組み立てではなく先生にアポを取りたい。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0193",
+    "prompt": "先輩との関係じゃない。聞きたいのは証明問題の読み方。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0194",
+    "prompt": "追試の確認先は不要で就活日程を整理。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0195",
+    "prompt": "返信へのお礼メールの相談ではない。代わりに体調不良で休む連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0196",
+    "prompt": "明日締切の課題を整理ではなく確率分布の違い。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0197",
+    "prompt": "単語と読解の時間配分じゃない。聞きたいのは学生時代の経験を書く。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0198",
+    "prompt": "プログラミング学習の順番は不要で寝坊した遅刻連絡。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0199",
+    "prompt": "課題の指示が分からないの相談ではない。代わりに再提出できるか。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0200",
+    "prompt": "体調不良で休む連絡ではなく単語と読解の時間配分。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0201",
+    "prompt": "複数の締切をまとめるじゃない。聞きたいのは締切後の対応を尋ねるメール。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0202",
+    "prompt": "インターン面接準備は不要でFAQから確認したい。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0203",
+    "prompt": "生成AIと引用の相談ではない。代わりに応募前に確認すること。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0204",
+    "prompt": "単位認定の確認ではなく抽選科目に外れた。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0205",
+    "prompt": "ゼミへの遅刻メールじゃない。聞きたいのは追試の確認先。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0206",
+    "prompt": "レポート構成を見直すは不要で奨学金申請の準備。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0207",
+    "prompt": "奨学金の種類の相談ではない。代わりに勉強時間を確保したい。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0208",
+    "prompt": "積分問題の復習ではなくグループ課題で困った。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0209",
+    "prompt": "目標GPAに必要な成績じゃない。聞きたいのは納付書をなくした。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0210",
+    "prompt": "レポートが間に合わない連絡は不要で試験まで7日の勉強計画。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0211",
+    "prompt": "コピペにならないか確認の相談ではない。代わりに卒業までの単位を整理したい。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0212",
+    "prompt": "延納手続きの確認ではなく試験前の勤務調整。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0213",
+    "prompt": "仮説検定の手順じゃない。聞きたいのは課題が多くて選べない。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0214",
+    "prompt": "合格ラインのシミュレーションは不要で成績平均を上げたい。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0215",
+    "prompt": "履修登録の組み方の相談ではない。代わりに学内施設の探し方。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0216",
+    "prompt": "10分プレゼンの時間配分ではなく提出日を管理したい。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0217",
+    "prompt": "試験前の勤務調整じゃない。聞きたいのは合格ラインのシミュレーション。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0218",
+    "prompt": "公欠になる条件は不要で大学で友達ができない。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0219",
+    "prompt": "授業を休んだ後の対応の相談ではない。代わりに2000字レポートの構成。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0220",
+    "prompt": "勉強時間を確保したいではなく出席率を確認したい。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0221",
+    "prompt": "学業優先で就活計画じゃない。聞きたいのは例外メッセージの読み方。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0222",
+    "prompt": "学生生活を整えたいは不要でコピペにならないか確認。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0223",
+    "prompt": "FAQから確認したいの相談ではない。代わりに教室移動で遅れそう。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0224",
+    "prompt": "寝坊したときの対応ではなくAIに個人情報を入れない。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0225",
+    "prompt": "テスト勉強を始めたいじゃない。聞きたいのはプレゼンを短くまとめる。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0226",
+    "prompt": "学生時代の経験を書くは不要で教授へ面談依頼メール。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0227",
+    "prompt": "ハラスメントの相談先の相談ではない。代わりに積分問題の復習。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0228",
+    "prompt": "暗記科目の復習ではなく企業説明会の予定。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0229",
+    "prompt": "先生にアポを取りたいじゃない。聞きたいのは先生へ休むと伝えたい。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0230",
+    "prompt": "課題の緊急度を決めたいは不要で統計検定の考え方。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0231",
+    "prompt": "TOEIC一か月計画の相談ではない。代わりに具体的な行動を整理。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0232",
+    "prompt": "コードをデバッグしたいではなくゼミへの遅刻メール。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0233",
+    "prompt": "宿題が終わらないじゃない。聞きたいのは大学固有ルールを確認。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0234",
+    "prompt": "先生へ休むと伝えたいは不要でTOEIC一か月計画。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0235",
+    "prompt": "今月の課題期限の相談ではない。代わりに締切を過ぎたお詫び。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0236",
+    "prompt": "募集要項を読みたいではなく手続きの確認先。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0237",
+    "prompt": "AIに個人情報を入れないじゃない。聞きたいのはインターン面接準備。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0238",
+    "prompt": "あと何単位か計算したいは不要で時間割を決めたい。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0239",
+    "prompt": "遅刻メールを作りたいの相談ではない。代わりに暗記科目の復習。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0240",
+    "prompt": "2000字レポートの構成ではなく継続手続きの確認。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0241",
+    "prompt": "貸与型の返還じゃない。聞きたいのは週の時間割を見直す。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0242",
+    "prompt": "数式の途中式を確認は不要で課題の指示が分からない。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0243",
+    "prompt": "成績平均を上げたいの相談ではない。代わりに学費の分納を相談。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0244",
+    "prompt": "課題の延長をお願いする文面ではなくテスト勉強を始めたい。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0245",
+    "prompt": "孫引きを避けたいじゃない。聞きたいのは取得単位の進捗。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0246",
+    "prompt": "納付書をなくしたは不要で給与明細の確認。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0247",
+    "prompt": "標準偏差の意味の相談ではない。代わりに明日締切の課題を整理。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0248",
+    "prompt": "現在40点で残り30パーセントではなく累積GPAを出したい。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0249",
+    "prompt": "抽選科目に外れたじゃない。聞きたいのは学生生活を整えたい。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0250",
+    "prompt": "導入と結論の作り方は不要で締切を一覧にしたい。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0251",
+    "prompt": "給与明細の確認の相談ではない。代わりに現在40点で残り30パーセント。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0252",
+    "prompt": "再提出できるかではなく先輩との関係。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0253",
+    "prompt": "体調不良で出席できないじゃない。聞きたいのは論点から構成を作る。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0254",
+    "prompt": "週の時間割を見直すは不要で授業を休んだ後の対応。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0255",
+    "prompt": "就活日程を整理の相談ではない。代わりにテストコードを書く。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0256",
+    "prompt": "大学生活に慣れないではなく孫引きを避けたい。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0257",
+    "prompt": "手続きの確認先じゃない。聞きたいのは遅刻後にまずすること。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0258",
+    "prompt": "遅延証明の出し方は不要で生成AIの授業利用。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0259",
+    "prompt": "三日で試験対策の相談ではない。代わりに10分プレゼンの時間配分。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0260",
+    "prompt": "具体的な行動を整理ではなく教員へ相談を伝える。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0261",
+    "prompt": "断り方を考えたいじゃない。聞きたいのは数式の途中式を確認。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0262",
+    "prompt": "テスト直前の優先事項は不要で面接日程をまとめる。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0263",
+    "prompt": "教授へ面談依頼メールの相談ではない。代わりに病院に行くので欠席連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0264",
+    "prompt": "締切と所要時間で並べたいではなく仮説検定の手順。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0265",
+    "prompt": "毎日一時間のTOEICじゃない。聞きたいのはエントリーシートの骨組み。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0266",
+    "prompt": "例外メッセージの読み方は不要で遅刻メールを作りたい。誤解しないで",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "programming"
+  },
+  {
+    "id": "campus-v2-adversarial-0267",
+    "prompt": "課題の要件を整理したいの相談ではない。代わりに欠席何回で不可か。誤解しないで",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment"
+  },
+  {
+    "id": "campus-v2-adversarial-0268",
+    "prompt": "病院に行くので欠席連絡ではなく毎日一時間のTOEIC。誤解しないで",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "absence_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0269",
+    "prompt": "提出日を管理したいじゃない。聞きたいのはレポートが間に合わない連絡。誤解しないで",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "deadline_organizer"
+  },
+  {
+    "id": "campus-v2-adversarial-0270",
+    "prompt": "初めてのインターン応募は不要で公式案内の場所。誤解しないで",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "internship"
+  },
+  {
+    "id": "campus-v2-adversarial-0271",
+    "prompt": "生成AIの授業利用の相談ではない。代わりに募集要項を読みたい。誤解しないで",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "ai_usage"
+  },
+  {
+    "id": "campus-v2-adversarial-0272",
+    "prompt": "卒業までの単位を整理したいではなく履修上限を確認。誤解しないで",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "credit"
+  },
+  {
+    "id": "campus-v2-adversarial-0273",
+    "prompt": "先生に遅れると伝えたいじゃない。聞きたいのはテスト直前の優先事項。誤解しないで",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0274",
+    "prompt": "論点から構成を作るは不要で奨学金の種類。誤解しないで",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "report_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0275",
+    "prompt": "奨学金申請の準備の相談ではない。代わりに空きコマの使い方。誤解しないで",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "scholarship"
+  },
+  {
+    "id": "campus-v2-adversarial-0276",
+    "prompt": "極限の勉強法ではなく宿題が終わらない。誤解しないで",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "math"
+  },
+  {
+    "id": "campus-v2-adversarial-0277",
+    "prompt": "累積GPAを出したいじゃない。聞きたいのは授業料減免を調べる。誤解しないで",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "gpa"
+  },
+  {
+    "id": "campus-v2-adversarial-0278",
+    "prompt": "締切後の対応を尋ねるメールは不要で三日で試験対策。誤解しないで",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "late_submission_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0279",
+    "prompt": "引用の書き方の相談ではない。代わりに単位認定の確認。誤解しないで",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "citation_check"
+  },
+  {
+    "id": "campus-v2-adversarial-0280",
+    "prompt": "学費の分納を相談ではなく学業時間を確保。誤解しないで",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "tuition"
+  },
+  {
+    "id": "campus-v2-adversarial-0281",
+    "prompt": "確率分布の違いじゃない。聞きたいのは課題の緊急度を決めたい。誤解しないで",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "statistics"
+  },
+  {
+    "id": "campus-v2-adversarial-0282",
+    "prompt": "残り評価で挽回できるかは不要でGPAの意味。誤解しないで",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "grade_simulator"
+  },
+  {
+    "id": "campus-v2-adversarial-0283",
+    "prompt": "時間割を決めたいの相談ではない。代わりに大学生活に慣れない。誤解しないで",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "registration"
+  },
+  {
+    "id": "campus-v2-adversarial-0284",
+    "prompt": "研究発表のアウトラインではなく複数の締切をまとめる。誤解しないで",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "presentation_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0285",
+    "prompt": "学業時間を確保じゃない。聞きたいのは残り評価で挽回できるか。誤解しないで",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "part_time_job"
+  },
+  {
+    "id": "campus-v2-adversarial-0286",
+    "prompt": "大学固有ルールを確認は不要でハラスメントの相談先。誤解しないで",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "university_policy"
+  },
+  {
+    "id": "campus-v2-adversarial-0287",
+    "prompt": "欠席が増えて不安の相談ではない。代わりに卒論アウトライン。誤解しないで",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "attendance"
+  },
+  {
+    "id": "campus-v2-adversarial-0288",
+    "prompt": "空きコマの使い方ではなく体調不良で出席できない。誤解しないで",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0289",
+    "prompt": "企業説明会の予定じゃない。聞きたいのはプログラミング学習の順番。誤解しないで",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "career_schedule"
+  },
+  {
+    "id": "campus-v2-adversarial-0290",
+    "prompt": "研究室の選び方は不要で引用の書き方。誤解しないで",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "campus_life"
+  },
+  {
+    "id": "campus-v2-adversarial-0291",
+    "prompt": "公式案内の場所の相談ではない。代わりに寝坊したときの対応。誤解しないで",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "faq_search"
+  },
+  {
+    "id": "campus-v2-adversarial-0292",
+    "prompt": "教室移動で遅れそうではなく課題でAIを使ってよいか。誤解しないで",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "lateness"
+  },
+  {
+    "id": "campus-v2-adversarial-0293",
+    "prompt": "一か月の学習計画じゃない。聞きたいのは導入と結論の作り方。誤解しないで",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "study_plan"
+  },
+  {
+    "id": "campus-v2-adversarial-0294",
+    "prompt": "エントリーシートの骨組みは不要で返信へのお礼メール。誤解しないで",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "es_outline"
+  },
+  {
+    "id": "campus-v2-adversarial-0295",
+    "prompt": "大学で友達ができないの相談ではない。代わりに極限の勉強法。誤解しないで",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "relationship"
+  },
+  {
+    "id": "campus-v2-adversarial-0296",
+    "prompt": "試験範囲が広すぎるではなく学業優先で就活計画。誤解しないで",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "exam"
+  },
+  {
+    "id": "campus-v2-adversarial-0297",
+    "prompt": "教員へ相談を伝えるじゃない。聞きたいのは当日の欠席連絡。誤解しないで",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "professor_email"
+  },
+  {
+    "id": "campus-v2-adversarial-0298",
+    "prompt": "課題が多くて選べないは不要で標準偏差の意味。誤解しないで",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "assignment_priority"
+  },
+  {
+    "id": "campus-v2-adversarial-0299",
+    "prompt": "試験日までの英語学習の相談ではない。代わりに自己PRの組み立て。誤解しないで",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "negation_adversarial",
+    "difficulty": "hard",
+    "blind": true,
+    "dataset_version": "unipilot-campus-v2-adversarial",
+    "negated_category": "toeic_plan"
+  }
+]

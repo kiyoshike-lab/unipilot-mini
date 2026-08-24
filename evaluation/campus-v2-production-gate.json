@@ -1,0 +1,22 @@
+{
+  "version": "unipilot-campus-v2",
+  "passed": false,
+  "checks": {
+    "category_accuracy_gte_0_92": false,
+    "relevance_gte_0_90": false,
+    "correctness_gte_0_88": false,
+    "hallucination_lte_0_01": true,
+    "completion_gte_0_99": true,
+    "natural_japanese_gte_0_99": true,
+    "actionable_gte_4_2": true,
+    "router_p95_lt_20ms": true,
+    "faq_tool_p95_lt_50ms": true,
+    "human_100_complete": false,
+    "adversarial_accuracy_gte_0_92": false
+  },
+  "decision": "STOP; keep v0.4 production",
+  "push": false,
+  "deploy": false,
+  "external_ai_api": "OFF"
+}
+

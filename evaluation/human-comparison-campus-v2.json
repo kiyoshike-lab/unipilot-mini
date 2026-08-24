@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "campus-v2-human-easy-00",
+    "blind_id": "campus-v2-blind-colloquial-0000",
+    "question": "現在40点で残り30パーセントなんよ、今できること教えて 急ぎ",
+    "category": "grade_simulator",
+    "difficulty": "Easy",
+    "campus_answer": "必要点数を計算するため、現在までの獲得点、目標点、残り評価の割合を入力してください。例：現在40点、合格60点、残り評価30%。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "grade_simulator",
+      "action": "TOOL",
+      "latency_ms": 3.495299999940471
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-01",
+    "blind_id": "campus-v2-blind-colloquial-0001",
+    "question": "一か月の学習計画なんよ、今できること教えて ざっくり",
+    "category": "study_plan",
+    "difficulty": "Easy",
+    "campus_answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "study_plan",
+      "action": "TOOL",
+      "latency_ms": 1.794899999822519
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-02",
+    "blind_id": "campus-v2-blind-colloquial-0002",
+    "question": "インターン面接準備なんよ、今できること教えて 今日中",
+    "category": "internship",
+    "difficulty": "Easy",
+    "campus_answer": "結論：目的と業務内容を明確にし、学業・条件・安全面を比較します。\n今やること：1. 企業公式情報で期間、業務、報酬、場所を確認します。 2. 授業日程と重ならないか確認します。 3. まず条件と期限を整理してください。\n注意：参加だけで採用や単位認定につながるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "internship",
+      "action": "FAQ",
+      "latency_ms": 5.938600000035876
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-03",
+    "blind_id": "campus-v2-blind-colloquial-0003",
+    "question": "標準偏差の意味なんよ、今できること教えて 初めて",
+    "category": "statistics",
+    "difficulty": "Easy",
+    "campus_answer": "結論：指標の意味と前提を確認し、データと目的に合う方法を選びます。\n今やること：1. 変数、単位、標本の集め方を確認します。 2. 具体例と可視化で指標の意味を確かめます。 3. まず条件と期限を整理してください。\n注意：相関だけで因果関係を断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "statistics",
+      "action": "RAG+MODEL",
+      "latency_ms": 4.920800000036252
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-04",
+    "blind_id": "campus-v2-blind-colloquial-0004",
+    "question": "欠席回数の確認なんよ、今できること教えて 短め",
+    "category": "attendance",
+    "difficulty": "Easy",
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "attendance",
+      "action": "FAQ",
+      "latency_ms": 4.782900000009249
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-05",
+    "blind_id": "campus-v2-blind-colloquial-0005",
+    "question": "どの課題から始めるかなんよ、今できること教えて 急ぎ",
+    "category": "assignment_priority",
+    "difficulty": "Easy",
+    "campus_answer": "結論：締切、所要時間、成績への影響を並べ、提出不能になる期限と短時間で提出可能にできる課題を優先します。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment_priority",
+      "action": "FAQ",
+      "latency_ms": 5.603300000075251
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-06",
+    "blind_id": "campus-v2-blind-colloquial-0006",
+    "question": "奨学金の締切なんよ、今できること教えて ざっくり",
+    "category": "scholarship",
+    "difficulty": "Easy",
+    "campus_answer": "結論：給付・貸与、条件、期限、返還の有無を制度ごとに確認します。\n今やること：1. 最新の募集要項と在籍校の案内を読みます。 2. 必要書類と提出期限を一覧にします。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：採用、金額、併用可否を事前に断定しません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "scholarship",
+      "action": "FAQ",
+      "latency_ms": 4.729799999950046
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-07",
+    "blind_id": "campus-v2-blind-colloquial-0007",
+    "question": "卒業要件の公式確認なんよ、今できること教えて 今日中",
+    "category": "university_policy",
+    "difficulty": "Easy",
+    "campus_answer": "大学名・入学年度が分からないため、公式根拠を確認できず、制度の有無・回数・期限を断定できません。\n今やること：学生便覧、履修要項、シラバスを確認し、見つからなければ担当教員または教務窓口へ問い合わせてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "university_policy",
+      "action": "RAG",
+      "latency_ms": 1.7708000000311586
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-08",
+    "blind_id": "campus-v2-blind-colloquial-0008",
+    "question": "寝坊したときの対応なんよ、今できること教えて 初めて",
+    "category": "lateness",
+    "difficulty": "Easy",
+    "campus_answer": "結論：遅刻の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness",
+      "action": "FAQ",
+      "latency_ms": 5.514399999810848
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-09",
+    "blind_id": "campus-v2-blind-colloquial-0009",
+    "question": "提出日を管理したいなんよ、今できること教えて 短め",
+    "category": "deadline_organizer",
+    "difficulty": "Easy",
+    "campus_answer": "結論：締切整理の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "deadline_organizer",
+      "action": "FAQ",
+      "latency_ms": 5.479200000081619
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-10",
+    "blind_id": "campus-v2-blind-colloquial-0010",
+    "question": "授業料減免を調べるなんよ、今できること教えて 急ぎ",
+    "category": "tuition",
+    "difficulty": "Easy",
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "tuition",
+      "action": "FAQ",
+      "latency_ms": 4.788299999972878
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-11",
+    "blind_id": "campus-v2-blind-colloquial-0011",
+    "question": "FAQから確認したいなんよ、今できること教えて ざっくり",
+    "category": "faq_search",
+    "difficulty": "Easy",
+    "campus_answer": "結論：FAQ検索の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "faq_search",
+      "action": "FAQ",
+      "latency_ms": 5.949099999952523
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-12",
+    "blind_id": "campus-v2-blind-colloquial-0012",
+    "question": "授業内容の質問メールなんよ、今できること教えて 今日中",
+    "category": "professor_email",
+    "difficulty": "Easy",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／ご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［相談したい事実を簡潔に記載］\n［確認・お願いしたいことを一つ記載］\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "professor_email",
+      "action": "TOOL",
+      "latency_ms": 1.758599999902799
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-13",
+    "blind_id": "campus-v2-blind-colloquial-0013",
+    "question": "序論本論結論の配分なんよ、今できること教えて 初めて",
+    "category": "report_outline",
+    "difficulty": "Easy",
+    "campus_answer": "レポート構成案です。課題文の評価基準に合わせて見出しを調整してください。\n\nテーマ：［レポートの問い］\n1. 序論：問い・背景・結論の見通し\n2. 本論1：主要な根拠と資料\n3. 本論2：別の根拠または反対意見の検討\n4. 考察：根拠から言えること・限界\n5. 結論：問いへの回答と残る課題\n6. 参考文献：指定形式で統一",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "report_outline",
+      "action": "TOOL",
+      "latency_ms": 1.7152000000351109
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-14",
+    "blind_id": "campus-v2-blind-colloquial-0014",
+    "question": "バイト先への相談なんよ、今できること教えて 短め",
+    "category": "part_time_job",
+    "difficulty": "Easy",
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. まず条件と期限を整理してください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "part_time_job",
+      "action": "FAQ",
+      "latency_ms": 4.796599999963291
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-15",
+    "blind_id": "campus-v2-blind-colloquial-0015",
+    "question": "優先事項を一緒に決めたいなんよ、今できること教えて 急ぎ",
+    "category": "general",
+    "difficulty": "Easy",
+    "campus_answer": "結論：一般相談の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "general",
+      "action": "MODEL",
+      "latency_ms": 5.895799999962037
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-16",
+    "blind_id": "campus-v2-blind-colloquial-0016",
+    "question": "体調不良で休む連絡なんよ、今できること教えて ざっくり",
+    "category": "absence_email",
+    "difficulty": "Easy",
+    "campus_answer": "結論：授業名・日付・欠席理由・必要な確認事項を入力すると、件名と本文を作成できます。理由は事実だけを簡潔に書いてください。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "absence_email",
+      "action": "FAQ",
+      "latency_ms": 4.9746999998205865
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-17",
+    "blind_id": "campus-v2-blind-colloquial-0017",
+    "question": "孫引きを避けたいなんよ、今できること教えて 今日中",
+    "category": "citation_check",
+    "difficulty": "Easy",
+    "campus_answer": "結論：引用部分と自分の文章を区別し、追跡できる出典情報を示します。\n今やること：1. 一次資料を読み、必要な範囲だけ引用します。 2. 著者、資料名、年、掲載元、参照箇所を記録します。 3. まず条件と期限を整理してください。\n注意：出典表示だけであらゆる利用が許されるとは限りません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "citation_check",
+      "action": "FAQ",
+      "latency_ms": 5.808099999967453
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-18",
+    "blind_id": "campus-v2-blind-colloquial-0018",
+    "question": "研究室の選び方なんよ、今できること教えて 初めて",
+    "category": "campus_life",
+    "difficulty": "Easy",
+    "campus_answer": "結論：研究内容だけでなく、指導方法・活動時間・環境を実際に確認します。\n今やること：1. 教員の研究紹介と最近の成果を読みます。 2. 訪問時に指導頻度、設備、在学生の一日を質問します。 3. まず条件と期限を整理してください。\n注意：外部の評判だけで研究環境を断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "campus_life",
+      "action": "FAQ",
+      "latency_ms": 4.714100000001054
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-19",
+    "blind_id": "campus-v2-blind-colloquial-0019",
+    "question": "過去問の使い方なんよ、今できること教えて 短め",
+    "category": "exam",
+    "difficulty": "Easy",
+    "campus_answer": "結論：試験条件と残り時間を確認し、得点につながる準備から進めます。\n今やること：1. シラバスと試験案内で範囲・形式・持込条件を確認します。 2. 重要項目を問題演習し、間違いだけを再確認します。 3. まず条件と期限を整理してください。\n注意：試験ごとの規則は大学や授業で異なるため、推測で決めません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "exam",
+      "action": "FAQ",
+      "latency_ms": 4.513300000098752
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-20",
+    "blind_id": "campus-v2-blind-colloquial-0020",
+    "question": "到着見込みを伝える文面なんよ、今できること教えて 急ぎ",
+    "category": "lateness_email",
+    "difficulty": "Easy",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness_email",
+      "action": "TOOL",
+      "latency_ms": 1.7546000001402717
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-21",
+    "blind_id": "campus-v2-blind-colloquial-0021",
+    "question": "スライド構成を考えるなんよ、今できること教えて ざっくり",
+    "category": "presentation_outline",
+    "difficulty": "Easy",
+    "campus_answer": "プレゼン構成案です。1枚1メッセージにし、発表時間の8割で終わるよう練習してください。\n\n1. 結論：［発表テーマ］で最も伝えたいこと\n2. 背景：なぜ重要か\n3. 根拠：データ・事例\n4. 検討：限界や反対意見\n5. まとめ：結論と次の行動\n6. 質疑用：出典と補足",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "presentation_outline",
+      "action": "TOOL",
+      "latency_ms": 1.7344000000321103
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-22",
+    "blind_id": "campus-v2-blind-colloquial-0022",
+    "question": "共同作業で意見が合わないなんよ、今できること教えて 今日中",
+    "category": "relationship",
+    "difficulty": "Easy",
+    "campus_answer": "結論：相手を決めつけず、事実・希望・境界線を分けて伝えます。\n今やること：1. 起きたことと困っている影響を整理します。 2. 落ち着いた場で具体的なお願いを一つ伝えます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：脅しや安全上の不安がある場合は直接対決を優先しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "relationship",
+      "action": "FAQ",
+      "latency_ms": 6.246099999998478
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-23",
+    "blind_id": "campus-v2-blind-colloquial-0023",
+    "question": "課題の要件を整理したいなんよ、今できること教えて 初めて",
+    "category": "assignment",
+    "difficulty": "Easy",
+    "campus_answer": "結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. まず条件と期限を整理してください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment",
+      "action": "FAQ",
+      "latency_ms": 5.815600000005361
+    }
+  },
+  {
+    "id": "campus-v2-human-easy-24",
+    "blind_id": "campus-v2-blind-colloquial-0024",
+    "question": "締切を過ぎたお詫びなんよ、今できること教えて 短め",
+    "category": "late_submission_email",
+    "difficulty": "Easy",
+    "campus_answer": "結論：課題提出遅延メールの状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "late_submission_email",
+      "action": "FAQ",
+      "latency_ms": 4.775599999902624
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-00",
+    "blind_id": "campus-v2-blind-normal-0000",
+    "question": "必修を落とした影響について、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+    "category": "credit",
+    "difficulty": "Medium",
+    "campus_answer": "結論：取得状況を卒業・進級要件と照合し、不足を具体化します。\n今やること：1. 入学年度の学生便覧と成績表を確認します。 2. 必修・選択・区分ごとに不足単位を整理します。 3. まず条件と期限を整理してください。\n注意：単位の数え方は大学・学部・入学年度で異なります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "credit",
+      "action": "FAQ",
+      "latency_ms": 7.639800000106334
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-01",
+    "blind_id": "campus-v2-blind-normal-0001",
+    "question": "一日2時間の学習計画について、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+    "category": "study_plan",
+    "difficulty": "Medium",
+    "campus_answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "study_plan",
+      "action": "TOOL",
+      "latency_ms": 1.9611000000168133
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-02",
+    "blind_id": "campus-v2-blind-normal-0002",
+    "question": "授業料の納付について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+    "category": "tuition",
+    "difficulty": "Medium",
+    "campus_answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "tuition",
+      "action": "FAQ",
+      "latency_ms": 7.382300000017494
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-03",
+    "blind_id": "campus-v2-blind-normal-0003",
+    "question": "テスト直前の優先事項について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+    "category": "exam",
+    "difficulty": "Medium",
+    "campus_answer": "この機能は準備中です。大学生活FAQから確認方法を案内します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "exam",
+      "action": "TOOL",
+      "latency_ms": 1.8858999999338266
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-04",
+    "blind_id": "campus-v2-blind-normal-0004",
+    "question": "履修上限を確認について、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+    "category": "registration",
+    "difficulty": "Medium",
+    "campus_answer": "結論：現在年度の履修期間・条件・代替科目を公式案内で確認します。\n今やること：1. 学生ポータルと履修要項の期限を確認します。 2. 必修、前提条件、時間割重複を一覧にします。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：追加登録や例外対応が可能とは断定しません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "registration",
+      "action": "FAQ",
+      "latency_ms": 18.266199999970922
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-05",
+    "blind_id": "campus-v2-blind-normal-0005",
+    "question": "募集要項を読みたいについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+    "category": "internship",
+    "difficulty": "Medium",
+    "campus_answer": "結論：目的と業務内容を明確にし、学業・条件・安全面を比較します。\n今やること：1. 企業公式情報で期間、業務、報酬、場所を確認します。 2. 授業日程と重ならないか確認します。 3. まず条件と期限を整理してください。\n注意：参加だけで採用や単位認定につながるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "internship",
+      "action": "FAQ",
+      "latency_ms": 7.668799999919429
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-06",
+    "blind_id": "campus-v2-blind-normal-0006",
+    "question": "公式案内の場所について、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+    "category": "faq_search",
+    "difficulty": "Medium",
+    "campus_answer": "結論：FAQ検索の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "faq_search",
+      "action": "FAQ",
+      "latency_ms": 7.185599999957049
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-07",
+    "blind_id": "campus-v2-blind-normal-0007",
+    "question": "授業に遅刻するメールについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+    "category": "lateness_email",
+    "difficulty": "Medium",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness_email",
+      "action": "TOOL",
+      "latency_ms": 1.9847000000936532
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-08",
+    "blind_id": "campus-v2-blind-normal-0008",
+    "question": "志望動機の流れについて、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+    "category": "es_outline",
+    "difficulty": "Medium",
+    "campus_answer": "結論：結論、状況、行動、工夫、結果、応募先での再現性の順に事実を整理します。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "es_outline",
+      "action": "FAQ",
+      "latency_ms": 7.848400000057154
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-09",
+    "blind_id": "campus-v2-blind-normal-0009",
+    "question": "分散を計算したいについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+    "category": "statistics",
+    "difficulty": "Medium",
+    "campus_answer": "結論：指標の意味と前提を確認し、データと目的に合う方法を選びます。\n今やること：1. 変数、単位、標本の集め方を確認します。 2. 具体例と可視化で指標の意味を確かめます。 3. まず条件と期限を整理してください。\n注意：相関だけで因果関係を断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "statistics",
+      "action": "RAG+MODEL",
+      "latency_ms": 8.635700000013458
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-10",
+    "blind_id": "campus-v2-blind-normal-0010",
+    "question": "教授へ面談依頼メールについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+    "category": "professor_email",
+    "difficulty": "Medium",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／ご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［相談したい事実を簡潔に記載］\n［確認・お願いしたいことを一つ記載］\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "professor_email",
+      "action": "TOOL",
+      "latency_ms": 2.148799999986295
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-11",
+    "blind_id": "campus-v2-blind-normal-0011",
+    "question": "プレゼンを短くまとめるについて、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+    "category": "presentation_outline",
+    "difficulty": "Medium",
+    "campus_answer": "結論：伝える結論を一つに絞り、根拠と次の要点が追える構成にします。\n今やること：1. 一枚一メッセージにして文字量を減らします。 2. 時間を測って声に出し、削る箇所を決めます。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：見た目だけでなく評価基準と聴衆の理解を優先します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "presentation_outline",
+      "action": "FAQ",
+      "latency_ms": 7.995100000016464
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-12",
+    "blind_id": "campus-v2-blind-normal-0012",
+    "question": "AIに個人情報を入れないについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+    "category": "ai_usage",
+    "difficulty": "Medium",
+    "campus_answer": "結論：授業・大学の利用ルールを確認し、出力を一次資料で検証します。\n今やること：1. 禁止事項、申告、引用の要否を課題指示で確認します。 2. 機密情報や個人情報を入力しません。 3. まず条件と期限を整理してください。\n注意：AIの回答や引用候補が正しいとは仮定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "ai_usage",
+      "action": "RAG+MODEL",
+      "latency_ms": 8.491699999922275
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-13",
+    "blind_id": "campus-v2-blind-normal-0013",
+    "question": "欠席回数の確認について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+    "category": "attendance",
+    "difficulty": "Medium",
+    "campus_answer": "結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "attendance",
+      "action": "FAQ",
+      "latency_ms": 7.821599999942919
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-14",
+    "blind_id": "campus-v2-blind-normal-0014",
+    "question": "考察の位置を決めたいについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+    "category": "report_outline",
+    "difficulty": "Medium",
+    "campus_answer": "結論：問い、仮の結論、根拠、構成の順に決めてから本文を書きます。\n今やること：1. 課題文と評価基準から答える問いを一文にします。 2. 各段落の主張と根拠を対応させます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：根拠のない断定や出典不明の記述を避けます。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "report_outline",
+      "action": "FAQ",
+      "latency_ms": 8.157299999993484
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-15",
+    "blind_id": "campus-v2-blind-normal-0015",
+    "question": "同級生に相談したいについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+    "category": "relationship",
+    "difficulty": "Medium",
+    "campus_answer": "結論：相手を決めつけず、事実・希望・境界線を分けて伝えます。\n今やること：1. 起きたことと困っている影響を整理します。 2. 落ち着いた場で具体的なお願いを一つ伝えます。 3. まず条件と期限を整理してください。\n注意：脅しや安全上の不安がある場合は直接対決を優先しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "relationship",
+      "action": "FAQ",
+      "latency_ms": 7.703600000013466
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-16",
+    "blind_id": "campus-v2-blind-normal-0016",
+    "question": "目標GPAに必要な成績について、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+    "category": "gpa",
+    "difficulty": "Medium",
+    "campus_answer": "目標GPAの計算には、現在GPA、現在の取得単位、目標GPA、今後の単位数が必要です。大学のGP上限も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "gpa",
+      "action": "TOOL",
+      "latency_ms": 1.9190000000435248
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-17",
+    "blind_id": "campus-v2-blind-normal-0017",
+    "question": "締切と所要時間で並べたいについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+    "category": "assignment_priority",
+    "difficulty": "Medium",
+    "campus_answer": "結論：課題優先順位の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment_priority",
+      "action": "FAQ",
+      "latency_ms": 8.161499999914668
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-18",
+    "blind_id": "campus-v2-blind-normal-0018",
+    "question": "バイトと授業の両立について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+    "category": "part_time_job",
+    "difficulty": "Medium",
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "part_time_job",
+      "action": "FAQ",
+      "latency_ms": 19.547599999896192
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-19",
+    "blind_id": "campus-v2-blind-normal-0019",
+    "question": "提出サイトが動かないについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+    "category": "assignment",
+    "difficulty": "Medium",
+    "campus_answer": "結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. まず条件と期限を整理してください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment",
+      "action": "FAQ",
+      "latency_ms": 8.088499999985288
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-20",
+    "blind_id": "campus-v2-blind-normal-0020",
+    "question": "生活リズムを整えるについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+    "category": "schedule",
+    "difficulty": "Medium",
+    "campus_answer": "結論：期限・重要度・所要時間を見える化し、次の一作業を決めます。\n今やること：1. 固定予定と締切を一つの表に集めます。 2. 作業を30〜60分単位に分けて余白を置きます。 3. まず条件と期限を整理してください。\n注意：休息を削り続ける計画は長期的に維持できません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "schedule",
+      "action": "FAQ",
+      "latency_ms": 7.574999999860665
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-21",
+    "blind_id": "campus-v2-blind-normal-0021",
+    "question": "家計が変わったときについて、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+    "category": "scholarship",
+    "difficulty": "Medium",
+    "campus_answer": "結論：給付・貸与、条件、期限、返還の有無を制度ごとに確認します。\n今やること：1. 最新の募集要項と在籍校の案内を読みます。 2. 必要書類と提出期限を一覧にします。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：採用、金額、併用可否を事前に断定しません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "scholarship",
+      "action": "FAQ",
+      "latency_ms": 7.737599999927625
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-22",
+    "blind_id": "campus-v2-blind-normal-0022",
+    "question": "優先事項を一緒に決めたいについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+    "category": "general",
+    "difficulty": "Medium",
+    "campus_answer": "結論：一般相談の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "general",
+      "action": "MODEL",
+      "latency_ms": 8.34820000000036
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-23",
+    "blind_id": "campus-v2-blind-normal-0023",
+    "question": "レポートが間に合わない連絡について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+    "category": "late_submission_email",
+    "difficulty": "Medium",
+    "campus_answer": "結論：課題提出遅延メールの状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "late_submission_email",
+      "action": "FAQ",
+      "latency_ms": 8.578699999816308
+    }
+  },
+  {
+    "id": "campus-v2-human-medium-24",
+    "blind_id": "campus-v2-blind-normal-0024",
+    "question": "毎日一時間のTOEICについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+    "category": "toeic_plan",
+    "difficulty": "Medium",
+    "campus_answer": "結論：用途と期限から目標を決め、現在の弱点に合わせて演習します。\n今やること：1. 公式情報で試験形式と提出期限を確認します。 2. 模試で時間と分野別正答率を測ります。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：必要点は大学、企業、制度ごとに異なります。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "toeic_plan",
+      "action": "FAQ",
+      "latency_ms": 7.7301000001170905
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-00",
+    "blind_id": "campus-v2-blind-hard-0000",
+    "question": "課題の指示が分からないじゃなくて、教室移動で遅れそう これってどうするの方を教えて。前者は不要",
+    "category": "lateness",
+    "difficulty": "Hard",
+    "campus_answer": "結論：安全を優先し、到着見込みと事実を指定先へすぐ連絡します。\n今やること：1. 授業・試験案内で遅刻時の連絡方法を確認します。 2. 交通情報や遅延証明など事実を保存します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：入室可否や欠席扱いを一律には判断できません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness",
+      "action": "FAQ",
+      "latency_ms": 8.037800000010975
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-01",
+    "blind_id": "campus-v2-blind-hard-0001",
+    "question": "現在40点で残り30パーセントじゃなくて、学業時間を確保 これってどうするの方を教えて。前者は不要",
+    "category": "part_time_job",
+    "difficulty": "Hard",
+    "campus_answer": "結論：仕事内容と労働条件を記録し、学業を守れる勤務量か確認します。\n今やること：1. 契約期間、時間、賃金、休日、退職条件を書面で確認します。 2. 授業・試験日程を先に確保します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：税・扶養・在留条件は本人の状況と最新制度で確認します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "part_time_job",
+      "action": "FAQ",
+      "latency_ms": 7.582799999909184
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-02",
+    "blind_id": "campus-v2-blind-hard-0002",
+    "question": "教員へ相談を伝えるじゃなくて、締切後の対応を尋ねるメルの方を教えて。前者は不要",
+    "category": "late_submission_email",
+    "difficulty": "Hard",
+    "campus_answer": "結論：課題名、事実、提出可能日時を明記して期限前に相談します。受理されるとは断定しません。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "late_submission_email",
+      "action": "FAQ",
+      "latency_ms": 7.208099999843398
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-03",
+    "blind_id": "campus-v2-blind-hard-0003",
+    "question": "レポートが間に合わない連絡じゃなくて、生成AIの授業利用 これってどうするの方を教えて。前者は不要",
+    "category": "ai_usage",
+    "difficulty": "Hard",
+    "campus_answer": "結論：授業・大学の利用ルールを確認し、出力を一次資料で検証します。\n今やること：1. 禁止事項、申告、引用の要否を課題指示で確認します。 2. 機密情報や個人情報を入力しません。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：AIの回答や引用候補が正しいとは仮定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "ai_usage",
+      "action": "RAG+MODEL",
+      "latency_ms": 8.412700000008044
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-04",
+    "blind_id": "campus-v2-blind-hard-0004",
+    "question": "三日で試験対策じゃなくて、締切と所要時間で並べたい これってどうするの方を教えて。前者は不要",
+    "category": "assignment_priority",
+    "difficulty": "Hard",
+    "campus_answer": "結論：課題優先順位の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment_priority",
+      "action": "FAQ",
+      "latency_ms": 8.033699999941746
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-05",
+    "blind_id": "campus-v2-blind-hard-0005",
+    "question": "卒論アウトラインじゃなくて、手続きの確認先 これってどうするの方を教えて。前者は不要",
+    "category": "faq_search",
+    "difficulty": "Hard",
+    "campus_answer": "結論：FAQ検索の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "faq_search",
+      "action": "FAQ",
+      "latency_ms": 16.70360000002802
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-06",
+    "blind_id": "campus-v2-blind-hard-0006",
+    "question": "学業優先で就活計画じゃなくて、導入と結論の作り方 これってどうするの方を教えて。前者は不要",
+    "category": "presentation_outline",
+    "difficulty": "Hard",
+    "campus_answer": "プレゼン構成案です。1枚1メッセージにし、発表時間の8割で終わるよう練習してください。\n\n1. 結論：［発表テーマ］で最も伝えたいこと\n2. 背景：なぜ重要か\n3. 根拠：データ・事例\n4. 検討：限界や反対意見\n5. まとめ：結論と次の行動\n6. 質疑用：出典と補足",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "presentation_outline",
+      "action": "TOOL",
+      "latency_ms": 1.892400000087946
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-07",
+    "blind_id": "campus-v2-blind-hard-0007",
+    "question": "初めてのインターン応募じゃなくて、成績平均を上げたい これってどうするの方を教えて。前者は不要",
+    "category": "gpa",
+    "difficulty": "Hard",
+    "campus_answer": "結論：各科目のGPと単位数を入力すると、GP×単位数の合計を対象単位数で割って計算できます。大学ごとのGP換算と除外科目を先に確認してください。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "gpa",
+      "action": "FAQ",
+      "latency_ms": 19.403700000111712
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-08",
+    "blind_id": "campus-v2-blind-hard-0008",
+    "question": "バイトと授業の両立じゃなくて、募集要項を読みたい これってどうするの方を教えて。前者は不要",
+    "category": "internship",
+    "difficulty": "Hard",
+    "campus_answer": "結論：目的と業務内容を明確にし、学業・条件・安全面を比較します。\n今やること：1. 企業公式情報で期間、業務、報酬、場所を確認します。 2. 授業日程と重ならないか確認します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：参加だけで採用や単位認定につながるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "internship",
+      "action": "FAQ",
+      "latency_ms": 7.768800000121701
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-09",
+    "blind_id": "campus-v2-blind-hard-0009",
+    "question": "コードをデバッグしたいじゃなくて、先生にアポを取りたい これってどうするの方を教えて。前者は不要",
+    "category": "professor_email",
+    "difficulty": "Hard",
+    "campus_answer": "結論：用件が一読で分かる件名と、事実・依頼を簡潔にした本文を作ります。\n今やること：1. 宛名、所属・氏名、授業名を明記します。 2. 事情と確認したいことを分けて書きます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：相手の返信期限を勝手に決めず、余裕を持って送ります。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "professor_email",
+      "action": "FAQ",
+      "latency_ms": 7.747999999992317
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-10",
+    "blind_id": "campus-v2-blind-hard-0010",
+    "question": "確率分布の違いじゃなくて、学生生活を整えたい これってどうするの方を教えて。前者は不要",
+    "category": "campus_life",
+    "difficulty": "Hard",
+    "campus_answer": "結論：目的、時期、費用、語学、単位の五点を公式情報で照合します。\n今やること：1. 大学の国際担当と派遣先の募集要項を確認します。 2. 総費用と資金計画、期限を一覧にします。 3. まず条件と期限を整理してください。\n注意：制度、渡航条件、安全情報は更新されるため最新情報を使います。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "campus_life",
+      "action": "FAQ",
+      "latency_ms": 7.337100000086139
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-11",
+    "blind_id": "campus-v2-blind-hard-0011",
+    "question": "追試の確認先じゃなくて、りしゅう登録の組み方の方を教えて。前者は不要",
+    "category": "registration",
+    "difficulty": "Hard",
+    "campus_answer": "結論：現在年度の履修期間・条件・代替科目を公式案内で確認します。\n今やること：1. 学生ポータルと履修要項の期限を確認します。 2. 必修、前提条件、時間割重複を一覧にします。 3. まず条件と期限を整理してください。\n注意：追加登録や例外対応が可能とは断定しません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "registration",
+      "action": "FAQ",
+      "latency_ms": 5.557099999805359
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-12",
+    "blind_id": "campus-v2-blind-hard-0012",
+    "question": "成績平均を上げたいじゃなくて、積分問題の復習 これってどうするの方を教えて。前者は不要",
+    "category": "math",
+    "difficulty": "Hard",
+    "campus_answer": "結論：定義を具体例で確かめ、使う条件と解法の根拠を一段ずつ追います。\n今やること：1. 記号を自分の言葉と簡単な数値例に直します。 2. 標準問題でどの定義・定理を使うか明記します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：答えだけを暗記せず、成立条件を確認します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "math",
+      "action": "RAG+MODEL",
+      "latency_ms": 17.593499999975393
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-13",
+    "blind_id": "campus-v2-blind-hard-0013",
+    "question": "教室移動で遅れそうじゃなくて、複数の締切をまとめる これってどうするの方を教えて。前者は不要",
+    "category": "deadline_organizer",
+    "difficulty": "Hard",
+    "campus_answer": "結論：課題名、期限、所要時間を入力し、期限順に並べて前日通知を設定します。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "deadline_organizer",
+      "action": "FAQ",
+      "latency_ms": 7.193400000005568
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-14",
+    "blind_id": "campus-v2-blind-hard-0014",
+    "question": "ゼミへの遅刻メールじゃなくて、追試の確認先 これってどうするの方を教えて。前者は不要",
+    "category": "exam",
+    "difficulty": "Hard",
+    "campus_answer": "この機能は準備中です。大学生活FAQから確認方法を案内します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "exam",
+      "action": "TOOL",
+      "latency_ms": 11.951500000122905
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-15",
+    "blind_id": "campus-v2-blind-hard-0015",
+    "question": "週の時間割を見直すじゃなくて、面接日程をまとめる これってどうするの方を教えて。前者は不要",
+    "category": "career_schedule",
+    "difficulty": "Hard",
+    "campus_answer": "結論：応募期限から逆算し、経験整理・企業確認・応募準備を並行します。\n今やること：1. 大学のキャリア窓口と企業公式情報で日程を確認します。 2. 経験を行動・工夫・結果に分けて整理します。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：企業や年度で選考時期・条件が異なります。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "career_schedule",
+      "action": "FAQ",
+      "latency_ms": 17.20130000012432
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-16",
+    "blind_id": "campus-v2-blind-hard-0016",
+    "question": "締切を一覧にしたいじゃなくて、再しけんで必要な点の方を教えて。前者は不要",
+    "category": "grade_simulator",
+    "difficulty": "Hard",
+    "campus_answer": "必要点数を計算するため、現在までの獲得点、目標点、残り評価の割合を入力してください。例：現在40点、合格60点、残り評価30%。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "grade_simulator",
+      "action": "TOOL",
+      "latency_ms": 1.8632999999681488
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-17",
+    "blind_id": "campus-v2-blind-hard-0017",
+    "question": "10分プレゼンの時間配分じゃなくて、継続手続きの確認 これってどうするの方を教えて。前者は不要",
+    "category": "scholarship",
+    "difficulty": "Hard",
+    "campus_answer": "結論：給付・貸与、条件、期限、返還の有無を制度ごとに確認します。\n今やること：1. 最新の募集要項と在籍校の案内を読みます。 2. 必要書類と提出期限を一覧にします。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：採用、金額、併用可否を事前に断定しません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "scholarship",
+      "action": "FAQ",
+      "latency_ms": 17.787400000088383
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-18",
+    "blind_id": "campus-v2-blind-hard-0018",
+    "question": "毎日一時間のTOEICじゃなくて、当日のけっせき連絡の方を教えて。前者は不要",
+    "category": "absence_email",
+    "difficulty": "Hard",
+    "campus_answer": "結論：欠席メールの状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "absence_email",
+      "action": "FAQ",
+      "latency_ms": 5.921199999875171
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-19",
+    "blind_id": "campus-v2-blind-hard-0019",
+    "question": "授業料減免を調べるじゃなくて、大学で友達ができない これってどうするの方を教えて。前者は不要",
+    "category": "relationship",
+    "difficulty": "Hard",
+    "campus_answer": "結論：相手を決めつけず、事実・希望・境界線を分けて伝えます。\n今やること：1. 起きたことと困っている影響を整理します。 2. 落ち着いた場で具体的なお願いを一つ伝えます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：脅しや安全上の不安がある場合は直接対決を優先しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "relationship",
+      "action": "FAQ",
+      "latency_ms": 8.010199999944234
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-20",
+    "blind_id": "campus-v2-blind-hard-0020",
+    "question": "ハラスメントの相談先じゃなくて、空きコマの使い方 これってどうするの方を教えて。前者は不要",
+    "category": "schedule",
+    "difficulty": "Hard",
+    "campus_answer": "結論：予定整理の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "schedule",
+      "action": "FAQ",
+      "latency_ms": 7.474199999933262
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-21",
+    "blind_id": "campus-v2-blind-hard-0021",
+    "question": "極限の勉強法じゃなくて、確率分布の違い これってどうするの方を教えて。前者は不要",
+    "category": "statistics",
+    "difficulty": "Hard",
+    "campus_answer": "結論：統計の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "statistics",
+      "action": "RAG+MODEL",
+      "latency_ms": 6.767800000034185
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-22",
+    "blind_id": "campus-v2-blind-hard-0022",
+    "question": "どの窓口か確認じゃなくて、論点から構成を作る これってどうするの方を教えて。前者は不要",
+    "category": "report_outline",
+    "difficulty": "Hard",
+    "campus_answer": "レポート構成案です。課題文の評価基準に合わせて見出しを調整してください。\n\nテーマ：［レポートの問い］\n1. 序論：問い・背景・結論の見通し\n2. 本論1：主要な根拠と資料\n3. 本論2：別の根拠または反対意見の検討\n4. 考察：根拠から言えること・限界\n5. 結論：問いへの回答と残る課題\n6. 参考文献：指定形式で統一",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "report_outline",
+      "action": "TOOL",
+      "latency_ms": 1.8462000000454282
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-23",
+    "blind_id": "campus-v2-blind-hard-0023",
+    "question": "あと何単位か計算したいじゃなくて、かだいの要件を整理したいの方を教えて。前者は不要",
+    "category": "assignment",
+    "difficulty": "Hard",
+    "campus_answer": "結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment",
+      "action": "FAQ",
+      "latency_ms": 6.650100000115344
+    }
+  },
+  {
+    "id": "campus-v2-human-hard-24",
+    "blind_id": "campus-v2-blind-hard-0024",
+    "question": "欠席が増えて不安じゃなくて、具体的な行動を整理 これってどうするの方を教えて。前者は不要",
+    "category": "es_outline",
+    "difficulty": "Hard",
+    "campus_answer": "ES構成：\n1. 結論（何を伝えるか）\n2. 状況と課題\n3. 自分が取った具体的行動\n4. 工夫した理由\n5. 結果を数字・事実で示す\n6. 応募先でどう生かすか\n事実を誇張せず、企業ごとの設問と文字数に合わせてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "es_outline",
+      "action": "TOOL",
+      "latency_ms": 1.8474999999398278
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-00",
+    "blind_id": "campus-v2-blind-compound-0000",
+    "question": "目標GPAに必要な成績を先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+    "category": "gpa",
+    "difficulty": "Compound",
+    "campus_answer": "目標GPAの計算には、現在GPA、現在の取得単位、目標GPA、今後の単位数が必要です。大学のGP上限も確認してください。\n\nもう一つの相談：\n結論：到着予定時刻と事実を先に伝え、安全を優先してください。入室可否は授業案内に従います。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "gpa",
+      "action": "TOOL+MODEL",
+      "latency_ms": 10.068599999840444
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-01",
+    "blind_id": "campus-v2-blind-compound-0001",
+    "question": "先生へ休むと伝えたいを先に進めたい。それと、学生生活を整えたいも対応したい",
+    "category": "absence_email",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／欠席のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［日付］の授業を［理由］のため欠席いたします。\n必要な資料や対応がありましたら、ご教示いただけますと幸いです。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：困りごとを生活・学業・健康に分け、適切な学内窓口へつなげます。\n今やること：1. 今困っている事実と期限を一つ書き出します。 2. 大学の学生支援・相談・保健案内を確認します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：緊急性や安全に関わる場合は一人で抱えません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "absence_email",
+      "action": "TOOL+MODEL",
+      "latency_ms": 16.87699999979486
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-02",
+    "blind_id": "campus-v2-blind-compound-0002",
+    "question": "三日で試験対策を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+    "category": "study_plan",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "study_plan",
+      "action": "CLARIFY",
+      "latency_ms": 5.063699999936944
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-03",
+    "blind_id": "campus-v2-blind-compound-0003",
+    "question": "研究発表のアウトラインを先に進めたい。それと、学内施設の探し方も対応したい",
+    "category": "presentation_outline",
+    "difficulty": "Compound",
+    "campus_answer": "プレゼン構成案です。1枚1メッセージにし、発表時間の8割で終わるよう練習してください。\n\n1. 結論：［発表テーマ］で最も伝えたいこと\n2. 背景：なぜ重要か\n3. 根拠：データ・事例\n4. 検討：限界や反対意見\n5. まとめ：結論と次の行動\n6. 質疑用：出典と補足\n\nもう一つの相談：\n結論：困りごとを生活・学業・健康に分け、適切な学内窓口へつなげます。\n今やること：1. 今困っている事実と期限を一つ書き出します。 2. 大学の学生支援・相談・保健案内を確認します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：緊急性や安全に関わる場合は一人で抱えません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "presentation_outline",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.471400000165886
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-04",
+    "blind_id": "campus-v2-blind-compound-0004",
+    "question": "継続手続きの確認を先に進めたい。それと、遅刻メールを作りたいも対応したい",
+    "category": "scholarship",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：給付・貸与、条件、期限、返還の有無を制度ごとに確認します。\n今やること：1. 最新の募集要項と在籍校の案内を読みます。 2. 必要書類と提出期限を一覧にします。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：採用、金額、併用可否を事前に断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "scholarship",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.023800000022675
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-05",
+    "blind_id": "campus-v2-blind-compound-0005",
+    "question": "プログラミング学習の順番を先に進めたい。それと、研究室の選び方も対応したい",
+    "category": "programming",
+    "difficulty": "Compound",
+    "campus_answer": "結論：再現条件を小さくし、期待結果と実際の結果の差を調べます。\n今やること：1. エラー全文、入力、環境、再現手順を保存します。 2. 一度に一要因だけ変えて最小例を作ります。 3. まず条件と期限を整理してください。\n注意：出所不明のコードを理解せず実行しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "programming",
+      "action": "RAG+MODEL",
+      "latency_ms": 17.122599999993326
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-06",
+    "blind_id": "campus-v2-blind-compound-0006",
+    "question": "FAQから確認したいを先に進めたい。それと、ゼミへの遅刻メールも対応したい",
+    "category": "faq_search",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "faq_search",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.803400000009788
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-07",
+    "blind_id": "campus-v2-blind-compound-0007",
+    "question": "現在40点で残り30パーセントを先に進めたい。それと、大学生活に慣れないも対応したい",
+    "category": "grade_simulator",
+    "difficulty": "Compound",
+    "campus_answer": "必要点数を計算するため、現在までの獲得点、目標点、残り評価の割合を入力してください。例：現在40点、合格60点、残り評価30%。\n\nもう一つの相談：\n結論：困りごとを生活・学業・健康に分け、適切な学内窓口へつなげます。\n今やること：1. 今困っている事実と期限を一つ書き出します。 2. 大学の学生支援・相談・保健案内を確認します。 3. まず条件と期限を整理してください。\n注意：緊急性や安全に関わる場合は一人で抱えません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "grade_simulator",
+      "action": "TOOL+MODEL",
+      "latency_ms": 19.037499999967622
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-08",
+    "blind_id": "campus-v2-blind-compound-0008",
+    "question": "先生に遅れると伝えたいを先に進めたい。それと、提出サイト不具合の連絡も対応したい",
+    "category": "lateness_email",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：課題名、事実、提出可能日時を明記して期限前に相談します。受理されるとは断定しません。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness_email",
+      "action": "TOOL+MODEL",
+      "latency_ms": 18.013800000062474
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-09",
+    "blind_id": "campus-v2-blind-compound-0009",
+    "question": "課題が多くて選べないを先に進めたい。それと、学生生活を整えたいも対応したい",
+    "category": "assignment_priority",
+    "difficulty": "Compound",
+    "campus_answer": "課題名、締切までの日数、予想作業時間、成績への影響を入力してください。先に『提出不能になる期限』、次に『短時間で提出可能にできる課題』を優先します。\n\nもう一つの相談：\n結論：研究テーマ、活動方法、負担、指導方針を複数の情報で比較します。\n今やること：1. 公開資料と過去の活動を確認します。 2. 見学や説明会で具体的な進め方を質問します。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：評判だけで決めず、年度ごとの募集条件を確認します。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment_priority",
+      "action": "TOOL+MODEL",
+      "latency_ms": 17.77740000011363
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-10",
+    "blind_id": "campus-v2-blind-compound-0010",
+    "question": "面接日程をまとめるを先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+    "category": "career_schedule",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "career_schedule",
+      "action": "CLARIFY",
+      "latency_ms": 4.901900000049864
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-11",
+    "blind_id": "campus-v2-blind-compound-0011",
+    "question": "延納手続きの確認を先に進めたい。それと、学内施設の探し方も対応したい",
+    "category": "tuition",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "tuition",
+      "action": "CLARIFY",
+      "latency_ms": 4.779099999950631
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-12",
+    "blind_id": "campus-v2-blind-compound-0012",
+    "question": "AIに個人情報を入れないを先に進めたい。それと、遅刻メールを作りたいも対応したい",
+    "category": "ai_usage",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：情報／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：授業・大学の利用ルールを確認し、出力を一次資料で検証します。\n今やること：1. 禁止事項、申告、引用の要否を課題指示で確認します。 2. 機密情報や個人情報を入力しません。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：AIの回答や引用候補が正しいとは仮定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "ai_usage",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.73399999998037
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-13",
+    "blind_id": "campus-v2-blind-compound-0013",
+    "question": "テスト直前の優先事項を先に進めたい。それと、研究室の選び方も対応したい",
+    "category": "exam",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "exam",
+      "action": "CLARIFY",
+      "latency_ms": 4.824599999892598
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-14",
+    "blind_id": "campus-v2-blind-compound-0014",
+    "question": "欠席が増えて不安を先に進めたい。それと、ゼミへの遅刻メールも対応したい",
+    "category": "attendance",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：出席記録と授業ごとの扱いを確認し、事情を早めに伝えます。\n今やること：1. シラバスの出席・公欠・補講条件を確認します。 2. 日時と事情を簡潔に担当教員へ連絡します。 3. まず条件と期限を整理してください。\n注意：公欠や補完措置の可否は授業と大学の規程によります。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "attendance",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.57549999998264
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-15",
+    "blind_id": "campus-v2-blind-compound-0015",
+    "question": "締切を過ぎたお詫びを先に進めたい。それと、大学生活に慣れないも対応したい",
+    "category": "late_submission_email",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／課題提出遅延についてのご相談／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［課題名］について、［事実］により期限内の提出が難しい状況です。\n［提出可能日時］までの提出が可能か、ご相談させてください。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：困りごとを生活・学業・健康に分け、適切な学内窓口へつなげます。\n今やること：1. 今困っている事実と期限を一つ書き出します。 2. 大学の学生支援・相談・保健案内を確認します。 3. まず条件と期限を整理してください。\n注意：緊急性や安全に関わる場合は一人で抱えません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "late_submission_email",
+      "action": "TOOL+MODEL",
+      "latency_ms": 17.595099999880404
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-16",
+    "blind_id": "campus-v2-blind-compound-0016",
+    "question": "複数の締切をまとめるを先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+    "category": "deadline_organizer",
+    "difficulty": "Compound",
+    "campus_answer": "締切を整理するため、課題名・期限・所要時間を入力してください。期限が確定していないものは、確認先も一緒に記録します。\n\nもう一つの相談：\n結論：到着予定時刻と事実を先に伝え、安全を優先してください。入室可否は授業案内に従います。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "deadline_organizer",
+      "action": "TOOL+MODEL",
+      "latency_ms": 8.875600000010309
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-17",
+    "blind_id": "campus-v2-blind-compound-0017",
+    "question": "学生時代の経験を書くを先に進めたい。それと、学生生活を整えたいも対応したい",
+    "category": "es_outline",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "es_outline",
+      "action": "CLARIFY",
+      "latency_ms": 5.048400000077891
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-18",
+    "blind_id": "campus-v2-blind-compound-0018",
+    "question": "給与明細の確認を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+    "category": "part_time_job",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "part_time_job",
+      "action": "CLARIFY",
+      "latency_ms": 4.777299999886964
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-19",
+    "blind_id": "campus-v2-blind-compound-0019",
+    "question": "極限の勉強法を先に進めたい。それと、学内施設の探し方も対応したい",
+    "category": "math",
+    "difficulty": "Compound",
+    "campus_answer": "結論：数学の状況を、期限・現在分かっていること・確認先に分けると次の行動を決められます。\n今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n大学固有の条件は推測せず、最新の公式案内で確認してください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "math",
+      "action": "RAG+MODEL",
+      "latency_ms": 16.11630000002151
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-20",
+    "blind_id": "campus-v2-blind-compound-0020",
+    "question": "グループ課題で困ったを先に進めたい。それと、遅刻メールを作りたいも対応したい",
+    "category": "assignment",
+    "difficulty": "Compound",
+    "campus_answer": "そのまま編集できるメール案です。事実と依頼内容を確認し、角括弧を置き換えてください。\n\n件名：［授業名］／遅刻のご連絡／［学籍番号・氏名］\n\n［先生名］先生\n\nお世話になっております。［大学名・学部］の［学籍番号・氏名］です。\n［理由］により、［到着予定時刻］ごろ到着する見込みです。\n到着後の対応について、指示がありましたらお願いいたします。\nご迷惑をおかけし申し訳ありません。よろしくお願いいたします。\n\nもう一つの相談：\n結論：提出条件と締切を確定し、完成に必要な作業を小さく分けます。\n今やること：1. 課題文・評価基準・提出方法を読み直します。 2. 必須部分を先に仕上げ、提出可能な状態を確保します。 3. まず条件と期限を整理してください。\n注意：期限後の受理や再提出を認められるとは断定しません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "assignment",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.758599999940998
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-21",
+    "blind_id": "campus-v2-blind-compound-0021",
+    "question": "遅刻後にまずすることを先に進めたい。それと、研究室の選び方も対応したい",
+    "category": "lateness",
+    "difficulty": "Compound",
+    "campus_answer": "何について困っていますか？ 例：試験、課題、単位、履修、教授への連絡",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "lateness",
+      "action": "CLARIFY",
+      "latency_ms": 4.846299999826442
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-22",
+    "blind_id": "campus-v2-blind-compound-0022",
+    "question": "履修登録の組み方を先に進めたい。それと、ゼミへの遅刻メールも対応したい",
+    "category": "registration",
+    "difficulty": "Compound",
+    "campus_answer": "履修相談では、次の順で確認してください。\n1. 入学年度の履修要項で必修・前提科目・上限単位を確認\n2. 時間割重複、卒業要件、再履修科目を一覧化\n3. 登録期限や例外対応は学生ポータルと教務窓口で確認\n学部・学年・候補科目が分かれば、確認表に整理できます。\n\nもう一つの相談：\n結論：到着予定時刻と事実を先に伝え、安全を優先してください。入室可否は授業案内に従います。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "registration",
+      "action": "TOOL+MODEL",
+      "latency_ms": 8.998900000051435
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-23",
+    "blind_id": "campus-v2-blind-compound-0023",
+    "question": "2000字レポートの構成を先に進めたい。それと、大学生活に慣れないも対応したい",
+    "category": "report_outline",
+    "difficulty": "Compound",
+    "campus_answer": "レポート構成案です。課題文の評価基準に合わせて見出しを調整してください。\n\nテーマ：［レポートの問い］\n1. 序論：問い・背景・結論の見通し\n2. 本論1：主要な根拠と資料\n3. 本論2：別の根拠または反対意見の検討\n4. 考察：根拠から言えること・限界\n5. 結論：問いへの回答と残る課題\n6. 参考文献：指定形式で統一\n\nもう一つの相談：\n結論：困りごとを生活・学業・健康に分け、適切な学内窓口へつなげます。\n今やること：1. 今困っている事実と期限を一つ書き出します。 2. 大学の学生支援・相談・保健案内を確認します。 3. まず条件と期限を整理してください。\n注意：緊急性や安全に関わる場合は一人で抱えません。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "report_outline",
+      "action": "TOOL+MODEL",
+      "latency_ms": 9.568499999886626
+    }
+  },
+  {
+    "id": "campus-v2-human-compound-24",
+    "blind_id": "campus-v2-blind-compound-0024",
+    "question": "毎日一時間のTOEICを先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+    "category": "toeic_plan",
+    "difficulty": "Compound",
+    "campus_answer": "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。週1回は時間を測って模試を行い、誤答を原因別に記録してください。提出期限がある場合は公式の試験日・結果発送日も確認してください。\n\nもう一つの相談：\n結論：到着予定時刻と事実を先に伝え、安全を優先してください。入室可否は授業案内に従います。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。",
+    "chatgpt_answer": "",
+    "gemini_answer": "",
+    "scores": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    },
+    "competitor_scores": {
+      "chatgpt": null,
+      "gemini": null
+    },
+    "notes": "",
+    "evaluation_status": "PENDING_MANUAL",
+    "campus_metadata": {
+      "category": "toeic_plan",
+      "action": "TOOL+MODEL",
+      "latency_ms": 8.792000000084954
+    }
+  }
+]

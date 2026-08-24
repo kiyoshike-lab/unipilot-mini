@@ -1,0 +1,731 @@
+{
+  "split": "blind",
+  "train": 2250,
+  "selection_policy": "highest dev accuracy with P95 below 20ms; ties prefer multi-intent/action-capable hierarchical hybrid",
+  "selected": "hierarchical_hybrid (frozen on dev)",
+  "results": [
+    {
+      "method": "hierarchical_hybrid",
+      "split": "blind",
+      "questions": 2000,
+      "accuracy": 0.8545,
+      "action_accuracy": 0.9325,
+      "multi_intent_recall": 0.8545,
+      "fit_seconds": 1.9705629999998564,
+      "mean_latency_ms": 2.3154656999981853,
+      "p95_latency_ms": 4.867500000045766,
+      "p99_latency_ms": 5.024699999921722,
+      "rss_before_mb": null,
+      "rss_after_fit_mb": null,
+      "rss_delta_mb": null,
+      "confidence_bands": {
+        "high": 1355,
+        "medium": 278,
+        "low": 367
+      },
+      "sample_failures": [
+        {
+          "id": "campus-v2-blind-ambiguous-0000",
+          "question": "今週、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.575508
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0001",
+          "question": "今週、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.547698
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0002",
+          "question": "今週、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.651131
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0003",
+          "question": "今週、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.517172
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0004",
+          "question": "今週、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.527194
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0005",
+          "question": "今週、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.555972
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0006",
+          "question": "今週、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.501459
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0007",
+          "question": "今週、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.57242
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0008",
+          "question": "今週、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.55706
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0009",
+          "question": "今週、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.573407
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0010",
+          "question": "今日、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.573763
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0011",
+          "question": "今日、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.544816
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0012",
+          "question": "今日、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.652374
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0013",
+          "question": "今日、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.516675
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0014",
+          "question": "今日、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.526746
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0015",
+          "question": "今日、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.554809
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0016",
+          "question": "今日、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.500517
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0017",
+          "question": "今日、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.568951
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0018",
+          "question": "今日、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.554431
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0019",
+          "question": "今日、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.571703
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0020",
+          "question": "さっき、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.510597
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0021",
+          "question": "さっき、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.544398
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0022",
+          "question": "さっき、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.653668
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0023",
+          "question": "さっき、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.516473
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0024",
+          "question": "さっき、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.526356
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0025",
+          "question": "さっき、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.556703
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0026",
+          "question": "さっき、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.500937
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0027",
+          "question": "さっき、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.568824
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0028",
+          "question": "さっき、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.554527
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0029",
+          "question": "さっき、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.510226
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0030",
+          "question": "初めてで、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.509509
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0031",
+          "question": "初めてで、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "internship",
+          "confidence": 0.508616
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0032",
+          "question": "初めてで、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.645407
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0033",
+          "question": "初めてで、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.515353
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0034",
+          "question": "初めてで、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.53393
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0035",
+          "question": "初めてで、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.558488
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0036",
+          "question": "初めてで、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.502588
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0037",
+          "question": "初めてで、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "internship",
+          "confidence": 0.530756
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0038",
+          "question": "初めてで、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "internship",
+          "confidence": 0.518572
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0039",
+          "question": "初めてで、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.509103
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0040",
+          "question": "急に、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.571397
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0041",
+          "question": "急に、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.541494
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0042",
+          "question": "急に、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.652693
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0043",
+          "question": "急に、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.517979
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0044",
+          "question": "急に、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.521233
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0045",
+          "question": "急に、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.556164
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0047",
+          "question": "急に、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.567725
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0048",
+          "question": "急に、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.550917
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0049",
+          "question": "急に、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.569283
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0050",
+          "question": "予定外で、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "schedule",
+          "confidence": 0.50875
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0051",
+          "question": "予定外で、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.552579
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0052",
+          "question": "予定外で、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.647477
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0053",
+          "question": "予定外で、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "schedule",
+          "confidence": 0.507
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0054",
+          "question": "予定外で、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.528486
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0055",
+          "question": "予定外で、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.555783
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0056",
+          "question": "予定外で、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.500897
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0057",
+          "question": "予定外で、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.577411
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0058",
+          "question": "予定外で、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.559194
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0059",
+          "question": "予定外で、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "schedule",
+          "confidence": 0.509461
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0060",
+          "question": "一人では、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.51095
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0061",
+          "question": "一人では、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "attendance",
+          "confidence": 0.540424
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0062",
+          "question": "一人では、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.645035
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0063",
+          "question": "一人では、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.516739
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0064",
+          "question": "一人では、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "lateness",
+          "confidence": 0.537558
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0065",
+          "question": "一人では、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.549129
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0067",
+          "question": "一人では、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "attendance",
+          "confidence": 0.521776
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0068",
+          "question": "一人では、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.51519
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0069",
+          "question": "一人では、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.510657
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0070",
+          "question": "まだ何も、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.571397
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0071",
+          "question": "まだ何も、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.541494
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0072",
+          "question": "まだ何も、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.652693
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0073",
+          "question": "まだ何も、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.517979
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0074",
+          "question": "まだ何も、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.521233
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0075",
+          "question": "まだ何も、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.556164
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0077",
+          "question": "まだ何も、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.567725
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0078",
+          "question": "まだ何も、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.550917
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0079",
+          "question": "まだ何も、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.569283
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0080",
+          "question": "情報がなくて、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.57699
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0081",
+          "question": "情報がなくて、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.555469
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0082",
+          "question": "情報がなくて、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.643479
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0083",
+          "question": "情報がなくて、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.517479
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0084",
+          "question": "情報がなくて、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.533462
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0085",
+          "question": "情報がなくて、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.550993
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0086",
+          "question": "情報がなくて、何からすればいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.503733
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0087",
+          "question": "情報がなくて、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.57573
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0088",
+          "question": "情報がなくて、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.560502
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0089",
+          "question": "情報がなくて、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.575009
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0090",
+          "question": "うまく言えないけど、これやばい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.505218
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0091",
+          "question": "うまく言えないけど、ちょっと詰んだ。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.524983
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0092",
+          "question": "うまく言えないけど、大学のことで困った。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.655436
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0093",
+          "question": "うまく言えないけど、どうしたらいい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.508349
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0094",
+          "question": "うまく言えないけど、間に合うかな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "lateness",
+          "confidence": 0.509807
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0095",
+          "question": "うまく言えないけど、相談したい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.54901
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0097",
+          "question": "うまく言えないけど、もう無理かも。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.538861
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0098",
+          "question": "うまく言えないけど、これ大丈夫かな。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.508734
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0099",
+          "question": "うまく言えないけど、助けてほしい。まず確認してほしい 1",
+          "expected": "general",
+          "predicted": "tuition",
+          "confidence": 0.505378
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0100",
+          "question": "今週、これやばい。まず確認してほしい 2",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.575508
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0101",
+          "question": "今週、ちょっと詰んだ。まず確認してほしい 2",
+          "expected": "general",
+          "predicted": "faq_search",
+          "confidence": 0.547698
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0102",
+          "question": "今週、大学のことで困った。まず確認してほしい 2",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.651131
+        },
+        {
+          "id": "campus-v2-blind-ambiguous-0103",
+          "question": "今週、どうしたらいい。まず確認してほしい 2",
+          "expected": "general",
+          "predicted": "assignment",
+          "confidence": 0.517172
+        }
+      ]
+    }
+  ],
+  "external_ai_api": "OFF"
+}

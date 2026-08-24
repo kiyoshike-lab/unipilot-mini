@@ -1,0 +1,22 @@
+{
+  "source": "data/campus_v1/faq/faq.jsonl",
+  "reviewed": 1000,
+  "human_reviewed": 0,
+  "automatic_review_only": true,
+  "score_distribution": {
+    "5": 940,
+    "4": 60
+  },
+  "below_4_after_fix": 0,
+  "changes": {
+    "question_grammar_fixed": 113,
+    "low_quality_fixed": 10
+  },
+  "criteria": [
+    "direct_conclusion",
+    "action_steps",
+    "risk_boundary",
+    "specific_enough",
+    "no_external_ai"
+  ]
+}

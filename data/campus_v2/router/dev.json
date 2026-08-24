@@ -1,0 +1,5882 @@
+[
+  {
+    "id": "campus-v2-dev-00-00",
+    "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（1件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-01",
+    "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（2件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-02",
+    "question": "大学の相談です。暗記科目の復習について、判断材料と次の行動を知りたい（3件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-03",
+    "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（4件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-04",
+    "question": "大学の相談です。テスト直前の優先事項について、判断材料と次の行動を知りたい（5件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-05",
+    "question": "大学の相談です。過去問の使い方について、判断材料と次の行動を知りたい（6件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-06",
+    "question": "大学の相談です。試験範囲が広すぎるについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-07",
+    "question": "大学の相談です。持ち込み資料の準備について、判断材料と次の行動を知りたい（8件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-08",
+    "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（9件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-09",
+    "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（10件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-10",
+    "question": "大学の相談です。暗記科目の復習について、判断材料と次の行動を知りたい（11件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-00-11",
+    "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（12件目）",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-00",
+    "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-01",
+    "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-02",
+    "question": "大学の相談です。提出前に見直したいについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-03",
+    "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-04",
+    "question": "大学の相談です。提出サイトが動かないについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-05",
+    "question": "大学の相談です。課題の指示が分からないについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-06",
+    "question": "大学の相談です。提出形式を確認したいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-07",
+    "question": "大学の相談です。宿題が終わらないについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-08",
+    "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-09",
+    "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-10",
+    "question": "大学の相談です。提出前に見直したいについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-01-11",
+    "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-00",
+    "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（1件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-01",
+    "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（2件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-02",
+    "question": "大学の相談です。単位認定の確認について、判断材料と次の行動を知りたい（3件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-03",
+    "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（4件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-04",
+    "question": "大学の相談です。あと何単位か計算したいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-05",
+    "question": "大学の相談です。単位を落としそうについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-06",
+    "question": "大学の相談です。卒業までの単位を整理したいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-07",
+    "question": "大学の相談です。必修を落とした影響について、判断材料と次の行動を知りたい（8件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-08",
+    "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（9件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-09",
+    "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（10件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-10",
+    "question": "大学の相談です。単位認定の確認について、判断材料と次の行動を知りたい（11件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-02-11",
+    "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（12件目）",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-00",
+    "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（1件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-01",
+    "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-02",
+    "question": "大学の相談です。GPAが低くて不安について、判断材料と次の行動を知りたい（3件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-03",
+    "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-04",
+    "question": "大学の相談です。GPA計算規程の確認について、判断材料と次の行動を知りたい（5件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-05",
+    "question": "大学の相談です。GPAの意味について、判断材料と次の行動を知りたい（6件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-06",
+    "question": "大学の相談です。今学期のGPA計算について、判断材料と次の行動を知りたい（7件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-07",
+    "question": "大学の相談です。目標GPAに必要な成績について、判断材料と次の行動を知りたい（8件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-08",
+    "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（9件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-09",
+    "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-10",
+    "question": "大学の相談です。GPAが低くて不安について、判断材料と次の行動を知りたい（11件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-03-11",
+    "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-00",
+    "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-01",
+    "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（2件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-02",
+    "question": "大学の相談です。再試験で必要な点について、判断材料と次の行動を知りたい（3件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-03",
+    "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（4件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-04",
+    "question": "大学の相談です。合格ラインのシミュレーションについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-05",
+    "question": "大学の相談です。合格まで何点必要について、判断材料と次の行動を知りたい（6件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-06",
+    "question": "大学の相談です。現在40点で残り30パーセントについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-07",
+    "question": "大学の相談です。期末試験の必要点について、判断材料と次の行動を知りたい（8件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-08",
+    "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-09",
+    "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（10件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-10",
+    "question": "大学の相談です。再試験で必要な点について、判断材料と次の行動を知りたい（11件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-04-11",
+    "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（12件目）",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-00",
+    "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（1件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-01",
+    "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（2件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-02",
+    "question": "大学の相談です。欠席回数の確認について、判断材料と次の行動を知りたい（3件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-03",
+    "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-04",
+    "question": "大学の相談です。出席記録が違っているについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-05",
+    "question": "大学の相談です。欠席が増えて不安について、判断材料と次の行動を知りたい（6件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-06",
+    "question": "大学の相談です。公欠の申請方法について、判断材料と次の行動を知りたい（7件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-07",
+    "question": "大学の相談です。出席率を確認したいについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-08",
+    "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（9件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-09",
+    "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（10件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-10",
+    "question": "大学の相談です。欠席回数の確認について、判断材料と次の行動を知りたい（11件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-05-11",
+    "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-00",
+    "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（1件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-01",
+    "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-02",
+    "question": "大学の相談です。教室移動で遅れそうについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-03",
+    "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-04",
+    "question": "大学の相談です。遅刻後にまずすることについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-05",
+    "question": "大学の相談です。授業に遅刻しそうについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-06",
+    "question": "大学の相談です。寝坊したときの対応について、判断材料と次の行動を知りたい（7件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-07",
+    "question": "大学の相談です。電車遅延で間に合わないについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-08",
+    "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（9件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-09",
+    "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-10",
+    "question": "大学の相談です。教室移動で遅れそうについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-06-11",
+    "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-00",
+    "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-01",
+    "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-02",
+    "question": "大学の相談です。授業内容の質問メールについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-03",
+    "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-04",
+    "question": "大学の相談です。教授メールの件名について、判断材料と次の行動を知りたい（5件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-05",
+    "question": "大学の相談です。教授へ面談依頼メールについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-06",
+    "question": "大学の相談です。先生に質問する文面について、判断材料と次の行動を知りたい（7件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-07",
+    "question": "大学の相談です。教員へ相談を伝えるについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-08",
+    "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-09",
+    "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-10",
+    "question": "大学の相談です。授業内容の質問メールについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-07-11",
+    "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-00",
+    "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-01",
+    "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-02",
+    "question": "大学の相談です。病院に行くので欠席連絡について、判断材料と次の行動を知りたい（3件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-03",
+    "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-04",
+    "question": "大学の相談です。当日の欠席連絡について、判断材料と次の行動を知りたい（5件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-05",
+    "question": "大学の相談です。欠席メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-06",
+    "question": "大学の相談です。体調不良で休む連絡について、判断材料と次の行動を知りたい（7件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-07",
+    "question": "大学の相談です。授業を欠席する文面について、判断材料と次の行動を知りたい（8件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-08",
+    "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-09",
+    "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-10",
+    "question": "大学の相談です。病院に行くので欠席連絡について、判断材料と次の行動を知りたい（11件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-08-11",
+    "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-00",
+    "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-01",
+    "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（2件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-02",
+    "question": "大学の相談です。到着見込みを伝える文面について、判断材料と次の行動を知りたい（3件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-03",
+    "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-04",
+    "question": "大学の相談です。遅延証明を添える連絡について、判断材料と次の行動を知りたい（5件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-05",
+    "question": "大学の相談です。遅刻メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-06",
+    "question": "大学の相談です。電車遅延の連絡文について、判断材料と次の行動を知りたい（7件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-07",
+    "question": "大学の相談です。先生に遅れると伝えたいについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-08",
+    "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-09",
+    "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（10件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-10",
+    "question": "大学の相談です。到着見込みを伝える文面について、判断材料と次の行動を知りたい（11件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-09-11",
+    "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-00",
+    "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（1件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-01",
+    "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（2件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-02",
+    "question": "大学の相談です。課題の延長をお願いする文面について、判断材料と次の行動を知りたい（3件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-03",
+    "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-04",
+    "question": "大学の相談です。締切後の対応を尋ねるメールについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-05",
+    "question": "大学の相談です。課題提出が遅れるメールについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-06",
+    "question": "大学の相談です。締切を過ぎたお詫びについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-07",
+    "question": "大学の相談です。提出遅延を先生に相談について、判断材料と次の行動を知りたい（8件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-08",
+    "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（9件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-09",
+    "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（10件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-10",
+    "question": "大学の相談です。課題の延長をお願いする文面について、判断材料と次の行動を知りたい（11件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-10-11",
+    "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-00",
+    "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（1件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-01",
+    "question": "大学の相談です。時間割を決めたいについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-02",
+    "question": "大学の相談です。登録エラーが出るについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-03",
+    "question": "大学の相談です。履修上限を確認について、判断材料と次の行動を知りたい（4件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-04",
+    "question": "大学の相談です。シラバスから科目を選ぶについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-05",
+    "question": "大学の相談です。履修登録の組み方について、判断材料と次の行動を知りたい（6件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-06",
+    "question": "大学の相談です。必修が重複したについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-07",
+    "question": "大学の相談です。抽選科目に外れたについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-08",
+    "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（9件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-09",
+    "question": "大学の相談です。時間割を決めたいについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-10",
+    "question": "大学の相談です。登録エラーが出るについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-11-11",
+    "question": "大学の相談です。履修上限を確認について、判断材料と次の行動を知りたい（12件目）",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-00",
+    "question": "大学の相談です。一日の予定を組みたいについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-01",
+    "question": "大学の相談です。予定が重なっているについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-02",
+    "question": "大学の相談です。勉強時間を確保したいについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-03",
+    "question": "大学の相談です。生活リズムを整えるについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-04",
+    "question": "大学の相談です。週の時間割を見直すについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-05",
+    "question": "大学の相談です。今週の予定を整理について、判断材料と次の行動を知りたい（6件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-06",
+    "question": "大学の相談です。空きコマの使い方について、判断材料と次の行動を知りたい（7件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-07",
+    "question": "大学の相談です。授業とバイトの時間配分について、判断材料と次の行動を知りたい（8件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-08",
+    "question": "大学の相談です。一日の予定を組みたいについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-09",
+    "question": "大学の相談です。予定が重なっているについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-10",
+    "question": "大学の相談です。勉強時間を確保したいについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-12-11",
+    "question": "大学の相談です。生活リズムを整えるについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-00",
+    "question": "大学の相談です。苦手分野の復習計画について、判断材料と次の行動を知りたい（1件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-01",
+    "question": "大学の相談です。三日で試験対策について、判断材料と次の行動を知りたい（2件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-02",
+    "question": "大学の相談です。複数科目の勉強配分について、判断材料と次の行動を知りたい（3件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-03",
+    "question": "大学の相談です。一か月の学習計画について、判断材料と次の行動を知りたい（4件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-04",
+    "question": "大学の相談です。今日からの試験準備について、判断材料と次の行動を知りたい（5件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-05",
+    "question": "大学の相談です。試験まで7日の勉強計画について、判断材料と次の行動を知りたい（6件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-06",
+    "question": "大学の相談です。一日2時間の学習計画について、判断材料と次の行動を知りたい（7件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-07",
+    "question": "大学の相談です。テスト勉強を始めたいについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-08",
+    "question": "大学の相談です。苦手分野の復習計画について、判断材料と次の行動を知りたい（9件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-09",
+    "question": "大学の相談です。三日で試験対策について、判断材料と次の行動を知りたい（10件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-10",
+    "question": "大学の相談です。複数科目の勉強配分について、判断材料と次の行動を知りたい（11件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-13-11",
+    "question": "大学の相談です。一か月の学習計画について、判断材料と次の行動を知りたい（12件目）",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-00",
+    "question": "大学の相談です。課題が多くて選べないについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-01",
+    "question": "大学の相談です。重い課題を先にするかについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-02",
+    "question": "大学の相談です。明日締切の課題を整理について、判断材料と次の行動を知りたい（3件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-03",
+    "question": "大学の相談です。複数レポートの順番について、判断材料と次の行動を知りたい（4件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-04",
+    "question": "大学の相談です。課題の緊急度を決めたいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-05",
+    "question": "大学の相談です。三つの課題の優先順位について、判断材料と次の行動を知りたい（6件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-06",
+    "question": "大学の相談です。締切と所要時間で並べたいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-07",
+    "question": "大学の相談です。どの課題から始めるかについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-08",
+    "question": "大学の相談です。課題が多くて選べないについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-09",
+    "question": "大学の相談です。重い課題を先にするかについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-10",
+    "question": "大学の相談です。明日締切の課題を整理について、判断材料と次の行動を知りたい（11件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-14-11",
+    "question": "大学の相談です。複数レポートの順番について、判断材料と次の行動を知りたい（12件目）",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-00",
+    "question": "大学の相談です。期限を忘れない方法について、判断材料と次の行動を知りたい（1件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-01",
+    "question": "大学の相談です。今月の課題期限について、判断材料と次の行動を知りたい（2件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-02",
+    "question": "大学の相談です。締切順に並べたいについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-03",
+    "question": "大学の相談です。提出日を管理したいについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-04",
+    "question": "大学の相談です。締切カレンダーを作るについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-05",
+    "question": "大学の相談です。締切を一覧にしたいについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-06",
+    "question": "大学の相談です。提出期限を整理するについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-07",
+    "question": "大学の相談です。複数の締切をまとめるについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-08",
+    "question": "大学の相談です。期限を忘れない方法について、判断材料と次の行動を知りたい（9件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-09",
+    "question": "大学の相談です。今月の課題期限について、判断材料と次の行動を知りたい（10件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-10",
+    "question": "大学の相談です。締切順に並べたいについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-15-11",
+    "question": "大学の相談です。提出日を管理したいについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-00",
+    "question": "大学の相談です。論点から構成を作るについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-01",
+    "question": "大学の相談です。考察の位置を決めたいについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-02",
+    "question": "大学の相談です。卒論アウトラインについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-03",
+    "question": "大学の相談です。文字数を節ごとに配分について、判断材料と次の行動を知りたい（4件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-04",
+    "question": "大学の相談です。レポート構成を見直すについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-05",
+    "question": "大学の相談です。レポートの章立てについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-06",
+    "question": "大学の相談です。2000字レポートの構成について、判断材料と次の行動を知りたい（7件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-07",
+    "question": "大学の相談です。序論本論結論の配分について、判断材料と次の行動を知りたい（8件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-08",
+    "question": "大学の相談です。論点から構成を作るについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-09",
+    "question": "大学の相談です。考察の位置を決めたいについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-10",
+    "question": "大学の相談です。卒論アウトラインについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-16-11",
+    "question": "大学の相談です。文字数を節ごとに配分について、判断材料と次の行動を知りたい（12件目）",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-00",
+    "question": "大学の相談です。出典をどこに付けるかについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-01",
+    "question": "大学の相談です。コピペにならないか確認について、判断材料と次の行動を知りたい（2件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-02",
+    "question": "大学の相談です。ウェブ資料の引用について、判断材料と次の行動を知りたい（3件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-03",
+    "question": "大学の相談です。孫引きを避けたいについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-04",
+    "question": "大学の相談です。引用箇所をチェックについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-05",
+    "question": "大学の相談です。引用の書き方について、判断材料と次の行動を知りたい（6件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-06",
+    "question": "大学の相談です。参考文献の確認について、判断材料と次の行動を知りたい（7件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-07",
+    "question": "大学の相談です。直接引用と要約の違いについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-08",
+    "question": "大学の相談です。出典をどこに付けるかについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-09",
+    "question": "大学の相談です。コピペにならないか確認について、判断材料と次の行動を知りたい（10件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-10",
+    "question": "大学の相談です。ウェブ資料の引用について、判断材料と次の行動を知りたい（11件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-17-11",
+    "question": "大学の相談です。孫引きを避けたいについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-00",
+    "question": "大学の相談です。導入と結論の作り方について、判断材料と次の行動を知りたい（1件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-01",
+    "question": "大学の相談です。質疑時間を含む発表について、判断材料と次の行動を知りたい（2件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-02",
+    "question": "大学の相談です。研究発表のアウトラインについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-03",
+    "question": "大学の相談です。説明順を整理するについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-04",
+    "question": "大学の相談です。プレゼンを短くまとめるについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-05",
+    "question": "大学の相談です。発表の流れを作るについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-06",
+    "question": "大学の相談です。10分プレゼンの時間配分について、判断材料と次の行動を知りたい（7件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-07",
+    "question": "大学の相談です。スライド構成を考えるについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-08",
+    "question": "大学の相談です。導入と結論の作り方について、判断材料と次の行動を知りたい（9件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-09",
+    "question": "大学の相談です。質疑時間を含む発表について、判断材料と次の行動を知りたい（10件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-10",
+    "question": "大学の相談です。研究発表のアウトラインについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-18-11",
+    "question": "大学の相談です。説明順を整理するについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-00",
+    "question": "大学の相談です。就活準備の順番について、判断材料と次の行動を知りたい（1件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-01",
+    "question": "大学の相談です。面接日程をまとめるについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-02",
+    "question": "大学の相談です。エントリー締切管理について、判断材料と次の行動を知りたい（3件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-03",
+    "question": "大学の相談です。学業優先で就活計画について、判断材料と次の行動を知りたい（4件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-04",
+    "question": "大学の相談です。一か月の就活予定について、判断材料と次の行動を知りたい（5件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-05",
+    "question": "大学の相談です。就活日程を整理について、判断材料と次の行動を知りたい（6件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-06",
+    "question": "大学の相談です。授業と選考の両立について、判断材料と次の行動を知りたい（7件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-07",
+    "question": "大学の相談です。企業説明会の予定について、判断材料と次の行動を知りたい（8件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-08",
+    "question": "大学の相談です。就活準備の順番について、判断材料と次の行動を知りたい（9件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-09",
+    "question": "大学の相談です。面接日程をまとめるについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-10",
+    "question": "大学の相談です。エントリー締切管理について、判断材料と次の行動を知りたい（11件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-19-11",
+    "question": "大学の相談です。学業優先で就活計画について、判断材料と次の行動を知りたい（12件目）",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-00",
+    "question": "大学の相談です。学生時代の経験を書くについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-01",
+    "question": "大学の相談です。400字ESの配分について、判断材料と次の行動を知りたい（2件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-02",
+    "question": "大学の相談です。具体的な行動を整理について、判断材料と次の行動を知りたい（3件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-03",
+    "question": "大学の相談です。ESを読みやすくするについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-04",
+    "question": "大学の相談です。エントリーシートの骨組みについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-05",
+    "question": "大学の相談です。ESの構成について、判断材料と次の行動を知りたい（6件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-06",
+    "question": "大学の相談です。自己PRの組み立てについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-07",
+    "question": "大学の相談です。志望動機の流れについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-08",
+    "question": "大学の相談です。学生時代の経験を書くについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-09",
+    "question": "大学の相談です。400字ESの配分について、判断材料と次の行動を知りたい（10件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-10",
+    "question": "大学の相談です。具体的な行動を整理について、判断材料と次の行動を知りたい（11件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-20-11",
+    "question": "大学の相談です。ESを読みやすくするについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-00",
+    "question": "大学の相談です。リスニングの配分について、判断材料と次の行動を知りたい（1件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-01",
+    "question": "大学の相談です。試験日までの英語学習について、判断材料と次の行動を知りたい（2件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-02",
+    "question": "大学の相談です。模試の復習計画について、判断材料と次の行動を知りたい（3件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-03",
+    "question": "大学の相談です。単語と読解の時間配分について、判断材料と次の行動を知りたい（4件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-04",
+    "question": "大学の相談です。TOEIC学習を続けたいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-05",
+    "question": "大学の相談です。TOEIC一か月計画について、判断材料と次の行動を知りたい（6件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-06",
+    "question": "大学の相談です。600点を目指す勉強について、判断材料と次の行動を知りたい（7件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-07",
+    "question": "大学の相談です。毎日一時間のTOEICについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-08",
+    "question": "大学の相談です。リスニングの配分について、判断材料と次の行動を知りたい（9件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-09",
+    "question": "大学の相談です。試験日までの英語学習について、判断材料と次の行動を知りたい（10件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-10",
+    "question": "大学の相談です。模試の復習計画について、判断材料と次の行動を知りたい（11件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-21-11",
+    "question": "大学の相談です。単語と読解の時間配分について、判断材料と次の行動を知りたい（12件目）",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-00",
+    "question": "大学の相談です。インターン面接準備について、判断材料と次の行動を知りたい（1件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-01",
+    "question": "大学の相談です。授業とインターンの両立について、判断材料と次の行動を知りたい（2件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-02",
+    "question": "大学の相談です。募集要項を読みたいについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-03",
+    "question": "大学の相談です。参加後のお礼について、判断材料と次の行動を知りたい（4件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-04",
+    "question": "大学の相談です。初めてのインターン応募について、判断材料と次の行動を知りたい（5件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-05",
+    "question": "大学の相談です。インターンの探し方について、判断材料と次の行動を知りたい（6件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-06",
+    "question": "大学の相談です。応募前に確認することについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-07",
+    "question": "大学の相談です。短期と長期の違いについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-08",
+    "question": "大学の相談です。インターン面接準備について、判断材料と次の行動を知りたい（9件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-09",
+    "question": "大学の相談です。授業とインターンの両立について、判断材料と次の行動を知りたい（10件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-10",
+    "question": "大学の相談です。募集要項を読みたいについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-22-11",
+    "question": "大学の相談です。参加後のお礼について、判断材料と次の行動を知りたい（12件目）",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-00",
+    "question": "大学の相談です。JASSOの確認先について、判断材料と次の行動を知りたい（1件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-01",
+    "question": "大学の相談です。奨学金申請の準備について、判断材料と次の行動を知りたい（2件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-02",
+    "question": "大学の相談です。家計が変わったときについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-03",
+    "question": "大学の相談です。継続手続きの確認について、判断材料と次の行動を知りたい（4件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-04",
+    "question": "大学の相談です。奨学金の締切について、判断材料と次の行動を知りたい（5件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-05",
+    "question": "大学の相談です。奨学金の種類について、判断材料と次の行動を知りたい（6件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-06",
+    "question": "大学の相談です。給付型を調べたいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-07",
+    "question": "大学の相談です。貸与型の返還について、判断材料と次の行動を知りたい（8件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-08",
+    "question": "大学の相談です。JASSOの確認先について、判断材料と次の行動を知りたい（9件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-09",
+    "question": "大学の相談です。奨学金申請の準備について、判断材料と次の行動を知りたい（10件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-10",
+    "question": "大学の相談です。家計が変わったときについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-23-11",
+    "question": "大学の相談です。継続手続きの確認について、判断材料と次の行動を知りたい（12件目）",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-00",
+    "question": "大学の相談です。授業料減免を調べるについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-01",
+    "question": "大学の相談です。学費が払えないときについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-02",
+    "question": "大学の相談です。延納手続きの確認について、判断材料と次の行動を知りたい（3件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-03",
+    "question": "大学の相談です。学費の内訳について、判断材料と次の行動を知りたい（4件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-04",
+    "question": "大学の相談です。納付書をなくしたについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-05",
+    "question": "大学の相談です。授業料の納付について、判断材料と次の行動を知りたい（6件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-06",
+    "question": "大学の相談です。学費の分納を相談について、判断材料と次の行動を知りたい（7件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-07",
+    "question": "大学の相談です。納付期限の確認について、判断材料と次の行動を知りたい（8件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-08",
+    "question": "大学の相談です。授業料減免を調べるについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-09",
+    "question": "大学の相談です。学費が払えないときについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-10",
+    "question": "大学の相談です。延納手続きの確認について、判断材料と次の行動を知りたい（11件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-24-11",
+    "question": "大学の相談です。学費の内訳について、判断材料と次の行動を知りたい（12件目）",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-00",
+    "question": "大学の相談です。アルバイトを探すについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-01",
+    "question": "大学の相談です。給与明細の確認について、判断材料と次の行動を知りたい（2件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-02",
+    "question": "大学の相談です。急なシフト変更について、判断材料と次の行動を知りたい（3件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-03",
+    "question": "大学の相談です。学業時間を確保について、判断材料と次の行動を知りたい（4件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-04",
+    "question": "大学の相談です。バイト先への相談について、判断材料と次の行動を知りたい（5件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-05",
+    "question": "大学の相談です。バイトと授業の両立について、判断材料と次の行動を知りたい（6件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-06",
+    "question": "大学の相談です。シフトを減らしたいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-07",
+    "question": "大学の相談です。試験前の勤務調整について、判断材料と次の行動を知りたい（8件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-08",
+    "question": "大学の相談です。アルバイトを探すについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-09",
+    "question": "大学の相談です。給与明細の確認について、判断材料と次の行動を知りたい（10件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-10",
+    "question": "大学の相談です。急なシフト変更について、判断材料と次の行動を知りたい（11件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-25-11",
+    "question": "大学の相談です。学業時間を確保について、判断材料と次の行動を知りたい（12件目）",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-00",
+    "question": "大学の相談です。研究室の選び方について、判断材料と次の行動を知りたい（1件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-01",
+    "question": "大学の相談です。ゼミでの過ごし方について、判断材料と次の行動を知りたい（2件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-02",
+    "question": "大学の相談です。学内施設の探し方について、判断材料と次の行動を知りたい（3件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-03",
+    "question": "大学の相談です。新学期の準備について、判断材料と次の行動を知りたい（4件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-04",
+    "question": "大学の相談です。学生生活を整えたいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-05",
+    "question": "大学の相談です。サークル選びについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-06",
+    "question": "大学の相談です。大学生活に慣れないについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-07",
+    "question": "大学の相談です。一人暮らしの生活管理について、判断材料と次の行動を知りたい（8件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-08",
+    "question": "大学の相談です。研究室の選び方について、判断材料と次の行動を知りたい（9件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-09",
+    "question": "大学の相談です。ゼミでの過ごし方について、判断材料と次の行動を知りたい（10件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-10",
+    "question": "大学の相談です。学内施設の探し方について、判断材料と次の行動を知りたい（11件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-26-11",
+    "question": "大学の相談です。新学期の準備について、判断材料と次の行動を知りたい（12件目）",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-00",
+    "question": "大学の相談です。同級生に相談したいについて、判断材料と次の行動を知りたい（1件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-01",
+    "question": "大学の相談です。ハラスメントの相談先について、判断材料と次の行動を知りたい（2件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-02",
+    "question": "大学の相談です。ゼミの人間関係について、判断材料と次の行動を知りたい（3件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-03",
+    "question": "大学の相談です。断り方を考えたいについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-04",
+    "question": "大学の相談です。共同作業で意見が合わないについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-05",
+    "question": "大学の相談です。大学で友達ができないについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-06",
+    "question": "大学の相談です。グループで孤立したについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-07",
+    "question": "大学の相談です。先輩との関係について、判断材料と次の行動を知りたい（8件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-08",
+    "question": "大学の相談です。同級生に相談したいについて、判断材料と次の行動を知りたい（9件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-09",
+    "question": "大学の相談です。ハラスメントの相談先について、判断材料と次の行動を知りたい（10件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-10",
+    "question": "大学の相談です。ゼミの人間関係について、判断材料と次の行動を知りたい（11件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-27-11",
+    "question": "大学の相談です。断り方を考えたいについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-00",
+    "question": "大学の相談です。例外メッセージの読み方について、判断材料と次の行動を知りたい（1件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-01",
+    "question": "大学の相談です。関数の作り方について、判断材料と次の行動を知りたい（2件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-02",
+    "question": "大学の相談です。テストコードを書くについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-03",
+    "question": "大学の相談です。実行結果が違うについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-04",
+    "question": "大学の相談です。プログラミング学習の順番について、判断材料と次の行動を知りたい（5件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-05",
+    "question": "大学の相談です。Pythonのエラーについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-06",
+    "question": "大学の相談です。コードをデバッグしたいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-07",
+    "question": "大学の相談です。課題のプログラムが動かないについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-08",
+    "question": "大学の相談です。例外メッセージの読み方について、判断材料と次の行動を知りたい（9件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-09",
+    "question": "大学の相談です。関数の作り方について、判断材料と次の行動を知りたい（10件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-10",
+    "question": "大学の相談です。テストコードを書くについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-28-11",
+    "question": "大学の相談です。実行結果が違うについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-00",
+    "question": "大学の相談です。AI出力の事実確認について、判断材料と次の行動を知りたい（1件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-01",
+    "question": "大学の相談です。生成AIと引用について、判断材料と次の行動を知りたい（2件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-02",
+    "question": "大学の相談です。AI利用ルールの確認について、判断材料と次の行動を知りたい（3件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-03",
+    "question": "大学の相談です。AIに個人情報を入れないについて、判断材料と次の行動を知りたい（4件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-04",
+    "question": "大学の相談です。レポートでのAI活用について、判断材料と次の行動を知りたい（5件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-05",
+    "question": "大学の相談です。生成AIの授業利用について、判断材料と次の行動を知りたい（6件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-06",
+    "question": "大学の相談です。AI使用を明記するについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-07",
+    "question": "大学の相談です。課題でAIを使ってよいかについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-08",
+    "question": "大学の相談です。AI出力の事実確認について、判断材料と次の行動を知りたい（9件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-09",
+    "question": "大学の相談です。生成AIと引用について、判断材料と次の行動を知りたい（10件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-10",
+    "question": "大学の相談です。AI利用ルールの確認について、判断材料と次の行動を知りたい（11件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-29-11",
+    "question": "大学の相談です。AIに個人情報を入れないについて、判断材料と次の行動を知りたい（12件目）",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-00",
+    "question": "大学の相談です。数式の途中式を確認について、判断材料と次の行動を知りたい（1件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-01",
+    "question": "大学の相談です。行列計算のミスについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-02",
+    "question": "大学の相談です。極限の勉強法について、判断材料と次の行動を知りたい（3件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-03",
+    "question": "大学の相談です。数学課題の進め方について、判断材料と次の行動を知りたい（4件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-04",
+    "question": "大学の相談です。証明問題の読み方について、判断材料と次の行動を知りたい（5件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-05",
+    "question": "大学の相談です。微分の考え方について、判断材料と次の行動を知りたい（6件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-06",
+    "question": "大学の相談です。積分問題の復習について、判断材料と次の行動を知りたい（7件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-07",
+    "question": "大学の相談です。線形代数が分からないについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-08",
+    "question": "大学の相談です。数式の途中式を確認について、判断材料と次の行動を知りたい（9件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-09",
+    "question": "大学の相談です。行列計算のミスについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-10",
+    "question": "大学の相談です。極限の勉強法について、判断材料と次の行動を知りたい（11件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-30-11",
+    "question": "大学の相談です。数学課題の進め方について、判断材料と次の行動を知りたい（12件目）",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-00",
+    "question": "大学の相談です。回帰分析の読み方について、判断材料と次の行動を知りたい（1件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-01",
+    "question": "大学の相談です。統計検定の考え方について、判断材料と次の行動を知りたい（2件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-02",
+    "question": "大学の相談です。平均と中央値の使い分けについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-03",
+    "question": "大学の相談です。仮説検定の手順について、判断材料と次の行動を知りたい（4件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-04",
+    "question": "大学の相談です。データのばらつきを見るについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-05",
+    "question": "大学の相談です。標準偏差の意味について、判断材料と次の行動を知りたい（6件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-06",
+    "question": "大学の相談です。分散を計算したいについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-07",
+    "question": "大学の相談です。確率分布の違いについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-08",
+    "question": "大学の相談です。回帰分析の読み方について、判断材料と次の行動を知りたい（9件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-09",
+    "question": "大学の相談です。統計検定の考え方について、判断材料と次の行動を知りたい（10件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-10",
+    "question": "大学の相談です。平均と中央値の使い分けについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-31-11",
+    "question": "大学の相談です。仮説検定の手順について、判断材料と次の行動を知りたい（12件目）",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-00",
+    "question": "大学の相談です。公欠になる条件について、判断材料と次の行動を知りたい（1件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-01",
+    "question": "大学の相談です。卒業要件の公式確認について、判断材料と次の行動を知りたい（2件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-02",
+    "question": "大学の相談です。再提出できるかについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-03",
+    "question": "大学の相談です。学則の探し方について、判断材料と次の行動を知りたい（4件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-04",
+    "question": "大学の相談です。大学固有ルールを確認について、判断材料と次の行動を知りたい（5件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-05",
+    "question": "大学の相談です。大学の追試規程について、判断材料と次の行動を知りたい（6件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-06",
+    "question": "大学の相談です。欠席何回で不可かについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-07",
+    "question": "大学の相談です。履修変更できるかについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-08",
+    "question": "大学の相談です。公欠になる条件について、判断材料と次の行動を知りたい（9件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-09",
+    "question": "大学の相談です。卒業要件の公式確認について、判断材料と次の行動を知りたい（10件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-10",
+    "question": "大学の相談です。再提出できるかについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-32-11",
+    "question": "大学の相談です。学則の探し方について、判断材料と次の行動を知りたい（12件目）",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-00",
+    "question": "大学の相談です。学生向けFAQ検索について、判断材料と次の行動を知りたい（1件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-01",
+    "question": "大学の相談です。公式案内の場所について、判断材料と次の行動を知りたい（2件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-02",
+    "question": "大学の相談です。問い合わせ前に調べるについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-03",
+    "question": "大学の相談です。どの窓口か確認について、判断材料と次の行動を知りたい（4件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-04",
+    "question": "大学の相談です。案内ページを探したいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-05",
+    "question": "大学の相談です。FAQから確認したいについて、判断材料と次の行動を知りたい（6件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-06",
+    "question": "大学の相談です。よくある質問を探すについて、判断材料と次の行動を知りたい（7件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-07",
+    "question": "大学の相談です。手続きの確認先について、判断材料と次の行動を知りたい（8件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-08",
+    "question": "大学の相談です。学生向けFAQ検索について、判断材料と次の行動を知りたい（9件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-09",
+    "question": "大学の相談です。公式案内の場所について、判断材料と次の行動を知りたい（10件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-10",
+    "question": "大学の相談です。問い合わせ前に調べるについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-33-11",
+    "question": "大学の相談です。どの窓口か確認について、判断材料と次の行動を知りたい（12件目）",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-00",
+    "question": "大学の相談です。新学期が不安について、判断材料と次の行動を知りたい（1件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-01",
+    "question": "大学の相談です。優先事項を一緒に決めたいについて、判断材料と次の行動を知りたい（2件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-02",
+    "question": "大学の相談です。大学生活の悩みについて、判断材料と次の行動を知りたい（3件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-03",
+    "question": "大学の相談です。状況を整理して相談について、判断材料と次の行動を知りたい（4件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-04",
+    "question": "大学の相談です。次の一歩を考えたいについて、判断材料と次の行動を知りたい（5件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-05",
+    "question": "大学の相談です。大学生活全体を相談について、判断材料と次の行動を知りたい（6件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-06",
+    "question": "大学の相談です。何から改善するか整理について、判断材料と次の行動を知りたい（7件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-07",
+    "question": "大学の相談です。困りごとを言葉にしたいについて、判断材料と次の行動を知りたい（8件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-08",
+    "question": "大学の相談です。新学期が不安について、判断材料と次の行動を知りたい（9件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-09",
+    "question": "大学の相談です。優先事項を一緒に決めたいについて、判断材料と次の行動を知りたい（10件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-10",
+    "question": "大学の相談です。大学生活の悩みについて、判断材料と次の行動を知りたい（11件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  },
+  {
+    "id": "campus-v2-dev-34-11",
+    "question": "大学の相談です。状況を整理して相談について、判断材料と次の行動を知りたい（12件目）",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "development",
+    "difficulty": "medium",
+    "blind": false,
+    "dataset_version": "unipilot-campus-v2-dev"
+  }
+]

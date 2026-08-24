@@ -1,0 +1,3023 @@
+{
+  "split": "dev",
+  "train": 2250,
+  "selection_policy": "highest dev accuracy with P95 below 20ms; ties prefer multi-intent/action-capable hierarchical hybrid",
+  "selected": "hierarchical_hybrid",
+  "results": [
+    {
+      "method": "rules",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.49523809523809526,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 1.2999998943996616e-06,
+      "mean_latency_ms": 0.03473999999555201,
+      "p95_latency_ms": 0.03649999985100294,
+      "p99_latency_ms": 0.044900000148118124,
+      "rss_before_mb": 27.0859375,
+      "rss_after_fit_mb": 27.0859375,
+      "rss_delta_mb": 0.0,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-00-00",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "exam",
+          "predicted": "faq_search",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-00-02",
+          "question": "大学の相談です。暗記科目の復習について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "exam",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-00-05",
+          "question": "大学の相談です。過去問の使い方について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "exam",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-00-08",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "exam",
+          "predicted": "faq_search",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-00-10",
+          "question": "大学の相談です。暗記科目の復習について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "exam",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-01-03",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "assignment",
+          "predicted": "general",
+          "confidence": 0.7434920634920634
+        },
+        {
+          "id": "campus-v2-dev-01-11",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "assignment",
+          "predicted": "general",
+          "confidence": 0.7434920634920634
+        },
+        {
+          "id": "campus-v2-dev-02-01",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "credit",
+          "predicted": "faq_search",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-02-07",
+          "question": "大学の相談です。必修を落とした影響について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "credit",
+          "predicted": "registration",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-02-09",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "credit",
+          "predicted": "faq_search",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-03-00",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "gpa",
+          "predicted": "credit",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-03-08",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "gpa",
+          "predicted": "credit",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-04-01",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-04-02",
+          "question": "大学の相談です。再試験で必要な点について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "grade_simulator",
+          "predicted": "exam",
+          "confidence": 0.7434920634920634
+        },
+        {
+          "id": "campus-v2-dev-04-03",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-04-04",
+          "question": "大学の相談です。合格ラインのシミュレーションについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-04-06",
+          "question": "大学の相談です。現在40点で残り30パーセントについて、判断材料と次の行動を知りたい（7件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-04-09",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-04-10",
+          "question": "大学の相談です。再試験で必要な点について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "grade_simulator",
+          "predicted": "exam",
+          "confidence": 0.7434920634920634
+        },
+        {
+          "id": "campus-v2-dev-04-11",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "grade_simulator",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-05-01",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "attendance",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-05-03",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "attendance",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-05-04",
+          "question": "大学の相談です。出席記録が違っているについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "attendance",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-05-09",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "attendance",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-05-11",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "attendance",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-06-01",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-06-03",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness",
+          "predicted": "exam",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-06-06",
+          "question": "大学の相談です。寝坊したときの対応について、判断材料と次の行動を知りたい（7件目）",
+          "expected": "lateness",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-06-09",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-06-11",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness",
+          "predicted": "exam",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-07-00",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "professor_email",
+          "predicted": "campus_life",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-07-01",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-02",
+          "question": "大学の相談です。授業内容の質問メールについて、判断材料と次の行動を知りたい（3件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-03",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-07",
+          "question": "大学の相談です。教員へ相談を伝えるについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-08",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "professor_email",
+          "predicted": "campus_life",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-07-09",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-10",
+          "question": "大学の相談です。授業内容の質問メールについて、判断材料と次の行動を知りたい（11件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-07-11",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "professor_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-08-00",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "absence_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-08-01",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-08-06",
+          "question": "大学の相談です。体調不良で休む連絡について、判断材料と次の行動を知りたい（7件目）",
+          "expected": "absence_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-08-08",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "absence_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-08-09",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-09-02",
+          "question": "大学の相談です。到着見込みを伝える文面について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "lateness_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-09-04",
+          "question": "大学の相談です。遅延証明を添える連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness_email",
+          "predicted": "lateness",
+          "confidence": 0.6165079365079366
+        },
+        {
+          "id": "campus-v2-dev-09-06",
+          "question": "大学の相談です。電車遅延の連絡文について、判断材料と次の行動を知りたい（7件目）",
+          "expected": "lateness_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-09-07",
+          "question": "大学の相談です。先生に遅れると伝えたいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-09-10",
+          "question": "大学の相談です。到着見込みを伝える文面について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "lateness_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-10-00",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "late_submission_email",
+          "predicted": "lateness",
+          "confidence": 0.6673015873015872
+        },
+        {
+          "id": "campus-v2-dev-10-01",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-10-02",
+          "question": "大学の相談です。課題の延長をお願いする文面について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-10-03",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-10-04",
+          "question": "大学の相談です。締切後の対応を尋ねるメールについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "late_submission_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-10-06",
+          "question": "大学の相談です。締切を過ぎたお詫びについて、判断材料と次の行動を知りたい（7件目）",
+          "expected": "late_submission_email",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-10-08",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "late_submission_email",
+          "predicted": "lateness",
+          "confidence": 0.6673015873015872
+        },
+        {
+          "id": "campus-v2-dev-10-09",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-10-10",
+          "question": "大学の相談です。課題の延長をお願いする文面について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-10-11",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-11-02",
+          "question": "大学の相談です。登録エラーが出るについて、判断材料と次の行動を知りたい（3件目）",
+          "expected": "registration",
+          "predicted": "programming",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-11-04",
+          "question": "大学の相談です。シラバスから科目を選ぶについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "registration",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-11-10",
+          "question": "大学の相談です。登録エラーが出るについて、判断材料と次の行動を知りたい（11件目）",
+          "expected": "registration",
+          "predicted": "programming",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-12-02",
+          "question": "大学の相談です。勉強時間を確保したいについて、判断材料と次の行動を知りたい（3件目）",
+          "expected": "schedule",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-12-03",
+          "question": "大学の相談です。生活リズムを整えるについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "schedule",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-12-04",
+          "question": "大学の相談です。週の時間割を見直すについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "schedule",
+          "predicted": "registration",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-12-06",
+          "question": "大学の相談です。空きコマの使い方について、判断材料と次の行動を知りたい（7件目）",
+          "expected": "schedule",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-12-07",
+          "question": "大学の相談です。授業とバイトの時間配分について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "schedule",
+          "predicted": "part_time_job",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-12-10",
+          "question": "大学の相談です。勉強時間を確保したいについて、判断材料と次の行動を知りたい（11件目）",
+          "expected": "schedule",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-12-11",
+          "question": "大学の相談です。生活リズムを整えるについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "schedule",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-13-00",
+          "question": "大学の相談です。苦手分野の復習計画について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "study_plan",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-13-01",
+          "question": "大学の相談です。三日で試験対策について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "study_plan",
+          "predicted": "exam",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-13-02",
+          "question": "大学の相談です。複数科目の勉強配分について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "study_plan",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-13-04",
+          "question": "大学の相談です。今日からの試験準備について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "study_plan",
+          "predicted": "exam",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-13-07",
+          "question": "大学の相談です。テスト勉強を始めたいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "study_plan",
+          "predicted": "exam",
+          "confidence": 0.591111111111111
+        },
+        {
+          "id": "campus-v2-dev-13-08",
+          "question": "大学の相談です。苦手分野の復習計画について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "study_plan",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-13-09",
+          "question": "大学の相談です。三日で試験対策について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "study_plan",
+          "predicted": "exam",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-13-10",
+          "question": "大学の相談です。複数科目の勉強配分について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "study_plan",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-14-00",
+          "question": "大学の相談です。課題が多くて選べないについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-01",
+          "question": "大学の相談です。重い課題を先にするかについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-02",
+          "question": "大学の相談です。明日締切の課題を整理について、判断材料と次の行動を知りたい（3件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-03",
+          "question": "大学の相談です。複数レポートの順番について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "assignment_priority",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-14-04",
+          "question": "大学の相談です。課題の緊急度を決めたいについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-06",
+          "question": "大学の相談です。締切と所要時間で並べたいについて、判断材料と次の行動を知りたい（7件目）",
+          "expected": "assignment_priority",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-14-08",
+          "question": "大学の相談です。課題が多くて選べないについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-09",
+          "question": "大学の相談です。重い課題を先にするかについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-10",
+          "question": "大学の相談です。明日締切の課題を整理について、判断材料と次の行動を知りたい（11件目）",
+          "expected": "assignment_priority",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-14-11",
+          "question": "大学の相談です。複数レポートの順番について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "assignment_priority",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-00",
+          "question": "大学の相談です。期限を忘れない方法について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-01",
+          "question": "大学の相談です。今月の課題期限について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "deadline_organizer",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-15-02",
+          "question": "大学の相談です。締切順に並べたいについて、判断材料と次の行動を知りたい（3件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-03",
+          "question": "大学の相談です。提出日を管理したいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "deadline_organizer",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-15-04",
+          "question": "大学の相談です。締切カレンダーを作るについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-05",
+          "question": "大学の相談です。締切を一覧にしたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-06",
+          "question": "大学の相談です。提出期限を整理するについて、判断材料と次の行動を知りたい（7件目）",
+          "expected": "deadline_organizer",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-15-08",
+          "question": "大学の相談です。期限を忘れない方法について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-09",
+          "question": "大学の相談です。今月の課題期限について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "deadline_organizer",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-15-10",
+          "question": "大学の相談です。締切順に並べたいについて、判断材料と次の行動を知りたい（11件目）",
+          "expected": "deadline_organizer",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-15-11",
+          "question": "大学の相談です。提出日を管理したいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "deadline_organizer",
+          "predicted": "assignment",
+          "confidence": 0.5657142857142857
+        },
+        {
+          "id": "campus-v2-dev-16-00",
+          "question": "大学の相談です。論点から構成を作るについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "report_outline",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        },
+        {
+          "id": "campus-v2-dev-16-01",
+          "question": "大学の相談です。考察の位置を決めたいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "report_outline",
+          "predicted": "general",
+          "confidence": 0.6323809523809524
+        }
+      ]
+    },
+    {
+      "method": "bm25",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.9952380952380953,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.04131699999993543,
+      "mean_latency_ms": 9.665456190470238,
+      "p95_latency_ms": 10.396600000149192,
+      "p99_latency_ms": 11.026399999991554,
+      "rss_before_mb": 27.1484375,
+      "rss_after_fit_mb": 32.19140625,
+      "rss_delta_mb": 5.04296875,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-23-07",
+          "question": "大学の相談です。貸与型の返還について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "scholarship",
+          "predicted": "es_outline",
+          "confidence": 0.640805729742543
+        },
+        {
+          "id": "campus-v2-dev-33-07",
+          "question": "大学の相談です。手続きの確認先について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "faq_search",
+          "predicted": "scholarship",
+          "confidence": 0.3659724606038348
+        }
+      ]
+    },
+    {
+      "method": "tfidf_char_centroid",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.9928571428571429,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.11226360000000568,
+      "mean_latency_ms": 0.3367169047600155,
+      "p95_latency_ms": 0.3906999997980165,
+      "p99_latency_ms": 0.43349999987185583,
+      "rss_before_mb": 31.29296875,
+      "rss_after_fit_mb": 40.68359375,
+      "rss_delta_mb": 9.390625,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-23-03",
+          "question": "大学の相談です。継続手続きの確認について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "scholarship",
+          "predicted": "tuition",
+          "confidence": 0.17074350032688296
+        },
+        {
+          "id": "campus-v2-dev-23-11",
+          "question": "大学の相談です。継続手続きの確認について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "scholarship",
+          "predicted": "tuition",
+          "confidence": 0.17074350032688296
+        },
+        {
+          "id": "campus-v2-dev-33-07",
+          "question": "大学の相談です。手続きの確認先について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "faq_search",
+          "predicted": "tuition",
+          "confidence": 0.17497080150899427
+        }
+      ]
+    },
+    {
+      "method": "char_ngram_svm",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 1.0,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 1.5833029000000352,
+      "mean_latency_ms": 0.45105190476338713,
+      "p95_latency_ms": 0.4822999999305466,
+      "p99_latency_ms": 0.5186000000776403,
+      "rss_before_mb": 32.06640625,
+      "rss_after_fit_mb": 128.46484375,
+      "rss_delta_mb": 96.3984375,
+      "confidence_bands": {},
+      "sample_failures": []
+    },
+    {
+      "method": "word_ngram_svm",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.2714285714285714,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.13336889999982304,
+      "mean_latency_ms": 0.37034214285757205,
+      "p95_latency_ms": 0.39940000010574295,
+      "p99_latency_ms": 0.45499999987441697,
+      "rss_before_mb": 123.31640625,
+      "rss_after_fit_mb": 124.38671875,
+      "rss_delta_mb": 1.0703125,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-00-00",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-01",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-03",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-04",
+          "question": "大学の相談です。テスト直前の優先事項について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-05",
+          "question": "大学の相談です。過去問の使い方について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-07",
+          "question": "大学の相談です。持ち込み資料の準備について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-08",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-09",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-00-11",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-00",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-01",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-03",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-04",
+          "question": "大学の相談です。提出サイトが動かないについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-05",
+          "question": "大学の相談です。課題の指示が分からないについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-07",
+          "question": "大学の相談です。宿題が終わらないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-08",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-09",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-01-11",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-00",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-01",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-03",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-04",
+          "question": "大学の相談です。あと何単位か計算したいについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-05",
+          "question": "大学の相談です。単位を落としそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-07",
+          "question": "大学の相談です。必修を落とした影響について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-08",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-09",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-02-11",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-00",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-01",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-03",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-04",
+          "question": "大学の相談です。GPA計算規程の確認について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-05",
+          "question": "大学の相談です。GPAの意味について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-07",
+          "question": "大学の相談です。目標GPAに必要な成績について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-08",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-09",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-03-11",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-00",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-01",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-03",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-04",
+          "question": "大学の相談です。合格ラインのシミュレーションについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-05",
+          "question": "大学の相談です。合格まで何点必要について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-07",
+          "question": "大学の相談です。期末試験の必要点について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-08",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-09",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-04-11",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-00",
+          "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-01",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-03",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-04",
+          "question": "大学の相談です。出席記録が違っているについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-05",
+          "question": "大学の相談です。欠席が増えて不安について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-07",
+          "question": "大学の相談です。出席率を確認したいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-08",
+          "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-09",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-05-11",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-00",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-01",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-03",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-04",
+          "question": "大学の相談です。遅刻後にまずすることについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-05",
+          "question": "大学の相談です。授業に遅刻しそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-07",
+          "question": "大学の相談です。電車遅延で間に合わないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-08",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-09",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-06-11",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-00",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-01",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-03",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-04",
+          "question": "大学の相談です。教授メールの件名について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-05",
+          "question": "大学の相談です。教授へ面談依頼メールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-07",
+          "question": "大学の相談です。教員へ相談を伝えるについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-08",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-09",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-07-11",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-00",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-01",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-03",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-04",
+          "question": "大学の相談です。当日の欠席連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-05",
+          "question": "大学の相談です。欠席メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-07",
+          "question": "大学の相談です。授業を欠席する文面について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-08",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-09",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-08-11",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-00",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-01",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-03",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-04",
+          "question": "大学の相談です。遅延証明を添える連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-05",
+          "question": "大学の相談です。遅刻メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-07",
+          "question": "大学の相談です。先生に遅れると伝えたいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-08",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-09",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-09-11",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-00",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-01",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-03",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-04",
+          "question": "大学の相談です。締切後の対応を尋ねるメールについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-05",
+          "question": "大学の相談です。課題提出が遅れるメールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-07",
+          "question": "大学の相談です。提出遅延を先生に相談について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-08",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-09",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-10-11",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        },
+        {
+          "id": "campus-v2-dev-11-00",
+          "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "registration",
+          "predicted": "assignment_priority",
+          "confidence": 0.5006006577345218
+        }
+      ]
+    },
+    {
+      "method": "logistic_regression",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.2714285714285714,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.33358399999997346,
+      "mean_latency_ms": 0.4794057142795455,
+      "p95_latency_ms": 0.5545000001347944,
+      "p99_latency_ms": 0.661000000036438,
+      "rss_before_mb": 123.515625,
+      "rss_after_fit_mb": 123.453125,
+      "rss_delta_mb": -0.0625,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-00-00",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-01",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-03",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-04",
+          "question": "大学の相談です。テスト直前の優先事項について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-05",
+          "question": "大学の相談です。過去問の使い方について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-07",
+          "question": "大学の相談です。持ち込み資料の準備について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-08",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-09",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-00-11",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "exam",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-00",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-01",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-03",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-04",
+          "question": "大学の相談です。提出サイトが動かないについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-05",
+          "question": "大学の相談です。課題の指示が分からないについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-07",
+          "question": "大学の相談です。宿題が終わらないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-08",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-09",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-01-11",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "assignment",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-00",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-01",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-03",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-04",
+          "question": "大学の相談です。あと何単位か計算したいについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-05",
+          "question": "大学の相談です。単位を落としそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-07",
+          "question": "大学の相談です。必修を落とした影響について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-08",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-09",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-02-11",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "credit",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-00",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-01",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-03",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-04",
+          "question": "大学の相談です。GPA計算規程の確認について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-05",
+          "question": "大学の相談です。GPAの意味について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-07",
+          "question": "大学の相談です。目標GPAに必要な成績について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-08",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-09",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-03-11",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "gpa",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-00",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-01",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-03",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-04",
+          "question": "大学の相談です。合格ラインのシミュレーションについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-05",
+          "question": "大学の相談です。合格まで何点必要について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-07",
+          "question": "大学の相談です。期末試験の必要点について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-08",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-09",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-04-11",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "grade_simulator",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-00",
+          "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-01",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-03",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-04",
+          "question": "大学の相談です。出席記録が違っているについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-05",
+          "question": "大学の相談です。欠席が増えて不安について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-07",
+          "question": "大学の相談です。出席率を確認したいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-08",
+          "question": "大学の相談です。診断書の提出先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-09",
+          "question": "大学の相談です。授業を休んだ後の対応について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-05-11",
+          "question": "大学の相談です。体調不良で出席できないについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "attendance",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-00",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-01",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-03",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-04",
+          "question": "大学の相談です。遅刻後にまずすることについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-05",
+          "question": "大学の相談です。授業に遅刻しそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-07",
+          "question": "大学の相談です。電車遅延で間に合わないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-08",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-09",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-06-11",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-00",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-01",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-03",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-04",
+          "question": "大学の相談です。教授メールの件名について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-05",
+          "question": "大学の相談です。教授へ面談依頼メールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-07",
+          "question": "大学の相談です。教員へ相談を伝えるについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-08",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-09",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-07-11",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "professor_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-00",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-01",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-03",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-04",
+          "question": "大学の相談です。当日の欠席連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-05",
+          "question": "大学の相談です。欠席メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-07",
+          "question": "大学の相談です。授業を欠席する文面について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-08",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-09",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-08-11",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "absence_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-00",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-01",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-03",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-04",
+          "question": "大学の相談です。遅延証明を添える連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-05",
+          "question": "大学の相談です。遅刻メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-07",
+          "question": "大学の相談です。先生に遅れると伝えたいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-08",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-09",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-09-11",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-00",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-01",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-03",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-04",
+          "question": "大学の相談です。締切後の対応を尋ねるメールについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-05",
+          "question": "大学の相談です。課題提出が遅れるメールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-07",
+          "question": "大学の相談です。提出遅延を先生に相談について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-08",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-09",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-10-11",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "late_submission_email",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        },
+        {
+          "id": "campus-v2-dev-11-00",
+          "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "registration",
+          "predicted": "assignment_priority",
+          "confidence": 0.5041636524085888
+        }
+      ]
+    },
+    {
+      "method": "linear_svm",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 1.0,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.5435176000000865,
+      "mean_latency_ms": 0.4483214285815371,
+      "p95_latency_ms": 0.4673000000821048,
+      "p99_latency_ms": 0.5229999999301072,
+      "rss_before_mb": 122.58203125,
+      "rss_after_fit_mb": 130.953125,
+      "rss_delta_mb": 8.37109375,
+      "confidence_bands": {},
+      "sample_failures": []
+    },
+    {
+      "method": "naive_bayes",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 0.2714285714285714,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.018106600000010076,
+      "mean_latency_ms": 0.6355485714325801,
+      "p95_latency_ms": 0.7258999999066873,
+      "p99_latency_ms": 0.7871000000250206,
+      "rss_before_mb": 125.765625,
+      "rss_after_fit_mb": 126.578125,
+      "rss_delta_mb": 0.8125,
+      "confidence_bands": {},
+      "sample_failures": [
+        {
+          "id": "campus-v2-dev-00-00",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-01",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-03",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-04",
+          "question": "大学の相談です。テスト直前の優先事項について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-05",
+          "question": "大学の相談です。過去問の使い方について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-07",
+          "question": "大学の相談です。持ち込み資料の準備について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-08",
+          "question": "大学の相談です。追試の確認先について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-09",
+          "question": "大学の相談です。試験当日の忘れ物について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-00-11",
+          "question": "大学の相談です。記述試験の対策について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "exam",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-00",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-01",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-03",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-04",
+          "question": "大学の相談です。提出サイトが動かないについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-05",
+          "question": "大学の相談です。課題の指示が分からないについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-07",
+          "question": "大学の相談です。宿題が終わらないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-08",
+          "question": "大学の相談です。再提出を相談したいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-09",
+          "question": "大学の相談です。課題の要件を整理したいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-01-11",
+          "question": "大学の相談です。グループ課題で困ったについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "assignment",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-00",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-01",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-03",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-04",
+          "question": "大学の相談です。あと何単位か計算したいについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-05",
+          "question": "大学の相談です。単位を落としそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-07",
+          "question": "大学の相談です。必修を落とした影響について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-08",
+          "question": "大学の相談です。取得単位の進捗について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-09",
+          "question": "大学の相談です。進級条件の確認先について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-02-11",
+          "question": "大学の相談です。卒業要件が複雑について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "credit",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-00",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-01",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-03",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-04",
+          "question": "大学の相談です。GPA計算規程の確認について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-05",
+          "question": "大学の相談です。GPAの意味について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-07",
+          "question": "大学の相談です。目標GPAに必要な成績について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-08",
+          "question": "大学の相談です。GPと単位数の関係について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-09",
+          "question": "大学の相談です。成績平均を上げたいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-03-11",
+          "question": "大学の相談です。累積GPAを出したいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "gpa",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-00",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-01",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-03",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-04",
+          "question": "大学の相談です。合格ラインのシミュレーションについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-05",
+          "question": "大学の相談です。合格まで何点必要について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-07",
+          "question": "大学の相談です。期末試験の必要点について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-08",
+          "question": "大学の相談です。残り評価で挽回できるかについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-09",
+          "question": "大学の相談です。目標点までの差について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-04-11",
+          "question": "大学の相談です。配点から必要得点を計算について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "grade_simulator",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-00",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-01",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-03",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-04",
+          "question": "大学の相談です。遅刻後にまずすることについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-05",
+          "question": "大学の相談です。授業に遅刻しそうについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-07",
+          "question": "大学の相談です。電車遅延で間に合わないについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-08",
+          "question": "大学の相談です。遅延証明の出し方について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-09",
+          "question": "大学の相談です。開始時刻に遅れたについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-06-11",
+          "question": "大学の相談です。試験に遅刻したについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-00",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-01",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-03",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-04",
+          "question": "大学の相談です。教授メールの件名について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-05",
+          "question": "大学の相談です。教授へ面談依頼メールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-07",
+          "question": "大学の相談です。教員へ相談を伝えるについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-08",
+          "question": "大学の相談です。研究室訪問のメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-09",
+          "question": "大学の相談です。返信へのお礼メールについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-07-11",
+          "question": "大学の相談です。先生にアポを取りたいについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "professor_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-00",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-01",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-03",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-04",
+          "question": "大学の相談です。当日の欠席連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-05",
+          "question": "大学の相談です。欠席メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-07",
+          "question": "大学の相談です。授業を欠席する文面について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-08",
+          "question": "大学の相談です。先生へ休むと伝えたいについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-09",
+          "question": "大学の相談です。欠席理由を丁寧に書くについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-08-11",
+          "question": "大学の相談です。ゼミを休むメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "absence_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-00",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-01",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-03",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-04",
+          "question": "大学の相談です。遅延証明を添える連絡について、判断材料と次の行動を知りたい（5件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-05",
+          "question": "大学の相談です。遅刻メールを作りたいについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-07",
+          "question": "大学の相談です。先生に遅れると伝えたいについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-08",
+          "question": "大学の相談です。授業に遅刻するメールについて、判断材料と次の行動を知りたい（9件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-09",
+          "question": "大学の相談です。寝坊した遅刻連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-09-11",
+          "question": "大学の相談です。ゼミへの遅刻メールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "lateness_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-00",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-01",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（2件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-03",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（4件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-04",
+          "question": "大学の相談です。締切後の対応を尋ねるメールについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-05",
+          "question": "大学の相談です。課題提出が遅れるメールについて、判断材料と次の行動を知りたい（6件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-07",
+          "question": "大学の相談です。提出遅延を先生に相談について、判断材料と次の行動を知りたい（8件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-08",
+          "question": "大学の相談です。レポートが間に合わない連絡について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-09",
+          "question": "大学の相談です。提出サイト不具合の連絡について、判断材料と次の行動を知りたい（10件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-10-11",
+          "question": "大学の相談です。遅れて提出したいメールについて、判断材料と次の行動を知りたい（12件目）",
+          "expected": "late_submission_email",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-00",
+          "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（1件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-01",
+          "question": "大学の相談です。時間割を決めたいについて、判断材料と次の行動を知りたい（2件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-03",
+          "question": "大学の相談です。履修上限を確認について、判断材料と次の行動を知りたい（4件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-04",
+          "question": "大学の相談です。シラバスから科目を選ぶについて、判断材料と次の行動を知りたい（5件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-05",
+          "question": "大学の相談です。履修登録の組み方について、判断材料と次の行動を知りたい（6件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-07",
+          "question": "大学の相談です。抽選科目に外れたについて、判断材料と次の行動を知りたい（8件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-08",
+          "question": "大学の相談です。履修変更期間の確認について、判断材料と次の行動を知りたい（9件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-09",
+          "question": "大学の相談です。時間割を決めたいについて、判断材料と次の行動を知りたい（10件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-11-11",
+          "question": "大学の相談です。履修上限を確認について、判断材料と次の行動を知りたい（12件目）",
+          "expected": "registration",
+          "predicted": "attendance",
+          "confidence": 0.5
+        },
+        {
+          "id": "campus-v2-dev-12-00",
+          "question": "大学の相談です。一日の予定を組みたいについて、判断材料と次の行動を知りたい（1件目）",
+          "expected": "schedule",
+          "predicted": "attendance",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "method": "hierarchical_svm",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 1.0,
+      "action_accuracy": null,
+      "multi_intent_recall": null,
+      "fit_seconds": 0.4778087999998206,
+      "mean_latency_ms": 1.2797861904692538,
+      "p95_latency_ms": 1.3679999999567372,
+      "p99_latency_ms": 1.5015999999832275,
+      "rss_before_mb": 122.3984375,
+      "rss_after_fit_mb": 129.5234375,
+      "rss_delta_mb": 7.125,
+      "confidence_bands": {},
+      "sample_failures": []
+    },
+    {
+      "method": "hierarchical_hybrid",
+      "split": "dev",
+      "questions": 420,
+      "accuracy": 1.0,
+      "action_accuracy": 0.9976190476190476,
+      "multi_intent_recall": 1.0,
+      "fit_seconds": 1.0049000999999862,
+      "mean_latency_ms": 1.802623095231649,
+      "p95_latency_ms": 1.9029000000045926,
+      "p99_latency_ms": 2.000599999973929,
+      "rss_before_mb": 125.3125,
+      "rss_after_fit_mb": 137.70703125,
+      "rss_delta_mb": 12.39453125,
+      "confidence_bands": {
+        "high": 374,
+        "medium": 46
+      },
+      "sample_failures": []
+    }
+  ],
+  "external_ai_api": "OFF"
+}

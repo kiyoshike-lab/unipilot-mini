@@ -42,3 +42,17 @@ class CampusHumanScoreRequest(BaseModel):
     chatgpt_answer: str = Field(default="", max_length=10000)
     gemini_answer: str = Field(default="", max_length=10000)
     notes: str = Field(default="", max_length=2000)
+
+
+class CampusV2HumanScoreRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=100)
+    correctness: int = Field(ge=0, le=5)
+    relevance: int = Field(ge=0, le=5)
+    actionable: int = Field(ge=0, le=5)
+    naturalness: int = Field(ge=0, le=5)
+    would_use_again: int = Field(ge=0, le=5)
+    chatgpt_score: int | None = Field(default=None, ge=0, le=5)
+    gemini_score: int | None = Field(default=None, ge=0, le=5)
+    chatgpt_answer: str = Field(default="", max_length=10000)
+    gemini_answer: str = Field(default="", max_length=10000)
+    notes: str = Field(default="", max_length=2000)
