@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
 from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, CampusV21HumanScoreRequest,
+                         CampusV22HumanScoreRequest,
                          CampusV21KnownIssueReviewRequest, ChatRequest, GenerateRequest, HumanScoreRequest,
                          ModelLoadRequest)
 
@@ -73,6 +74,9 @@ def load_runtime(checkpoint: str | None = None):
     elif pipeline_version == "campus-v2.1":
         from pipeline.campus_v21 import UniPilotCampusV21
         pipeline = UniPilotCampusV21(model, token)
+    elif pipeline_version == "campus-v2.2":
+        from pipeline.campus_v22 import UniPilotCampusV22
+        pipeline = UniPilotCampusV22(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=checkpoint, payload=payload, pipeline=pipeline)
 
 
@@ -113,7 +117,7 @@ def run_generation(request: GenerateRequest, chat: bool):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if chat and runtime["pipeline"] is not None:
-        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1"):
+        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
             result = runtime["pipeline"].answer(
                 request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                 request.top_p, request.repetition_penalty, request.response_mode,
@@ -127,8 +131,8 @@ def run_generation(request: GenerateRequest, chat: bool):
                                                 request.top_p, request.repetition_penalty,
                                                 candidates=max(1, int(os.getenv("UNIPILOT_V07_CANDIDATES", "1"))))
         model_label = ({"campus-v1": "UniPilot Campus v1", "campus-v2": "UniPilot Campus v2",
-                        "campus-v2.1": "UniPilot Campus v2.1"}[runtime["pipeline"].version]
-                       if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1") else
+                        "campus-v2.1": "UniPilot Campus v2.1", "campus-v2.2": "UniPilot Campus v2.2"}[runtime["pipeline"].version]
+                       if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2") else
             runtime["model"].config.model_name if runtime["pipeline"].version == "v0.8" else "UniPilot Mini")
         return {**result, "model": model_label, "local": True, "metrics": result["generation_metrics"]}
     from inference.generate import generate_text
@@ -151,7 +155,7 @@ def chat_stream(request: ChatRequest):
     if runtime["model"] is None:
         raise HTTPException(503, "checkpoint not loaded; set UNIPILOT_CHECKPOINT")
     if runtime["pipeline"] is not None:
-        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1"):
+        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
             def campus_events():
                 for snapshot in runtime["pipeline"].iter_answer(
                         request.prompt, request.max_new_tokens, request.temperature, request.top_k,
@@ -228,6 +232,9 @@ def model_load(request: ModelLoadRequest):
     elif pipeline_version == "campus-v2.1":
         from pipeline.campus_v21 import UniPilotCampusV21
         pipeline = UniPilotCampusV21(model, token)
+    elif pipeline_version == "campus-v2.2":
+        from pipeline.campus_v22 import UniPilotCampusV22
+        pipeline = UniPilotCampusV22(model, token)
     runtime.update(model=model, tokenizer=token, device=device, checkpoint=str(candidate.relative_to(Path.cwd())),
                    payload=payload, pipeline=pipeline)
     return model_info()
@@ -284,6 +291,7 @@ HUMAN_CAMPUS_V21 = Path("evaluation/human-comparison-campus-v21.json")
 HUMAN_CAMPUS_V21_MANIFEST = Path("evaluation/campus-v21-rc-manifest.json")
 HUMAN_CAMPUS_V21_AUDIT = Path("evaluation/campus-v21-human-audit.json")
 HUMAN_CAMPUS_V21_KNOWN_ISSUES = Path("evaluation/campus-v21-rc-known-issues.json")
+HUMAN_CAMPUS_V22 = Path("data/campus_v22/benchmarks/human-knowledge-100.jsonl")
 
 
 @app.get("/human-eval/campus")
@@ -431,10 +439,43 @@ def human_eval_campus_v21_known_issue_score(request: CampusV21KnownIssueReviewRe
     return {"saved": True, "item_id": request.item_id}
 
 
+@app.get("/human-eval/campus-v22")
+def human_eval_campus_v22():
+    if not HUMAN_CAMPUS_V22.exists():
+        raise HTTPException(404, "Campus v2.2 human knowledge evaluation file not found")
+    rows = [json.loads(line) for line in HUMAN_CAMPUS_V22.read_text(encoding="utf-8").splitlines() if line.strip()]
+    completed = sum(row.get("scores", {}).get("correctness") is not None for row in rows)
+    return {"status": "COMPLETE" if completed == len(rows) else "PENDING", "completed": completed,
+            "total": len(rows), "items": rows, "external_ai_api": "OFF"}
+
+
+@app.post("/human-eval/campus-v22")
+def human_eval_campus_v22_score(request: CampusV22HumanScoreRequest):
+    if not HUMAN_CAMPUS_V22.exists():
+        raise HTTPException(404, "Campus v2.2 human knowledge evaluation file not found")
+    rows = [json.loads(line) for line in HUMAN_CAMPUS_V22.read_text(encoding="utf-8").splitlines() if line.strip()]
+    found = False
+    for row in rows:
+        if row["id"] == request.item_id:
+            row["scores"] = {key: getattr(request, key) for key in (
+                "correctness", "depth", "grounding", "usefulness", "naturalness", "would_use_again"
+            )}
+            row["notes"] = request.notes
+            row["evaluation_status"] = "SCORED_MANUALLY"
+            found = True
+            break
+    if not found:
+        raise HTTPException(404, "Campus v2.2 human evaluation item not found")
+    temporary = HUMAN_CAMPUS_V22.with_suffix(".tmp")
+    temporary.write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows), encoding="utf-8")
+    temporary.replace(HUMAN_CAMPUS_V22)
+    return {"saved": True, "item_id": request.item_id}
+
+
 @app.get("/campus/session/{session_id}")
 def campus_session(session_id: str):
     pipeline = runtime.get("pipeline")
-    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1"):
+    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
         raise HTTPException(404, "Campus mode is not enabled")
     return {"session_id": session_id, "state": pipeline.sessions.get(session_id)}
 
@@ -442,7 +483,7 @@ def campus_session(session_id: str):
 @app.delete("/campus/session/{session_id}")
 def campus_session_delete(session_id: str):
     pipeline = runtime.get("pipeline")
-    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1"):
+    if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
         raise HTTPException(404, "Campus mode is not enabled")
     return {"deleted": pipeline.sessions.delete(session_id)}
 

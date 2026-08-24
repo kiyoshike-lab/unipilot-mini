@@ -1,0 +1,33 @@
+{
+  "required_record_fields": [
+    "id",
+    "title",
+    "text",
+    "category",
+    "sub_category",
+    "source",
+    "source_url",
+    "retrieved_at",
+    "license",
+    "publisher",
+    "university_name",
+    "university_specific",
+    "last_verified_at"
+  ],
+  "directory_pattern": "knowledge/universities/<university_slug>/",
+  "supported_files": [
+    "general.jsonl",
+    "official_rules.jsonl",
+    "attendance.jsonl",
+    "grading.jsonl",
+    "registration.jsonl",
+    "scholarship.jsonl",
+    "career.jsonl"
+  ],
+  "guards": {
+    "explicit_reusable_license_required": true,
+    "source_url_required": true,
+    "session_university_exact_match_required": true,
+    "unknown_license_body_storage": false
+  }
+}

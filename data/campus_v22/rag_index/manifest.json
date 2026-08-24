@@ -1,0 +1,11 @@
+{
+  "version": "campus-v2.2",
+  "generated_at": "2026-08-24T12:12:44+00:00",
+  "documents": 610,
+  "files": {
+    "wikipedia": "data/campus_v22/knowledge/wikipedia.jsonl",
+    "government": "data/campus_v22/knowledge/government.jsonl",
+    "university": "data/campus_v22/knowledge/university.jsonl"
+  },
+  "index": "built in memory by campus_retrieval_v22.py (BM25 + word/character TF-IDF)"
+}

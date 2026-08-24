@@ -104,6 +104,17 @@ class CampusV21HumanScoreRequest(CampusV2HumanScoreRequest):
     ux: CampusV21UXEvaluation = Field(default_factory=CampusV21UXEvaluation)
 
 
+class CampusV22HumanScoreRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=150)
+    correctness: int = Field(ge=0, le=5)
+    depth: int = Field(ge=0, le=5)
+    grounding: int = Field(ge=0, le=5)
+    usefulness: int = Field(ge=0, le=5)
+    naturalness: int = Field(ge=0, le=5)
+    would_use_again: int = Field(ge=0, le=5)
+    notes: str = Field(default="", max_length=2000)
+
+
 class CampusV21KnownIssueReviewRequest(BaseModel):
     item_id: str = Field(min_length=1, max_length=150)
     group: Literal["hallucination", "router", "retrieval"]

@@ -1,0 +1,10 @@
+{
+  "version": "campus-v2.2",
+  "kind": "instruction",
+  "sources": [
+    "data/campus_v2/router/train.jsonl",
+    "data/campus_v21/router/adversarial-train-1500.jsonl"
+  ],
+  "indexed_as_knowledge": false,
+  "policy": "Frozen Campus v2.1 router inputs; no v2.2 retraining."
+}

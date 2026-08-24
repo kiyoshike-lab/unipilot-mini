@@ -1,0 +1,79 @@
+{
+  "version": "campus-v2.1-vs-v2.2",
+  "v2.1": {
+    "questions": 1000,
+    "routing": 0.675,
+    "correctness": 0.803,
+    "relevance": 0.209,
+    "grounding": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "completion": 1.0,
+    "natural_japanese": 1.0,
+    "actionable": 4.8023,
+    "coverage": 1.160708,
+    "average_answer_chars": 139.285,
+    "redundancy": 0.0,
+    "latency_p95_ms": 13.95505,
+    "router_p95_ms": 3.19552,
+    "retrieval_p95_ms": 0.0,
+    "peak_rss_mb": 485.925781,
+    "standalone_rss_mb": 323.922,
+    "source_helpfulness": {},
+    "hallucination": 0.5
+  },
+  "v2.2": {
+    "questions": 1000,
+    "routing": 0.988,
+    "correctness": 0.991,
+    "relevance": 0.991,
+    "grounding": 0.984,
+    "unsupported_claim_rate": 0.0,
+    "completion": 1.0,
+    "natural_japanese": 0.99,
+    "actionable": 4.6545,
+    "coverage": 4.737178,
+    "average_answer_chars": 469.319,
+    "redundancy": 0.0,
+    "latency_p95_ms": 59.614475,
+    "router_p95_ms": 3.26914,
+    "retrieval_p95_ms": 46.406095,
+    "peak_rss_mb": 486.015625,
+    "standalone_rss_mb": 431.215,
+    "source_helpfulness": {
+      "Wikimedia Foundation": 2699,
+      "文部科学省": 699,
+      "厚生労働省": 389,
+      "国税庁": 212,
+      "デジタル庁": 89,
+      "明海大学": 4,
+      "筑波大学": 4,
+      "東京大学": 1
+    },
+    "hallucination": 0.0
+  },
+  "technical_gate": {
+    "status": "PASS",
+    "checks": {
+      "routing_gte_98": true,
+      "correctness_gte_95": true,
+      "relevance_gte_95": true,
+      "grounding_gte_95": true,
+      "unsupported_lte_1": true,
+      "hallucination_lte_1": true,
+      "completion_gte_99": true,
+      "natural_japanese_gte_99": true,
+      "actionable_gte_4_5": true,
+      "normal_coverage_gte_3_5": true,
+      "detailed_coverage_gte_4_3": true,
+      "redundancy_lte_2": true,
+      "retrieval_p95_lt_100ms": true,
+      "router_p95_lt_20ms": true
+    }
+  },
+  "human_gate": {
+    "status": "PENDING",
+    "items": 100,
+    "production_promotion_allowed": false
+  },
+  "note": "v2.1 is measured on the new source-linked knowledge benchmark; v2.2 remains opt-in and cannot ship before human review."
+}

@@ -4,12 +4,16 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 type ToolCard = { kind: string; title: string; summary: string; action_label?: string | null; copy_text?: string | null;
   fields?: Array<{name: string; label: string; example?: string}>; data?: Record<string, unknown> };
 type ClarifyOption = { category: string; label: string; prompt: string };
+type SourceItem = { id: string; title: string; publisher?: string; url?: string; license?: string;
+  last_verified_at?: string; confidence?: string; stale?: boolean };
+type ResponseMode = "short" | "normal" | "detailed";
 type Message = { role: "user" | "assistant"; text: string; cards?: ToolCard[] };
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([{ role: "assistant", text: "大学生活について、何でも聞いてください。" }]);
   const [input, setInput] = useState(""); const [busy, setBusy] = useState(false); const [error, setError] = useState("");
+  const [responseMode, setResponseMode] = useState<ResponseMode>("normal");
   const sessionId = useRef("");
   useEffect(() => {
     const stored = sessionStorage.getItem("unipilot-campus-session");
@@ -25,7 +29,7 @@ export default function Home() {
     const question = input.trim(); setMessages(value => [...value, { role: "user", text: question }]); setInput(""); setBusy(true); setError("");
     try {
       const requestBody = JSON.stringify({ prompt: question, max_new_tokens: 32, temperature: .7, top_k: 40, top_p: .9,
-        repetition_penalty: 1.0, session_id: sessionId.current || undefined });
+        repetition_penalty: 1.0, response_mode: responseMode, session_id: sessionId.current || undefined });
       const stream = await fetch(`${API}/chat/stream`, { method: "POST", headers: { "Content-Type": "application/json" }, body: requestBody });
       if (!stream.ok || !stream.body) {
         const response = await fetch(`${API}/chat`, { method: "POST", headers: { "Content-Type": "application/json" }, body: requestBody });
@@ -60,12 +64,22 @@ export default function Home() {
             {Array.isArray(item.data?.options) && <div className="mt-3 flex flex-wrap gap-2">{(item.data.options as ClarifyOption[]).map(option =>
               <button key={option.category} type="button" onClick={() => setInput(option.prompt)} className="rounded-lg border border-cyan-700 px-3 py-2 text-sm text-cyan-200 hover:bg-cyan-950">
                 {option.label}</button>)}</div>}
+            {item.kind === "sources" && Array.isArray(item.data?.sources) && <details className="mt-3 text-sm">
+              <summary className="cursor-pointer text-cyan-200">出典と更新日を表示</summary>
+              <ul className="mt-2 space-y-2">{(item.data.sources as SourceItem[]).map(source => <li key={source.id} className="border-l-2 border-slate-700 pl-3">
+                {source.url?.startsWith("https://") ? <a href={source.url} target="_blank" rel="noreferrer" className="text-cyan-300 underline underline-offset-2">{source.title}</a> : <span>{source.title}</span>}
+                <p className="text-xs text-slate-400">{source.publisher ?? "出典不明"} · {source.license ?? "ライセンス未表示"} · 確認日 {source.last_verified_at ?? "不明"}{source.stale ? " · 要再確認" : ""}</p>
+              </li>)}</ul>
+            </details>}
             {(item.action_label || item.copy_text) && <button type="button" onClick={() => useCard(item)} className="mt-3 rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950">
               {item.copy_text ? item.action_label || "コピー" : item.action_label}</button>}
           </div>)}</div></div>)}
       {busy && <p className="text-sm text-slate-400">生成中…</p>}{error && <p className="text-sm text-rose-400">{error}</p>}
     </section>
-    <form onSubmit={submit} className="mt-5 flex gap-3"><input value={input} onChange={event => setInput(event.target.value)} placeholder="質問を入力..."
+    <form onSubmit={submit} className="mt-5 flex gap-3"><select aria-label="回答の長さ" value={responseMode} onChange={event => setResponseMode(event.target.value as ResponseMode)}
+      className="rounded-xl border border-slate-700 bg-slate-900 px-3 text-sm outline-none focus:border-cyan-500">
+      <option value="short">短く</option><option value="normal">標準</option><option value="detailed">詳しく</option>
+    </select><input value={input} onChange={event => setInput(event.target.value)} placeholder="質問を入力..."
       className="min-w-0 flex-1 rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 outline-none focus:border-cyan-500" />
       <button disabled={busy} className="rounded-xl bg-cyan-500 px-6 font-semibold text-slate-950 disabled:opacity-50">送信</button></form>
     <p className="mt-3 text-center text-xs text-slate-500">External AI API: OFF</p>

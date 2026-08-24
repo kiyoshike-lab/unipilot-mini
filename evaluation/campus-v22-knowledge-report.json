@@ -1,0 +1,98 @@
+{
+  "version": "campus-v2.2",
+  "generated_at": "2026-08-24T12:12:44+00:00",
+  "policy": "explicit-license-only; disabled/unknown-license source bodies are not stored",
+  "required_schema": [
+    "id",
+    "title",
+    "text",
+    "category",
+    "sub_category",
+    "source",
+    "source_url",
+    "retrieved_at",
+    "license",
+    "publisher",
+    "university_name",
+    "university_specific",
+    "last_verified_at"
+  ],
+  "counts": {
+    "total": 610,
+    "external_knowledge": 610,
+    "reviewed_faq": 1000,
+    "total_available_to_pipeline": 1610,
+    "wikipedia": 496,
+    "government": 105,
+    "university": 9,
+    "duplicates_removed": 0,
+    "unsupported_sources_excluded": 4,
+    "fetch_failures": 0,
+    "stale_documents": 0
+  },
+  "targets_are_quality_guidelines_not_padding_requirements": {
+    "wikipedia": "500-2000",
+    "government": "200-500",
+    "university": "300-1000 (only explicit reusable licenses)",
+    "faq_and_self_authored": "2000"
+  },
+  "by_category": {
+    "ai_usage": 45,
+    "campus_life": 87,
+    "career_schedule": 53,
+    "citation_check": 19,
+    "es_outline": 2,
+    "exam": 40,
+    "faq_search": 3,
+    "general": 98,
+    "gpa": 15,
+    "math": 67,
+    "part_time_job": 36,
+    "presentation_outline": 1,
+    "programming": 25,
+    "registration": 2,
+    "relationship": 5,
+    "report_outline": 12,
+    "scholarship": 20,
+    "statistics": 72,
+    "study_plan": 6,
+    "toeic_plan": 2
+  },
+  "by_publisher": {
+    "Wikimedia Foundation": 496,
+    "デジタル庁": 12,
+    "厚生労働省": 28,
+    "名古屋大学": 2,
+    "国税庁": 28,
+    "文部科学省": 37,
+    "明海大学": 2,
+    "東京大学": 1,
+    "筑波大学": 1,
+    "関西大学": 3
+  },
+  "by_license": {
+    "CC BY 4.0": 7,
+    "CC BY-NC-ND": 1,
+    "CC BY-NC-SA 2.1 JP": 1,
+    "CC BY-SA 4.0": 496,
+    "Public Data License 1.0": 105
+  },
+  "failed_sources": [],
+  "unsupported_sources": [
+    "nagoya-ai-open-textbook",
+    "wakayama-open-data",
+    "university-rules-unlicensed",
+    "jasso-default-copyright"
+  ],
+  "limitations": [
+    "University pages without an explicit reusable license are excluded even if publicly viewable.",
+    "Official web text may change; dynamic administrative facts must be treated as stale after the configured freshness window.",
+    "Wikipedia is secondary knowledge and does not override official government or matching university sources."
+  ],
+  "changes": {
+    "added": 53,
+    "updated": 3,
+    "unchanged": 554,
+    "removed": 2
+  }
+}

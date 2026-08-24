@@ -1,0 +1,20 @@
+{
+  "version": "campus-v2.2",
+  "knowledge_questions": 1000,
+  "hallucination_questions": 500,
+  "human_questions": 100,
+  "group_counts": {
+    "university_system": 150,
+    "gpa_credit": 100,
+    "exam_assignment": 150,
+    "professor_email": 100,
+    "report_citation": 100,
+    "career_internship": 100,
+    "scholarship_tuition": 100,
+    "general_education": 100,
+    "ai_pc_programming": 100
+  },
+  "normalized_exact_overlap": 0,
+  "generation": "deterministic source-linked templates; no external LLM or API",
+  "limitations": "Correctness automation measures retrieval and source support; the separate 100-item queue requires human semantic review."
+}
