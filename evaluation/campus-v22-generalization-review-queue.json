@@ -1,0 +1,799 @@
+{
+  "schema_version": "campus-v22-generalization-review-v1",
+  "generated_at": "2026-08-24T14:23:17.221884+00:00",
+  "selection_policy": [
+    "critical error",
+    "AI label bad",
+    "score < 80",
+    "unsupported claim",
+    "university policy assertion"
+  ],
+  "automatic_training": false,
+  "review_required": 16,
+  "items": [
+    {
+      "item_id": "campus-v21-rc-human-018",
+      "question": "単語と読解の時間配分なんよ、今できること教えて 初めて",
+      "answer": "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。\n週1回は時間を測って模試を行い、誤答を原因別に記録してください。\n提出期限がある場合は公式の試験日・結果発送日も確認してください。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 現在スコア・目標・試験日を確認する 2. 語彙・リスニング・読解を毎週すべて練習する 3. 模試の誤答を原因別に記録して配分を更新する\n確認：確認できていない数字・制度・期限は作らず、公式資料または担当者の回答を優先してください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。",
+      "score": 84.69,
+      "category": "toeic_plan",
+      "route": "tool",
+      "reasons": [
+        "UNSUPPORTED_CLAIM",
+        "HALLUCINATION_SUSPECTED"
+      ],
+      "sources": [],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-052",
+      "question": "コードをデバッグしたいじゃなくて、先生にアポを取りたい これってどうするの方を教えて。前者は不要",
+      "answer": "結論：また、デバッグを行なう作業者のことをデバッガあるいはデバッガーと呼ぶこともあるが、プログラムとしてのデバッガは「人間が行うデバッグ作業を支援するプログラム」であり、「自立的にデバッグを行ってくれるプログラム」というわけではない。\n\n根拠に基づく説明：\n・インタプリタには内蔵されていることもある。\n・たとえばPerlは起動時に -d オプションを指定することで、デバッガモードになる。\n・就職を控えた学生などが、働き始める前やアルバイトをするときに、最低限知っておいてほしいルールをまとめたハンドブック「これってあり?~まんが知って役立つ労働法Q&A~」を作成しました。\n・労働法について分かりやすく解説している内容になっていますので、これから働き始める前の参考資料としてご活用下さい。\n・労働法のことをより詳しく知りたい方は、「知って役立つ労働法~働くときに必要な基礎知識~」と併せて読んでいただくと、より理解が深まります。\n・(注意事項) ハンドブック「これってあり?~まんが知って役立つ労働法Q&A~」は利用規約等に従って、どなたでも自由に利用できます。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "professor_email",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "wikipedia-ja-9928-chunk-002",
+          "title": "デバッガ",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%90%E3%83%83%E3%82%AC",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-001",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "wikipedia-ja-5793-chunk-002",
+          "title": "統合開発環境",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "mext-support-outline-004-chunk-001",
+          "title": "制度の概要 - 学びたい気持ちを応援します 高等教育の修学支援新制度:文部科学省 — 高等教育の修学支援新制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/kyufu/outline/index.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-059",
+      "question": "ゼミへの遅刻メールじゃなくて、追試の確認先 これってどうするの方を教えて。前者は不要",
+      "answer": "この機能は準備中です。\n大学生活FAQから確認方法を案内します。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 件名に授業名・用件・氏名を書く 2. 本文で要件と希望する対応を一文ずつ示す 3. 宛名・学籍番号・添付・候補日時を確認して送る\n確認：確認できていない数字・制度・期限は作らず、公式資料または担当者の回答を優先してください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。\n実行後：完了したこと、残っていること、次の期限を三行で記録し、状況が変わったら優先順位を更新してください。",
+      "score": 68.93,
+      "category": "exam",
+      "route": "tool",
+      "reasons": [
+        "AI_LABEL_BAD",
+        "SCORE_BELOW_80"
+      ],
+      "sources": [],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-062",
+      "question": "体調不良で休む連絡じゃなくて、体調不良で出席できない これってどうするの方を教えて。前者は不要",
+      "answer": "結論：これまでの我が国の大学に対する評価の中に、大学では適切な卒業認定が行われておらず、学部卒業者として期待される教育内容がきちんと身に付いていない場合があるのではないかとの指摘があります。\n根拠に基づく説明：\n・大学は人材養成の役割を担うことから、そうした指摘を受けることがないよう、学生に対して教育目標を明示し、その目標に向けた計画的な学修を可能とする環境を提供した上で、適切な成績評価・卒業認定を行うことにより、学生の卒業時における質の確保を図るという充実した教育活動を行うことが、大学の社会的責務として求められています。\n・文部科学省においても、平成19年に大学設置基準を改正して、大学は学生に対して、授業の方法及び内容、一年間の授業の計画をあらかじめ明示するものとするなど、大学の取組を促す方策を講じています。\n・但し、コンテンツ自体を商品として、譲渡し、または頒布することはできません。\n・2022年4月1日から、成年年齢が18歳になりました。\n・18歳、19歳の方は、親の同意なく一人で契約をすることができるようになりますが、悪質商法等による消費者被害に巻き込まれないように注意しましょう。\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "attendance",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-gpa-qa-001-chunk-001",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-002-chunk-004",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-002",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "wikipedia-ja-820044-chunk-001",
+          "title": "予測区間",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E4%BA%88%E6%B8%AC%E5%8C%BA%E9%96%93",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-068",
+      "question": "欠席何回で不可かじゃなくて、単語と読解の時間配分 これってどうするの方を教えて。前者は不要",
+      "answer": "結論：複数の相談を分け、締切が近いもの・放置した影響が大きいものから進めます。\n【出席・欠席】出席・欠席は、条件を整理して公式情報または担当者を確認し、今日できる一手まで決めると進めやすくなります。\n今やること：1. LMSの出席記録と自分の記録を授業ごとに照合する 2. シラバスで欠席・遅刻・公欠の扱いを読む 3. 差があれば授業名と日付を添えて担当教員へ確認する\n注意：出席扱いは授業ごとに異なるため、一般論だけで可否を決めないでください。\n【大学固有制度】大学固有制度は、条件を整理して公式情報または担当者を確認し、今日できる一手まで決めると進めやすくなります。\n今やること：1. 大学名・学部・入学年度・対象授業を確認する 2. 学生便覧・履修要項・シラバスで該当項目を探す 3. 見つからなければ資料名を添えて公式窓口へ確認する\n注意：大学固有の回数・期限・可否は、大学名と対象年度が分からない状態で断定しません。\n優先順位：締切時刻、提出や連絡に必要な時間、相手の返信待ち時間を比べ、先に連絡が必要なものを送ってから、自分だけで進められる作業に着手してください。",
+      "score": 70.71,
+      "category": "toeic_plan",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-002",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-003-chunk-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-student-support-003-chunk-002",
+          "title": "経済的に困難な学生が活用可能な支援策 — 主に低所得世帯の学生が活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-070",
+      "question": "バイトと授業の両立じゃなくて、募集要項を読みたい これってどうするの方を教えて。前者は不要",
+      "answer": "結論：就職を控えた学生などが、働き始める前やアルバイトをするときに、最低限知っておいてほしいルールをまとめたハンドブック「これってあり?~まんが知って役立つ労働法Q&A~」を作成しました。\n\n根拠に基づく説明：\n・労働法について分かりやすく解説している内容になっていますので、これから働き始める前の参考資料としてご活用下さい。\n・労働法のことをより詳しく知りたい方は、「知って役立つ労働法~働くときに必要な基礎知識~」と併せて読んでいただくと、より理解が深まります。\n・(注意事項) ハンドブック「これってあり?~まんが知って役立つ労働法Q&A~」は利用規約等に従って、どなたでも自由に利用できます。\n・文部科学省においても、平成19年に大学設置基準を改正して、大学は学生に対して、授業の方法及び内容、一年間の授業の計画をあらかじめ明示するものとするなど、大学の取組を促す方策を講じています。\n・ただし、芸術等の分野における個人指導による実技の授業については、大学が定める時間の授業をもつて一単位とすることができる。\n・3 (略) 第25条の2 大学は、学生に対して、授業の方法及び内容並びに一年間の授業の計画をあらかじめ明示するものとする。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "internship",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-001",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-002-chunk-004",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-young-employment-001-chunk-001",
+          "title": "若者の雇入れを検討している事業主の皆さまへ|厚生労働省 — 募集採用活動のスケジュール",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000133085.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-072",
+      "question": "レポートが間に合わない連絡じゃなくて、生成AIの授業利用 これってどうするの方を教えて。前者は不要",
+      "answer": "結論：デジタル庁では、各地域のオープンデータ利活用支援団体の紹介を目的として、主にワークショップ開催を支援する「オープンデータサポート団体(ODサポーター)」を選定し、一覧として掲載しています。\n根拠に基づく説明：\n・ワークショップ開催他支援を希望される自治体は、下記の支援依頼書(Excel)に具体的な依頼内容をご記入の上、直接各ODサポーターへご連絡ください。\n・なお、調整には時間を要するため、原則、1ヵ月以上前のお申し込みをお願いいたします。\n・ODサポーターの支援を受けた自治体は実施後、下記の支援完了報告フォームより実施報告を行ってください。\n・公共データ利用規約は、国又は地方公共団体等の公的機関のWebサイトやオープンデータに適用できるコンテンツの利用規約(ルール)です。\n・Webサイトに適用することにより、サイト全体のオープンデータ化が可能となります。\n・新たに利用規約を適用する場合や、これまで政府標準利用規約やCC BY4.0等を適用しているWebサイト・オープンデータには、公共データ利用規約をご利用ください。\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "ai_usage",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "digital-open-data-012-chunk-001",
+          "title": "オープンデータ|デジタル庁 — オープンデータサポート団体",
+          "publisher": "デジタル庁",
+          "url": "https://www.digital.go.jp/resources/open_data",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.digital.go.jp/resources/open_data",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "digital-open-data-003-chunk-001",
+          "title": "オープンデータ|デジタル庁 — 2. 公共データ利用規約",
+          "publisher": "デジタル庁",
+          "url": "https://www.digital.go.jp/resources/open_data",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.digital.go.jp/resources/open_data",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-004-chunk-001",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 「シラバス」とは",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-003-chunk-002",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-004-chunk-001",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — 専門窓口のご紹介",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v21-rc-human-083",
+      "question": "毎日一時間のTOEICを先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+      "answer": "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。\n週1回は時間を測って模試を行い、誤答を原因別に記録してください。\n提出期限がある場合は公式の試験日・結果発送日も確認してください。\nもう一つの相談：\n結論：到着予定時刻と事実を先に伝え、安全を優先してください。\n入室可否は授業案内に従います。\n今やること：必要条件、期限、確認先の順に書き出してください。\n確認：不明な条件はシラバスまたは担当窓口で確かめ、確認できた事実だけで進めてください。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 現在スコア・目標・試験日を確認する 2. 語彙・リスニング・読解を毎週すべて練習する 3. 模試の誤答を原因別に記録して配分を更新する\n確認：確認できていない数字・制度・期限は作らず、公式資料または担当者の回答を優先してください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。\n実行後：完了したこと、残っていること、次の期限を三行で記録し、状況が変わったら優先順位を更新してください。\n迷う場合は、今日中に必要な連絡を先に送り、その待ち時間に資料確認や下書きなど自分だけで進められる作業を行ってください。",
+      "score": 82.0,
+      "category": "toeic_plan",
+      "route": "tool",
+      "reasons": [
+        "UNSUPPORTED_CLAIM",
+        "HALLUCINATION_SUSPECTED"
+      ],
+      "sources": [],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-151",
+      "question": "一般論だけじゃなくて、目標までどの程度上げる必要があるか見たいときの確認項目と今日の一手を知りたい",
+      "answer": "結論：本制度の対象校となっているか確認しましょう。\n\n根拠に基づく説明：\n・支援対象校を確認する 高等教育の修学支援新制度では、授業料・入学金は在籍する大学等において減額・免除され、給付型奨学金は日本学生支援機構(JASSO)から支給されます。\n・支援を受けるには、その学校が対象校となっている必要があります。\n・上記いずれかの資金として利用される方 手続きの方法を教えて 日本政策金融公庫のホームページから、24時間365日インターネット申込みを受付中です。\n・もっと詳しく知りたいときは ■日本政策金融公庫ホームページ(教育一般貸付(国の教育ローン)) 母子父子寡婦福祉貸付金(就学支度資金・修学資金)\n・労働経済動向を知りたい 求職者(就職・転職希望者)学生の皆様 仕事を探すときには、求人を紹介してくれるハローワークなどの機関をご利用ください。\n・ハローワークは、全国500ヶ所以上に設置されており、対象者ごとに特化した専門窓口も多数あります。\n・また、ハローワーク以外での求人検索は、許可・届出のある事業者を使いましょう。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：複数資料の数値条件が一致しない可能性があるため、対象年度の公式ページを優先してください。",
+      "score": 71.36,
+      "category": "gpa",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-support-outline-003-chunk-001",
+          "title": "制度の概要 - 学びたい気持ちを応援します 高等教育の修学支援新制度:文部科学省 — 支援の対象となる学校",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/kyufu/outline/index.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-student-support-005-chunk-003",
+          "title": "経済的に困難な学生が活用可能な支援策 — 幅広い世帯の学生が活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-002-chunk-001",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ノウハウ・お役立ち",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "wikipedia-ja-4512726-chunk-001",
+          "title": "代替の弾力性",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E4%BB%A3%E6%9B%BF%E3%81%AE%E5%BC%BE%E5%8A%9B%E6%80%A7",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "mhlw-hellowork-005-chunk-001",
+          "title": "求人多数、未経験の転職もサポート!仕事を探す人のハローワーク|厚生労働省 — 直接企業に聞きづらい事を代わりに確認",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/hellowork/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-156",
+      "question": "一般論だけじゃなくて、交通障害で授業開始に間に合わないときの確認項目と今日の一手を知りたい",
+      "answer": "結論：家計が急変した場合は、随時申込を受け付けているので、学校の窓口に確認しましょう。\n\n根拠に基づく説明：\n・もっと詳しく知りたいときは ■日本学生支援機構ホームページ(奨学金の制度(貸与型)) 大学・地方公共団体等が行う奨学金制度 どんな制度?(制度の概要) 経済的に困難な方に対しては、多くの大学や地方公共団体等において、 授業料等を払う期限の延長、 独自に授業料等を減額・免除したり、奨学金を支給したり、貸したりする 等の対応をしています。\n・もっと詳しく知りたいときは ■日本学生支援機構HP 「大学・地方公共団体等が行う奨学金制度 検索ページ」 ▲ 制度一覧へ戻る\n・我が国の大学教育は単位制度を基本としており、1単位あたり45時間の学修を必要とする内容をもって構成することが標準とされています。\n・ここでいう1単位あたりの学修時間は、授業時間内の学修時間だけではなく、その授業の事前の準備学修・事後の準備復習を合わせたものとなっています。\n・こうした単位制度のもとでは、大学生は、単に大学の教室で授業を受けるだけでなく、教室外での自主的な学修を行うことが求められます。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "absence_email",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-student-support-009-chunk-002",
+          "title": "経済的に困難な学生が活用可能な支援策 — 家計が急変した世帯の学生も活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-002-chunk-001",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 授業の設計と教員の教育責任",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-gpa-qa-005-chunk-001",
+          "title": "Q3 日本の大学の現状について、「授業に出席しなくても単位が取れる」「勉強しなくても簡単に卒業できる」などの声を耳にしますが、これについて大学はどのような対策を講じているのでしょうか。:文部科学省 — 履修科目登録の上限設定",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/koutou/daigaku/04052801/003.htm",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-student-support-013-chunk-001",
+          "title": "経済的に困難な学生が活用可能な支援策 — 大学・地方公共団体等が行う奨学金制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-002-chunk-001",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ノウハウ・お役立ち",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-162",
+      "question": "一般論だけじゃなくて、模試で時間切れになるときの確認項目と今日の一手を知りたい",
+      "answer": "結論：貸与型奨学金の申込みは、年2回、毎年春と秋に、在学中の大学等を通じて日本学生支援機構に申し込みます。\n\n根拠に基づく説明：\n・なお、進学前に高校等を通じて申し込むこともできます。\n・家計が急変した場合は、随時申込を受け付けているので、学校の窓口などに確認しましょう。\n・もっと詳しく知りたいときは ■日本学生支援機構ホームページ(奨学金の制度(貸与型)) 日本政策金融公庫の教育ローン(国の教育ローン) どんな制度?(制度の概要) 日本学生支援機構の奨学金と併用して、さまざまな学校に通う場合の幅広い用途にご活用いただける融資制度です。\n・どんな人が対象になる?(支援の対象者)\n・上記いずれかの資金として利用される方 手続きの方法を教えて 日本政策金融公庫のホームページから、24時間365日インターネット申込みを受付中です。\n・もっと詳しく知りたいときは ■日本政策金融公庫ホームページ(教育一般貸付(国の教育ローン)) 母子父子寡婦福祉貸付金(就学支度資金・修学資金)\n・本制度の対象校となっているか確認しましょう。\n\n一般的な助言：\n今やること：制度名、対象年度、申請期限、所得・成績要件を公式窓口で照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "toeic_plan",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-student-support-005-chunk-001",
+          "title": "経済的に困難な学生が活用可能な支援策 — 幅広い世帯の学生が活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-support-outline-003-chunk-001",
+          "title": "制度の概要 - 学びたい気持ちを応援します 高等教育の修学支援新制度:文部科学省 — 支援の対象となる学校",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/kyufu/outline/index.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-support-outline-002-chunk-001",
+          "title": "制度の概要 - 学びたい気持ちを応援します 高等教育の修学支援新制度:文部科学省 — 授業料・入学金の減額・免除",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/kyufu/outline/index.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "wikipedia-ja-56802-chunk-001",
+          "title": "奨学金",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E5%A5%A8%E5%AD%A6%E9%87%91",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-164",
+      "question": "一般論だけじゃなくて、長期と短期のどちらを優先するか迷うときの確認項目と今日の一手を知りたい",
+      "answer": "課題名、締切までの日数、予想作業時間、成績への影響を入力してください。\n先に『提出不能になる期限』、次に『短時間で提出可能にできる課題』を優先します。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 相談内容を一文にし、期限と希望する結果を書く 2. 分かっている事実と未確認事項を分ける 3. 今日できる連絡・確認・作業を一つ進める\n確認：安全・健康・ハラスメントに関わる場合は、作業整理より先に信頼できる人や学内外の相談先へつながってください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。",
+      "score": 68.93,
+      "category": "internship",
+      "route": "tool",
+      "reasons": [
+        "AI_LABEL_BAD",
+        "SCORE_BELOW_80"
+      ],
+      "sources": [],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-167",
+      "question": "一般論だけじゃなくて、辞める時期を学業と調整したいときの確認項目と今日の一手を知りたい",
+      "answer": "結論：家計が急変した場合は、随時申込を受け付けているので、学校の窓口に確認しましょう。\n\n根拠に基づく説明：\n・もっと詳しく知りたいときは ■日本学生支援機構ホームページ(奨学金の制度(貸与型)) 大学・地方公共団体等が行う奨学金制度 どんな制度?(制度の概要) 経済的に困難な方に対しては、多くの大学や地方公共団体等において、 授業料等を払う期限の延長、 独自に授業料等を減額・免除したり、奨学金を支給したり、貸したりする 等の対応をしています。\n・もっと詳しく知りたいときは ■日本学生支援機構HP 「大学・地方公共団体等が行う奨学金制度 検索ページ」 ▲ 制度一覧へ戻る\n・上記いずれかの資金として利用される方 手続きの方法を教えて 日本政策金融公庫のホームページから、24時間365日インターネット申込みを受付中です。\n・もっと詳しく知りたいときは ■日本政策金融公庫ホームページ(教育一般貸付(国の教育ローン)) 母子父子寡婦福祉貸付金(就学支度資金・修学資金)\n・労働経済動向を知りたい 求職者(就職・転職希望者)学生の皆様 仕事を探すときには、求人を紹介してくれるハローワークなどの機関をご利用ください。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 71.36,
+      "category": "part_time_job",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-student-support-009-chunk-002",
+          "title": "経済的に困難な学生が活用可能な支援策 — 家計が急変した世帯の学生も活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-student-support-005-chunk-003",
+          "title": "経済的に困難な学生が活用可能な支援策 — 幅広い世帯の学生が活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-002-chunk-001",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — ノウハウ・お役立ち",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mhlw-labor-law-manga-001-chunk-001",
+          "title": "これってあり?~まんが知って役立つ労働法Q&A~|厚生労働省 — 雇用・労働これってあり?~まんが知って役立つ労働法Q&A~",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/mangaroudouhou.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-support-outline-001-chunk-002",
+          "title": "制度の概要 - 学びたい気持ちを応援します 高等教育の修学支援新制度:文部科学省",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/kyufu/outline/index.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-172",
+      "question": "一般論だけじゃなくて、個人情報を消した資料なら入力可能か確認したいときの確認項目と今日の一手を知りたい",
+      "answer": "結論：家計が急変した場合は、随時申込を受け付けているので、学校の窓口に確認しましょう。\n\n根拠に基づく説明：\n・もっと詳しく知りたいときは ■日本学生支援機構ホームページ(奨学金の制度(貸与型)) 大学・地方公共団体等が行う奨学金制度 どんな制度?(制度の概要) 経済的に困難な方に対しては、多くの大学や地方公共団体等において、 授業料等を払う期限の延長、 独自に授業料等を減額・免除したり、奨学金を支給したり、貸したりする 等の対応をしています。\n・もっと詳しく知りたいときは ■日本学生支援機構HP 「大学・地方公共団体等が行う奨学金制度 検索ページ」 ▲ 制度一覧へ戻る\n・貸与型奨学金の申込みは、年2回、毎年春と秋に、在学中の大学等を通じて日本学生支援機構に申し込みます。\n・なお、進学前に高校等を通じて申し込むこともできます。\n・家計が急変した場合は、随時申込を受け付けているので、学校の窓口などに確認しましょう。\n・もっと詳しく知りたいときは ■日本学生支援機構ホームページ(奨学金の制度(貸与型)) 日本政策金融公庫の教育ローン(国の教育ローン) どんな制度?(制度の概要) 日本学生支援機構の奨学金と併用して、さまざまな学校に通う場合の幅広い用途にご活用いただける融資制度です。\n\n一般的な助言：\n今やること：用語の定義、成り立ち、適用範囲を分け、授業資料や原典と照合してください。\n注意：適用条件や授業・年度による違いは、提示した出典と最新の公式案内で確認してください。",
+      "score": 70.87,
+      "category": "ai_usage",
+      "route": "rag",
+      "reasons": [
+        "SCORE_BELOW_80"
+      ],
+      "sources": [
+        {
+          "id": "mext-student-support-009-chunk-002",
+          "title": "経済的に困難な学生が活用可能な支援策 — 家計が急変した世帯の学生も活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "mext-student-support-005-chunk-001",
+          "title": "経済的に困難な学生が活用可能な支援策 — 幅広い世帯の学生が活用可能な支援制度",
+          "publisher": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/coronavirus/benefit/",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mext.go.jp/b_menu/1366610.htm",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "digital-open-data-006-chunk-001",
+          "title": "オープンデータ|デジタル庁 — オープンデータ取組済自治体",
+          "publisher": "デジタル庁",
+          "url": "https://www.digital.go.jp/resources/open_data",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.digital.go.jp/resources/open_data",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        },
+        {
+          "id": "wikipedia-ja-98768-chunk-001",
+          "title": "統計",
+          "publisher": "Wikimedia Foundation",
+          "url": "https://ja.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-08-24T11:36:31+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "medium-high",
+          "stale": false,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "mhlw-labor-navi-jobseeker-005-chunk-001",
+          "title": "仕事を探したい | みんなの労働ナビ | 厚生労働省 — 特化型の求人情報",
+          "publisher": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/roudou-navi/jobseeker/04.html",
+          "license": "Public Data License 1.0",
+          "license_url": "https://www.mhlw.go.jp/chosakuken/",
+          "retrieved_at": "2026-08-24T12:12:44+00:00",
+          "last_verified_at": "2026-08-24",
+          "confidence": "high",
+          "stale": false,
+          "source_type": "official_government"
+        }
+      ],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-219",
+      "question": "模試の復習が毎回終わらない。それと人間関係も今週対応したい。先にやる順番まで整理して",
+      "answer": "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。\n週1回は時間を測って模試を行い、誤答を原因別に記録してください。\n提出期限がある場合は公式の試験日・結果発送日も確認してください。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 試験日・範囲・使える時間を一覧にする 2. 理解・演習・復習へ時間を分ける 3. 終了時に間違いを記録し、次回の最初に解き直す\n確認：確認できていない数字・制度・期限は作らず、公式資料または担当者の回答を優先してください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。\n実行後：完了したこと、残っていること、次の期限を三行で記録し、状況が変わったら優先順位を更新してください。\n迷う場合は、今日中に必要な連絡を先に送り、その待ち時間に資料確認や下書きなど自分だけで進められる作業を行ってください。",
+      "score": 76.96,
+      "category": "study_plan",
+      "route": "tool",
+      "reasons": [
+        "SCORE_BELOW_80",
+        "UNSUPPORTED_CLAIM",
+        "HALLUCINATION_SUSPECTED"
+      ],
+      "sources": [],
+      "status": "pending"
+    },
+    {
+      "item_id": "campus-v22-generalization-blind-282",
+      "question": "TOEICについて公式ページとLMSの表示が違う。どちらを優先し、何を記録して問い合わせればいい？",
+      "answer": "TOEIC 30日計画：毎日1時間を、語彙20%、リスニング30%、文法・読解30%、復習20%に分けます。\n週1回は時間を測って模試を行い、誤答を原因別に記録してください。\n提出期限がある場合は公式の試験日・結果発送日も確認してください。\n結果の使い方：この結果を目標や期限と比べ、無理がある条件は早めに調整します。\n次にやること：1. 現在スコア・目標・試験日を確認する 2. 語彙・リスニング・読解を毎週すべて練習する 3. 模試の誤答を原因別に記録して配分を更新する\n確認：確認できていない数字・制度・期限は作らず、公式資料または担当者の回答を優先してください。\n理由：期限・条件・確認先を分けると、推測に頼らず、今できる作業と相手の回答を待つ作業を区別できるためです。\n確認メモ：確認した資料名・対象年度・担当者・確認日を残し、まだ不明な点は一つずつ質問してください。",
+      "score": 84.69,
+      "category": "toeic_plan",
+      "route": "tool",
+      "reasons": [
+        "UNSUPPORTED_CLAIM",
+        "HALLUCINATION_SUSPECTED"
+      ],
+      "sources": [],
+      "status": "pending"
+    }
+  ]
+}

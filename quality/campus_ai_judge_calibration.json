@@ -1,0 +1,10 @@
+{
+  "version": "campus-human20-feature-calibration-v1",
+  "purpose": "Human label agreement calibration only; never used by answer generation",
+  "training_examples": 20,
+  "forbidden_features": ["question_id", "exact_question", "exact_answer", "human_answer_key"],
+  "features": ["raw_score_band", "issue_types", "source_present", "character_count", "compound_question"],
+  "grounded_short_good_min_chars": 160,
+  "compound_good_to_close": true,
+  "recover_non_severe_bad": true
+}

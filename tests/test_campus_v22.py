@@ -47,7 +47,7 @@ def test_university_records_require_exact_session_match():
     assert any(row.get("university_name") == target["university_name"] for row in matching)
 
 
-def test_v22_preserves_v21_deterministic_tool_output():
+def test_v22_preserves_v21_tool_calculation_while_improving_explanation():
     question = "GPAを計算して。A 2単位、B 2単位"
     v21 = UniPilotCampusV21()
     v22 = UniPilotCampusV22()
@@ -60,8 +60,15 @@ def test_v22_preserves_v21_deterministic_tool_output():
         {"name": "科目B", "grade": "B", "credits": 2},
     ]})
     assert old["route"] == new["route"] == "tool"
-    assert old["text"] == new["text"]
     assert old["calculation"] == new["calculation"]
+    assert "2.50" in old["text"]
+    assert "2.50" in new["text"]
+    # Campus v2.1 remains frozen and deterministic; v2.2 may add a clearer action plan.
+    repeated_old = v21.answer(question, tool_inputs={"courses": [
+        {"name": "科目A", "grade": "A", "credits": 2},
+        {"name": "科目B", "grade": "B", "credits": 2},
+    ]})
+    assert repeated_old["text"] == old["text"]
 
 
 def test_v22_grounded_answer_sources_modes_and_followup():

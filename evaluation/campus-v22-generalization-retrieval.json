@@ -1,0 +1,54 @@
+{
+  "schema_version": "campus-v22-generalization-retrieval-v1",
+  "generated_at": "2026-08-24T14:23:17.221884+00:00",
+  "benchmark_holdout": true,
+  "sample_policy": "fixed stride from source-linked 1000 set",
+  "strategies": {
+    "baseline": {
+      "questions": 300,
+      "recall_at_1": 0.3733,
+      "recall_at_3": 0.4967,
+      "mrr": 0.4294,
+      "false_match_rate": 0.61,
+      "no_result_rate": 0.0167,
+      "average_latency_ms": 32.282
+    },
+    "query_expansion": {
+      "questions": 300,
+      "recall_at_1": 0.37,
+      "recall_at_3": 0.4933,
+      "mrr": 0.4267,
+      "false_match_rate": 0.6133,
+      "no_result_rate": 0.0167,
+      "average_latency_ms": 63.711
+    },
+    "category_aware": {
+      "questions": 300,
+      "recall_at_1": 0.49,
+      "recall_at_3": 0.6833,
+      "mrr": 0.5761,
+      "false_match_rate": 0.51,
+      "no_result_rate": 0.0,
+      "average_latency_ms": 64.793
+    },
+    "multi_query": {
+      "questions": 300,
+      "recall_at_1": 0.53,
+      "recall_at_3": 0.6433,
+      "mrr": 0.5789,
+      "false_match_rate": 0.47,
+      "no_result_rate": 0.0,
+      "average_latency_ms": 104.738
+    },
+    "reranked": {
+      "questions": 300,
+      "recall_at_1": 0.77,
+      "recall_at_3": 0.8667,
+      "mrr": 0.8111,
+      "false_match_rate": 0.23,
+      "no_result_rate": 0.0,
+      "average_latency_ms": 165.306
+    }
+  },
+  "selected": "reranked"
+}

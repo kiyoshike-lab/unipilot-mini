@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import re
-from threading import RLock
 
 from pipeline.campus_composer_v22 import CampusAnswerComposerV22
+from pipeline.campus_generalizer_v22 import CampusResponseGeneralizerV22
+from pipeline.campus_planner_v22 import CampusAnswerPlannerV22, CampusConversationMemoryV22, INTENT_SIGNALS
 from pipeline.campus_retrieval_v22 import CampusKnowledgeRetrieverV22
 from pipeline.campus_tools import card
 from pipeline.campus_v21 import UniPilotCampusV21
@@ -28,8 +29,9 @@ class UniPilotCampusV22(UniPilotCampusV21):
         super().__init__(model, tokenizer, router_path, adversarial_path)
         self.knowledge = CampusKnowledgeRetrieverV22.from_files()
         self.knowledge_composer = CampusAnswerComposerV22()
-        self._last_questions: dict[str, tuple[str, str]] = {}
-        self._last_lock = RLock()
+        self.answer_planner = CampusAnswerPlannerV22()
+        self.generalizer = CampusResponseGeneralizerV22()
+        self.conversation_memory = CampusConversationMemoryV22()
 
     @staticmethod
     def _high_confidence_faq(resolved: dict) -> bool:
@@ -38,20 +40,6 @@ class UniPilotCampusV22(UniPilotCampusV21):
             return False
         first = documents[0]
         return bool(first.get("category_match")) and float(first.get("confidence", 0.0)) >= .72
-
-    def _last(self, session_id: str | None) -> tuple[str, str] | None:
-        if not session_id:
-            return None
-        with self._last_lock:
-            return self._last_questions.get(session_id)
-
-    def _remember(self, session_id: str | None, question: str, category: str) -> None:
-        if not session_id:
-            return
-        with self._last_lock:
-            self._last_questions[session_id] = (question, category)
-            if len(self._last_questions) > 1024:
-                self._last_questions.pop(next(iter(self._last_questions)))
 
     def _resolve_v22(
         self,
@@ -223,15 +211,50 @@ class UniPilotCampusV22(UniPilotCampusV21):
                top_p: float = 0.9, repetition_penalty: float = 1.1, response_mode: str = "auto",
                session_id: str | None = None, tool_inputs: dict | None = None) -> dict:
         detail_followup = self.knowledge_composer.is_detail_followup(question)
-        prior = self._last(session_id) if detail_followup else None
-        effective_question = prior[0] if prior else question
-        mode = self.knowledge_composer.choose_mode(question, response_mode, is_detail_followup=bool(prior))
+        previous_question = self.conversation_memory.latest_question(session_id)
+        plan = self.answer_planner.plan(
+            question,
+            previous_question=previous_question,
+            response_mode="detailed" if detail_followup else response_mode,
+            tool_inputs=tool_inputs,
+        )
+        prior = previous_question if detail_followup else None
+        effective_question = prior or plan.contextual_question
+        if not prior and plan.contextual_question != question and plan.intent != "general":
+            route_hint = INTENT_SIGNALS.get(plan.intent, (plan.intent,))[0]
+            effective_question = f"{route_hint}について：{plan.contextual_question}"
+        mode = {"simple": "short", "normal": "normal", "complex": "detailed"}[plan.answer_depth]
         resolved = self._resolve_v22(effective_question, session_id, tool_inputs, mode)
         resolved["question"] = question
         result = self._result_v22(resolved, mode)
         if prior:
             result["followup_of"] = effective_question
-        self._remember(session_id, effective_question, result["category"])
+        improvement = self.generalizer.improve(question, result["text"], plan, result)
+        result["text"] = improvement.text
+        result["raw_text"] = improvement.text
+        result["answer_depth"] = plan.answer_depth
+        result["quality_checks"] = improvement.checks
+        result["revision_count"] = improvement.revision_count
+        result["planner_hidden"] = True
+        if improvement.card and all(card_item.get("kind") != improvement.card["kind"] for card_item in result["cards"]):
+            result["cards"].append(improvement.card)
+        source_urls = [
+            item.get("url") or item.get("source_url")
+            for item in (result.get("sources") or result.get("retrieval") or [])
+            if item.get("url") or item.get("source_url")
+        ]
+        result["validator"] = self.validator.validate(
+            question,
+            improvement.text,
+            grounded=bool(source_urls),
+            tool_result=result.get("route") == "tool",
+            source_urls=source_urls,
+            university_known=bool(result.get("session_state", {}).get("university")),
+            category=result.get("category"),
+            action=result.get("route_action"),
+            cards=result.get("cards", []),
+        ).to_dict()
+        self.conversation_memory.remember(session_id, effective_question, result["category"])
         return result
 
     def iter_answer(self, question: str, max_new_tokens: int = 100, temperature: float = 0.0, top_k: int = 40,
@@ -250,6 +273,8 @@ class UniPilotCampusV22(UniPilotCampusV21):
             "cards": result["cards"],
             "sources": result.get("sources", []),
             "response_mode": result["response_mode"],
+            "answer_depth": result["answer_depth"],
+            "revision_count": result["revision_count"],
             "validator": result["validator"],
             "session_state": result["session_state"],
         }

@@ -869,7 +869,10 @@ def campus_session_delete(session_id: str):
     pipeline = runtime.get("pipeline")
     if pipeline is None or getattr(pipeline, "version", None) not in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2"):
         raise HTTPException(404, "Campus mode is not enabled")
-    return {"deleted": pipeline.sessions.delete(session_id)}
+    deleted = pipeline.sessions.delete(session_id)
+    conversation_memory = getattr(pipeline, "conversation_memory", None)
+    memory_deleted = conversation_memory.clear(session_id) if conversation_memory else False
+    return {"deleted": deleted or memory_deleted}
 
 
 @app.get("/campus/benchmark")

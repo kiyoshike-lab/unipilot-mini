@@ -13,9 +13,9 @@ SHORT_TRIGGERS = ("短く", "簡潔に", "一言で", "要点だけ")
 DETAIL_FOLLOWUPS = ("もっと詳しく", "詳しく教えて", "もっと教えて", "細かく", "続き", "深掘りして", "具体例も")
 
 MODE_LIMITS = {
-    "short": (100, 220),
-    "normal": (300, 650),
-    "detailed": (700, 1200),
+    "short": (150, 300),
+    "normal": (350, 700),
+    "detailed": (600, 1200),
 }
 
 ACTION_GUIDANCE = {
@@ -85,7 +85,7 @@ class CampusAnswerComposerV22:
             answer_parts.append(f"{prefix}{sentence}")
             used.append((sentence, document_id))
             current = len("\n".join(answer_parts))
-            target = {"short": 145, "normal": 430, "detailed": 930}[mode]
+            target = {"short": 190, "normal": 460, "detailed": 900}[mode]
             if current >= target:
                 break
 

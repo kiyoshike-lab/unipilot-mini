@@ -137,11 +137,39 @@ class CampusAIJudge:
 
     def __init__(self, rubric_path: str | Path = "quality/campus_answer_rubric.json"):
         self.rubric = json.loads(Path(rubric_path).read_text(encoding="utf-8"))
+        calibration_path = Path("quality/campus_ai_judge_calibration.json")
+        self.calibration = (json.loads(calibration_path.read_text(encoding="utf-8"))
+                            if calibration_path.exists() else {})
         self.redundancy = RedundancyDetector()
         self.unsupported = UnsupportedClaimDetector()
 
+    def calibrated_label(self, question: str, answer: str, raw_label: str,
+                         issues: list[str], checks: dict[str, Any]) -> str:
+        """Calibrate coarse labels from generic features; never use question IDs or answer keys."""
+        config = self.calibration
+        issue_set = set(issues)
+        compound = bool(checks.get("compound_question"))
+        if raw_label == "good" and compound and config.get("compound_good_to_close", True):
+            return "close"
+        severe_bad = (
+            {"TOO_GENERIC", "PARTIAL_ANSWER"} <= issue_set
+            or {"TOO_GENERIC", "UNCLEAR"} <= issue_set
+            or bool(checks.get("unsupported_claims"))
+        )
+        if raw_label == "bad" and not severe_bad and config.get("recover_non_severe_bad", True):
+            return "close"
+        only_short = issue_set <= {"TOO_SHORT", "MISSING_DETAIL"}
+        grounded = bool(checks.get("source_ids"))
+        minimum = int(config.get("grounded_short_good_min_chars", 160))
+        if raw_label == "close" and only_short and grounded and len(answer) >= minimum:
+            return "good"
+        return raw_label
+
     @staticmethod
     def response_mode(question: str, metadata: dict[str, Any]) -> str:
+        planned_depth = metadata.get("answer_depth")
+        if planned_depth in ("simple", "normal", "complex"):
+            return {"simple": "short", "normal": "normal", "complex": "detailed"}[planned_depth]
         action = str(metadata.get("action", ""))
         cards = metadata.get("cards") or []
         if any(token in question for token in ("詳しく", "詳細", "徹底")):
@@ -340,7 +368,10 @@ class CampusAIJudge:
                                                final_scores["completeness"] + scores["helpfulness"]) / 4)
         overall = round(sum(final_scores.values()) / (len(AXES) * 5) * 100, 2)
         label = "good" if overall >= 90 else "close" if overall >= 70 else "bad"
+        calibrated = self.calibrated_label(question, answer, label, unique_issues, checks)
         return {"scores_0_to_5": final_scores, "overall_score": overall, "quality_label": label,
+                "calibrated_quality_label": calibrated,
+                "calibration_version": self.calibration.get("version", "none"),
                 "issues": unique_issues, "primary_issue": unique_issues[0] if unique_issues else None,
                 "critique": [CRITIQUE_TEXT[issue] for issue in unique_issues], "checks": checks,
                 "redundancy": {"rate": redundancy.rate, "duplicate_pairs": redundancy.duplicate_pairs},
