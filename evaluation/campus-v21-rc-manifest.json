@@ -1,0 +1,32 @@
+{
+  "release_candidate": "UniPilot Campus v2.1 RC1",
+  "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+  "frozen_at": "2026-08-24",
+  "answer_logic_mutation_policy": "prohibited during human evaluation",
+  "logic_sha256": {
+    "pipeline/campus_v21.py": "819ffeba2693b4c83fd8f716966115f1410774c784cfdd11e1be32981e60cc73",
+    "pipeline/campus_router_v21.py": "d241616fae8a862d53fa16c0b369f65a5ad885f8f262dcb2329dbbf40e211b8e",
+    "pipeline/campus_retrieval_v21.py": "4a69befff1b9f1cd5faeaae62b42e0443c03b4ce0b3c94fba9a643e97a801b8a",
+    "pipeline/campus_composer_v21.py": "cd2b3220112890894c9f5e81aa257cf27fa9a38a151c4347abb09b6ed6dd79e3",
+    "pipeline/campus_v2.py": "5ef159d3a59c5148af5da0f49e1a88ce38411da1242981cf0ff34023eb8f710d",
+    "data/campus_v21/router/adversarial-train-1500.jsonl": "cfb35e0d3f816703ee3590fbd446492bd057e0b8201037b80db4e7a37b252b4c",
+    "data/campus_v21/router/clarification-config.json": "a3992727ce4c21c6f72308e015ec053532c5f897d66d5218ff4f035c7af27e28",
+    "data/campus_v21/retrieval/retrieval-config.json": "a3816d22a2929ac187bf680e5c36b6891913d4a59566289004f5dc36dc5a1971",
+    "data/campus_v2/faq/reviewed.jsonl": "5d7373785497dc9701fdb0ef0ca251ca3e953c1ab2962701ee87f59196da1f82"
+  },
+  "checkpoint": {
+    "path": "checkpoints/v04-eos15/unipilot-mini-v04-inference.pt",
+    "size_bytes": 79313735,
+    "sha256": "72ccad96d4d1fe75d55cae94240308ef2cf6372132c73dac6f3ac5a010ae4a03",
+    "model": "v0.4",
+    "step": 2000
+  },
+  "tokenizer": {
+    "path": "tokenizer/vocab-v02-512.json",
+    "sha256": "7dc830f5f3a1fc89e508b4e411381a68c9c4337d3a39f817815dd401d3fe506f",
+    "vocab": 512
+  },
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "combined_logic_sha256": "80894af0ab2ce9b6844cf99f0a0f9e95a209e41e6ef881cf997060bda65caa92"
+}

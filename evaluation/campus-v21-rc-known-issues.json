@@ -1,0 +1,494 @@
+{
+  "release_candidate": "UniPilot Campus v2.1 RC1",
+  "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+  "answer_logic_mutation": "prohibited",
+  "review_status": "PENDING",
+  "counts": {
+    "hallucination": 13,
+    "router": 3,
+    "retrieval": 7,
+    "total": 23
+  },
+  "groups": {
+    "hallucination": [
+      {
+        "id": "campus-v2-blind-colloquial-0045",
+        "question": "納付期限の確認なんよ、今できること教えて 急ぎ",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。\n注意：制度利用や返金が必ず認められるとは限りません。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-colloquial-0325",
+        "question": "納付期限の確認なんよ、今できること教えて 急ぎ",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。\n注意：制度利用や返金が必ず認められるとは限りません。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0037",
+        "question": "延納手続きの確認について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0072",
+        "question": "納付期限の確認について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0142",
+        "question": "学費が払えないときについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0177",
+        "question": "学費の分納を相談について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0212",
+        "question": "学費の内訳について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0247",
+        "question": "授業料減免を調べるについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 不足情報を決めつけず、確認項目として分けてください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0317",
+        "question": "延納手続きの確認について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0352",
+        "question": "納付期限の確認について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. まず条件と期限を整理してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0422",
+        "question": "学費が払えないときについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0457",
+        "question": "学費の分納を相談について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-normal-0492",
+        "question": "学費の内訳について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+        "answer": "結論：金額と期限を確認し、支払いが難しい場合は期限前に相談します。\n今やること：1. 大学の最新納付案内と請求内訳を確認します。 2. 分納・延納・減免制度の申請条件を調べます。 3. 今日中に、連絡・確認・提出不能の回避を優先してください。\n注意：制度利用や返金が必ず認められるとは限りません。\n大学・授業ごとに条件が異なるため、最新の公式案内も確認してください。",
+        "gold_category": "tuition",
+        "predicted_category": "tuition",
+        "action": "FAQ",
+        "automatic_flag": "HALLUCINATION",
+        "expected_guardrail": "大学固有の期限・金額・手続を断定せず、公式窓口での確認を案内する",
+        "source_forbidden_claims": [
+          "どの大学でも",
+          "必ず認められる",
+          "全国一律"
+        ],
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      }
+    ],
+    "router": [
+      {
+        "id": "campus-v2-blind-compound-0058",
+        "question": "試験日までの英語学習を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+        "answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+        "gold_category": "toeic_plan",
+        "predicted_category": "study_plan",
+        "top1": "study_plan",
+        "top2": "toeic_plan",
+        "margin": 0.161539,
+        "action": "TOOL+MODEL",
+        "automatic_flag": "ROUTER_ERROR",
+        "known_pattern": "toeic_plan -> study_plan (compound English-study + lateness email)",
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-compound-0194",
+        "question": "試験日までの英語学習を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+        "answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+        "gold_category": "toeic_plan",
+        "predicted_category": "study_plan",
+        "top1": "study_plan",
+        "top2": "toeic_plan",
+        "margin": 0.161539,
+        "action": "TOOL+MODEL",
+        "automatic_flag": "ROUTER_ERROR",
+        "known_pattern": "toeic_plan -> study_plan (compound English-study + lateness email)",
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v2-blind-compound-0330",
+        "question": "試験日までの英語学習を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+        "answer": "具体的な勉強計画を作るため、科目、試験までの日数、1日に使える時間を教えてください。例：数学、5日、1日2時間。",
+        "gold_category": "toeic_plan",
+        "predicted_category": "study_plan",
+        "top1": "study_plan",
+        "top2": "toeic_plan",
+        "margin": 0.161539,
+        "action": "TOOL+MODEL",
+        "automatic_flag": "ROUTER_ERROR",
+        "known_pattern": "toeic_plan -> study_plan (compound English-study + lateness email)",
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      }
+    ],
+    "retrieval": [
+      {
+        "id": "campus-v21-retrieval-test-match-0227",
+        "question": "study_planの次の行動",
+        "automatic_flag": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-study-07-0",
+          "campus-faq-study-08-0",
+          "campus-faq-study-04-0",
+          "campus-faq-study-09-1",
+          "campus-faq-study-02-1"
+        ],
+        "relevant": [
+          "campus-faq-tool-05"
+        ],
+        "score": 0.3936662542417581,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0132",
+        "question": "deadline_organizer、確認すること",
+        "automatic_flag": "FALSE_NO_MATCH",
+        "returned": [],
+        "relevant": [
+          "campus-faq-tool-07"
+        ],
+        "score": null,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0125",
+        "question": "gpaの次の行動",
+        "automatic_flag": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-gpa-00-0",
+          "campus-faq-gpa-00-1",
+          "campus-faq-gpa-00-2",
+          "campus-faq-gpa-01-1",
+          "campus-faq-gpa-01-2"
+        ],
+        "relevant": [
+          "campus-faq-tool-00"
+        ],
+        "score": 0.4161742152763263,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0158",
+        "question": "absence_emailの次の行動",
+        "automatic_flag": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-professor_email-01-0",
+          "campus-faq-professor_email-00-0",
+          "campus-faq-professor_email-03-0",
+          "campus-faq-professor_email-03-1",
+          "campus-faq-professor_email-01-2"
+        ],
+        "relevant": [
+          "campus-faq-tool-02"
+        ],
+        "score": 0.21989982448745526,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0015",
+        "question": "grade_simulator、確認すること",
+        "automatic_flag": "FALSE_NO_MATCH",
+        "returned": [],
+        "relevant": [
+          "campus-faq-tool-01"
+        ],
+        "score": null,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0230",
+        "question": "report_outlineの次の行動",
+        "automatic_flag": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-thesis-06-0",
+          "campus-faq-thesis-06-1",
+          "campus-faq-thesis-01-0",
+          "campus-faq-thesis-06-2",
+          "campus-faq-thesis-02-0"
+        ],
+        "relevant": [
+          "campus-faq-tool-08"
+        ],
+        "score": 0.43586702646847597,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0124",
+        "question": "lateness_emailってどう進める",
+        "automatic_flag": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-professor_email-01-2",
+          "campus-faq-professor_email-03-1",
+          "campus-faq-professor_email-03-2",
+          "campus-faq-professor_email-01-0",
+          "campus-faq-professor_email-00-0"
+        ],
+        "relevant": [
+          "campus-faq-tool-03"
+        ],
+        "score": 0.20050329083311316,
+        "human_review": {
+          "status": "pending",
+          "severity": "unreviewed",
+          "blocks_production": false,
+          "notes": ""
+        }
+      }
+    ]
+  },
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

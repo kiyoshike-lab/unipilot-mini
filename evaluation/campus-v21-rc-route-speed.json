@@ -1,0 +1,1090 @@
+{
+  "release_candidate": "UniPilot Campus v2.1 RC1",
+  "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+  "evaluation_set": "balanced Campus v2.1 Human100 (25 easy / 25 medium / 25 hard / 25 compound-ambiguous)",
+  "questions": 100,
+  "canonical_route_mix": {
+    "TOOL": {
+      "count": 35,
+      "share": 0.35
+    },
+    "FAQ": {
+      "count": 43,
+      "share": 0.43
+    },
+    "RAG": {
+      "count": 9,
+      "share": 0.09
+    },
+    "MODEL": {
+      "count": 1,
+      "share": 0.01
+    },
+    "CLARIFY": {
+      "count": 12,
+      "share": 0.12
+    }
+  },
+  "raw_route_action_counts": {
+    "CLARIFY": 12,
+    "FAQ": 43,
+    "MODEL": 1,
+    "RAG": 3,
+    "RAG+MODEL": 6,
+    "TOOL": 23,
+    "TOOL+MODEL": 12
+  },
+  "planned_model_assisted_actions": {
+    "count": 19,
+    "share": 0.19
+  },
+  "actual_model_generation": {
+    "count": 0,
+    "share": 0.0,
+    "non_model_share": 1.0
+  },
+  "local_latency": {
+    "mean_ms": 5.5509149999852525,
+    "p50_ms": 5.408900000475114,
+    "p95_ms": 9.770299999217968,
+    "max_ms": 12.370500000542961,
+    "under_one_second_count": 100,
+    "under_one_second_share": 1.0
+  },
+  "category_counts": {
+    "absence_email": 4,
+    "ai_usage": 3,
+    "assignment": 3,
+    "assignment_priority": 4,
+    "attendance": 3,
+    "campus_life": 1,
+    "career_schedule": 4,
+    "citation_check": 4,
+    "credit": 3,
+    "deadline_organizer": 4,
+    "exam": 3,
+    "general": 13,
+    "gpa": 4,
+    "grade_simulator": 4,
+    "internship": 3,
+    "lateness": 2,
+    "lateness_email": 4,
+    "part_time_job": 2,
+    "presentation_outline": 4,
+    "professor_email": 3,
+    "programming": 1,
+    "registration": 3,
+    "relationship": 1,
+    "report_outline": 4,
+    "scholarship": 3,
+    "statistics": 1,
+    "study_plan": 4,
+    "toeic_plan": 3,
+    "university_policy": 5
+  },
+  "records": [
+    {
+      "id": "campus-v21-rc-human-000",
+      "question": "成績平均を上げたいなんよ、今できること教えて ざっくり",
+      "category": "gpa",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.590899999035173,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-001",
+      "question": "現在40点で残り30パーセントなんよ、今できること教えて 急ぎ",
+      "category": "grade_simulator",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.488199999788776,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-002",
+      "question": "授業内容の質問メールなんよ、今できること教えて 今日中",
+      "category": "professor_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 1.9950000005337643,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-003",
+      "question": "体調不良で休む連絡なんよ、今できること教えて ざっくり",
+      "category": "absence_email",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.285600000206614,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-004",
+      "question": "到着見込みを伝える文面なんよ、今できること教えて 急ぎ",
+      "category": "lateness_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.1077000001241686,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-005",
+      "question": "一か月の学習計画なんよ、今できること教えて ざっくり",
+      "category": "study_plan",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 1.9504000010783784,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-006",
+      "question": "どの課題から始めるかなんよ、今できること教えて 急ぎ",
+      "category": "assignment_priority",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.282399999487097,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-007",
+      "question": "提出日を管理したいなんよ、今できること教えて 短め",
+      "category": "deadline_organizer",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.398200000854558,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-008",
+      "question": "卒業要件の公式確認なんよ、今できること教えて 今日中",
+      "category": "university_policy",
+      "route_action": "RAG",
+      "canonical_route": "RAG",
+      "executed_action": "SAFETY",
+      "latency_ms": 1.9745999998121988,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-009",
+      "question": "過去問の使い方なんよ、今できること教えて 短め",
+      "category": "exam",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.258400000457186,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-010",
+      "question": "課題の要件を整理したいなんよ、今できること教えて 初めて",
+      "category": "assignment",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.337200000212761,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-011",
+      "question": "単位を落としそうなんよ、今できること教えて 今日中",
+      "category": "credit",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.318499999702908,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-012",
+      "question": "欠席回数の確認なんよ、今できること教えて 短め",
+      "category": "attendance",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.118900000525173,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-013",
+      "question": "寝坊したときの対応なんよ、今できること教えて 初めて",
+      "category": "lateness",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.2841000015178,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-014",
+      "question": "登録エラーが出るなんよ、今できること教えて 初めて",
+      "category": "registration",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.406700000094133,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-015",
+      "question": "序論本論結論の配分なんよ、今できること教えて 初めて",
+      "category": "report_outline",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.008400000704569,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-016",
+      "question": "孫引きを避けたいなんよ、今できること教えて 今日中",
+      "category": "citation_check",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.2830999993602745,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-017",
+      "question": "スライド構成を考えるなんよ、今できること教えて ざっくり",
+      "category": "presentation_outline",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 1.9865000012941891,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-018",
+      "question": "単語と読解の時間配分なんよ、今できること教えて 初めて",
+      "category": "toeic_plan",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.166600001146435,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-019",
+      "question": "学業優先で就活計画なんよ、今できること教えて 急ぎ",
+      "category": "career_schedule",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 1.9007999999303138,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-020",
+      "question": "インターン面接準備なんよ、今できること教えて 今日中",
+      "category": "internship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.172600000150851,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-021",
+      "question": "奨学金の締切なんよ、今できること教えて ざっくり",
+      "category": "scholarship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.355999999665073,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-022",
+      "question": "バイト先への相談なんよ、今できること教えて 短め",
+      "category": "part_time_job",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.469199999424745,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-023",
+      "question": "レポートでのAI活用なんよ、今できること教えて 急ぎ",
+      "category": "ai_usage",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "SAFE",
+      "latency_ms": 5.090700000437209,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-024",
+      "question": "研究室の選び方なんよ、今できること教えて 初めて",
+      "category": "campus_life",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.147599998963415,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-025",
+      "question": "目標GPAに必要な成績について、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+      "category": "gpa",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.264300001115771,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-026",
+      "question": "期末試験の必要点について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "grade_simulator",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.178299999286537,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-027",
+      "question": "教授へ面談依頼メールについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "professor_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.1123000005900394,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-028",
+      "question": "欠席メールを作りたいについて、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+      "category": "absence_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.0743000004586065,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-029",
+      "question": "授業に遅刻するメールについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "lateness_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.0714000002044486,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-030",
+      "question": "一日2時間の学習計画について、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+      "category": "study_plan",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.0992999998270534,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-031",
+      "question": "締切と所要時間で並べたいについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "assignment_priority",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.430800001704483,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-032",
+      "question": "提出期限を整理するについて、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+      "category": "deadline_organizer",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.3329000014200574,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-033",
+      "question": "欠席何回で不可かについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "university_policy",
+      "route_action": "RAG",
+      "canonical_route": "RAG",
+      "executed_action": "SAFETY",
+      "latency_ms": 2.2248999994189944,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-034",
+      "question": "テスト直前の優先事項について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+      "category": "exam",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 2.151999999114196,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-035",
+      "question": "提出サイトが動かないについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+      "category": "assignment",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.580499999268795,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-036",
+      "question": "必修を落とした影響について、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "credit",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.519899999853806,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-037",
+      "question": "欠席回数の確認について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+      "category": "attendance",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.63259999944421,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-038",
+      "question": "履修上限を確認について、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+      "category": "registration",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.672600000252714,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-039",
+      "question": "考察の位置を決めたいについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+      "category": "report_outline",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.510099999810336,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-040",
+      "question": "コピペにならないか確認について、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "citation_check",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.600599999525002,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-041",
+      "question": "プレゼンを短くまとめるについて、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+      "category": "presentation_outline",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.669599999237107,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-042",
+      "question": "毎日一時間のTOEICについて、確認事項と今日行う手順を具体的に教えてください。状況：初回相談",
+      "category": "toeic_plan",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.642699999953038,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-043",
+      "question": "一か月の就活予定について、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "career_schedule",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.508399999598623,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-044",
+      "question": "募集要項を読みたいについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "internship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.549699999392033,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-045",
+      "question": "家計が変わったときについて、確認事項と今日行う手順を具体的に教えてください。状況：確認中",
+      "category": "scholarship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 5.518300000403542,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-046",
+      "question": "バイトと授業の両立について、確認事項と今日行う手順を具体的に教えてください。状況：情報不足",
+      "category": "part_time_job",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 12.370500000542961,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-047",
+      "question": "AIに個人情報を入れないについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "ai_usage",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "RAG",
+      "latency_ms": 5.804799999168608,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-048",
+      "question": "同級生に相談したいについて、確認事項と今日行う手順を具体的に教えてください。状況：準備前",
+      "category": "relationship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 5.555700001423247,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-049",
+      "question": "優先事項を一緒に決めたいについて、確認事項と今日行う手順を具体的に教えてください。状況：期限あり",
+      "category": "general",
+      "route_action": "MODEL",
+      "canonical_route": "MODEL",
+      "executed_action": "SAFE",
+      "latency_ms": 5.408900000475114,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-050",
+      "question": "初めてのインターン応募じゃなくて、成績平均を上げたい これってどうするの方を教えて。前者は不要",
+      "category": "gpa",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 9.821999999985565,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-051",
+      "question": "締切を一覧にしたいじゃなくて、再しけんで必要な点の方を教えて。前者は不要",
+      "category": "grade_simulator",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.980100000670063,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-052",
+      "question": "コードをデバッグしたいじゃなくて、先生にアポを取りたい これってどうするの方を教えて。前者は不要",
+      "category": "professor_email",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.646599999337923,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-053",
+      "question": "毎日一時間のTOEICじゃなくて、当日のけっせき連絡の方を教えて。前者は不要",
+      "category": "absence_email",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.417900000495138,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-054",
+      "question": "課題が多くて選べないじゃなくて、遅刻メルを作りたいの方を教えて。前者は不要",
+      "category": "lateness_email",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.104599998958292,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-055",
+      "question": "具体的な行動を整理じゃなくて、テスト勉強を始めたい これってどうするの方を教えて。前者は不要",
+      "category": "study_plan",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.288300000756863,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-056",
+      "question": "三日で試験対策じゃなくて、締切と所要時間で並べたい これってどうするの方を教えて。前者は不要",
+      "category": "assignment_priority",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.848399998896639,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-057",
+      "question": "教室移動で遅れそうじゃなくて、複数の締切をまとめる これってどうするの方を教えて。前者は不要",
+      "category": "deadline_organizer",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.712899998499779,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-058",
+      "question": "継続手続きの確認じゃなくて、公欠になる条件 これってどうするの方を教えて。前者は不要",
+      "category": "university_policy",
+      "route_action": "RAG",
+      "canonical_route": "RAG",
+      "executed_action": "SAFETY",
+      "latency_ms": 5.271999998512911,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-059",
+      "question": "ゼミへの遅刻メールじゃなくて、追試の確認先 これってどうするの方を教えて。前者は不要",
+      "category": "exam",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.183799999940675,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-060",
+      "question": "あと何単位か計算したいじゃなくて、かだいの要件を整理したいの方を教えて。前者は不要",
+      "category": "assignment",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.44899999901827,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-061",
+      "question": "生成AIの授業利用じゃなくて、単位認定の確認 これってどうするの方を教えて。前者は不要",
+      "category": "credit",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.651199999803794,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-062",
+      "question": "体調不良で休む連絡じゃなくて、体調不良で出席できない これってどうするの方を教えて。前者は不要",
+      "category": "attendance",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.840399999826332,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-063",
+      "question": "課題の指示が分からないじゃなくて、教室移動で遅れそう これってどうするの方を教えて。前者は不要",
+      "category": "lateness",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.813800001007621,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-064",
+      "question": "追試の確認先じゃなくて、りしゅう登録の組み方の方を教えて。前者は不要",
+      "category": "registration",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.65709999925457,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-065",
+      "question": "どの窓口か確認じゃなくて、論点から構成を作る これってどうするの方を教えて。前者は不要",
+      "category": "report_outline",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.2770000002055895,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-066",
+      "question": "学生生活を整えたいじゃなくて、コピペにならないか確認 これってどうするの方を教えて。前者は不要",
+      "category": "citation_check",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.872500000506989,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-067",
+      "question": "学業優先で就活計画じゃなくて、導入と結論の作り方 これってどうするの方を教えて。前者は不要",
+      "category": "presentation_outline",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 5.685000000084983,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-068",
+      "question": "欠席何回で不可かじゃなくて、単語と読解の時間配分 これってどうするの方を教えて。前者は不要",
+      "category": "university_policy",
+      "route_action": "TOOL",
+      "canonical_route": "TOOL",
+      "executed_action": "SAFETY",
+      "latency_ms": 5.314599999110214,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-069",
+      "question": "週の時間割を見直すじゃなくて、面接日程をまとめる これってどうするの方を教えて。前者は不要",
+      "category": "career_schedule",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.664999999382417,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-070",
+      "question": "バイトと授業の両立じゃなくて、募集要項を読みたい これってどうするの方を教えて。前者は不要",
+      "category": "internship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "SAFE",
+      "latency_ms": 8.56019999991986,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-071",
+      "question": "10分プレゼンの時間配分じゃなくて、継続手続きの確認 これってどうするの方を教えて。前者は不要",
+      "category": "scholarship",
+      "route_action": "FAQ",
+      "canonical_route": "FAQ",
+      "executed_action": "RAG",
+      "latency_ms": 8.544399999664165,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-072",
+      "question": "レポートが間に合わない連絡じゃなくて、生成AIの授業利用 これってどうするの方を教えて。前者は不要",
+      "category": "ai_usage",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "RAG",
+      "latency_ms": 8.84810000025027,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-073",
+      "question": "コピペにならないか確認じゃなくて、コードをデバッグしたい これってどうするの方を教えて。前者は不要",
+      "category": "programming",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "RAG",
+      "latency_ms": 8.501199999955134,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-074",
+      "question": "極限の勉強法じゃなくて、確率分布の違い これってどうするの方を教えて。前者は不要",
+      "category": "statistics",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "SAFE",
+      "latency_ms": 8.49480000033509,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-075",
+      "question": "目標GPAに必要な成績を先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+      "category": "gpa",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 8.51160000092932,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-076",
+      "question": "現在40点で残り30パーセントを先に進めたい。それと、大学生活に慣れないも対応したい",
+      "category": "grade_simulator",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 8.72939999862865,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-077",
+      "question": "先生へ休むと伝えたいを先に進めたい。それと、学生生活を整えたいも対応したい",
+      "category": "absence_email",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 8.412299999690731,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-078",
+      "question": "先生に遅れると伝えたいを先に進めたい。それと、提出サイト不具合の連絡も対応したい",
+      "category": "lateness_email",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 8.883599999535363,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-079",
+      "question": "三日で試験対策を先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+      "category": "study_plan",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.022999998705927,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-080",
+      "question": "課題が多くて選べないを先に進めたい。それと、学生生活を整えたいも対応したい",
+      "category": "assignment_priority",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.446000000025379,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-081",
+      "question": "複数の締切をまとめるを先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+      "category": "deadline_organizer",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.805700001379591,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-082",
+      "question": "公欠になる条件を先に進めたい。それと、学生生活を整えたいも対応したい",
+      "category": "university_policy",
+      "route_action": "RAG+MODEL",
+      "canonical_route": "RAG",
+      "executed_action": "SAFETY",
+      "latency_ms": 5.5815000014263205,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-083",
+      "question": "毎日一時間のTOEICを先に進めたい。それと、寝坊した遅刻連絡も対応したい",
+      "category": "toeic_plan",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.19160000012198,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-084",
+      "question": "面接日程をまとめるを先に進めたい。それと、先生に遅れると伝えたいも対応したい",
+      "category": "career_schedule",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 10.099999999511056,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-085",
+      "question": "2000字レポートの構成を先に進めたい。それと、大学生活に慣れないも対応したい",
+      "category": "report_outline",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.875499999907333,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-086",
+      "question": "引用の書き方を先に進めたい。それと、ゼミへの遅刻メールも対応したい",
+      "category": "citation_check",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.770299999217968,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-087",
+      "question": "研究発表のアウトラインを先に進めたい。それと、学内施設の探し方も対応したい",
+      "category": "presentation_outline",
+      "route_action": "TOOL+MODEL",
+      "canonical_route": "TOOL",
+      "executed_action": "TOOL",
+      "latency_ms": 9.6681000013632,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-088",
+      "question": "今週、これやばい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.478599999449216,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-089",
+      "question": "今週、ちょっと詰んだ。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.9716999995580409,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-090",
+      "question": "今週、大学のことで困った。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.4507000016456004,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-091",
+      "question": "今週、どうしたらいい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.9517000000632834,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-092",
+      "question": "今週、間に合うかな。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.151400000002468,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-093",
+      "question": "今週、相談したい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.9316999987495365,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-094",
+      "question": "今週、何からすればいい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.093500001137727,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-095",
+      "question": "今週、もう無理かも。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.8784999992931262,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-096",
+      "question": "今週、これ大丈夫かな。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.0736999995278893,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-097",
+      "question": "今週、助けてほしい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.9485999982862268,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-098",
+      "question": "今日、これやばい。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 2.0096999996894738,
+      "under_one_second": true
+    },
+    {
+      "id": "campus-v21-rc-human-099",
+      "question": "今日、ちょっと詰んだ。まず確認してほしい 1",
+      "category": "general",
+      "route_action": "CLARIFY",
+      "canonical_route": "CLARIFY",
+      "executed_action": "CLARIFY",
+      "latency_ms": 1.8385000003036112,
+      "under_one_second": true
+    }
+  ],
+  "measurement_scope": "local deterministic Campus routing/FAQ/tool path; not Render network latency",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

@@ -56,3 +56,58 @@ class CampusV2HumanScoreRequest(BaseModel):
     chatgpt_answer: str = Field(default="", max_length=10000)
     gemini_answer: str = Field(default="", max_length=10000)
     notes: str = Field(default="", max_length=2000)
+
+
+class CampusV21IssueFlags(BaseModel):
+    critical_error: bool = False
+    factual_error: bool = False
+    unanswered: bool = False
+    university_policy_assertion: bool = False
+    unnecessary_information: bool = False
+    unusable_answer: bool = False
+    router_error: bool = False
+    tool_error: bool = False
+    faq_error: bool = False
+    retrieval_error: bool = False
+    model_error: bool = False
+
+
+class CampusV21PairwiseAxes(BaseModel):
+    correctness: Literal["unipilot", "competitor", "tie", "unscored"] = "unscored"
+    specificity: Literal["unipilot", "competitor", "tie", "unscored"] = "unscored"
+    actionability: Literal["unipilot", "competitor", "tie", "unscored"] = "unscored"
+    readability: Literal["unipilot", "competitor", "tie", "unscored"] = "unscored"
+    would_use: Literal["unipilot", "competitor", "tie", "unscored"] = "unscored"
+
+
+class CampusV21Pairwise(BaseModel):
+    chatgpt: CampusV21PairwiseAxes = Field(default_factory=CampusV21PairwiseAxes)
+    gemini: CampusV21PairwiseAxes = Field(default_factory=CampusV21PairwiseAxes)
+
+
+UXResult = Literal["pass", "fail", "not_applicable", "not_evaluated"]
+
+
+class CampusV21UXEvaluation(BaseModel):
+    tool_card: UXResult = "not_evaluated"
+    copy_action: UXResult = "not_evaluated"
+    input_flow: UXResult = "not_evaluated"
+    clarification: UXResult = "not_evaluated"
+    streaming: UXResult = "not_evaluated"
+    latency: UXResult = "not_evaluated"
+
+
+class CampusV21HumanScoreRequest(CampusV2HumanScoreRequest):
+    issue_flags: CampusV21IssueFlags = Field(default_factory=CampusV21IssueFlags)
+    issues_reviewed: bool = True
+    pairwise: CampusV21Pairwise = Field(default_factory=CampusV21Pairwise)
+    ux: CampusV21UXEvaluation = Field(default_factory=CampusV21UXEvaluation)
+
+
+class CampusV21KnownIssueReviewRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=150)
+    group: Literal["hallucination", "router", "retrieval"]
+    status: Literal["pending", "confirmed", "not_reproduced", "accepted_risk"]
+    severity: Literal["unreviewed", "low", "medium", "high", "critical"] = "unreviewed"
+    blocks_production: bool = False
+    notes: str = Field(default="", max_length=2000)

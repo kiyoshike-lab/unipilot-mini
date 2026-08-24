@@ -108,3 +108,6 @@ def test_campus_v21_human_endpoint_persists_five_axes(tmp_path, monkeypatch):
     saved = json.loads(path.read_text(encoding="utf-8"))[0]
     assert saved["scores"] == {"correctness": 5, "relevance": 5, "actionable": 4,
                                "naturalness": 5, "would_use_again": 4}
+    assert saved["issues_reviewed"] is True
+    assert saved["evaluation_status"] == "SCORED_MANUALLY"
+    assert set(saved["pairwise"]) == {"chatgpt", "gemini"}

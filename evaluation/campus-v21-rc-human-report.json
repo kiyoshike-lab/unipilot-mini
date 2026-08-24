@@ -1,0 +1,219 @@
+{
+  "release_candidate": "UniPilot Campus v2.1 RC1",
+  "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019",
+  "automatic_gate": "PASS",
+  "human_evaluation": {
+    "status": "PENDING",
+    "completed": 0,
+    "total": 100,
+    "averages_0_to_5": {
+      "correctness": null,
+      "relevance": null,
+      "actionable": null,
+      "naturalness": null,
+      "would_use_again": null
+    }
+  },
+  "chatgpt_comparison": {
+    "completed": 0,
+    "total": 100,
+    "win": 0,
+    "tie": 0,
+    "loss": 0
+  },
+  "gemini_comparison": {
+    "completed": 0,
+    "total": 100,
+    "win": 0,
+    "tie": 0,
+    "loss": 0
+  },
+  "specialist_comparison": {
+    "questions": 35,
+    "completed_comparisons": 0,
+    "total_comparisons": 70,
+    "win": 0,
+    "tie": 0,
+    "loss": 0,
+    "win_plus_tie_rate": null
+  },
+  "automatic_vs_human": {
+    "automatic_correctness_percent": 99.2,
+    "human_correctness_percent": null,
+    "human_minus_automatic_percentage_points": null,
+    "pearson_point_biserial": null,
+    "correlation_n": 0,
+    "interpretation": "PENDING"
+  },
+  "human_issue_counts": {
+    "reviewed_questions": 0,
+    "total_questions": 100,
+    "critical_error": null,
+    "factual_error": null,
+    "unanswered": null,
+    "university_policy_assertion": null,
+    "unnecessary_information": null,
+    "unusable_answer": null,
+    "router_error": null,
+    "tool_error": null,
+    "faq_error": null,
+    "retrieval_error": null,
+    "model_error": null,
+    "critical_error_rate": null,
+    "university_policy_assertion_rate": null
+  },
+  "known_issue_review": {
+    "status": "PENDING",
+    "reviewed": 0,
+    "total": 23,
+    "automatic_candidates": {
+      "hallucination": 13,
+      "router": 3,
+      "retrieval": 7,
+      "total": 23
+    }
+  },
+  "question_audit": {
+    "questions": 100,
+    "bucket_distribution": {
+      "easy": 25,
+      "medium": 25,
+      "hard": 25,
+      "compound_ambiguous": 25
+    },
+    "surface_distribution": {
+      "colloquial": 25,
+      "normal": 25,
+      "hard_negation_typo": 25,
+      "compound": 13,
+      "ambiguous": 12
+    },
+    "category_distribution": {
+      "gpa": 4,
+      "grade_simulator": 4,
+      "professor_email": 3,
+      "absence_email": 4,
+      "lateness_email": 4,
+      "study_plan": 4,
+      "assignment_priority": 4,
+      "deadline_organizer": 4,
+      "university_policy": 4,
+      "exam": 3,
+      "assignment": 3,
+      "credit": 3,
+      "attendance": 3,
+      "lateness": 2,
+      "registration": 3,
+      "report_outline": 4,
+      "citation_check": 4,
+      "presentation_outline": 4,
+      "toeic_plan": 4,
+      "career_schedule": 4,
+      "internship": 3,
+      "scholarship": 3,
+      "part_time_job": 2,
+      "ai_usage": 3,
+      "campus_life": 1,
+      "relationship": 1,
+      "general": 13,
+      "programming": 1,
+      "statistics": 1
+    },
+    "specialist_questions": 35,
+    "challenge_tag_distribution": {
+      "colloquial": 25,
+      "long_form_writing": 11,
+      "general_knowledge_or_reasoning": 5,
+      "free_campus_consultation": 15,
+      "multi_condition": 13,
+      "compound": 13,
+      "ambiguous": 12
+    },
+    "unique_semantic_questions": 100,
+    "required_topics_present": {
+      "exam": true,
+      "assignment": true,
+      "credit": true,
+      "gpa": true,
+      "attendance": true,
+      "lateness": true,
+      "registration": true,
+      "professor_email": true,
+      "report_outline": true,
+      "citation_check": true,
+      "presentation_outline": true,
+      "study_plan": true,
+      "toeic_plan": true,
+      "career_schedule": true,
+      "internship": true,
+      "scholarship": true,
+      "part_time_job": true,
+      "ai_usage": true,
+      "campus_life": true
+    },
+    "compound_present": true,
+    "ambiguous_present": true,
+    "colloquial_present": true,
+    "easy_only": false,
+    "rc_source_commit": "0dc18789be28613a8c651cfefde63fb659ee2019"
+  },
+  "end_to_end": {
+    "passed": 25,
+    "scenarios": 25,
+    "success_rate": 1.0
+  },
+  "route_mix": {
+    "TOOL": {
+      "count": 35,
+      "share": 0.35
+    },
+    "FAQ": {
+      "count": 43,
+      "share": 0.43
+    },
+    "RAG": {
+      "count": 9,
+      "share": 0.09
+    },
+    "MODEL": {
+      "count": 1,
+      "share": 0.01
+    },
+    "CLARIFY": {
+      "count": 12,
+      "share": 0.12
+    }
+  },
+  "non_model_generation_share": 1.0,
+  "planned_model_assisted_action_share": 0.19,
+  "under_one_second_share": 1.0,
+  "latency_scope": "local deterministic Campus routing/FAQ/tool path; not Render network latency",
+  "human_production_gate": {
+    "status": "PENDING",
+    "checks": {
+      "human_100_complete": false,
+      "chatgpt_gemini_pairwise_complete": false,
+      "correctness_gte_4_2": null,
+      "relevance_gte_4_2": null,
+      "actionable_gte_4_2": null,
+      "naturalness_gte_4_2": null,
+      "would_use_again_gte_4_0": null,
+      "critical_error_rate_lte_0_01": null,
+      "university_policy_assertion_rate_lte_0_01": null,
+      "specialist_win_plus_tie_gte_0_80": null
+    }
+  },
+  "production_promotion_recommended": "NO",
+  "beta_start_recommended": "NO",
+  "campus_v22_needed": "PENDING_HUMAN_REVIEW; router/retrieval candidates recorded",
+  "standard_50m_needed": "NO; remains stopped",
+  "model_route_human_correctness": {
+    "questions": 0,
+    "mean_0_to_5": null,
+    "non_model_mean_0_to_5": null
+  },
+  "decision": "STOP; keep production v0.4 while Human Gate is pending or failed",
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "push_or_deploy_performed": false
+}

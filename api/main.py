@@ -9,8 +9,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
-from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, ChatRequest, GenerateRequest,
-                         HumanScoreRequest, ModelLoadRequest)
+from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, CampusV21HumanScoreRequest,
+                         CampusV21KnownIssueReviewRequest, ChatRequest, GenerateRequest, HumanScoreRequest,
+                         ModelLoadRequest)
 
 
 app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
@@ -280,6 +281,9 @@ def human_eval_v04_score(request: HumanScoreRequest):
 HUMAN_CAMPUS = Path("evaluation/human-comparison-campus-v1.json")
 HUMAN_CAMPUS_V2 = Path("evaluation/human-comparison-campus-v2.json")
 HUMAN_CAMPUS_V21 = Path("evaluation/human-comparison-campus-v21.json")
+HUMAN_CAMPUS_V21_MANIFEST = Path("evaluation/campus-v21-rc-manifest.json")
+HUMAN_CAMPUS_V21_AUDIT = Path("evaluation/campus-v21-human-audit.json")
+HUMAN_CAMPUS_V21_KNOWN_ISSUES = Path("evaluation/campus-v21-rc-known-issues.json")
 
 
 @app.get("/human-eval/campus")
@@ -359,12 +363,16 @@ def human_eval_campus_v21():
         raise HTTPException(404, "Campus v2.1 human comparison file not found")
     rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8"))
     completed = sum(row.get("scores", {}).get("correctness") is not None for row in rows)
-    return {"status": "COMPLETE" if completed == len(rows) else "PENDING", "completed": completed,
-            "total": len(rows), "items": rows, "external_ai_api": "OFF"}
+    issues_reviewed = sum(bool(row.get("issues_reviewed")) for row in rows)
+    manifest = json.loads(HUMAN_CAMPUS_V21_MANIFEST.read_text(encoding="utf-8")) if HUMAN_CAMPUS_V21_MANIFEST.exists() else None
+    audit = json.loads(HUMAN_CAMPUS_V21_AUDIT.read_text(encoding="utf-8")) if HUMAN_CAMPUS_V21_AUDIT.exists() else None
+    return {"status": "COMPLETE" if completed == len(rows) and issues_reviewed == len(rows) else "PENDING",
+            "completed": completed, "issues_reviewed": issues_reviewed, "total": len(rows), "items": rows,
+            "manifest": manifest, "audit": audit, "external_ai_api": "OFF"}
 
 
 @app.post("/human-eval/campus-v21")
-def human_eval_campus_v21_score(request: CampusV2HumanScoreRequest):
+def human_eval_campus_v21_score(request: CampusV21HumanScoreRequest):
     if not HUMAN_CAMPUS_V21.exists():
         raise HTTPException(404, "Campus v2.1 human comparison file not found")
     rows = json.loads(HUMAN_CAMPUS_V21.read_text(encoding="utf-8")); found = False
@@ -376,8 +384,12 @@ def human_eval_campus_v21_score(request: CampusV2HumanScoreRequest):
             row["competitor_scores"] = {"chatgpt": request.chatgpt_score, "gemini": request.gemini_score}
             row["chatgpt_answer"] = request.chatgpt_answer
             row["gemini_answer"] = request.gemini_answer
+            row["issue_flags"] = request.issue_flags.model_dump()
+            row["issues_reviewed"] = request.issues_reviewed
+            row["pairwise"] = request.pairwise.model_dump()
+            row["ux"] = request.ux.model_dump()
             row["notes"] = request.notes
-            row["evaluation_status"] = "SCORED_MANUALLY"
+            row["evaluation_status"] = "SCORED_MANUALLY" if request.issues_reviewed else "PENDING_ISSUE_REVIEW"
             found = True
             break
     if not found:
@@ -387,6 +399,36 @@ def human_eval_campus_v21_score(request: CampusV2HumanScoreRequest):
     temporary.replace(HUMAN_CAMPUS_V21)
     saved = next(row for row in rows if row["id"] == request.item_id)
     return {"saved": True, "item_id": request.item_id, "scores": saved["scores"]}
+
+
+@app.get("/human-eval/campus-v21/known-issues")
+def human_eval_campus_v21_known_issues():
+    if not HUMAN_CAMPUS_V21_KNOWN_ISSUES.exists():
+        raise HTTPException(404, "Campus v2.1 known-issue review file not found")
+    payload = json.loads(HUMAN_CAMPUS_V21_KNOWN_ISSUES.read_text(encoding="utf-8"))
+    items = [item for group in payload["groups"].values() for item in group]
+    reviewed = sum(item.get("human_review", {}).get("status") != "pending" for item in items)
+    return {**payload, "status": "COMPLETE" if reviewed == len(items) else "PENDING",
+            "reviewed": reviewed, "total": len(items)}
+
+
+@app.post("/human-eval/campus-v21/known-issues")
+def human_eval_campus_v21_known_issue_score(request: CampusV21KnownIssueReviewRequest):
+    if not HUMAN_CAMPUS_V21_KNOWN_ISSUES.exists():
+        raise HTTPException(404, "Campus v2.1 known-issue review file not found")
+    payload = json.loads(HUMAN_CAMPUS_V21_KNOWN_ISSUES.read_text(encoding="utf-8")); found = False
+    for item in payload["groups"].get(request.group, []):
+        if item["id"] == request.item_id:
+            item["human_review"] = {"status": request.status, "severity": request.severity,
+                                    "blocks_production": request.blocks_production, "notes": request.notes}
+            found = True
+            break
+    if not found:
+        raise HTTPException(404, "Campus v2.1 known issue not found")
+    temporary = HUMAN_CAMPUS_V21_KNOWN_ISSUES.with_suffix(".tmp")
+    temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary.replace(HUMAN_CAMPUS_V21_KNOWN_ISSUES)
+    return {"saved": True, "item_id": request.item_id}
 
 
 @app.get("/campus/session/{session_id}")
