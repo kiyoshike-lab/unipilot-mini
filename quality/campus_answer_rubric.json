@@ -1,0 +1,35 @@
+{
+  "name": "UniPilot Campus ChatGPT-style Answer Rubric",
+  "version": "1.0",
+  "external_llm_api": "OFF",
+  "principle": "The rubric defines useful answer components without forcing one fixed template.",
+  "axes": {
+    "correctness": "Claims are accurate, scoped, and do not invent university-specific rules.",
+    "relevance": "The answer addresses the requested intent directly and respects negation or priority.",
+    "actionable": "The student can identify a concrete next action.",
+    "naturalness": "Japanese is clear, natural, and free from mechanical repetition.",
+    "completeness": "The answer includes the information needed for the question and covers each requested intent.",
+    "specificity": "Advice contains question-relevant checks, steps, examples, or fields instead of generic filler.",
+    "grounding": "Numbers and institutional claims are supported by a source or explicitly deferred to an official source.",
+    "conciseness": "The answer contains enough information without repeating the same meaning.",
+    "helpfulness": "The combined answer reduces uncertainty and helps the student move forward."
+  },
+  "preferred_components": [
+    "結論または直接回答",
+    "必要な理由・背景",
+    "今すぐ取れる具体的行動",
+    "必要な場合だけ注意点",
+    "制度依存時の公式確認先"
+  ],
+  "length_guidance": {
+    "short": {"min_chars": 150, "max_chars": 250},
+    "normal": {"min_chars": 350, "max_chars": 700},
+    "detailed": {"min_chars": 700, "max_chars": 1200},
+    "simple_definition": {"min_chars": 200, "max_chars": 400}
+  },
+  "quality_labels": {
+    "good": "90-100",
+    "close": "70-89",
+    "bad": "0-69"
+  }
+}

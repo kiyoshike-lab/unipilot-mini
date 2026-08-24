@@ -16,6 +16,7 @@ class ChatRequest(GenerateRequest):
     response_mode: Literal["auto", "short", "normal", "detailed"] = "auto"
     session_id: str | None = Field(default=None, min_length=1, max_length=100)
     tool_inputs: dict[str, Any] | None = None
+    quality_mode: Literal["off", "improve"] = "off"
 
 
 class ModelLoadRequest(BaseModel):
@@ -112,6 +113,13 @@ class CampusV21QuickScoreRequest(BaseModel):
     item_id: str = Field(min_length=1, max_length=100)
     rating: Literal["good", "close", "bad"]
     reason: Literal["incorrect", "unanswered", "too_short", "unclear", "router", "other"] | None = None
+
+
+class CampusAIReviewRequest(BaseModel):
+    item_id: str = Field(min_length=1, max_length=150)
+    decision: Literal["adopt", "revise", "reject"]
+    edited_answer: str = Field(default="", max_length=12000)
+    notes: str = Field(default="", max_length=2000)
 
 
 class CampusV22HumanScoreRequest(BaseModel):

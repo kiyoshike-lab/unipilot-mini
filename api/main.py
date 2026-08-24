@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
 from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, CampusV21HumanScoreRequest,
-                         CampusV21QuickScoreRequest,
+                         CampusV21QuickScoreRequest, CampusAIReviewRequest,
                          CampusV22HumanScoreRequest,
                          CampusV21KnownIssueReviewRequest, ChatRequest, GenerateRequest, HumanScoreRequest,
                          ModelLoadRequest)
@@ -132,6 +132,13 @@ def run_generation(request: GenerateRequest, chat: bool):
             result = runtime["pipeline"].answer(request.prompt, request.max_new_tokens, request.temperature, request.top_k,
                                                 request.top_p, request.repetition_penalty,
                                                 candidates=max(1, int(os.getenv("UNIPILOT_V07_CANDIDATES", "1"))))
+        if runtime["pipeline"].version == "campus-v2.1" and getattr(request, "quality_mode", "off") == "improve":
+            from quality.campus_answer_improver import CampusAnswerImprover
+            quality = CampusAnswerImprover().improve(request.prompt, result["text"], result)
+            result = {**result, "text": quality["improved_answer"], "original_text": quality["original"],
+                      "quality_mode": "improve", "ai_judge": quality["after_judge"],
+                      "self_critique": quality["critique"], "rewrite_count": quality["rewrite_count"],
+                      "automatic_training": False}
         model_label = ({"campus-v1": "UniPilot Campus v1", "campus-v2": "UniPilot Campus v2",
                         "campus-v2.1": "UniPilot Campus v2.1", "campus-v2.2": "UniPilot Campus v2.2"}[runtime["pipeline"].version]
                        if runtime["pipeline"].version in ("campus-v1", "campus-v2", "campus-v2.1", "campus-v2.2") else
@@ -299,6 +306,9 @@ HUMAN_CAMPUS_V21_QUICK_SELECTION = Path("evaluation/campus-v21-quick-selection.j
 HUMAN_CAMPUS_V21_QUICK_RESULTS = Path("evaluation/campus-v21-quick-human-results.json")
 HUMAN_CAMPUS_V21_QUICK_REPORT = Path("evaluation/campus-v21-quick-human-report.md")
 HUMAN_CAMPUS_V22 = Path("data/campus_v22/benchmarks/human-knowledge-100.jsonl")
+CAMPUS_AI_REVIEW_QUEUE = Path("evaluation/campus-ai-review-queue.json")
+CAMPUS_AI_REVIEW_DECISIONS = Path("evaluation/campus-ai-review-decisions.json")
+CAMPUS_AI_APPROVED_ANSWERS = Path("data/curated/human-approved-answers.jsonl")
 
 V21_HUMAN_AXES = ("correctness", "relevance", "actionable", "naturalness", "would_use_again")
 V21_HUMAN_THRESHOLDS = {"correctness": 4.2, "relevance": 4.2, "actionable": 4.2,
@@ -425,6 +435,21 @@ def _atomic_write(path: Path, content: str) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(content, encoding="utf-8")
     temporary.replace(path)
+
+
+def _campus_ai_review_decisions() -> dict:
+    if not CAMPUS_AI_REVIEW_DECISIONS.exists():
+        return {"schema_version": "campus-ai-review-decisions-v1", "items": {}}
+    payload = json.loads(CAMPUS_AI_REVIEW_DECISIONS.read_text(encoding="utf-8"))
+    payload.setdefault("items", {})
+    return payload
+
+
+def _campus_ai_approved_rows() -> list[dict]:
+    if not CAMPUS_AI_APPROVED_ANSWERS.exists():
+        return []
+    return [json.loads(line) for line in CAMPUS_AI_APPROVED_ANSWERS.read_text(encoding="utf-8").splitlines()
+            if line.strip()]
 
 
 def export_campus_v21_human_results(rows: list[dict], source_path: Path = HUMAN_CAMPUS_V21) -> dict:
@@ -704,6 +729,68 @@ def human_eval_campus_v21_quick_export():
     items = _campus_v21_quick_items()
     return export_campus_v21_quick_results(items, HUMAN_CAMPUS_V21_QUICK_RESULTS,
                                            HUMAN_CAMPUS_V21_QUICK_REPORT)
+
+
+@app.get("/ai-review/campus")
+def campus_ai_review():
+    if not CAMPUS_AI_REVIEW_QUEUE.exists():
+        raise HTTPException(404, "Campus AI review queue not found; run the local quality evaluation")
+    queue = json.loads(CAMPUS_AI_REVIEW_QUEUE.read_text(encoding="utf-8"))
+    decisions = _campus_ai_review_decisions()["items"]
+    items = [{**item, **decisions.get(item["item_id"], {})} for item in queue.get("items", [])]
+    counts = {decision: sum(item.get("decision") == decision for item in items)
+              for decision in ("adopt", "revise", "reject")}
+    reviewed = sum(item.get("decision") in counts for item in items)
+    return {**queue, "reviewed": reviewed, "pending": len(items) - reviewed,
+            "decision_counts": counts, "items": items, "external_ai_api": "OFF",
+            "automatic_training": False}
+
+
+@app.post("/ai-review/campus")
+def campus_ai_review_save(request: CampusAIReviewRequest):
+    if not CAMPUS_AI_REVIEW_QUEUE.exists():
+        raise HTTPException(404, "Campus AI review queue not found; run the local quality evaluation")
+    queue = json.loads(CAMPUS_AI_REVIEW_QUEUE.read_text(encoding="utf-8"))
+    item = next((row for row in queue.get("items", []) if row["item_id"] == request.item_id), None)
+    if item is None:
+        raise HTTPException(404, "Campus AI review item not found")
+    now = datetime.now(timezone.utc).isoformat()
+    decisions = _campus_ai_review_decisions()
+    decisions["updated_at"] = now
+    decisions["items"][request.item_id] = {
+        "decision": request.decision,
+        "edited_answer": request.edited_answer,
+        "notes": request.notes,
+        "reviewed_at": now,
+    }
+    _atomic_write(CAMPUS_AI_REVIEW_DECISIONS,
+                  json.dumps(decisions, ensure_ascii=False, indent=2) + "\n")
+
+    approved = [row for row in _campus_ai_approved_rows() if row.get("item_id") != request.item_id]
+    if request.decision == "adopt":
+        approved_answer = request.edited_answer.strip() or item["improved_answer"]
+        approved.append({
+            "schema_version": "campus-human-approved-answer-v1",
+            "id": f"approved-{request.item_id}",
+            "item_id": request.item_id,
+            "question": item["question"],
+            "original_answer": item["original_answer"],
+            "approved_answer": approved_answer,
+            "category": item.get("category"),
+            "route": item.get("route"),
+            "source_ids": item.get("source_ids", []),
+            "ai_judge_score": item.get("ai_judge_score"),
+            "improved_score": item.get("improved_score"),
+            "human_notes": request.notes,
+            "approved_at": now,
+            "external_ai_api": "OFF",
+            "automatic_training": False,
+            "requires_training_review": True,
+        })
+    approved_content = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in approved)
+    _atomic_write(CAMPUS_AI_APPROVED_ANSWERS, approved_content)
+    return {"saved": True, "item_id": request.item_id, "decision": request.decision,
+            "approved_memory_count": len(approved), "automatic_training": False}
 
 
 @app.get("/human-eval/campus-v21/known-issues")
