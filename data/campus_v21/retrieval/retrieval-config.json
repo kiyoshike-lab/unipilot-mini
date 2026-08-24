@@ -1,0 +1,15 @@
+{
+  "selected_method": "category_filtered",
+  "selected_threshold": 0.145,
+  "selection_split": "data/campus_v21/retrieval/validation.json",
+  "selection_policy": "false FAQ match <=2%, then maximize Recall@1/Recall@3/MRR",
+  "validation_metrics": {
+    "recall_at_1": 0.9705882352941176,
+    "recall_at_3": 0.9705882352941176,
+    "recall_at_5": 0.9705882352941176,
+    "mrr": 0.9705882352941176,
+    "no_match_precision": 0.9615384615384616,
+    "false_faq_match": 0.0
+  },
+  "external_ai_api": "OFF"
+}

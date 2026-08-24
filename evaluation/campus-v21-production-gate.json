@@ -1,0 +1,33 @@
+{
+  "automatic_passed": true,
+  "automatic_checks": {
+    "determinate_category_accuracy_gte_0_97": true,
+    "ambiguous_handling_accuracy_gte_0_97": true,
+    "overall_routing_success_gte_0_95": true,
+    "action_accuracy_gte_0_95": true,
+    "adversarial_accuracy_gte_0_95": true,
+    "retrieval_recall_at_1_gte_0_90": true,
+    "retrieval_recall_at_3_gte_0_95": true,
+    "correctness_gte_0_92": true,
+    "relevance_gte_0_92": true,
+    "hallucination_lte_0_01": true,
+    "completion_gte_0_99": true,
+    "natural_japanese_gte_0_99": true,
+    "actionable_gte_4_5": true,
+    "false_faq_match_lte_0_02": true,
+    "router_p95_lt_20ms": true,
+    "faq_tool_p95_lt_50ms": true,
+    "ram_peak_lt_450mb": true
+  },
+  "human_passed": false,
+  "human_checks": {
+    "human_100_complete": false,
+    "human_correctness_gte_4_2": false,
+    "human_relevance_gte_4_2": false,
+    "human_actionable_gte_4_2": false,
+    "human_naturalness_gte_4_2": false,
+    "human_would_use_again_gte_4_0": false
+  },
+  "passed": false,
+  "decision": "STOP; keep production v0.4 until manual human gate passes"
+}

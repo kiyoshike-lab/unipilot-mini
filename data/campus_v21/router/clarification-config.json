@@ -1,0 +1,344 @@
+{
+  "validation": 1200,
+  "search_candidates": 192,
+  "objective": "maximize overall after ambiguous>=97% and unnecessary clarify<=2%",
+  "selected_config": {
+    "minimum_signals_to_route": 1,
+    "vague_max_length": 16,
+    "vague_confidence_floor": 0.65,
+    "vague_margin_floor": 1.5,
+    "uncertain_max_length": 0,
+    "uncertain_confidence_floor": 0.58,
+    "uncertain_margin_floor": 0.45,
+    "selection_source": "clarification-validation-1200-grid-search"
+  },
+  "selected_metrics": {
+    "ambiguous_handling": 1.0,
+    "unnecessary_clarify": 0.0,
+    "overall": 1.0,
+    "constraints_passed": true
+  },
+  "top_candidates": [
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.65,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 0.5,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 0.5,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 0.5,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.0,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.0,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.0,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 1.5,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.75,
+        "vague_margin_floor": 2.0,
+        "uncertain_max_length": 12,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.85,
+        "vague_margin_floor": 0.5,
+        "uncertain_max_length": 0,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    },
+    {
+      "config": {
+        "minimum_signals_to_route": 1,
+        "vague_max_length": 16,
+        "vague_confidence_floor": 0.85,
+        "vague_margin_floor": 0.5,
+        "uncertain_max_length": 8,
+        "uncertain_confidence_floor": 0.58,
+        "uncertain_margin_floor": 0.45,
+        "selection_source": "clarification-validation-1200-grid-search"
+      },
+      "ambiguous_handling": 1.0,
+      "unnecessary_clarify": 0.0,
+      "overall": 1.0,
+      "constraints_passed": true
+    }
+  ],
+  "external_ai_api": "OFF"
+}

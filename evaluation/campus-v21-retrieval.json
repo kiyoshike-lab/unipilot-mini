@@ -1,0 +1,4132 @@
+{
+  "validation_questions": 152,
+  "test_questions": 338,
+  "validation_comparison": [
+    {
+      "method": "bm25",
+      "threshold": 0.0,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.9607843137254902,
+      "recall_at_3": 0.9803921568627451,
+      "recall_at_5": 0.9803921568627451,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.0,
+      "false_faq_match": 1.0,
+      "mean_latency_ms": 2.0098394736937495,
+      "p95_latency_ms": 2.7448000000731554,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-002",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-004",
+          "query": "大学バスの現在位置を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-031",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-010",
+          "query": "学食の今日限定メニューを今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-professor_email-01-2",
+            "campus-faq-professor_email-03-2",
+            "campus-faq-professor_email-06-0",
+            "campus-faq-professor_email-03-1",
+            "campus-faq-professor_email-05-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-04"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-024",
+          "query": "大学バスの現在位置を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-033",
+          "query": "図書館の座席空き状況を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-007",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-citation-05-0"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-016",
+          "query": "教室の現在温度を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-assignment-00-0",
+            "campus-faq-assignment-07-0",
+            "campus-faq-assignment-02-0",
+            "campus-faq-assignment-01-0",
+            "campus-faq-assignment-05-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-06"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-039",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-012",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-015",
+          "query": "売店の商品価格を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-qualification-00-0",
+            "campus-faq-qualification-00-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-008",
+          "query": "学内プリンタの残量を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-08",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-027",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-citation-05-0"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-023",
+          "query": "図書館の座席空き状況を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-000",
+          "query": "学食の今日限定メニューを今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-035",
+          "query": "売店の商品価格を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-qualification-00-0",
+            "campus-faq-qualification-00-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-034",
+          "query": "大学バスの現在位置を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-040",
+          "query": "学食の今日限定メニューを今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-047",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-citation-05-0"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-046",
+          "query": "教室の現在温度を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-017",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-citation-05-0"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-049",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-025",
+          "query": "売店の商品価格を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-qualification-00-0",
+            "campus-faq-qualification-00-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-001",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-006",
+          "query": "教室の現在温度を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-042",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-009",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-019",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-029",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-021",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-011",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-048",
+          "query": "学内プリンタの残量を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-08",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-026",
+          "query": "教室の現在温度を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-014",
+          "query": "大学バスの現在位置を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-032",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-013",
+          "query": "図書館の座席空き状況を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-038",
+          "query": "学内プリンタの残量を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-08",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-045",
+          "query": "売店の商品価格を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-qualification-00-0",
+            "campus-faq-qualification-00-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-005",
+          "query": "売店の商品価格を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-qualification-00-0",
+            "campus-faq-qualification-00-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-022",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-043",
+          "query": "図書館の座席空き状況を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-028",
+          "query": "学内プリンタの残量を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-08",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-036",
+          "query": "教室の現在温度を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-044",
+          "query": "大学バスの現在位置を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-037",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-citation-05-0"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-030",
+          "query": "学食の今日限定メニューを今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-018",
+          "query": "学内プリンタの残量を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-tool-09",
+            "campus-faq-tool-08",
+            "campus-faq-tool-03"
+          ],
+          "score": 1.0
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-003",
+          "query": "図書館の座席空き状況を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "method": "word_tfidf",
+      "threshold": 0.12,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.3137254901960784,
+      "recall_at_3": 0.3235294117647059,
+      "recall_at_5": 0.3235294117647059,
+      "mrr": 0.31862745098039214,
+      "no_match_precision": 0.42016806722689076,
+      "false_faq_match": 0.0,
+      "mean_latency_ms": 2.6700802631490945,
+      "p95_latency_ms": 2.8785000004063477,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-match-0001",
+          "query": "共同課題が停滞ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-assignment-05-0",
+            "campus-faq-assignment-05-1",
+            "campus-faq-assignment-05-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0052",
+          "query": "生活リズムってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-campus_life-09-0",
+            "campus-faq-campus_life-09-1",
+            "campus-faq-campus_life-09-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0079",
+          "query": "遅刻が欠席扱いってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-attendance-07-0",
+            "campus-faq-attendance-07-1",
+            "campus-faq-attendance-07-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-tool-04"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0007",
+          "query": "ニュースを理解ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0062",
+          "query": "実習費の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-tuition-07-0",
+            "campus-faq-tuition-07-1",
+            "campus-faq-tuition-07-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0056",
+          "query": "志望理由の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-seminar-01-0",
+            "campus-faq-seminar-01-1",
+            "campus-faq-seminar-01-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0098",
+          "query": "ライブラリ選びの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-programming-09-0",
+            "campus-faq-programming-09-1",
+            "campus-faq-programming-09-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0053",
+          "query": "Gitを使うの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-programming-06-0",
+            "campus-faq-programming-06-1",
+            "campus-faq-programming-06-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0029",
+          "query": "無給か有給かの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-internship-03-0",
+            "campus-faq-internship-03-1",
+            "campus-faq-internship-03-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0047",
+          "query": "給付と貸与の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-scholarship-00-0",
+            "campus-faq-scholarship-00-1",
+            "campus-faq-scholarship-00-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0046",
+          "query": "記述式対策ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-exam-04-0",
+            "campus-faq-exam-04-1",
+            "campus-faq-exam-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0016",
+          "query": "留学先選びってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-study_abroad-00-0",
+            "campus-faq-study_abroad-00-1",
+            "campus-faq-study_abroad-00-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0031",
+          "query": "途中で行き詰まったってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-assignment-08-0",
+            "campus-faq-assignment-08-1",
+            "campus-faq-assignment-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-tool-06"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0038",
+          "query": "参加目的の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-internship-01-0",
+            "campus-faq-internship-01-1",
+            "campus-faq-internship-01-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0082",
+          "query": "集中講義の単位ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-credit-08-0",
+            "campus-faq-credit-08-1",
+            "campus-faq-credit-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0028",
+          "query": "語学要件ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-study_abroad-02-0",
+            "campus-faq-study_abroad-02-1",
+            "campus-faq-study_abroad-02-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0019",
+          "query": "配属希望ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-laboratory-07-0",
+            "campus-faq-laboratory-07-1",
+            "campus-faq-laboratory-07-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0095",
+          "query": "定義が分からないの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-math-00-0",
+            "campus-faq-math-00-1",
+            "campus-faq-math-00-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0067",
+          "query": "科学記事ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-general_education-03-0",
+            "campus-faq-general_education-03-1",
+            "campus-faq-general_education-03-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0002",
+          "query": "設備の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-laboratory-02-0",
+            "campus-faq-laboratory-02-1",
+            "campus-faq-laboratory-02-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0004",
+          "query": "Web引用ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-citation-02-0",
+            "campus-faq-citation-02-1",
+            "campus-faq-citation-02-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0097",
+          "query": "受験時期ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-qualification-02-0",
+            "campus-faq-qualification-02-1",
+            "campus-faq-qualification-02-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0055",
+          "query": "添付ファイルってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-professor_email-08-0",
+            "campus-faq-professor_email-08-1",
+            "campus-faq-professor_email-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0044",
+          "query": "賃金未払いの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-part_time-04-0",
+            "campus-faq-part_time-04-1",
+            "campus-faq-part_time-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0026",
+          "query": "辞退連絡の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-internship-07-0",
+            "campus-faq-internship-07-1",
+            "campus-faq-internship-07-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0058",
+          "query": "欠損値ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-statistics-08-0",
+            "campus-faq-statistics-08-1",
+            "campus-faq-statistics-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0037",
+          "query": "モチベーションってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-study-06-0",
+            "campus-faq-study-06-1",
+            "campus-faq-study-06-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0061",
+          "query": "抽選に落ちたってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-registration-05-0",
+            "campus-faq-registration-05-1",
+            "campus-faq-registration-05-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0043",
+          "query": "履修取消との関係ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-gpa-08-0",
+            "campus-faq-gpa-08-1",
+            "campus-faq-gpa-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0091",
+          "query": "質問方法ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-programming-08-0",
+            "campus-faq-programming-08-1",
+            "campus-faq-programming-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0092",
+          "query": "コードが読めないの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-programming-04-0",
+            "campus-faq-programming-04-1",
+            "campus-faq-programming-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0059",
+          "query": "併用できるかの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-scholarship-04-0",
+            "campus-faq-scholarship-04-1",
+            "campus-faq-scholarship-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0034",
+          "query": "再履修の影響ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-gpa-03-0",
+            "campus-faq-gpa-03-1",
+            "campus-faq-gpa-03-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0074",
+          "query": "教員との相性の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-seminar-08-0",
+            "campus-faq-seminar-08-1",
+            "campus-faq-seminar-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0088",
+          "query": "実習に遅刻ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-lateness-04-0",
+            "campus-faq-lateness-04-1",
+            "campus-faq-lateness-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0077",
+          "query": "休学との違いの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-study_abroad-08-0",
+            "campus-faq-study_abroad-08-1",
+            "campus-faq-study_abroad-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0005",
+          "query": "お礼メールの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-professor_email-05-0",
+            "campus-faq-professor_email-05-1",
+            "campus-faq-professor_email-05-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0073",
+          "query": "広告記事ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-information_literacy-04-0",
+            "campus-faq-information_literacy-04-1",
+            "campus-faq-information_literacy-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0032",
+          "query": "見学したいの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-seminar-09-0",
+            "campus-faq-seminar-09-1",
+            "campus-faq-seminar-09-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0008",
+          "query": "中間発表の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-thesis-04-0",
+            "campus-faq-thesis-04-1",
+            "campus-faq-thesis-04-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0025",
+          "query": "シラバス比較ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-registration-09-0",
+            "campus-faq-registration-09-1",
+            "campus-faq-registration-09-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0010",
+          "query": "持ち込み可ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-exam-06-0",
+            "campus-faq-exam-06-1",
+            "campus-faq-exam-06-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0085",
+          "query": "単語学習ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-toeic-05-0",
+            "campus-faq-toeic-05-1",
+            "campus-faq-toeic-05-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0070",
+          "query": "電車遅延ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-lateness-02-0",
+            "campus-faq-lateness-02-1",
+            "campus-faq-lateness-02-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0049",
+          "query": "途中式ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-math-08-0",
+            "campus-faq-math-08-1",
+            "campus-faq-math-08-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0022",
+          "query": "模試活用ってどう進める",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-toeic-06-0",
+            "campus-faq-toeic-06-1",
+            "campus-faq-toeic-06-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0035",
+          "query": "時間超過の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-presentation-01-0",
+            "campus-faq-presentation-01-1",
+            "campus-faq-presentation-01-2"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0011",
+          "query": "面接対策の次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-career-04-0",
+            "campus-faq-career-04-1",
+            "campus-faq-career-04-2"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "character_tfidf",
+      "threshold": 0.0,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.9705882352941176,
+      "recall_at_3": 0.9705882352941176,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.0,
+      "false_faq_match": 1.0,
+      "mean_latency_ms": 2.725332236859925,
+      "p95_latency_ms": 3.0506000002787914,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-002",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-004",
+          "query": "大学バスの現在位置を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2359657312440425
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-031",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.21407194132171187
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-010",
+          "query": "学食の今日限定メニューを今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21788410498701768
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-professor_email-01-2",
+            "campus-faq-professor_email-03-2",
+            "campus-faq-professor_email-03-1",
+            "campus-faq-professor_email-01-0",
+            "campus-faq-professor_email-00-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-04"
+          ],
+          "score": 0.19967132316187344
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-024",
+          "query": "大学バスの現在位置を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2359657312440425
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-033",
+          "query": "図書館の座席空き状況を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21783589435802175
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-007",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.26175554339805207
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-016",
+          "query": "教室の現在温度を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-assignment-07-0",
+            "campus-faq-assignment-07-1",
+            "campus-faq-assignment-07-2",
+            "campus-faq-assignment-00-0",
+            "campus-faq-assignment-00-2"
+          ],
+          "relevant": [
+            "campus-faq-tool-06"
+          ],
+          "score": 0.3854090617719626
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-039",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2516390389425478
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-012",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-015",
+          "query": "売店の商品価格を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.24174134482394705
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-008",
+          "query": "学内プリンタの残量を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.23572879003514646
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-027",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.26175554339805207
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-023",
+          "query": "図書館の座席空き状況を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21783589435802175
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-000",
+          "query": "学食の今日限定メニューを今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21788410498701768
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-035",
+          "query": "売店の商品価格を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.24174134482394705
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-034",
+          "query": "大学バスの現在位置を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2359657312440425
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-040",
+          "query": "学食の今日限定メニューを今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21788410498701768
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-047",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.26175554339805207
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-046",
+          "query": "教室の現在温度を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-017",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.26175554339805207
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-049",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2516390389425478
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-025",
+          "query": "売店の商品価格を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.24174134482394705
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-001",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.21407194132171187
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-006",
+          "query": "教室の現在温度を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-042",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-009",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2516390389425478
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-019",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2516390389425478
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-029",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2516390389425478
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-021",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.21407194132171187
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-011",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.21407194132171187
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-048",
+          "query": "学内プリンタの残量を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.23572879003514646
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-026",
+          "query": "教室の現在温度を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-014",
+          "query": "大学バスの現在位置を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2359657312440425
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-032",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-013",
+          "query": "図書館の座席空き状況を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21783589435802175
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-038",
+          "query": "学内プリンタの残量を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.23572879003514646
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-045",
+          "query": "売店の商品価格を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.24174134482394705
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-005",
+          "query": "売店の商品価格を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.24174134482394705
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-022",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-043",
+          "query": "図書館の座席空き状況を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21783589435802175
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-028",
+          "query": "学内プリンタの残量を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.23572879003514646
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-036",
+          "query": "教室の現在温度を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.25621141913040407
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-044",
+          "query": "大学バスの現在位置を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.2359657312440425
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-037",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.26175554339805207
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0048",
+          "query": "es_outline、確認すること",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-thesis-06-0",
+            "campus-faq-thesis-06-1",
+            "campus-faq-thesis-06-2",
+            "campus-faq-thesis-07-0",
+            "campus-faq-thesis-03-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2596085626186359
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-030",
+          "query": "学食の今日限定メニューを今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21788410498701768
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-018",
+          "query": "学内プリンタの残量を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.23572879003514646
+        }
+      ]
+    },
+    {
+      "method": "word_character_hybrid",
+      "threshold": 0.0,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.9705882352941176,
+      "recall_at_3": 0.9705882352941176,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.0,
+      "false_faq_match": 1.0,
+      "mean_latency_ms": 2.8356394737712485,
+      "p95_latency_ms": 3.6712000000989065,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-002",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-004",
+          "query": "大学バスの現在位置を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19349189962011484
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-031",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.17553899188380373
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-010",
+          "query": "学食の今日限定メニューを今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.1786649660893545
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-professor_email-01-2",
+            "campus-faq-professor_email-03-2",
+            "campus-faq-professor_email-03-1",
+            "campus-faq-professor_email-01-0",
+            "campus-faq-professor_email-00-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-04"
+          ],
+          "score": 0.1637304849927362
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-024",
+          "query": "大学バスの現在位置を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19349189962011484
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-033",
+          "query": "図書館の座席空き状況を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.17862543337357784
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-007",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2146395455864027
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-016",
+          "query": "教室の現在温度を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-assignment-07-0",
+            "campus-faq-assignment-07-1",
+            "campus-faq-assignment-07-2",
+            "campus-faq-assignment-00-0",
+            "campus-faq-assignment-00-2"
+          ],
+          "relevant": [
+            "campus-faq-tool-06"
+          ],
+          "score": 0.3160354306530093
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-039",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.20634401193288918
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-012",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-015",
+          "query": "売店の商品価格を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19822790275563656
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-008",
+          "query": "学内プリンタの残量を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19329760782882008
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-027",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2146395455864027
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-023",
+          "query": "図書館の座席空き状況を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.17862543337357784
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-000",
+          "query": "学食の今日限定メニューを今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.1786649660893545
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-035",
+          "query": "売店の商品価格を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19822790275563656
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-034",
+          "query": "大学バスの現在位置を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19349189962011484
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-040",
+          "query": "学食の今日限定メニューを今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.1786649660893545
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-047",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2146395455864027
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-046",
+          "query": "教室の現在温度を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-017",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2146395455864027
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-049",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.20634401193288918
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-025",
+          "query": "売店の商品価格を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19822790275563656
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-001",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.17553899188380373
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-006",
+          "query": "教室の現在温度を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-042",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-009",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.20634401193288918
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-019",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.20634401193288918
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-029",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.20634401193288918
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-021",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.17553899188380373
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-011",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.17553899188380373
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-048",
+          "query": "学内プリンタの残量を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19329760782882008
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-026",
+          "query": "教室の現在温度を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-014",
+          "query": "大学バスの現在位置を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19349189962011484
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-032",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-013",
+          "query": "図書館の座席空き状況を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.17862543337357784
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-038",
+          "query": "学内プリンタの残量を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19329760782882008
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-045",
+          "query": "売店の商品価格を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19822790275563656
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-005",
+          "query": "売店の商品価格を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19822790275563656
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-022",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-043",
+          "query": "図書館の座席空き状況を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.17862543337357784
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-028",
+          "query": "学内プリンタの残量を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19329760782882008
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-036",
+          "query": "教室の現在温度を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.21009336368693132
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-044",
+          "query": "大学バスの現在位置を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19349189962011484
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-037",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2146395455864027
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0048",
+          "query": "es_outline、確認すること",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-thesis-06-0",
+            "campus-faq-thesis-06-1",
+            "campus-faq-thesis-06-2",
+            "campus-faq-thesis-07-0",
+            "campus-faq-thesis-03-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-09"
+          ],
+          "score": 0.21287902134728143
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-030",
+          "query": "学食の今日限定メニューを今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.1786649660893545
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-018",
+          "query": "学内プリンタの残量を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.19329760782882008
+        }
+      ]
+    },
+    {
+      "method": "bm25_character",
+      "threshold": 0.0,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.9705882352941176,
+      "recall_at_3": 0.9705882352941176,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.0,
+      "false_faq_match": 1.0,
+      "mean_latency_ms": 5.477985526394342,
+      "p95_latency_ms": 6.365799999912269,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-002",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-004",
+          "query": "大学バスの現在位置を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40405327037035316
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-031",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.38697611423093525
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-010",
+          "query": "学食の今日限定メニューを今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.3899496018898738
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-professor_email-01-2",
+            "campus-faq-professor_email-03-2",
+            "campus-faq-professor_email-06-0",
+            "campus-faq-professor_email-03-1",
+            "campus-faq-professor_email-09-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-04"
+          ],
+          "score": 0.37574363206626127
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-024",
+          "query": "大学バスの現在位置を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40405327037035316
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-033",
+          "query": "図書館の座席空き状況を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.389911997599257
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-007",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.4241693238504806
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-016",
+          "query": "教室の現在温度を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-assignment-07-0",
+            "campus-faq-assignment-00-0",
+            "campus-faq-assignment-07-1",
+            "campus-faq-assignment-07-2",
+            "campus-faq-assignment-03-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-06"
+          ],
+          "score": 0.5206190681821309
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-039",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.4162784503751873
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-012",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-015",
+          "query": "売店の商品価格を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40855824896267867
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-008",
+          "query": "学内プリンタの残量を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40386845622741424
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-027",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.4241693238504806
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-023",
+          "query": "図書館の座席空き状況を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.389911997599257
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-000",
+          "query": "学食の今日限定メニューを今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.3899496018898738
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-035",
+          "query": "売店の商品価格を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40855824896267867
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-034",
+          "query": "大学バスの現在位置を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40405327037035316
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-040",
+          "query": "学食の今日限定メニューを今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.3899496018898738
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-047",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.4241693238504806
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-046",
+          "query": "教室の現在温度を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-017",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.4241693238504806
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-049",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.4162784503751873
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-025",
+          "query": "売店の商品価格を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40855824896267867
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-001",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.38697611423093525
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-006",
+          "query": "教室の現在温度を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-042",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-009",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.4162784503751873
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-019",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.4162784503751873
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-029",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.4162784503751873
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-021",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.38697611423093525
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-011",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-credit-02-0",
+            "campus-faq-credit-00-0",
+            "campus-faq-credit-02-2",
+            "campus-faq-credit-02-1"
+          ],
+          "score": 0.38697611423093525
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-048",
+          "query": "学内プリンタの残量を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40386845622741424
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-026",
+          "query": "教室の現在温度を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-014",
+          "query": "大学バスの現在位置を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40405327037035316
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-032",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-013",
+          "query": "図書館の座席空き状況を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.389911997599257
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-038",
+          "query": "学内プリンタの残量を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40386845622741424
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-045",
+          "query": "売店の商品価格を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40855824896267867
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-005",
+          "query": "売店の商品価格を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40855824896267867
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-022",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-043",
+          "query": "図書館の座席空き状況を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-04-0",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.389911997599257
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-028",
+          "query": "学内プリンタの残量を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40386845622741424
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-036",
+          "query": "教室の現在温度を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.41984490692171517
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-044",
+          "query": "大学バスの現在位置を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40405327037035316
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-037",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-tool-01",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.4241693238504806
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0048",
+          "query": "es_outline、確認すること",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-thesis-06-0",
+            "campus-faq-thesis-07-0",
+            "campus-faq-thesis-03-0",
+            "campus-faq-thesis-08-0",
+            "campus-faq-thesis-06-2"
+          ],
+          "relevant": [
+            "campus-faq-tool-09"
+          ],
+          "score": 0.2882798988797017
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-030",
+          "query": "学食の今日限定メニューを今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-general_education-01-1",
+            "campus-faq-general_education-01-0",
+            "campus-faq-general_education-01-2",
+            "campus-faq-tool-09"
+          ],
+          "score": 0.3899496018898738
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-018",
+          "query": "学内プリンタの残量を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-tool-01",
+            "campus-faq-tool-09",
+            "campus-faq-tool-03",
+            "campus-faq-tool-08",
+            "campus-faq-tool-05"
+          ],
+          "score": 0.40386845622741424
+        }
+      ]
+    },
+    {
+      "method": "category_filtered",
+      "threshold": 0.145,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.9705882352941176,
+      "recall_at_3": 0.9705882352941176,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.9615384615384616,
+      "false_faq_match": 0.0,
+      "mean_latency_ms": 2.9713124999764324,
+      "p95_latency_ms": 3.4991000002264627,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-match-0100",
+          "query": "late_submission_emailってどう進める",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-professor_email-01-2",
+            "campus-faq-professor_email-03-2",
+            "campus-faq-professor_email-03-1",
+            "campus-faq-professor_email-01-0",
+            "campus-faq-professor_email-00-0"
+          ],
+          "relevant": [
+            "campus-faq-tool-04"
+          ],
+          "score": 0.19967132316187344
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-tool-06"
+          ]
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0048",
+          "query": "es_outline、確認すること",
+          "reason": "FALSE_NO_MATCH",
+          "relevant": [
+            "campus-faq-tool-09"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "query_expansion",
+      "threshold": 0.0,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.8235294117647058,
+      "recall_at_3": 0.8823529411764706,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.8745098039215686,
+      "no_match_precision": 0.0,
+      "false_faq_match": 1.0,
+      "mean_latency_ms": 6.449142105243243,
+      "p95_latency_ms": 7.464799999979732,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-002",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-004",
+          "query": "大学バスの現在位置を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-00-1",
+            "campus-faq-campus_life-01-1"
+          ],
+          "score": 0.35554532375759795
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-031",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3417620639432677
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-010",
+          "query": "学食の今日限定メニューを今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.34337825804015754
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-024",
+          "query": "大学バスの現在位置を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-00-1",
+            "campus-faq-campus_life-01-1"
+          ],
+          "score": 0.35554532375759795
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-033",
+          "query": "図書館の座席空き状況を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-04-0",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.3816696931532742
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-007",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.4391058508386724
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-016",
+          "query": "教室の現在温度を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0041",
+          "query": "assignment_priorityの次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-time_management-08-0",
+            "campus-faq-time_management-08-2",
+            "campus-faq-time_management-08-1",
+            "campus-faq-assignment-00-0",
+            "campus-faq-assignment-00-2"
+          ],
+          "relevant": [
+            "campus-faq-tool-06"
+          ],
+          "score": 0.4600370106621693
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-039",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-01-2",
+            "campus-faq-campus_life-08-0"
+          ],
+          "score": 0.35616308228852334
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-012",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-015",
+          "query": "売店の商品価格を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3526834232562375
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-008",
+          "query": "学内プリンタの残量を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-07-1",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.32839477156100116
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-027",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.4391058508386724
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-023",
+          "query": "図書館の座席空き状況を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-04-0",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.3816696931532742
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0002",
+          "query": "設備の次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-07-2"
+          ],
+          "relevant": [
+            "campus-faq-laboratory-02-0",
+            "campus-faq-laboratory-02-1",
+            "campus-faq-laboratory-02-2"
+          ],
+          "score": 0.47676260258414643
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-000",
+          "query": "学食の今日限定メニューを今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.34337825804015754
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-035",
+          "query": "売店の商品価格を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3526834232562375
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-034",
+          "query": "大学バスの現在位置を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-00-1",
+            "campus-faq-campus_life-01-1"
+          ],
+          "score": 0.35554532375759795
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-040",
+          "query": "学食の今日限定メニューを今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.34337825804015754
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-047",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.4391058508386724
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-046",
+          "query": "教室の現在温度を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-017",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.4391058508386724
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-049",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-01-2",
+            "campus-faq-campus_life-08-0"
+          ],
+          "score": 0.35616308228852334
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0036",
+          "query": "費用、確認すること",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-07-2"
+          ],
+          "relevant": [
+            "campus-faq-study_abroad-01-0",
+            "campus-faq-study_abroad-01-1",
+            "campus-faq-study_abroad-01-2"
+          ],
+          "score": 0.4802109951373151
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-025",
+          "query": "売店の商品価格を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3526834232562375
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-001",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3417620639432677
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-006",
+          "query": "教室の現在温度を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-042",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-009",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-01-2",
+            "campus-faq-campus_life-08-0"
+          ],
+          "score": 0.35616308228852334
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-019",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-01-2",
+            "campus-faq-campus_life-08-0"
+          ],
+          "score": 0.35616308228852334
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-029",
+          "query": "食堂のアレルギー個別対応を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-01-2",
+            "campus-faq-campus_life-08-0"
+          ],
+          "score": 0.35616308228852334
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-021",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3417620639432677
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-011",
+          "query": "キャンパスの落とし物在庫番号を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3417620639432677
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-048",
+          "query": "学内プリンタの残量を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-07-1",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.32839477156100116
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-026",
+          "query": "教室の現在温度を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-014",
+          "query": "大学バスの現在位置を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-00-1",
+            "campus-faq-campus_life-01-1"
+          ],
+          "score": 0.35554532375759795
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-032",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-013",
+          "query": "図書館の座席空き状況を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-04-0",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.3816696931532742
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-038",
+          "query": "学内プリンタの残量を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-07-1",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.32839477156100116
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-045",
+          "query": "売店の商品価格を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3526834232562375
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-005",
+          "query": "売店の商品価格を今すぐ知りたい 1",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3526834232562375
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-022",
+          "query": "体育館の現在の混雑人数を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-043",
+          "query": "図書館の座席空き状況を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-04-0",
+            "campus-faq-campus_life-04-1",
+            "campus-faq-campus_life-04-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.3816696931532742
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-028",
+          "query": "学内プリンタの残量を今すぐ知りたい 3",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-07-1",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.32839477156100116
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-036",
+          "query": "教室の現在温度を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.3577008102569969
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-044",
+          "query": "大学バスの現在位置を今すぐ知りたい 5",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-00-1",
+            "campus-faq-campus_life-01-1"
+          ],
+          "score": 0.35554532375759795
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-037",
+          "query": "サークル部室の鍵番号を今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.4391058508386724
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-030",
+          "query": "学食の今日限定メニューを今すぐ知りたい 4",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-05-1",
+            "campus-faq-campus_life-05-2",
+            "campus-faq-campus_life-01-1",
+            "campus-faq-campus_life-09-0"
+          ],
+          "score": 0.34337825804015754
+        },
+        {
+          "id": "campus-v21-retrieval-validation-nomatch-018",
+          "query": "学内プリンタの残量を今すぐ知りたい 2",
+          "reason": "FALSE_FAQ_MATCH",
+          "returned": [
+            "campus-faq-campus_life-05-0",
+            "campus-faq-campus_life-07-1",
+            "campus-faq-campus_life-07-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-05-1"
+          ],
+          "score": 0.32839477156100116
+        }
+      ]
+    },
+    {
+      "method": "router_aware",
+      "threshold": 0.22,
+      "questions": 152,
+      "match_questions": 102,
+      "no_match_questions": 50,
+      "recall_at_1": 0.8235294117647058,
+      "recall_at_3": 0.8725490196078431,
+      "recall_at_5": 0.9803921568627451,
+      "mrr": 0.8745098039215686,
+      "no_match_precision": 1.0,
+      "false_faq_match": 0.0,
+      "mean_latency_ms": 7.070447368373846,
+      "p95_latency_ms": 8.177200000318408,
+      "failures": [
+        {
+          "id": "campus-v21-retrieval-validation-match-0002",
+          "query": "設備の次の行動",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-07-2"
+          ],
+          "relevant": [
+            "campus-faq-laboratory-02-0",
+            "campus-faq-laboratory-02-1",
+            "campus-faq-laboratory-02-2"
+          ],
+          "score": 0.4640007148422963
+        },
+        {
+          "id": "campus-v21-retrieval-validation-match-0036",
+          "query": "費用、確認すること",
+          "reason": "WRONG_FAQ",
+          "returned": [
+            "campus-faq-campus_life-03-0",
+            "campus-faq-campus_life-03-2",
+            "campus-faq-campus_life-03-1",
+            "campus-faq-campus_life-07-0",
+            "campus-faq-campus_life-07-2"
+          ],
+          "relevant": [
+            "campus-faq-study_abroad-01-0",
+            "campus-faq-study_abroad-01-1",
+            "campus-faq-study_abroad-01-2"
+          ],
+          "score": 0.4675332145309081
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "selected_method": "category_filtered",
+    "selected_threshold": 0.145,
+    "selection_split": "data/campus_v21/retrieval/validation.json",
+    "selection_policy": "false FAQ match <=2%, then maximize Recall@1/Recall@3/MRR",
+    "validation_metrics": {
+      "recall_at_1": 0.9705882352941176,
+      "recall_at_3": 0.9705882352941176,
+      "recall_at_5": 0.9705882352941176,
+      "mrr": 0.9705882352941176,
+      "no_match_precision": 0.9615384615384616,
+      "false_faq_match": 0.0
+    },
+    "external_ai_api": "OFF"
+  },
+  "test": {
+    "method": "category_filtered",
+    "threshold": 0.145,
+    "questions": 338,
+    "match_questions": 238,
+    "no_match_questions": 100,
+    "recall_at_1": 0.9705882352941176,
+    "recall_at_3": 0.9705882352941176,
+    "recall_at_5": 0.9705882352941176,
+    "mrr": 0.9705882352941176,
+    "no_match_precision": 0.9803921568627451,
+    "false_faq_match": 0.0,
+    "mean_latency_ms": 3.152131656796877,
+    "p95_latency_ms": 3.531999999722757,
+    "failures": [
+      {
+        "id": "campus-v21-retrieval-test-match-0227",
+        "query": "study_planの次の行動",
+        "reason": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-study-07-0",
+          "campus-faq-study-08-0",
+          "campus-faq-study-04-0",
+          "campus-faq-study-09-1",
+          "campus-faq-study-02-1"
+        ],
+        "relevant": [
+          "campus-faq-tool-05"
+        ],
+        "score": 0.3936662542417581
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0132",
+        "query": "deadline_organizer、確認すること",
+        "reason": "FALSE_NO_MATCH",
+        "relevant": [
+          "campus-faq-tool-07"
+        ]
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0125",
+        "query": "gpaの次の行動",
+        "reason": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-gpa-00-0",
+          "campus-faq-gpa-00-1",
+          "campus-faq-gpa-00-2",
+          "campus-faq-gpa-01-1",
+          "campus-faq-gpa-01-2"
+        ],
+        "relevant": [
+          "campus-faq-tool-00"
+        ],
+        "score": 0.4161742152763263
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0158",
+        "query": "absence_emailの次の行動",
+        "reason": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-professor_email-01-0",
+          "campus-faq-professor_email-00-0",
+          "campus-faq-professor_email-03-0",
+          "campus-faq-professor_email-03-1",
+          "campus-faq-professor_email-01-2"
+        ],
+        "relevant": [
+          "campus-faq-tool-02"
+        ],
+        "score": 0.21989982448745526
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0015",
+        "query": "grade_simulator、確認すること",
+        "reason": "FALSE_NO_MATCH",
+        "relevant": [
+          "campus-faq-tool-01"
+        ]
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0230",
+        "query": "report_outlineの次の行動",
+        "reason": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-thesis-06-0",
+          "campus-faq-thesis-06-1",
+          "campus-faq-thesis-01-0",
+          "campus-faq-thesis-06-2",
+          "campus-faq-thesis-02-0"
+        ],
+        "relevant": [
+          "campus-faq-tool-08"
+        ],
+        "score": 0.43586702646847597
+      },
+      {
+        "id": "campus-v21-retrieval-test-match-0124",
+        "query": "lateness_emailってどう進める",
+        "reason": "WRONG_FAQ",
+        "returned": [
+          "campus-faq-professor_email-01-2",
+          "campus-faq-professor_email-03-1",
+          "campus-faq-professor_email-03-2",
+          "campus-faq-professor_email-01-0",
+          "campus-faq-professor_email-00-0"
+        ],
+        "relevant": [
+          "campus-faq-tool-03"
+        ],
+        "score": 0.20050329083311316
+      }
+    ]
+  },
+  "test_is_independent_of_threshold_selection": true,
+  "external_ai_api": "OFF"
+}

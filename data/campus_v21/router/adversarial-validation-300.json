@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "campus-v21-validation-negation-000",
+    "question": "家族事情による欠席連絡を頼んだわけではなく、質問回答への返信文が必要",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-001",
+    "question": "内定後手続きの日程確認ではありません。対象は固有値計算を復習",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-002",
+    "question": "固有値計算を復習を頼んだわけではなく、資格勉強と選考予定を両立が必要",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "math",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-003",
+    "question": "オフィスアワー予約の連絡ではありません。対象はオンライン授業欠席の連絡",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "professor_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-004",
+    "question": "ポスター発表の説明構成を頼んだわけではなく、信頼区間を解釈したいが必要",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "presentation_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-005",
+    "question": "AI生成部分の申告方法ではありません。対象は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "ai_usage",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-006",
+    "question": "バス遅延で試験開始に遅れるを頼んだわけではなく、面談へ遅れるお詫び文が必要",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-007",
+    "question": "著者不明ページの書誌情報ではありません。対象は転学部条件の公式規程",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "citation_check",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-008",
+    "question": "依存パッケージの競合エラーを頼んだわけではなく、通学中だけで英語対策が必要",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-009",
+    "question": "オンライン授業の出席記録ではありません。対象は修正版提出をお願いするメール",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "attendance",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-010",
+    "question": "反対意見を含む構成を頼んだわけではなく、証明書手続きの案内を検索が必要",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "NEGATION",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-011",
+    "question": "共同研究で役割が偏っているではありません。対象は選考課題の提出準備",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-012",
+    "question": "レポート点を含めた合格可能性を頼んだわけではなく、他学部科目の登録確認が必要",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-013",
+    "question": "時刻付きの提出期限を管理ではありません。対象は試験会場を取り違えそう",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "deadline_organizer",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-014",
+    "question": "学内ロッカーの利用先を頼んだわけではなく、成績基準の継続条件が必要",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-015",
+    "question": "再履修を含むGPAの扱いではありません。対象は空き時間を曜日別に集計",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "gpa",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-016",
+    "question": "提出可能な最低ラインから優先するを頼んだわけではなく、課題ファイルを誤って提出したが必要",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "assignment_priority",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-017",
+    "question": "実習期間だけ勤務を減らすではありません。対象は領収証の再発行を確認",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-018",
+    "question": "認定済み科目を数え直したいを頼んだわけではなく、模試結果から弱点計画を作るが必要",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "credit",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-019",
+    "question": "模試結果から弱点計画を作るではありません。対象は選択必修の区分が足りない",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-020",
+    "question": "引落口座を変更したいを頼んだわけではなく、深夜勤務と授業を調整が必要",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "tuition",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-021",
+    "question": "共同課題の担当が進んでいないではありません。対象は提出可能な最低ラインから優先する",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "assignment",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-022",
+    "question": "空き時間を曜日別に集計を頼んだわけではなく、交換留学申請用のGPAを確認が必要",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-023",
+    "question": "併給できる制度を確認ではありません。対象は通学経路を変えたい",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "scholarship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-024",
+    "question": "解答時間の配分を決めたいを頼んだわけではなく、時刻付きの提出期限を管理が必要",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "exam",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-025",
+    "question": "他学部科目の登録確認ではありません。対象は小テスト配点から期末必要点を出す",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "registration",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-026",
+    "question": "授業期間中の長期実習を検討を頼んだわけではなく、誘いを断る言い方が必要",
+    "category": "relationship",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-027",
+    "question": "相談窓口一覧から探すではありません。対象は反対意見を含む構成",
+    "category": "report_outline",
+    "level1": "writing",
+    "adversarial_type": "NEGATION",
+    "negative_category": "faq_search",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-028",
+    "question": "修正版提出をお願いするメールを頼んだわけではなく、出席端末が反応しなかったが必要",
+    "category": "attendance",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "late_submission_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-029",
+    "question": "パート別正答率から計画を作るではありません。対象は入力境界値でコードが落ちる",
+    "category": "programming",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "toeic_plan",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-030",
+    "question": "長期履修制度の対象確認を頼んだわけではなく、著者不明ページの書誌情報が必要",
+    "category": "citation_check",
+    "level1": "writing",
+    "adversarial_type": "NEGATION",
+    "negative_category": "university_policy",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-031",
+    "question": "面談へ遅れるお詫び文ではありません。対象は教室を間違えて開始に遅れた",
+    "category": "lateness",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "lateness_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-032",
+    "question": "研究経験をESへまとめるを頼んだわけではなく、講義ごとのAI許可範囲を確認が必要",
+    "category": "ai_usage",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "es_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-033",
+    "question": "外れ値を含む要約統計ではありません。対象はポスター発表の説明構成",
+    "category": "presentation_outline",
+    "level1": "writing",
+    "adversarial_type": "NEGATION",
+    "negative_category": "statistics",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-034",
+    "question": "オンライン授業欠席の連絡を頼んだわけではなく、教員へ資料閲覧をお願いする文が必要",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-035",
+    "question": "複数社の面接間隔を整理ではありません。対象は数列の収束を確認",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-036",
+    "question": "数列の収束を確認を頼んだわけではなく、内定後手続きの日程確認が必要",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "math",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-037",
+    "question": "質問回答への返信文ではありません。対象は実習を休む連絡文",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "professor_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-038",
+    "question": "三人発表の担当分けを頼んだわけではなく、外れ値を含む要約統計が必要",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "NEGATION",
+    "negative_category": "presentation_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-039",
+    "question": "講義ごとのAI許可範囲を確認ではありません。対象は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "ai_usage",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-040",
+    "question": "途中入室するときの対応を頼んだわけではなく、到着時刻未定の遅刻連絡が必要",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-041",
+    "question": "図表の出典表記を確認ではありません。対象は長期履修制度の対象確認",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "citation_check",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-042",
+    "question": "入力境界値でコードが落ちるを頼んだわけではなく、受験二回分の学習予定が必要",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-043",
+    "question": "忌引きの欠席手続きではありません。対象は違うファイルを提出した連絡",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "NEGATION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-044",
+    "question": "比較型レポートの骨組みを頼んだわけではなく、相談窓口一覧から探すが必要",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "NEGATION",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-045",
+    "question": "誘いを断る言い方ではありません。対象は実習先へ日程を確認",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "NEGATION",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-046",
+    "question": "評価割合から目標点を逆算を頼んだわけではなく、前提科目を未修得の履修相談が必要",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-047",
+    "question": "仮締切と正式締切を分けるではありません。対象は解答時間の配分を決めたい",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "deadline_organizer",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-048",
+    "question": "通学経路を変えたいを頼んだわけではなく、振込停止時の確認先が必要",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-049",
+    "question": "今後の成績で平均を上げるではありません。対象は通学時間込みで一週間を組む",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "gpa",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-050",
+    "question": "配点と締切を合わせて着手順を決めるを頼んだわけではなく、共同課題の担当が進んでいないが必要",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "assignment_priority",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-051",
+    "question": "深夜勤務と授業を調整ではありません。対象は休学復学時の請求を確認",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-052",
+    "question": "卒業見込の単位確認を頼んだわけではなく、演習中心の二週間計画が必要",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "credit",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-053",
+    "question": "演習中心の二週間計画ではありません。対象は認定済み科目を数え直したい",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-054",
+    "question": "領収証の再発行を確認を頼んだわけではなく、扶養条件を確認してシフト相談が必要",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "tuition",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-055",
+    "question": "指定拡張子へ直したいではありません。対象は配点と締切を合わせて着手順を決める",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "assignment",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-056",
+    "question": "通学時間込みで一週間を組むを頼んだわけではなく、再履修を含むGPAの扱いが必要",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-057",
+    "question": "成績基準の継続条件ではありません。対象は新しいゼミ環境へ慣れる",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "NEGATION",
+    "negative_category": "scholarship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-058",
+    "question": "受験票を忘れた場合を頼んだわけではなく、仮締切と正式締切を分けるが必要",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "NEGATION",
+    "negative_category": "exam",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-negation-059",
+    "question": "前提科目を未修得の履修相談ではありません。対象はレポート点を含めた合格可能性",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "NEGATION",
+    "negative_category": "registration",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-000",
+    "question": "通信障害で提出できなかった文と言ったが訂正する。正しくは質問回答への返信文",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "late_submission_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-001",
+    "question": "最初の説明は違う。固有値計算を復習について聞きたい",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "toeic_plan",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-002",
+    "question": "転学部条件の公式規程と言ったが訂正する。正しくは資格勉強と選考予定を両立",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "university_policy",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-003",
+    "question": "最初の説明は違う。オンライン授業欠席の連絡について聞きたい",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "lateness_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-004",
+    "question": "短い文字数で強みを示すと言ったが訂正する。正しくは信頼区間を解釈したい",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "es_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-005",
+    "question": "最初の説明は違う。失敗経験を設問へ書くについて聞きたい",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "statistics",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-006",
+    "question": "家族事情による欠席連絡と言ったが訂正する。正しくは面談へ遅れるお詫び文",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-007",
+    "question": "最初の説明は違う。転学部条件の公式規程について聞きたい",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-008",
+    "question": "固有値計算を復習と言ったが訂正する。正しくは通学中だけで英語対策",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "math",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-009",
+    "question": "最初の説明は違う。修正版提出をお願いするメールについて聞きたい",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "professor_email",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-010",
+    "question": "ポスター発表の説明構成と言ったが訂正する。正しくは証明書手続きの案内を検索",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "presentation_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-011",
+    "question": "最初の説明は違う。選考課題の提出準備について聞きたい",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "ai_usage",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-012",
+    "question": "バス遅延で試験開始に遅れると言ったが訂正する。正しくは他学部科目の登録確認",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-013",
+    "question": "最初の説明は違う。試験会場を取り違えそうについて聞きたい",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "citation_check",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-014",
+    "question": "依存パッケージの競合エラーと言ったが訂正する。正しくは成績基準の継続条件",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-015",
+    "question": "最初の説明は違う。空き時間を曜日別に集計について聞きたい",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-016",
+    "question": "反対意見を含む構成と言ったが訂正する。正しくは課題ファイルを誤って提出した",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-017",
+    "question": "最初の説明は違う。領収証の再発行を確認について聞きたい",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-018",
+    "question": "レポート点を含めた合格可能性と言ったが訂正する。正しくは模試結果から弱点計画を作る",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "grade_simulator",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-019",
+    "question": "最初の説明は違う。選択必修の区分が足りないについて聞きたい",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "deadline_organizer",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-020",
+    "question": "学内ロッカーの利用先と言ったが訂正する。正しくは深夜勤務と授業を調整",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-021",
+    "question": "最初の説明は違う。提出可能な最低ラインから優先するについて聞きたい",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "gpa",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-022",
+    "question": "提出可能な最低ラインから優先すると言ったが訂正する。正しくは交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "assignment_priority",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-023",
+    "question": "最初の説明は違う。通学経路を変えたいについて聞きたい",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-024",
+    "question": "認定済み科目を数え直したいと言ったが訂正する。正しくは時刻付きの提出期限を管理",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-025",
+    "question": "最初の説明は違う。小テスト配点から期末必要点を出すについて聞きたい",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-026",
+    "question": "引落口座を変更したいと言ったが訂正する。正しくは誘いを断る言い方",
+    "category": "relationship",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "tuition",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-027",
+    "question": "最初の説明は違う。反対意見を含む構成について聞きたい",
+    "category": "report_outline",
+    "level1": "writing",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "assignment",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-028",
+    "question": "空き時間を曜日別に集計と言ったが訂正する。正しくは出席端末が反応しなかった",
+    "category": "attendance",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-029",
+    "question": "最初の説明は違う。入力境界値でコードが落ちるについて聞きたい",
+    "category": "programming",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "scholarship",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-030",
+    "question": "解答時間の配分を決めたいと言ったが訂正する。正しくは著者不明ページの書誌情報",
+    "category": "citation_check",
+    "level1": "writing",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "exam",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-031",
+    "question": "最初の説明は違う。教室を間違えて開始に遅れたについて聞きたい",
+    "category": "lateness",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "registration",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-032",
+    "question": "授業期間中の長期実習を検討と言ったが訂正する。正しくは講義ごとのAI許可範囲を確認",
+    "category": "ai_usage",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "internship",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-033",
+    "question": "最初の説明は違う。ポスター発表の説明構成について聞きたい",
+    "category": "presentation_outline",
+    "level1": "writing",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "faq_search",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-034",
+    "question": "修正版提出をお願いするメールと言ったが訂正する。正しくは教員へ資料閲覧をお願いする文",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "late_submission_email",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-035",
+    "question": "最初の説明は違う。数列の収束を確認について聞きたい",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "toeic_plan",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-036",
+    "question": "長期履修制度の対象確認と言ったが訂正する。正しくは内定後手続きの日程確認",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "university_policy",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-037",
+    "question": "最初の説明は違う。実習を休む連絡文について聞きたい",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "lateness_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-038",
+    "question": "研究経験をESへまとめると言ったが訂正する。正しくは外れ値を含む要約統計",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "es_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-039",
+    "question": "最初の説明は違う。短い文字数で強みを示すについて聞きたい",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "statistics",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-040",
+    "question": "オンライン授業欠席の連絡と言ったが訂正する。正しくは到着時刻未定の遅刻連絡",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-041",
+    "question": "最初の説明は違う。長期履修制度の対象確認について聞きたい",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-042",
+    "question": "数列の収束を確認と言ったが訂正する。正しくは受験二回分の学習予定",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "math",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-043",
+    "question": "最初の説明は違う。違うファイルを提出した連絡について聞きたい",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "professor_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-044",
+    "question": "三人発表の担当分けと言ったが訂正する。正しくは相談窓口一覧から探す",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "presentation_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-045",
+    "question": "最初の説明は違う。実習先へ日程を確認について聞きたい",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "ai_usage",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-046",
+    "question": "途中入室するときの対応と言ったが訂正する。正しくは前提科目を未修得の履修相談",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-047",
+    "question": "最初の説明は違う。解答時間の配分を決めたいについて聞きたい",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "citation_check",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-048",
+    "question": "入力境界値でコードが落ちると言ったが訂正する。正しくは振込停止時の確認先",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-049",
+    "question": "最初の説明は違う。通学時間込みで一週間を組むについて聞きたい",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-050",
+    "question": "比較型レポートの骨組みと言ったが訂正する。正しくは共同課題の担当が進んでいない",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-051",
+    "question": "最初の説明は違う。休学復学時の請求を確認について聞きたい",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-052",
+    "question": "評価割合から目標点を逆算と言ったが訂正する。正しくは演習中心の二週間計画",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "grade_simulator",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-053",
+    "question": "最初の説明は違う。認定済み科目を数え直したいについて聞きたい",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "deadline_organizer",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-054",
+    "question": "通学経路を変えたいと言ったが訂正する。正しくは扶養条件を確認してシフト相談",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-055",
+    "question": "最初の説明は違う。配点と締切を合わせて着手順を決めるについて聞きたい",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "gpa",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-056",
+    "question": "配点と締切を合わせて着手順を決めると言ったが訂正する。正しくは再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "assignment_priority",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-057",
+    "question": "最初の説明は違う。新しいゼミ環境へ慣れるについて聞きたい",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-058",
+    "question": "卒業見込の単位確認と言ったが訂正する。正しくは仮締切と正式締切を分ける",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-correction-059",
+    "question": "最初の説明は違う。レポート点を含めた合格可能性について聞きたい",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "CORRECTION",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-000",
+    "question": "家族事情による欠席連絡との比較ではなく、焦点は質問回答への返信文",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-001",
+    "question": "内定後手続きの日程確認より優先したいのは固有値計算を復習",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-002",
+    "question": "固有値計算を復習との比較ではなく、焦点は資格勉強と選考予定を両立",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "math",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-003",
+    "question": "オフィスアワー予約の連絡より優先したいのはオンライン授業欠席の連絡",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "professor_email",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-004",
+    "question": "ポスター発表の説明構成との比較ではなく、焦点は信頼区間を解釈したい",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "presentation_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-005",
+    "question": "AI生成部分の申告方法より優先したいのは失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "ai_usage",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-006",
+    "question": "バス遅延で試験開始に遅れるとの比較ではなく、焦点は面談へ遅れるお詫び文",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-007",
+    "question": "著者不明ページの書誌情報より優先したいのは転学部条件の公式規程",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "citation_check",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-008",
+    "question": "依存パッケージの競合エラーとの比較ではなく、焦点は通学中だけで英語対策",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-009",
+    "question": "オンライン授業の出席記録より優先したいのは修正版提出をお願いするメール",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "attendance",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-010",
+    "question": "反対意見を含む構成との比較ではなく、焦点は証明書手続きの案内を検索",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-011",
+    "question": "共同研究で役割が偏っているより優先したいのは選考課題の提出準備",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-012",
+    "question": "レポート点を含めた合格可能性との比較ではなく、焦点は他学部科目の登録確認",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-013",
+    "question": "時刻付きの提出期限を管理より優先したいのは試験会場を取り違えそう",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "deadline_organizer",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-014",
+    "question": "学内ロッカーの利用先との比較ではなく、焦点は成績基準の継続条件",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-015",
+    "question": "再履修を含むGPAの扱いより優先したいのは空き時間を曜日別に集計",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "gpa",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-016",
+    "question": "提出可能な最低ラインから優先するとの比較ではなく、焦点は課題ファイルを誤って提出した",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "assignment_priority",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-017",
+    "question": "実習期間だけ勤務を減らすより優先したいのは領収証の再発行を確認",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-018",
+    "question": "認定済み科目を数え直したいとの比較ではなく、焦点は模試結果から弱点計画を作る",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "credit",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-019",
+    "question": "模試結果から弱点計画を作るより優先したいのは選択必修の区分が足りない",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-020",
+    "question": "引落口座を変更したいとの比較ではなく、焦点は深夜勤務と授業を調整",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "tuition",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-021",
+    "question": "共同課題の担当が進んでいないより優先したいのは提出可能な最低ラインから優先する",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "assignment",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-022",
+    "question": "空き時間を曜日別に集計との比較ではなく、焦点は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-023",
+    "question": "併給できる制度を確認より優先したいのは通学経路を変えたい",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "scholarship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-024",
+    "question": "解答時間の配分を決めたいとの比較ではなく、焦点は時刻付きの提出期限を管理",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "exam",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-025",
+    "question": "他学部科目の登録確認より優先したいのは小テスト配点から期末必要点を出す",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "registration",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-026",
+    "question": "授業期間中の長期実習を検討との比較ではなく、焦点は誘いを断る言い方",
+    "category": "relationship",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-027",
+    "question": "相談窓口一覧から探すより優先したいのは反対意見を含む構成",
+    "category": "report_outline",
+    "level1": "writing",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "faq_search",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-028",
+    "question": "修正版提出をお願いするメールとの比較ではなく、焦点は出席端末が反応しなかった",
+    "category": "attendance",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "late_submission_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-029",
+    "question": "パート別正答率から計画を作るより優先したいのは入力境界値でコードが落ちる",
+    "category": "programming",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "toeic_plan",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-030",
+    "question": "長期履修制度の対象確認との比較ではなく、焦点は著者不明ページの書誌情報",
+    "category": "citation_check",
+    "level1": "writing",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "university_policy",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-031",
+    "question": "面談へ遅れるお詫び文より優先したいのは教室を間違えて開始に遅れた",
+    "category": "lateness",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "lateness_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-032",
+    "question": "研究経験をESへまとめるとの比較ではなく、焦点は講義ごとのAI許可範囲を確認",
+    "category": "ai_usage",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "es_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-033",
+    "question": "外れ値を含む要約統計より優先したいのはポスター発表の説明構成",
+    "category": "presentation_outline",
+    "level1": "writing",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "statistics",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-034",
+    "question": "オンライン授業欠席の連絡との比較ではなく、焦点は教員へ資料閲覧をお願いする文",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "absence_email",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-035",
+    "question": "複数社の面接間隔を整理より優先したいのは数列の収束を確認",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "career_schedule",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-036",
+    "question": "数列の収束を確認との比較ではなく、焦点は内定後手続きの日程確認",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "math",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-037",
+    "question": "質問回答への返信文より優先したいのは実習を休む連絡文",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "professor_email",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-038",
+    "question": "三人発表の担当分けとの比較ではなく、焦点は外れ値を含む要約統計",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "presentation_outline",
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-039",
+    "question": "講義ごとのAI許可範囲を確認より優先したいのは短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "ai_usage",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-040",
+    "question": "途中入室するときの対応との比較ではなく、焦点は到着時刻未定の遅刻連絡",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-041",
+    "question": "図表の出典表記を確認より優先したいのは長期履修制度の対象確認",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "citation_check",
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-042",
+    "question": "入力境界値でコードが落ちるとの比較ではなく、焦点は受験二回分の学習予定",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "programming",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-043",
+    "question": "忌引きの欠席手続きより優先したいのは違うファイルを提出した連絡",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "attendance",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-044",
+    "question": "比較型レポートの骨組みとの比較ではなく、焦点は相談窓口一覧から探す",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "report_outline",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-045",
+    "question": "誘いを断る言い方より優先したいのは実習先へ日程を確認",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "relationship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-046",
+    "question": "評価割合から目標点を逆算との比較ではなく、焦点は前提科目を未修得の履修相談",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-047",
+    "question": "仮締切と正式締切を分けるより優先したいのは解答時間の配分を決めたい",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "deadline_organizer",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-048",
+    "question": "通学経路を変えたいとの比較ではなく、焦点は振込停止時の確認先",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "campus_life",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-049",
+    "question": "今後の成績で平均を上げるより優先したいのは通学時間込みで一週間を組む",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "gpa",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-050",
+    "question": "配点と締切を合わせて着手順を決めるとの比較ではなく、焦点は共同課題の担当が進んでいない",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "assignment_priority",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-051",
+    "question": "深夜勤務と授業を調整より優先したいのは休学復学時の請求を確認",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "part_time_job",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-052",
+    "question": "卒業見込の単位確認との比較ではなく、焦点は演習中心の二週間計画",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "credit",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-053",
+    "question": "演習中心の二週間計画より優先したいのは認定済み科目を数え直したい",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "study_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-054",
+    "question": "領収証の再発行を確認との比較ではなく、焦点は扶養条件を確認してシフト相談",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "tuition",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-055",
+    "question": "指定拡張子へ直したいより優先したいのは配点と締切を合わせて着手順を決める",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "assignment",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-056",
+    "question": "通学時間込みで一週間を組むとの比較ではなく、焦点は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-057",
+    "question": "成績基準の継続条件より優先したいのは新しいゼミ環境へ慣れる",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "scholarship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-058",
+    "question": "受験票を忘れた場合との比較ではなく、焦点は仮締切と正式締切を分ける",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "exam",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-contrast-059",
+    "question": "前提科目を未修得の履修相談より優先したいのはレポート点を含めた合格可能性",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "CONTRAST",
+    "negative_category": "registration",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-000",
+    "question": "受験票を忘れた場合と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "exam",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-001",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-002",
+    "question": "認定済み科目を数え直したいと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-003",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-004",
+    "question": "出席端末が反応しなかったと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-005",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-006",
+    "question": "他学部科目の登録確認と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "registration",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-007",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-008",
+    "question": "共同課題の担当が進んでいないと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "assignment",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-009",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-010",
+    "question": "小テスト配点から期末必要点を出すと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-011",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-012",
+    "question": "途中入室するときの対応と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-013",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-014",
+    "question": "解答時間の配分を決めたいと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "exam",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-015",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-016",
+    "question": "選択必修の区分が足りないと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-017",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-018",
+    "question": "忌引きの欠席手続きと似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-019",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-020",
+    "question": "集中講義を時間割へ追加と似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "registration",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-021",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-022",
+    "question": "課題ファイルを誤って提出したと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "assignment",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-023",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-024",
+    "question": "評価割合から目標点を逆算と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-025",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-026",
+    "question": "バス遅延で試験開始に遅れると似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-027",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-028",
+    "question": "試験会場を取り違えそうと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "exam",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-029",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-030",
+    "question": "卒業見込の単位確認と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-031",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-032",
+    "question": "オンライン授業の出席記録と似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-033",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-034",
+    "question": "前提科目を未修得の履修相談と似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "registration",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-035",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-036",
+    "question": "指定拡張子へ直したいと似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "assignment",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-037",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-038",
+    "question": "レポート点を含めた合格可能性と似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-039",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-040",
+    "question": "教室を間違えて開始に遅れたと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-041",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-042",
+    "question": "受験票を忘れた場合と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "exam",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-043",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-044",
+    "question": "認定済み科目を数え直したいと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-045",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-046",
+    "question": "出席端末が反応しなかったと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "attendance",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-047",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-048",
+    "question": "他学部科目の登録確認と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "registration",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-049",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-050",
+    "question": "共同課題の担当が進んでいないと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "assignment",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-051",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-052",
+    "question": "小テスト配点から期末必要点を出すと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "grade_simulator",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-053",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-054",
+    "question": "途中入室するときの対応と似ているが、分類対象は交換留学申請用のGPAを確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "lateness",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-055",
+    "question": "パート別正答率から計画を作るの語がある。ただし求める処理は失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "toeic_plan",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-056",
+    "question": "解答時間の配分を決めたいと似ているが、分類対象は今後の成績で平均を上げる",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "exam",
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-057",
+    "question": "内定後手続きの日程確認の語がある。ただし求める処理は研究経験をESへまとめる",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "career_schedule",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-058",
+    "question": "選択必修の区分が足りないと似ているが、分類対象は再履修を含むGPAの扱い",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "credit",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-collision-059",
+    "question": "選考課題の提出準備の語がある。ただし求める処理は短い文字数で強みを示す",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "CATEGORY_COLLISION",
+    "negative_category": "internship",
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-000",
+    "question": "レポート点を含めた合格可能性",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-001",
+    "question": "学生ポータルの案内場所だけ確認",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-002",
+    "question": "依存パッケージの競合エラーの手順",
+    "category": "programming",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-003",
+    "question": "成績基準の継続条件",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-004",
+    "question": "ポスター発表の説明構成だけ確認",
+    "category": "presentation_outline",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-005",
+    "question": "演習中心の二週間計画の手順",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-006",
+    "question": "家族事情による欠席連絡",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-007",
+    "question": "今後の成績で平均を上げるだけ確認",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-008",
+    "question": "転学部条件規程の手順",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-009",
+    "question": "誘いを断る言い方",
+    "category": "relationship",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-010",
+    "question": "実習先へ日程だけ確認",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-011",
+    "question": "図表の出典表記の手順",
+    "category": "citation_check",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-012",
+    "question": "朝型へ予定を移",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-013",
+    "question": "質問回答への返信文だけ確認",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-014",
+    "question": "選択必修の区分が足りないの手順",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-015",
+    "question": "外れ値を含む要約統計",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-016",
+    "question": "新しいゼミ環境へ慣れるだけ確認",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-017",
+    "question": "パート別正答率から計画をの手順",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-018",
+    "question": "調査結果を中心に章を組む",
+    "category": "report_outline",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-019",
+    "question": "他学部科目の登録確認だけ確認",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-020",
+    "question": "教室を間違えて開始に遅れたの手順",
+    "category": "lateness",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-021",
+    "question": "共同課題の担当が進んでいない",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-022",
+    "question": "ベクトル空間の証明を読むだけ確認",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-023",
+    "question": "実習期間だけ勤務を減らすの手順",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-024",
+    "question": "失敗経験を設問へ書く",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-025",
+    "question": "時刻付きの提出期限を管理だけ確認",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-026",
+    "question": "違うファイルを提出した連絡の手順",
+    "category": "late_submission_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-027",
+    "question": "オンライン授業の出席記録",
+    "category": "attendance",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-028",
+    "question": "受験票を忘れただけ確認",
+    "category": "exam",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-029",
+    "question": "AI生成部分の申告方法の手順",
+    "category": "ai_usage",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-030",
+    "question": "領収証の再発行",
+    "category": "tuition",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-031",
+    "question": "内定後手続きの日程確認だけ確認",
+    "category": "career_schedule",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-032",
+    "question": "配点と締切を合わせて着手順を決めの手順",
+    "category": "assignment_priority",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-033",
+    "question": "実験開始に遅れる連絡",
+    "category": "lateness_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-034",
+    "question": "評価割合から目標点を逆算だけ確認",
+    "category": "grade_simulator",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-035",
+    "question": "証明書手続きの案内を検索の手順",
+    "category": "faq_search",
+    "level1": "information",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-036",
+    "question": "入力境界値でコードが落ちる",
+    "category": "programming",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-037",
+    "question": "振込停止時の確認先だけ確認",
+    "category": "scholarship",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-038",
+    "question": "三人発表の担当分けの手順",
+    "category": "presentation_outline",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-039",
+    "question": "復習間隔を空けた学習予定",
+    "category": "study_plan",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-040",
+    "question": "オンライン授業欠席の連絡だけ確認",
+    "category": "absence_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-041",
+    "question": "交換留学申請用のGPAの手順",
+    "category": "gpa",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-042",
+    "question": "長期履修制度の対象確認",
+    "category": "university_policy",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-043",
+    "question": "指導時の不適切な発言を相談だけ確認",
+    "category": "relationship",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-044",
+    "question": "授業期間中の長期実習を検討の手順",
+    "category": "internship",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-045",
+    "question": "講義資料を参考文献にする",
+    "category": "citation_check",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-046",
+    "question": "空き時間を曜日別に集計だけ確認",
+    "category": "schedule",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-047",
+    "question": "教員へ資料閲覧をお願いする文の手順",
+    "category": "professor_email",
+    "level1": "communication",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-048",
+    "question": "認定済み科目を数え直",
+    "category": "credit",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-049",
+    "question": "標本サイズと検定力の関係だけ確認",
+    "category": "statistics",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-050",
+    "question": "学内ロッカーの利用先の手順",
+    "category": "campus_life",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-051",
+    "question": "通学中だけで英語対策",
+    "category": "toeic_plan",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-052",
+    "question": "反対意見を含む構成だけ確認",
+    "category": "report_outline",
+    "level1": "writing",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "TOOL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-053",
+    "question": "前提科目を未修得の履修相談の手順",
+    "category": "registration",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-054",
+    "question": "バス遅延で試験開始に遅れる",
+    "category": "lateness",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-055",
+    "question": "指定拡張子へ直だけ確認",
+    "category": "assignment",
+    "level1": "academic",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-056",
+    "question": "固有値計算を復習の手順",
+    "category": "math",
+    "level1": "skills",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "RAG+MODEL",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-057",
+    "question": "深夜勤務と授業を調整",
+    "category": "part_time_job",
+    "level1": "campus_support",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-058",
+    "question": "短い文字数で強みを示すだけ確認",
+    "category": "es_outline",
+    "level1": "career",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  },
+  {
+    "id": "campus-v21-validation-short-059",
+    "question": "仮締切と正式締切を分けるの手順",
+    "category": "deadline_organizer",
+    "level1": "planning",
+    "adversarial_type": "SHORT_BUT_CLEAR",
+    "negative_category": null,
+    "expected_action": "FAQ",
+    "dataset_version": "unipilot-campus-v21-adversarial-validation"
+  }
+]

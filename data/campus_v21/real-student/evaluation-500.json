@@ -1,0 +1,7102 @@
+[
+  {
+    "id": "campus-v21-real-short-000",
+    "prompt": "選択必修の区分が足りない",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-001",
+    "prompt": "応募と課題の期限を一表にする",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-002",
+    "prompt": "処理速度を測って改善する",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-003",
+    "prompt": "教室を間違えて開始に遅れた",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-004",
+    "prompt": "資格勉強と選考予定を両立",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-005",
+    "prompt": "試験受験資格の公式条文",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-006",
+    "prompt": "違うファイルを提出した連絡",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-007",
+    "prompt": "成績基準の継続条件",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-008",
+    "prompt": "指定拡張子へ直",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-009",
+    "prompt": "配点と締切を合わせて着手順を決める",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-010",
+    "prompt": "誘いを断る言い方",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-011",
+    "prompt": "忌引きの欠席手続き",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-012",
+    "prompt": "三人発表の担当分け",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-013",
+    "prompt": "外れ値を含む要約統計",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-014",
+    "prompt": "面談へ遅れるお詫び文",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-015",
+    "prompt": "授業期間中の長期実習を検討",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-016",
+    "prompt": "解答時間の配分を決めたい",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-017",
+    "prompt": "模試結果から弱点計画を作る",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-018",
+    "prompt": "学内ロッカーの利用先",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-019",
+    "prompt": "レポート点を含めた合格可能性",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-020",
+    "prompt": "著者不明ページの書誌情報",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-021",
+    "prompt": "固有値計算を復習",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-022",
+    "prompt": "家族事情による欠席連絡",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-023",
+    "prompt": "受験二回分の学習予定",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-024",
+    "prompt": "学期途中で目標を見直",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "CLARIFY",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-025",
+    "prompt": "朝型へ予定を移",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-026",
+    "prompt": "扶養条件してシフト相談",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-027",
+    "prompt": "交換留学申請用のGPA",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-028",
+    "prompt": "調査結果を中心に章を組む",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-029",
+    "prompt": "AI回答の根拠を検証する",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-030",
+    "prompt": "教員へ資料閲覧をお願いする文",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-031",
+    "prompt": "失敗経験を設問へ書く",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-032",
+    "prompt": "学生ポータルの案内場所",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-033",
+    "prompt": "前提科目を未修得の履修相談",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-034",
+    "prompt": "領収証の再発行",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-035",
+    "prompt": "卒業見込の単位確認",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-036",
+    "prompt": "仮締切と正式締切を分ける",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-037",
+    "prompt": "入力境界値でコードが落ちる",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-038",
+    "prompt": "途中入室するときの対応",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-039",
+    "prompt": "複数社の面接間隔を整理",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-040",
+    "prompt": "長期履修制度の対象確認",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-041",
+    "prompt": "修正版提出をお願いするメール",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-042",
+    "prompt": "併給できる制度",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-043",
+    "prompt": "共同課題の担当が進んでいない",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-044",
+    "prompt": "提出可能な最低ラインから優先する",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-045",
+    "prompt": "共同研究で役割が偏っている",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-046",
+    "prompt": "オンライン授業の出席記録",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-047",
+    "prompt": "ポスター発表の説明構成",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-048",
+    "prompt": "信頼区間を解釈",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-049",
+    "prompt": "実験開始に遅れる連絡",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-050",
+    "prompt": "実習先へ日程",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-051",
+    "prompt": "試験会場を取り違えそう",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-052",
+    "prompt": "復習間隔を空けた学習予定",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-053",
+    "prompt": "新しいゼミ環境へ慣れる",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-054",
+    "prompt": "小テスト配点から期末必要点を出す",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-055",
+    "prompt": "講義資料を参考文献にする",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-056",
+    "prompt": "ベクトル空間の証明を読む",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-057",
+    "prompt": "実習を休む連絡文",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-058",
+    "prompt": "通学中だけで英語対策",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-059",
+    "prompt": "相談内容の優先度を決めたい",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "CLARIFY",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-060",
+    "prompt": "通学時間込みで一週間を組む",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-061",
+    "prompt": "深夜勤務と授業を調整",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-062",
+    "prompt": "今後の成績で平均を上げる",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-063",
+    "prompt": "比較型レポートの骨組み",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-064",
+    "prompt": "講義ごとのAI許可範囲",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-065",
+    "prompt": "質問回答への返信文",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-066",
+    "prompt": "研究経験をESへまとめる",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-067",
+    "prompt": "相談窓口一覧から探す",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-068",
+    "prompt": "他学部科目の登録確認",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-069",
+    "prompt": "引落口座を変更",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-070",
+    "prompt": "認定済み科目を数え直",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-071",
+    "prompt": "時刻付きの提出期限を管理",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-072",
+    "prompt": "依存パッケージの競合エラー",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-073",
+    "prompt": "バス遅延で試験開始に遅れる",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-074",
+    "prompt": "内定後手続きの日程確認",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-075",
+    "prompt": "転学部条件の公式規程",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-076",
+    "prompt": "通信障害で提出できなかった文",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-077",
+    "prompt": "振込停止時の確認先",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-078",
+    "prompt": "課題ファイルを誤って提出した",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-079",
+    "prompt": "共同課題を含む作業順",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-080",
+    "prompt": "指導時の不適切な発言を相談",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-081",
+    "prompt": "出席端末が反応しなかった",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-082",
+    "prompt": "デモを含む発表順",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-083",
+    "prompt": "標本サイズと検定力の関係",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-084",
+    "prompt": "到着時刻未定の遅刻連絡",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-085",
+    "prompt": "選考課題の提出準備",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-086",
+    "prompt": "受験票を忘れた場合",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-087",
+    "prompt": "演習中心の二週間計画",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-088",
+    "prompt": "通学経路を変えたい",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-089",
+    "prompt": "評価割合から目標点を逆算",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-090",
+    "prompt": "図表の出典表記",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-091",
+    "prompt": "数列の収束",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-092",
+    "prompt": "オンライン授業欠席の連絡",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-093",
+    "prompt": "パート別正答率から計画を作る",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-094",
+    "prompt": "複数の悩みを整理",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "CLARIFY",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-095",
+    "prompt": "空き時間を曜日別に集計",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-096",
+    "prompt": "実習期間だけ勤務を減らす",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-097",
+    "prompt": "再履修を含むGPAの扱い",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-098",
+    "prompt": "反対意見を含む構成",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-short-099",
+    "prompt": "AI生成部分の申告方法",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "very_short",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-000",
+    "prompt": "小テスト配点から期末必要点を出すの実際の進め方なんだけど、いま何すればいいん",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-001",
+    "prompt": "通学中だけで英語対策の実際の進め方なんだけど、いま何すればいいん",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-002",
+    "prompt": "今後の成績で平均を上げるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-003",
+    "prompt": "研究経験をESへまとめるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-004",
+    "prompt": "認定済み科目を数え直したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-005",
+    "prompt": "内定後手続きの日程確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-006",
+    "prompt": "課題ファイルを誤って提出したの実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-007",
+    "prompt": "デモを含む発表順の実際の進め方なんだけど、いま何すればいいん",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-008",
+    "prompt": "受験票を忘れた場合の実際の進め方なんだけど、いま何すればいいん",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-009",
+    "prompt": "図表の出典表記を確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-010",
+    "prompt": "複数の悩みを整理したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-011",
+    "prompt": "反対意見を含む構成の実際の進め方なんだけど、いま何すればいいん",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-012",
+    "prompt": "証明書手続きの案内を検索の実際の進め方なんだけど、いま何すればいいん",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-013",
+    "prompt": "応募と課題の期限を一表にするの実際の進め方なんだけど、いま何すればいいん",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-014",
+    "prompt": "試験受験資格の公式条文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-015",
+    "prompt": "配点と締切を合わせて着手順を決めるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-016",
+    "prompt": "外れ値を含む要約統計の実際の進め方なんだけど、いま何すればいいん",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-017",
+    "prompt": "模試結果から弱点計画を作るの実際の進め方なんだけど、いま何すればいいん",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-018",
+    "prompt": "固有値計算を復習の実際の進め方なんだけど、いま何すればいいん",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-019",
+    "prompt": "朝型へ予定を移したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-020",
+    "prompt": "AI回答の根拠を検証するの実際の進め方なんだけど、いま何すればいいん",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-021",
+    "prompt": "前提科目を未修得の履修相談の実際の進め方なんだけど、いま何すればいいん",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-022",
+    "prompt": "入力境界値でコードが落ちるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-023",
+    "prompt": "修正版提出をお願いするメールの実際の進め方なんだけど、いま何すればいいん",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-024",
+    "prompt": "共同研究で役割が偏っているの実際の進め方なんだけど、いま何すればいいん",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-025",
+    "prompt": "実験開始に遅れる連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-026",
+    "prompt": "新しいゼミ環境へ慣れるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-027",
+    "prompt": "実習を休む連絡文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-028",
+    "prompt": "深夜勤務と授業を調整の実際の進め方なんだけど、いま何すればいいん",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-029",
+    "prompt": "質問回答への返信文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-030",
+    "prompt": "引落口座を変更したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-031",
+    "prompt": "バス遅延で試験開始に遅れるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-032",
+    "prompt": "振込停止時の確認先の実際の進め方なんだけど、いま何すればいいん",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-033",
+    "prompt": "出席端末が反応しなかったの実際の進め方なんだけど、いま何すればいいん",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-034",
+    "prompt": "選考課題の提出準備の実際の進め方なんだけど、いま何すればいいん",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-035",
+    "prompt": "評価割合から目標点を逆算の実際の進め方なんだけど、いま何すればいいん",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-036",
+    "prompt": "パート別正答率から計画を作るの実際の進め方なんだけど、いま何すればいいん",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-037",
+    "prompt": "再履修を含むGPAの扱いの実際の進め方なんだけど、いま何すればいいん",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-038",
+    "prompt": "短い文字数で強みを示すの実際の進め方なんだけど、いま何すればいいん",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-039",
+    "prompt": "選択必修の区分が足りないの実際の進め方なんだけど、いま何すればいいん",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-040",
+    "prompt": "資格勉強と選考予定を両立の実際の進め方なんだけど、いま何すればいいん",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-041",
+    "prompt": "指定拡張子へ直したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-042",
+    "prompt": "三人発表の担当分けの実際の進め方なんだけど、いま何すればいいん",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-043",
+    "prompt": "解答時間の配分を決めたいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-044",
+    "prompt": "著者不明ページの書誌情報の実際の進め方なんだけど、いま何すればいいん",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-045",
+    "prompt": "学期途中で目標を見直したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-046",
+    "prompt": "調査結果を中心に章を組むの実際の進め方なんだけど、いま何すればいいん",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-047",
+    "prompt": "学生ポータルの案内場所の実際の進め方なんだけど、いま何すればいいん",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-048",
+    "prompt": "仮締切と正式締切を分けるの実際の進め方なんだけど、いま何すればいいん",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-049",
+    "prompt": "長期履修制度の対象確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-050",
+    "prompt": "提出可能な最低ラインから優先するの実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-051",
+    "prompt": "信頼区間を解釈したいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-052",
+    "prompt": "復習間隔を空けた学習予定の実際の進め方なんだけど、いま何すればいいん",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-053",
+    "prompt": "ベクトル空間の証明を読むの実際の進め方なんだけど、いま何すればいいん",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-054",
+    "prompt": "通学時間込みで一週間を組むの実際の進め方なんだけど、いま何すればいいん",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-055",
+    "prompt": "講義ごとのAI許可範囲を確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-056",
+    "prompt": "他学部科目の登録確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-057",
+    "prompt": "依存パッケージの競合エラーの実際の進め方なんだけど、いま何すればいいん",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-058",
+    "prompt": "通信障害で提出できなかった文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-059",
+    "prompt": "指導時の不適切な発言を相談の実際の進め方なんだけど、いま何すればいいん",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-060",
+    "prompt": "到着時刻未定の遅刻連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-061",
+    "prompt": "通学経路を変えたいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-062",
+    "prompt": "オンライン授業欠席の連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-063",
+    "prompt": "実習期間だけ勤務を減らすの実際の進め方なんだけど、いま何すればいいん",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-064",
+    "prompt": "オフィスアワー予約の連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-065",
+    "prompt": "休学復学時の請求を確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-066",
+    "prompt": "教室を間違えて開始に遅れたの実際の進め方なんだけど、いま何すればいいん",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-067",
+    "prompt": "成績基準の継続条件の実際の進め方なんだけど、いま何すればいいん",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-068",
+    "prompt": "忌引きの欠席手続きの実際の進め方なんだけど、いま何すればいいん",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-069",
+    "prompt": "授業期間中の長期実習を検討の実際の進め方なんだけど、いま何すればいいん",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-070",
+    "prompt": "レポート点を含めた合格可能性の実際の進め方なんだけど、いま何すればいいん",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-071",
+    "prompt": "受験二回分の学習予定の実際の進め方なんだけど、いま何すればいいん",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-072",
+    "prompt": "交換留学申請用のGPAを確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-073",
+    "prompt": "失敗経験を設問へ書くの実際の進め方なんだけど、いま何すればいいん",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-074",
+    "prompt": "卒業見込の単位確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-075",
+    "prompt": "複数社の面接間隔を整理の実際の進め方なんだけど、いま何すればいいん",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-076",
+    "prompt": "共同課題の担当が進んでいないの実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-077",
+    "prompt": "ポスター発表の説明構成の実際の進め方なんだけど、いま何すればいいん",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-078",
+    "prompt": "試験会場を取り違えそうの実際の進め方なんだけど、いま何すればいいん",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-079",
+    "prompt": "講義資料を参考文献にするの実際の進め方なんだけど、いま何すればいいん",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-080",
+    "prompt": "相談内容の優先度を決めたいの実際の進め方なんだけど、いま何すればいいん",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-081",
+    "prompt": "比較型レポートの骨組みの実際の進め方なんだけど、いま何すればいいん",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-082",
+    "prompt": "相談窓口一覧から探すの実際の進め方なんだけど、いま何すればいいん",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-083",
+    "prompt": "時刻付きの提出期限を管理の実際の進め方なんだけど、いま何すればいいん",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-084",
+    "prompt": "転学部条件の公式規程の実際の進め方なんだけど、いま何すればいいん",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-085",
+    "prompt": "共同課題を含む作業順の実際の進め方なんだけど、いま何すればいいん",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-086",
+    "prompt": "標本サイズと検定力の関係の実際の進め方なんだけど、いま何すればいいん",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-087",
+    "prompt": "演習中心の二週間計画の実際の進め方なんだけど、いま何すればいいん",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-088",
+    "prompt": "数列の収束を確認の実際の進め方なんだけど、いま何すればいいん",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-089",
+    "prompt": "空き時間を曜日別に集計の実際の進め方なんだけど、いま何すればいいん",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-090",
+    "prompt": "AI生成部分の申告方法の実際の進め方なんだけど、いま何すればいいん",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-091",
+    "prompt": "集中講義を時間割へ追加の実際の進め方なんだけど、いま何すればいいん",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-092",
+    "prompt": "処理速度を測って改善するの実際の進め方なんだけど、いま何すればいいん",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-093",
+    "prompt": "違うファイルを提出した連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-094",
+    "prompt": "誘いを断る言い方の実際の進め方なんだけど、いま何すればいいん",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-095",
+    "prompt": "面談へ遅れるお詫び文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-096",
+    "prompt": "学内ロッカーの利用先の実際の進め方なんだけど、いま何すればいいん",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-097",
+    "prompt": "家族事情による欠席連絡の実際の進め方なんだけど、いま何すればいいん",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-098",
+    "prompt": "扶養条件を確認してシフト相談の実際の進め方なんだけど、いま何すればいいん",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-colloquial-099",
+    "prompt": "教員へ資料閲覧をお願いする文の実際の進め方なんだけど、いま何すればいいん",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "colloquial",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-000",
+    "prompt": "課題ファイルを誤って提出したの実際の進め方じゃない、家族事情による欠席連絡の実際の進め方の方",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-001",
+    "prompt": "バス遅延で試験開始に遅れるの実際の進め方じゃない、標本サイズと検定力の関係の実際の進め方の方",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-002",
+    "prompt": "他学部科目の登録確認の実際の進め方じゃない、研究経験をESへまとめるの実際の進め方の方",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-003",
+    "prompt": "比較型レポートの骨組みの実際の進め方じゃない、実験開始に遅れる連絡の実際の進め方の方",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-004",
+    "prompt": "通学中だけで英語対策の実際の進め方じゃない、試験受験資格の公式条文の実際の進め方の方",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-005",
+    "prompt": "新しいゼミ環境へ慣れるの実際の進め方じゃない、パート別正答率から計画を作るの実際の進め方の方",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-006",
+    "prompt": "信頼区間を解釈したいの実際の進め方じゃない、通信障害で提出できなかった文の実際の進め方の方",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-007",
+    "prompt": "認定済み科目を数え直したいの実際の進め方じゃない、学生ポータルの案内場所の実際の進め方の方",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-008",
+    "prompt": "質問回答への返信文の実際の進め方じゃない、授業期間中の長期実習を検討の実際の進め方の方",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-009",
+    "prompt": "通学時間込みで一週間を組むの実際の進め方じゃない、集中講義を時間割へ追加の実際の進め方の方",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-010",
+    "prompt": "講義資料を参考文献にするの実際の進め方じゃない、受験票を忘れた場合の実際の進め方の方",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-011",
+    "prompt": "実習先へ日程を確認の実際の進め方じゃない、併給できる制度を確認の実際の進め方の方",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-012",
+    "prompt": "共同研究で役割が偏っているの実際の進め方じゃない、朝型へ予定を移したいの実際の進め方の方",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-013",
+    "prompt": "長期履修制度の対象確認の実際の進め方じゃない、指定拡張子へ直したいの実際の進め方の方",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-014",
+    "prompt": "今後の成績で平均を上げるの実際の進め方じゃない、引落口座を変更したいの実際の進め方の方",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-015",
+    "prompt": "実習を休む連絡文の実際の進め方じゃない、復習間隔を空けた学習予定の実際の進め方の方",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-016",
+    "prompt": "復習間隔を空けた学習予定の実際の進め方じゃない、卒業見込の単位確認の実際の進め方の方",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-017",
+    "prompt": "ポスター発表の説明構成の実際の進め方じゃない、実習期間だけ勤務を減らすの実際の進め方の方",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-018",
+    "prompt": "併給できる制度を確認の実際の進め方じゃない、共同課題を含む作業順の実際の進め方の方",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-019",
+    "prompt": "入力境界値でコードが落ちるの実際の進め方じゃない、今後の成績で平均を上げるの実際の進め方の方",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-020",
+    "prompt": "学生ポータルの案内場所の実際の進め方じゃない、学内ロッカーの利用先の実際の進め方の方",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-021",
+    "prompt": "小テスト配点から期末必要点を出すの実際の進め方じゃない、応募と課題の期限を一表にするの実際の進め方の方",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-022",
+    "prompt": "実験開始に遅れる連絡の実際の進め方じゃない、評価割合から目標点を逆算の実際の進め方の方",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-023",
+    "prompt": "提出可能な最低ラインから優先するの実際の進め方じゃない、共同研究で役割が偏っているの実際の進め方の方",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-024",
+    "prompt": "複数社の面接間隔を整理の実際の進め方じゃない、調査結果を中心に章を組むの実際の進め方の方",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-025",
+    "prompt": "領収証の再発行を確認の実際の進め方じゃない、忌引きの欠席手続きの実際の進め方の方",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-026",
+    "prompt": "AI回答の根拠を検証するの実際の進め方じゃない、依存パッケージの競合エラーの実際の進め方の方",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-027",
+    "prompt": "試験会場を取り違えそうの実際の進め方じゃない、講義資料を参考文献にするの実際の進め方の方",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-028",
+    "prompt": "オンライン授業の出席記録の実際の進め方じゃない、途中入室するときの対応の実際の進め方の方",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-029",
+    "prompt": "修正版提出をお願いするメールの実際の進め方じゃない、AI生成部分の申告方法の実際の進め方の方",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-030",
+    "prompt": "仮締切と正式締切を分けるの実際の進め方じゃない、デモを含む発表順の実際の進め方の方",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-031",
+    "prompt": "失敗経験を設問へ書くの実際の進め方じゃない、質問回答への返信文の実際の進め方の方",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-032",
+    "prompt": "扶養条件を確認してシフト相談の実際の進め方じゃない、固有値計算を復習の実際の進め方の方",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-033",
+    "prompt": "固有値計算を復習の実際の進め方じゃない、資格勉強と選考予定を両立の実際の進め方の方",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-034",
+    "prompt": "共同課題の担当が進んでいないの実際の進め方じゃない、オンライン授業欠席の連絡の実際の進め方の方",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-035",
+    "prompt": "途中入室するときの対応の実際の進め方じゃない、信頼区間を解釈したいの実際の進め方の方",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-036",
+    "prompt": "前提科目を未修得の履修相談の実際の進め方じゃない、失敗経験を設問へ書くの実際の進め方の方",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-037",
+    "prompt": "調査結果を中心に章を組むの実際の進め方じゃない、面談へ遅れるお詫び文の実際の進め方の方",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-038",
+    "prompt": "受験二回分の学習予定の実際の進め方じゃない、転学部条件の公式規程の実際の進め方の方",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-039",
+    "prompt": "学内ロッカーの利用先の実際の進め方じゃない、通学中だけで英語対策の実際の進め方の方",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-040",
+    "prompt": "外れ値を含む要約統計の実際の進め方じゃない、修正版提出をお願いするメールの実際の進め方の方",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-041",
+    "prompt": "卒業見込の単位確認の実際の進め方じゃない、証明書手続きの案内を検索の実際の進め方の方",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-042",
+    "prompt": "教員へ資料閲覧をお願いする文の実際の進め方じゃない、選考課題の提出準備の実際の進め方の方",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-043",
+    "prompt": "朝型へ予定を移したいの実際の進め方じゃない、他学部科目の登録確認の実際の進め方の方",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-044",
+    "prompt": "著者不明ページの書誌情報の実際の進め方じゃない、試験会場を取り違えそうの実際の進め方の方",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-045",
+    "prompt": "授業期間中の長期実習を検討の実際の進め方じゃない、成績基準の継続条件の実際の進め方の方",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-046",
+    "prompt": "誘いを断る言い方の実際の進め方じゃない、空き時間を曜日別に集計の実際の進め方の方",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-047",
+    "prompt": "試験受験資格の公式条文の実際の進め方じゃない、課題ファイルを誤って提出したの実際の進め方の方",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-048",
+    "prompt": "交換留学申請用のGPAを確認の実際の進め方じゃない、領収証の再発行を確認の実際の進め方の方",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-049",
+    "prompt": "家族事情による欠席連絡の実際の進め方じゃない、模試結果から弱点計画を作るの実際の進め方の方",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-050",
+    "prompt": "模試結果から弱点計画を作るの実際の進め方じゃない、選択必修の区分が足りないの実際の進め方の方",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-051",
+    "prompt": "三人発表の担当分けの実際の進め方じゃない、深夜勤務と授業を調整の実際の進め方の方",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-052",
+    "prompt": "成績基準の継続条件の実際の進め方じゃない、提出可能な最低ラインから優先するの実際の進め方の方",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-053",
+    "prompt": "処理速度を測って改善するの実際の進め方じゃない、交換留学申請用のGPAを確認の実際の進め方の方",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-054",
+    "prompt": "証明書手続きの案内を検索の実際の進め方じゃない、通学経路を変えたいの実際の進め方の方",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-055",
+    "prompt": "レポート点を含めた合格可能性の実際の進め方じゃない、時刻付きの提出期限を管理の実際の進め方の方",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-056",
+    "prompt": "面談へ遅れるお詫び文の実際の進め方じゃない、小テスト配点から期末必要点を出すの実際の進め方の方",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-057",
+    "prompt": "配点と締切を合わせて着手順を決めるの実際の進め方じゃない、誘いを断る言い方の実際の進め方の方",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-058",
+    "prompt": "資格勉強と選考予定を両立の実際の進め方じゃない、反対意見を含む構成の実際の進め方の方",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-059",
+    "prompt": "休学復学時の請求を確認の実際の進め方じゃない、出席端末が反応しなかったの実際の進め方の方",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-060",
+    "prompt": "AI生成部分の申告方法の実際の進め方じゃない、入力境界値でコードが落ちるの実際の進め方の方",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-061",
+    "prompt": "解答時間の配分を決めたいの実際の進め方じゃない、著者不明ページの書誌情報の実際の進め方の方",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-062",
+    "prompt": "忌引きの欠席手続きの実際の進め方じゃない、教室を間違えて開始に遅れたの実際の進め方の方",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-063",
+    "prompt": "違うファイルを提出した連絡の実際の進め方じゃない、講義ごとのAI許可範囲を確認の実際の進め方の方",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-064",
+    "prompt": "応募と課題の期限を一表にするの実際の進め方じゃない、ポスター発表の説明構成の実際の進め方の方",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-065",
+    "prompt": "短い文字数で強みを示すの実際の進め方じゃない、教員へ資料閲覧をお願いする文の実際の進め方の方",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-066",
+    "prompt": "実習期間だけ勤務を減らすの実際の進め方じゃない、数列の収束を確認の実際の進め方の方",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-067",
+    "prompt": "数列の収束を確認の実際の進め方じゃない、内定後手続きの日程確認の実際の進め方の方",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-068",
+    "prompt": "指定拡張子へ直したいの実際の進め方じゃない、実習を休む連絡文の実際の進め方の方",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-069",
+    "prompt": "教室を間違えて開始に遅れたの実際の進め方じゃない、外れ値を含む要約統計の実際の進め方の方",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-070",
+    "prompt": "集中講義を時間割へ追加の実際の進め方じゃない、短い文字数で強みを示すの実際の進め方の方",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-071",
+    "prompt": "反対意見を含む構成の実際の進め方じゃない、到着時刻未定の遅刻連絡の実際の進め方の方",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-072",
+    "prompt": "パート別正答率から計画を作るの実際の進め方じゃない、長期履修制度の対象確認の実際の進め方の方",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-073",
+    "prompt": "通学経路を変えたいの実際の進め方じゃない、受験二回分の学習予定の実際の進め方の方",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-074",
+    "prompt": "標本サイズと検定力の関係の実際の進め方じゃない、違うファイルを提出した連絡の実際の進め方の方",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-075",
+    "prompt": "選択必修の区分が足りないの実際の進め方じゃない、相談窓口一覧から探すの実際の進め方の方",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-076",
+    "prompt": "オフィスアワー予約の連絡の実際の進め方じゃない、実習先へ日程を確認の実際の進め方の方",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-077",
+    "prompt": "空き時間を曜日別に集計の実際の進め方じゃない、前提科目を未修得の履修相談の実際の進め方の方",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-078",
+    "prompt": "図表の出典表記を確認の実際の進め方じゃない、解答時間の配分を決めたいの実際の進め方の方",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-079",
+    "prompt": "選考課題の提出準備の実際の進め方じゃない、振込停止時の確認先の実際の進め方の方",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-080",
+    "prompt": "指導時の不適切な発言を相談の実際の進め方じゃない、通学時間込みで一週間を組むの実際の進め方の方",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-081",
+    "prompt": "転学部条件の公式規程の実際の進め方じゃない、共同課題の担当が進んでいないの実際の進め方の方",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-082",
+    "prompt": "再履修を含むGPAの扱いの実際の進め方じゃない、休学復学時の請求を確認の実際の進め方の方",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-083",
+    "prompt": "オンライン授業欠席の連絡の実際の進め方じゃない、演習中心の二週間計画の実際の進め方の方",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-084",
+    "prompt": "演習中心の二週間計画の実際の進め方じゃない、認定済み科目を数え直したいの実際の進め方の方",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-085",
+    "prompt": "デモを含む発表順の実際の進め方じゃない、扶養条件を確認してシフト相談の実際の進め方の方",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-086",
+    "prompt": "振込停止時の確認先の実際の進め方じゃない、配点と締切を合わせて着手順を決めるの実際の進め方の方",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-087",
+    "prompt": "依存パッケージの競合エラーの実際の進め方じゃない、再履修を含むGPAの扱いの実際の進め方の方",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-088",
+    "prompt": "相談窓口一覧から探すの実際の進め方じゃない、新しいゼミ環境へ慣れるの実際の進め方の方",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-089",
+    "prompt": "評価割合から目標点を逆算の実際の進め方じゃない、仮締切と正式締切を分けるの実際の進め方の方",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-090",
+    "prompt": "到着時刻未定の遅刻連絡の実際の進め方じゃない、レポート点を含めた合格可能性の実際の進め方の方",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-091",
+    "prompt": "共同課題を含む作業順の実際の進め方じゃない、指導時の不適切な発言を相談の実際の進め方の方",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-092",
+    "prompt": "内定後手続きの日程確認の実際の進め方じゃない、比較型レポートの骨組みの実際の進め方の方",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-093",
+    "prompt": "引落口座を変更したいの実際の進め方じゃない、オンライン授業の出席記録の実際の進め方の方",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-094",
+    "prompt": "講義ごとのAI許可範囲を確認の実際の進め方じゃない、処理速度を測って改善するの実際の進め方の方",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-095",
+    "prompt": "受験票を忘れた場合の実際の進め方じゃない、図表の出典表記を確認の実際の進め方の方",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-096",
+    "prompt": "出席端末が反応しなかったの実際の進め方じゃない、バス遅延で試験開始に遅れるの実際の進め方の方",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-097",
+    "prompt": "通信障害で提出できなかった文の実際の進め方じゃない、AI回答の根拠を検証するの実際の進め方の方",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-098",
+    "prompt": "時刻付きの提出期限を管理の実際の進め方じゃない、三人発表の担当分けの実際の進め方の方",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-correction-099",
+    "prompt": "研究経験をESへまとめるの実際の進め方じゃない、オフィスアワー予約の連絡の実際の進め方の方",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "correction",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-000",
+    "prompt": "教室を間違えて開始に遅れたの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-001",
+    "prompt": "深夜勤務と授業を調整の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-002",
+    "prompt": "面談へ遅れるお詫び文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-003",
+    "prompt": "依存パッケージの競合エラーの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-004",
+    "prompt": "朝型へ予定を移したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-005",
+    "prompt": "標本サイズと検定力の関係の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-006",
+    "prompt": "仮締切と正式締切を分けるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-007",
+    "prompt": "複数の悩みを整理したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-008",
+    "prompt": "ポスター発表の説明構成の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-009",
+    "prompt": "選択必修の区分が足りないの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-010",
+    "prompt": "通学中だけで英語対策の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-011",
+    "prompt": "忌引きの欠席手続きの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-012",
+    "prompt": "引落口座を変更したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-013",
+    "prompt": "家族事情による欠席連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-014",
+    "prompt": "指導時の不適切な発言を相談の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-015",
+    "prompt": "前提科目を未修得の履修相談の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-016",
+    "prompt": "数列の収束を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-017",
+    "prompt": "提出可能な最低ラインから優先するの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-018",
+    "prompt": "証明書手続きの案内を検索の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-019",
+    "prompt": "講義資料を参考文献にするの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-020",
+    "prompt": "指定拡張子へ直したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-021",
+    "prompt": "研究経験をESへまとめるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-022",
+    "prompt": "レポート点を含めた合格可能性の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-023",
+    "prompt": "振込停止時の確認先の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-024",
+    "prompt": "教員へ資料閲覧をお願いする文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-025",
+    "prompt": "通学経路を変えたいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-026",
+    "prompt": "修正版提出をお願いするメールの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-027",
+    "prompt": "AI生成部分の申告方法の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-028",
+    "prompt": "復習間隔を空けた学習予定の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-029",
+    "prompt": "試験受験資格の公式条文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-030",
+    "prompt": "比較型レポートの骨組みの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-031",
+    "prompt": "解答時間の配分を決めたいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-032",
+    "prompt": "内定後手続きの日程確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-033",
+    "prompt": "交換留学申請用のGPAを確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-034",
+    "prompt": "選考課題の提出準備の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-035",
+    "prompt": "途中入室するときの対応の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-036",
+    "prompt": "実習期間だけ勤務を減らすの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-037",
+    "prompt": "実験開始に遅れる連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-038",
+    "prompt": "処理速度を測って改善するの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-039",
+    "prompt": "通学時間込みで一週間を組むの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-040",
+    "prompt": "外れ値を含む要約統計の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-041",
+    "prompt": "時刻付きの提出期限を管理の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-042",
+    "prompt": "学期途中で目標を見直したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-043",
+    "prompt": "デモを含む発表順の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-044",
+    "prompt": "卒業見込の単位確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-045",
+    "prompt": "パート別正答率から計画を作るの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-046",
+    "prompt": "オンライン授業の出席記録の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-047",
+    "prompt": "休学復学時の請求を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-048",
+    "prompt": "実習を休む連絡文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-049",
+    "prompt": "誘いを断る言い方の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-050",
+    "prompt": "他学部科目の登録確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-051",
+    "prompt": "固有値計算を復習の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-052",
+    "prompt": "共同課題を含む作業順の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-053",
+    "prompt": "学生ポータルの案内場所の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-054",
+    "prompt": "図表の出典表記を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-055",
+    "prompt": "共同課題の担当が進んでいないの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-056",
+    "prompt": "短い文字数で強みを示すの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-057",
+    "prompt": "小テスト配点から期末必要点を出すの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-058",
+    "prompt": "成績基準の継続条件の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-059",
+    "prompt": "質問回答への返信文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-060",
+    "prompt": "学内ロッカーの利用先の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-061",
+    "prompt": "通信障害で提出できなかった文の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-062",
+    "prompt": "AI回答の根拠を検証するの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-063",
+    "prompt": "演習中心の二週間計画の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-064",
+    "prompt": "長期履修制度の対象確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-065",
+    "prompt": "反対意見を含む構成の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-066",
+    "prompt": "試験会場を取り違えそうの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "exam",
+    "intent_labels": [
+      "exam"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-067",
+    "prompt": "資格勉強と選考予定を両立の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-068",
+    "prompt": "今後の成績で平均を上げるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-069",
+    "prompt": "授業期間中の長期実習を検討の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "internship",
+    "intent_labels": [
+      "internship"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-070",
+    "prompt": "バス遅延で試験開始に遅れるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-071",
+    "prompt": "扶養条件を確認してシフト相談の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-072",
+    "prompt": "到着時刻未定の遅刻連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-073",
+    "prompt": "入力境界値でコードが落ちるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "programming",
+    "intent_labels": [
+      "programming"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-074",
+    "prompt": "空き時間を曜日別に集計の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-075",
+    "prompt": "信頼区間を解釈したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-076",
+    "prompt": "応募と課題の期限を一表にするの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-077",
+    "prompt": "相談内容の優先度を決めたいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "general",
+    "intent_labels": [
+      "general"
+    ],
+    "level1": "information",
+    "expected_action": "MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-078",
+    "prompt": "三人発表の担当分けの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-079",
+    "prompt": "認定済み科目を数え直したいの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "credit",
+    "intent_labels": [
+      "credit"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-080",
+    "prompt": "受験二回分の学習予定の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-081",
+    "prompt": "出席端末が反応しなかったの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-082",
+    "prompt": "領収証の再発行を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-083",
+    "prompt": "オンライン授業欠席の連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-084",
+    "prompt": "共同研究で役割が偏っているの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-085",
+    "prompt": "集中講義を時間割へ追加の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "registration",
+    "intent_labels": [
+      "registration"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-086",
+    "prompt": "ベクトル空間の証明を読むの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "math",
+    "intent_labels": [
+      "math"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-087",
+    "prompt": "配点と締切を合わせて着手順を決めるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority"
+    ],
+    "level1": "planning",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-088",
+    "prompt": "相談窓口一覧から探すの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search"
+    ],
+    "level1": "information",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-089",
+    "prompt": "著者不明ページの書誌情報の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check"
+    ],
+    "level1": "writing",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-090",
+    "prompt": "課題ファイルを誤って提出したの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-091",
+    "prompt": "失敗経験を設問へ書くの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline"
+    ],
+    "level1": "career",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-092",
+    "prompt": "評価割合から目標点を逆算の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-093",
+    "prompt": "併給できる制度を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-094",
+    "prompt": "オフィスアワー予約の連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-095",
+    "prompt": "新しいゼミ環境へ慣れるの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life"
+    ],
+    "level1": "campus_support",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-096",
+    "prompt": "違うファイルを提出した連絡の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email"
+    ],
+    "level1": "communication",
+    "expected_action": "FAQ",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-097",
+    "prompt": "講義ごとのAI許可範囲を確認の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-098",
+    "prompt": "模試結果から弱点計画を作るの実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-normal-099",
+    "prompt": "転学部条件の公式規程の実際の進め方について、必要情報と次の手順を教えてください",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG",
+    "surface_type": "normal",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-000",
+    "prompt": "交換留学申請用のGPAを確認の実際の進め方。それと、修正版提出をお願いするメールの実際の進め方も",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa",
+      "late_submission_email"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-001",
+    "prompt": "通信障害で提出できなかった文の実際の進め方。それと、出席端末が反応しなかったの実際の進め方も",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email",
+      "attendance"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-002",
+    "prompt": "著者不明ページの書誌情報の実際の進め方。それと、解答時間の配分を決めたいの実際の進め方も",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check",
+      "exam"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-003",
+    "prompt": "引落口座を変更したいの実際の進め方。それと、AI回答の根拠を検証するの実際の進め方も",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition",
+      "ai_usage"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-004",
+    "prompt": "外れ値を含む要約統計の実際の進め方。それと、引落口座を変更したいの実際の進め方も",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics",
+      "tuition"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-005",
+    "prompt": "評価割合から目標点を逆算の実際の進め方。それと、資格勉強と選考予定を両立の実際の進め方も",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator",
+      "career_schedule"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-006",
+    "prompt": "前提科目を未修得の履修相談の実際の進め方。それと、提出可能な最低ラインから優先するの実際の進め方も",
+    "category": "registration",
+    "intent_labels": [
+      "registration",
+      "assignment_priority"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-007",
+    "prompt": "デモを含む発表順の実際の進め方。それと、到着時刻未定の遅刻連絡の実際の進め方も",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline",
+      "lateness_email"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-008",
+    "prompt": "扶養条件を確認してシフト相談の実際の進め方。それと、レポート点を含めた合格可能性の実際の進め方も",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job",
+      "grade_simulator"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-009",
+    "prompt": "転学部条件の公式規程の実際の進め方。それと、学生ポータルの案内場所の実際の進め方も",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy",
+      "faq_search"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-010",
+    "prompt": "オンライン授業の出席記録の実際の進め方。それと、依存パッケージの競合エラーの実際の進め方も",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance",
+      "programming"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-011",
+    "prompt": "空き時間を曜日別に集計の実際の進め方。それと、成績基準の継続条件の実際の進め方も",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule",
+      "scholarship"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-012",
+    "prompt": "複数社の面接間隔を整理の実際の進め方。それと、ポスター発表の説明構成の実際の進め方も",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule",
+      "presentation_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-013",
+    "prompt": "通学経路を変えたいの実際の進め方。それと、演習中心の二週間計画の実際の進め方も",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life",
+      "study_plan"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-014",
+    "prompt": "学生ポータルの案内場所の実際の進め方。それと、家族事情による欠席連絡の実際の進め方も",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search",
+      "absence_email"
+    ],
+    "level1": "information",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-015",
+    "prompt": "教室を間違えて開始に遅れたの実際の進め方。それと、今後の成績で平均を上げるの実際の進め方も",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness",
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-016",
+    "prompt": "復習間隔を空けた学習予定の実際の進め方。それと、転学部条件の公式規程の実際の進め方も",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan",
+      "university_policy"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-017",
+    "prompt": "短い文字数で強みを示すの実際の進め方。それと、誘いを断る言い方の実際の進め方も",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline",
+      "relationship"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-018",
+    "prompt": "共同研究で役割が偏っているの実際の進め方。それと、実習先へ日程を確認の実際の進め方も",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship",
+      "internship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-019",
+    "prompt": "解答時間の配分を決めたいの実際の進め方。それと、図表の出典表記を確認の実際の進め方も",
+    "category": "exam",
+    "intent_labels": [
+      "exam",
+      "citation_check"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-020",
+    "prompt": "質問回答への返信文の実際の進め方。それと、朝型へ予定を移したいの実際の進め方も",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email",
+      "schedule"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-021",
+    "prompt": "配点と締切を合わせて着手順を決めるの実際の進め方。それと、質問回答への返信文の実際の進め方も",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority",
+      "professor_email"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-022",
+    "prompt": "通学中だけで英語対策の実際の進め方。それと、選択必修の区分が足りないの実際の進め方も",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan",
+      "credit"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-023",
+    "prompt": "処理速度を測って改善するの実際の進め方。それと、外れ値を含む要約統計の実際の進め方も",
+    "category": "programming",
+    "intent_labels": [
+      "programming",
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-024",
+    "prompt": "課題ファイルを誤って提出したの実際の進め方。それと、新しいゼミ環境へ慣れるの実際の進め方も",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment",
+      "campus_life"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-025",
+    "prompt": "家族事情による欠席連絡の実際の進め方。それと、パート別正答率から計画を作るの実際の進め方も",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email",
+      "toeic_plan"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-026",
+    "prompt": "時刻付きの提出期限を管理の実際の進め方。それと、調査結果を中心に章を組むの実際の進め方も",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer",
+      "report_outline"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-027",
+    "prompt": "授業期間中の長期実習を検討の実際の進め方。それと、他学部科目の登録確認の実際の進め方も",
+    "category": "internship",
+    "intent_labels": [
+      "internship",
+      "registration"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-028",
+    "prompt": "講義ごとのAI許可範囲を確認の実際の進め方。それと、教室を間違えて開始に遅れたの実際の進め方も",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage",
+      "lateness"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-029",
+    "prompt": "卒業見込の単位確認の実際の進め方。それと、共同課題の担当が進んでいないの実際の進め方も",
+    "category": "credit",
+    "intent_labels": [
+      "credit",
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-030",
+    "prompt": "到着時刻未定の遅刻連絡の実際の進め方。それと、ベクトル空間の証明を読むの実際の進め方も",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email",
+      "math"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-031",
+    "prompt": "調査結果を中心に章を組むの実際の進め方。それと、実習期間だけ勤務を減らすの実際の進め方も",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline",
+      "part_time_job"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-032",
+    "prompt": "振込停止時の確認先の実際の進め方。それと、失敗経験を設問へ書くの実際の進め方も",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship",
+      "es_outline"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-033",
+    "prompt": "固有値計算を復習の実際の進め方。それと、時刻付きの提出期限を管理の実際の進め方も",
+    "category": "math",
+    "intent_labels": [
+      "math",
+      "deadline_organizer"
+    ],
+    "level1": "skills",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-034",
+    "prompt": "再履修を含むGPAの扱いの実際の進め方。それと、違うファイルを提出した連絡の実際の進め方も",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa",
+      "late_submission_email"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-035",
+    "prompt": "修正版提出をお願いするメールの実際の進め方。それと、オンライン授業の出席記録の実際の進め方も",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email",
+      "attendance"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-036",
+    "prompt": "図表の出典表記を確認の実際の進め方。それと、受験票を忘れた場合の実際の進め方も",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check",
+      "exam"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-037",
+    "prompt": "領収証の再発行を確認の実際の進め方。それと、AI生成部分の申告方法の実際の進め方も",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition",
+      "ai_usage"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-038",
+    "prompt": "標本サイズと検定力の関係の実際の進め方。それと、領収証の再発行を確認の実際の進め方も",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics",
+      "tuition"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-039",
+    "prompt": "小テスト配点から期末必要点を出すの実際の進め方。それと、内定後手続きの日程確認の実際の進め方も",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator",
+      "career_schedule"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-040",
+    "prompt": "集中講義を時間割へ追加の実際の進め方。それと、配点と締切を合わせて着手順を決めるの実際の進め方も",
+    "category": "registration",
+    "intent_labels": [
+      "registration",
+      "assignment_priority"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-041",
+    "prompt": "ポスター発表の説明構成の実際の進め方。それと、実験開始に遅れる連絡の実際の進め方も",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline",
+      "lateness_email"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-042",
+    "prompt": "実習期間だけ勤務を減らすの実際の進め方。それと、評価割合から目標点を逆算の実際の進め方も",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job",
+      "grade_simulator"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-043",
+    "prompt": "長期履修制度の対象確認の実際の進め方。それと、証明書手続きの案内を検索の実際の進め方も",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy",
+      "faq_search"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-044",
+    "prompt": "忌引きの欠席手続きの実際の進め方。それと、入力境界値でコードが落ちるの実際の進め方も",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance",
+      "programming"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-045",
+    "prompt": "通学時間込みで一週間を組むの実際の進め方。それと、振込停止時の確認先の実際の進め方も",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule",
+      "scholarship"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-046",
+    "prompt": "資格勉強と選考予定を両立の実際の進め方。それと、三人発表の担当分けの実際の進め方も",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule",
+      "presentation_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-047",
+    "prompt": "新しいゼミ環境へ慣れるの実際の進め方。それと、復習間隔を空けた学習予定の実際の進め方も",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life",
+      "study_plan"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-048",
+    "prompt": "証明書手続きの案内を検索の実際の進め方。それと、オンライン授業欠席の連絡の実際の進め方も",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search",
+      "absence_email"
+    ],
+    "level1": "information",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-049",
+    "prompt": "バス遅延で試験開始に遅れるの実際の進め方。それと、交換留学申請用のGPAを確認の実際の進め方も",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness",
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-050",
+    "prompt": "模試結果から弱点計画を作るの実際の進め方。それと、長期履修制度の対象確認の実際の進め方も",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan",
+      "university_policy"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-051",
+    "prompt": "研究経験をESへまとめるの実際の進め方。それと、指導時の不適切な発言を相談の実際の進め方も",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline",
+      "relationship"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-052",
+    "prompt": "誘いを断る言い方の実際の進め方。それと、授業期間中の長期実習を検討の実際の進め方も",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship",
+      "internship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-053",
+    "prompt": "受験票を忘れた場合の実際の進め方。それと、講義資料を参考文献にするの実際の進め方も",
+    "category": "exam",
+    "intent_labels": [
+      "exam",
+      "citation_check"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-054",
+    "prompt": "教員へ資料閲覧をお願いする文の実際の進め方。それと、空き時間を曜日別に集計の実際の進め方も",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email",
+      "schedule"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-055",
+    "prompt": "共同課題を含む作業順の実際の進め方。それと、教員へ資料閲覧をお願いする文の実際の進め方も",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority",
+      "professor_email"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-056",
+    "prompt": "受験二回分の学習予定の実際の進め方。それと、認定済み科目を数え直したいの実際の進め方も",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan",
+      "credit"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-057",
+    "prompt": "依存パッケージの競合エラーの実際の進め方。それと、標本サイズと検定力の関係の実際の進め方も",
+    "category": "programming",
+    "intent_labels": [
+      "programming",
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-058",
+    "prompt": "共同課題の担当が進んでいないの実際の進め方。それと、学内ロッカーの利用先の実際の進め方も",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment",
+      "campus_life"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-059",
+    "prompt": "オンライン授業欠席の連絡の実際の進め方。それと、通学中だけで英語対策の実際の進め方も",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email",
+      "toeic_plan"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-060",
+    "prompt": "仮締切と正式締切を分けるの実際の進め方。それと、反対意見を含む構成の実際の進め方も",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer",
+      "report_outline"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-061",
+    "prompt": "選考課題の提出準備の実際の進め方。それと、前提科目を未修得の履修相談の実際の進め方も",
+    "category": "internship",
+    "intent_labels": [
+      "internship",
+      "registration"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-062",
+    "prompt": "AI回答の根拠を検証するの実際の進め方。それと、バス遅延で試験開始に遅れるの実際の進め方も",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage",
+      "lateness"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-063",
+    "prompt": "選択必修の区分が足りないの実際の進め方。それと、指定拡張子へ直したいの実際の進め方も",
+    "category": "credit",
+    "intent_labels": [
+      "credit",
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-064",
+    "prompt": "実験開始に遅れる連絡の実際の進め方。それと、固有値計算を復習の実際の進め方も",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email",
+      "math"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-065",
+    "prompt": "反対意見を含む構成の実際の進め方。それと、深夜勤務と授業を調整の実際の進め方も",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline",
+      "part_time_job"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-066",
+    "prompt": "併給できる制度を確認の実際の進め方。それと、短い文字数で強みを示すの実際の進め方も",
+    "category": "scholarship",
+    "intent_labels": [
+      "scholarship",
+      "es_outline"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-067",
+    "prompt": "数列の収束を確認の実際の進め方。それと、仮締切と正式締切を分けるの実際の進め方も",
+    "category": "math",
+    "intent_labels": [
+      "math",
+      "deadline_organizer"
+    ],
+    "level1": "skills",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-068",
+    "prompt": "今後の成績で平均を上げるの実際の進め方。それと、通信障害で提出できなかった文の実際の進め方も",
+    "category": "gpa",
+    "intent_labels": [
+      "gpa",
+      "late_submission_email"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-069",
+    "prompt": "違うファイルを提出した連絡の実際の進め方。それと、忌引きの欠席手続きの実際の進め方も",
+    "category": "late_submission_email",
+    "intent_labels": [
+      "late_submission_email",
+      "attendance"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-070",
+    "prompt": "講義資料を参考文献にするの実際の進め方。それと、試験会場を取り違えそうの実際の進め方も",
+    "category": "citation_check",
+    "intent_labels": [
+      "citation_check",
+      "exam"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-071",
+    "prompt": "休学復学時の請求を確認の実際の進め方。それと、講義ごとのAI許可範囲を確認の実際の進め方も",
+    "category": "tuition",
+    "intent_labels": [
+      "tuition",
+      "ai_usage"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-072",
+    "prompt": "信頼区間を解釈したいの実際の進め方。それと、休学復学時の請求を確認の実際の進め方も",
+    "category": "statistics",
+    "intent_labels": [
+      "statistics",
+      "tuition"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-073",
+    "prompt": "レポート点を含めた合格可能性の実際の進め方。それと、複数社の面接間隔を整理の実際の進め方も",
+    "category": "grade_simulator",
+    "intent_labels": [
+      "grade_simulator",
+      "career_schedule"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-074",
+    "prompt": "他学部科目の登録確認の実際の進め方。それと、共同課題を含む作業順の実際の進め方も",
+    "category": "registration",
+    "intent_labels": [
+      "registration",
+      "assignment_priority"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-075",
+    "prompt": "三人発表の担当分けの実際の進め方。それと、面談へ遅れるお詫び文の実際の進め方も",
+    "category": "presentation_outline",
+    "intent_labels": [
+      "presentation_outline",
+      "lateness_email"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-076",
+    "prompt": "深夜勤務と授業を調整の実際の進め方。それと、小テスト配点から期末必要点を出すの実際の進め方も",
+    "category": "part_time_job",
+    "intent_labels": [
+      "part_time_job",
+      "grade_simulator"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-077",
+    "prompt": "試験受験資格の公式条文の実際の進め方。それと、相談窓口一覧から探すの実際の進め方も",
+    "category": "university_policy",
+    "intent_labels": [
+      "university_policy",
+      "faq_search"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-078",
+    "prompt": "出席端末が反応しなかったの実際の進め方。それと、処理速度を測って改善するの実際の進め方も",
+    "category": "attendance",
+    "intent_labels": [
+      "attendance",
+      "programming"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-079",
+    "prompt": "朝型へ予定を移したいの実際の進め方。それと、併給できる制度を確認の実際の進め方も",
+    "category": "schedule",
+    "intent_labels": [
+      "schedule",
+      "scholarship"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-080",
+    "prompt": "内定後手続きの日程確認の実際の進め方。それと、デモを含む発表順の実際の進め方も",
+    "category": "career_schedule",
+    "intent_labels": [
+      "career_schedule",
+      "presentation_outline"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-081",
+    "prompt": "学内ロッカーの利用先の実際の進め方。それと、模試結果から弱点計画を作るの実際の進め方も",
+    "category": "campus_life",
+    "intent_labels": [
+      "campus_life",
+      "study_plan"
+    ],
+    "level1": "campus_support",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-082",
+    "prompt": "相談窓口一覧から探すの実際の進め方。それと、実習を休む連絡文の実際の進め方も",
+    "category": "faq_search",
+    "intent_labels": [
+      "faq_search",
+      "absence_email"
+    ],
+    "level1": "information",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-083",
+    "prompt": "途中入室するときの対応の実際の進め方。それと、再履修を含むGPAの扱いの実際の進め方も",
+    "category": "lateness",
+    "intent_labels": [
+      "lateness",
+      "gpa"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-084",
+    "prompt": "演習中心の二週間計画の実際の進め方。それと、試験受験資格の公式条文の実際の進め方も",
+    "category": "study_plan",
+    "intent_labels": [
+      "study_plan",
+      "university_policy"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-085",
+    "prompt": "失敗経験を設問へ書くの実際の進め方。それと、共同研究で役割が偏っているの実際の進め方も",
+    "category": "es_outline",
+    "intent_labels": [
+      "es_outline",
+      "relationship"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-086",
+    "prompt": "指導時の不適切な発言を相談の実際の進め方。それと、選考課題の提出準備の実際の進め方も",
+    "category": "relationship",
+    "intent_labels": [
+      "relationship",
+      "internship"
+    ],
+    "level1": "campus_support",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-087",
+    "prompt": "試験会場を取り違えそうの実際の進め方。それと、著者不明ページの書誌情報の実際の進め方も",
+    "category": "exam",
+    "intent_labels": [
+      "exam",
+      "citation_check"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-088",
+    "prompt": "オフィスアワー予約の連絡の実際の進め方。それと、通学時間込みで一週間を組むの実際の進め方も",
+    "category": "professor_email",
+    "intent_labels": [
+      "professor_email",
+      "schedule"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-089",
+    "prompt": "提出可能な最低ラインから優先するの実際の進め方。それと、オフィスアワー予約の連絡の実際の進め方も",
+    "category": "assignment_priority",
+    "intent_labels": [
+      "assignment_priority",
+      "professor_email"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-090",
+    "prompt": "パート別正答率から計画を作るの実際の進め方。それと、卒業見込の単位確認の実際の進め方も",
+    "category": "toeic_plan",
+    "intent_labels": [
+      "toeic_plan",
+      "credit"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-091",
+    "prompt": "入力境界値でコードが落ちるの実際の進め方。それと、信頼区間を解釈したいの実際の進め方も",
+    "category": "programming",
+    "intent_labels": [
+      "programming",
+      "statistics"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-092",
+    "prompt": "指定拡張子へ直したいの実際の進め方。それと、通学経路を変えたいの実際の進め方も",
+    "category": "assignment",
+    "intent_labels": [
+      "assignment",
+      "campus_life"
+    ],
+    "level1": "academic",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-093",
+    "prompt": "実習を休む連絡文の実際の進め方。それと、受験二回分の学習予定の実際の進め方も",
+    "category": "absence_email",
+    "intent_labels": [
+      "absence_email",
+      "toeic_plan"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-094",
+    "prompt": "応募と課題の期限を一表にするの実際の進め方。それと、比較型レポートの骨組みの実際の進め方も",
+    "category": "deadline_organizer",
+    "intent_labels": [
+      "deadline_organizer",
+      "report_outline"
+    ],
+    "level1": "planning",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-095",
+    "prompt": "実習先へ日程を確認の実際の進め方。それと、集中講義を時間割へ追加の実際の進め方も",
+    "category": "internship",
+    "intent_labels": [
+      "internship",
+      "registration"
+    ],
+    "level1": "career",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-096",
+    "prompt": "AI生成部分の申告方法の実際の進め方。それと、途中入室するときの対応の実際の進め方も",
+    "category": "ai_usage",
+    "intent_labels": [
+      "ai_usage",
+      "lateness"
+    ],
+    "level1": "skills",
+    "expected_action": "RAG+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-097",
+    "prompt": "認定済み科目を数え直したいの実際の進め方。それと、課題ファイルを誤って提出したの実際の進め方も",
+    "category": "credit",
+    "intent_labels": [
+      "credit",
+      "assignment"
+    ],
+    "level1": "academic",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-098",
+    "prompt": "面談へ遅れるお詫び文の実際の進め方。それと、数列の収束を確認の実際の進め方も",
+    "category": "lateness_email",
+    "intent_labels": [
+      "lateness_email",
+      "math"
+    ],
+    "level1": "communication",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  },
+  {
+    "id": "campus-v21-real-compound-099",
+    "prompt": "比較型レポートの骨組みの実際の進め方。それと、扶養条件を確認してシフト相談の実際の進め方も",
+    "category": "report_outline",
+    "intent_labels": [
+      "report_outline",
+      "part_time_job"
+    ],
+    "level1": "writing",
+    "expected_action": "TOOL+MODEL",
+    "surface_type": "compound",
+    "ambiguous": false,
+    "blind": true,
+    "dataset_version": "unipilot-campus-v21-real-student"
+  }
+]

@@ -33,6 +33,9 @@ class UniPilotCampusV2(UniPilotCampusV1):
                 "今やること：1. 期限を確認する 2. 不足情報を一つ書く 3. シラバス、学生ポータル、担当窓口のうち適切な確認先を選ぶ。\n"
                 "大学固有の条件は推測せず、最新の公式案内で確認してください。")
 
+    def _faq_search(self, question: str, category: str, top_k: int, confidence_band: str = "high") -> list[dict]:
+        return self.faq.search(question, category, top_k)
+
     def _resolve(self, question: str, session_id: str | None, tool_inputs: dict | None) -> dict:
         started = time.perf_counter()
         before = self.sessions.get(session_id)
@@ -53,7 +56,7 @@ class UniPilotCampusV2(UniPilotCampusV1):
             # when the first has neither an FAQ candidate nor a deterministic tool.
             local_candidates = {}
             for candidate in decision.top2:
-                faq_rows = [item for item in self.faq.search(question, candidate, 1) if item.get("category_match")]
+                faq_rows = [item for item in self._faq_search(question, candidate, 1, decision.confidence_band) if item.get("category_match")]
                 local_candidates[candidate] = {"faq_score": faq_rows[0].get("retrieval_score", 0.0) if faq_rows else 0.0,
                                                "tool_available": self.tools.can_handle(candidate)}
             router_evidence["top2_resolution"] = local_candidates
@@ -98,7 +101,7 @@ class UniPilotCampusV2(UniPilotCampusV1):
                     for secondary in decision.intents:
                         if secondary == executable:
                             continue
-                        matches = [item for item in self.faq.search(question, secondary, 2) if item.get("category_match")]
+                        matches = [item for item in self._faq_search(question, secondary, 2, decision.confidence_band) if item.get("category_match")]
                         if matches:
                             documents.append(matches[0])
                     if documents:
@@ -114,7 +117,7 @@ class UniPilotCampusV2(UniPilotCampusV1):
                     self.sessions.update(session_id, question, pending_intent=executable)
                 return {**base, "kind": "tool", "tool": result, "documents": documents}
 
-        documents = [item for item in self.faq.search(question, category, 3) if item.get("category_match")]
+        documents = [item for item in self._faq_search(question, category, 3, decision.confidence_band) if item.get("category_match")]
         if documents:
             answer = documents[0]["answer"]
             if documents[0].get("needs_confirmation"):

@@ -1,0 +1,31 @@
+{
+  "version": "unipilot-campus-v2.1",
+  "adversarial_train": 1500,
+  "adversarial_validation": 300,
+  "adversarial_types": {
+    "NEGATION": 300,
+    "CORRECTION": 300,
+    "CONTRAST": 300,
+    "CATEGORY_COLLISION": 300,
+    "SHORT_BUT_CLEAR": 300
+  },
+  "clarification_validation": 1200,
+  "clarification_distribution": {
+    "determinate": 800,
+    "ambiguous": 400
+  },
+  "real_student": 500,
+  "real_student_distribution": {
+    "very_short": 100,
+    "colloquial": 100,
+    "correction": 100,
+    "normal": 100,
+    "compound": 100
+  },
+  "real_existing_normalized_overlap": 0,
+  "retrieval_validation": 152,
+  "retrieval_test": 338,
+  "real_student_sha256": "0aa65183ac2010f2c0a9e3adb22adb198f316d8300c4ecb28cf5602a3615a9a6",
+  "existing_adversarial_300_role": "test-only; never included in v2.1 training",
+  "external_ai_api": "OFF"
+}

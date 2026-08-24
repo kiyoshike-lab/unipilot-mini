@@ -3,6 +3,7 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 
 type ToolCard = { kind: string; title: string; summary: string; action_label?: string | null; copy_text?: string | null;
   fields?: Array<{name: string; label: string; example?: string}>; data?: Record<string, unknown> };
+type ClarifyOption = { category: string; label: string; prompt: string };
 type Message = { role: "user" | "assistant"; text: string; cards?: ToolCard[] };
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
@@ -56,6 +57,9 @@ export default function Home() {
           {message.text}{message.cards?.map((item, cardIndex) => <div key={`${item.kind}-${cardIndex}`} className="mt-3 whitespace-normal rounded-xl border border-cyan-800/70 bg-slate-950/70 p-4">
             <p className="font-semibold text-cyan-300">{item.title}</p><p className="mt-1 text-sm text-slate-300">{item.summary}</p>
             {!!item.fields?.length && <p className="mt-2 text-xs text-slate-500">必要項目：{item.fields.map(field => field.label).join("、")}</p>}
+            {Array.isArray(item.data?.options) && <div className="mt-3 flex flex-wrap gap-2">{(item.data.options as ClarifyOption[]).map(option =>
+              <button key={option.category} type="button" onClick={() => setInput(option.prompt)} className="rounded-lg border border-cyan-700 px-3 py-2 text-sm text-cyan-200 hover:bg-cyan-950">
+                {option.label}</button>)}</div>}
             {(item.action_label || item.copy_text) && <button type="button" onClick={() => useCard(item)} className="mt-3 rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950">
               {item.copy_text ? item.action_label || "コピー" : item.action_label}</button>}
           </div>)}</div></div>)}
