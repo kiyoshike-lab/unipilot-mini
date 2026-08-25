@@ -1,0 +1,53 @@
+{
+  "dataset_version": "unipilot-standard-50m-short-balanced-v1",
+  "seed": 5082026,
+  "training_rows": 4000,
+  "validation_rows": 400,
+  "stage_training_counts": {
+    "D": 1000,
+    "A": 800,
+    "B": 800,
+    "C": 1000,
+    "F": 200,
+    "E": 200
+  },
+  "blind_questions": 200,
+  "blind_sha256_at_seal": "e98714b22dd92e119c673861beb59856851430fd8790fce720a01b31d48cf7f1",
+  "blind_deduplication": {
+    "reference_questions": 21022,
+    "maximum_reference_similarity": 0.2951,
+    "maximum_internal_similarity": 0.6618,
+    "category_counts": {
+      "absence_email": 7,
+      "ai_usage": 6,
+      "assignment": 7,
+      "assignment_priority": 7,
+      "attendance": 7,
+      "campus_life": 7,
+      "career_schedule": 7,
+      "citation_check": 7,
+      "credit": 7,
+      "deadline_organizer": 7,
+      "exam": 7,
+      "general": 6,
+      "gpa": 7,
+      "grade_simulator": 7,
+      "internship": 7,
+      "lateness_email": 7,
+      "part_time_job": 7,
+      "presentation_outline": 7,
+      "professor_email": 7,
+      "programming": 7,
+      "registration": 7,
+      "relationship": 7,
+      "report_outline": 7,
+      "scholarship": 7,
+      "statistics": 7,
+      "study_plan": 7,
+      "toeic_plan": 7,
+      "tuition": 7,
+      "university_policy": 6
+    }
+  },
+  "external_ai_api": "OFF"
+}

@@ -1,0 +1,29 @@
+{
+  "vocab_size": 2048,
+  "context_length": 512,
+  "parameters": 45445120,
+  "parameter_millions": 45.44512,
+  "tokenizer": "tokenizer/vocab-standard-v08-2048.json",
+  "tokens_per_japanese_character": 0.73258748891466,
+  "mean_prompt_plus_keypoint_tokens": 81.35606060606061,
+  "p95_prompt_plus_keypoint_tokens": 100,
+  "exact_roundtrip_rate": 1.0,
+  "generation": {
+    "tokens": 32,
+    "first_token_seconds": 0.10829269999999269,
+    "total_seconds": 0.5981507000000192,
+    "tokens_per_second": 53.49822377537796
+  },
+  "full_context_forward_seconds": 0.5851179000000002,
+  "full_context_tokens_per_second": 875.0373215381034,
+  "rss_before_mb": 207.125,
+  "rss_after_model_mb": 389.8984375,
+  "rss_after_generation_mb": 411.34375,
+  "rss_after_full_context_mb": 420.55078125,
+  "peak_observed_rss_mb": 420.55078125,
+  "checkpoint_bytes_fp32": 181844235,
+  "checkpoint_mb_fp32": 173.42017650604248,
+  "kv_cache_mb_fp32": 28.0,
+  "cpu_threads": 1,
+  "external_ai_api": "OFF"
+}

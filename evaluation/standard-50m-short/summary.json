@@ -1,0 +1,228 @@
+{
+  "schema_version": "unipilot-standard-50m-short-phase-summary-v1",
+  "generated_at": "2026-08-25T15:52:12.273719+00:00",
+  "campus_v23_preserved": true,
+  "production_v04_changed": false,
+  "render_changed": false,
+  "vercel_changed": false,
+  "release_changed": false,
+  "push_or_deploy_performed": false,
+  "external_ai_api": "OFF",
+  "toeic_tool_fix": {
+    "known_critical_before": 3,
+    "known_critical_after": 0,
+    "generalization": "Missing values are requested; only explicit user values are echoed; no fixed study ratio is invented."
+  },
+  "architecture_comparison": {
+    "a-45m": {
+      "parameters": 44920832,
+      "generation_tokens_per_second": 44.46447816211478,
+      "first_token_seconds": 0.10192849999998543,
+      "training_peak_rss_mb": 1020.484375,
+      "checkpoint_mb": 171.4089994430542
+    },
+    "b-51m": {
+      "parameters": 51225600,
+      "generation_tokens_per_second": 35.267280802279394,
+      "first_token_seconds": 0.12361969999994926,
+      "training_peak_rss_mb": 1110.671875,
+      "checkpoint_mb": 195.46664714813232
+    },
+    "c-58m": {
+      "parameters": 56729088,
+      "generation_tokens_per_second": 40.78536294894423,
+      "first_token_seconds": 0.12573569999995016,
+      "training_peak_rss_mb": 1196.84765625,
+      "checkpoint_mb": 216.4539213180542
+    }
+  },
+  "tokenizer_context_comparison": {
+    "vocab-1024-context-512": {
+      "parameters": 44920832,
+      "tokens_per_japanese_character": 0.9215840098233168,
+      "prompt_p95_tokens": 122,
+      "generation_tokens_per_second": 53.43333381757457,
+      "peak_observed_rss_mb": 425.36328125,
+      "checkpoint_mb": 171.42017650604248
+    },
+    "vocab-1024-context-1024": {
+      "parameters": 45182976,
+      "tokens_per_japanese_character": 0.9215840098233168,
+      "prompt_p95_tokens": 122,
+      "generation_tokens_per_second": 53.8554982929532,
+      "peak_observed_rss_mb": 482.5234375,
+      "checkpoint_mb": 172.42017650604248
+    },
+    "vocab-2048-context-512": {
+      "parameters": 45445120,
+      "tokens_per_japanese_character": 0.73258748891466,
+      "prompt_p95_tokens": 100,
+      "generation_tokens_per_second": 53.49822377537796,
+      "peak_observed_rss_mb": 420.55078125,
+      "checkpoint_mb": 173.42017650604248
+    },
+    "vocab-2048-context-1024": {
+      "parameters": 45707264,
+      "tokens_per_japanese_character": 0.73258748891466,
+      "prompt_p95_tokens": 100,
+      "generation_tokens_per_second": 52.531535747955125,
+      "peak_observed_rss_mb": 484.375,
+      "checkpoint_mb": 174.42017650604248
+    }
+  },
+  "selected_candidate": {
+    "name": "a-45m with vocab 2048",
+    "role": "short-validation candidate only; not production",
+    "parameters": 45445120,
+    "vocab": 2048,
+    "context": 512,
+    "layers": 14,
+    "hidden": 512,
+    "heads": 8,
+    "ffn": 2048,
+    "selection_reason": "The 45M family was the lightest/fastest architecture; vocab 2048 reduced Japanese token use with about 2 MiB checkpoint cost; context 1024 added RAM without benefit on measured prompts."
+  },
+  "step_100": {
+    "executed": true,
+    "training_loss": 6.69061794757843,
+    "validation_loss": 6.117055773735046,
+    "training_rss_mb": 1207.78125,
+    "development_generation": {
+      "questions": 8,
+      "natural_rate": 0.0,
+      "mean_characters": 0.0,
+      "eos_rate": 0.0,
+      "mean_tokens_per_second": 65.54120019279269,
+      "text_generation_established": false
+    },
+    "training_checkpoint_mb": 520.287,
+    "inference_checkpoint_mb": 173.431,
+    "gate": "FAIL"
+  },
+  "step_500": {
+    "executed": false,
+    "reason": "Step-100 text-generation gate failed (0/8 visible outputs); mandatory early stop applied."
+  },
+  "blind_200": {
+    "sealed_sha256": "e98714b22dd92e119c673861beb59856851430fd8790fce720a01b31d48cf7f1",
+    "evaluated_standard_step": 100,
+    "campus_v23": {
+      "questions": 200,
+      "ai_quality_gate": {
+        "good": 200,
+        "close": 0,
+        "bad": 0
+      },
+      "average_score": 91.62,
+      "average_characters": 513.2,
+      "axis_averages_0_to_5": {
+        "correctness": 4.65,
+        "relevance": 4.572,
+        "actionable": 4.62,
+        "naturalness": 4.65,
+        "completeness": 4.55,
+        "specificity": 4.449,
+        "grounding": 4.574,
+        "conciseness": 4.578,
+        "helpfulness": 4.587
+      },
+      "axis_percent": {
+        "correctness": 93.0,
+        "relevance": 91.44,
+        "completeness": 91.0,
+        "specificity": 88.98,
+        "naturalness": 93.0,
+        "actionable": 92.4
+      },
+      "unsupported_claim_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "university_policy_assertion_rate": 0.0,
+      "critical_errors": 0,
+      "route_counts": {
+        "safe": 179,
+        "rag": 19,
+        "tool": 2
+      },
+      "route_percent": {
+        "safe": 89.5,
+        "rag": 9.5,
+        "tool": 1.0
+      },
+      "tool_usage_rate": 0.01,
+      "rag_usage_rate": 0.095,
+      "clarification_rate": 0.0,
+      "fallback_rate": 0.895,
+      "revision_rate": 0.0,
+      "average_first_token_seconds": 0.069738,
+      "average_total_seconds": 0.069738,
+      "average_tokens_per_second": 5950.208,
+      "peak_rss_mb": 515.215,
+      "raw_generation_success_rate": null,
+      "average_raw_characters": null,
+      "latency_semantics": "deterministic completed-response latency and effective output-token throughput"
+    },
+    "standard": {
+      "questions": 200,
+      "ai_quality_gate": {
+        "good": 0,
+        "close": 200,
+        "bad": 0
+      },
+      "average_score": 81.96,
+      "average_characters": 60,
+      "axis_averages_0_to_5": {
+        "correctness": 4.65,
+        "relevance": 4.14,
+        "actionable": 3.2,
+        "naturalness": 4.55,
+        "completeness": 3.55,
+        "specificity": 3.65,
+        "grounding": 4.8,
+        "conciseness": 4.65,
+        "helpfulness": 3.694
+      },
+      "axis_percent": {
+        "correctness": 93.0,
+        "relevance": 82.8,
+        "completeness": 71.0,
+        "specificity": 73.0,
+        "naturalness": 91.0,
+        "actionable": 64.0
+      },
+      "unsupported_claim_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "university_policy_assertion_rate": 0.0,
+      "critical_errors": 0,
+      "route_counts": {
+        "model": 200
+      },
+      "route_percent": {
+        "model": 100.0
+      },
+      "tool_usage_rate": 0.0,
+      "rag_usage_rate": 0.0,
+      "clarification_rate": 0.0,
+      "fallback_rate": 1,
+      "revision_rate": 0.0,
+      "average_first_token_seconds": 0.339389,
+      "average_total_seconds": 1.698799,
+      "average_tokens_per_second": 41.638,
+      "peak_rss_mb": 603.918,
+      "raw_generation_success_rate": 0,
+      "average_raw_characters": 0,
+      "latency_semantics": "autoregressive first token and generated-token throughput"
+    },
+    "axis_delta_standard_minus_campus": {
+      "correctness": 0.0,
+      "relevance": -8.64,
+      "completeness": -20.0,
+      "specificity": -15.98,
+      "naturalness": -2.0,
+      "actionable": -28.4
+    },
+    "standard_clearly_improved": false
+  },
+  "standard_50m_continuation_value": false,
+  "next_training_step": null,
+  "decision": "STOP at step 100; do not run 500/1000/2000/5000 in this phase."
+}

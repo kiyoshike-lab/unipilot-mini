@@ -1,0 +1,31 @@
+{
+  "model": {
+    "model_name": "UniPilot Standard 50M short candidate",
+    "vocab_size": 2048,
+    "context_length": 512,
+    "embedding_dim": 512,
+    "n_layers": 14,
+    "n_heads": 8,
+    "ffn_dim": 2048,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/vocab-standard-v08-2048.json",
+  "tokenizer_version": "unipilot-standard-byte-bpe-v08-2048",
+  "dataset_version": "unipilot-standard-50m-short-balanced-v1",
+  "evaluation_version": "unipilot-standard-50m-short-blind-200-v1",
+  "seed": 5082026,
+  "batch_size": 1,
+  "learning_rate": 0.0003,
+  "warmup_steps": 10,
+  "schedule_steps": 500,
+  "weight_decay": 0.1,
+  "gradient_clip": 1.0,
+  "eos_weight": 0.5,
+  "evaluation_interval": 100,
+  "train_file": "data/standard_50m_short/curriculum/train.jsonl",
+  "validation_file": "data/standard_50m_short/curriculum/validation.jsonl",
+  "production_enabled": false,
+  "render_free_target": false,
+  "external_pretrained_model": false
+}

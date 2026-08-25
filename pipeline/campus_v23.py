@@ -6,6 +6,7 @@ from pipeline.campus_generalizer_v23 import CampusCoverageGeneralizerV23, V23_DE
 from pipeline.campus_planner_v22 import CampusConversationMemoryV22
 from pipeline.campus_planner_v23 import CampusCompletenessPlannerV23
 from pipeline.campus_retrieval_v23 import CONFIDENCE_ORDER, CampusKnowledgeRetrieverV23
+from pipeline.campus_tools_v23 import CampusToolEngineV23
 from pipeline.campus_v21 import UniPilotCampusV21
 from pipeline.campus_v22 import UniPilotCampusV22
 
@@ -23,6 +24,7 @@ class UniPilotCampusV23(UniPilotCampusV22):
         self.answer_planner = CampusCompletenessPlannerV23()
         self.generalizer = CampusCoverageGeneralizerV23()
         self.conversation_memory = CampusConversationMemoryV22()
+        self.tools = CampusToolEngineV23()
 
     def _manual_tool(self, resolved: dict, question: str, plan, tool_inputs: dict | None) -> dict | None:
         if not plan.need_tool or not self.tools.can_handle(plan.primary_category):

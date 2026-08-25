@@ -13,6 +13,7 @@ from pipeline.campus_retrieval_v23 import (
     rewrite_queries,
 )
 from pipeline.campus_v23 import UniPilotCampusV23
+from pipeline.campus_tools_v23 import CampusToolEngineV23
 from quality.campus_ai_judge import CampusAIJudge
 
 
@@ -123,6 +124,36 @@ def test_source_conflict_is_safe_specific_and_does_not_invoke_study_tool():
     assert result["answer_coverage"]["score"] == 1.0
     assert all(token in result["text"] for token in ("公式ページ", "LMS", "記録", "問い合わせ内容"))
     assert "TOEIC 30日計画" not in result["text"]
+
+
+def test_v23_toeic_tool_never_invents_default_time_or_fixed_ratios():
+    tool = CampusToolEngineV23()
+    missing = tool.execute("toeic_plan", "リスニングだけ伸び悩んでいる。代替手順を作って", {}, {})
+    assert missing.completed is False
+    assert {"days", "hours_per_day"} <= set(missing.missing_fields)
+    assert "30日" not in missing.text and "毎日1時間" not in missing.text
+    assert not any(value in missing.text for value in ("20%", "30%"))
+
+    grounded = tool.execute("toeic_plan", "TOEICの計画を作って", {}, {
+        "days": 14, "hours_per_day": 1.5, "focus": "リスニング",
+    })
+    assert grounded.completed is True
+    assert grounded.calculation["fixed_ratio_used"] is False
+    assert "残り14日" in grounded.text and "1日1.5時間" in grounded.text
+    assert not any(value in grounded.text for value in ("20%", "30%"))
+
+
+def test_v23_toeic_fix_closes_the_preserved_three_item_review_queue():
+    path = Path("evaluation/campus-v23-toeic-tool-fix.json")
+    if not path.exists():
+        return
+    payload = read_json(str(path))
+    assert payload["questions"] == payload["critical_errors_before"] == 3
+    assert payload["critical_errors_after"] == 0
+    assert payload["unsupported_claims_after"] == 0
+    assert payload["fixed_ratio_answers_after"] == 0
+    assert payload["production_v04_changed"] is False
+    assert payload["campus_v21_rc_changed"] is False
 
 
 def test_v23_session_memory_is_in_memory_only():

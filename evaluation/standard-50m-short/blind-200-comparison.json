@@ -1,0 +1,128 @@
+{
+  "schema_version": "unipilot-standard-50m-short-comparison-v1",
+  "generated_at": "2026-08-25T15:51:51.713394+00:00",
+  "blind_sha256": "e98714b22dd92e119c673861beb59856851430fd8790fce720a01b31d48cf7f1",
+  "questions": 200,
+  "campus_v23": {
+    "questions": 200,
+    "ai_quality_gate": {
+      "good": 200,
+      "close": 0,
+      "bad": 0
+    },
+    "average_score": 91.62,
+    "average_characters": 513.2,
+    "axis_averages_0_to_5": {
+      "correctness": 4.65,
+      "relevance": 4.572,
+      "actionable": 4.62,
+      "naturalness": 4.65,
+      "completeness": 4.55,
+      "specificity": 4.449,
+      "grounding": 4.574,
+      "conciseness": 4.578,
+      "helpfulness": 4.587
+    },
+    "axis_percent": {
+      "correctness": 93.0,
+      "relevance": 91.44,
+      "completeness": 91.0,
+      "specificity": 88.98,
+      "naturalness": 93.0,
+      "actionable": 92.4
+    },
+    "unsupported_claim_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "university_policy_assertion_rate": 0.0,
+    "critical_errors": 0,
+    "route_counts": {
+      "safe": 179,
+      "rag": 19,
+      "tool": 2
+    },
+    "route_percent": {
+      "safe": 89.5,
+      "rag": 9.5,
+      "tool": 1.0
+    },
+    "tool_usage_rate": 0.01,
+    "rag_usage_rate": 0.095,
+    "clarification_rate": 0.0,
+    "fallback_rate": 0.895,
+    "revision_rate": 0.0,
+    "average_first_token_seconds": 0.069738,
+    "average_total_seconds": 0.069738,
+    "average_tokens_per_second": 5950.208,
+    "peak_rss_mb": 515.215,
+    "raw_generation_success_rate": null,
+    "average_raw_characters": null,
+    "latency_semantics": "deterministic completed-response latency and effective output-token throughput"
+  },
+  "standard": {
+    "questions": 200,
+    "ai_quality_gate": {
+      "good": 0,
+      "close": 200,
+      "bad": 0
+    },
+    "average_score": 81.96,
+    "average_characters": 60,
+    "axis_averages_0_to_5": {
+      "correctness": 4.65,
+      "relevance": 4.14,
+      "actionable": 3.2,
+      "naturalness": 4.55,
+      "completeness": 3.55,
+      "specificity": 3.65,
+      "grounding": 4.8,
+      "conciseness": 4.65,
+      "helpfulness": 3.694
+    },
+    "axis_percent": {
+      "correctness": 93.0,
+      "relevance": 82.8,
+      "completeness": 71.0,
+      "specificity": 73.0,
+      "naturalness": 91.0,
+      "actionable": 64.0
+    },
+    "unsupported_claim_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "university_policy_assertion_rate": 0.0,
+    "critical_errors": 0,
+    "route_counts": {
+      "model": 200
+    },
+    "route_percent": {
+      "model": 100.0
+    },
+    "tool_usage_rate": 0.0,
+    "rag_usage_rate": 0.0,
+    "clarification_rate": 0.0,
+    "fallback_rate": 1,
+    "revision_rate": 0.0,
+    "average_first_token_seconds": 0.339389,
+    "average_total_seconds": 1.698799,
+    "average_tokens_per_second": 41.638,
+    "peak_rss_mb": 603.918,
+    "raw_generation_success_rate": 0,
+    "average_raw_characters": 0,
+    "latency_semantics": "autoregressive first token and generated-token throughput"
+  },
+  "axis_delta_standard_minus_campus": {
+    "correctness": 0.0,
+    "relevance": -8.64,
+    "completeness": -20.0,
+    "specificity": -15.98,
+    "naturalness": -2.0,
+    "actionable": -28.4
+  },
+  "improved_axes_gte_2_points": [],
+  "clear_improvement_rule": "At least 4/6 axes improve >=2 points with no critical, hallucination, or unsupported-claim regression.",
+  "standard_clearly_improved": false,
+  "continue_beyond_500": false,
+  "next_step": null,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "push_or_deploy_performed": false
+}
