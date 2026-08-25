@@ -1,0 +1,47 @@
+{
+  "schema_version": "foundation-v09-manifest-v1",
+  "generated_at": "2026-08-25T16:03:20.781010+00:00",
+  "baseline": {
+    "commit": "ff2945ec4a865c6347f35f77833ac5a96394d97e",
+    "campus_version": "campus-v2.3",
+    "production_model": "v0.4",
+    "protected_file_sha256": {
+      "pipeline/campus_v23.py": "bf9ab0ede6be3be5b428234c2e6e61bb696f03b4d4ebe19ca7f8de86447f184f",
+      "pipeline/campus_tools_v23.py": "506b943aeaac24b97422d048e0a73d428c0b9246aa0309d2c0afcc0a651163c2",
+      "evaluation/campus-v23-summary.json": "e7a8c4ebd13637b14c2c3db936c78c11be2b51750e2fcb74fe1bd2b64fd5899f",
+      "configs/unipilot-v04.json": "eed41f75640887cdc72c1e7293424be71bf9947d744e3ad03b6fba3c44226902"
+    },
+    "answer_logic_frozen_after_baseline": true,
+    "production_changed": false,
+    "render_changed": false,
+    "vercel_changed": false,
+    "release_changed": false
+  },
+  "base": {
+    "train": 866,
+    "validation": 120,
+    "test": 54
+  },
+  "campus": {
+    "train": 282,
+    "validation": 31,
+    "test": 17
+  },
+  "instruction": {
+    "train": 10009,
+    "validation": 1238,
+    "test": 597
+  },
+  "human_approved": 4,
+  "rag_only_documents": 114,
+  "evaluation": {
+    "validation": "data/foundation_v09/evaluation/validation-200.json",
+    "final_blind": "data/foundation_v09/evaluation/final-blind-1000.json",
+    "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "final_blind_opened": false
+  },
+  "language_pretraining_separated_from_instruction": true,
+  "variable_facts_rag_only": true,
+  "external_ai_api": "OFF",
+  "production_enabled": false
+}

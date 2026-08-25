@@ -1,0 +1,376 @@
+{
+  "schema_version": "foundation-v09-phase-summary-v1",
+  "generated_at": "2026-08-25T16:24:03.538390+00:00",
+  "scope": "PHASE 21 items 1-8 only",
+  "baseline": {
+    "commit": "ff2945ec4a865c6347f35f77833ac5a96394d97e",
+    "campus_version": "campus-v2.3",
+    "production_model": "v0.4",
+    "protected_file_sha256": {
+      "pipeline/campus_v23.py": "bf9ab0ede6be3be5b428234c2e6e61bb696f03b4d4ebe19ca7f8de86447f184f",
+      "pipeline/campus_tools_v23.py": "506b943aeaac24b97422d048e0a73d428c0b9246aa0309d2c0afcc0a651163c2",
+      "evaluation/campus-v23-summary.json": "e7a8c4ebd13637b14c2c3db936c78c11be2b51750e2fcb74fe1bd2b64fd5899f",
+      "configs/unipilot-v04.json": "eed41f75640887cdc72c1e7293424be71bf9947d744e3ad03b6fba3c44226902"
+    },
+    "answer_logic_frozen_after_baseline": true,
+    "production_changed": false,
+    "render_changed": false,
+    "vercel_changed": false,
+    "release_changed": false
+  },
+  "data": {
+    "current_inventory_rows": 60910,
+    "new_structured_training_rows": 13214,
+    "new_content_claim": "Rows are licensed-source chunks/restructured existing authored data; only 4 answers are explicitly human-approved.",
+    "base_language_rows": 1040,
+    "campus_stable_rows": 330,
+    "instruction_rows": 11844,
+    "human_approved_rows": 4,
+    "rag_only_documents": 114,
+    "source_and_license": {
+      "base": {
+        "source": "Japanese Wikipedia contributors",
+        "license": "CC BY-SA 4.0"
+      },
+      "campus_and_instruction": {
+        "source": "UniPilot project-authored",
+        "license": "CC0-1.0"
+      },
+      "rag_only": {
+        "Public Data License 1.0": 105,
+        "CC BY 4.0": 7,
+        "CC BY-NC-SA 2.1 JP": 1,
+        "CC BY-NC-ND": 1
+      }
+    },
+    "exact_duplicate_excluded": 0,
+    "semantic_holdout_overlap_excluded": 0,
+    "legacy_quality_excluded": 50000,
+    "remaining_gaps": {
+      "instruction_rows": 18156,
+      "multi_turn_conversations": 10000,
+      "corrected_rows_minimum": 1700
+    }
+  },
+  "evaluation_separation": {
+    "validation_questions": 200,
+    "final_blind_questions": 1000,
+    "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "final_blind_opened": false,
+    "stress": "data/campus_v23/holdouts/stress-200.json",
+    "real_student": "data/campus_v21/real-student/evaluation-500.json"
+  },
+  "architectures": {
+    "mini": {
+      "name": "UniPilot Mini v0.4 / Campus v2.3 system baseline",
+      "parameters": 19814784,
+      "vocab": 512,
+      "context": 256,
+      "embedding_dim": 384,
+      "layers": 11,
+      "heads": 6,
+      "ffn_dim": 1536,
+      "production_changed": false
+    },
+    "standard_candidate": {
+      "name": "UniPilot Standard Foundation v0.9 sanity candidate",
+      "parameters": 46755840,
+      "vocab": 4096,
+      "context": 1024,
+      "embedding_dim": 512,
+      "layers": 14,
+      "heads": 8,
+      "ffn_dim": 2048,
+      "role": "separate research candidate; not production"
+    }
+  },
+  "tokenizer": {
+    "schema_version": "foundation-v09-tokenizer-benchmark-v1",
+    "results": [
+      {
+        "requested_vocab": 1024,
+        "actual_vocab": 1024,
+        "tokens_per_japanese_character": 0.8760336573335268,
+        "mean_validation_question_tokens": 60.385,
+        "p95_validation_question_tokens": 75,
+        "mean_university_term_tokens": 7.916666666666667,
+        "exact_roundtrip_rate": 1.0,
+        "standard_parameters_context512": 44920832,
+        "inference_checkpoint_mb_fp32": 171.359375,
+        "first_token_seconds": 0.10722339999983888,
+        "generation_tokens_per_second": 44.359028670375416,
+        "model_rss_mb": 410.7421875
+      },
+      {
+        "requested_vocab": 2048,
+        "actual_vocab": 2048,
+        "tokens_per_japanese_character": 0.7229072972580879,
+        "mean_validation_question_tokens": 49.83,
+        "p95_validation_question_tokens": 62,
+        "mean_university_term_tokens": 6.333333333333333,
+        "exact_roundtrip_rate": 1.0,
+        "standard_parameters_context512": 45445120,
+        "inference_checkpoint_mb_fp32": 173.359375,
+        "first_token_seconds": 0.10602000000017142,
+        "generation_tokens_per_second": 45.24883038844529,
+        "model_rss_mb": 429.6015625
+      },
+      {
+        "requested_vocab": 4096,
+        "actual_vocab": 4096,
+        "tokens_per_japanese_character": 0.6068475264761352,
+        "mean_validation_question_tokens": 41.83,
+        "p95_validation_question_tokens": 51,
+        "mean_university_term_tokens": 4.0,
+        "exact_roundtrip_rate": 1.0,
+        "standard_parameters_context512": 46493696,
+        "inference_checkpoint_mb_fp32": 177.359375,
+        "first_token_seconds": 0.1086580999999569,
+        "generation_tokens_per_second": 44.458164728060716,
+        "model_rss_mb": 424.84375
+      }
+    ],
+    "compression_gain_2048_over_1024": 0.17479506499958608,
+    "compression_gain_4096_over_2048": 0.1605458559100944,
+    "selected_vocab": 4096,
+    "selection_rule": "Start at 2048; select 4096 only for >=12% extra compression and >=85% generation speed.",
+    "tokenizer_4096_training_seconds": 35.25806369999964,
+    "tokenizer_4096_training_texts": 540,
+    "development_validation_only": true,
+    "final_blind_opened": false,
+    "external_pretrained_tokenizer": false,
+    "external_ai_api": "OFF"
+  },
+  "context_benchmark": {
+    "256": {
+      "vocab": 4096,
+      "context": 256,
+      "parameters": 46362624,
+      "full_context_forward_seconds": 0.27884339999991425,
+      "full_context_tokens_per_second": 918.0780323295395,
+      "first_token_seconds": 0.10709829999996145,
+      "generation_tokens_per_second": 51.918266371191,
+      "rss_before_mb": 202.265625,
+      "rss_after_model_mb": 389.8671875,
+      "rss_after_full_context_mb": 397.2890625,
+      "rss_after_generation_mb": 408.16796875,
+      "peak_observed_rss_mb": 408.16796875,
+      "inference_checkpoint_mb_fp32": 176.859375,
+      "kv_cache_mb_fp32": 14.0,
+      "cpu_threads": 1,
+      "external_ai_api": "OFF"
+    },
+    "512": {
+      "vocab": 4096,
+      "context": 512,
+      "parameters": 46493696,
+      "full_context_forward_seconds": 0.6167523999997684,
+      "full_context_tokens_per_second": 830.1548563089374,
+      "first_token_seconds": 0.10139079999999012,
+      "generation_tokens_per_second": 52.685885270242636,
+      "rss_before_mb": 202.0859375,
+      "rss_after_model_mb": 392.94140625,
+      "rss_after_full_context_mb": 412.0546875,
+      "rss_after_generation_mb": 422.8359375,
+      "peak_observed_rss_mb": 422.8359375,
+      "inference_checkpoint_mb_fp32": 177.359375,
+      "kv_cache_mb_fp32": 28.0,
+      "cpu_threads": 1,
+      "external_ai_api": "OFF"
+    },
+    "1024": {
+      "vocab": 4096,
+      "context": 1024,
+      "parameters": 46755840,
+      "full_context_forward_seconds": 1.698484500000177,
+      "full_context_tokens_per_second": 602.8904002361478,
+      "first_token_seconds": 0.10283990000016274,
+      "generation_tokens_per_second": 52.19190506811398,
+      "rss_before_mb": 202.37890625,
+      "rss_after_model_mb": 405.51953125,
+      "rss_after_full_context_mb": 456.40234375,
+      "rss_after_generation_mb": 475.56640625,
+      "peak_observed_rss_mb": 475.56640625,
+      "inference_checkpoint_mb_fp32": 178.359375,
+      "kv_cache_mb_fp32": 56.0,
+      "cpu_threads": 1,
+      "external_ai_api": "OFF"
+    },
+    "2048": {
+      "vocab": 4096,
+      "context": 2048,
+      "parameters": 47280128,
+      "full_context_forward_seconds": 4.856977899999947,
+      "full_context_tokens_per_second": 421.66137918807954,
+      "first_token_seconds": 0.10299450000002253,
+      "generation_tokens_per_second": 52.923388763955835,
+      "rss_before_mb": 202.04296875,
+      "rss_after_model_mb": 448.26953125,
+      "rss_after_full_context_mb": 758.00390625,
+      "rss_after_generation_mb": 770.83984375,
+      "peak_observed_rss_mb": 770.83984375,
+      "inference_checkpoint_mb_fp32": 180.359375,
+      "kv_cache_mb_fp32": 112.0,
+      "cpu_threads": 1,
+      "external_ai_api": "OFF"
+    }
+  },
+  "selected_context": {
+    "sanity_and_long_term_candidate": 1024,
+    "reason": "Supports detailed answers/history while remaining below 512 MiB in the isolated random-weight probe; 2048 reached about 771 MiB."
+  },
+  "step_100": {
+    "executed": true,
+    "stage": "BASE",
+    "training_loss": 7.387020740509033,
+    "validation_loss": 7.401189843813579,
+    "training_rss_mb": 1188.9921875,
+    "training_tokens_per_second": 420.5007781995664,
+    "probe": {
+      "questions": 8,
+      "natural_rate": 0.0,
+      "mean_characters": 43.375,
+      "mean_first_token_seconds": 0.024224012499814762,
+      "mean_tokens_per_second": 75.4689516311458,
+      "text_generation_established": false
+    },
+    "training_checkpoint_mb": 535.285,
+    "inference_checkpoint_mb": 178.429,
+    "gate": "FAIL"
+  },
+  "step_500": {
+    "executed": false,
+    "reason": "Step-100 Base language generation gate failed (0/8 natural continuations)."
+  },
+  "mini_vs_standard_validation_200": {
+    "schema_version": "foundation-v09-validation-comparison-v1",
+    "generated_at": "2026-08-25T16:22:36.862916+00:00",
+    "questions": 200,
+    "evaluation_split": "validation-not-final-blind",
+    "final_blind_opened": false,
+    "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "campus_v23": {
+      "questions": 200,
+      "ai_quality_gate": {
+        "good": 196,
+        "close": 4,
+        "bad": 0
+      },
+      "average_score": 91.64,
+      "average_characters": 556.71,
+      "axis_averages_0_to_5": {
+        "correctness": 4.65,
+        "relevance": 4.585,
+        "actionable": 4.649,
+        "naturalness": 4.65,
+        "completeness": 4.537,
+        "specificity": 4.478,
+        "grounding": 4.565,
+        "conciseness": 4.523,
+        "helpfulness": 4.597
+      },
+      "axis_percent": {
+        "correctness": 93.0,
+        "relevance": 91.7,
+        "completeness": 90.74,
+        "specificity": 89.56,
+        "naturalness": 93.0,
+        "actionable": 92.98
+      },
+      "unsupported_claim_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "university_policy_assertion_rate": 0.0,
+      "critical_errors": 0,
+      "route_counts": {
+        "safe": 186,
+        "rag": 12,
+        "tool": 2
+      },
+      "route_percent": {
+        "safe": 93.0,
+        "rag": 6.0,
+        "tool": 1.0
+      },
+      "tool_usage_rate": 0.01,
+      "rag_usage_rate": 0.06,
+      "clarification_rate": 0.0,
+      "fallback_rate": 0.93,
+      "revision_rate": 0.0,
+      "average_first_token_seconds": 0.070412,
+      "average_total_seconds": 0.070412,
+      "average_tokens_per_second": 5130.17,
+      "natural_generation_rate": 1,
+      "peak_rss_mb": 514.848,
+      "latency_semantics": "deterministic completed-response latency and effective output throughput"
+    },
+    "standard": {
+      "questions": 200,
+      "ai_quality_gate": {
+        "good": 0,
+        "close": 0,
+        "bad": 200
+      },
+      "average_score": 13.33,
+      "average_characters": 64,
+      "axis_averages_0_to_5": {
+        "correctness": 1.0,
+        "relevance": 1.0,
+        "actionable": 0.5,
+        "naturalness": 0.0,
+        "completeness": 0.5,
+        "specificity": 0.5,
+        "grounding": 1.0,
+        "conciseness": 1.0,
+        "helpfulness": 0.5
+      },
+      "axis_percent": {
+        "correctness": 20.0,
+        "relevance": 20.0,
+        "completeness": 10.0,
+        "specificity": 10.0,
+        "naturalness": 0.0,
+        "actionable": 10.0
+      },
+      "unsupported_claim_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "university_policy_assertion_rate": 0.0,
+      "critical_errors": 200,
+      "route_counts": {
+        "model": 200
+      },
+      "route_percent": {
+        "model": 100.0
+      },
+      "tool_usage_rate": 0.0,
+      "rag_usage_rate": 0.0,
+      "clarification_rate": 0.0,
+      "fallback_rate": 0.0,
+      "revision_rate": 0.0,
+      "average_first_token_seconds": 0.116109,
+      "average_total_seconds": 1.136952,
+      "average_tokens_per_second": 56.443,
+      "natural_generation_rate": 0,
+      "peak_rss_mb": 499.363,
+      "latency_semantics": "autoregressive first token and generated-token throughput"
+    },
+    "axis_delta_standard_minus_campus": {
+      "correctness": -73.0,
+      "relevance": -71.7,
+      "completeness": -80.74,
+      "specificity": -79.56,
+      "naturalness": -93.0,
+      "actionable": -82.98
+    },
+    "improved_axes_gte_2_points": [],
+    "standard_clearly_improved": false,
+    "standard_continue": false,
+    "external_ai_api": "OFF",
+    "production_changed": false
+  },
+  "standard_continue": false,
+  "next_training_step": null,
+  "decision": "Do not continue this checkpoint to 500/1000/2000/5000. Improve licensed Base corpus and training design first.",
+  "external_ai_api": "OFF",
+  "push_or_deploy_performed": false,
+  "production_changed": false
+}

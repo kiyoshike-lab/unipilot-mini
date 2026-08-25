@@ -1,0 +1,18 @@
+{
+  "vocab": 4096,
+  "context": 1024,
+  "parameters": 46755840,
+  "full_context_forward_seconds": 1.698484500000177,
+  "full_context_tokens_per_second": 602.8904002361478,
+  "first_token_seconds": 0.10283990000016274,
+  "generation_tokens_per_second": 52.19190506811398,
+  "rss_before_mb": 202.37890625,
+  "rss_after_model_mb": 405.51953125,
+  "rss_after_full_context_mb": 456.40234375,
+  "rss_after_generation_mb": 475.56640625,
+  "peak_observed_rss_mb": 475.56640625,
+  "inference_checkpoint_mb_fp32": 178.359375,
+  "kv_cache_mb_fp32": 56.0,
+  "cpu_threads": 1,
+  "external_ai_api": "OFF"
+}

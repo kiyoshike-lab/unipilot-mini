@@ -1,0 +1,268 @@
+{
+  "schema_version": "foundation-v09-data-inventory-v1",
+  "generated_at": "2026-08-25T16:03:20.781010+00:00",
+  "baseline": {
+    "commit": "ff2945ec4a865c6347f35f77833ac5a96394d97e",
+    "campus_version": "campus-v2.3",
+    "production_model": "v0.4",
+    "protected_file_sha256": {
+      "pipeline/campus_v23.py": "bf9ab0ede6be3be5b428234c2e6e61bb696f03b4d4ebe19ca7f8de86447f184f",
+      "pipeline/campus_tools_v23.py": "506b943aeaac24b97422d048e0a73d428c0b9246aa0309d2c0afcc0a651163c2",
+      "evaluation/campus-v23-summary.json": "e7a8c4ebd13637b14c2c3db936c78c11be2b51750e2fcb74fe1bd2b64fd5899f",
+      "configs/unipilot-v04.json": "eed41f75640887cdc72c1e7293424be71bf9947d744e3ad03b6fba3c44226902"
+    },
+    "answer_logic_frozen_after_baseline": true,
+    "production_changed": false,
+    "render_changed": false,
+    "vercel_changed": false,
+    "release_changed": false
+  },
+  "source_files": [
+    {
+      "path": "data/curated/general_japanese.jsonl",
+      "rows": 20000,
+      "licenses": {
+        "CC0-1.0": 20000
+      },
+      "sources": {
+        "UniPilot v0.2 rule-based original": 20000
+      }
+    },
+    {
+      "path": "data/curated/university_text.jsonl",
+      "rows": 10000,
+      "licenses": {
+        "CC0-1.0": 10000
+      },
+      "sources": {
+        "UniPilot v0.2 rule-based original": 10000
+      }
+    },
+    {
+      "path": "data/curated/university_dialogues.jsonl",
+      "rows": 20000,
+      "licenses": {
+        "CC0-1.0": 20000
+      },
+      "sources": {
+        "UniPilot v0.2 rule-based original": 20000
+      }
+    },
+    {
+      "path": "data/campus_v22/knowledge/wikipedia.jsonl",
+      "rows": 496,
+      "licenses": {
+        "CC BY-SA 4.0": 496
+      },
+      "sources": {
+        "日本語版ウィキペディアの執筆者": 496
+      }
+    },
+    {
+      "path": "data/campus_v22/knowledge/government.jsonl",
+      "rows": 105,
+      "licenses": {
+        "Public Data License 1.0": 105
+      },
+      "sources": {
+        "文部科学省": 37,
+        "厚生労働省": 28,
+        "国税庁": 28,
+        "デジタル庁": 12
+      }
+    },
+    {
+      "path": "data/campus_v22/knowledge/university.jsonl",
+      "rows": 9,
+      "licenses": {
+        "CC BY 4.0": 7,
+        "CC BY-NC-SA 2.1 JP": 1,
+        "CC BY-NC-ND": 1
+      },
+      "sources": {
+        "名古屋大学": 2,
+        "明海大学": 2,
+        "筑波大学": 1,
+        "東京大学": 1,
+        "関西大学": 3
+      }
+    },
+    {
+      "path": "data/v08/conversation/conversation.jsonl",
+      "rows": 6000,
+      "licenses": {
+        "CC0-1.0": 6000
+      },
+      "sources": {
+        "UniPilot project original": 6000
+      }
+    },
+    {
+      "path": "data/v08/corrected/corrected.jsonl",
+      "rows": 3300,
+      "licenses": {
+        "CC0-1.0": 3300
+      },
+      "sources": {
+        "UniPilot project original": 3300
+      }
+    },
+    {
+      "path": "data/campus_v2/faq/reviewed.jsonl",
+      "rows": 1000,
+      "licenses": {
+        "CC0-1.0": 1000
+      },
+      "sources": {
+        "UniPilot project-authored campus guidance": 1000
+      }
+    }
+  ],
+  "selected": {
+    "base_language": {
+      "rows": 1040,
+      "splits": {
+        "train": 866,
+        "validation": 120,
+        "test": 54
+      },
+      "licenses": {
+        "CC BY-SA 4.0": 1040
+      }
+    },
+    "campus_stable_pretraining": {
+      "rows": 330,
+      "splits": {
+        "train": 282,
+        "validation": 31,
+        "test": 17
+      },
+      "licenses": {
+        "CC0-1.0": 330
+      }
+    },
+    "instruction": {
+      "rows": 11844,
+      "splits": {
+        "train": 10009,
+        "validation": 1238,
+        "test": 597
+      },
+      "approval": {
+        "project_authored_quality_checked": 10900,
+        "auto_reviewed_not_human": 940,
+        "human_good": 4
+      },
+      "input_rows": 11844,
+      "accepted_rows": 11844,
+      "exact_duplicate_excluded": 0,
+      "semantic_holdout_overlap_excluded": 0,
+      "invalid_or_unlicensed_excluded": 0
+    },
+    "human_approved": {
+      "rows": 4,
+      "policy": "Only explicit human rating=good."
+    },
+    "rag_only": {
+      "rag_only_documents": 114,
+      "rag_only_by_license": {
+        "Public Data License 1.0": 105,
+        "CC BY 4.0": 7,
+        "CC BY-NC-SA 2.1 JP": 1,
+        "CC BY-NC-ND": 1
+      }
+    }
+  },
+  "excluded_legacy": {
+    "rows": 50000,
+    "files": [
+      "data/curated/general_japanese.jsonl",
+      "data/curated/university_text.jsonl",
+      "data/curated/university_dialogues.jsonl"
+    ],
+    "reason": "Legacy rule-based template text contains unnatural Japanese and repeated semantic frames; not used for v0.9."
+  },
+  "targets": {
+    "instruction_rows": 30000,
+    "multi_turn_conversations": 10000,
+    "corrected_rows": "5,000-10,000",
+    "final_blind": 1000
+  },
+  "gaps": {
+    "instruction_rows": 18156,
+    "multi_turn_conversations": 10000,
+    "corrected_rows_minimum": 1700
+  },
+  "evaluation": {
+    "known_reference_questions": 1928,
+    "maximum_reference_similarity": 0.6154,
+    "maximum_internal_similarity": 0.7647,
+    "validation_category_counts": {
+      "campus_life": 7,
+      "professor_email": 12,
+      "study_plan": 5,
+      "tuition": 8,
+      "registration": 8,
+      "university_policy": 10,
+      "internship": 6,
+      "exam": 8,
+      "gpa": 5,
+      "report_outline": 7,
+      "ai_usage": 8,
+      "scholarship": 5,
+      "programming": 10,
+      "deadline_organizer": 6,
+      "attendance": 7,
+      "part_time_job": 6,
+      "general": 6,
+      "assignment": 7,
+      "relationship": 4,
+      "credit": 10,
+      "career_schedule": 7,
+      "grade_simulator": 9,
+      "absence_email": 8,
+      "presentation_outline": 10,
+      "citation_check": 2,
+      "statistics": 3,
+      "lateness_email": 5,
+      "toeic_plan": 8,
+      "assignment_priority": 3
+    },
+    "blind_category_counts": {
+      "attendance": 35,
+      "general": 35,
+      "ai_usage": 33,
+      "campus_life": 34,
+      "internship": 35,
+      "part_time_job": 35,
+      "university_policy": 31,
+      "exam": 34,
+      "gpa": 37,
+      "career_schedule": 34,
+      "presentation_outline": 31,
+      "relationship": 37,
+      "professor_email": 30,
+      "report_outline": 34,
+      "scholarship": 36,
+      "absence_email": 34,
+      "grade_simulator": 33,
+      "study_plan": 36,
+      "credit": 32,
+      "tuition": 33,
+      "deadline_organizer": 36,
+      "assignment_priority": 39,
+      "lateness_email": 36,
+      "toeic_plan": 33,
+      "citation_check": 39,
+      "assignment": 35,
+      "registration": 34,
+      "programming": 31,
+      "statistics": 38
+    },
+    "validation": 200,
+    "final_blind": 1000,
+    "final_blind_sha256_at_seal": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b"
+  },
+  "external_llm_used": false,
+  "external_pretrained_model_used": false
+}

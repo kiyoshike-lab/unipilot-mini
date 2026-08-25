@@ -1,0 +1,57 @@
+{
+  "schema_version": "foundation-v09-tokenizer-benchmark-v1",
+  "results": [
+    {
+      "requested_vocab": 1024,
+      "actual_vocab": 1024,
+      "tokens_per_japanese_character": 0.8760336573335268,
+      "mean_validation_question_tokens": 60.385,
+      "p95_validation_question_tokens": 75,
+      "mean_university_term_tokens": 7.916666666666667,
+      "exact_roundtrip_rate": 1.0,
+      "standard_parameters_context512": 44920832,
+      "inference_checkpoint_mb_fp32": 171.359375,
+      "first_token_seconds": 0.10722339999983888,
+      "generation_tokens_per_second": 44.359028670375416,
+      "model_rss_mb": 410.7421875
+    },
+    {
+      "requested_vocab": 2048,
+      "actual_vocab": 2048,
+      "tokens_per_japanese_character": 0.7229072972580879,
+      "mean_validation_question_tokens": 49.83,
+      "p95_validation_question_tokens": 62,
+      "mean_university_term_tokens": 6.333333333333333,
+      "exact_roundtrip_rate": 1.0,
+      "standard_parameters_context512": 45445120,
+      "inference_checkpoint_mb_fp32": 173.359375,
+      "first_token_seconds": 0.10602000000017142,
+      "generation_tokens_per_second": 45.24883038844529,
+      "model_rss_mb": 429.6015625
+    },
+    {
+      "requested_vocab": 4096,
+      "actual_vocab": 4096,
+      "tokens_per_japanese_character": 0.6068475264761352,
+      "mean_validation_question_tokens": 41.83,
+      "p95_validation_question_tokens": 51,
+      "mean_university_term_tokens": 4.0,
+      "exact_roundtrip_rate": 1.0,
+      "standard_parameters_context512": 46493696,
+      "inference_checkpoint_mb_fp32": 177.359375,
+      "first_token_seconds": 0.1086580999999569,
+      "generation_tokens_per_second": 44.458164728060716,
+      "model_rss_mb": 424.84375
+    }
+  ],
+  "compression_gain_2048_over_1024": 0.17479506499958608,
+  "compression_gain_4096_over_2048": 0.1605458559100944,
+  "selected_vocab": 4096,
+  "selection_rule": "Start at 2048; select 4096 only for >=12% extra compression and >=85% generation speed.",
+  "tokenizer_4096_training_seconds": 35.25806369999964,
+  "tokenizer_4096_training_texts": 540,
+  "development_validation_only": true,
+  "final_blind_opened": false,
+  "external_pretrained_tokenizer": false,
+  "external_ai_api": "OFF"
+}
