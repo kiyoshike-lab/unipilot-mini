@@ -1,0 +1,29 @@
+{
+  "project": "UniPilot Foundation v1.0",
+  "initialization": "scratch-no-pretrained-model",
+  "model_candidates": {
+    "20m": {"context_length": 512, "embedding_dim": 384, "n_layers": 10, "n_heads": 6, "ffn_dim": 1536},
+    "30m": {"context_length": 512, "embedding_dim": 448, "n_layers": 12, "n_heads": 7, "ffn_dim": 1792},
+    "46m": {"context_length": 1024, "embedding_dim": 512, "n_layers": 14, "n_heads": 8, "ffn_dim": 2048}
+  },
+  "curriculum": [
+    {"stage": "A", "name": "General Japanese pretraining", "format": "plain next-token text", "enabled_for_sanity": true},
+    {"stage": "B", "name": "General reasoning and explanation", "format": "plain explanatory text", "enabled_for_sanity": false},
+    {"stage": "C", "name": "Campus stable knowledge", "format": "plain stable text", "enabled_for_sanity": false},
+    {"stage": "D", "name": "Instruction tuning", "format": "instruction-response", "enabled_for_sanity": false},
+    {"stage": "E", "name": "Conversation", "format": "multi-turn conversation", "enabled_for_sanity": false},
+    {"stage": "F", "name": "Corrected and alignment", "format": "human-approved corrected data", "enabled_for_sanity": false}
+  ],
+  "batch_size": 1,
+  "learning_rate": 0.0003,
+  "warmup_steps": 20,
+  "schedule_steps": 500,
+  "weight_decay": 0.1,
+  "gradient_clip": 1.0,
+  "seed": 10012026,
+  "curve_steps": [50, 100, 250, 500, 1000],
+  "sanity_stop": 500,
+  "external_pretrained_model": false,
+  "external_ai_api": "OFF",
+  "production_enabled": false
+}

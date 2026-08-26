@@ -1,0 +1,61 @@
+{
+  "schema_version": "foundation-v10-model-comparison-50-v1",
+  "same_corpus": true,
+  "same_tokenizer": true,
+  "same_seed": true,
+  "results": [
+    {
+      "architecture": "20m",
+      "parameters": 19514880,
+      "context": 512,
+      "initial_validation_loss": 8.370725333690643,
+      "step_50_train_loss": 7.650737028121949,
+      "step_50_validation_loss": 7.3443403840065,
+      "validation_loss_improvement": 1.026384949684143,
+      "step_time_seconds": 0.5905441999998402,
+      "tokens_per_second": 866.996915726441,
+      "memory_usage_mb": 808.84375,
+      "natural_japanese_rate": 0.0,
+      "mean_repetition_rate": 0.0,
+      "efficiency_score": 1.7487345653328736,
+      "healthy_loss_curve": true
+    },
+    {
+      "architecture": "30m",
+      "parameters": 31036544,
+      "context": 512,
+      "initial_validation_loss": 8.401319324970245,
+      "step_50_train_loss": 7.613410615921021,
+      "step_50_validation_loss": 7.355175614356995,
+      "validation_loss_improvement": 1.0461437106132507,
+      "step_time_seconds": 0.8598918000002413,
+      "tokens_per_second": 595.4237498251016,
+      "memory_usage_mb": 1055.4453125,
+      "natural_japanese_rate": 0.0,
+      "mean_repetition_rate": 0.5926681018786282,
+      "efficiency_score": 1.090025608076406,
+      "healthy_loss_curve": true
+    },
+    {
+      "architecture": "46m",
+      "parameters": 46755840,
+      "context": 1024,
+      "initial_validation_loss": 8.423614084720612,
+      "step_50_train_loss": 7.539776182174682,
+      "step_50_validation_loss": 7.212668478488922,
+      "validation_loss_improvement": 1.2109456062316895,
+      "step_time_seconds": 3.3230548999999883,
+      "tokens_per_second": 308.150190356471,
+      "memory_usage_mb": 3020.1328125,
+      "natural_japanese_rate": 0.0,
+      "mean_repetition_rate": 0.5731524323629587,
+      "efficiency_score": 0.29470374342139305,
+      "healthy_loss_curve": true
+    }
+  ],
+  "selected_architecture": "20m",
+  "selection_rule": "Require a healthy validation curve, then maximize validation-loss improvement per final-step second with a mild parameter penalty. Generation at 50 steps is diagnostic only.",
+  "selected_for_100_and_500_sanity_only": true,
+  "production_candidate": false,
+  "external_ai_api": "OFF"
+}

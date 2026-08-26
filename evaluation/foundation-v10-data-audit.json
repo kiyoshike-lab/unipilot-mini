@@ -1,0 +1,106 @@
+{
+  "schema_version": "foundation-v10-data-audit-v1",
+  "sources": [
+    {
+      "path": "data/foundation_v10/raw/wikipedia-dump-ja.jsonl.gz",
+      "missing": false,
+      "input_rows": 7379
+    },
+    {
+      "path": "data/foundation_v10/raw/wikibooks-dump-ja.jsonl.gz",
+      "missing": false,
+      "input_rows": 4155
+    },
+    {
+      "path": "data/foundation_v10/raw/wikipedia-ja.jsonl.gz",
+      "missing": false,
+      "input_rows": 73
+    }
+  ],
+  "documents": {
+    "train": 11143,
+    "test": 185,
+    "validation": 171
+  },
+  "unique_documents": 11499,
+  "characters": {
+    "train": 48800520,
+    "test": 641385,
+    "validation": 767419
+  },
+  "total_characters": 50209324,
+  "characters_by_source": {
+    "wikimedia_wikipedia_official_dump": 34753278,
+    "wikimedia_wikibooks_official_dump": 15272664,
+    "wikimedia_wikipedia": 183382
+  },
+  "characters_by_category": {
+    "general_encyclopedia": 25497632,
+    "language_writing": 3599982,
+    "science": 5141287,
+    "society_economics": 2945987,
+    "mathematics": 1975382,
+    "computing": 2045350,
+    "history": 6291821,
+    "education": 2579667,
+    "procedure": 132216
+  },
+  "excluded": {
+    "semantic_duplicate": 106,
+    "duplicate_page": 2
+  },
+  "holdout_audit": {
+    "files": {
+      "data/foundation_v09/evaluation/final-blind-1000.json": {
+        "questions": 1000,
+        "missing": false
+      },
+      "data/campus_v23/holdouts/blind-500.json": {
+        "questions": 500,
+        "missing": false
+      },
+      "data/campus_v23/holdouts/stress-200.json": {
+        "questions": 200,
+        "missing": false
+      },
+      "data/campus_v22/generalization/blind-300.json": {
+        "questions": 300,
+        "missing": false
+      },
+      "data/campus_v22/generalization/stress-100.json": {
+        "questions": 100,
+        "missing": false
+      },
+      "data/standard_50m_short/blind-200.json": {
+        "questions": 200,
+        "missing": false
+      },
+      "data/v08/blind/evaluation.json": {
+        "questions": 528,
+        "missing": false
+      },
+      "evaluation/human-comparison-campus-v21.json": {
+        "questions": 148,
+        "missing": false
+      },
+      "evaluation/campus-v21-human-results.json": {
+        "questions": 0,
+        "missing": false
+      },
+      "evaluation/campus-v21-quick-human-results.json": {
+        "questions": 24,
+        "missing": false
+      }
+    },
+    "questions": 3000,
+    "unique_questions": 2937,
+    "maximum_segment_question_similarity": 0.42857142857142855,
+    "threshold": 0.78,
+    "questions_used_only_as_fingerprints": true,
+    "answers_opened_or_used": false
+  },
+  "split_policy": "SHA256 document key: train 97%, validation 1.5%, test 1.5%",
+  "pretraining_format": "plain Japanese next-token text; no user/assistant wrapper",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

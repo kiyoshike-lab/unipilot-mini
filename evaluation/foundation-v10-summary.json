@@ -1,0 +1,525 @@
+{
+  "schema_version": "foundation-v10-summary-v1",
+  "scope": "Foundation Base corpus and Stage-A sanity only",
+  "baseline": {
+    "commit": "e132d81e08e7a8e695ae0948b5e4c6ed666e1ddb",
+    "protected_sha256": {
+      "pipeline/campus_v23.py": "bf9ab0ede6be3be5b428234c2e6e61bb696f03b4d4ebe19ca7f8de86447f184f",
+      "pipeline/campus_tools_v23.py": "506b943aeaac24b97422d048e0a73d428c0b9246aa0309d2c0afcc0a651163c2",
+      "evaluation/campus-v23-summary.json": "e7a8c4ebd13637b14c2c3db936c78c11be2b51750e2fcb74fe1bd2b64fd5899f",
+      "configs/unipilot-v04.json": "eed41f75640887cdc72c1e7293424be71bf9947d744e3ad03b6fba3c44226902"
+    },
+    "protected_changes": [],
+    "campus_v23_changed": false,
+    "production_v04_changed": false,
+    "render_changed": false,
+    "vercel_changed": false,
+    "release_changed": false
+  },
+  "corpus": {
+    "documents": 11499,
+    "unique_documents": 11499,
+    "characters": 50209324,
+    "tokens": 37076815,
+    "splits": {
+      "train": {
+        "path": "data/foundation_v10/packed/vocab-4096/train.bin",
+        "documents": 11143,
+        "characters": 48800520,
+        "tokens": 36028718,
+        "bytes": 72057436,
+        "sha256": "8f976cae12d9f47d8938a6980762765ba7cec22ac406a9c5e0fa88c9c89ea850",
+        "tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 25386358,
+          "wikimedia_wikibooks_official_dump": 10495402,
+          "wikimedia_wikipedia": 146958
+        },
+        "tokens_by_category": {
+          "general_encyclopedia": 18483731,
+          "language_writing": 2406941,
+          "science": 3606577,
+          "society_economics": 2103681,
+          "mathematics": 1309913,
+          "computing": 1323482,
+          "history": 4864950,
+          "education": 1844452,
+          "procedure": 84991
+        }
+      },
+      "validation": {
+        "path": "data/foundation_v10/packed/vocab-4096/validation.bin",
+        "documents": 171,
+        "characters": 767419,
+        "tokens": 581767,
+        "bytes": 1163534,
+        "sha256": "e6d4c1c9741b4cdef7972519c54b55a51ad203561233dc7f6b44eca44ffc7f6a",
+        "tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 389268,
+          "wikimedia_wikibooks_official_dump": 191843,
+          "wikimedia_wikipedia": 656
+        },
+        "tokens_by_category": {
+          "science": 35798,
+          "general_encyclopedia": 348786,
+          "computing": 14386,
+          "society_economics": 52163,
+          "history": 54631,
+          "mathematics": 5824,
+          "language_writing": 18936,
+          "procedure": 4040,
+          "education": 47203
+        }
+      },
+      "test": {
+        "path": "data/foundation_v10/packed/vocab-4096/test.bin",
+        "documents": 185,
+        "characters": 641385,
+        "tokens": 466330,
+        "bytes": 932660,
+        "sha256": "a9bf8a0923540df9271e345c6f6b538861b1ae25f0b0a1c67f9560348852de88",
+        "tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 332887,
+          "wikimedia_wikibooks_official_dump": 133443
+        },
+        "tokens_by_category": {
+          "general_encyclopedia": 198787,
+          "science": 49359,
+          "computing": 38614,
+          "language_writing": 38141,
+          "mathematics": 15651,
+          "education": 20410,
+          "history": 77539,
+          "society_economics": 25686,
+          "procedure": 2143
+        }
+      }
+    },
+    "tokens_by_source": {
+      "wikimedia_wikipedia_official_dump": 26108513,
+      "wikimedia_wikibooks_official_dump": 10820688,
+      "wikimedia_wikipedia": 147614
+    },
+    "tokens_by_category": {
+      "general_encyclopedia": 19031304,
+      "language_writing": 2464018,
+      "science": 3691734,
+      "society_economics": 2181530,
+      "mathematics": 1331388,
+      "computing": 1376482,
+      "history": 4997120,
+      "education": 1912065,
+      "procedure": 91174
+    },
+    "license": "CC BY-SA 4.0",
+    "adopted_sources": [
+      {
+        "name": "Japanese Wikipedia",
+        "documents": 7379,
+        "characters": 35003079,
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "name": "Japanese Wikibooks",
+        "documents": 4155,
+        "characters": 15509691,
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "excluded_during_extraction": {
+      "wikipedia": {
+        "residual_markup": 902,
+        "list_heavy": 14940,
+        "excluded_title_type": 565,
+        "too_short": 2864,
+        "extreme_length": 22,
+        "low_japanese_ratio": 134,
+        "disambiguation": 37
+      },
+      "wikibooks": {
+        "too_short": 7443,
+        "list_heavy": 6699,
+        "residual_markup": 50,
+        "low_japanese_ratio": 1459,
+        "low_sentence_density": 3,
+        "disambiguation": 2,
+        "excluded_title_type": 37,
+        "extreme_length": 16,
+        "exact_duplicate": 2
+      }
+    },
+    "excluded_during_integration": {
+      "semantic_duplicate": 106,
+      "duplicate_page": 2
+    },
+    "semantic_duplicates": 106,
+    "holdout": {
+      "files": {
+        "data/foundation_v09/evaluation/final-blind-1000.json": {
+          "questions": 1000,
+          "missing": false
+        },
+        "data/campus_v23/holdouts/blind-500.json": {
+          "questions": 500,
+          "missing": false
+        },
+        "data/campus_v23/holdouts/stress-200.json": {
+          "questions": 200,
+          "missing": false
+        },
+        "data/campus_v22/generalization/blind-300.json": {
+          "questions": 300,
+          "missing": false
+        },
+        "data/campus_v22/generalization/stress-100.json": {
+          "questions": 100,
+          "missing": false
+        },
+        "data/standard_50m_short/blind-200.json": {
+          "questions": 200,
+          "missing": false
+        },
+        "data/v08/blind/evaluation.json": {
+          "questions": 528,
+          "missing": false
+        },
+        "evaluation/human-comparison-campus-v21.json": {
+          "questions": 148,
+          "missing": false
+        },
+        "evaluation/campus-v21-human-results.json": {
+          "questions": 0,
+          "missing": false
+        },
+        "evaluation/campus-v21-quick-human-results.json": {
+          "questions": 24,
+          "missing": false
+        }
+      },
+      "questions": 3000,
+      "unique_questions": 2937,
+      "maximum_segment_question_similarity": 0.42857142857142855,
+      "threshold": 0.78,
+      "questions_used_only_as_fingerprints": true,
+      "answers_opened_or_used": false
+    }
+  },
+  "public_corpus_research": {
+    "schema_version": "foundation-v10-public-corpus-research-v1",
+    "researched_at": "2026-08-26",
+    "policy": "Use only sources whose text reuse and machine-learning use can be traced to an official license. Unknown or contract-restricted text is prohibited.",
+    "candidates": [
+      {
+        "name": "Japanese Wikipedia official pages-articles dump",
+        "url": "https://dumps.wikimedia.org/jawiki/latest/",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "usable_scope": "Article text with per-article attribution URL, revision metadata, modification notice, and ShareAlike compliance.",
+        "token_estimate": "Selected cleaned shard portion: about 26.1M exact Foundation tokens.",
+        "decision": "ADOPT",
+        "reason": "Official Wikimedia distribution, stable encyclopedic Japanese, traceable revision and attribution."
+      },
+      {
+        "name": "Japanese Wikibooks official pages-articles dump",
+        "url": "https://dumps.wikimedia.org/jawikibooks/latest/",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://ja.wikibooks.org/wiki/Wikibooks:%E8%91%97%E4%BD%9C%E6%A8%A9",
+        "usable_scope": "Educational article text with per-page attribution URL, revision metadata, modification notice, and ShareAlike compliance.",
+        "token_estimate": "Cleaned full dump: about 10.8M exact Foundation tokens.",
+        "decision": "ADOPT",
+        "reason": "Official educational corpus complements encyclopedia prose with explanations and procedures."
+      },
+      {
+        "name": "Balanced Corpus of Contemporary Written Japanese (BCCWJ)",
+        "url": "https://clrd.ninjal.ac.jp/bccwj/en/",
+        "license": "Contract-based; not an open corpus license",
+        "usable_scope": "Online search or paid contract according to NINJAL terms; text-derived product use is restricted.",
+        "token_estimate": "104.3M words stated by NINJAL.",
+        "decision": "REJECT",
+        "reason": "Cannot redistribute or incorporate the text into this reusable model without a suitable separate agreement."
+      },
+      {
+        "name": "Corpus of Spontaneous Japanese (CSJ)",
+        "url": "https://clrd.ninjal.ac.jp/csj/en/",
+        "license": "Contract-based academic/general/commercial terms",
+        "usable_scope": "Use only under an individual NINJAL license agreement.",
+        "token_estimate": "Large spoken corpus; exact Foundation tokens not estimated because access was not authorized.",
+        "decision": "REJECT",
+        "reason": "No project-wide redistribution or model-use authorization is available in the workspace."
+      },
+      {
+        "name": "UD Japanese GSD",
+        "url": "https://github.com/UniversalDependencies/UD_Japanese-GSD",
+        "license": "CC BY-SA 4.0 for the treebank; underlying-content notice applies",
+        "usable_scope": "Dependency-treebank research subject to repository notices.",
+        "token_estimate": "Small, below the multi-million-token scale needed for Base pretraining.",
+        "decision": "REJECT_FOR_BASE",
+        "reason": "News/blog genre and small scale do not address the stable general-language corpus bottleneck; may be reconsidered for syntax evaluation."
+      },
+      {
+        "name": "Common Crawl derived Japanese corpora (mC4/OSCAR/CC-100 class)",
+        "url": "https://commoncrawl.org/terms-of-use",
+        "license": "Source-page copyright varies; corpus packaging license is not blanket text permission",
+        "usable_scope": "Requires source-level rights filtering and attribution not implemented here.",
+        "token_estimate": "Potentially billions of tokens.",
+        "decision": "REJECT",
+        "reason": "Page-level licenses cannot be verified reliably; indiscriminate web scraping is prohibited."
+      },
+      {
+        "name": "megagonlabs/instruction_ja",
+        "url": "https://github.com/megagonlabs/instruction_ja",
+        "license": "MIT",
+        "usable_scope": "669 manually modified Japanese dialogs under repository terms.",
+        "token_estimate": "Small instruction dataset, not a Base-pretraining-scale corpus.",
+        "decision": "RESERVE_NOT_USED",
+        "reason": "Instruction/dialogue data must remain outside Stage A and its translation lineage requires a separate later-stage review."
+      }
+    ],
+    "adopted_sources": 2,
+    "external_llm_used": false,
+    "external_ai_api": "OFF"
+  },
+  "tokenizer": {
+    "schema_version": "foundation-v10-tokenizer-benchmark-v1",
+    "results": [
+      {
+        "requested_vocab": 1024,
+        "actual_vocab": 1024,
+        "sample_documents": 356,
+        "sample_characters": 1408804,
+        "sample_tokens": 1456709,
+        "tokens_per_character": 1.034004020431515,
+        "wikipedia_tokens_per_character": 1.0454637170166516,
+        "wikibooks_tokens_per_character": 1.009373309428749,
+        "campus_question_mean_tokens": 76.105,
+        "campus_question_p95_tokens": 86,
+        "sample_tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 1004252,
+          "wikimedia_wikibooks_official_dump": 451527,
+          "wikimedia_wikipedia": 930
+        },
+        "sample_tokens_by_category": {
+          "science": 123231,
+          "general_encyclopedia": 753791,
+          "computing": 75208,
+          "society_economics": 107617,
+          "history": 182436,
+          "mathematics": 29888,
+          "language_writing": 80764,
+          "procedure": 8411,
+          "education": 95363
+        },
+        "estimated_full_corpus_tokens": 51916643,
+        "learned_token_usage_rate": 0.9986859395532195,
+        "learned_tokens_projected_below_100_full_corpus": 1,
+        "learned_tokens_projected_below_100_rate": 0.001314060446780552,
+        "exact_roundtrip_rate": 1.0,
+        "tokenizer_training_characters": 1000000,
+        "tokenizer_training_seconds": 2.2736643999996886,
+        "counting_seconds": 1.7423282999998264,
+        "first_token_seconds": 0.043018299999857845,
+        "generation_tokens_per_second": 116.04994983271928,
+        "peak_process_rss_mb": 365.7734375,
+        "probe_parameters": 18335232
+      },
+      {
+        "requested_vocab": 2048,
+        "actual_vocab": 2048,
+        "sample_documents": 356,
+        "sample_characters": 1408804,
+        "sample_tokens": 1220366,
+        "tokens_per_character": 0.8662425717133114,
+        "wikipedia_tokens_per_character": 0.8767325033542388,
+        "wikibooks_tokens_per_character": 0.8436962090965587,
+        "campus_question_mean_tokens": 56.87,
+        "campus_question_p95_tokens": 63,
+        "sample_tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 842178,
+          "wikimedia_wikibooks_official_dump": 377414,
+          "wikimedia_wikipedia": 774
+        },
+        "sample_tokens_by_category": {
+          "science": 101999,
+          "general_encyclopedia": 634639,
+          "computing": 62117,
+          "society_economics": 90359,
+          "history": 153134,
+          "mathematics": 25002,
+          "language_writing": 67098,
+          "procedure": 7116,
+          "education": 78902
+        },
+        "estimated_full_corpus_tokens": 43493454,
+        "learned_token_usage_rate": 0.9893557422969188,
+        "learned_tokens_projected_below_100_full_corpus": 24,
+        "learned_tokens_projected_below_100_rate": 0.013445378151260505,
+        "exact_roundtrip_rate": 1.0,
+        "tokenizer_training_characters": 1000000,
+        "tokenizer_training_seconds": 2.398984599999949,
+        "counting_seconds": 1.7985180000000582,
+        "first_token_seconds": 0.04397449999987657,
+        "generation_tokens_per_second": 113.96152089241818,
+        "peak_process_rss_mb": 428.734375,
+        "probe_parameters": 18728448
+      },
+      {
+        "requested_vocab": 4096,
+        "actual_vocab": 4096,
+        "sample_documents": 356,
+        "sample_characters": 1408804,
+        "sample_tokens": 1048097,
+        "tokens_per_character": 0.7439622545080792,
+        "wikipedia_tokens_per_character": 0.7517769665200162,
+        "wikibooks_tokens_per_character": 0.7271658313474942,
+        "campus_question_mean_tokens": 47.15,
+        "campus_question_p95_tokens": 53,
+        "sample_tokens_by_source": {
+          "wikimedia_wikipedia_official_dump": 722155,
+          "wikimedia_wikibooks_official_dump": 325286,
+          "wikimedia_wikipedia": 656
+        },
+        "sample_tokens_by_category": {
+          "science": 85157,
+          "general_encyclopedia": 547573,
+          "computing": 53000,
+          "society_economics": 77849,
+          "history": 132170,
+          "mathematics": 21475,
+          "language_writing": 57077,
+          "procedure": 6183,
+          "education": 67613
+        },
+        "estimated_full_corpus_tokens": 37353842,
+        "learned_token_usage_rate": 0.9796504043829898,
+        "learned_tokens_projected_below_100_full_corpus": 125,
+        "learned_tokens_projected_below_100_rate": 0.03261153143751631,
+        "exact_roundtrip_rate": 1.0,
+        "tokenizer_training_characters": 1000000,
+        "tokenizer_training_seconds": 2.5872769000002336,
+        "counting_seconds": 1.7312081000000035,
+        "first_token_seconds": 0.0454410000002099,
+        "generation_tokens_per_second": 110.73946740756963,
+        "peak_process_rss_mb": 467.71875,
+        "probe_parameters": 19514880
+      }
+    ],
+    "compression_gain_2048_over_1024": 0.1622444839703744,
+    "compression_gain_4096_over_2048": 0.14116174983570506,
+    "selected_vocab": 4096,
+    "comparison_is_heldout_validation_and_test": true,
+    "tokenizer_training_characters_per_source": 500000,
+    "selected_tokenizer_full_corpus_count_is_written_by": "scripts/pack_foundation_v10.py",
+    "selection_rule": "Default 2048; use 4096 only with >=10% extra compression, >=85% CPU speed, and either <=15% projected rare learned tokens or >=20% compression plus >=5,000 estimated corpus tokens per vocabulary entry.",
+    "tokenizers_trained_from_scratch_on_base_train_only": true,
+    "external_pretrained_tokenizer": false,
+    "external_ai_api": "OFF"
+  },
+  "model_comparison_step_50": {
+    "schema_version": "foundation-v10-model-comparison-50-v1",
+    "same_corpus": true,
+    "same_tokenizer": true,
+    "same_seed": true,
+    "results": [
+      {
+        "architecture": "20m",
+        "parameters": 19514880,
+        "context": 512,
+        "initial_validation_loss": 8.370725333690643,
+        "step_50_train_loss": 7.650737028121949,
+        "step_50_validation_loss": 7.3443403840065,
+        "validation_loss_improvement": 1.026384949684143,
+        "step_time_seconds": 0.5905441999998402,
+        "tokens_per_second": 866.996915726441,
+        "memory_usage_mb": 808.84375,
+        "natural_japanese_rate": 0.0,
+        "mean_repetition_rate": 0.0,
+        "efficiency_score": 1.7487345653328736,
+        "healthy_loss_curve": true
+      },
+      {
+        "architecture": "30m",
+        "parameters": 31036544,
+        "context": 512,
+        "initial_validation_loss": 8.401319324970245,
+        "step_50_train_loss": 7.613410615921021,
+        "step_50_validation_loss": 7.355175614356995,
+        "validation_loss_improvement": 1.0461437106132507,
+        "step_time_seconds": 0.8598918000002413,
+        "tokens_per_second": 595.4237498251016,
+        "memory_usage_mb": 1055.4453125,
+        "natural_japanese_rate": 0.0,
+        "mean_repetition_rate": 0.5926681018786282,
+        "efficiency_score": 1.090025608076406,
+        "healthy_loss_curve": true
+      },
+      {
+        "architecture": "46m",
+        "parameters": 46755840,
+        "context": 1024,
+        "initial_validation_loss": 8.423614084720612,
+        "step_50_train_loss": 7.539776182174682,
+        "step_50_validation_loss": 7.212668478488922,
+        "validation_loss_improvement": 1.2109456062316895,
+        "step_time_seconds": 3.3230548999999883,
+        "tokens_per_second": 308.150190356471,
+        "memory_usage_mb": 3020.1328125,
+        "natural_japanese_rate": 0.0,
+        "mean_repetition_rate": 0.5731524323629587,
+        "efficiency_score": 0.29470374342139305,
+        "healthy_loss_curve": true
+      }
+    ],
+    "selected_architecture": "20m",
+    "selection_rule": "Require a healthy validation curve, then maximize validation-loss improvement per final-step second with a mild parameter penalty. Generation at 50 steps is diagnostic only.",
+    "selected_for_100_and_500_sanity_only": true,
+    "production_candidate": false,
+    "external_ai_api": "OFF"
+  },
+  "selected_sanity_model": {
+    "architecture": "20m",
+    "parameters": 19514880,
+    "vocab": 4096,
+    "context": 512,
+    "reason": "Best validation-loss improvement per CPU second; 46M required about 3.0GB during training."
+  },
+  "step_100": {
+    "loss": 7.21465277671814,
+    "validation_loss": 7.282623499631882,
+    "natural_japanese_rate": 0.0,
+    "healthy_loss_curve": true
+  },
+  "step_500": {
+    "loss": 6.721812515258789,
+    "validation_loss": 6.868758469820023,
+    "natural_japanese_rate": 0.0,
+    "healthy_loss_curve": true,
+    "training_memory_mb": 874.5,
+    "generation_tokens_per_second": 135.76538504320578
+  },
+  "base_100": {
+    "metrics": {
+      "natural_japanese_rate": 0.0,
+      "relevance_rate": 0.0,
+      "completion_rate": 0.0,
+      "runaway_rate": 0.96,
+      "eos_rate": 0.0,
+      "mean_repetition_rate": 0.19257296466973886,
+      "mean_first_token_seconds": 0.01276365399993665,
+      "mean_tokens_per_second": 147.70333182234393,
+      "total_evaluation_seconds": 43.5762364000002,
+      "peak_process_rss_mb": 529.4921875
+    },
+    "gate": "FAIL"
+  },
+  "decisions": {
+    "foundation_data_and_training_design_healthy": true,
+    "base_capability_gate_passed": false,
+    "continue_stage_a_to_1000": true,
+    "continue_reason": "Validation loss decreased monotonically through 500, but only about 0.7% of the 36.0M-token train corpus was consumed. 1000 is another sanity checkpoint, not promotion.",
+    "use_46m_now": false,
+    "validate_with_20m_first": true,
+    "start_campus_or_instruction_stage": false,
+    "start_reward_or_dpo": false
+  },
+  "external_ai_api": "OFF",
+  "push_or_deploy_performed": false
+}

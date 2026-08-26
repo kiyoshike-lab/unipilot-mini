@@ -1,0 +1,31 @@
+{
+  "schema_version": "foundation-v10-wikimedia-dump-v1",
+  "project": "Japanese Wikibooks",
+  "dump_url": "https://dumps.wikimedia.org/jawikibooks/latest/jawikibooks-latest-pages-articles.xml.bz2",
+  "dump_path": "data/foundation_v10/raw/jawikibooks-latest-pages-articles.xml.bz2",
+  "dump_bytes": 29800463,
+  "dump_sha256": "c86adca6b217fdab1e616a3795b22fd4ecbd11be71950e189e35747ab3cf7f35",
+  "retrieved_at": "2026-08-26T13:28:40.787042+00:00",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "parsed_pages": 28670,
+  "accepted_documents": 4155,
+  "accepted_characters": 15509691,
+  "redirects": 3453,
+  "non_main_namespace": 5351,
+  "excluded": {
+    "too_short": 7443,
+    "list_heavy": 6699,
+    "residual_markup": 50,
+    "low_japanese_ratio": 1459,
+    "low_sentence_density": 3,
+    "disambiguation": 2,
+    "excluded_title_type": 37,
+    "extreme_length": 16,
+    "exact_duplicate": 2
+  },
+  "output": "data/foundation_v10/raw/wikibooks-dump-ja.jsonl.gz",
+  "attribution_preserved_per_article": true,
+  "modifications_marked_per_article": true,
+  "external_ai_api": "OFF"
+}

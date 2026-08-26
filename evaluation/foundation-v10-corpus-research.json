@@ -1,0 +1,75 @@
+{
+  "schema_version": "foundation-v10-public-corpus-research-v1",
+  "researched_at": "2026-08-26",
+  "policy": "Use only sources whose text reuse and machine-learning use can be traced to an official license. Unknown or contract-restricted text is prohibited.",
+  "candidates": [
+    {
+      "name": "Japanese Wikipedia official pages-articles dump",
+      "url": "https://dumps.wikimedia.org/jawiki/latest/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "usable_scope": "Article text with per-article attribution URL, revision metadata, modification notice, and ShareAlike compliance.",
+      "token_estimate": "Selected cleaned shard portion: about 26.1M exact Foundation tokens.",
+      "decision": "ADOPT",
+      "reason": "Official Wikimedia distribution, stable encyclopedic Japanese, traceable revision and attribution."
+    },
+    {
+      "name": "Japanese Wikibooks official pages-articles dump",
+      "url": "https://dumps.wikimedia.org/jawikibooks/latest/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://ja.wikibooks.org/wiki/Wikibooks:%E8%91%97%E4%BD%9C%E6%A8%A9",
+      "usable_scope": "Educational article text with per-page attribution URL, revision metadata, modification notice, and ShareAlike compliance.",
+      "token_estimate": "Cleaned full dump: about 10.8M exact Foundation tokens.",
+      "decision": "ADOPT",
+      "reason": "Official educational corpus complements encyclopedia prose with explanations and procedures."
+    },
+    {
+      "name": "Balanced Corpus of Contemporary Written Japanese (BCCWJ)",
+      "url": "https://clrd.ninjal.ac.jp/bccwj/en/",
+      "license": "Contract-based; not an open corpus license",
+      "usable_scope": "Online search or paid contract according to NINJAL terms; text-derived product use is restricted.",
+      "token_estimate": "104.3M words stated by NINJAL.",
+      "decision": "REJECT",
+      "reason": "Cannot redistribute or incorporate the text into this reusable model without a suitable separate agreement."
+    },
+    {
+      "name": "Corpus of Spontaneous Japanese (CSJ)",
+      "url": "https://clrd.ninjal.ac.jp/csj/en/",
+      "license": "Contract-based academic/general/commercial terms",
+      "usable_scope": "Use only under an individual NINJAL license agreement.",
+      "token_estimate": "Large spoken corpus; exact Foundation tokens not estimated because access was not authorized.",
+      "decision": "REJECT",
+      "reason": "No project-wide redistribution or model-use authorization is available in the workspace."
+    },
+    {
+      "name": "UD Japanese GSD",
+      "url": "https://github.com/UniversalDependencies/UD_Japanese-GSD",
+      "license": "CC BY-SA 4.0 for the treebank; underlying-content notice applies",
+      "usable_scope": "Dependency-treebank research subject to repository notices.",
+      "token_estimate": "Small, below the multi-million-token scale needed for Base pretraining.",
+      "decision": "REJECT_FOR_BASE",
+      "reason": "News/blog genre and small scale do not address the stable general-language corpus bottleneck; may be reconsidered for syntax evaluation."
+    },
+    {
+      "name": "Common Crawl derived Japanese corpora (mC4/OSCAR/CC-100 class)",
+      "url": "https://commoncrawl.org/terms-of-use",
+      "license": "Source-page copyright varies; corpus packaging license is not blanket text permission",
+      "usable_scope": "Requires source-level rights filtering and attribution not implemented here.",
+      "token_estimate": "Potentially billions of tokens.",
+      "decision": "REJECT",
+      "reason": "Page-level licenses cannot be verified reliably; indiscriminate web scraping is prohibited."
+    },
+    {
+      "name": "megagonlabs/instruction_ja",
+      "url": "https://github.com/megagonlabs/instruction_ja",
+      "license": "MIT",
+      "usable_scope": "669 manually modified Japanese dialogs under repository terms.",
+      "token_estimate": "Small instruction dataset, not a Base-pretraining-scale corpus.",
+      "decision": "RESERVE_NOT_USED",
+      "reason": "Instruction/dialogue data must remain outside Stage A and its translation lineage requires a separate later-stage review."
+    }
+  ],
+  "adopted_sources": 2,
+  "external_llm_used": false,
+  "external_ai_api": "OFF"
+}

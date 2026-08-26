@@ -1,0 +1,29 @@
+{
+  "schema_version": "foundation-v10-wikimedia-collection-v1",
+  "source": "Japanese Wikipedia",
+  "api": "https://ja.wikipedia.org/w/api.php",
+  "method": "official Action API",
+  "retrieved_at": "2026-08-26T13:21:45.510145+00:00",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "output": "data/foundation_v10/raw/wikipedia-ja.jsonl.gz",
+  "accepted_documents": 73,
+  "accepted_characters": 223592,
+  "target_characters": 200000,
+  "requests": 84,
+  "excluded": {
+    "too_short": 20,
+    "low_japanese_ratio": 3,
+    "excluded_title_type": 1
+  },
+  "duplicate_pages": 0,
+  "duplicate_texts": 0,
+  "cleaning": [
+    "plain-text extracts",
+    "reference/navigation sections removed",
+    "HTML/template/noise lines removed",
+    "short/disambiguation/list pages removed"
+  ],
+  "attribution_preserved_per_article": true,
+  "external_ai_api": "OFF"
+}
