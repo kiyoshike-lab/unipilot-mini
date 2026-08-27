@@ -1,0 +1,103 @@
+{
+  "schema_version": "foundation-v11-packed-corpus-v1",
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "vocab": 4096,
+  "dtype": "uint16-native-little-endian",
+  "document_boundary": "BOS ... EOS",
+  "splits": {
+    "train": {
+      "path": "data/foundation_v11/packed/vocab-4096/train.bin",
+      "documents": 10012,
+      "characters": 45070841,
+      "tokens": 33402759,
+      "bytes": 66805518,
+      "sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 25523622,
+        "wikimedia_wikibooks_official_dump": 7730287,
+        "wikimedia_wikipedia": 148850
+      },
+      "tokens_by_category": {
+        "language_writing": 1866687,
+        "general_encyclopedia": 16117573,
+        "science": 3451546,
+        "society_economics": 2158406,
+        "computing": 1043230,
+        "mathematics": 758351,
+        "history": 6305938,
+        "education": 1632785,
+        "procedure": 68243
+      }
+    },
+    "validation": {
+      "path": "data/foundation_v11/packed/vocab-4096/validation.bin",
+      "documents": 146,
+      "characters": 618055,
+      "tokens": 466818,
+      "bytes": 933636,
+      "sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 358802,
+        "wikimedia_wikibooks_official_dump": 107354,
+        "wikimedia_wikipedia": 662
+      },
+      "tokens_by_category": {
+        "history": 36242,
+        "science": 37762,
+        "computing": 21311,
+        "general_encyclopedia": 264660,
+        "society_economics": 48519,
+        "mathematics": 4151,
+        "language_writing": 20529,
+        "procedure": 2266,
+        "education": 31378
+      }
+    },
+    "test": {
+      "path": "data/foundation_v11/packed/vocab-4096/test.bin",
+      "documents": 157,
+      "characters": 544190,
+      "tokens": 401473,
+      "bytes": 802946,
+      "sha256": "78c8f44e1689ed341b7abb9c31b1ca6d53139cb72384e0912092d32f8a0afd6c",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 293303,
+        "wikimedia_wikibooks_official_dump": 108170
+      },
+      "tokens_by_category": {
+        "general_encyclopedia": 164448,
+        "language_writing": 17087,
+        "history": 127944,
+        "science": 33513,
+        "computing": 21430,
+        "mathematics": 8492,
+        "education": 11546,
+        "society_economics": 14807,
+        "procedure": 2206
+      }
+    }
+  },
+  "total_documents": 10315,
+  "total_characters": 46233086,
+  "total_tokens": 34271050,
+  "tokens_by_source": {
+    "wikimedia_wikipedia_official_dump": 26175727,
+    "wikimedia_wikibooks_official_dump": 7945811,
+    "wikimedia_wikipedia": 149512
+  },
+  "tokens_by_category": {
+    "language_writing": 1904303,
+    "general_encyclopedia": 16546681,
+    "science": 3522821,
+    "society_economics": 2221732,
+    "computing": 1085971,
+    "mathematics": 770994,
+    "history": 6470124,
+    "education": 1675709,
+    "procedure": 72715
+  },
+  "strict_clean_corpus": true,
+  "pretraining_and_instruction_separated": true,
+  "external_pretrained_model": false,
+  "external_ai_api": "OFF"
+}

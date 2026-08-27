@@ -1,0 +1,32 @@
+{
+  "schema_version": "foundation-v11-resume-reproducibility-v1",
+  "experiment": {
+    "A": "scratch -> 40",
+    "B": "scratch -> 20 -> resume -> 40",
+    "seed": 11012026,
+    "cpu_threads": 1
+  },
+  "loss_steps_compared": 40,
+  "maximum_loss_difference": 0.0,
+  "maximum_weight_difference": 0.0,
+  "maximum_optimizer_difference": 0.0,
+  "weight_mismatches": [],
+  "optimizer_mismatches": [],
+  "sampler_mismatches": [],
+  "checkpoint_a_sha256": "2dee07bb007ff2c6796eb318794a707725184876eab2213e51d0d5f59653d8e8",
+  "checkpoint_b_sha256": "489bfe7bd503838cf6aee40c30e6eafba5341713f6b99488e994c7be3cb5d23d",
+  "checks": {
+    "loss_sequence_bitwise_equal": true,
+    "weights_bitwise_equal": true,
+    "optimizer_bitwise_equal": true,
+    "scheduler_equal": true,
+    "sampler_equal": true,
+    "checkpoint_v2_integrity": true,
+    "python_rng_saved": true,
+    "numpy_rng_saved": true,
+    "torch_cpu_rng_saved": true
+  },
+  "resume_integrity": "PASS",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

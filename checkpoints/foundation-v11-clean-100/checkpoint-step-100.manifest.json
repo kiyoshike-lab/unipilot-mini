@@ -1,0 +1,112 @@
+{
+  "schema_version": "foundation-v11-checkpoint-manifest-v2",
+  "model": "UniPilot Foundation v1.1 Clean 20M step 100",
+  "parameters": 19514880,
+  "global_step": 100,
+  "model_config": {
+    "model_name": "UniPilot Foundation v1.1 Clean 20M",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "train_corpus_tokens": 33402759,
+  "tokens_processed": 51200,
+  "train_corpus_fraction": 0.0015328075144930393,
+  "training_stage": "A-clean-base-only",
+  "scheduler_state": {
+    "kind": "stateless_warmup_cosine",
+    "global_step": 100,
+    "base_learning_rate": 0.0003,
+    "warmup_steps": 20,
+    "schedule_steps": 500,
+    "minimum_ratio": 0.1
+  },
+  "rng_states_saved": [
+    "python",
+    "numpy",
+    "torch_cpu"
+  ],
+  "sampler_state_saved": true,
+  "history": [
+    {
+      "step": 0,
+      "train_loss": null,
+      "validation_loss": 8.442137658596039,
+      "learning_rate": 1.4999999999999999e-05,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 399.109375,
+      "tokens_processed": 0,
+      "corpus_fraction": 0.0
+    },
+    {
+      "step": 10,
+      "train_loss": 8.157444095611572,
+      "validation_loss": 7.992324322462082,
+      "learning_rate": 0.00015,
+      "gradient_norm": 2.173914670944214,
+      "tokens_per_second": 880.8527852787954,
+      "peak_ram_mb": 836.59375,
+      "tokens_processed": 5120,
+      "corpus_fraction": 0.00015328075144930393
+    },
+    {
+      "step": 25,
+      "train_loss": 7.715997536977132,
+      "validation_loss": 7.5001208782196045,
+      "learning_rate": 0.0002999537388717002,
+      "gradient_norm": 1.63815438747406,
+      "tokens_per_second": 887.7521523810644,
+      "peak_ram_mb": 834.6328125,
+      "tokens_processed": 12800,
+      "corpus_fraction": 0.0003832018786232598
+    },
+    {
+      "step": 50,
+      "train_loss": 7.299886245727539,
+      "validation_loss": 7.207618445158005,
+      "learning_rate": 0.00029757555223549096,
+      "gradient_norm": 1.2366359233856201,
+      "tokens_per_second": 879.6891048470548,
+      "peak_ram_mb": 804.4921875,
+      "tokens_processed": 25600,
+      "corpus_fraction": 0.0007664037572465196
+    },
+    {
+      "step": 75,
+      "train_loss": 7.26388729095459,
+      "validation_loss": 7.202895522117615,
+      "learning_rate": 0.00029165583034953537,
+      "gradient_norm": 1.296614408493042,
+      "tokens_per_second": 886.5695170256039,
+      "peak_ram_mb": 841.625,
+      "tokens_processed": 38400,
+      "corpus_fraction": 0.0011496056358697795
+    },
+    {
+      "step": 100,
+      "train_loss": 7.171713256835938,
+      "validation_loss": 7.165496230125427,
+      "learning_rate": 0.0002823527087325944,
+      "gradient_norm": 1.8637064695358276,
+      "tokens_per_second": 868.4582299812845,
+      "peak_ram_mb": 803.3828125,
+      "tokens_processed": 51200,
+      "corpus_fraction": 0.0015328075144930393
+    }
+  ],
+  "initialization": "scratch-no-pretrained-model",
+  "git_commit": "94a29f8930f00b5a32d3f07465849ac29a1d1e7f",
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "checkpoint_bytes": 234874309,
+  "checkpoint_sha256": "597c2ea113036acebcc66657f7cbf3c303b9a06c9474aea62207430fbc7c44cf"
+}

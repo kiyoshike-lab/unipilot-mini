@@ -1,5 +1,8 @@
 {
   "schema_version": "foundation-v10-checkpoint-manifest-v1",
+  "lifecycle_status": "DEPRECATED_DIRTY_CORPUS",
+  "resume_allowed_for_foundation_v11": false,
+  "deprecation_reason": "Foundation v1.0 source cleaning retained MediaWiki residue; preserve for audit only.",
   "model": "UniPilot Foundation v1.0 20m step 500",
   "architecture": "20m",
   "parameters": 19514880,

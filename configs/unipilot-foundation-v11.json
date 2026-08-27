@@ -1,0 +1,29 @@
+{
+  "project": "UniPilot Foundation v1.1 Clean Base",
+  "initialization": "scratch-no-pretrained-model",
+  "model": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536
+  },
+  "batch_size": 1,
+  "learning_rate": 0.0003,
+  "warmup_steps": 20,
+  "schedule_steps": 500,
+  "weight_decay": 0.1,
+  "gradient_clip": 1.0,
+  "seed": 11012026,
+  "metric_steps": [0, 10, 25, 50, 75, 100],
+  "sanity_stop": 100,
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "training_stage": "A-clean-base-only",
+  "campus_instruction_enabled": false,
+  "dpo_enabled": false,
+  "preference_training_enabled": false,
+  "external_pretrained_model": false,
+  "external_ai_api": "OFF",
+  "production_enabled": false
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "foundation-v11-data-audit-v1",
+  "sources": [
+    {
+      "path": "data/foundation_v11/raw/wikipedia-dump-ja.jsonl.gz",
+      "input_rows": 7315
+    },
+    {
+      "path": "data/foundation_v11/raw/wikibooks-dump-ja.jsonl.gz",
+      "input_rows": 2998
+    },
+    {
+      "path": "data/foundation_v11/raw/wikipedia-ja.jsonl.gz",
+      "input_rows": 72
+    }
+  ],
+  "documents": {
+    "train": 10012,
+    "test": 157,
+    "validation": 146
+  },
+  "unique_documents": 10315,
+  "characters": {
+    "train": 45070841,
+    "test": 544190,
+    "validation": 618055
+  },
+  "total_characters": 46233086,
+  "characters_by_source": {
+    "wikimedia_wikipedia_official_dump": 34812031,
+    "wikimedia_wikibooks_official_dump": 11234771,
+    "wikimedia_wikipedia": 186284
+  },
+  "characters_by_category": {
+    "language_writing": 2799848,
+    "general_encyclopedia": 22108707,
+    "science": 4895648,
+    "society_economics": 3041484,
+    "computing": 1597152,
+    "mathematics": 1120279,
+    "history": 8273899,
+    "education": 2291848,
+    "procedure": 104221
+  },
+  "excluded": {
+    "semantic_duplicate": 69,
+    "duplicate_page": 1
+  },
+  "holdout_audit": {
+    "files": {
+      "data/campus_v23/holdouts/blind-500.json": {
+        "questions": 500,
+        "missing": false
+      },
+      "data/campus_v23/holdouts/stress-200.json": {
+        "questions": 200,
+        "missing": false
+      },
+      "data/campus_v22/generalization/blind-300.json": {
+        "questions": 300,
+        "missing": false
+      },
+      "data/campus_v22/generalization/stress-100.json": {
+        "questions": 100,
+        "missing": false
+      },
+      "data/standard_50m_short/blind-200.json": {
+        "questions": 200,
+        "missing": false
+      },
+      "data/v08/blind/evaluation.json": {
+        "questions": 528,
+        "missing": false
+      },
+      "evaluation/human-comparison-campus-v21.json": {
+        "questions": 148,
+        "missing": false
+      },
+      "evaluation/campus-v21-human-results.json": {
+        "questions": 0,
+        "missing": false
+      },
+      "evaluation/campus-v21-quick-human-results.json": {
+        "questions": 24,
+        "missing": false
+      }
+    },
+    "questions": 2000,
+    "unique_questions": 1937,
+    "maximum_segment_question_similarity": 0.26666666666666666,
+    "threshold": 0.78,
+    "questions_used_only_as_fingerprints": true,
+    "answers_opened_or_used": false,
+    "final_blind_content_opened": false
+  },
+  "split_policy": "SHA256 document key: train 97%, validation 1.5%, test 1.5%",
+  "document_level_and_semantic_dedup_before_split": true,
+  "strict_zero_markup_residue": true,
+  "pretraining_format": "plain Japanese next-token text; no instruction wrapper",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

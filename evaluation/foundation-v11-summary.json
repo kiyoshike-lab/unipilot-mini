@@ -1,0 +1,266 @@
+{
+  "schema_version": "foundation-v11-summary-v1",
+  "corpus": {
+    "dirty_v1.0": {
+      "documents": 11499,
+      "characters": 50209324,
+      "tokens": 37076815,
+      "unique_documents": 11499,
+      "semantic_duplicates": 106,
+      "markup_residue_documents": 3114,
+      "wiki_open_documents": 72,
+      "wiki_close_documents": 2830,
+      "template_residue_documents": 252,
+      "html_residue_documents": 19,
+      "table_residue_documents": 4,
+      "file_image_residue_documents": 70,
+      "integration_excluded_documents": 108,
+      "extraction_exclusion_events": 35199,
+      "modified_documents": null,
+      "empty_after_clean": null,
+      "final_documents_below_500_characters": 0
+    },
+    "clean_v1.1": {
+      "documents": 10315,
+      "characters": 46233086,
+      "tokens": 34271050,
+      "unique_documents": 10315,
+      "semantic_duplicates": 69,
+      "markup_residue_documents": 0,
+      "wiki_open_documents": 0,
+      "wiki_close_documents": 0,
+      "template_residue_documents": 0,
+      "html_residue_documents": 0,
+      "table_residue_documents": 0,
+      "file_image_residue_documents": 0,
+      "integration_excluded_documents": 70,
+      "extraction_exclusion_events": 41158,
+      "modified_documents": 10313,
+      "empty_after_clean": 139,
+      "final_documents_below_500_characters": 0
+    }
+  },
+  "splits": {
+    "train": {
+      "path": "data/foundation_v11/packed/vocab-4096/train.bin",
+      "documents": 10012,
+      "characters": 45070841,
+      "tokens": 33402759,
+      "bytes": 66805518,
+      "sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 25523622,
+        "wikimedia_wikibooks_official_dump": 7730287,
+        "wikimedia_wikipedia": 148850
+      },
+      "tokens_by_category": {
+        "language_writing": 1866687,
+        "general_encyclopedia": 16117573,
+        "science": 3451546,
+        "society_economics": 2158406,
+        "computing": 1043230,
+        "mathematics": 758351,
+        "history": 6305938,
+        "education": 1632785,
+        "procedure": 68243
+      }
+    },
+    "validation": {
+      "path": "data/foundation_v11/packed/vocab-4096/validation.bin",
+      "documents": 146,
+      "characters": 618055,
+      "tokens": 466818,
+      "bytes": 933636,
+      "sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 358802,
+        "wikimedia_wikibooks_official_dump": 107354,
+        "wikimedia_wikipedia": 662
+      },
+      "tokens_by_category": {
+        "history": 36242,
+        "science": 37762,
+        "computing": 21311,
+        "general_encyclopedia": 264660,
+        "society_economics": 48519,
+        "mathematics": 4151,
+        "language_writing": 20529,
+        "procedure": 2266,
+        "education": 31378
+      }
+    },
+    "test": {
+      "path": "data/foundation_v11/packed/vocab-4096/test.bin",
+      "documents": 157,
+      "characters": 544190,
+      "tokens": 401473,
+      "bytes": 802946,
+      "sha256": "78c8f44e1689ed341b7abb9c31b1ca6d53139cb72384e0912092d32f8a0afd6c",
+      "tokens_by_source": {
+        "wikimedia_wikipedia_official_dump": 293303,
+        "wikimedia_wikibooks_official_dump": 108170
+      },
+      "tokens_by_category": {
+        "general_encyclopedia": 164448,
+        "language_writing": 17087,
+        "history": 127944,
+        "science": 33513,
+        "computing": 21430,
+        "mathematics": 8492,
+        "education": 11546,
+        "society_economics": 14807,
+        "procedure": 2206
+      }
+    }
+  },
+  "tokenizer": {
+    "dirty_v1.0": {
+      "vocab": 4096,
+      "tokens_per_character": 0.7439622545080792,
+      "roundtrip_rate": 1.0,
+      "generation_probe_tokens_per_second": 110.73946740756963,
+      "encoding_characters_per_second": null,
+      "decoding_tokens_per_second": null
+    },
+    "clean_v1.1": {
+      "vocab": 4096,
+      "tokens_per_character": 0.747080865049968,
+      "roundtrip_rate": 1.0,
+      "wikipedia_roundtrip_rate": 1.0,
+      "campus_question_roundtrip_rate": 1.0,
+      "generation_probe_tokens_per_second": 111.87528143625264,
+      "encoding_characters_per_second": 1327010.5435797602,
+      "decoding_tokens_per_second": 5293253.787498237
+    }
+  },
+  "special_tokens": {
+    "<PAD>": 0,
+    "<BOS>": 1,
+    "<EOS>": 2,
+    "<UNK>": 3,
+    "<USER>": 4,
+    "<ASSISTANT>": 5,
+    "<SYSTEM>": 6
+  },
+  "resume": {
+    "schema_version": "foundation-v11-resume-reproducibility-v1",
+    "experiment": {
+      "A": "scratch -> 40",
+      "B": "scratch -> 20 -> resume -> 40",
+      "seed": 11012026,
+      "cpu_threads": 1
+    },
+    "loss_steps_compared": 40,
+    "maximum_loss_difference": 0.0,
+    "maximum_weight_difference": 0.0,
+    "maximum_optimizer_difference": 0.0,
+    "weight_mismatches": [],
+    "optimizer_mismatches": [],
+    "sampler_mismatches": [],
+    "checkpoint_a_sha256": "2dee07bb007ff2c6796eb318794a707725184876eab2213e51d0d5f59653d8e8",
+    "checkpoint_b_sha256": "489bfe7bd503838cf6aee40c30e6eafba5341713f6b99488e994c7be3cb5d23d",
+    "checks": {
+      "loss_sequence_bitwise_equal": true,
+      "weights_bitwise_equal": true,
+      "optimizer_bitwise_equal": true,
+      "scheduler_equal": true,
+      "sampler_equal": true,
+      "checkpoint_v2_integrity": true,
+      "python_rng_saved": true,
+      "numpy_rng_saved": true,
+      "torch_cpu_rng_saved": true
+    },
+    "resume_integrity": "PASS",
+    "external_ai_api": "OFF",
+    "production_changed": false
+  },
+  "training_100step": {
+    "dirty_v1.0": {
+      "train_loss": 7.21465277671814,
+      "validation_loss": 7.282623499631882,
+      "learning_rate": 0.0002823527087325944,
+      "tokens_processed": 51200,
+      "corpus_fraction": 0.0014210885882756084,
+      "tokens_per_second": 878.4356570755215,
+      "peak_ram_mb": 853.16015625
+    },
+    "clean_v1.1": {
+      "train_loss": 7.171713256835938,
+      "validation_loss": 7.165496230125427,
+      "learning_rate": 0.0002823527087325944,
+      "tokens_processed": 51200,
+      "corpus_fraction": 0.0015328075144930393,
+      "tokens_per_second": 868.4582299812845,
+      "peak_ram_mb": 841.625
+    }
+  },
+  "generation_50_prompts": {
+    "dirty_v1.0": {
+      "greedy": {
+        "character_validity_rate": 1.0,
+        "natural_japanese_rate": 0.0,
+        "semantic_coherence_rate": 0.0,
+        "completion_rate": 0.08,
+        "eos_rate": 0.0,
+        "runaway_rate": 1.0,
+        "mean_repetition_rate": 0.4302414896302025,
+        "mean_tokens_per_second": 145.85556311539347,
+        "mean_first_token_seconds": 0.013732313999989856
+      },
+      "sampling": {
+        "character_validity_rate": 1.0,
+        "natural_japanese_rate": 0.6,
+        "semantic_coherence_rate": 0.16,
+        "completion_rate": 0.34,
+        "eos_rate": 0.0,
+        "runaway_rate": 1.0,
+        "mean_repetition_rate": 0.21713801254921236,
+        "mean_tokens_per_second": 143.2896030781354,
+        "mean_first_token_seconds": 0.013848264000007476
+      }
+    },
+    "clean_v1.1": {
+      "greedy": {
+        "character_validity_rate": 1.0,
+        "natural_japanese_rate": 0.0,
+        "semantic_coherence_rate": 0.0,
+        "completion_rate": 0.0,
+        "eos_rate": 0.0,
+        "runaway_rate": 1.0,
+        "mean_repetition_rate": 0.4429032258064516,
+        "mean_tokens_per_second": 146.01677875776969,
+        "mean_first_token_seconds": 0.013906869999987066
+      },
+      "sampling": {
+        "character_validity_rate": 0.58,
+        "natural_japanese_rate": 0.36,
+        "semantic_coherence_rate": 0.1,
+        "completion_rate": 0.44,
+        "eos_rate": 0.0,
+        "runaway_rate": 1.0,
+        "mean_repetition_rate": 0.34481412928139604,
+        "mean_tokens_per_second": 144.7810451068815,
+        "mean_first_token_seconds": 0.013749261999996633
+      }
+    }
+  },
+  "decisions": {
+    "corpus_quality": "PASS",
+    "tokenizer": "PASS",
+    "resume_integrity": "PASS",
+    "clean_100step": "INVESTIGATE",
+    "clean_500step_recommended": false,
+    "reason": "Corpus, tokenizer, resume, and loss curves pass, but at 100 steps greedy natural Japanese and semantic coherence remain 0%, EOS is 0%, runaway is 100%, and sampled character validity is 58%. Natural Japanese 0% alone is not a STOP condition; the combined generation signals require investigation before 500 steps."
+  },
+  "protected": {
+    "foundation_v10_preserved": true,
+    "campus_v23_changed": false,
+    "production_v04_changed": false,
+    "render_changed": false,
+    "vercel_changed": false,
+    "release_changed": false,
+    "final_blind_opened": false
+  },
+  "external_ai_api": "OFF",
+  "push_or_deploy_performed": false
+}

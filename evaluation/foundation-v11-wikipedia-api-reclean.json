@@ -1,0 +1,14 @@
+{
+  "schema_version": "foundation-v11-api-reclean-v1",
+  "input": "data/foundation_v10/raw/wikipedia-ja.jsonl.gz",
+  "output": "data/foundation_v11/raw/wikipedia-ja.jsonl.gz",
+  "accepted_documents": 72,
+  "accepted_characters": 221358,
+  "modified_documents": 2,
+  "excluded": {
+    "residual_markup": 1
+  },
+  "metadata_preserved": true,
+  "strict_zero_residue_gate": true,
+  "external_ai_api": "OFF"
+}

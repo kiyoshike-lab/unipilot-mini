@@ -1,0 +1,69 @@
+{
+  "schema_version": "foundation-v11-special-token-audit-v1",
+  "selected_vocab": 4096,
+  "per_vocab": [
+    {
+      "vocab": 1024,
+      "special_token_ids": {
+        "<PAD>": 0,
+        "<BOS>": 1,
+        "<EOS>": 2,
+        "<UNK>": 3,
+        "<USER>": 4,
+        "<ASSISTANT>": 5,
+        "<SYSTEM>": 6
+      },
+      "roundtrip_rate": 1.0,
+      "normal_text_contains_eos": false
+    },
+    {
+      "vocab": 2048,
+      "special_token_ids": {
+        "<PAD>": 0,
+        "<BOS>": 1,
+        "<EOS>": 2,
+        "<UNK>": 3,
+        "<USER>": 4,
+        "<ASSISTANT>": 5,
+        "<SYSTEM>": 6
+      },
+      "roundtrip_rate": 1.0,
+      "normal_text_contains_eos": false
+    },
+    {
+      "vocab": 4096,
+      "special_token_ids": {
+        "<PAD>": 0,
+        "<BOS>": 1,
+        "<EOS>": 2,
+        "<UNK>": 3,
+        "<USER>": 4,
+        "<ASSISTANT>": 5,
+        "<SYSTEM>": 6
+      },
+      "roundtrip_rate": 1.0,
+      "normal_text_contains_eos": false
+    }
+  ],
+  "packed_train_special_counts": {
+    "<PAD>": 0,
+    "<BOS>": 10012,
+    "<EOS>": 10012,
+    "<UNK>": 0,
+    "<USER>": 0,
+    "<ASSISTANT>": 0,
+    "<SYSTEM>": 0
+  },
+  "checks": {
+    "special_token_ids_are_expected": true,
+    "special_token_ids_unique": true,
+    "all_vocab_roundtrip_100_percent": true,
+    "normal_text_never_encodes_eos": true,
+    "packed_bos_matches_documents": true,
+    "packed_eos_matches_documents": true,
+    "packed_has_no_pad_unk_or_dialogue_specials": true
+  },
+  "tokenizer_gate": "PASS",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

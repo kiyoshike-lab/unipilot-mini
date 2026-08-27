@@ -1,0 +1,418 @@
+{
+  "schema_version": "foundation-v10-1000-preflight-audit-v1",
+  "checkpoint": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-500.pt",
+  "checkpoint_sha256": "246154e497a5f9316b33e376600e08743c21a7c660935959768388aed48a334f",
+  "checkpoint_bytes": 234341863,
+  "checkpoint_rng_status": "legacy_missing_recover_by_replaying_100_to_500_dropout_draws",
+  "optimizer_state_entries": 124,
+  "optimizer_group_learning_rates": [
+    3.0002891475342553e-05,
+    3.0002891475342553e-05
+  ],
+  "scheduler": {
+    "kind": "stateless_warmup_cosine",
+    "restored_by": "global_step",
+    "global_step": 500,
+    "floor_learning_rate": 2.9999999999999997e-05
+  },
+  "tokenizer": {
+    "path": "tokenizer/foundation-v10-base-4096.json",
+    "vocab": 4096,
+    "special_token_ids": {
+      "<PAD>": 0,
+      "<BOS>": 1,
+      "<EOS>": 2,
+      "<UNK>": 3,
+      "<USER>": 4,
+      "<ASSISTANT>": 5,
+      "<SYSTEM>": 6
+    },
+    "roundtrip_samples": 20
+  },
+  "packing": {
+    "train_tokens": 36028718,
+    "documents": 11143,
+    "bos_count": 11143,
+    "eos_count": 11143,
+    "eos_to_bos_boundaries": 11142,
+    "eos_loss_targets": 11142,
+    "eos_loss_target_rate": 0.9999102575608005,
+    "tail_tokens_outside_full_training_blocks": 301,
+    "document_boundary": "BOS document EOS BOS next-document EOS",
+    "first_20_packed_prefix_matches": true,
+    "first_20_debris_counts": {
+      "replacement_character": 0,
+      "html_tag": 0,
+      "wiki_template": 0,
+      "wiki_link": 8,
+      "wiki_table": 0,
+      "reference_tag": 0,
+      "heading_markup": 0
+    },
+    "full_corpus_debris_audit": {
+      "documents": 11499,
+      "documents_with_signal": {
+        "replacement_character": 2,
+        "html_tag": 19,
+        "wiki_template": 252,
+        "wiki_link": 2839,
+        "wiki_table": 4,
+        "reference_tag": 0,
+        "heading_markup": 0
+      },
+      "splits": {
+        "train": {
+          "documents": 11143,
+          "documents_with_signal": {
+            "replacement_character": 2,
+            "html_tag": 17,
+            "wiki_template": 242,
+            "wiki_link": 2762,
+            "wiki_table": 4,
+            "reference_tag": 0,
+            "heading_markup": 0
+          }
+        },
+        "validation": {
+          "documents": 171,
+          "documents_with_signal": {
+            "replacement_character": 0,
+            "html_tag": 0,
+            "wiki_template": 3,
+            "wiki_link": 41,
+            "wiki_table": 0,
+            "reference_tag": 0,
+            "heading_markup": 0
+          }
+        },
+        "test": {
+          "documents": 185,
+          "documents_with_signal": {
+            "replacement_character": 0,
+            "html_tag": 2,
+            "wiki_template": 7,
+            "wiki_link": 36,
+            "wiki_table": 0,
+            "reference_tag": 0,
+            "heading_markup": 0
+          }
+        }
+      }
+    },
+    "samples": [
+      {
+        "index": 1,
+        "id": "wikipedia-dump-ja-5",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 2701,
+        "tokens": 1719,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "フォント]]\nアンパサンド（&, ）は、並立助詞「…と…」を意味する記号である。ラテン語で「…と…」を表す接続詞 \"et\" の合字を起源とする。現代のフォントでも、Trebuchet MS など一部のフォントでは、\"et\" の合字であること",
+        "end_excerpt": "bar\" は \"foobar\" を返す。また、主にマイクロソフト系では整数の十六進表記に &h を用い、&h0F （十進で15）のように表現する。\n\nSGML、XML、HTMLでは、アンパサンドを使ってSGML実体を参照する。\n\n符号位置。"
+      },
+      {
+        "index": 2,
+        "id": "wikipedia-dump-ja-10",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 9567,
+        "tokens": 6190,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "、テオティワカンの壁画（2世紀頃）。口からスピーチを象徴するを発する人物が描かれている。]]\nは、音声、身体動作、図像により、個人の間で知識を共有するための記号体系である。\n\n概説。\n\n言語は人間が用いる情報伝達手段である（⇒ #定義）。言",
+        "end_excerpt": "体発生やヒトの進化における言語の起源などにヒントを与えている。また、ヒトは環境の中で聴取する音声から自力で文法などの規則を見出し学習する機能を生得的に備えているため、特に教わらなくても言語を学習できるとする生得論という考えも存在する。\n\n。"
+      },
+      {
+        "index": 3,
+        "id": "wikipedia-dump-ja-42",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 4007,
+        "tokens": 2626,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "は、生命を持つものであり、より具体的には「エネルギー転換を行い、自己増殖し、かつ自己保存の能力をもつ複雑な物質系」である。ただし生物の定義は必ずしも明確でなく、ウイルスを生物とする立場もあるが、ウイルスの具体的な分類は未確定である。とも。\n",
+        "end_excerpt": "ィクションの世界では、ガス・電磁波から成る生物などが登場する。他に純粋知性、精神あるいは物質によらない意識が登場するが、現在のところ物質的な実体に依拠しない意識は確認されていない。また多くの宗教で霊と呼ばれる形態の生物の存在を想定している。"
+      },
+      {
+        "index": 4,
+        "id": "wikipedia-dump-ja-53",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 17527,
+        "tokens": 10909,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "著作権の保護期間（ちょさくけんのほごきかん）とは、著作権の発生から消滅までの期間をいう。\n\nこの期間において著作権は保護され、著作権者は権利の対象である著作物を、原則として独占排他的に利用することができる。具体的な期間は各国の国内法令に委ね",
+        "end_excerpt": "画の創作に全体的に寄与した者」と規定し、9タイトルの著作者をチャップリン個人と認定した。その上で、「著作者が実名で表示された場合には、たとえ団体名義の著作物の表示があっても、著作者の死亡時から著作権保護期間が起算される」との初判断を示した。"
+      },
+      {
+        "index": 5,
+        "id": "wikipedia-dump-ja-58",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 4775,
+        "tokens": 3146,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "社会（しゃかい、、）は、ある共通項によってくくられ、他から区別される人々の集まり。また、仲間意識をもって、自らと他とを区別する人々の集まり。社会の範囲は非常に幅広く、単一の組織や結社などの部分社会から国民を包括する全体社会まで様々である。社",
+        "end_excerpt": "々交換、貨幣を介した取引が行われるようになって市場が形成された。この市場は社会行為の相互作用でありながらも異なる経済の原理で作動するようになる。従って市場には社会全体に対して自動的に価値を配分する機能をあるていど持っていると考えられている。"
+      },
+      {
+        "index": 6,
+        "id": "wikipedia-dump-ja-60",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 2868,
+        "tokens": 1916,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "特撮（とくさつ）は、特殊撮影技術（Special Effects;SFX）を指す略称、またはSFXが多用された映画やテレビ番組などの映像作品を指す総称。\n\n解説。\n元々は「特殊撮影（SFX）」「トリック撮影」「操撮」と呼ばれていた撮影技術を",
+        "end_excerpt": "を同等の扱いで国の文書に明記できたことを重要な点としている。\n\n日本の主な特撮作品（テレビ番組）。\n\n* 特撮テレビ番組に関しては「特撮テレビ番組一覧」を参照。\n\n日本の主な特撮作品（映画）。\n* 特撮映画作品に関しては「特撮映画」を参照。"
+      },
+      {
+        "index": 7,
+        "id": "wikipedia-dump-ja-63",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 1450,
+        "tokens": 847,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "情報工学（じょうほうこうがく、）とは、「計算機による情報処理に関連する科学技術の一分野」を指す言葉であり、「情報科学」や「計算機科学」ともいう。\n\nなお英語の information engineering はソフトウェア工学における一手法",
+        "end_excerpt": "るところは、2007年時点で、8/33程度である。information engineering を掲げる例に、ケンブリッジ大学の Information Engineering Division がある。\n* 研究科では情報学研究科など。"
+      },
+      {
+        "index": 8,
+        "id": "wikipedia-dump-ja-64",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 3089,
+        "tokens": 1961,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "形式言語（けいしきげんご、）は、その文法（構文、統語論）が、場合によっては意味（意味論）も、形式的に与えられている（形式体系を参照）言語である。形式的でないために、しばしば曖昧さが残されたり、話者集団によって用法のうつろいゆくような自然言語",
+        "end_excerpt": "し、自然言語のより深い理解へと導くことを可能とすることもなくはない。言語そのものではなく、言語行動の深層をなす人間精神を探るためには、むしろこういう文法論を数学化し、更に意味論・文法論を伴った論理学にまで推し進めることが有意義ともいえよう。"
+      },
+      {
+        "index": 9,
+        "id": "wikipedia-dump-ja-68",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 871,
+        "tokens": 531,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "自然言語（しぜんげんご、）とは、言語学や論理学、計算機科学の専門用語で、「英語」・「中国語」・「日本語」といった「○○語」の総称。つまり普通の「言語」のこと。人間が意思疎通のために日常的に用いる言語であり、文化的背景を持っておのずから発展し",
+        "end_excerpt": "用するや、情報処理の対象として自然言語を扱う自然言語処理は、コンピュータの能力の向上にあわせ、またコンピュータのより便利な利用のために（例えばワードプロセッサや、音声入力による情報探索など）、さかんに研究され実地にも応用されるようになった。"
+      },
+      {
+        "index": 10,
+        "id": "wikipedia-dump-ja-69",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 15417,
+        "tokens": 8799,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "で書かれた単純なコンピュータープログラムのソースコード。グレーの行は、人間のために自然言語で書かれたソースコードの内容の解説（コメント）。このソースコードをコンパイルして実行すると、「Hello, world!」という文字が出力される。]]",
+        "end_excerpt": "の不都合がある。それを事前に防ぐために、たとえ登録されている正式名称があくまで「C」などと一文字であっても、通常の文章中で表記および執筆するまたは校正時に、技術書なども含めて、しばしば「C言語」などと文字の後ろに「言語」を添えて表記される。"
+      },
+      {
+        "index": 11,
+        "id": "wikipedia-dump-ja-70",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 26621,
+        "tokens": 17617,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "人工知能（じんこうちのう、）、AI（エーアイ）は、「『計算（）』という概念と『コンピュータ（）』という道具を用いて『知能』を研究する計算機科学（）の一分野」を指す語。「言語の理解や推論、問題解決などの知的行動を人間に代わってコンピュータに行",
+        "end_excerpt": "未来。\n\n参照文献。\n;\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:*\n:\n;\n:*\n:*\n:*\n:*\n:*\n:\n;\n:*\n:*\n:\n;\n:*\n:*\n:*\n:*\n\n関連文献。\n;"
+      },
+      {
+        "index": 12,
+        "id": "wikipedia-dump-ja-75",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 3613,
+        "tokens": 2254,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "（グニュー・フリー・ドキュメンテーション・ライセンス、略称 GFDL）は、GNUプロジェクトの一環としてフリーソフトウェア財団から配布されているコピーレフトなライセンスの一つである。\n\n略称として GNU FDL（グニュー・エフディーエル）",
+        "end_excerpt": "生じるリスクを回避するためである。そのため、使用するときは英語のライセンス文書を使うことになっており、日本語訳はあくまで参考として示すにとどまっている。\n\n非公式ではあるものの、八田真行による\"version 1.2\"の日本語訳が存在する。"
+      },
+      {
+        "index": 13,
+        "id": "wikipedia-dump-ja-81",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 847,
+        "tokens": 607,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "ゴーダチーズ（ , 、 ）は、オランダを代表するチーズ。穏やかでクセのないマイルドな味わいとまろやかな香りをもつ。熟成が進むとうまみが凝縮され濃厚な味わいと芳醇なコクと風味になる。オランダでのチーズ生産量の60 %を占める。ロッテルダム近郊",
+        "end_excerpt": "合は2010年に「Gouda Holland」を地理的表示保護（PGI）として登録した。PGI認定を受けた「Gouda Holland」は、オランダ国内で生産されたオランダ産の牛乳のみを使用した脂肪分48%以上のセミハードチーズに限られる。"
+      },
+      {
+        "index": 14,
+        "id": "wikipedia-dump-ja-89",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 5585,
+        "tokens": 3336,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "文脈自由文法（ぶんみゃくじゆうぶんぽう、、CFG）は、形式言語の理論（特に、生成文法）において全生成規則が以下のようである形式文法である。\n\nここで V は非終端記号であり、w は終端記号と非終端記号の（0個を含む）任意個の並びである。「文",
+        "end_excerpt": "y Pullum は、一部に文脈自由的でない構造があるものの、自然言語の大部分は文脈自由であると指摘している。文脈自由でない部分とは、例えば、スイスドイツ語の cross-serial dependencies や、バンバラ語の畳語である。"
+      },
+      {
+        "index": 15,
+        "id": "wikipedia-dump-ja-97",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 884,
+        "tokens": 558,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "宗教学（しゅうきょうがく、）は、経験科学の様々な手法を用いて宗教を研究する学際的な学問である。ドイツ語圏では“”、オランダ語では“”と言う。\n\n概説。\nもともとは神学の一部であったが独立し、キリスト教の神学以外の分野を対象とするかたちで、民",
+        "end_excerpt": "より、多くの研究領域が重なっているといえる。\n\nこのように宗教学は、「宗教」という研究対象に対し、様々な研究方法を用いて研究が進められている。個々の研究は宗教学の研究であると同時に社会学・心理学・文化人類学等それぞれの研究であるとも言える。"
+      },
+      {
+        "index": 16,
+        "id": "wikipedia-dump-ja-110",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 19946,
+        "tokens": 12788,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "哲学（てつがく、英:Philosophy）は、一般的で基本的な問いを立てながらおこなう知的実践である。その厳密な定義については議論があるものの、一般的には、理性的な探究の一形態であること、体系的であることを目指すこと、そしてそれ自体の方法と",
+        "end_excerpt": "どのように関連するかについても探求した。\n\n哲学が生活や社会の多くの側面において有用であるという考えは、ときとして退けられることもある。いわく、哲学の目的は哲学そのものにあり、それは既存の実践や外部の目的に対して大きく寄与するものではない。"
+      },
+      {
+        "index": 17,
+        "id": "wikipedia-dump-ja-115",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 1190,
+        "tokens": 797,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [],
+        "start_excerpt": "新聞学（しんぶんがく）は、以下の意味で用いられる。\n\n* 大衆伝達（マス・コミュニケーション）による情報の供給と世論の形成過程を研究する学問。学問としてのジャーナリズム。\n* 印刷媒体、特に新聞（Zeitung）と雑誌（Zeitschrif",
+        "end_excerpt": "2年に日本メディア学会へと改められた。\n\n日本新聞学会が1952年から刊行していた学術誌『新聞学評論』は、学会名の改称を受けて、1993年から『マス・コミュニケーション研究』へ、2022年から『メディア研究』へと改題された。\n\n出典・脚注。"
+      },
+      {
+        "index": 18,
+        "id": "wikipedia-dump-ja-117",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 18264,
+        "tokens": 12602,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "ソクラテス（ソークラテース、、、、、紀元前470年頃 – 紀元前399年）は、アテナイ出身の古代ギリシアの哲学者である。西洋哲学の基礎を築いた人物の1人として、特に、西洋道徳哲学（倫理学）の伝統における最初期の道徳哲学（倫理学）者の1人とし",
+        "end_excerpt": "祖）\n* アルキビアデス（軍人・政治家）\n* アンティステネス（キュニコス派（犬儒学派）の開祖）\n* メガラのエウクレイデス（メガラ学派の開祖）\n* アンブラキアのクレオンブロトス（哲学者）\n* クリティアス (三十人僭主)（政治家） など"
+      },
+      {
+        "index": 19,
+        "id": "wikipedia-dump-ja-120",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 8770,
+        "tokens": 5507,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "は全世界で広く行われており、最も人気のあるスポーツである]]\nは世界の競技人口が3億人を超えており、イギリス連邦諸国で人気のあるスポーツである]]\nは乗り物を用いて行われる、全世界で行われているスポーツである]]\nは北アメリカや東アジアで人",
+        "end_excerpt": "る手段として、倫理の領域に属するものと見倣されていたスポーツは、いまでは、美的/感性的なものとして、芸術の性格を顕著に示すようになり、「今日の the popular art」と呼びうるものになっている、とヴェルシュは考えた。\n\n推薦文献。"
+      },
+      {
+        "index": 20,
+        "id": "wikipedia-dump-ja-121",
+        "source_type": "wikimedia_wikipedia_official_dump",
+        "characters": 14718,
+        "tokens": 11026,
+        "begins_with_bos": true,
+        "ends_with_eos": true,
+        "roundtrip_exact": true,
+        "debris_signals": [
+          "wiki_link"
+        ],
+        "start_excerpt": "両国国技館（りょうごくこくぎかん）は、東京都墨田区横網一丁目にある大相撲の興行のための施設。公益財団法人日本相撲協会が所有している。\n\nプロレス、ボクシングなどの格闘技の興行会場、その他のスポーツ競技の会場、ポピュラー音楽のライブでも使用さ",
+        "end_excerpt": "営両国駅〜森下駅〜門前仲町〜月島駅〜勝どき駅〜豊海水産埠頭）：都営両国駅下車徒歩5分\n* JRバス関東・東武バスセントラル スカイツリーシャトル東京線（東京駅〜両国・江戸東京博物館〜東京スカイツリータウン）：両国・江戸東京博物館下車徒歩5分"
+      }
+    ]
+  },
+  "loss": {
+    "cross_entropy_ignore_index": -100,
+    "eos_id": 2,
+    "eos_is_not_ignored": true,
+    "eos_targets_observed": 11142
+  },
+  "final_blind": {
+    "path": "data/foundation_v09/evaluation/final-blind-1000.json",
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_parsed": false,
+    "used_for_training_or_evaluation": false
+  },
+  "checks": {
+    "special_token_ids_unique": true,
+    "bos_id_is_1": true,
+    "eos_id_is_2": true,
+    "first_token_is_bos": true,
+    "last_token_is_eos": true,
+    "bos_count_matches_documents": true,
+    "eos_count_matches_documents": true,
+    "all_interdocument_boundaries_are_eos_bos": true,
+    "first_20_packed_sequences_match_sources": true,
+    "first_20_roundtrip_exact": true,
+    "first_20_have_no_markup_or_mojibake": false,
+    "eos_is_a_loss_target": true,
+    "eos_target_coverage_above_99_9_percent": true,
+    "checkpoint_size_matches_manifest": true,
+    "checkpoint_config_matches_manifest": true,
+    "checkpoint_model_step_is_500": true,
+    "optimizer_state_present": true,
+    "legacy_checkpoint_rng_absent_and_recovery_required": true,
+    "scheduler_lr_matches_step_500_floor": true,
+    "final_blind_hash_matches_without_parsing": true
+  },
+  "preflight": "FAIL",
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

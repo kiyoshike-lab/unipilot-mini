@@ -22,24 +22,22 @@ from model.config import ModelConfig
 from model.transformer import UniPilotTransformer
 
 
-TOKENIZERS = {
-    1024: "tokenizer/foundation-v10-base-1024.json",
-    2048: "tokenizer/foundation-v10-base-2048.json",
-    4096: "tokenizer/foundation-v10-base-4096.json",
-}
+def tokenizer_paths(version: str) -> dict[int, str]:
+    return {vocab: f"tokenizer/foundation-{version}-base-{vocab}.json"
+            for vocab in (1024, 2048, 4096)}
 
 
-def documents(split: str):
-    path = ROOT / f"data/foundation_v10/documents/{split}.jsonl.gz"
+def documents(split: str, version: str = "v10"):
+    path = ROOT / f"data/foundation_{version}/documents/{split}.jsonl.gz"
     with gzip.open(path, "rt", encoding="utf-8") as file:
         for line in file:
             if line.strip():
                 yield json.loads(line)
 
 
-def training_texts(characters_per_source: int):
+def training_texts(characters_per_source: int, version: str = "v10"):
     counts = Counter()
-    for row in documents("train"):
+    for row in documents("train", version):
         source = "wikipedia" if "wikipedia" in row["source_type"] else "wikibooks"
         if counts[source] >= characters_per_source:
             continue
@@ -87,17 +85,19 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", default="evaluation/foundation-v10-tokenizer-benchmark.json")
     parser.add_argument("--training-characters-per-source", type=int, default=500_000)
+    parser.add_argument("--version", choices=("v10", "v11"), default="v10")
     args = parser.parse_args()
     torch.set_num_threads(1)
     questions = campus_questions()
-    audit = json.loads((ROOT / "evaluation/foundation-v10-data-audit.json").read_text(
+    audit = json.loads((ROOT / f"evaluation/foundation-{args.version}-data-audit.json").read_text(
         encoding="utf-8"))
     full_characters = int(audit["total_characters"])
+    paths = tokenizer_paths(args.version)
     results = []
-    for requested, relative in TOKENIZERS.items():
+    for requested, relative in paths.items():
         tokenizer_started = time.perf_counter()
         tokenizer = train_tokenizer(
-            training_texts(args.training_characters_per_source), requested
+            training_texts(args.training_characters_per_source, args.version), requested
         )
         tokenizer_training_seconds = time.perf_counter() - tokenizer_started
         tokenizer.save(ROOT / relative)
@@ -110,7 +110,7 @@ def main() -> int:
         wikipedia_counts: list[tuple[int, int]] = []
         wikibooks_counts: list[tuple[int, int]] = []
         for split in ("validation", "test"):
-            for row in documents(split):
+            for row in documents(split, args.version):
                 source = "wikipedia" if "wikipedia" in row["source_type"] else "wikibooks"
                 ids = tokenizer.encode(row["text"], add_bos=True, add_eos=True)
                 count = len(ids)
@@ -126,6 +126,15 @@ def main() -> int:
                 if len(sample_texts) < 100:
                     sample_texts.append(row["text"])
         question_tokens = [len(tokenizer.encode(question)) for question in questions]
+        encoded_samples = [tokenizer.encode(text) for text in sample_texts]
+        encoding_started = time.perf_counter()
+        for _ in range(5):
+            [tokenizer.encode(text) for text in sample_texts]
+        encoding_seconds = time.perf_counter() - encoding_started
+        decoding_started = time.perf_counter()
+        for _ in range(5):
+            [tokenizer.decode(ids) for ids in encoded_samples]
+        decoding_seconds = time.perf_counter() - decoding_started
         learned_ids = range(263, tokenizer.vocab_size)
         used_learned = sum(frequencies[token_id] > 0 for token_id in learned_ids)
         scale = full_characters / total_characters
@@ -151,6 +160,19 @@ def main() -> int:
             "exact_roundtrip_rate": sum(
                 tokenizer.decode(tokenizer.encode(text)) == text for text in sample_texts
             ) / len(sample_texts),
+            "wikipedia_roundtrip_rate": sum(
+                tokenizer.decode(tokenizer.encode(row["text"])) == row["text"]
+                for row in list(documents("validation", args.version))[:50]
+            ) / min(50, audit["documents"]["validation"]),
+            "campus_question_roundtrip_rate": sum(
+                tokenizer.decode(tokenizer.encode(question)) == question for question in questions
+            ) / len(questions),
+            "encoding_characters_per_second": (
+                5 * sum(len(text) for text in sample_texts) / max(encoding_seconds, 1e-9)
+            ),
+            "decoding_tokens_per_second": (
+                5 * sum(len(ids) for ids in encoded_samples) / max(decoding_seconds, 1e-9)
+            ),
             "tokenizer_training_characters": args.training_characters_per_source * 2,
             "tokenizer_training_seconds": tokenizer_training_seconds,
             "counting_seconds": time.perf_counter() - started,
@@ -171,13 +193,14 @@ def main() -> int:
                  or high_compression_support)):
         selected = 4096
     report = {
-        "schema_version": "foundation-v10-tokenizer-benchmark-v1",
+        "schema_version": f"foundation-{args.version}-tokenizer-benchmark-v1",
         "results": results, "compression_gain_2048_over_1024": gain_2048,
         "compression_gain_4096_over_2048": gain_4096,
         "selected_vocab": selected,
         "comparison_is_heldout_validation_and_test": True,
         "tokenizer_training_characters_per_source": args.training_characters_per_source,
-        "selected_tokenizer_full_corpus_count_is_written_by": "scripts/pack_foundation_v10.py",
+        "selected_tokenizer_full_corpus_count_is_written_by":
+            f"scripts/pack_foundation_{args.version}.py",
         "selection_rule": (
             "Default 2048; use 4096 only with >=10% extra compression, >=85% CPU speed, "
             "and either <=15% projected rare learned tokens or >=20% compression plus "
