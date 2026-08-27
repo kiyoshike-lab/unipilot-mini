@@ -1,0 +1,57 @@
+{
+  "project": "UniPilot Foundation v1.2 Training Dynamics Investigation",
+  "initialization": "scratch-no-pretrained-model",
+  "model": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "seed": 12012026,
+  "cpu_threads": 4,
+  "gradient_clip": 1.0,
+  "weight_decay": 0.1,
+  "current_schedule": {
+    "warmup_steps": 20,
+    "schedule_steps": 500,
+    "minimum_ratio": 0.1
+  },
+  "tiny_overfit": {
+    "learning_rate": 0.0003,
+    "one_document_max_steps": 800,
+    "ten_document_max_steps": 2500,
+    "hundred_document_max_steps": 300,
+    "one_document_target_loss": 0.5,
+    "ten_document_target_loss": 0.9,
+    "evaluation_interval": 50
+  },
+  "eos_sanity": {
+    "learning_rate": 0.0003,
+    "max_steps": 500,
+    "target_top1_rate": 0.9
+  },
+  "lr_sweep": {
+    "learning_rates": [0.00003, 0.0001, 0.0003, 0.0006],
+    "steps": 100,
+    "train_documents": 100,
+    "validation_documents": 20
+  },
+  "tokenizer_comparison": {
+    "vocabs": [2048, 4096],
+    "steps": 100,
+    "train_documents": 100,
+    "validation_documents": 20,
+    "ffn_dim_by_vocab": {
+      "2048": 1638,
+      "4096": 1536
+    }
+  },
+  "full_clean_250_executed": false,
+  "full_clean_500_executed": false,
+  "final_blind_content_opened": false,
+  "external_ai_api": "OFF",
+  "production_enabled": false
+}
