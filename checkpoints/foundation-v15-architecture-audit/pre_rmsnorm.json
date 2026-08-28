@@ -1,0 +1,141 @@
+{
+  "schema_version": "foundation-v15-ablation-result-v1",
+  "status": "COMPLETED",
+  "name": "pre_rmsnorm",
+  "changes": {
+    "norm": "rmsnorm"
+  },
+  "config": {
+    "model_name": "UniPilot Foundation v1.5 pre_rmsnorm",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "rmsnorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 19506816,
+  "parameter_breakdown": {
+    "token_embedding": 1572864,
+    "position_embedding": 196608,
+    "attention": 5913600,
+    "normalization": 8064,
+    "feed_forward": 11815680,
+    "unique_total": 19506816
+  },
+  "token_budget": 65536,
+  "updates": 128,
+  "effective_batch_tokens": 512,
+  "same_training_macroblocks": true,
+  "scratch_start": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "learning_rate": 5e-06,
+      "train_loss": null,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 365.8359375,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.395088493824005,
+        "perplexity": 4425.27850225411,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.00048828125,
+        "top_10_accuracy": 0.001708984375
+      }
+    },
+    {
+      "update": 10,
+      "tokens_processed": 5120,
+      "learning_rate": 5e-05,
+      "train_loss": 8.267275333404541,
+      "gradient_norm": 3.02742338180542,
+      "tokens_per_second": 1135.464181194997,
+      "peak_ram_mb": 777.484375,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.130390226840973,
+        "perplexity": 3396.1245655599414,
+        "top_1_accuracy": 0.03662109375,
+        "top_5_accuracy": 0.0828857421875,
+        "top_10_accuracy": 0.0899658203125
+      }
+    },
+    {
+      "update": 64,
+      "tokens_processed": 32768,
+      "learning_rate": 0.0001,
+      "train_loss": 7.674752668098167,
+      "gradient_norm": 1.57870614528656,
+      "tokens_per_second": 1319.9389322001464,
+      "peak_ram_mb": 777.484375,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.32219123840332,
+        "perplexity": 1513.516814989938,
+        "top_1_accuracy": 0.0509033203125,
+        "top_5_accuracy": 0.1204833984375,
+        "top_10_accuracy": 0.1640625
+      }
+    },
+    {
+      "update": 100,
+      "tokens_processed": 51200,
+      "learning_rate": 0.0001,
+      "train_loss": 7.239177213774787,
+      "gradient_norm": 1.215596079826355,
+      "tokens_per_second": 1251.8521394188049,
+      "peak_ram_mb": 777.484375,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.183140784502029,
+        "perplexity": 1317.0383025502408,
+        "top_1_accuracy": 0.05078125,
+        "top_5_accuracy": 0.12353515625,
+        "top_10_accuracy": 0.1636962890625
+      }
+    },
+    {
+      "update": 128,
+      "tokens_processed": 65536,
+      "learning_rate": 0.0001,
+      "train_loss": 7.170532260622297,
+      "gradient_norm": 1.5588728189468384,
+      "tokens_per_second": 1333.8599797610975,
+      "peak_ram_mb": 777.484375,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.122072249650955,
+        "perplexity": 1239.01532407379,
+        "top_1_accuracy": 0.05029296875,
+        "top_5_accuracy": 0.1220703125,
+        "top_10_accuracy": 0.161376953125
+      }
+    }
+  ],
+  "final_checkpoint": {
+    "path": "checkpoints/foundation-v15-architecture-audit/pre_rmsnorm-final.pt",
+    "bytes": 78068922,
+    "sha256": "74916b906c97e0834959faa862b2762eb6e70d377e804c20b40b48e9398a6be1",
+    "update": 128,
+    "tokens_processed": 65536
+  },
+  "diagnostic_checkpoints": [],
+  "wall_seconds": 59.73125869999967,
+  "baseline_ram_mb": 204.2890625,
+  "peak_ram_mb": 777.484375,
+  "nan_or_inf": false,
+  "diverged": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

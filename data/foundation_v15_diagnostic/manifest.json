@@ -1,0 +1,63 @@
+{
+  "schema_version": "foundation-v15-controlled-diagnostic-corpus-v1",
+  "purpose": "isolated short-sentence language-model diagnostic only",
+  "source_split": "Foundation v1.1 clean train only",
+  "source_documents": "data/foundation_v11/documents/train.jsonl.gz",
+  "source_documents_sha256": "d7af5c543d95579a1ee47f5c3c8a9d81c969de0f682eea3b3b7d96eb93960a4c",
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "tokenizer_sha256": "741e450a3b976ea21ccaf452c65181da47f198822f50c2e2b6bfb059e93aa13c",
+  "selection": {
+    "seed": 15012026,
+    "segments": 5000,
+    "minimum_tokens": 20,
+    "maximum_tokens": 197,
+    "mean_tokens": 45.5258,
+    "sentence_boundaries_required": true,
+    "markup_rejected": true
+  },
+  "category_counts": {
+    "computing": 143,
+    "education": 293,
+    "general_encyclopedia": 2357,
+    "history": 928,
+    "language_writing": 256,
+    "mathematics": 130,
+    "procedure": 5,
+    "science": 548,
+    "society_economics": 340
+  },
+  "source_counts": {
+    "wikimedia_wikibooks_official_dump": 1235,
+    "wikimedia_wikipedia": 14,
+    "wikimedia_wikipedia_official_dump": 3751
+  },
+  "artifacts": {
+    "documents": {
+      "path": "data/foundation_v15_diagnostic/segments.jsonl.gz",
+      "bytes": 954987,
+      "sha256": "4275806d3550b1305029c7d096a12441e90bdfa1be6365162f74223452ddadf7"
+    },
+    "packed": {
+      "train": {
+        "path": "data/foundation_v15_diagnostic/train.bin",
+        "dtype": "uint16-native-little-endian",
+        "tokens": 214257,
+        "bytes": 428514,
+        "sha256": "709560ff92a701ba9987dca1670ce7e0cd263ea0067e3eee35efdbc1e2a2f887",
+        "document_boundary": "BOS ... EOS"
+      },
+      "validation": {
+        "path": "data/foundation_v15_diagnostic/validation.bin",
+        "dtype": "uint16-native-little-endian",
+        "tokens": 23372,
+        "bytes": 46744,
+        "sha256": "3b97e47fa3d5b3a93c232caffb2718c4f7257ff2eca5a7ea217fee647222ee0d",
+        "document_boundary": "BOS ... EOS"
+      }
+    }
+  },
+  "source_metadata_preserved": true,
+  "added_to_foundation_corpus": false,
+  "external_ai_api": "OFF",
+  "final_blind_used": false
+}

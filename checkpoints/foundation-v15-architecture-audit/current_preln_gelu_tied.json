@@ -1,0 +1,168 @@
+{
+  "schema_version": "foundation-v15-ablation-result-v1",
+  "status": "COMPLETED",
+  "name": "current_preln_gelu_tied",
+  "changes": {},
+  "config": {
+    "model_name": "UniPilot Foundation v1.5 current_preln_gelu_tied",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 19514880,
+  "parameter_breakdown": {
+    "token_embedding": 1572864,
+    "position_embedding": 196608,
+    "attention": 5913600,
+    "normalization": 16128,
+    "feed_forward": 11815680,
+    "unique_total": 19514880
+  },
+  "token_budget": 65536,
+  "updates": 128,
+  "effective_batch_tokens": 512,
+  "same_training_macroblocks": true,
+  "scratch_start": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "learning_rate": 5e-06,
+      "train_loss": null,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 365.7578125,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.396617710590363,
+        "perplexity": 4432.050889239651,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.00048828125,
+        "top_10_accuracy": 0.001953125
+      }
+    },
+    {
+      "update": 10,
+      "tokens_processed": 5120,
+      "learning_rate": 5e-05,
+      "train_loss": 8.267200374603272,
+      "gradient_norm": 3.0322461128234863,
+      "tokens_per_second": 1380.802817096156,
+      "peak_ram_mb": 751.7890625,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.13008189201355,
+        "perplexity": 3395.077583496924,
+        "top_1_accuracy": 0.03759765625,
+        "top_5_accuracy": 0.082275390625,
+        "top_10_accuracy": 0.0902099609375
+      }
+    },
+    {
+      "update": 64,
+      "tokens_processed": 32768,
+      "learning_rate": 0.0001,
+      "train_loss": 7.67451070856165,
+      "gradient_norm": 1.5782650709152222,
+      "tokens_per_second": 1269.7134459093315,
+      "peak_ram_mb": 755.26171875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.3203475177288055,
+        "perplexity": 1510.7288836200207,
+        "top_1_accuracy": 0.0509033203125,
+        "top_5_accuracy": 0.12109375,
+        "top_10_accuracy": 0.1644287109375
+      }
+    },
+    {
+      "update": 100,
+      "tokens_processed": 51200,
+      "learning_rate": 0.0001,
+      "train_loss": 7.239366796281603,
+      "gradient_norm": 1.2226983308792114,
+      "tokens_per_second": 1368.6902133661285,
+      "peak_ram_mb": 755.26171875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.181583762168884,
+        "perplexity": 1314.9892401315014,
+        "top_1_accuracy": 0.0506591796875,
+        "top_5_accuracy": 0.123046875,
+        "top_10_accuracy": 0.1632080078125
+      }
+    },
+    {
+      "update": 128,
+      "tokens_processed": 65536,
+      "learning_rate": 0.0001,
+      "train_loss": 7.170672263417925,
+      "gradient_norm": 1.5672600269317627,
+      "tokens_per_second": 1275.6623720700813,
+      "peak_ram_mb": 755.26171875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.120918124914169,
+        "perplexity": 1237.586170708282,
+        "top_1_accuracy": 0.05029296875,
+        "top_5_accuracy": 0.121826171875,
+        "top_10_accuracy": 0.161376953125
+      }
+    }
+  ],
+  "final_checkpoint": {
+    "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied-final.pt",
+    "bytes": 78109241,
+    "sha256": "89d82be4a76318f476eb1b3642ec2868f93bd6e5aa6c0930d1995e46abfe97bb",
+    "update": 128,
+    "tokens_processed": 65536
+  },
+  "diagnostic_checkpoints": [
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied-update-0.pt",
+      "bytes": 78109631,
+      "sha256": "8dd95a9a162b753de9f01de37e770c6faee08b74ddd7c4d43f05a8b289780c3a",
+      "update": 0,
+      "tokens_processed": 0
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied-update-10.pt",
+      "bytes": 78109761,
+      "sha256": "664b49b73687efffc8fdddc8aa08998fa5569ac30efaf8d9abab848a5fcfefd4",
+      "update": 10,
+      "tokens_processed": 5120
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied-update-100.pt",
+      "bytes": 78109891,
+      "sha256": "683965f67539fb665183c2ed7be7f0494f6f0972ea70508ca46907d7bb7b3fd5",
+      "update": 100,
+      "tokens_processed": 51200
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied-final.pt",
+      "bytes": 78109241,
+      "sha256": "89d82be4a76318f476eb1b3642ec2868f93bd6e5aa6c0930d1995e46abfe97bb",
+      "update": 128,
+      "tokens_processed": 65536
+    }
+  ],
+  "wall_seconds": 58.57804639999995,
+  "baseline_ram_mb": 204.2265625,
+  "peak_ram_mb": 755.26171875,
+  "nan_or_inf": false,
+  "diverged": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

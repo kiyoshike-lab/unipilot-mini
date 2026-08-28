@@ -1,0 +1,144 @@
+{
+  "schema_version": "foundation-v15-ablation-result-v1",
+  "status": "COMPLETED",
+  "name": "fewer_layers_wider",
+  "changes": {
+    "embedding_dim": 448,
+    "n_layers": 7,
+    "n_heads": 7,
+    "ffn_dim": 1792
+  },
+  "config": {
+    "model_name": "UniPilot Foundation v1.5 fewer_layers_wider",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 448,
+    "n_layers": 7,
+    "n_heads": 7,
+    "ffn_dim": 1792,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 18965184,
+  "parameter_breakdown": {
+    "token_embedding": 1835008,
+    "position_embedding": 229376,
+    "attention": 5632256,
+    "normalization": 13440,
+    "feed_forward": 11255104,
+    "unique_total": 18965184
+  },
+  "token_budget": 65536,
+  "updates": 128,
+  "effective_batch_tokens": 512,
+  "same_training_macroblocks": true,
+  "scratch_start": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "learning_rate": 5e-06,
+      "train_loss": null,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 363.85546875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.385249614715576,
+        "perplexity": 4381.952212623211,
+        "top_1_accuracy": 0.0003662109375,
+        "top_5_accuracy": 0.0008544921875,
+        "top_10_accuracy": 0.002685546875
+      }
+    },
+    {
+      "update": 10,
+      "tokens_processed": 5120,
+      "learning_rate": 5e-05,
+      "train_loss": 8.274772644042969,
+      "gradient_norm": 3.516584873199463,
+      "tokens_per_second": 1514.6158954796097,
+      "peak_ram_mb": 702.19921875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.070604681968689,
+        "perplexity": 3199.035643517898,
+        "top_1_accuracy": 0.0390625,
+        "top_5_accuracy": 0.09619140625,
+        "top_10_accuracy": 0.10888671875
+      }
+    },
+    {
+      "update": 64,
+      "tokens_processed": 32768,
+      "learning_rate": 0.0001,
+      "train_loss": 7.5985870361328125,
+      "gradient_norm": 1.647962212562561,
+      "tokens_per_second": 1495.1271686826003,
+      "peak_ram_mb": 710.69140625,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.275827914476395,
+        "perplexity": 1444.9469896010282,
+        "top_1_accuracy": 0.054931640625,
+        "top_5_accuracy": 0.121337890625,
+        "top_10_accuracy": 0.1627197265625
+      }
+    },
+    {
+      "update": 100,
+      "tokens_processed": 51200,
+      "learning_rate": 0.0001,
+      "train_loss": 7.229945460955302,
+      "gradient_norm": 1.348242998123169,
+      "tokens_per_second": 1266.1554518235616,
+      "peak_ram_mb": 711.1171875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.161205530166626,
+        "perplexity": 1288.4632783688992,
+        "top_1_accuracy": 0.0548095703125,
+        "top_5_accuracy": 0.1214599609375,
+        "top_10_accuracy": 0.1666259765625
+      }
+    },
+    {
+      "update": 128,
+      "tokens_processed": 65536,
+      "learning_rate": 0.0001,
+      "train_loss": 7.155539665903364,
+      "gradient_norm": 1.592680811882019,
+      "tokens_per_second": 1397.1009337009643,
+      "peak_ram_mb": 711.1171875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.10025355219841,
+        "perplexity": 1212.274410369912,
+        "top_1_accuracy": 0.056640625,
+        "top_5_accuracy": 0.11962890625,
+        "top_10_accuracy": 0.167724609375
+      }
+    }
+  ],
+  "final_checkpoint": {
+    "path": "checkpoints/foundation-v15-architecture-audit/fewer_layers_wider-final.pt",
+    "bytes": 75896115,
+    "sha256": "499215a1d04a0b3feebb1343b758f046d08d54b42cee84a1aa6182835e96b353",
+    "update": 128,
+    "tokens_processed": 65536
+  },
+  "diagnostic_checkpoints": [],
+  "wall_seconds": 53.785957699999926,
+  "baseline_ram_mb": 204.30859375,
+  "peak_ram_mb": 711.1171875,
+  "nan_or_inf": false,
+  "diverged": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

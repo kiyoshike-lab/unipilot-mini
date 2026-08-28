@@ -1,0 +1,144 @@
+{
+  "schema_version": "foundation-v15-ablation-result-v1",
+  "status": "COMPLETED",
+  "name": "more_layers_narrower",
+  "changes": {
+    "embedding_dim": 320,
+    "n_layers": 14,
+    "n_heads": 5,
+    "ffn_dim": 1280
+  },
+  "config": {
+    "model_name": "UniPilot Foundation v1.5 more_layers_narrower",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 320,
+    "n_layers": 14,
+    "n_heads": 5,
+    "ffn_dim": 1280,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 18736640,
+  "parameter_breakdown": {
+    "token_embedding": 1310720,
+    "position_embedding": 163840,
+    "attention": 5752320,
+    "normalization": 18560,
+    "feed_forward": 11491200,
+    "unique_total": 18736640
+  },
+  "token_budget": 65536,
+  "updates": 128,
+  "effective_batch_tokens": 512,
+  "same_training_macroblocks": true,
+  "scratch_start": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "learning_rate": 5e-06,
+      "train_loss": null,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 364.1640625,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.38340014219284,
+        "perplexity": 4373.855402132248,
+        "top_1_accuracy": 0.0001220703125,
+        "top_5_accuracy": 0.0006103515625,
+        "top_10_accuracy": 0.0015869140625
+      }
+    },
+    {
+      "update": 10,
+      "tokens_processed": 5120,
+      "learning_rate": 5e-05,
+      "train_loss": 8.282662391662598,
+      "gradient_norm": 2.9372599124908447,
+      "tokens_per_second": 1172.5727269339948,
+      "peak_ram_mb": 809.5,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.123498678207397,
+        "perplexity": 3372.800469832452,
+        "top_1_accuracy": 0.02685546875,
+        "top_5_accuracy": 0.084716796875,
+        "top_10_accuracy": 0.0953369140625
+      }
+    },
+    {
+      "update": 64,
+      "tokens_processed": 32768,
+      "learning_rate": 0.0001,
+      "train_loss": 7.731268043871279,
+      "gradient_norm": 1.4539889097213745,
+      "tokens_per_second": 1136.4540146284241,
+      "peak_ram_mb": 809.5,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.379362225532532,
+        "perplexity": 1602.5673652880735,
+        "top_1_accuracy": 0.0509033203125,
+        "top_5_accuracy": 0.1171875,
+        "top_10_accuracy": 0.1585693359375
+      }
+    },
+    {
+      "update": 100,
+      "tokens_processed": 51200,
+      "learning_rate": 0.0001,
+      "train_loss": 7.297774434089661,
+      "gradient_norm": 1.118192434310913,
+      "tokens_per_second": 1274.1032290574185,
+      "peak_ram_mb": 809.5,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.202639281749725,
+        "perplexity": 1342.9705687816636,
+        "top_1_accuracy": 0.0511474609375,
+        "top_5_accuracy": 0.12158203125,
+        "top_10_accuracy": 0.1583251953125
+      }
+    },
+    {
+      "update": 128,
+      "tokens_processed": 65536,
+      "learning_rate": 0.0001,
+      "train_loss": 7.193511690412249,
+      "gradient_norm": 1.3837116956710815,
+      "tokens_per_second": 1192.984290396047,
+      "peak_ram_mb": 809.5,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.134488940238953,
+        "perplexity": 1254.4957026329012,
+        "top_1_accuracy": 0.0517578125,
+        "top_5_accuracy": 0.1162109375,
+        "top_10_accuracy": 0.161865234375
+      }
+    }
+  ],
+  "final_checkpoint": {
+    "path": "checkpoints/foundation-v15-architecture-audit/more_layers_narrower-final.pt",
+    "bytes": 75014579,
+    "sha256": "624adea1cf02a0a975b9d3ae32afe0a4c177d0167cb7945e4149f583881afdbc",
+    "update": 128,
+    "tokens_processed": 65536
+  },
+  "diagnostic_checkpoints": [],
+  "wall_seconds": 64.10772100000031,
+  "baseline_ram_mb": 204.7578125,
+  "peak_ram_mb": 809.5,
+  "nan_or_inf": false,
+  "diverged": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

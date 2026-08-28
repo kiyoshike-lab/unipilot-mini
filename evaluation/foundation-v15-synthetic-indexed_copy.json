@@ -1,0 +1,177 @@
+{
+  "schema_version": "foundation-v15-synthetic-context-v1",
+  "architecture": {
+    "model_name": "Foundation v1.5 synthetic context audit tied_embedding_sqrt_scale",
+    "vocab_size": 64,
+    "context_length": 32,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "variant": {
+    "name": "tied_embedding_sqrt_scale",
+    "changes": {
+      "scale_token_embedding": true
+    }
+  },
+  "parameters": 17782272,
+  "tasks": [
+    "indexed_copy"
+  ],
+  "training_mode": "independent_task",
+  "training": {
+    "updates": 400,
+    "batch_size": 16,
+    "supervised_targets_per_update": 16,
+    "learning_rate": 0.0003,
+    "wall_seconds": 108.08935970000005,
+    "curve": [
+      {
+        "update": 1,
+        "recent_loss": 5.210021018981934,
+        "gradient_norm": 22.14059829711914,
+        "examples": 200,
+        "overall_accuracy": 0.065,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.065
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 25,
+        "recent_loss": 3.1958428764343263,
+        "gradient_norm": 4.337651252746582,
+        "examples": 200,
+        "overall_accuracy": 0.045,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.045
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 50,
+        "recent_loss": 2.6553492832183836,
+        "gradient_norm": 3.953120231628418,
+        "examples": 200,
+        "overall_accuracy": 0.215,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.215
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 100,
+        "recent_loss": 2.1918621826171876,
+        "gradient_norm": 5.599704265594482,
+        "examples": 200,
+        "overall_accuracy": 0.275,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.275
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 150,
+        "recent_loss": 2.0724498224258423,
+        "gradient_norm": 5.006441593170166,
+        "examples": 200,
+        "overall_accuracy": 0.265,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.265
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 200,
+        "recent_loss": 1.9271340084075927,
+        "gradient_norm": 6.563533782958984,
+        "examples": 200,
+        "overall_accuracy": 0.27,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.27
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 300,
+        "recent_loss": 1.810275855064392,
+        "gradient_norm": 7.636638164520264,
+        "examples": 200,
+        "overall_accuracy": 0.255,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.255
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 400,
+        "recent_loss": 1.693296527862549,
+        "gradient_norm": 5.387845993041992,
+        "examples": 200,
+        "overall_accuracy": 0.225,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.225
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.1,
+        "last_input_token_is_constant": 8
+      }
+    ]
+  },
+  "final": {
+    "examples": 200,
+    "overall_accuracy": 0.225,
+    "by_task": {
+      "indexed_copy": {
+        "examples": 200,
+        "accuracy": 0.225
+      }
+    },
+    "bigram_last_token_baseline_accuracy": 0.1,
+    "last_input_token_is_constant": 8
+  },
+  "target_accuracy": 0.9,
+  "context_learning": "FAIL",
+  "bigram_cannot_solve_by_last_token": true,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": "foundation-v15-ablation-result-v1",
+  "status": "COMPLETED",
+  "name": "tied_embedding_sqrt_scale",
+  "changes": {
+    "scale_token_embedding": true
+  },
+  "config": {
+    "model_name": "UniPilot Foundation v1.5 tied_embedding_sqrt_scale",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "parameters": 19514880,
+  "parameter_breakdown": {
+    "token_embedding": 1572864,
+    "position_embedding": 196608,
+    "attention": 5913600,
+    "normalization": 16128,
+    "feed_forward": 11815680,
+    "unique_total": 19514880
+  },
+  "token_budget": 65536,
+  "updates": 128,
+  "effective_batch_tokens": 512,
+  "same_training_macroblocks": true,
+  "scratch_start": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "learning_rate": 5e-06,
+      "train_loss": null,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 365.92578125,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.373860776424408,
+        "perplexity": 4332.329973657485,
+        "top_1_accuracy": 0.0089111328125,
+        "top_5_accuracy": 0.009765625,
+        "top_10_accuracy": 0.0106201171875
+      }
+    },
+    {
+      "update": 10,
+      "tokens_processed": 5120,
+      "learning_rate": 5e-05,
+      "train_loss": 8.310869789123535,
+      "gradient_norm": 2.3174047470092773,
+      "tokens_per_second": 1382.8437116791079,
+      "peak_ram_mb": 752.98046875,
+      "validation": {
+        "tokens": 8192,
+        "loss": 8.197081685066223,
+        "perplexity": 3630.3403567959,
+        "top_1_accuracy": 0.0089111328125,
+        "top_5_accuracy": 0.03515625,
+        "top_10_accuracy": 0.044921875
+      }
+    },
+    {
+      "update": 64,
+      "tokens_processed": 32768,
+      "learning_rate": 0.0001,
+      "train_loss": 7.632485725261547,
+      "gradient_norm": 1.5177528858184814,
+      "tokens_per_second": 1271.2339006005952,
+      "peak_ram_mb": 756.578125,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.298437535762787,
+        "perplexity": 1477.9888178706583,
+        "top_1_accuracy": 0.0579833984375,
+        "top_5_accuracy": 0.122802734375,
+        "top_10_accuracy": 0.166015625
+      }
+    },
+    {
+      "update": 100,
+      "tokens_processed": 51200,
+      "learning_rate": 0.0001,
+      "train_loss": 7.202529072761536,
+      "gradient_norm": 1.2969392538070679,
+      "tokens_per_second": 1323.3698346334559,
+      "peak_ram_mb": 756.578125,
+      "validation": {
+        "tokens": 8192,
+        "loss": 7.118589788675308,
+        "perplexity": 1234.708005946214,
+        "top_1_accuracy": 0.066650390625,
+        "top_5_accuracy": 0.12939453125,
+        "top_10_accuracy": 0.1695556640625
+      }
+    },
+    {
+      "update": 128,
+      "tokens_processed": 65536,
+      "learning_rate": 0.0001,
+      "train_loss": 7.075735943658011,
+      "gradient_norm": 1.5669056177139282,
+      "tokens_per_second": 1242.9127702388942,
+      "peak_ram_mb": 756.578125,
+      "validation": {
+        "tokens": 8192,
+        "loss": 6.995296150445938,
+        "perplexity": 1091.4868741975806,
+        "top_1_accuracy": 0.07080078125,
+        "top_5_accuracy": 0.127197265625,
+        "top_10_accuracy": 0.1717529296875
+      }
+    }
+  ],
+  "final_checkpoint": {
+    "path": "checkpoints/foundation-v15-architecture-audit/tied_embedding_sqrt_scale-final.pt",
+    "bytes": 78109565,
+    "sha256": "b7e7985e83df2a934c129257435aa2b19a99d94a880b9d734169090a0049c8ba",
+    "update": 128,
+    "tokens_processed": 65536
+  },
+  "diagnostic_checkpoints": [],
+  "wall_seconds": 59.35578279999936,
+  "baseline_ram_mb": 203.91796875,
+  "peak_ram_mb": 756.578125,
+  "nan_or_inf": false,
+  "diverged": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

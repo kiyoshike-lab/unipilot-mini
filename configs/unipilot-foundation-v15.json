@@ -1,0 +1,94 @@
+{
+  "project": "UniPilot Foundation v1.5 Transformer Architecture & Learning Capacity Audit",
+  "seed": 15012026,
+  "cpu_threads": 4,
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "baseline_checkpoint": "checkpoints/foundation-v14-investigation/context512_constant.pt",
+  "baseline_result": "checkpoints/foundation-v14-investigation/context512_constant.json",
+  "architecture": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-5,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "learning_rate": 0.0001,
+  "warmup_updates": 20,
+  "schedule": "constant_after_warmup20",
+  "effective_batch_tokens": 512,
+  "weight_decay": 0.1,
+  "optimizer_betas": [0.9, 0.95],
+  "optimizer_epsilon": 1e-8,
+  "gradient_clip": 1.0,
+  "ablation_token_budget": 65536,
+  "ablation_metric_updates": [0, 10, 64, 100, 128],
+  "ablations": [
+    {
+      "name": "current_preln_gelu_tied",
+      "changes": {}
+    },
+    {
+      "name": "tied_embedding_sqrt_scale",
+      "changes": {"scale_token_embedding": true}
+    },
+    {
+      "name": "untied_lm_head",
+      "changes": {"weight_tying": false}
+    },
+    {
+      "name": "pre_rmsnorm",
+      "changes": {"norm": "rmsnorm"}
+    },
+    {
+      "name": "fewer_layers_wider",
+      "changes": {
+        "embedding_dim": 448,
+        "n_layers": 7,
+        "n_heads": 7,
+        "ffn_dim": 1792
+      }
+    },
+    {
+      "name": "more_layers_narrower",
+      "changes": {
+        "embedding_dim": 320,
+        "n_layers": 14,
+        "n_heads": 5,
+        "ffn_dim": 1280
+      }
+    }
+  ],
+  "synthetic": {
+    "vocab_size": 64,
+    "context_length": 32,
+    "batch_size": 16,
+    "max_updates": 400,
+    "learning_rate": 0.0003,
+    "evaluation_examples_per_task": 200,
+    "target_accuracy": 0.9
+  },
+  "controlled_corpus": {
+    "segments": 5000,
+    "minimum_tokens": 20,
+    "maximum_tokens": 200,
+    "training_token_budget": 65536
+  },
+  "controlled_full_corpus_token_budget": 256000,
+  "next_budgets": [512000, 1000000],
+  "standard_46m_enabled": false,
+  "corpus_expansion_enabled": false,
+  "campus_pretraining_enabled": false,
+  "instruction_tuning_enabled": false,
+  "human_feedback_enabled": false,
+  "dpo_enabled": false,
+  "production_integration_enabled": false,
+  "external_ai_api": "OFF"
+}

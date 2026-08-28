@@ -1,0 +1,177 @@
+{
+  "schema_version": "foundation-v15-synthetic-context-v1",
+  "architecture": {
+    "model_name": "Foundation v1.5 synthetic context audit tied_embedding_sqrt_scale",
+    "vocab_size": 64,
+    "context_length": 32,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "variant": {
+    "name": "tied_embedding_sqrt_scale",
+    "changes": {
+      "scale_token_embedding": true
+    }
+  },
+  "parameters": 17782272,
+  "tasks": [
+    "previous_key_lookup"
+  ],
+  "training_mode": "independent_task",
+  "training": {
+    "updates": 400,
+    "batch_size": 16,
+    "supervised_targets_per_update": 16,
+    "learning_rate": 0.0003,
+    "wall_seconds": 107.58382759999995,
+    "curve": [
+      {
+        "update": 1,
+        "recent_loss": 5.07850456237793,
+        "gradient_norm": 22.12073516845703,
+        "examples": 200,
+        "overall_accuracy": 0.055,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.055
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 25,
+        "recent_loss": 3.1937501525878904,
+        "gradient_norm": 4.273134708404541,
+        "examples": 200,
+        "overall_accuracy": 0.09,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.09
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 50,
+        "recent_loss": 2.816977548599243,
+        "gradient_norm": 4.469772815704346,
+        "examples": 200,
+        "overall_accuracy": 0.175,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.175
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 100,
+        "recent_loss": 2.4669789409637453,
+        "gradient_norm": 5.982132911682129,
+        "examples": 200,
+        "overall_accuracy": 0.22,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.22
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 150,
+        "recent_loss": 2.1676796960830687,
+        "gradient_norm": 6.062338829040527,
+        "examples": 200,
+        "overall_accuracy": 0.265,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.265
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 200,
+        "recent_loss": 2.1159462833404543,
+        "gradient_norm": 6.454050540924072,
+        "examples": 200,
+        "overall_accuracy": 0.225,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.225
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 300,
+        "recent_loss": 1.84658935546875,
+        "gradient_norm": 5.638650894165039,
+        "examples": 200,
+        "overall_accuracy": 0.23,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.23
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 400,
+        "recent_loss": 1.7096862173080445,
+        "gradient_norm": 5.590379238128662,
+        "examples": 200,
+        "overall_accuracy": 0.25,
+        "by_task": {
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.25
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.085,
+        "last_input_token_is_constant": 8
+      }
+    ]
+  },
+  "final": {
+    "examples": 200,
+    "overall_accuracy": 0.25,
+    "by_task": {
+      "previous_key_lookup": {
+        "examples": 200,
+        "accuracy": 0.25
+      }
+    },
+    "bigram_last_token_baseline_accuracy": 0.085,
+    "last_input_token_is_constant": 8
+  },
+  "target_accuracy": 0.9,
+  "context_learning": "FAIL",
+  "bigram_cannot_solve_by_last_token": true,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

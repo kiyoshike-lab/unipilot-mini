@@ -1,0 +1,448 @@
+{
+  "schema_version": "foundation-v15-synthetic-context-v1",
+  "architecture": {
+    "model_name": "Foundation v1.5 synthetic context audit tied_embedding_sqrt_scale",
+    "vocab_size": 64,
+    "context_length": 32,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "variant": {
+    "name": "tied_embedding_sqrt_scale",
+    "changes": {
+      "scale_token_embedding": true
+    }
+  },
+  "parameters": 17782272,
+  "tasks": [
+    "indexed_copy",
+    "previous_key_lookup",
+    "long_range_dependency",
+    "pattern_continuation",
+    "context_conditioned"
+  ],
+  "training": {
+    "updates": 1000,
+    "batch_size": 16,
+    "supervised_targets_per_update": 16,
+    "learning_rate": 0.0003,
+    "wall_seconds": 301.1526904,
+    "curve": [
+      {
+        "update": 1,
+        "recent_loss": 4.816969394683838,
+        "gradient_norm": 22.2515811920166,
+        "examples": 1000,
+        "overall_accuracy": 0.104,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.055
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.065
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.06
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.13
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.21
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 25,
+        "recent_loss": 3.046912040710449,
+        "gradient_norm": 7.002623081207275,
+        "examples": 1000,
+        "overall_accuracy": 0.145,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.135
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.11
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.065
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.19
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.225
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 50,
+        "recent_loss": 2.1831483697891234,
+        "gradient_norm": 7.987492561340332,
+        "examples": 1000,
+        "overall_accuracy": 0.502,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.26
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.18
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.72
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.355
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.995
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 100,
+        "recent_loss": 1.6290208053588868,
+        "gradient_norm": 6.764369010925293,
+        "examples": 1000,
+        "overall_accuracy": 0.559,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.235
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.215
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.965
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.38
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 150,
+        "recent_loss": 1.3326244020462037,
+        "gradient_norm": 6.749166488647461,
+        "examples": 1000,
+        "overall_accuracy": 0.561,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.235
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.195
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.99
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.385
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 200,
+        "recent_loss": 1.2012297129631042,
+        "gradient_norm": 5.5413384437561035,
+        "examples": 1000,
+        "overall_accuracy": 0.587,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.27
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.25
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.95
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.465
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 300,
+        "recent_loss": 1.1930704236030578,
+        "gradient_norm": 4.7419047355651855,
+        "examples": 1000,
+        "overall_accuracy": 0.599,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.235
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.275
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.485
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 400,
+        "recent_loss": 1.0043886446952819,
+        "gradient_norm": 4.630827903747559,
+        "examples": 1000,
+        "overall_accuracy": 0.625,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.285
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.29
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.55
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 500,
+        "recent_loss": 1.0296395444869995,
+        "gradient_norm": 3.628561496734619,
+        "examples": 1000,
+        "overall_accuracy": 0.601,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.305
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.235
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.465
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 600,
+        "recent_loss": 0.9337958836555481,
+        "gradient_norm": 4.091193199157715,
+        "examples": 1000,
+        "overall_accuracy": 0.592,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.29
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.23
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.44
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 800,
+        "recent_loss": 0.8870987176895142,
+        "gradient_norm": 5.295868873596191,
+        "examples": 1000,
+        "overall_accuracy": 0.627,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.365
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.265
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.505
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 1000,
+        "recent_loss": 1.0058087038993835,
+        "gradient_norm": 4.013190269470215,
+        "examples": 1000,
+        "overall_accuracy": 0.599,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.28
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.265
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.45
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      }
+    ]
+  },
+  "final": {
+    "examples": 1000,
+    "overall_accuracy": 0.599,
+    "by_task": {
+      "indexed_copy": {
+        "examples": 200,
+        "accuracy": 0.28
+      },
+      "previous_key_lookup": {
+        "examples": 200,
+        "accuracy": 0.265
+      },
+      "long_range_dependency": {
+        "examples": 200,
+        "accuracy": 1.0
+      },
+      "pattern_continuation": {
+        "examples": 200,
+        "accuracy": 0.45
+      },
+      "context_conditioned": {
+        "examples": 200,
+        "accuracy": 1.0
+      }
+    },
+    "bigram_last_token_baseline_accuracy": 0.112,
+    "last_input_token_is_constant": 8
+  },
+  "target_accuracy": 0.9,
+  "context_learning": "FAIL",
+  "bigram_cannot_solve_by_last_token": true,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

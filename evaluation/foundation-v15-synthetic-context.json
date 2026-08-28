@@ -1,0 +1,318 @@
+{
+  "schema_version": "foundation-v15-synthetic-context-v1",
+  "architecture": {
+    "model_name": "Foundation v1.5 synthetic context audit",
+    "vocab_size": 64,
+    "context_length": 32,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 17782272,
+  "tasks": [
+    "indexed_copy",
+    "previous_key_lookup",
+    "long_range_dependency",
+    "pattern_continuation",
+    "context_conditioned"
+  ],
+  "training": {
+    "updates": 400,
+    "batch_size": 16,
+    "supervised_targets_per_update": 16,
+    "learning_rate": 0.0003,
+    "wall_seconds": 150.00682440000037,
+    "curve": [
+      {
+        "update": 1,
+        "recent_loss": 4.264233589172363,
+        "gradient_norm": 17.174070358276367,
+        "examples": 1000,
+        "overall_accuracy": 0.101,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.055
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.055
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.055
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.13
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.21
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 25,
+        "recent_loss": 3.1441130352020266,
+        "gradient_norm": 6.746981143951416,
+        "examples": 1000,
+        "overall_accuracy": 0.136,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.15
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.12
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.08
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.105
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.225
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 50,
+        "recent_loss": 2.205274987220764,
+        "gradient_norm": 8.161900520324707,
+        "examples": 1000,
+        "overall_accuracy": 0.485,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.205
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.2
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.66
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.36
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 100,
+        "recent_loss": 1.682074375152588,
+        "gradient_norm": 10.836525917053223,
+        "examples": 1000,
+        "overall_accuracy": 0.525,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.175
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.23
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 0.875
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.345
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 150,
+        "recent_loss": 1.5015556001663208,
+        "gradient_norm": 4.816342830657959,
+        "examples": 1000,
+        "overall_accuracy": 0.583,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.28
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.2
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.435
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 200,
+        "recent_loss": 1.2610168290138244,
+        "gradient_norm": 5.841280460357666,
+        "examples": 1000,
+        "overall_accuracy": 0.595,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.27
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.21
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.495
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 300,
+        "recent_loss": 1.3746396684646607,
+        "gradient_norm": 6.332601070404053,
+        "examples": 1000,
+        "overall_accuracy": 0.6,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.27
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.255
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.475
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 400,
+        "recent_loss": 1.0935657811164856,
+        "gradient_norm": 4.401407241821289,
+        "examples": 1000,
+        "overall_accuracy": 0.625,
+        "by_task": {
+          "indexed_copy": {
+            "examples": 200,
+            "accuracy": 0.275
+          },
+          "previous_key_lookup": {
+            "examples": 200,
+            "accuracy": 0.29
+          },
+          "long_range_dependency": {
+            "examples": 200,
+            "accuracy": 1.0
+          },
+          "pattern_continuation": {
+            "examples": 200,
+            "accuracy": 0.56
+          },
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.112,
+        "last_input_token_is_constant": 8
+      }
+    ]
+  },
+  "final": {
+    "examples": 1000,
+    "overall_accuracy": 0.625,
+    "by_task": {
+      "indexed_copy": {
+        "examples": 200,
+        "accuracy": 0.275
+      },
+      "previous_key_lookup": {
+        "examples": 200,
+        "accuracy": 0.29
+      },
+      "long_range_dependency": {
+        "examples": 200,
+        "accuracy": 1.0
+      },
+      "pattern_continuation": {
+        "examples": 200,
+        "accuracy": 0.56
+      },
+      "context_conditioned": {
+        "examples": 200,
+        "accuracy": 1.0
+      }
+    },
+    "bigram_last_token_baseline_accuracy": 0.112,
+    "last_input_token_is_constant": 8
+  },
+  "target_accuracy": 0.9,
+  "context_learning": "FAIL",
+  "bigram_cannot_solve_by_last_token": true,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}

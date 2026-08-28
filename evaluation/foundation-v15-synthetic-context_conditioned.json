@@ -1,0 +1,117 @@
+{
+  "schema_version": "foundation-v15-synthetic-context-v1",
+  "architecture": {
+    "model_name": "Foundation v1.5 synthetic context audit tied_embedding_sqrt_scale",
+    "vocab_size": 64,
+    "context_length": 32,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "variant": {
+    "name": "tied_embedding_sqrt_scale",
+    "changes": {
+      "scale_token_embedding": true
+    }
+  },
+  "parameters": 17782272,
+  "tasks": [
+    "context_conditioned"
+  ],
+  "training_mode": "independent_task",
+  "training": {
+    "updates": 100,
+    "batch_size": 16,
+    "supervised_targets_per_update": 16,
+    "learning_rate": 0.0003,
+    "wall_seconds": 29.06955229999994,
+    "curve": [
+      {
+        "update": 1,
+        "recent_loss": 4.819042205810547,
+        "gradient_norm": 25.441532135009766,
+        "examples": 200,
+        "overall_accuracy": 0.26,
+        "by_task": {
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 0.26
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.27,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 25,
+        "recent_loss": 1.1001033414900303,
+        "gradient_norm": 0.5451359748840332,
+        "examples": 200,
+        "overall_accuracy": 1.0,
+        "by_task": {
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.27,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 50,
+        "recent_loss": 0.01878612903878093,
+        "gradient_norm": 0.056462984532117844,
+        "examples": 200,
+        "overall_accuracy": 1.0,
+        "by_task": {
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.27,
+        "last_input_token_is_constant": 8
+      },
+      {
+        "update": 100,
+        "recent_loss": 0.0013989919796586036,
+        "gradient_norm": 0.013931087218225002,
+        "examples": 200,
+        "overall_accuracy": 1.0,
+        "by_task": {
+          "context_conditioned": {
+            "examples": 200,
+            "accuracy": 1.0
+          }
+        },
+        "bigram_last_token_baseline_accuracy": 0.27,
+        "last_input_token_is_constant": 8
+      }
+    ]
+  },
+  "final": {
+    "examples": 200,
+    "overall_accuracy": 1.0,
+    "by_task": {
+      "context_conditioned": {
+        "examples": 200,
+        "accuracy": 1.0
+      }
+    },
+    "bigram_last_token_baseline_accuracy": 0.27,
+    "last_input_token_is_constant": 8
+  },
+  "target_accuracy": 0.9,
+  "context_learning": "PASS",
+  "bigram_cannot_solve_by_last_token": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "final_blind_used": false
+}
