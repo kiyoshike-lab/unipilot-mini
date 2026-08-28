@@ -1,0 +1,84 @@
+{
+  "project": "UniPilot Foundation v1.4 Language Emergence Investigation",
+  "model_name": "UniPilot Foundation v1.4 Clean 20M",
+  "initialization": "scratch-common-initialization-no-resume",
+  "model": {
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "macro_block_tokens": 512,
+  "core_token_budget": 128000,
+  "validation_probe_tokens": 8192,
+  "learning_rate": 0.0001,
+  "warmup_steps": 20,
+  "long_horizon_steps": 1000,
+  "minimum_learning_rate_ratio": 0.1,
+  "weight_decay": 0.1,
+  "optimizer_betas": [0.9, 0.95],
+  "optimizer_epsilon": 1e-8,
+  "gradient_clip": 1.0,
+  "seed": 13012026,
+  "cpu_threads": 4,
+  "metric_updates": [0, 50, 100, 150, 200, 250],
+  "reference": {
+    "name": "context512_short_cosine_v13",
+    "context_length": 512,
+    "micro_batch": 1,
+    "effective_batch_tokens": 512,
+    "schedule": "short_cosine_250",
+    "checkpoint": "checkpoints/foundation-v13-clean-250/checkpoint-step-250.pt",
+    "training_curve": "evaluation/foundation-v13-training-curve.json"
+  },
+  "experiments": [
+    {
+      "name": "context512_constant",
+      "context_length": 512,
+      "micro_batch": 1,
+      "effective_batch_tokens": 512,
+      "schedule": "constant_after_warmup20"
+    },
+    {
+      "name": "context256_constant",
+      "context_length": 256,
+      "micro_batch": 2,
+      "effective_batch_tokens": 512,
+      "schedule": "constant_after_warmup20"
+    },
+    {
+      "name": "context256_long_cosine",
+      "context_length": 256,
+      "micro_batch": 2,
+      "effective_batch_tokens": 512,
+      "schedule": "long_cosine_1000"
+    },
+    {
+      "name": "context128_constant",
+      "context_length": 128,
+      "micro_batch": 4,
+      "effective_batch_tokens": 512,
+      "schedule": "constant_after_warmup20"
+    }
+  ],
+  "effective_batch_pilot": {
+    "context_length": 512,
+    "token_budget": 32768,
+    "schedule": "constant_no_warmup",
+    "multipliers": [1, 2, 4]
+  },
+  "foundation_500_continuation_enabled": false,
+  "foundation_1000_continuation_enabled": false,
+  "standard_46m_enabled": false,
+  "corpus_expansion_enabled": false,
+  "campus_pretraining_enabled": false,
+  "instruction_tuning_enabled": false,
+  "conversation_training_enabled": false,
+  "dpo_enabled": false,
+  "external_ai_api": "OFF",
+  "production_enabled": false
+}

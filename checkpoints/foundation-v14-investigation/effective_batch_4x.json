@@ -1,0 +1,75 @@
+{
+  "schema_version": "foundation-v14-experiment-v1",
+  "status": "COMPLETED",
+  "experiment": {
+    "name": "effective_batch_4x",
+    "context_length": 512,
+    "micro_batch": 4,
+    "effective_batch_tokens": 2048,
+    "schedule": "constant_no_warmup"
+  },
+  "scratch_start": true,
+  "common_context512_initialization": true,
+  "seed": 13012026,
+  "parameters": 19514880,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0
+  },
+  "token_budget": 32768,
+  "updates": 16,
+  "macro_blocks_seen": 64,
+  "shared_macro_permutation": true,
+  "history": [
+    {
+      "update": 0,
+      "tokens_processed": 0,
+      "train_loss": null,
+      "learning_rate": 0.0001,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 365.8515625,
+      "validation_tokens": 8192,
+      "validation_loss": 8.374466896057129,
+      "validation_perplexity": 4334.956679878633,
+      "validation_top_1_accuracy": 0.0,
+      "validation_top_5_accuracy": 0.0010986328125,
+      "validation_top_10_accuracy": 0.0028076171875,
+      "validation_sentence_boundary_targets": 0,
+      "validation_sentence_boundary_top_1_accuracy": 0.0
+    },
+    {
+      "update": 16,
+      "tokens_processed": 32768,
+      "train_loss": 7.922696352005005,
+      "learning_rate": 0.0001,
+      "gradient_norm": 1.2340152263641357,
+      "tokens_per_second": 890.9787081620458,
+      "peak_ram_mb": 1145.19921875,
+      "validation_tokens": 8192,
+      "validation_loss": 7.741851419210434,
+      "validation_perplexity": 2302.731760777229,
+      "validation_top_1_accuracy": 0.0330810546875,
+      "validation_top_5_accuracy": 0.1097412109375,
+      "validation_top_10_accuracy": 0.1539306640625,
+      "validation_sentence_boundary_targets": 0,
+      "validation_sentence_boundary_top_1_accuracy": 0.0
+    }
+  ],
+  "wall_seconds": 38.46147329999985,
+  "baseline_ram_mb": 204.0546875,
+  "peak_ram_mb": 1145.19921875,
+  "peak_ram_delta_mb": 941.14453125,
+  "nan_or_inf": false,
+  "diverged": false,
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}
