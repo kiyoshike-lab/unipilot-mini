@@ -1,0 +1,133 @@
+{
+  "schema_version": "foundation-v13-checkpoint-manifest-v3",
+  "model": "UniPilot Foundation v1.3 Clean 20M step 50",
+  "parameters": 19514880,
+  "global_step": 50,
+  "model_config": {
+    "model_name": "UniPilot Foundation v1.3 Clean 20M",
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "train_corpus_tokens": 33402759,
+  "tokens_processed": 25600,
+  "train_corpus_fraction": 0.0007664037572465196,
+  "epoch_equivalent": 0.0007664037572465196,
+  "training_stage": "foundation-v13-full-clean-250-only",
+  "scheduler_state": {
+    "kind": "stateless_warmup_cosine",
+    "global_step": 50,
+    "base_learning_rate": 0.0001,
+    "warmup_steps": 20,
+    "schedule_steps": 250,
+    "minimum_ratio": 0.1
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0
+  },
+  "rng_states_saved": [
+    "python",
+    "numpy",
+    "torch_cpu"
+  ],
+  "sampler_state_saved": true,
+  "sampler_epoch": 0,
+  "sampler_position": 50,
+  "history": [
+    {
+      "step": 0,
+      "train_loss": null,
+      "validation_loss": 8.374466896057129,
+      "perplexity": 4334.956679878633,
+      "learning_rate": 5e-06,
+      "gradient_norm": null,
+      "tokens_per_second": null,
+      "peak_ram_mb": 399.140625,
+      "tokens_processed": 0,
+      "corpus_fraction": 0.0,
+      "corpus_percentage": 0.0,
+      "epoch_equivalent": 0.0
+    },
+    {
+      "step": 10,
+      "train_loss": 8.245493030548095,
+      "validation_loss": 8.09259507060051,
+      "perplexity": 3270.162871995144,
+      "learning_rate": 5e-05,
+      "gradient_norm": 3.0669331550598145,
+      "tokens_per_second": 857.3950221111933,
+      "peak_ram_mb": 849.3984375,
+      "tokens_processed": 5120,
+      "corpus_fraction": 0.00015328075144930393,
+      "corpus_percentage": 0.015328075144930392,
+      "epoch_equivalent": 0.00015328075144930393
+    },
+    {
+      "step": 20,
+      "train_loss": 7.963358402252197,
+      "validation_loss": 7.919991493225098,
+      "perplexity": 2751.747637132718,
+      "learning_rate": 0.0001,
+      "gradient_norm": 1.8084248304367065,
+      "tokens_per_second": 840.3242300304003,
+      "peak_ram_mb": 849.3984375,
+      "tokens_processed": 10240,
+      "corpus_fraction": 0.00030656150289860786,
+      "corpus_percentage": 0.030656150289860785,
+      "epoch_equivalent": 0.00030656150289860786
+    },
+    {
+      "step": 25,
+      "train_loss": 7.759133625030517,
+      "validation_loss": 7.8322815001010895,
+      "perplexity": 2520.6737354282927,
+      "learning_rate": 9.993285115672726e-05,
+      "gradient_norm": 1.6573184728622437,
+      "tokens_per_second": 887.1206489620954,
+      "peak_ram_mb": 849.3984375,
+      "tokens_processed": 12800,
+      "corpus_fraction": 0.0003832018786232598,
+      "corpus_percentage": 0.03832018786232598,
+      "epoch_equivalent": 0.0003832018786232598
+    },
+    {
+      "step": 50,
+      "train_loss": 7.648335304260254,
+      "validation_loss": 7.486582636833191,
+      "perplexity": 1783.9452743081288,
+      "learning_rate": 9.651553168816323e-05,
+      "gradient_norm": 1.5676677227020264,
+      "tokens_per_second": 888.0917159871287,
+      "peak_ram_mb": 868.8046875,
+      "tokens_processed": 25600,
+      "corpus_fraction": 0.0007664037572465196,
+      "corpus_percentage": 0.07664037572465196,
+      "epoch_equivalent": 0.0007664037572465196
+    }
+  ],
+  "initialization": "scratch-no-resume-no-pretrained-model",
+  "scratch_start": true,
+  "resumed_from": null,
+  "seed": 13012026,
+  "git_commit_at_run_start": "d3fa96384b5dc4814a2bfcca71188b7a529a4ff2",
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false,
+  "checkpoint_bytes": 234875895,
+  "checkpoint_sha256": "797bcbac9f929de99d92fc6857e85bfa01871235f37394c87158d736e0db74ac"
+}

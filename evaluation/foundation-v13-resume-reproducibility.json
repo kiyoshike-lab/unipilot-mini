@@ -1,0 +1,30 @@
+{
+  "schema_version": "foundation-v13-resume-reproducibility-v1",
+  "experiment": "formal step 200 checkpoint -> replay 250 vs formal scratch step 250",
+  "source_checkpoint": "checkpoints/foundation-v13-clean-250/checkpoint-step-200.pt",
+  "reference_checkpoint": "checkpoints/foundation-v13-clean-250/checkpoint-step-250.pt",
+  "seed": 13012026,
+  "cpu_threads": 4,
+  "maximum_weight_difference": 0.0,
+  "maximum_optimizer_difference": 0.0,
+  "maximum_history_difference": 0.0,
+  "weight_mismatches": [],
+  "optimizer_mismatches": [],
+  "scheduler_mismatches": [],
+  "sampler_mismatches": [],
+  "random_mismatches": [],
+  "history_mismatches": [],
+  "checks": {
+    "model_weights_bitwise_equal": true,
+    "optimizer_bitwise_equal": true,
+    "scheduler_equal": true,
+    "sampler_equal": true,
+    "random_state_equal": true,
+    "step_225_250_dynamics_equal": true,
+    "global_step_250": true
+  },
+  "resume_integrity": "PASS",
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}
