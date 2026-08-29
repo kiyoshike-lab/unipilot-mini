@@ -1,0 +1,87 @@
+{
+  "project": "UniPilot Foundation v1.6 Architecture Fix Validation & Synthetic Context Recovery",
+  "seeds": [42, 123, 2026],
+  "cpu_threads": 4,
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "diagnostic_corpus_manifest": "data/foundation_v15_diagnostic/manifest.json",
+  "architecture": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-5,
+    "activation": "gelu",
+    "weight_tying": true
+  },
+  "variants": [
+    {
+      "name": "current_unscaled",
+      "scale_token_embedding": false,
+      "formula": "token_embedding + learned_position_embedding"
+    },
+    {
+      "name": "sqrt_scaled_a",
+      "scale_token_embedding": true,
+      "formula": "token_embedding * sqrt(d_model) + learned_position_embedding"
+    }
+  ],
+  "reproduction": {
+    "token_budget": 65536,
+    "effective_batch_tokens": 512,
+    "learning_rate": 0.0001,
+    "warmup_updates": 20,
+    "schedule": "constant_after_warmup20",
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "milestones": [0, 10, 25, 50, 75, 100, 128],
+    "validation_tokens": 8192,
+    "frequency_validation_tokens": 8192
+  },
+  "synthetic_v2": {
+    "vocab_size": 256,
+    "context_length": 80,
+    "batch_size": 16,
+    "updates": 1600,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "evaluation_examples": 256,
+    "curve_percentages": [10, 25, 50, 75, 100],
+    "copy_lengths": [4, 8, 16, 32, 64],
+    "key_pairs": [2, 4, 8, 16],
+    "key_distances": ["short", "medium", "long"],
+    "patterns": ["abab", "abcabc", "numeric", "nested"],
+    "gate_accuracy": 0.9
+  },
+  "short_japanese": {
+    "context_length": 128,
+    "token_budget": 65536,
+    "effective_batch_tokens": 512,
+    "seed": 2716
+  },
+  "controlled_256k": {
+    "enabled_only_after_architecture_fix_pass": true,
+    "token_budget": 256000,
+    "context_length": 512,
+    "effective_batch_tokens": 512,
+    "learning_rate": 0.0001,
+    "warmup_updates": 20,
+    "schedule": "constant_after_warmup20",
+    "milestone_tokens": [65536, 131072, 196608, 256000],
+    "scratch": true
+  },
+  "formal_architecture_formula_if_pass": "token_embedding * sqrt(d_model) + learned_position_embedding",
+  "checkpoint_compatibility_if_pass": "incompatible with unscaled checkpoints because architecture semantics differ",
+  "standard_46m_enabled": false,
+  "corpus_expansion_enabled": false,
+  "campus_pretraining_enabled": false,
+  "instruction_tuning_enabled": false,
+  "human_feedback_enabled": false,
+  "dpo_enabled": false,
+  "production_integration_enabled": false,
+  "external_ai_api": "OFF"
+}

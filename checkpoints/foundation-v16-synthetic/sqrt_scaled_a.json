@@ -1,0 +1,598 @@
+{
+  "schema_version": "foundation-v16-synthetic-context-v2",
+  "variant": {
+    "name": "sqrt_scaled_a",
+    "scale_token_embedding": true,
+    "formula": "token_embedding * sqrt(d_model) + learned_position_embedding"
+  },
+  "config": {
+    "model_name": "Foundation v1.6 Synthetic v2 sqrt_scaled_a",
+    "vocab_size": 256,
+    "context_length": 80,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": true,
+    "weight_tying": true
+  },
+  "parameters": 17874432,
+  "training": {
+    "seed": 2716,
+    "updates": 1600,
+    "batch_size": 16,
+    "train_examples": 25600,
+    "unique_train_hashes": 25596,
+    "examples_by_difficulty": {
+      "context_conditioned:correct_context": 5120,
+      "copy:length_16": 976,
+      "copy:length_32": 592,
+      "copy:length_4": 1936,
+      "copy:length_64": 192,
+      "copy:length_8": 1424,
+      "key_lookup:pairs_16_long": 144,
+      "key_lookup:pairs_16_medium": 64,
+      "key_lookup:pairs_16_short": 96,
+      "key_lookup:pairs_2_long": 320,
+      "key_lookup:pairs_2_medium": 512,
+      "key_lookup:pairs_2_short": 1344,
+      "key_lookup:pairs_4_long": 176,
+      "key_lookup:pairs_4_medium": 464,
+      "key_lookup:pairs_4_short": 912,
+      "key_lookup:pairs_8_long": 192,
+      "key_lookup:pairs_8_medium": 448,
+      "key_lookup:pairs_8_short": 448,
+      "long_range:distance_62": 5120,
+      "pattern:abab": 1952,
+      "pattern:abcabc": 1440,
+      "pattern:nested": 848,
+      "pattern:numeric": 880
+    },
+    "sequence_length": {
+      "minimum": 8,
+      "maximum": 68
+    },
+    "required_context_distance": {
+      "minimum": 3,
+      "maximum": 66,
+      "mean": 26.7562109375
+    },
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "dropout_unchanged": 0.1,
+    "curve": [
+      {
+        "update": 160,
+        "training_percent": 10,
+        "recent_loss": 2.3369900454417802,
+        "gradient_norm": 0.2760511040687561,
+        "evaluation": {
+          "examples_per_cell": 64,
+          "copy": {
+            "4": 0.1875,
+            "8": 0.0625,
+            "16": 0.125
+          },
+          "key_lookup": {
+            "2": {
+              "short": 0.46875,
+              "medium": 0.484375,
+              "long": 0.4375
+            },
+            "4": {
+              "short": 0.328125,
+              "medium": 0.265625,
+              "long": 0.234375
+            },
+            "8": {
+              "short": 0.078125,
+              "medium": 0.109375,
+              "long": 0.140625
+            }
+          },
+          "long_range": 1.0,
+          "pattern": {
+            "abab": 0.5,
+            "abcabc": 0.21875,
+            "numeric": 0.03125
+          },
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.296875
+          },
+          "minimum_gate_cell_accuracy": 0.03125,
+          "context_control_advantage": 0.703125,
+          "gate_pass": false,
+          "test_hashes": 1088,
+          "exact_train_test_overlap": 0,
+          "sequence_length": {
+            "minimum": 8,
+            "maximum": 64
+          },
+          "required_context_distance": {
+            "minimum": 3,
+            "maximum": 62,
+            "mean": 21.482536764705884
+          }
+        }
+      },
+      {
+        "update": 400,
+        "training_percent": 25,
+        "recent_loss": 1.343004378527985,
+        "gradient_norm": 0.11841315776109695,
+        "evaluation": {
+          "examples_per_cell": 64,
+          "copy": {
+            "4": 0.296875,
+            "8": 0.140625,
+            "16": 0.03125
+          },
+          "key_lookup": {
+            "2": {
+              "short": 0.453125,
+              "medium": 0.5625,
+              "long": 0.40625
+            },
+            "4": {
+              "short": 0.296875,
+              "medium": 0.265625,
+              "long": 0.328125
+            },
+            "8": {
+              "short": 0.09375,
+              "medium": 0.109375,
+              "long": 0.078125
+            }
+          },
+          "long_range": 1.0,
+          "pattern": {
+            "abab": 0.671875,
+            "abcabc": 0.34375,
+            "numeric": 0.0
+          },
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.296875
+          },
+          "minimum_gate_cell_accuracy": 0.0,
+          "context_control_advantage": 0.703125,
+          "gate_pass": false,
+          "test_hashes": 1088,
+          "exact_train_test_overlap": 0,
+          "sequence_length": {
+            "minimum": 8,
+            "maximum": 64
+          },
+          "required_context_distance": {
+            "minimum": 3,
+            "maximum": 62,
+            "mean": 21.482536764705884
+          }
+        }
+      },
+      {
+        "update": 800,
+        "training_percent": 50,
+        "recent_loss": 1.4623618306366553,
+        "gradient_norm": 0.0644652247428894,
+        "evaluation": {
+          "examples_per_cell": 64,
+          "copy": {
+            "4": 0.203125,
+            "8": 0.078125,
+            "16": 0.046875
+          },
+          "key_lookup": {
+            "2": {
+              "short": 0.46875,
+              "medium": 0.546875,
+              "long": 0.546875
+            },
+            "4": {
+              "short": 0.1875,
+              "medium": 0.21875,
+              "long": 0.21875
+            },
+            "8": {
+              "short": 0.125,
+              "medium": 0.140625,
+              "long": 0.0625
+            }
+          },
+          "long_range": 1.0,
+          "pattern": {
+            "abab": 0.640625,
+            "abcabc": 0.53125,
+            "numeric": 0.0
+          },
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.28125
+          },
+          "minimum_gate_cell_accuracy": 0.0,
+          "context_control_advantage": 0.71875,
+          "gate_pass": false,
+          "test_hashes": 1088,
+          "exact_train_test_overlap": 0,
+          "sequence_length": {
+            "minimum": 8,
+            "maximum": 64
+          },
+          "required_context_distance": {
+            "minimum": 3,
+            "maximum": 62,
+            "mean": 21.482536764705884
+          }
+        }
+      },
+      {
+        "update": 1200,
+        "training_percent": 75,
+        "recent_loss": 1.261874166430789,
+        "gradient_norm": 0.022111905738711357,
+        "evaluation": {
+          "examples_per_cell": 64,
+          "copy": {
+            "4": 0.3125,
+            "8": 0.109375,
+            "16": 0.046875
+          },
+          "key_lookup": {
+            "2": {
+              "short": 0.5,
+              "medium": 0.5,
+              "long": 0.46875
+            },
+            "4": {
+              "short": 0.25,
+              "medium": 0.21875,
+              "long": 0.21875
+            },
+            "8": {
+              "short": 0.109375,
+              "medium": 0.140625,
+              "long": 0.15625
+            }
+          },
+          "long_range": 1.0,
+          "pattern": {
+            "abab": 0.953125,
+            "abcabc": 0.8125,
+            "numeric": 0.015625
+          },
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.25
+          },
+          "minimum_gate_cell_accuracy": 0.015625,
+          "context_control_advantage": 0.75,
+          "gate_pass": false,
+          "test_hashes": 1088,
+          "exact_train_test_overlap": 0,
+          "sequence_length": {
+            "minimum": 8,
+            "maximum": 64
+          },
+          "required_context_distance": {
+            "minimum": 3,
+            "maximum": 62,
+            "mean": 21.482536764705884
+          }
+        }
+      },
+      {
+        "update": 1600,
+        "training_percent": 100,
+        "recent_loss": 1.286966312134973,
+        "gradient_norm": 0.010397068224847317,
+        "evaluation": {
+          "examples_per_cell": 64,
+          "copy": {
+            "4": 0.234375,
+            "8": 0.109375,
+            "16": 0.03125
+          },
+          "key_lookup": {
+            "2": {
+              "short": 0.453125,
+              "medium": 0.515625,
+              "long": 0.453125
+            },
+            "4": {
+              "short": 0.203125,
+              "medium": 0.328125,
+              "long": 0.34375
+            },
+            "8": {
+              "short": 0.09375,
+              "medium": 0.09375,
+              "long": 0.09375
+            }
+          },
+          "long_range": 1.0,
+          "pattern": {
+            "abab": 1.0,
+            "abcabc": 0.984375,
+            "numeric": 0.03125
+          },
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.234375
+          },
+          "minimum_gate_cell_accuracy": 0.03125,
+          "context_control_advantage": 0.765625,
+          "gate_pass": false,
+          "test_hashes": 1088,
+          "exact_train_test_overlap": 0,
+          "sequence_length": {
+            "minimum": 8,
+            "maximum": 64
+          },
+          "required_context_distance": {
+            "minimum": 3,
+            "maximum": 62,
+            "mean": 21.482536764705884
+          }
+        }
+      }
+    ],
+    "wall_seconds": 584.4408664000002
+  },
+  "dataset_audit": {
+    "vocabulary_size": 256,
+    "value_tokens": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "key_tokens": [
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "index_tokens": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191
+    ],
+    "filler_tokens": [
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223
+    ],
+    "last_input_token_constant": 225,
+    "chance_baselines": {
+      "value_vocabulary": 0.03125,
+      "context_conditioned_four_way": 0.25,
+      "copy_query_ignored": {
+        "4": 0.25,
+        "8": 0.125,
+        "16": 0.0625,
+        "32": 0.03125,
+        "64": 0.015625
+      },
+      "key_query_ignored": {
+        "2": 0.5,
+        "4": 0.25,
+        "8": 0.125,
+        "16": 0.0625
+      }
+    },
+    "train_generation_seed": 2717,
+    "test_generation_seed": 202716,
+    "train_test_exact_overlap": 0,
+    "external_data": false,
+    "external_ai": false
+  },
+  "final": {
+    "examples_per_cell": 256,
+    "copy": {
+      "4": 0.2578125,
+      "8": 0.109375,
+      "16": 0.0625,
+      "32": 0.0234375,
+      "64": 0.0234375
+    },
+    "key_lookup": {
+      "2": {
+        "short": 0.48046875,
+        "medium": 0.45703125,
+        "long": 0.578125
+      },
+      "4": {
+        "short": 0.26953125,
+        "medium": 0.23828125,
+        "long": 0.23046875
+      },
+      "8": {
+        "short": 0.109375,
+        "medium": 0.125,
+        "long": 0.15625
+      },
+      "16": {
+        "short": 0.0546875,
+        "medium": 0.04296875,
+        "long": 0.03125
+      }
+    },
+    "long_range": 1.0,
+    "pattern": {
+      "abab": 0.99609375,
+      "abcabc": 0.9609375,
+      "numeric": 0.0078125,
+      "nested": 0.9609375
+    },
+    "context_conditioned": {
+      "correct": 1.0,
+      "shuffled": 0.0,
+      "removed": 0.21875
+    },
+    "minimum_gate_cell_accuracy": 0.0078125,
+    "context_control_advantage": 0.78125,
+    "gate_pass": false,
+    "test_hashes": 5888,
+    "exact_train_test_overlap": 0,
+    "sequence_length": {
+      "minimum": 8,
+      "maximum": 68
+    },
+    "required_context_distance": {
+      "minimum": 3,
+      "maximum": 66,
+      "mean": 23.44701086956522
+    }
+  },
+  "synthetic_gate_v2": "FAIL",
+  "checkpoint": {
+    "path": "checkpoints/foundation-v16-synthetic/sqrt_scaled_a.pt",
+    "bytes": 71544851,
+    "sha256": "969fda469a7a81f36996358185af822fa4e6e3060f0d336d814b690e911d8979",
+    "strict_reload": true
+  },
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

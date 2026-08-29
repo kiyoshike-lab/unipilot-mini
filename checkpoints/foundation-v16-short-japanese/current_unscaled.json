@@ -1,0 +1,582 @@
+{
+  "schema_version": "foundation-v16-short-japanese-diagnostic-v1",
+  "variant": {
+    "name": "current_unscaled",
+    "scale_token_embedding": false,
+    "formula": "token_embedding + learned_position_embedding"
+  },
+  "config": {
+    "model_name": "Foundation v1.6 short Japanese current_unscaled",
+    "vocab_size": 4096,
+    "context_length": 128,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "scale_token_embedding": false,
+    "weight_tying": true
+  },
+  "parameters": 19367424,
+  "corpus": {
+    "manifest": "data/foundation_v15_diagnostic/manifest.json",
+    "segments": 5000,
+    "added_to_foundation_corpus": false,
+    "train_sha256": "709560ff92a701ba9987dca1670ce7e0cd263ea0067e3eee35efdbc1e2a2f887",
+    "validation_sha256": "3b97e47fa3d5b3a93c232caffb2718c4f7257ff2eca5a7ea217fee647222ee0d"
+  },
+  "training": {
+    "seed": 2716,
+    "tokens_processed": 65536,
+    "effective_batch_tokens": 512,
+    "history": [
+      {
+        "update": 0,
+        "tokens_processed": 0,
+        "validation": {
+          "tokens": 8192,
+          "loss": 8.421860292553902,
+          "perplexity": 4545.351278182114,
+          "top_1_accuracy": 0.0003662109375,
+          "top_5_accuracy": 0.0009765625,
+          "top_10_accuracy": 0.0013427734375
+        }
+      },
+      {
+        "update": 10,
+        "tokens_processed": 5120,
+        "train_loss": 8.258816337585449,
+        "gradient_norm": 2.320030927658081,
+        "validation": {
+          "tokens": 8192,
+          "loss": 8.01916790753603,
+          "perplexity": 3038.6478447330783,
+          "top_1_accuracy": 0.03759765625,
+          "top_5_accuracy": 0.1041259765625,
+          "top_10_accuracy": 0.125
+        }
+      },
+      {
+        "update": 64,
+        "tokens_processed": 32768,
+        "train_loss": 7.510453303654988,
+        "gradient_norm": 1.0481489896774292,
+        "validation": {
+          "tokens": 8192,
+          "loss": 7.077844433486462,
+          "perplexity": 1185.4105312977115,
+          "top_1_accuracy": 0.0802001953125,
+          "top_5_accuracy": 0.1329345703125,
+          "top_10_accuracy": 0.1728515625
+        }
+      },
+      {
+        "update": 100,
+        "tokens_processed": 51200,
+        "train_loss": 7.022168424394396,
+        "gradient_norm": 1.0076371431350708,
+        "validation": {
+          "tokens": 8192,
+          "loss": 6.95231269299984,
+          "perplexity": 1045.565005074915,
+          "top_1_accuracy": 0.0802001953125,
+          "top_5_accuracy": 0.1363525390625,
+          "top_10_accuracy": 0.1722412109375
+        }
+      },
+      {
+        "update": 128,
+        "tokens_processed": 65536,
+        "train_loss": 6.951048357146127,
+        "gradient_norm": 1.0345205068588257,
+        "validation": {
+          "tokens": 8192,
+          "loss": 6.9165477603673935,
+          "perplexity": 1008.8312487869648,
+          "top_1_accuracy": 0.0872802734375,
+          "top_5_accuracy": 0.1351318359375,
+          "top_10_accuracy": 0.172607421875
+        }
+      }
+    ],
+    "wall_seconds": 62.07183709999936
+  },
+  "final": {
+    "tokens": 8192,
+    "loss": 6.9165477603673935,
+    "perplexity": 1008.8312487869648,
+    "top_1_accuracy": 0.0872802734375,
+    "top_5_accuracy": 0.1351318359375,
+    "top_10_accuracy": 0.172607421875
+  },
+  "frequency_buckets": {
+    "top_1_percent": {
+      "rank_range": [
+        0,
+        40
+      ],
+      "targets": 2186,
+      "top_1_accuracy": 0.32708144187927246,
+      "top_5_accuracy": 0.5064043998718262,
+      "mean_target_probability": 0.15242846310138702,
+      "cross_entropy": 4.003081321716309
+    },
+    "top_5_percent_excluding_top_1": {
+      "rank_range": [
+        41,
+        204
+      ],
+      "targets": 1554,
+      "top_1_accuracy": 0.0,
+      "top_5_accuracy": 0.0,
+      "mean_target_probability": 0.001127655734308064,
+      "cross_entropy": 6.837324619293213
+    },
+    "top_20_percent_excluding_top_5": {
+      "rank_range": [
+        205,
+        819
+      ],
+      "targets": 2186,
+      "top_1_accuracy": 0.0,
+      "top_5_accuracy": 0.0,
+      "mean_target_probability": 0.000480679766042158,
+      "cross_entropy": 7.7339935302734375
+    },
+    "middle_20_to_80_percent": {
+      "rank_range": [
+        820,
+        3276
+      ],
+      "targets": 2140,
+      "top_1_accuracy": 0.0,
+      "top_5_accuracy": 0.0,
+      "mean_target_probability": 0.0001539114600745961,
+      "cross_entropy": 8.917652130126953
+    },
+    "rare_bottom_20_percent": {
+      "rank_range": [
+        3277,
+        4095
+      ],
+      "targets": 126,
+      "top_1_accuracy": 0.0,
+      "top_5_accuracy": 0.0,
+      "mean_target_probability": 4.1404939111089334e-05,
+      "cross_entropy": 10.270916938781738
+    }
+  },
+  "selected_token_frequency": {
+    "。": {
+      "token_id": 270,
+      "actual_frequency": 0.021240234375,
+      "top_1_predicted_frequency": 0.16552734375,
+      "average_probability": 0.022081047616666183,
+      "accuracy_when_target": 0.45402297377586365,
+      "top_5_accuracy_when_target": 1.0
+    },
+    "、": {
+      "token_id": 268,
+      "actual_frequency": 0.03759765625,
+      "top_1_predicted_frequency": 0.791748046875,
+      "average_probability": 0.03166465988033451,
+      "accuracy_when_target": 0.9285714030265808,
+      "top_5_accuracy_when_target": 1.0
+    },
+    "の": {
+      "token_id": 267,
+      "actual_frequency": 0.0107421875,
+      "top_1_predicted_frequency": 0.0,
+      "average_probability": 0.012763626422383823,
+      "accuracy_when_target": 0.0,
+      "top_5_accuracy_when_target": 0.9659090638160706
+    },
+    "に": {
+      "token_id": 271,
+      "actual_frequency": 0.0098876953125,
+      "top_1_predicted_frequency": 0.0,
+      "average_probability": 0.009515755067695864,
+      "accuracy_when_target": 0.0,
+      "top_5_accuracy_when_target": 0.0
+    },
+    "は": {
+      "token_id": 273,
+      "actual_frequency": 0.0113525390625,
+      "top_1_predicted_frequency": 0.0,
+      "average_probability": 0.011408780002966523,
+      "accuracy_when_target": 0.0,
+      "top_5_accuracy_when_target": 0.0
+    },
+    "を": {
+      "token_id": 276,
+      "actual_frequency": 0.010009765625,
+      "top_1_predicted_frequency": 0.0,
+      "average_probability": 0.01425738271791488,
+      "accuracy_when_target": 0.0,
+      "top_5_accuracy_when_target": 1.0
+    },
+    "が": {
+      "token_id": 277,
+      "actual_frequency": 0.01318359375,
+      "top_1_predicted_frequency": 0.0,
+      "average_probability": 0.016948397795204073,
+      "accuracy_when_target": 0.0,
+      "top_5_accuracy_when_target": 1.0
+    },
+    "<EOS>": {
+      "token_id": 2,
+      "actual_frequency": 0.0213623046875,
+      "top_1_predicted_frequency": 0.0213623046875,
+      "average_probability": 0.019250594043114688,
+      "accuracy_when_target": 1.0,
+      "top_5_accuracy_when_target": 1.0
+    }
+  },
+  "sentence_boundaries": {
+    "。": {
+      "token_ids": [
+        270
+      ],
+      "targets": 174,
+      "top_1_accuracy": 0.4540229885057471,
+      "top_5_accuracy": 1.0,
+      "mean_probability_when_target": 0.027726143919702233
+    },
+    "！": {
+      "token_ids": [
+        282,
+        230
+      ],
+      "targets": 0,
+      "top_1_accuracy": null,
+      "top_5_accuracy": null,
+      "mean_probability_when_target": null
+    },
+    "？": {
+      "token_ids": [
+        1553
+      ],
+      "targets": 0,
+      "top_1_accuracy": null,
+      "top_5_accuracy": null,
+      "mean_probability_when_target": null
+    },
+    "<EOS>": {
+      "token_ids": [
+        2
+      ],
+      "targets": 175,
+      "top_1_accuracy": 1.0,
+      "top_5_accuracy": 1.0,
+      "mean_probability_when_target": 0.8656095494542803
+    }
+  },
+  "generation": {
+    "metrics": {
+      "prompts": 10,
+      "character_validity": 1.0,
+      "natural_japanese_proxy": 0.0,
+      "semantic_coherence_proxy": 0.0,
+      "completion_proxy": 0.0,
+      "eos_rate": 1.0,
+      "runaway_rate": 0.0,
+      "mean_repetition_rate": 0.0
+    },
+    "items": [
+      {
+        "prompt": "その後の裁判でムハンマドには死刑判決を受け、",
+        "reference": "2009年11月10日に死刑が執行された。",
+        "text": "、、。",
+        "ids": [
+          268,
+          268,
+          270,
+          2
+        ],
+        "tokens": 4,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.2149786020600004,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "義就は、政長に代わり、越中国、河内国、紀",
+        "reference": "伊国の三ヵ国を安堵され、幕府に出仕した。",
+        "text": "。",
+        "ids": [
+          270,
+          2
+        ],
+        "tokens": 2,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.42249764438020065,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "応募しなければ、自動的に国鉄を継承する国",
+        "reference": "鉄清算事業団送りになる。",
+        "text": "、、、。",
+        "ids": [
+          268,
+          268,
+          268,
+          270,
+          2
+        ],
+        "tokens": 5,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.1688768735039048,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "この例では、iがループ変数であり、letキ",
+        "reference": "ーワードで宣言されています。",
+        "text": "、、、。",
+        "ids": [
+          268,
+          268,
+          268,
+          270,
+          2
+        ],
+        "tokens": 5,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.159380861162208,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "つまり、鬼にこおらされたものを、こおら",
+        "reference": "されていないものが助けるということが基本の遊び方と異なる。",
+        "text": "。",
+        "ids": [
+          270,
+          2
+        ],
+        "tokens": 2,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.42863748100353405,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "誕生日を祝うことが多いが、暦年単位でとらえ、その年の1月1",
+        "reference": "日から12月31日までの全体を「今年は生誕y周年の年」と表現することもある。",
+        "text": "、。",
+        "ids": [
+          268,
+          270,
+          2
+        ],
+        "tokens": 3,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.28707718866644427,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "100の位は「カ」、1の位は「ア」が",
+        "reference": "それぞれ和でも使用されているので問題ない。",
+        "text": "、、、。",
+        "ids": [
+          268,
+          268,
+          268,
+          270,
+          2
+        ],
+        "tokens": 5,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.1685426985262893,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "スペインの歴史学者ペドロ・ラインはイベ",
+        "reference": "リア半島を「辺縁ヨーロッパ」であるとした。",
+        "text": "、、、。",
+        "ids": [
+          268,
+          268,
+          268,
+          270,
+          2
+        ],
+        "tokens": 5,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.17292849145596847,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "さらに3月の総統選挙では党公認の謝長廷が国民党推薦",
+        "reference": "の馬英九に敗れ、8年間続いた政権与党の座を失った。",
+        "text": "。",
+        "ids": [
+          270,
+          2
+        ],
+        "tokens": 2,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.4332046156632714,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "ルーズコート・フィールドの戦いで捕えられた反乱の指導者はウォリック伯の関与を",
+        "reference": "告白し、ウォリック伯とクラレンス公はフランスへの逃亡を余儀なくされた。",
+        "text": "。",
+        "ids": [
+          270,
+          2
+        ],
+        "tokens": 2,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.433415811334271,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      }
+    ]
+  },
+  "baselines": {
+    "unigram": {
+      "loss": 7.081412357137141,
+      "perplexity": 1189.6475397346107,
+      "top_1_accuracy": 0.03759765625,
+      "top_5_accuracy": 0.11474609375,
+      "top_10_accuracy": 0.1612548828125,
+      "most_frequent_token_ids": [
+        268,
+        1,
+        2,
+        270,
+        277,
+        273,
+        267,
+        276,
+        271,
+        272
+      ]
+    },
+    "bigram": {
+      "loss": 6.030509049422372,
+      "perplexity": 415.926702749096,
+      "top_1_accuracy": 0.1807861328125,
+      "top_5_accuracy": 0.323486328125,
+      "top_10_accuracy": 0.3927001953125,
+      "observed_validation_pair_rate": 0.666259765625
+    },
+    "method": {
+      "smoothing": "add-alpha",
+      "alpha": 0.1,
+      "train_tokens": 214257,
+      "validation_probe_tokens": 8192,
+      "same_probe_as_transformer": true
+    }
+  },
+  "checkpoint": {
+    "path": "checkpoints/foundation-v16-short-japanese/current_unscaled.pt",
+    "bytes": 77517209,
+    "sha256": "5c651c4ccf4cde90dae439e740f8f579afa508e8faacd9e8254c9e5fc04e390c",
+    "strict_reload": true
+  },
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}
