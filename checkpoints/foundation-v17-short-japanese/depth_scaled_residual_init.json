@@ -1,0 +1,2540 @@
+{
+  "schema_version": "foundation-v17-short-japanese-diagnostic-v1",
+  "variant": {
+    "name": "depth_scaled_residual_init",
+    "token_embedding_scale": 1.0,
+    "position_embedding_scale": 1.0,
+    "residual_projection_init_scale": 0.22360679774997896,
+    "formula": "token + position; attention/MLP output projection std = 0.02 / sqrt(2L)",
+    "source": "PHASE 28 isolated initialization fix"
+  },
+  "config": {
+    "model_name": "Foundation v1.7 short Japanese depth_scaled_residual_init",
+    "vocab_size": 4096,
+    "context_length": 128,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "token_embedding_scale": 1.0,
+    "position_embedding_scale": 1.0,
+    "residual_projection_init_scale": 0.22360679774997896,
+    "weight_tying": true
+  },
+  "parameters": 19367424,
+  "initialization": {
+    "base_std": 0.02,
+    "token_embedding_std": 0.02,
+    "position_embedding_std": 0.02,
+    "effective_token_embedding_std": 0.02,
+    "effective_position_embedding_std": 0.02,
+    "attention_qkv_std": 0.02,
+    "attention_output_projection_std": 0.00447213595499958,
+    "mlp_input_projection_std": 0.02,
+    "mlp_output_projection_std": 0.00447213595499958,
+    "depth_scaled_formula": "base_std / sqrt(2 * n_layers)"
+  },
+  "corpus": {
+    "manifest": "data/foundation_v15_diagnostic/manifest.json",
+    "segments": 5000,
+    "added_to_foundation_corpus": false,
+    "train_sha256": "709560ff92a701ba9987dca1670ce7e0cd263ea0067e3eee35efdbc1e2a2f887",
+    "validation_sha256": "3b97e47fa3d5b3a93c232caffb2718c4f7257ff2eca5a7ea217fee647222ee0d"
+  },
+  "training": {
+    "seed": 2716,
+    "tokens_processed": 65536,
+    "history": [
+      {
+        "update": 0,
+        "tokens_processed": 0,
+        "validation": {
+          "tokens": 8192,
+          "loss": 8.396166309714317,
+          "perplexity": 4430.050709061077,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0008544921875,
+          "top_10_accuracy": 0.0015869140625,
+          "wall_seconds": 1.360580900000059,
+          "tokens_per_second": 6020.957665949628
+        }
+      },
+      {
+        "update": 10,
+        "tokens_processed": 5120,
+        "train_loss": 8.131879472732544,
+        "gradient_norm": 3.297382354736328,
+        "validation": {
+          "tokens": 8192,
+          "loss": 7.896351337432861,
+          "perplexity": 2687.458787495282,
+          "top_1_accuracy": 0.046630859375,
+          "top_5_accuracy": 0.1123046875,
+          "top_10_accuracy": 0.1400146484375,
+          "wall_seconds": 1.3572668999995585,
+          "tokens_per_second": 6035.658867097301
+        }
+      },
+      {
+        "update": 64,
+        "tokens_processed": 32768,
+        "train_loss": 7.380867331116288,
+        "gradient_norm": 1.086138129234314,
+        "validation": {
+          "tokens": 8192,
+          "loss": 7.028577297925949,
+          "perplexity": 1128.4240563882106,
+          "top_1_accuracy": 0.0831298828125,
+          "top_5_accuracy": 0.133544921875,
+          "top_10_accuracy": 0.1744384765625,
+          "wall_seconds": 1.4594912000002296,
+          "tokens_per_second": 5612.914966529919
+        }
+      },
+      {
+        "update": 100,
+        "tokens_processed": 51200,
+        "train_loss": 6.969964173105028,
+        "gradient_norm": 1.2794479131698608,
+        "validation": {
+          "tokens": 8192,
+          "loss": 6.890156522393227,
+          "perplexity": 982.5551970738727,
+          "top_1_accuracy": 0.091796875,
+          "top_5_accuracy": 0.1412353515625,
+          "top_10_accuracy": 0.17626953125,
+          "wall_seconds": 1.3598829000002297,
+          "tokens_per_second": 6024.048100022889
+        }
+      },
+      {
+        "update": 128,
+        "tokens_processed": 65536,
+        "train_loss": 6.8683099917003085,
+        "gradient_norm": 1.3676868677139282,
+        "validation": {
+          "tokens": 8192,
+          "loss": 6.825967267155647,
+          "perplexity": 921.4672781581554,
+          "top_1_accuracy": 0.0931396484375,
+          "top_5_accuracy": 0.1455078125,
+          "top_10_accuracy": 0.18505859375,
+          "wall_seconds": 1.3651892999996562,
+          "tokens_per_second": 6000.633025765777
+        }
+      }
+    ],
+    "wall_seconds": 62.53777429999991
+  },
+  "final": {
+    "tokens": 8192,
+    "loss": 6.825967267155647,
+    "perplexity": 921.4672781581554,
+    "top_1_accuracy": 0.0931396484375,
+    "top_5_accuracy": 0.1455078125,
+    "top_10_accuracy": 0.18505859375,
+    "wall_seconds": 1.3651892999996562,
+    "tokens_per_second": 6000.633025765777
+  },
+  "frequency": {
+    "probe_tokens": 8192,
+    "bucket_definition": "disjoint train-frequency rank buckets",
+    "buckets": {
+      "top_1_percent": {
+        "rank_range": [
+          0,
+          40
+        ],
+        "targets": 2186,
+        "top_1_accuracy": 0.34720951318740845,
+        "top_5_accuracy": 0.5384263396263123,
+        "mean_target_probability": 0.17711761593818665,
+        "cross_entropy": 3.8098254203796387
+      },
+      "top_5_percent_excluding_top_1": {
+        "rank_range": [
+          41,
+          204
+        ],
+        "targets": 1554,
+        "top_1_accuracy": 0.002574002603068948,
+        "top_5_accuracy": 0.009652509354054928,
+        "mean_target_probability": 0.001224404782988131,
+        "cross_entropy": 6.790264129638672
+      },
+      "top_20_percent_excluding_top_5": {
+        "rank_range": [
+          205,
+          819
+        ],
+        "targets": 2186,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "mean_target_probability": 0.0004949462600052357,
+        "cross_entropy": 7.719088554382324
+      },
+      "middle_20_to_80_percent": {
+        "rank_range": [
+          820,
+          3276
+        ],
+        "targets": 2140,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "mean_target_probability": 0.00017089057655539364,
+        "cross_entropy": 8.830720901489258
+      },
+      "rare_bottom_20_percent": {
+        "rank_range": [
+          3277,
+          4095
+        ],
+        "targets": 126,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "mean_target_probability": 5.705770672648214e-05,
+        "cross_entropy": 10.050040245056152
+      }
+    },
+    "tokens": {
+      "。": {
+        "token_id": 270,
+        "actual_frequency": 0.021240234375,
+        "top_1_predicted_frequency": 0.26953125,
+        "average_probability": 0.020893587439786643,
+        "accuracy_when_target": 0.8390804529190063,
+        "top_5_accuracy_when_target": 0.9425287246704102
+      },
+      "、": {
+        "token_id": 268,
+        "actual_frequency": 0.03759765625,
+        "top_1_predicted_frequency": 0.30908203125,
+        "average_probability": 0.02821033087093383,
+        "accuracy_when_target": 0.701298713684082,
+        "top_5_accuracy_when_target": 0.9220778942108154
+      },
+      "の": {
+        "token_id": 267,
+        "actual_frequency": 0.0107421875,
+        "top_1_predicted_frequency": 0.0001220703125,
+        "average_probability": 0.012331758611253463,
+        "accuracy_when_target": 0.0,
+        "top_5_accuracy_when_target": 0.9659090638160706
+      },
+      "に": {
+        "token_id": 271,
+        "actual_frequency": 0.0098876953125,
+        "top_1_predicted_frequency": 0.0,
+        "average_probability": 0.008749945831368677,
+        "accuracy_when_target": 0.0,
+        "top_5_accuracy_when_target": 0.03703703731298447
+      },
+      "は": {
+        "token_id": 273,
+        "actual_frequency": 0.0113525390625,
+        "top_1_predicted_frequency": 0.008056640625,
+        "average_probability": 0.010928423507721163,
+        "accuracy_when_target": 0.0,
+        "top_5_accuracy_when_target": 0.7956989407539368
+      },
+      "を": {
+        "token_id": 276,
+        "actual_frequency": 0.010009765625,
+        "top_1_predicted_frequency": 0.0050048828125,
+        "average_probability": 0.014771571804885752,
+        "accuracy_when_target": 0.012195121496915817,
+        "top_5_accuracy_when_target": 0.9878048896789551
+      },
+      "が": {
+        "token_id": 277,
+        "actual_frequency": 0.01318359375,
+        "top_1_predicted_frequency": 0.3193359375,
+        "average_probability": 0.01657663914375007,
+        "accuracy_when_target": 0.4166666567325592,
+        "top_5_accuracy_when_target": 1.0
+      },
+      "<EOS>": {
+        "token_id": 2,
+        "actual_frequency": 0.0213623046875,
+        "top_1_predicted_frequency": 0.0244140625,
+        "average_probability": 0.020035398469190113,
+        "accuracy_when_target": 1.0,
+        "top_5_accuracy_when_target": 1.0
+      }
+    },
+    "non_top_1_percent_any_top_1_accuracy": true,
+    "period_comma_top1_mass": 0.57861328125
+  },
+  "sentence_boundaries": {
+    "。": {
+      "token_ids": [
+        270
+      ],
+      "targets": 174,
+      "top_1_accuracy": 0.8390804597701149,
+      "top_5_accuracy": 0.9425287356321839,
+      "mean_probability_when_target": 0.13075099695251782
+    },
+    "！": {
+      "token_ids": [
+        282,
+        230
+      ],
+      "targets": 0,
+      "top_1_accuracy": null,
+      "top_5_accuracy": null,
+      "mean_probability_when_target": null
+    },
+    "？": {
+      "token_ids": [
+        1553
+      ],
+      "targets": 0,
+      "top_1_accuracy": null,
+      "top_5_accuracy": null,
+      "mean_probability_when_target": null
+    },
+    "<EOS>": {
+      "token_ids": [
+        2
+      ],
+      "targets": 175,
+      "top_1_accuracy": 1.0,
+      "top_5_accuracy": 1.0,
+      "mean_probability_when_target": 0.9012233049528939
+    }
+  },
+  "generation": {
+    "metrics": {
+      "prompts": 10,
+      "character_validity": 1.0,
+      "natural_japanese_proxy": 0.0,
+      "semantic_coherence_proxy": 0.0,
+      "completion_proxy": 0.0,
+      "eos_rate": 0.4,
+      "runaway_rate": 0.6,
+      "mean_repetition_rate": 0.764200262521907
+    },
+    "items": [
+      {
+        "prompt": "その後の裁判でムハンマドには死刑判決を受け、",
+        "reference": "2009年11月10日に死刑が執行された。",
+        "text": "）が、また、また、）が、また、）が、また、）が、）が、また、）が、）が、）が、）が、）が、また、）が、）が、）が、）が、）が、）が、）が、）",
+        "ids": [
+          307,
+          277,
+          268,
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0009162173455479206,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.4142857142857143,
+        "punctuation_ratio": 0.5857142857142857,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8823529411764706
+      },
+      {
+        "prompt": "義就は、政長に代わり、越中国、河内国、紀",
+        "reference": "伊国の三ヵ国を安堵され、幕府に出仕した。",
+        "text": "が、また、また、）が、）が、また、）が、）が、）が、）が、）が、）が、）が、）が、また、）が、）が、）が、）が、）が、）が、）が、）が、",
+        "ids": [
+          277,
+          268,
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0008274369013179239,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.39705882352941174,
+        "punctuation_ratio": 0.6029411764705882,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8787878787878788
+      },
+      {
+        "prompt": "応募しなければ、自動的に国鉄を継承する国",
+        "reference": "鉄清算事業団送りになる。",
+        "text": "、、また、）が、また、）が、）が、また、）が、）が、）が、）が、）が、）が、）が、）が、また、）が、）が、）が、）が、）が、）が、）が、",
+        "ids": [
+          268,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0008199405315281183,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.38235294117647056,
+        "punctuation_ratio": 0.6176470588235294,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8787878787878788
+      },
+      {
+        "prompt": "この例では、iがループ変数であり、letキ",
+        "reference": "ーワードで宣言されています。",
+        "text": "）が、）が、また、）が、また、また、また、）が、）が、また、）が、また、）が、）が、また、）が、また、）が、）が、）が、）が、）が、）が、）が、",
+        "ids": [
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0008006557045519003,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.4444444444444444,
+        "punctuation_ratio": 0.5555555555555556,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8857142857142857
+      },
+      {
+        "prompt": "つまり、鬼にこおらされたものを、こおら",
+        "reference": "されていないものが助けるということが基本の遊び方と異なる。",
+        "text": "が、）が、また、）が、）が、）が、また、）が、）が、）が、）が、）が、）。",
+        "ids": [
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          270,
+          2
+        ],
+        "tokens": 36,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.025534132314027777,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.3783783783783784,
+        "punctuation_ratio": 0.6216216216216216,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.7714285714285715
+      },
+      {
+        "prompt": "誕生日を祝うことが多いが、暦年単位でとらえ、その年の1月1",
+        "reference": "日から12月31日までの全体を「今年は生誕y周年の年」と表現することもある。",
+        "text": "が、、また、）が、）が、また、）が、また、）が、）が、また、）が、また、）が、）が、）が、）が、）が、）が、）が、）が、）が、）が、）が、",
+        "ids": [
+          277,
+          268,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0009301162717747502,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.4057971014492754,
+        "punctuation_ratio": 0.5942028985507246,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8656716417910448
+      },
+      {
+        "prompt": "100の位は「カ」、1の位は「ア」が",
+        "reference": "それぞれ和でも使用されているので問題ない。",
+        "text": "、また、）が、また、）が、また、また、また、）が、）が、また、）が、また、）が、）が、また、）が、また、）が、）が、）が、）が、）が、）が、）が、",
+        "ids": [
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268
+        ],
+        "tokens": 64,
+        "eos_reached": false,
+        "runaway": true,
+        "mean_eos_probability": 0.0007802910481586878,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.4520547945205479,
+        "punctuation_ratio": 0.547945205479452,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 0,
+        "repetition_rate": 0.8873239436619719
+      },
+      {
+        "prompt": "スペインの歴史学者ペドロ・ラインはイベ",
+        "reference": "リア半島を「辺縁ヨーロッパ」であるとした。",
+        "text": "。",
+        "ids": [
+          270,
+          2
+        ],
+        "tokens": 2,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.45153858279809356,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.0,
+        "punctuation_ratio": 1.0,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.0
+      },
+      {
+        "prompt": "さらに3月の総統選挙では党公認の謝長廷が国民党推薦",
+        "reference": "の馬英九に敗れ、8年間続いた政権与党の座を失った。",
+        "text": "、また、）が、）が、また、）が、）が、また、）が、また、）が、）。",
+        "ids": [
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          270,
+          2
+        ],
+        "tokens": 30,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.030621589363242187,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.42424242424242425,
+        "punctuation_ratio": 0.5757575757575758,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.7419354838709677
+      },
+      {
+        "prompt": "ルーズコート・フィールドの戦いで捕えられた反乱の指導者はウォリック伯の関与を",
+        "reference": "告白し、ウォリック伯とクラレンス公はフランスへの逃亡を余儀なくされた。",
+        "text": "また、また、）が、また、また、また、）が、）が、）が、）が、）が、また、）が、）が、）が、また、）が、）が、）が、）が、）。",
+        "ids": [
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          500,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          500,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          277,
+          268,
+          307,
+          270,
+          2
+        ],
+        "tokens": 56,
+        "eos_reached": true,
+        "runaway": false,
+        "mean_eos_probability": 0.016812836767712724,
+        "character_valid": true,
+        "natural_japanese_proxy": false,
+        "semantic_coherence_proxy": false,
+        "completion_proxy": false,
+        "japanese_character_ratio": 0.43548387096774194,
+        "punctuation_ratio": 0.5645161290322581,
+        "newline_ratio": 0.0,
+        "content_run_count": 0,
+        "sentence_boundaries": 1,
+        "repetition_rate": 0.85
+      }
+    ]
+  },
+  "probe": {
+    "embedding": {
+      "raw_token": {
+        "finite": true,
+        "mean": 2.928253343270626e-05,
+        "std": 0.020902013406157494,
+        "min": -0.07780054211616516,
+        "max": 0.08797603845596313,
+        "rms": 0.020902033895254135,
+        "norm": 4.634032249450684
+      },
+      "effective_token": {
+        "finite": true,
+        "mean": 2.928253343270626e-05,
+        "std": 0.020902013406157494,
+        "min": -0.07780054211616516,
+        "max": 0.08797603845596313,
+        "rms": 0.020902033895254135,
+        "norm": 4.634032249450684
+      },
+      "raw_position": {
+        "finite": true,
+        "mean": -3.406828545848839e-05,
+        "std": 0.0197109617292881,
+        "min": -0.07835578918457031,
+        "max": 0.08228856325149536,
+        "rms": 0.01971099153161049,
+        "norm": 4.369976043701172
+      },
+      "effective_position": {
+        "finite": true,
+        "mean": -3.406828545848839e-05,
+        "std": 0.0197109617292881,
+        "min": -0.07835578918457031,
+        "max": 0.08228856325149536,
+        "rms": 0.01971099153161049,
+        "norm": 4.369976043701172
+      },
+      "combined": {
+        "finite": true,
+        "mean": -4.785761120729148e-06,
+        "std": 0.028651027008891106,
+        "min": -0.11717947572469711,
+        "max": 0.11802636831998825,
+        "rms": 0.028651027008891106,
+        "norm": 6.35200309753418
+      },
+      "effective_token_to_position_rms_ratio": 1.0604252891963133,
+      "token_scale": 1.0,
+      "position_scale": 1.0
+    },
+    "representation_contribution": {
+      "token_only": {
+        "finite": true,
+        "mean": 2.928253343270626e-05,
+        "std": 0.020902013406157494,
+        "min": -0.07780054211616516,
+        "max": 0.08797603845596313,
+        "rms": 0.020902033895254135,
+        "norm": 4.634032249450684
+      },
+      "position_only": {
+        "finite": true,
+        "mean": -3.406828545848839e-05,
+        "std": 0.0197109617292881,
+        "min": -0.07835578918457031,
+        "max": 0.08228856325149536,
+        "rms": 0.01971099153161049,
+        "norm": 4.369976043701172
+      },
+      "token_plus_position": {
+        "finite": true,
+        "mean": -4.785761120729148e-06,
+        "std": 0.028651027008891106,
+        "min": -0.11717947572469711,
+        "max": 0.11802636831998825,
+        "rms": 0.028651027008891106,
+        "norm": 6.35200309753418
+      }
+    },
+    "layers": [
+      {
+        "layer": 0,
+        "pre_attention": {
+          "finite": true,
+          "mean": -4.785761120729148e-06,
+          "std": 0.028651027008891106,
+          "min": -0.11717947572469711,
+          "max": 0.11802636831998825,
+          "rms": 0.028651027008891106,
+          "norm": 6.35200309753418
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": -0.00021575187565758824,
+          "std": 0.00730298925191164,
+          "min": -0.09581822156906128,
+          "max": 0.10648982226848602,
+          "rms": 0.0073061753064394,
+          "norm": 1.6197967529296875
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.00022053760767448694,
+          "std": 0.029406268149614334,
+          "min": -0.12351123988628387,
+          "max": 0.13144901394844055,
+          "rms": 0.029407095164060593,
+          "norm": 6.519625663757324
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": 0.0008317600004374981,
+          "std": 0.060577429831027985,
+          "min": -0.3456001579761505,
+          "max": 0.3346298336982727,
+          "rms": 0.06058314070105553,
+          "norm": 13.431426048278809
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": 0.0006112225237302482,
+          "std": 0.0676434263586998,
+          "min": -0.38236719369888306,
+          "max": 0.3983003795146942,
+          "rms": 0.06764618307352066,
+          "norm": 14.997326850891113
+        },
+        "attention_to_residual_rms_ratio": 0.25500570378060505,
+        "attention_to_post_residual_rms_ratio": 0.24844940534516052,
+        "mlp_to_residual_rms_ratio": 2.06015386297305,
+        "mlp_to_post_residual_rms_ratio": 0.895588456708803
+      },
+      {
+        "layer": 1,
+        "pre_attention": {
+          "finite": true,
+          "mean": 0.0006112225237302482,
+          "std": 0.0676434263586998,
+          "min": -0.38236719369888306,
+          "max": 0.3983003795146942,
+          "rms": 0.06764618307352066,
+          "norm": 14.997326850891113
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": -0.0005618396680802107,
+          "std": 0.014316908083856106,
+          "min": -0.11440178006887436,
+          "max": 0.1361691653728485,
+          "rms": 0.01432792842388153,
+          "norm": 3.1765360832214355
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": 4.9382932047592476e-05,
+          "std": 0.06894209235906601,
+          "min": -0.3950635492801666,
+          "max": 0.4026523530483246,
+          "rms": 0.0689421072602272,
+          "norm": 15.284634590148926
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0021282227244228125,
+          "std": 0.12051353603601456,
+          "min": -0.4708938002586365,
+          "max": 0.5707101225852966,
+          "rms": 0.1205323338508606,
+          "norm": 26.722312927246094
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.002078839810565114,
+          "std": 0.1620749831199646,
+          "min": -0.7129224538803101,
+          "max": 0.8359239101409912,
+          "rms": 0.1620883196592331,
+          "norm": 35.93539047241211
+        },
+        "attention_to_residual_rms_ratio": 0.21180690133409816,
+        "attention_to_post_residual_rms_ratio": 0.20782550741885042,
+        "mlp_to_residual_rms_ratio": 1.7483122962270674,
+        "mlp_to_post_residual_rms_ratio": 0.7436213423907543
+      },
+      {
+        "layer": 2,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.002078839810565114,
+          "std": 0.1620749831199646,
+          "min": -0.7129224538803101,
+          "max": 0.8359239101409912,
+          "rms": 0.1620883196592331,
+          "norm": 35.93539047241211
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": 0.0005271579138934612,
+          "std": 0.020279450342059135,
+          "min": -0.14310473203659058,
+          "max": 0.12710031867027283,
+          "rms": 0.020286301150918007,
+          "norm": 4.497524261474609
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.0015516811981797218,
+          "std": 0.16598954796791077,
+          "min": -0.7031893134117126,
+          "max": 0.8202844262123108,
+          "rms": 0.16599680483341217,
+          "norm": 36.80189514160156
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -7.794797420501709e-05,
+          "std": 0.1609809547662735,
+          "min": -0.5857869982719421,
+          "max": 0.6309182643890381,
+          "rms": 0.1609809696674347,
+          "norm": 35.689884185791016
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.0016296295216307044,
+          "std": 0.2997099459171295,
+          "min": -1.1440491676330566,
+          "max": 1.4450533390045166,
+          "rms": 0.2997143566608429,
+          "norm": 66.44741821289062
+        },
+        "attention_to_residual_rms_ratio": 0.12515584832742407,
+        "attention_to_post_residual_rms_ratio": 0.12220898571678254,
+        "mlp_to_residual_rms_ratio": 0.9697835439000698,
+        "mlp_to_post_residual_rms_ratio": 0.5371146429585318
+      },
+      {
+        "layer": 3,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.0016296295216307044,
+          "std": 0.2997099459171295,
+          "min": -1.1440491676330566,
+          "max": 1.4450533390045166,
+          "rms": 0.2997143566608429,
+          "norm": 66.44741821289062
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": 0.0008661628235131502,
+          "std": 0.020410476252436638,
+          "min": -0.13401980698108673,
+          "max": 0.10732327401638031,
+          "rms": 0.020428845658898354,
+          "norm": 4.529124736785889
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.0007634678040631115,
+          "std": 0.30624306201934814,
+          "min": -1.1702184677124023,
+          "max": 1.4727787971496582,
+          "rms": 0.30624401569366455,
+          "norm": 67.89505004882812
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0010932168224826455,
+          "std": 0.17249049246311188,
+          "min": -0.5276404619216919,
+          "max": 0.6321970820426941,
+          "rms": 0.17249396443367004,
+          "norm": 38.242340087890625
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.0018566828221082687,
+          "std": 0.4527370035648346,
+          "min": -1.5488121509552002,
+          "max": 2.101253032684326,
+          "rms": 0.4527408182621002,
+          "norm": 100.37373352050781
+        },
+        "attention_to_residual_rms_ratio": 0.06816105136403479,
+        "attention_to_post_residual_rms_ratio": 0.0667077383132714,
+        "mlp_to_residual_rms_ratio": 0.5632566045183247,
+        "mlp_to_post_residual_rms_ratio": 0.3809993653671625
+      },
+      {
+        "layer": 4,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.0018566828221082687,
+          "std": 0.4527370035648346,
+          "min": -1.5488121509552002,
+          "max": 2.101253032684326,
+          "rms": 0.4527408182621002,
+          "norm": 100.37373352050781
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": 0.0004680518468376249,
+          "std": 0.02408543787896633,
+          "min": -0.12874093651771545,
+          "max": 0.12169606983661652,
+          "rms": 0.024089984595775604,
+          "norm": 5.340810298919678
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.0013886317610740662,
+          "std": 0.4612686336040497,
+          "min": -1.5643712282180786,
+          "max": 2.119434118270874,
+          "rms": 0.4612707495689392,
+          "norm": 102.26487731933594
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": 0.00038785385549999774,
+          "std": 0.15774163603782654,
+          "min": -0.5715031623840332,
+          "max": 0.5349225401878357,
+          "rms": 0.15774211287498474,
+          "norm": 34.9718132019043
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.0010007763048633933,
+          "std": 0.592487633228302,
+          "min": -2.1358742713928223,
+          "max": 2.5670652389526367,
+          "rms": 0.5924884676933289,
+          "norm": 131.35618591308594
+        },
+        "attention_to_residual_rms_ratio": 0.053209217335975785,
+        "attention_to_post_residual_rms_ratio": 0.05222525949951924,
+        "mlp_to_residual_rms_ratio": 0.3419729367673885,
+        "mlp_to_post_residual_rms_ratio": 0.2662365961131784
+      },
+      {
+        "layer": 5,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.0010007763048633933,
+          "std": 0.592487633228302,
+          "min": -2.1358742713928223,
+          "max": 2.5670652389526367,
+          "rms": 0.5924884676933289,
+          "norm": 131.35618591308594
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": -0.0013849921524524689,
+          "std": 0.03327755257487297,
+          "min": -0.15527477860450745,
+          "max": 0.15561950206756592,
+          "rms": 0.03330636024475098,
+          "norm": 7.384103298187256
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.0023857690393924713,
+          "std": 0.6072849631309509,
+          "min": -2.173403263092041,
+          "max": 2.59987735748291,
+          "rms": 0.6072896718978882,
+          "norm": 134.6376190185547
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0013673672219738364,
+          "std": 0.15629084408283234,
+          "min": -0.4572574496269226,
+          "max": 0.4369869828224182,
+          "rms": 0.15629681944847107,
+          "norm": 34.651397705078125
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.003753134049475193,
+          "std": 0.7384074330329895,
+          "min": -2.560978889465332,
+          "max": 2.958503246307373,
+          "rms": 0.7384169697761536,
+          "norm": 163.7089080810547
+        },
+        "attention_to_residual_rms_ratio": 0.05621436038142484,
+        "attention_to_post_residual_rms_ratio": 0.05484427248805777,
+        "mlp_to_residual_rms_ratio": 0.25736782079631904,
+        "mlp_to_post_residual_rms_ratio": 0.21166471769446396
+      },
+      {
+        "layer": 6,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.003753134049475193,
+          "std": 0.7384074330329895,
+          "min": -2.560978889465332,
+          "max": 2.958503246307373,
+          "rms": 0.7384169697761536,
+          "norm": 163.7089080810547
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": -0.0010408629896119237,
+          "std": 0.04899059236049652,
+          "min": -0.15812329947948456,
+          "max": 0.20238958299160004,
+          "rms": 0.049001649022102356,
+          "norm": 10.863788604736328
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.004793999716639519,
+          "std": 0.7638232707977295,
+          "min": -2.622391939163208,
+          "max": 2.931041955947876,
+          "rms": 0.7638383507728577,
+          "norm": 169.34483337402344
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0007544835098087788,
+          "std": 0.1698986291885376,
+          "min": -0.4895091950893402,
+          "max": 0.48456886410713196,
+          "rms": 0.1699002981185913,
+          "norm": 37.66731643676758
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.005548486020416021,
+          "std": 0.9039545059204102,
+          "min": -2.958211898803711,
+          "max": 3.180636405944824,
+          "rms": 0.9039715528488159,
+          "norm": 200.4127197265625
+        },
+        "attention_to_residual_rms_ratio": 0.06636040479535146,
+        "attention_to_post_residual_rms_ratio": 0.06415185748728393,
+        "mlp_to_residual_rms_ratio": 0.22242965143958124,
+        "mlp_to_post_residual_rms_ratio": 0.1879487220401571
+      },
+      {
+        "layer": 7,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.005548486020416021,
+          "std": 0.9039545059204102,
+          "min": -2.958211898803711,
+          "max": 3.180636405944824,
+          "rms": 0.9039715528488159,
+          "norm": 200.4127197265625
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": 0.0008192707900889218,
+          "std": 0.05885867401957512,
+          "min": -0.19948183000087738,
+          "max": 0.19793742895126343,
+          "rms": 0.058864377439022064,
+          "norm": 13.050382614135742
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.004729211796075106,
+          "std": 0.9388456344604492,
+          "min": -3.0150716304779053,
+          "max": 3.182861566543579,
+          "rms": 0.9388575553894043,
+          "norm": 208.1470947265625
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0008048496092669666,
+          "std": 0.18495449423789978,
+          "min": -0.4838728904724121,
+          "max": 0.46308407187461853,
+          "rms": 0.18495623767375946,
+          "norm": 41.00525665283203
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.005534061696380377,
+          "std": 1.0934500694274902,
+          "min": -3.3727827072143555,
+          "max": 3.4968748092651367,
+          "rms": 1.0934641361236572,
+          "norm": 242.42372131347656
+        },
+        "attention_to_residual_rms_ratio": 0.06511751089236632,
+        "attention_to_post_residual_rms_ratio": 0.06269787903512929,
+        "mlp_to_residual_rms_ratio": 0.197001383875583,
+        "mlp_to_post_residual_rms_ratio": 0.16914705436012875
+      },
+      {
+        "layer": 8,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.005534061696380377,
+          "std": 1.0934500694274902,
+          "min": -3.3727827072143555,
+          "max": 3.4968748092651367,
+          "rms": 1.0934641361236572,
+          "norm": 242.42372131347656
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": -0.0012805898441001773,
+          "std": 0.08727981895208359,
+          "min": -0.25892555713653564,
+          "max": 0.24779821932315826,
+          "rms": 0.08728921413421631,
+          "norm": 19.352237701416016
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.006814658176153898,
+          "std": 1.1516660451889038,
+          "min": -3.422886610031128,
+          "max": 3.6497509479522705,
+          "rms": 1.151686191558838,
+          "norm": 255.33163452148438
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": -0.0015279300278052688,
+          "std": 0.18754711747169495,
+          "min": -0.48916032910346985,
+          "max": 0.5403961539268494,
+          "rms": 0.18755333125591278,
+          "norm": 41.581031799316406
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.008342587389051914,
+          "std": 1.30885910987854,
+          "min": -3.7516283988952637,
+          "max": 3.8926868438720703,
+          "rms": 1.3088856935501099,
+          "norm": 290.1831359863281
+        },
+        "attention_to_residual_rms_ratio": 0.07982814547869632,
+        "attention_to_post_residual_rms_ratio": 0.07579253339494159,
+        "mlp_to_residual_rms_ratio": 0.16285107230647122,
+        "mlp_to_post_residual_rms_ratio": 0.14329236860035435
+      },
+      {
+        "layer": 9,
+        "pre_attention": {
+          "finite": true,
+          "mean": -0.008342587389051914,
+          "std": 1.30885910987854,
+          "min": -3.7516283988952637,
+          "max": 3.8926868438720703,
+          "rms": 1.3088856935501099,
+          "norm": 290.1831359863281
+        },
+        "attention_output": {
+          "finite": true,
+          "mean": 0.0014722616178914905,
+          "std": 0.09923120588064194,
+          "min": -0.29270580410957336,
+          "max": 0.3341485857963562,
+          "rms": 0.09924212843179703,
+          "norm": 22.00223159790039
+        },
+        "post_attention_residual": {
+          "finite": true,
+          "mean": -0.0068703205324709415,
+          "std": 1.3797541856765747,
+          "min": -3.761415958404541,
+          "max": 3.9929139614105225,
+          "rms": 1.37977135181427,
+          "norm": 305.89874267578125
+        },
+        "mlp_output": {
+          "finite": true,
+          "mean": 0.005472214892506599,
+          "std": 0.20475725829601288,
+          "min": -0.5271268486976624,
+          "max": 0.5479214191436768,
+          "rms": 0.2048303782939911,
+          "norm": 45.41140365600586
+        },
+        "post_mlp_residual": {
+          "finite": true,
+          "mean": -0.001398105756379664,
+          "std": 1.556562066078186,
+          "min": -4.049705505371094,
+          "max": 4.2118401527404785,
+          "rms": 1.5565627813339233,
+          "norm": 345.09381103515625
+        },
+        "attention_to_residual_rms_ratio": 0.07582184519308263,
+        "attention_to_post_residual_rms_ratio": 0.07192650311321722,
+        "mlp_to_residual_rms_ratio": 0.14845240700544937,
+        "mlp_to_post_residual_rms_ratio": 0.13159146598536692
+      }
+    ],
+    "norms": [
+      {
+        "layer": 0,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -4.785761120729148e-06,
+            "std": 0.028651027008891106,
+            "min": -0.11717947572469711,
+            "max": 0.11802636831998825,
+            "rms": 0.028651027008891106,
+            "norm": 6.35200309753418
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -1.6527637853869237e-05,
+            "std": 0.9927319884300232,
+            "min": -4.110128879547119,
+            "max": 4.144552707672119,
+            "rms": 0.9927319288253784,
+            "norm": 220.091064453125
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9988841414451599,
+            "std": 0.00100074359215796,
+            "min": 0.9962007403373718,
+            "max": 1.0017890930175781,
+            "rms": 0.9988846182823181,
+            "norm": 19.574060440063477
+          },
+          "beta": {
+            "finite": true,
+            "mean": -1.8749278751784004e-05,
+            "std": 0.0009658729541115463,
+            "min": -0.0033401965629309416,
+            "max": 0.0026678130961954594,
+            "rms": 0.0009660548530519009,
+            "norm": 0.01893073320388794
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.00022053760767448694,
+            "std": 0.029406268149614334,
+            "min": -0.12351123988628387,
+            "max": 0.13144901394844055,
+            "rms": 0.029407095164060593,
+            "norm": 6.519625663757324
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -9.176631579066452e-07,
+            "std": 0.9944478273391724,
+            "min": -3.9872210025787354,
+            "max": 4.264362335205078,
+            "rms": 0.9944477677345276,
+            "norm": 220.47154235839844
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0002931356430054,
+            "std": 0.0012949984520673752,
+            "min": 0.9963688254356384,
+            "max": 1.0040373802185059,
+            "rms": 1.0002939701080322,
+            "norm": 19.6016788482666
+          },
+          "beta": {
+            "finite": true,
+            "mean": 9.827192116063088e-06,
+            "std": 0.00062770233489573,
+            "min": -0.001995391445234418,
+            "max": 0.0015113564440980554,
+            "rms": 0.0006277792272157967,
+            "norm": 0.012301910668611526
+          }
+        }
+      },
+      {
+        "layer": 1,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": 0.0006112225237302482,
+            "std": 0.0676434263586998,
+            "min": -0.38236719369888306,
+            "max": 0.3983003795146942,
+            "rms": 0.06764618307352066,
+            "norm": 14.997326850891113
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 2.9859269488952123e-05,
+            "std": 0.9972788691520691,
+            "min": -4.173185348510742,
+            "max": 4.162940979003906,
+            "rms": 0.9972788691520691,
+            "norm": 221.0991973876953
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9986534714698792,
+            "std": 0.0008402149542234838,
+            "min": 0.9965669512748718,
+            "max": 1.0011922121047974,
+            "rms": 0.9986538887023926,
+            "norm": 19.56954002380371
+          },
+          "beta": {
+            "finite": true,
+            "mean": 2.7941438020206988e-05,
+            "std": 0.000707725586835295,
+            "min": -0.0020572813227772713,
+            "max": 0.0019933779258280993,
+            "rms": 0.0007082769880071282,
+            "norm": 0.013879336416721344
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": 4.9382932047592476e-05,
+            "std": 0.06894209235906601,
+            "min": -0.3950635492801666,
+            "max": 0.4026523530483246,
+            "rms": 0.0689421072602272,
+            "norm": 15.284634590148926
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 2.8483083951869048e-05,
+            "std": 0.9997099041938782,
+            "min": -4.255809307098389,
+            "max": 4.210934638977051,
+            "rms": 0.9997099041938782,
+            "norm": 221.63816833496094
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0008090734481812,
+            "std": 0.0011520643020048738,
+            "min": 0.9979431629180908,
+            "max": 1.0050528049468994,
+            "rms": 1.0008097887039185,
+            "norm": 19.611785888671875
+          },
+          "beta": {
+            "finite": true,
+            "mean": 2.5786323021748103e-05,
+            "std": 0.0005390000296756625,
+            "min": -0.0016036704182624817,
+            "max": 0.0014768977416679263,
+            "rms": 0.000539616507012397,
+            "norm": 0.010574281215667725
+          }
+        }
+      },
+      {
+        "layer": 2,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.002078839810565114,
+            "std": 0.1620749831199646,
+            "min": -0.7129224538803101,
+            "max": 0.8359239101409912,
+            "rms": 0.1620883196592331,
+            "norm": 35.93539047241211
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -6.160295015433803e-05,
+            "std": 0.9987687468528748,
+            "min": -3.65694522857666,
+            "max": 3.735795497894287,
+            "rms": 0.9987687468528748,
+            "norm": 221.42955017089844
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9991328120231628,
+            "std": 0.0008574572275392711,
+            "min": 0.9967684149742126,
+            "max": 1.0016616582870483,
+            "rms": 0.9991331696510315,
+            "norm": 19.57893180847168
+          },
+          "beta": {
+            "finite": true,
+            "mean": -2.0243793187546544e-05,
+            "std": 0.0007268571644090116,
+            "min": -0.002297674771398306,
+            "max": 0.002274871803820133,
+            "rms": 0.0007271390059031546,
+            "norm": 0.014248956926167011
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.0015516811981797218,
+            "std": 0.16598954796791077,
+            "min": -0.7031893134117126,
+            "max": 0.8202844262123108,
+            "rms": 0.16599680483341217,
+            "norm": 36.80189514160156
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 3.6507222830550745e-05,
+            "std": 1.0005595684051514,
+            "min": -3.6004350185394287,
+            "max": 3.667766571044922,
+            "rms": 1.0005595684051514,
+            "norm": 221.8265838623047
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0007575750350952,
+            "std": 0.0012675332836806774,
+            "min": 0.9970412254333496,
+            "max": 1.0053709745407104,
+            "rms": 1.000758409500122,
+            "norm": 19.61077880859375
+          },
+          "beta": {
+            "finite": true,
+            "mean": -1.0137422577827238e-05,
+            "std": 0.0006512608961202204,
+            "min": -0.0017800783971324563,
+            "max": 0.0017944014398381114,
+            "rms": 0.0006513398257084191,
+            "norm": 0.01276360172778368
+          }
+        }
+      },
+      {
+        "layer": 3,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.0016296295216307044,
+            "std": 0.2997099459171295,
+            "min": -1.1440491676330566,
+            "max": 1.4450533390045166,
+            "rms": 0.2997143566608429,
+            "norm": 66.44741821289062
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 3.858438503812067e-05,
+            "std": 0.9989073276519775,
+            "min": -3.5762405395507812,
+            "max": 3.9398155212402344,
+            "rms": 0.9989073276519775,
+            "norm": 221.46023559570312
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.999225378036499,
+            "std": 0.0008631512755528092,
+            "min": 0.9970331192016602,
+            "max": 1.0017613172531128,
+            "rms": 0.9992256760597229,
+            "norm": 19.580745697021484
+          },
+          "beta": {
+            "finite": true,
+            "mean": 1.1642435310932342e-05,
+            "std": 0.0007478255429305136,
+            "min": -0.0023192462977021933,
+            "max": 0.002321565756574273,
+            "rms": 0.0007479161722585559,
+            "norm": 0.014656104147434235
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.0007634678040631115,
+            "std": 0.30624306201934814,
+            "min": -1.1702184677124023,
+            "max": 1.4727787971496582,
+            "rms": 0.30624401569366455,
+            "norm": 67.89505004882812
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -1.9828788936138153e-05,
+            "std": 1.0005221366882324,
+            "min": -3.5725748538970947,
+            "max": 3.9866139888763428,
+            "rms": 1.0005221366882324,
+            "norm": 221.81817626953125
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.000685691833496,
+            "std": 0.0011143683223053813,
+            "min": 0.997160017490387,
+            "max": 1.0042121410369873,
+            "rms": 1.0006862878799438,
+            "norm": 19.609365463256836
+          },
+          "beta": {
+            "finite": true,
+            "mean": -1.6439880710095167e-06,
+            "std": 0.0008360191714018583,
+            "min": -0.0019593245815485716,
+            "max": 0.0021825262811034918,
+            "rms": 0.0008360208012163639,
+            "norm": 0.016382595524191856
+          }
+        }
+      },
+      {
+        "layer": 4,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.0018566828221082687,
+            "std": 0.4527370035648346,
+            "min": -1.5488121509552002,
+            "max": 2.101253032684326,
+            "rms": 0.4527408182621002,
+            "norm": 100.37373352050781
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -7.310137152671814e-05,
+            "std": 0.9991631507873535,
+            "min": -3.2276408672332764,
+            "max": 4.035263538360596,
+            "rms": 0.9991632103919983,
+            "norm": 221.5169677734375
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.999413013458252,
+            "std": 0.0007727293414063752,
+            "min": 0.9962955117225647,
+            "max": 1.0019311904907227,
+            "rms": 0.9994133114814758,
+            "norm": 19.58441925048828
+          },
+          "beta": {
+            "finite": true,
+            "mean": -7.061141513986513e-05,
+            "std": 0.0008361211512237787,
+            "min": -0.0022979804780334234,
+            "max": 0.0019893827848136425,
+            "rms": 0.0008390974253416061,
+            "norm": 0.016442885622382164
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.0013886317610740662,
+            "std": 0.4612686336040497,
+            "min": -1.5643712282180786,
+            "max": 2.119434118270874,
+            "rms": 0.4612707495689392,
+            "norm": 102.26487731933594
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -1.834674367273692e-05,
+            "std": 1.0000731945037842,
+            "min": -3.2448983192443848,
+            "max": 4.023012161254883,
+            "rms": 1.0000730752944946,
+            "norm": 221.71864318847656
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0002942085266113,
+            "std": 0.001146766822785139,
+            "min": 0.9971850514411926,
+            "max": 1.0047792196273804,
+            "rms": 1.000294804573059,
+            "norm": 19.601694107055664
+          },
+          "beta": {
+            "finite": true,
+            "mean": 1.2902460184704978e-05,
+            "std": 0.0009260444203391671,
+            "min": -0.002593462821096182,
+            "max": 0.002579669700935483,
+            "rms": 0.0009261342929676175,
+            "norm": 0.018148452043533325
+          }
+        }
+      },
+      {
+        "layer": 5,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.0010007763048633933,
+            "std": 0.592487633228302,
+            "min": -2.1358742713928223,
+            "max": 2.5670652389526367,
+            "rms": 0.5924884676933289,
+            "norm": 131.35618591308594
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -2.2220114260562696e-05,
+            "std": 0.9992910623550415,
+            "min": -3.259303092956543,
+            "max": 3.9450743198394775,
+            "rms": 0.9992910623550415,
+            "norm": 221.54530334472656
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9995182156562805,
+            "std": 0.0008204304031096399,
+            "min": 0.9972507357597351,
+            "max": 1.0022047758102417,
+            "rms": 0.9995184540748596,
+            "norm": 19.58648109436035
+          },
+          "beta": {
+            "finite": true,
+            "mean": -2.1266643670969643e-05,
+            "std": 0.0009611588902771473,
+            "min": -0.0026686617638915777,
+            "max": 0.0022732452489435673,
+            "rms": 0.0009613941074348986,
+            "norm": 0.01883940026164055
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.0023857690393924713,
+            "std": 0.6072849631309509,
+            "min": -2.173403263092041,
+            "max": 2.59987735748291,
+            "rms": 0.6072896718978882,
+            "norm": 134.6376190185547
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 0.0001243675797013566,
+            "std": 1.0000907182693481,
+            "min": -3.2545604705810547,
+            "max": 3.9721601009368896,
+            "rms": 1.0000907182693481,
+            "norm": 221.72264099121094
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0003260374069214,
+            "std": 0.0011696191504597664,
+            "min": 0.9973911046981812,
+            "max": 1.004765510559082,
+            "rms": 1.0003268718719482,
+            "norm": 19.602323532104492
+          },
+          "beta": {
+            "finite": true,
+            "mean": 0.00010548957652645186,
+            "std": 0.0010187013540416956,
+            "min": -0.002555153099820018,
+            "max": 0.0028390316292643547,
+            "rms": 0.0010241486597806215,
+            "norm": 0.02006913349032402
+          }
+        }
+      },
+      {
+        "layer": 6,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.003753134049475193,
+            "std": 0.7384074330329895,
+            "min": -2.560978889465332,
+            "max": 2.958503246307373,
+            "rms": 0.7384169697761536,
+            "norm": 163.7089080810547
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 5.139969289302826e-05,
+            "std": 0.9993246793746948,
+            "min": -3.112689971923828,
+            "max": 3.9094653129577637,
+            "rms": 0.9993246793746948,
+            "norm": 221.5527801513672
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9995036125183105,
+            "std": 0.0008462685509584844,
+            "min": 0.9970386624336243,
+            "max": 1.0019282102584839,
+            "rms": 0.9995040893554688,
+            "norm": 19.586200714111328
+          },
+          "beta": {
+            "finite": true,
+            "mean": 4.899478153674863e-05,
+            "std": 0.0009981434559449553,
+            "min": -0.0029911294113844633,
+            "max": 0.0022811407689005136,
+            "rms": 0.0009993452113121748,
+            "norm": 0.019583087414503098
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.004793999716639519,
+            "std": 0.7638232707977295,
+            "min": -2.622391939163208,
+            "max": 2.931041955947876,
+            "rms": 0.7638383507728577,
+            "norm": 169.34483337402344
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -6.581749767065048e-05,
+            "std": 0.9999673366546631,
+            "min": -3.0724477767944336,
+            "max": 3.8450849056243896,
+            "rms": 0.9999673366546631,
+            "norm": 221.6952667236328
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0001885890960693,
+            "std": 0.0010987671557813883,
+            "min": 0.9977706670761108,
+            "max": 1.003962755203247,
+            "rms": 1.000189185142517,
+            "norm": 19.599626541137695
+          },
+          "beta": {
+            "finite": true,
+            "mean": -6.756827497156337e-05,
+            "std": 0.0011410433799028397,
+            "min": -0.002836860017850995,
+            "max": 0.0028758328408002853,
+            "rms": 0.0011430422309786081,
+            "norm": 0.02239896170794964
+          }
+        }
+      },
+      {
+        "layer": 7,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.005548486020416021,
+            "std": 0.9039545059204102,
+            "min": -2.958211898803711,
+            "max": 3.180636405944824,
+            "rms": 0.9039715528488159,
+            "norm": 200.4127197265625
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 1.1612505659286398e-05,
+            "std": 0.9994337558746338,
+            "min": -2.91519832611084,
+            "max": 3.7110962867736816,
+            "rms": 0.9994337558746338,
+            "norm": 221.5768280029297
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.999657154083252,
+            "std": 0.0009275439660996199,
+            "min": 0.996981143951416,
+            "max": 1.0024360418319702,
+            "rms": 0.9996575117111206,
+            "norm": 19.58920669555664
+          },
+          "beta": {
+            "finite": true,
+            "mean": 3.032712993444875e-05,
+            "std": 0.001165130641311407,
+            "min": -0.0029330188408493996,
+            "max": 0.002977711148560047,
+            "rms": 0.0011655252892524004,
+            "norm": 0.022839536890387535
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.004729211796075106,
+            "std": 0.9388456344604492,
+            "min": -3.0150716304779053,
+            "max": 3.182861566543579,
+            "rms": 0.9388575553894043,
+            "norm": 208.1470947265625
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 9.039106225827709e-05,
+            "std": 0.9999865293502808,
+            "min": -2.914259910583496,
+            "max": 3.7163302898406982,
+            "rms": 0.999986469745636,
+            "norm": 221.69952392578125
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0001721382141113,
+            "std": 0.0011609552893787622,
+            "min": 0.9971699714660645,
+            "max": 1.0033193826675415,
+            "rms": 1.000172734260559,
+            "norm": 19.59930419921875
+          },
+          "beta": {
+            "finite": true,
+            "mean": 4.355149940238334e-05,
+            "std": 0.0012294421903789043,
+            "min": -0.00463740574195981,
+            "max": 0.004053156357258558,
+            "rms": 0.0012302134418860078,
+            "norm": 0.024107160046696663
+          }
+        }
+      },
+      {
+        "layer": 8,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.005534061696380377,
+            "std": 1.0934500694274902,
+            "min": -3.3727827072143555,
+            "max": 3.4968748092651367,
+            "rms": 1.0934641361236572,
+            "norm": 242.42372131347656
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 1.1751583770092111e-05,
+            "std": 0.9996263980865479,
+            "min": -2.914785623550415,
+            "max": 3.7156484127044678,
+            "rms": 0.9996264576911926,
+            "norm": 221.6196746826172
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9996736645698547,
+            "std": 0.0009704454569146037,
+            "min": 0.9973512291908264,
+            "max": 1.00308096408844,
+            "rms": 0.9996741414070129,
+            "norm": 19.58953285217285
+          },
+          "beta": {
+            "finite": true,
+            "mean": 2.8534559532999992e-06,
+            "std": 0.001172834075987339,
+            "min": -0.0027530600782483816,
+            "max": 0.0029303852934390306,
+            "rms": 0.0011728375684469938,
+            "norm": 0.022982828319072723
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.006814658176153898,
+            "std": 1.1516660451889038,
+            "min": -3.422886610031128,
+            "max": 3.6497509479522705,
+            "rms": 1.151686191558838,
+            "norm": 255.33163452148438
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 8.832570165395737e-05,
+            "std": 0.9997946619987488,
+            "min": -2.892099142074585,
+            "max": 3.7576892375946045,
+            "rms": 0.9997947216033936,
+            "norm": 221.65692138671875
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.000031590461731,
+            "std": 0.0010748096974566579,
+            "min": 0.9963914155960083,
+            "max": 1.0032564401626587,
+            "rms": 1.0000321865081787,
+            "norm": 19.59654998779297
+          },
+          "beta": {
+            "finite": true,
+            "mean": 8.225418423535302e-05,
+            "std": 0.0011574652744457126,
+            "min": -0.003214919473975897,
+            "max": 0.0030160686001181602,
+            "rms": 0.0011603842722252011,
+            "norm": 0.02273879386484623
+          }
+        }
+      },
+      {
+        "layer": 9,
+        "pre_attention": {
+          "input": {
+            "finite": true,
+            "mean": -0.008342587389051914,
+            "std": 1.30885910987854,
+            "min": -3.7516283988952637,
+            "max": 3.8926868438720703,
+            "rms": 1.3088856935501099,
+            "norm": 290.1831359863281
+          },
+          "normalized": {
+            "finite": true,
+            "mean": 0.0001042122021317482,
+            "std": 0.9997309446334839,
+            "min": -2.8605587482452393,
+            "max": 3.7099335193634033,
+            "rms": 0.9997309446334839,
+            "norm": 221.642822265625
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 0.9998012185096741,
+            "std": 0.0010198417585343122,
+            "min": 0.9971479773521423,
+            "max": 1.002877116203308,
+            "rms": 0.999801754951477,
+            "norm": 19.592031478881836
+          },
+          "beta": {
+            "finite": true,
+            "mean": 6.173407746246085e-05,
+            "std": 0.0012428456684574485,
+            "min": -0.00323122157715261,
+            "max": 0.0029470857698470354,
+            "rms": 0.0012443780433386564,
+            "norm": 0.02438472956418991
+          }
+        },
+        "pre_mlp": {
+          "input": {
+            "finite": true,
+            "mean": -0.0068703205324709415,
+            "std": 1.3797541856765747,
+            "min": -3.761415958404541,
+            "max": 3.9929139614105225,
+            "rms": 1.37977135181427,
+            "norm": 305.89874267578125
+          },
+          "normalized": {
+            "finite": true,
+            "mean": -2.328772097826004e-05,
+            "std": 0.9999078512191772,
+            "min": -2.8505325317382812,
+            "max": 3.6663522720336914,
+            "rms": 0.9999078512191772,
+            "norm": 221.68211364746094
+          },
+          "gamma": {
+            "finite": true,
+            "mean": 1.0001269578933716,
+            "std": 0.0011052825720980763,
+            "min": 0.9972461462020874,
+            "max": 1.0030536651611328,
+            "rms": 1.0001276731491089,
+            "norm": 19.598421096801758
+          },
+          "beta": {
+            "finite": true,
+            "mean": -2.6032656023744494e-05,
+            "std": 0.0012028926284983754,
+            "min": -0.003214798402041197,
+            "max": 0.0029547307640314102,
+            "rms": 0.0012031743535771966,
+            "norm": 0.023577304556965828
+          }
+        }
+      }
+    ],
+    "final_norm": {
+      "present": true,
+      "order": "Embedding -> Blocks -> Final Norm -> LM Head",
+      "input": {
+        "finite": true,
+        "mean": -0.001398105756379664,
+        "std": 1.556562066078186,
+        "min": -4.049705505371094,
+        "max": 4.2118401527404785,
+        "rms": 1.5565627813339233,
+        "norm": 345.09381103515625
+      },
+      "normalized": {
+        "finite": true,
+        "mean": -0.0003941003233194351,
+        "std": 1.0129683017730713,
+        "min": -2.9001429080963135,
+        "max": 3.6261143684387207,
+        "rms": 1.0129683017730713,
+        "norm": 224.57762145996094
+      },
+      "gamma": {
+        "finite": true,
+        "mean": 1.007399082183838,
+        "std": 0.0015380069380626082,
+        "min": 1.0012272596359253,
+        "max": 1.009872317314148,
+        "rms": 1.0074002742767334,
+        "norm": 19.740934371948242
+      },
+      "beta": {
+        "finite": true,
+        "mean": -0.00032519196975044906,
+        "std": 0.006720566190779209,
+        "min": -0.009382401593029499,
+        "max": 0.00950138084590435,
+        "rms": 0.006728429812937975,
+        "norm": 0.1318497508764267
+      }
+    },
+    "logits": {
+      "finite": true,
+      "mean": -1.1045360565185547,
+      "std": 1.1148158311843872,
+      "min": -4.634034633636475,
+      "max": 10.630289077758789,
+      "rms": 1.5693355798721313,
+      "norm": 1136.3179931640625,
+      "mean_softmax_entropy": 7.00962495803833,
+      "normalized_softmax_entropy": 0.8427292704582214,
+      "mean_top_1_probability": 0.08133064210414886,
+      "mean_top_5_probability_mass": 0.13598619401454926
+    },
+    "manual_forward_max_absolute_error": 0.0,
+    "all_finite": true
+  },
+  "baselines": {
+    "unigram": {
+      "loss": 7.081412357137141,
+      "perplexity": 1189.6475397346107,
+      "top_1_accuracy": 0.03759765625,
+      "top_5_accuracy": 0.11474609375,
+      "top_10_accuracy": 0.1612548828125,
+      "most_frequent_token_ids": [
+        268,
+        1,
+        2,
+        270,
+        277,
+        273,
+        267,
+        276,
+        271,
+        272
+      ]
+    },
+    "bigram": {
+      "loss": 6.030509049422372,
+      "perplexity": 415.926702749096,
+      "top_1_accuracy": 0.1807861328125,
+      "top_5_accuracy": 0.323486328125,
+      "top_10_accuracy": 0.3927001953125,
+      "observed_validation_pair_rate": 0.666259765625
+    },
+    "method": {
+      "smoothing": "add-alpha",
+      "alpha": 0.1,
+      "train_tokens": 214257,
+      "validation_probe_tokens": 8192,
+      "same_probe_as_transformer": true
+    }
+  },
+  "checkpoint": {
+    "path": "checkpoints/foundation-v17-short-japanese/depth_scaled_residual_init.pt",
+    "bytes": 232566113,
+    "sha256": "ee935ca315076b95e2424a616d64711779950b951255b865d3f05f6fac721bb5",
+    "strict_reload": true,
+    "optimizer_state_present": true
+  },
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

@@ -1,0 +1,111 @@
+{
+  "project": "UniPilot Foundation v1.7 Residual / Position / Initialization Isolation",
+  "seeds": [42, 123, 2026],
+  "matrix_seed": 42,
+  "cpu_threads": 4,
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "diagnostic_corpus_manifest": "data/foundation_v15_diagnostic/manifest.json",
+  "architecture": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-5,
+    "activation": "gelu",
+    "weight_tying": true
+  },
+  "variants": [
+    {
+      "name": "current_unscaled",
+      "token_embedding_scale": 1.0,
+      "position_embedding_scale": 1.0,
+      "residual_projection_init_scale": 1.0,
+      "formula": "token + position",
+      "source": "PHASE 27 baseline"
+    },
+    {
+      "name": "sqrt_scaled_a",
+      "token_embedding_scale": 19.595917942265423,
+      "position_embedding_scale": 1.0,
+      "residual_projection_init_scale": 1.0,
+      "formula": "token * sqrt(d_model) + position",
+      "source": "PHASE 27 baseline"
+    },
+    {
+      "name": "balanced_position_sqrt",
+      "token_embedding_scale": 19.595917942265423,
+      "position_embedding_scale": 19.595917942265423,
+      "residual_projection_init_scale": 1.0,
+      "formula": "token * sqrt(d_model) + position * sqrt(d_model)",
+      "source": "PHASE 28 isolated position scale fix"
+    },
+    {
+      "name": "depth_scaled_residual_init",
+      "token_embedding_scale": 1.0,
+      "position_embedding_scale": 1.0,
+      "residual_projection_init_scale": 0.22360679774997896,
+      "formula": "token + position; attention/MLP output projection std = 0.02 / sqrt(2L)",
+      "source": "PHASE 28 isolated initialization fix"
+    }
+  ],
+  "selection_rationale": {
+    "position": "PHASE 27 measured effective token/position RMS ratio near 20 for sqrt A, so scaling both restores the initialized ratio near 1. Current alpha candidates are not run because Current already has ratio near 1.",
+    "initialization": "Only residual output projections are depth-scaled; QKV and MLP input projections stay at std 0.02.",
+    "combined": "Run only if a single-component candidate passes the required gates.",
+    "rmsnorm": "Not selected because Final LayerNorm is present and PHASE 26 RMSNorm alone did not improve the model."
+  },
+  "real_corpus": {
+    "token_budget": 65536,
+    "effective_batch_tokens": 512,
+    "learning_rate": 0.0001,
+    "warmup_updates": 20,
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "milestones": [0, 10, 25, 50, 100, 128],
+    "validation_tokens": 8192
+  },
+  "synthetic_v3": {
+    "vocab_size": 256,
+    "context_length": 80,
+    "batch_size": 16,
+    "updates": 2000,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "evaluation_examples": 256,
+    "curve_percentages": [10, 25, 50, 75, 100],
+    "position_lengths": [4, 8, 16],
+    "train_task_count": 6
+  },
+  "short_japanese": {
+    "context_length": 128,
+    "token_budget": 65536,
+    "effective_batch_tokens": 512,
+    "seed": 2716
+  },
+  "gates": {
+    "copy": {"4": 0.95, "8": 0.95, "16": 0.90},
+    "key_lookup": {"2": 0.95, "4": 0.95, "8": 0.90},
+    "long_range": 0.95,
+    "basic_pattern": 0.95,
+    "numeric_pattern": 0.90,
+    "context_conditioned": 0.95,
+    "position": 0.95,
+    "frequency_non_top_1_percent_top_1_minimum_exclusive": 0.0,
+    "punctuation_mass_below_current": 0.9251708984375,
+    "layer_9_rms_below_current": 4.48265695571899
+  },
+  "full_256k_enabled": false,
+  "standard_46m_enabled": false,
+  "corpus_expansion_enabled": false,
+  "tokenizer_change_enabled": false,
+  "campus_pretraining_enabled": false,
+  "instruction_tuning_enabled": false,
+  "dpo_enabled": false,
+  "production_integration_enabled": false,
+  "external_ai_api": "OFF"
+}
