@@ -1,0 +1,101 @@
+{
+  "project": "UniPilot Foundation v1.9 Synthetic Context Benchmark v3",
+  "schema_version": "synthetic-context-benchmark-v3",
+  "seed": 43,
+  "cpu_threads": 4,
+  "architecture": {
+    "context_length": 128,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm_epsilon": 1e-5,
+    "weight_tying": true
+  },
+  "models": [
+    {
+      "name": "custom_current",
+      "implementation": "custom",
+      "residual_projection_init_scale": 1.0,
+      "formal_architecture": true
+    },
+    {
+      "name": "custom_depth_init",
+      "implementation": "custom",
+      "residual_projection_init_scale": 0.22360679774997896,
+      "formal_architecture": false
+    },
+    {
+      "name": "reference_mha",
+      "implementation": "reference",
+      "residual_projection_init_scale": 0.22360679774997896,
+      "formal_architecture": false
+    }
+  ],
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [0.9, 0.95],
+    "eps": 1e-8,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "loss_pilot": {
+    "level": 2,
+    "updates": 400,
+    "batch_size": 16,
+    "evaluation_examples": 256,
+    "variants": [
+      {"name": "answer-only-markers", "supervision": "answer_only", "answer_weight": 1, "markers": true},
+      {"name": "answer-only-markers-any-mapping", "supervision": "answer_only", "answer_weight": 1, "markers": true, "mapping_train_split": "any", "mapping_eval_split": "any"},
+      {"name": "answer-only-markers-long", "supervision": "answer_only", "answer_weight": 1, "markers": true, "mapping_train_split": "any", "mapping_eval_split": "any", "updates": 4000},
+      {"name": "answer-only-markers-small-vocab", "supervision": "answer_only", "answer_weight": 1, "markers": true, "vocabulary_stage": "small"},
+      {"name": "answer-only-no-markers", "supervision": "answer_only", "answer_weight": 1, "markers": false},
+      {"name": "all-token-1x-markers", "supervision": "all_token", "answer_weight": 1, "markers": true},
+      {"name": "all-token-4x-markers", "supervision": "all_token", "answer_weight": 4, "markers": true},
+      {"name": "all-token-16x-markers", "supervision": "all_token", "answer_weight": 16, "markers": true}
+    ]
+  },
+  "curriculum": {
+    "batch_size": 16,
+    "evaluation_examples": 256,
+    "evaluation_interval": [25, 50, 100, 200, 200, 250],
+    "maximum_updates_per_level": [200, 600, 4800, 4800, 6400, 1000],
+    "minimum_updates_per_level": [25, 100, 200, 400, 800, 500],
+    "replay_probability": 0.0,
+    "relation_replay_probability": 0.25,
+    "relation_replay_start_update_by_level": [0, 0, 0, 2400, 0, 0],
+    "reset_at_level_2": true,
+    "vocabulary_staging": {"enabled": false, "diagnostic_variants": ["small", "medium", "full"]},
+    "levels": {
+      "0": {"pairs": 1, "threshold": 0.99, "role": "fixed memorized relation control"},
+      "1": {"pairs": 1, "threshold": 0.99, "role": "random one-pair retrieval"},
+      "2": {"pairs": 2, "threshold": 0.98, "role": "random query associative retrieval"},
+      "3": {"pairs": 4, "threshold": 0.95, "role": "four-pair associative retrieval"},
+      "4": {"pairs": 8, "threshold": 0.90, "role": "eight-pair architecture gate"},
+      "5": {"pairs": 16, "threshold": null, "role": "diagnostic only"}
+    },
+    "supervision": "answer_only",
+    "answer_weight": 1,
+    "markers": true,
+    "mapping_train_split": "any",
+    "mapping_test_split": "any",
+    "heldout_combination_split": "heldout"
+  },
+  "validity": {
+    "required_levels": [0, 1, 2, 3, 4],
+    "minimum_control_drop": 0.25,
+    "reference_first": true,
+    "level_5_is_diagnostic_only": true
+  },
+  "prohibitions": {
+    "full_foundation_pretraining": true,
+    "architecture_addition": true,
+    "tokenizer_change": true,
+    "production_change": true,
+    "deploy": true,
+    "final_blind_open": true
+  }
+}

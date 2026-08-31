@@ -1,0 +1,5788 @@
+{
+  "schema_version": "foundation-v19-benchmark-audit-v1",
+  "old_benchmark": {
+    "versions": [
+      "Synthetic Context Benchmark v1",
+      "v2",
+      "v4/Phase29"
+    ],
+    "status": "DEPRECATED_RETAINED",
+    "examples": [
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K01",
+          "V18",
+          "<QUERY_LEGACY>",
+          "K01",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          65,
+          50,
+          224,
+          65,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          50
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 4,
+        "key_position": 1,
+        "value_position": 2,
+        "answer_prediction_position": 5,
+        "answer_id": 50,
+        "human_readable": "<KEY_LOOKUP> K01 V18 <QUERY_LEGACY> K01 <ANSWER_LEGACY> -> V18"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K14",
+          "V06",
+          "K05",
+          "V29",
+          "<QUERY_LEGACY>",
+          "K05",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          78,
+          38,
+          69,
+          61,
+          224,
+          69,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          61
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 6,
+        "key_position": 3,
+        "value_position": 4,
+        "answer_prediction_position": 7,
+        "answer_id": 61,
+        "human_readable": "<KEY_LOOKUP> K14 V06 K05 V29 <QUERY_LEGACY> K05 <ANSWER_LEGACY> -> V29"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K00",
+          "V27",
+          "K08",
+          "V23",
+          "T217",
+          "T203",
+          "T195",
+          "T198",
+          "T199",
+          "T216",
+          "T201",
+          "T198",
+          "T202",
+          "T223",
+          "T200",
+          "T216",
+          "T209",
+          "T203",
+          "T216",
+          "T196",
+          "<QUERY_LEGACY>",
+          "K08",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          64,
+          59,
+          72,
+          55,
+          217,
+          203,
+          195,
+          198,
+          199,
+          216,
+          201,
+          198,
+          202,
+          223,
+          200,
+          216,
+          209,
+          203,
+          216,
+          196,
+          224,
+          72,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          55
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 22,
+        "key_position": 3,
+        "value_position": 4,
+        "answer_prediction_position": 23,
+        "answer_id": 55,
+        "human_readable": "<KEY_LOOKUP> K00 V27 K08 V23 T217 T203 T195 T198 T199 T216 T201 T198 T202 T223 T200 T216 T209 T203 T216 T196 <QUERY_LEGACY> K08 <ANSWER_LEGACY> -> V23"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K01",
+          "V03",
+          "K09",
+          "V11",
+          "T202",
+          "T210",
+          "T209",
+          "T196",
+          "T198",
+          "T195",
+          "T198",
+          "T221",
+          "T213",
+          "T213",
+          "T220",
+          "T202",
+          "T200",
+          "T197",
+          "T212",
+          "T195",
+          "T209",
+          "T215",
+          "T203",
+          "T196",
+          "T199",
+          "T211",
+          "T223",
+          "T215",
+          "T219",
+          "T194",
+          "T222",
+          "T218",
+          "T197",
+          "T214",
+          "T200",
+          "T197",
+          "<QUERY_LEGACY>",
+          "K01",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          65,
+          35,
+          73,
+          43,
+          202,
+          210,
+          209,
+          196,
+          198,
+          195,
+          198,
+          221,
+          213,
+          213,
+          220,
+          202,
+          200,
+          197,
+          212,
+          195,
+          209,
+          215,
+          203,
+          196,
+          199,
+          211,
+          223,
+          215,
+          219,
+          194,
+          222,
+          218,
+          197,
+          214,
+          200,
+          197,
+          224,
+          65,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          35
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 38,
+        "key_position": 1,
+        "value_position": 2,
+        "answer_prediction_position": 39,
+        "answer_id": 35,
+        "human_readable": "<KEY_LOOKUP> K01 V03 K09 V11 T202 T210 T209 T196 T198 T195 T198 T221 T213 T213 T220 T202 T200 T197 T212 T195 T209 T215 T203 T196 T199 T211 T223 T215 T219 T194 T222 T218 T197 T214 T200 T197 <QUERY_LEGACY> K01 <ANSWER_LEGACY> -> V03"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K04",
+          "V06",
+          "K09",
+          "V27",
+          "K12",
+          "V28",
+          "K15",
+          "V02",
+          "<QUERY_LEGACY>",
+          "K09",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          68,
+          38,
+          73,
+          59,
+          76,
+          60,
+          79,
+          34,
+          224,
+          73,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          59
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 10,
+        "key_position": 3,
+        "value_position": 4,
+        "answer_prediction_position": 11,
+        "answer_id": 59,
+        "human_readable": "<KEY_LOOKUP> K04 V06 K09 V27 K12 V28 K15 V02 <QUERY_LEGACY> K09 <ANSWER_LEGACY> -> V27"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K00",
+          "V08",
+          "K01",
+          "V01",
+          "K12",
+          "V21",
+          "K14",
+          "V07",
+          "T208",
+          "T221",
+          "T213",
+          "T216",
+          "T197",
+          "T194",
+          "T197",
+          "T205",
+          "T217",
+          "T204",
+          "T217",
+          "T208",
+          "T218",
+          "T212",
+          "T217",
+          "T214",
+          "<QUERY_LEGACY>",
+          "K14",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          64,
+          40,
+          65,
+          33,
+          76,
+          53,
+          78,
+          39,
+          208,
+          221,
+          213,
+          216,
+          197,
+          194,
+          197,
+          205,
+          217,
+          204,
+          217,
+          208,
+          218,
+          212,
+          217,
+          214,
+          224,
+          78,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          39
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 26,
+        "key_position": 7,
+        "value_position": 8,
+        "answer_prediction_position": 27,
+        "answer_id": 39,
+        "human_readable": "<KEY_LOOKUP> K00 V08 K01 V01 K12 V21 K14 V07 T208 T221 T213 T216 T197 T194 T197 T205 T217 T204 T217 T208 T218 T212 T217 T214 <QUERY_LEGACY> K14 <ANSWER_LEGACY> -> V07"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K01",
+          "V12",
+          "K02",
+          "V03",
+          "K08",
+          "V14",
+          "K14",
+          "V19",
+          "T214",
+          "T204",
+          "T205",
+          "T216",
+          "T216",
+          "T206",
+          "T195",
+          "T221",
+          "T195",
+          "T198",
+          "T193",
+          "T193",
+          "T199",
+          "T214",
+          "T208",
+          "T206",
+          "T200",
+          "T220",
+          "T217",
+          "T201",
+          "T207",
+          "T192",
+          "T198",
+          "T206",
+          "T199",
+          "T218",
+          "T204",
+          "T216",
+          "T219",
+          "T198",
+          "T192",
+          "T203",
+          "<QUERY_LEGACY>",
+          "K02",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          65,
+          44,
+          66,
+          35,
+          72,
+          46,
+          78,
+          51,
+          214,
+          204,
+          205,
+          216,
+          216,
+          206,
+          195,
+          221,
+          195,
+          198,
+          193,
+          193,
+          199,
+          214,
+          208,
+          206,
+          200,
+          220,
+          217,
+          201,
+          207,
+          192,
+          198,
+          206,
+          199,
+          218,
+          204,
+          216,
+          219,
+          198,
+          192,
+          203,
+          224,
+          66,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          35
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 42,
+        "key_position": 3,
+        "value_position": 4,
+        "answer_prediction_position": 43,
+        "answer_id": 35,
+        "human_readable": "<KEY_LOOKUP> K01 V12 K02 V03 K08 V14 K14 V19 T214 T204 T205 T216 T216 T206 T195 T221 T195 T198 T193 T193 T199 T214 T208 T206 T200 T220 T217 T201 T207 T192 T198 T206 T199 T218 T204 T216 T219 T198 T192 T203 <QUERY_LEGACY> K02 <ANSWER_LEGACY> -> V03"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K12",
+          "V09",
+          "K01",
+          "V22",
+          "K05",
+          "V07",
+          "K13",
+          "V06",
+          "K04",
+          "V29",
+          "K08",
+          "V01",
+          "K02",
+          "V02",
+          "K10",
+          "V08",
+          "<QUERY_LEGACY>",
+          "K10",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          76,
+          41,
+          65,
+          54,
+          69,
+          39,
+          77,
+          38,
+          68,
+          61,
+          72,
+          33,
+          66,
+          34,
+          74,
+          40,
+          224,
+          74,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          40
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 18,
+        "key_position": 15,
+        "value_position": 16,
+        "answer_prediction_position": 19,
+        "answer_id": 40,
+        "human_readable": "<KEY_LOOKUP> K12 V09 K01 V22 K05 V07 K13 V06 K04 V29 K08 V01 K02 V02 K10 V08 <QUERY_LEGACY> K10 <ANSWER_LEGACY> -> V08"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K08",
+          "V20",
+          "K13",
+          "V07",
+          "K10",
+          "V00",
+          "K12",
+          "V23",
+          "K01",
+          "V06",
+          "K07",
+          "V15",
+          "K05",
+          "V31",
+          "K02",
+          "V04",
+          "T220",
+          "T211",
+          "T222",
+          "T220",
+          "T211",
+          "T223",
+          "T219",
+          "T219",
+          "T196",
+          "T205",
+          "T201",
+          "T193",
+          "T198",
+          "T197",
+          "T206",
+          "T204",
+          "<QUERY_LEGACY>",
+          "K01",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          72,
+          52,
+          77,
+          39,
+          74,
+          32,
+          76,
+          55,
+          65,
+          38,
+          71,
+          47,
+          69,
+          63,
+          66,
+          36,
+          220,
+          211,
+          222,
+          220,
+          211,
+          223,
+          219,
+          219,
+          196,
+          205,
+          201,
+          193,
+          198,
+          197,
+          206,
+          204,
+          224,
+          65,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          38
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 34,
+        "key_position": 9,
+        "value_position": 10,
+        "answer_prediction_position": 35,
+        "answer_id": 38,
+        "human_readable": "<KEY_LOOKUP> K08 V20 K13 V07 K10 V00 K12 V23 K01 V06 K07 V15 K05 V31 K02 V04 T220 T211 T222 T220 T211 T223 T219 T219 T196 T205 T201 T193 T198 T197 T206 T204 <QUERY_LEGACY> K01 <ANSWER_LEGACY> -> V06"
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "K06",
+          "V17",
+          "K09",
+          "V15",
+          "K12",
+          "V04",
+          "K11",
+          "V03",
+          "K08",
+          "V25",
+          "K00",
+          "V10",
+          "K04",
+          "V11",
+          "K02",
+          "V26",
+          "K07",
+          "V27",
+          "K03",
+          "V28",
+          "K15",
+          "V12",
+          "K13",
+          "V14",
+          "K10",
+          "V24",
+          "K01",
+          "V09",
+          "K14",
+          "V06",
+          "K05",
+          "V07",
+          "T203",
+          "T215",
+          "T211",
+          "T219",
+          "T207",
+          "T210",
+          "T195",
+          "T203",
+          "T211",
+          "T200",
+          "T201",
+          "T205",
+          "T200",
+          "T203",
+          "T204",
+          "T208",
+          "T223",
+          "T216",
+          "T203",
+          "T208",
+          "T198",
+          "T215",
+          "T200",
+          "T198",
+          "T219",
+          "T211",
+          "T208",
+          "T198",
+          "T201",
+          "T217",
+          "T195",
+          "T216",
+          "<QUERY_LEGACY>",
+          "K14",
+          "<ANSWER_LEGACY>"
+        ],
+        "token_ids": [
+          2,
+          70,
+          49,
+          73,
+          47,
+          76,
+          36,
+          75,
+          35,
+          72,
+          57,
+          64,
+          42,
+          68,
+          43,
+          66,
+          58,
+          71,
+          59,
+          67,
+          60,
+          79,
+          44,
+          77,
+          46,
+          74,
+          56,
+          65,
+          41,
+          78,
+          38,
+          69,
+          39,
+          203,
+          215,
+          211,
+          219,
+          207,
+          210,
+          195,
+          203,
+          211,
+          200,
+          201,
+          205,
+          200,
+          203,
+          204,
+          208,
+          223,
+          216,
+          203,
+          208,
+          198,
+          215,
+          200,
+          198,
+          219,
+          211,
+          208,
+          198,
+          201,
+          217,
+          195,
+          216,
+          224,
+          78,
+          225
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          38
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "query_position": 66,
+        "key_position": 29,
+        "value_position": 30,
+        "answer_prediction_position": 67,
+        "answer_id": 38,
+        "human_readable": "<KEY_LOOKUP> K06 V17 K09 V15 K12 V04 K11 V03 K08 V25 K00 V10 K04 V11 K02 V26 K07 V27 K03 V28 K15 V12 K13 V14 K10 V24 K01 V09 K14 V06 K05 V07 T203 T215 T211 T219 T207 T210 T195 T203 T211 T200 T201 T205 T200 T203 T204 T208 T223 T216 T203 T208 T198 T215 T200 T198 T219 T211 T208 T198 T201 T217 T195 T216 <QUERY_LEGACY> K14 <ANSWER_LEGACY> -> V06"
+      }
+    ],
+    "full_scan": {
+      "examples_scanned": 15000,
+      "causal_failures": 0,
+      "ambiguity_count": 0,
+      "answer_leakage_in_query_suffix": 0,
+      "chance_by_pair_count": {
+        "1": {
+          "actual_unique_candidate_values": 1,
+          "candidate_choice_accuracy": 1.0,
+          "full_value_vocabulary_accuracy": 0.03125
+        },
+        "2": {
+          "actual_unique_candidate_values": 2,
+          "candidate_choice_accuracy": 0.5,
+          "full_value_vocabulary_accuracy": 0.03125
+        },
+        "4": {
+          "actual_unique_candidate_values": 4,
+          "candidate_choice_accuracy": 0.25,
+          "full_value_vocabulary_accuracy": 0.03125
+        },
+        "8": {
+          "actual_unique_candidate_values": 8,
+          "candidate_choice_accuracy": 0.125,
+          "full_value_vocabulary_accuracy": 0.03125
+        },
+        "16": {
+          "actual_unique_candidate_values": 16,
+          "candidate_choice_accuracy": 0.0625,
+          "full_value_vocabulary_accuracy": 0.03125
+        }
+      }
+    },
+    "training_distribution": {
+      "custom_current": {
+        "total_updates": 8000,
+        "total_examples": 128000,
+        "key_lookup_examples": 21344,
+        "key_lookup_update_equivalents": 1334,
+        "key_lookup_percent": 16.675,
+        "cell_update_equivalents": {
+          "key_lookup:pairs_16_long": 80,
+          "key_lookup:pairs_16_medium": 86,
+          "key_lookup:pairs_16_short": 106,
+          "key_lookup:pairs_2_long": 94,
+          "key_lookup:pairs_2_medium": 118,
+          "key_lookup:pairs_2_short": 172,
+          "key_lookup:pairs_4_long": 108,
+          "key_lookup:pairs_4_medium": 116,
+          "key_lookup:pairs_4_short": 138,
+          "key_lookup:pairs_8_long": 104,
+          "key_lookup:pairs_8_medium": 111,
+          "key_lookup:pairs_8_short": 101
+        },
+        "minimum_updates_in_one_cell": 80,
+        "maximum_updates_in_one_cell": 172
+      },
+      "custom_depth_init": {
+        "total_updates": 8000,
+        "total_examples": 128000,
+        "key_lookup_examples": 21344,
+        "key_lookup_update_equivalents": 1334,
+        "key_lookup_percent": 16.675,
+        "cell_update_equivalents": {
+          "key_lookup:pairs_16_long": 80,
+          "key_lookup:pairs_16_medium": 86,
+          "key_lookup:pairs_16_short": 106,
+          "key_lookup:pairs_2_long": 94,
+          "key_lookup:pairs_2_medium": 118,
+          "key_lookup:pairs_2_short": 172,
+          "key_lookup:pairs_4_long": 108,
+          "key_lookup:pairs_4_medium": 116,
+          "key_lookup:pairs_4_short": 138,
+          "key_lookup:pairs_8_long": 104,
+          "key_lookup:pairs_8_medium": 111,
+          "key_lookup:pairs_8_short": 101
+        },
+        "minimum_updates_in_one_cell": 80,
+        "maximum_updates_in_one_cell": 172
+      },
+      "reference_mha": {
+        "total_updates": 8000,
+        "total_examples": 128000,
+        "key_lookup_examples": 21344,
+        "key_lookup_update_equivalents": 1334,
+        "key_lookup_percent": 16.675,
+        "cell_update_equivalents": {
+          "key_lookup:pairs_16_long": 80,
+          "key_lookup:pairs_16_medium": 86,
+          "key_lookup:pairs_16_short": 106,
+          "key_lookup:pairs_2_long": 94,
+          "key_lookup:pairs_2_medium": 118,
+          "key_lookup:pairs_2_short": 172,
+          "key_lookup:pairs_4_long": 108,
+          "key_lookup:pairs_4_medium": 116,
+          "key_lookup:pairs_4_short": 138,
+          "key_lookup:pairs_8_long": 104,
+          "key_lookup:pairs_8_medium": 111,
+          "key_lookup:pairs_8_short": 101
+        },
+        "minimum_updates_in_one_cell": 80,
+        "maximum_updates_in_one_cell": 172
+      }
+    }
+  },
+  "loss_supervision": {
+    "old_v2_v4_actual_training_supervision": "answer-only; only final answer position is active and all other targets are -100",
+    "structural_loss_dominated_old_run": false,
+    "initial_reference_gradient_comparison": {
+      "answer_only-1x": {
+        "active_target_tokens": 16,
+        "answer_target_tokens": 16,
+        "total_loss": 5.562578201293945,
+        "answer_token_loss": 5.562578201293945,
+        "non_answer_loss": null,
+        "total_gradient_l2": 49.97967415263796,
+        "answer_gradient_l2": 49.97967415263796,
+        "non_answer_gradient_l2": null
+      },
+      "all_token-1x": {
+        "active_target_tokens": 224,
+        "answer_target_tokens": 16,
+        "total_loss": 5.602324485778809,
+        "answer_token_loss": 5.562578201293945,
+        "non_answer_loss": 5.605381965637207,
+        "total_gradient_l2": 36.40959190477948,
+        "answer_gradient_l2": 49.97967415263796,
+        "non_answer_gradient_l2": 38.586083749492495
+      },
+      "all_token-4x": {
+        "active_target_tokens": 224,
+        "answer_target_tokens": 16,
+        "total_loss": 5.595310211181641,
+        "answer_token_loss": 5.562578201293945,
+        "non_answer_loss": 5.605381965637207,
+        "total_gradient_l2": 32.98456225490708,
+        "answer_gradient_l2": 49.97967415263796,
+        "non_answer_gradient_l2": 38.586083749492495
+      },
+      "all_token-16x": {
+        "active_target_tokens": 224,
+        "answer_target_tokens": 16,
+        "total_loss": 5.581766128540039,
+        "answer_token_loss": 5.562578201293945,
+        "non_answer_loss": 5.605381965637207,
+        "total_gradient_l2": 34.17885147796692,
+        "answer_gradient_l2": 49.97967415263796,
+        "non_answer_gradient_l2": 38.586083749492495
+      }
+    },
+    "interpretation": "all-token is a requested counterfactual; it was not the cause of the old run"
+  },
+  "benchmark_v3": {
+    "examples": [
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V00",
+          "<QUERY>",
+          "K00",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          64,
+          229,
+          32,
+          230,
+          64,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          32
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 32,
+        "metadata": {
+          "difficulty": "level_0_pairs_1",
+          "level": 0,
+          "pairs": 1,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              64,
+              32
+            ]
+          ],
+          "selected_pair_index": 0,
+          "all_key_positions": [
+            3
+          ],
+          "all_value_positions": [
+            5
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ]
+          ],
+          "correct_key_position": 3,
+          "correct_value_position": 5,
+          "query_marker_position": 6,
+          "query_key_position": 7,
+          "answer_position": 8,
+          "candidate_values": [
+            32
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K00 <VALUE> V00 <QUERY> K00 <ANSWER> -> V00"
+        },
+        "causal": {
+          "answer_prediction_position": 8,
+          "required_context_positions": {
+            "correct_key": 3,
+            "correct_value": 5,
+            "query_marker": 6,
+            "query_key": 7
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K13",
+          "<VALUE>",
+          "V25",
+          "<QUERY>",
+          "K13",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          77,
+          229,
+          57,
+          230,
+          77,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          57
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 57,
+        "metadata": {
+          "difficulty": "level_1_pairs_1",
+          "level": 1,
+          "pairs": 1,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              77,
+              57
+            ]
+          ],
+          "selected_pair_index": 0,
+          "all_key_positions": [
+            3
+          ],
+          "all_value_positions": [
+            5
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ]
+          ],
+          "correct_key_position": 3,
+          "correct_value_position": 5,
+          "query_marker_position": 6,
+          "query_key_position": 7,
+          "answer_position": 8,
+          "candidate_values": [
+            57
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K13 <VALUE> V25 <QUERY> K13 <ANSWER> -> V25"
+        },
+        "causal": {
+          "answer_prediction_position": 8,
+          "required_context_positions": {
+            "correct_key": 3,
+            "correct_value": 5,
+            "query_marker": 6,
+            "query_key": 7
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V12",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V31",
+          "<QUERY>",
+          "K06",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          72,
+          229,
+          44,
+          227,
+          228,
+          70,
+          229,
+          63,
+          230,
+          70,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          63
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 63,
+        "metadata": {
+          "difficulty": "level_2_pairs_2",
+          "level": 2,
+          "pairs": 2,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              72,
+              44
+            ],
+            [
+              70,
+              63
+            ]
+          ],
+          "selected_pair_index": 1,
+          "all_key_positions": [
+            3,
+            8
+          ],
+          "all_value_positions": [
+            5,
+            10
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "correct_key_position": 8,
+          "correct_value_position": 10,
+          "query_marker_position": 11,
+          "query_key_position": 12,
+          "answer_position": 13,
+          "candidate_values": [
+            44,
+            63
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K08 <VALUE> V12 <PAIR> <KEY> K06 <VALUE> V31 <QUERY> K06 <ANSWER> -> V31"
+        },
+        "causal": {
+          "answer_prediction_position": 13,
+          "required_context_positions": {
+            "correct_key": 8,
+            "correct_value": 10,
+            "query_marker": 11,
+            "query_key": 12
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K02",
+          "<VALUE>",
+          "V12",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V02",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V28",
+          "<PAIR>",
+          "<KEY>",
+          "K09",
+          "<VALUE>",
+          "V14",
+          "<QUERY>",
+          "K00",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          66,
+          229,
+          44,
+          227,
+          228,
+          70,
+          229,
+          34,
+          227,
+          228,
+          64,
+          229,
+          60,
+          227,
+          228,
+          73,
+          229,
+          46,
+          230,
+          64,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          60
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 60,
+        "metadata": {
+          "difficulty": "level_3_pairs_4",
+          "level": 3,
+          "pairs": 4,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              66,
+              44
+            ],
+            [
+              70,
+              34
+            ],
+            [
+              64,
+              60
+            ],
+            [
+              73,
+              46
+            ]
+          ],
+          "selected_pair_index": 2,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ]
+          ],
+          "correct_key_position": 13,
+          "correct_value_position": 15,
+          "query_marker_position": 21,
+          "query_key_position": 22,
+          "answer_position": 23,
+          "candidate_values": [
+            44,
+            34,
+            60,
+            46
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K02 <VALUE> V12 <PAIR> <KEY> K06 <VALUE> V02 <PAIR> <KEY> K00 <VALUE> V28 <PAIR> <KEY> K09 <VALUE> V14 <QUERY> K00 <ANSWER> -> V28"
+        },
+        "causal": {
+          "answer_prediction_position": 23,
+          "required_context_positions": {
+            "correct_key": 13,
+            "correct_value": 15,
+            "query_marker": 21,
+            "query_key": 22
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K11",
+          "<VALUE>",
+          "V14",
+          "<PAIR>",
+          "<KEY>",
+          "K01",
+          "<VALUE>",
+          "V12",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V09",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V11",
+          "<PAIR>",
+          "<KEY>",
+          "K07",
+          "<VALUE>",
+          "V07",
+          "<PAIR>",
+          "<KEY>",
+          "K09",
+          "<VALUE>",
+          "V06",
+          "<PAIR>",
+          "<KEY>",
+          "K05",
+          "<VALUE>",
+          "V08",
+          "<PAIR>",
+          "<KEY>",
+          "K04",
+          "<VALUE>",
+          "V01",
+          "<QUERY>",
+          "K05",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          75,
+          229,
+          46,
+          227,
+          228,
+          65,
+          229,
+          44,
+          227,
+          228,
+          70,
+          229,
+          41,
+          227,
+          228,
+          72,
+          229,
+          43,
+          227,
+          228,
+          71,
+          229,
+          39,
+          227,
+          228,
+          73,
+          229,
+          38,
+          227,
+          228,
+          69,
+          229,
+          40,
+          227,
+          228,
+          68,
+          229,
+          33,
+          230,
+          69,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          40
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 40,
+        "metadata": {
+          "difficulty": "level_4_pairs_8",
+          "level": 4,
+          "pairs": 8,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              75,
+              46
+            ],
+            [
+              65,
+              44
+            ],
+            [
+              70,
+              41
+            ],
+            [
+              72,
+              43
+            ],
+            [
+              71,
+              39
+            ],
+            [
+              73,
+              38
+            ],
+            [
+              69,
+              40
+            ],
+            [
+              68,
+              33
+            ]
+          ],
+          "selected_pair_index": 6,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18,
+            23,
+            28,
+            33,
+            38
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              21,
+              26
+            ],
+            [
+              26,
+              31
+            ],
+            [
+              31,
+              36
+            ],
+            [
+              36,
+              41
+            ]
+          ],
+          "correct_key_position": 33,
+          "correct_value_position": 35,
+          "query_marker_position": 41,
+          "query_key_position": 42,
+          "answer_position": 43,
+          "candidate_values": [
+            46,
+            44,
+            41,
+            43,
+            39,
+            38,
+            40,
+            33
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K11 <VALUE> V14 <PAIR> <KEY> K01 <VALUE> V12 <PAIR> <KEY> K06 <VALUE> V09 <PAIR> <KEY> K08 <VALUE> V11 <PAIR> <KEY> K07 <VALUE> V07 <PAIR> <KEY> K09 <VALUE> V06 <PAIR> <KEY> K05 <VALUE> V08 <PAIR> <KEY> K04 <VALUE> V01 <QUERY> K05 <ANSWER> -> V08"
+        },
+        "causal": {
+          "answer_prediction_position": 43,
+          "required_context_positions": {
+            "correct_key": 33,
+            "correct_value": 35,
+            "query_marker": 41,
+            "query_key": 42
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K10",
+          "<VALUE>",
+          "V04",
+          "<PAIR>",
+          "<KEY>",
+          "K02",
+          "<VALUE>",
+          "V23",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V08",
+          "<PAIR>",
+          "<KEY>",
+          "K11",
+          "<VALUE>",
+          "V10",
+          "<PAIR>",
+          "<KEY>",
+          "K13",
+          "<VALUE>",
+          "V07",
+          "<PAIR>",
+          "<KEY>",
+          "K04",
+          "<VALUE>",
+          "V19",
+          "<PAIR>",
+          "<KEY>",
+          "K12",
+          "<VALUE>",
+          "V09",
+          "<PAIR>",
+          "<KEY>",
+          "K03",
+          "<VALUE>",
+          "V16",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V06",
+          "<PAIR>",
+          "<KEY>",
+          "K01",
+          "<VALUE>",
+          "V27",
+          "<PAIR>",
+          "<KEY>",
+          "K07",
+          "<VALUE>",
+          "V12",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V21",
+          "<PAIR>",
+          "<KEY>",
+          "K09",
+          "<VALUE>",
+          "V25",
+          "<PAIR>",
+          "<KEY>",
+          "K14",
+          "<VALUE>",
+          "V26",
+          "<PAIR>",
+          "<KEY>",
+          "K15",
+          "<VALUE>",
+          "V14",
+          "<PAIR>",
+          "<KEY>",
+          "K05",
+          "<VALUE>",
+          "V03",
+          "<QUERY>",
+          "K05",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          74,
+          229,
+          36,
+          227,
+          228,
+          66,
+          229,
+          55,
+          227,
+          228,
+          72,
+          229,
+          40,
+          227,
+          228,
+          75,
+          229,
+          42,
+          227,
+          228,
+          77,
+          229,
+          39,
+          227,
+          228,
+          68,
+          229,
+          51,
+          227,
+          228,
+          76,
+          229,
+          41,
+          227,
+          228,
+          67,
+          229,
+          48,
+          227,
+          228,
+          70,
+          229,
+          38,
+          227,
+          228,
+          65,
+          229,
+          59,
+          227,
+          228,
+          71,
+          229,
+          44,
+          227,
+          228,
+          64,
+          229,
+          53,
+          227,
+          228,
+          73,
+          229,
+          57,
+          227,
+          228,
+          78,
+          229,
+          58,
+          227,
+          228,
+          79,
+          229,
+          46,
+          227,
+          228,
+          69,
+          229,
+          35,
+          230,
+          69,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          35
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 35,
+        "metadata": {
+          "difficulty": "level_5_pairs_16",
+          "level": 5,
+          "pairs": 16,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              74,
+              36
+            ],
+            [
+              66,
+              55
+            ],
+            [
+              72,
+              40
+            ],
+            [
+              75,
+              42
+            ],
+            [
+              77,
+              39
+            ],
+            [
+              68,
+              51
+            ],
+            [
+              76,
+              41
+            ],
+            [
+              67,
+              48
+            ],
+            [
+              70,
+              38
+            ],
+            [
+              65,
+              59
+            ],
+            [
+              71,
+              44
+            ],
+            [
+              64,
+              53
+            ],
+            [
+              73,
+              57
+            ],
+            [
+              78,
+              58
+            ],
+            [
+              79,
+              46
+            ],
+            [
+              69,
+              35
+            ]
+          ],
+          "selected_pair_index": 15,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18,
+            23,
+            28,
+            33,
+            38,
+            43,
+            48,
+            53,
+            58,
+            63,
+            68,
+            73,
+            78
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              21,
+              26
+            ],
+            [
+              26,
+              31
+            ],
+            [
+              31,
+              36
+            ],
+            [
+              36,
+              41
+            ],
+            [
+              41,
+              46
+            ],
+            [
+              46,
+              51
+            ],
+            [
+              51,
+              56
+            ],
+            [
+              56,
+              61
+            ],
+            [
+              61,
+              66
+            ],
+            [
+              66,
+              71
+            ],
+            [
+              71,
+              76
+            ],
+            [
+              76,
+              81
+            ]
+          ],
+          "correct_key_position": 78,
+          "correct_value_position": 80,
+          "query_marker_position": 81,
+          "query_key_position": 82,
+          "answer_position": 83,
+          "candidate_values": [
+            36,
+            55,
+            40,
+            42,
+            39,
+            51,
+            41,
+            48,
+            38,
+            59,
+            44,
+            53,
+            57,
+            58,
+            46,
+            35
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K10 <VALUE> V04 <PAIR> <KEY> K02 <VALUE> V23 <PAIR> <KEY> K08 <VALUE> V08 <PAIR> <KEY> K11 <VALUE> V10 <PAIR> <KEY> K13 <VALUE> V07 <PAIR> <KEY> K04 <VALUE> V19 <PAIR> <KEY> K12 <VALUE> V09 <PAIR> <KEY> K03 <VALUE> V16 <PAIR> <KEY> K06 <VALUE> V06 <PAIR> <KEY> K01 <VALUE> V27 <PAIR> <KEY> K07 <VALUE> V12 <PAIR> <KEY> K00 <VALUE> V21 <PAIR> <KEY> K09 <VALUE> V25 <PAIR> <KEY> K14 <VALUE> V26 <PAIR> <KEY> K15 <VALUE> V14 <PAIR> <KEY> K05 <VALUE> V03 <QUERY> K05 <ANSWER> -> V03"
+        },
+        "causal": {
+          "answer_prediction_position": 83,
+          "required_context_positions": {
+            "correct_key": 78,
+            "correct_value": 80,
+            "query_marker": 81,
+            "query_key": 82
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V00",
+          "<QUERY>",
+          "K00",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          64,
+          229,
+          32,
+          230,
+          64,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          32
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 32,
+        "metadata": {
+          "difficulty": "level_0_pairs_1",
+          "level": 0,
+          "pairs": 1,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              64,
+              32
+            ]
+          ],
+          "selected_pair_index": 0,
+          "all_key_positions": [
+            3
+          ],
+          "all_value_positions": [
+            5
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ]
+          ],
+          "correct_key_position": 3,
+          "correct_value_position": 5,
+          "query_marker_position": 6,
+          "query_key_position": 7,
+          "answer_position": 8,
+          "candidate_values": [
+            32
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K00 <VALUE> V00 <QUERY> K00 <ANSWER> -> V00"
+        },
+        "causal": {
+          "answer_prediction_position": 8,
+          "required_context_positions": {
+            "correct_key": 3,
+            "correct_value": 5,
+            "query_marker": 6,
+            "query_key": 7
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K15",
+          "<VALUE>",
+          "V28",
+          "<QUERY>",
+          "K15",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          79,
+          229,
+          60,
+          230,
+          79,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          60
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 60,
+        "metadata": {
+          "difficulty": "level_1_pairs_1",
+          "level": 1,
+          "pairs": 1,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              79,
+              60
+            ]
+          ],
+          "selected_pair_index": 0,
+          "all_key_positions": [
+            3
+          ],
+          "all_value_positions": [
+            5
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ]
+          ],
+          "correct_key_position": 3,
+          "correct_value_position": 5,
+          "query_marker_position": 6,
+          "query_key_position": 7,
+          "answer_position": 8,
+          "candidate_values": [
+            60
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K15 <VALUE> V28 <QUERY> K15 <ANSWER> -> V28"
+        },
+        "causal": {
+          "answer_prediction_position": 8,
+          "required_context_positions": {
+            "correct_key": 3,
+            "correct_value": 5,
+            "query_marker": 6,
+            "query_key": 7
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K07",
+          "<VALUE>",
+          "V00",
+          "<PAIR>",
+          "<KEY>",
+          "K13",
+          "<VALUE>",
+          "V31",
+          "<QUERY>",
+          "K07",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          71,
+          229,
+          32,
+          227,
+          228,
+          77,
+          229,
+          63,
+          230,
+          71,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          32
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 32,
+        "metadata": {
+          "difficulty": "level_2_pairs_2",
+          "level": 2,
+          "pairs": 2,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              71,
+              32
+            ],
+            [
+              77,
+              63
+            ]
+          ],
+          "selected_pair_index": 0,
+          "all_key_positions": [
+            3,
+            8
+          ],
+          "all_value_positions": [
+            5,
+            10
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "correct_key_position": 3,
+          "correct_value_position": 5,
+          "query_marker_position": 11,
+          "query_key_position": 12,
+          "answer_position": 13,
+          "candidate_values": [
+            32,
+            63
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K07 <VALUE> V00 <PAIR> <KEY> K13 <VALUE> V31 <QUERY> K07 <ANSWER> -> V00"
+        },
+        "causal": {
+          "answer_prediction_position": 13,
+          "required_context_positions": {
+            "correct_key": 3,
+            "correct_value": 5,
+            "query_marker": 11,
+            "query_key": 12
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V15",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V29",
+          "<PAIR>",
+          "<KEY>",
+          "K11",
+          "<VALUE>",
+          "V17",
+          "<PAIR>",
+          "<KEY>",
+          "K15",
+          "<VALUE>",
+          "V11",
+          "<QUERY>",
+          "K11",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          72,
+          229,
+          47,
+          227,
+          228,
+          64,
+          229,
+          61,
+          227,
+          228,
+          75,
+          229,
+          49,
+          227,
+          228,
+          79,
+          229,
+          43,
+          230,
+          75,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          49
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 49,
+        "metadata": {
+          "difficulty": "level_3_pairs_4",
+          "level": 3,
+          "pairs": 4,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              72,
+              47
+            ],
+            [
+              64,
+              61
+            ],
+            [
+              75,
+              49
+            ],
+            [
+              79,
+              43
+            ]
+          ],
+          "selected_pair_index": 2,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ]
+          ],
+          "correct_key_position": 13,
+          "correct_value_position": 15,
+          "query_marker_position": 21,
+          "query_key_position": 22,
+          "answer_position": 23,
+          "candidate_values": [
+            47,
+            61,
+            49,
+            43
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K08 <VALUE> V15 <PAIR> <KEY> K00 <VALUE> V29 <PAIR> <KEY> K11 <VALUE> V17 <PAIR> <KEY> K15 <VALUE> V11 <QUERY> K11 <ANSWER> -> V17"
+        },
+        "causal": {
+          "answer_prediction_position": 23,
+          "required_context_positions": {
+            "correct_key": 13,
+            "correct_value": 15,
+            "query_marker": 21,
+            "query_key": 22
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V02",
+          "<PAIR>",
+          "<KEY>",
+          "K07",
+          "<VALUE>",
+          "V07",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V10",
+          "<PAIR>",
+          "<KEY>",
+          "K11",
+          "<VALUE>",
+          "V27",
+          "<PAIR>",
+          "<KEY>",
+          "K14",
+          "<VALUE>",
+          "V01",
+          "<PAIR>",
+          "<KEY>",
+          "K13",
+          "<VALUE>",
+          "V00",
+          "<PAIR>",
+          "<KEY>",
+          "K05",
+          "<VALUE>",
+          "V03",
+          "<PAIR>",
+          "<KEY>",
+          "K12",
+          "<VALUE>",
+          "V08",
+          "<QUERY>",
+          "K12",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          70,
+          229,
+          34,
+          227,
+          228,
+          71,
+          229,
+          39,
+          227,
+          228,
+          72,
+          229,
+          42,
+          227,
+          228,
+          75,
+          229,
+          59,
+          227,
+          228,
+          78,
+          229,
+          33,
+          227,
+          228,
+          77,
+          229,
+          32,
+          227,
+          228,
+          69,
+          229,
+          35,
+          227,
+          228,
+          76,
+          229,
+          40,
+          230,
+          76,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          40
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 40,
+        "metadata": {
+          "difficulty": "level_4_pairs_8",
+          "level": 4,
+          "pairs": 8,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              70,
+              34
+            ],
+            [
+              71,
+              39
+            ],
+            [
+              72,
+              42
+            ],
+            [
+              75,
+              59
+            ],
+            [
+              78,
+              33
+            ],
+            [
+              77,
+              32
+            ],
+            [
+              69,
+              35
+            ],
+            [
+              76,
+              40
+            ]
+          ],
+          "selected_pair_index": 7,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18,
+            23,
+            28,
+            33,
+            38
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              21,
+              26
+            ],
+            [
+              26,
+              31
+            ],
+            [
+              31,
+              36
+            ],
+            [
+              36,
+              41
+            ]
+          ],
+          "correct_key_position": 38,
+          "correct_value_position": 40,
+          "query_marker_position": 41,
+          "query_key_position": 42,
+          "answer_position": 43,
+          "candidate_values": [
+            34,
+            39,
+            42,
+            59,
+            33,
+            32,
+            35,
+            40
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K06 <VALUE> V02 <PAIR> <KEY> K07 <VALUE> V07 <PAIR> <KEY> K08 <VALUE> V10 <PAIR> <KEY> K11 <VALUE> V27 <PAIR> <KEY> K14 <VALUE> V01 <PAIR> <KEY> K13 <VALUE> V00 <PAIR> <KEY> K05 <VALUE> V03 <PAIR> <KEY> K12 <VALUE> V08 <QUERY> K12 <ANSWER> -> V08"
+        },
+        "causal": {
+          "answer_prediction_position": 43,
+          "required_context_positions": {
+            "correct_key": 38,
+            "correct_value": 40,
+            "query_marker": 41,
+            "query_key": 42
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      },
+      {
+        "input_token_sequence": [
+          "<KEY_LOOKUP>",
+          "<PAIR>",
+          "<KEY>",
+          "K04",
+          "<VALUE>",
+          "V20",
+          "<PAIR>",
+          "<KEY>",
+          "K07",
+          "<VALUE>",
+          "V00",
+          "<PAIR>",
+          "<KEY>",
+          "K08",
+          "<VALUE>",
+          "V27",
+          "<PAIR>",
+          "<KEY>",
+          "K15",
+          "<VALUE>",
+          "V17",
+          "<PAIR>",
+          "<KEY>",
+          "K14",
+          "<VALUE>",
+          "V18",
+          "<PAIR>",
+          "<KEY>",
+          "K11",
+          "<VALUE>",
+          "V16",
+          "<PAIR>",
+          "<KEY>",
+          "K06",
+          "<VALUE>",
+          "V30",
+          "<PAIR>",
+          "<KEY>",
+          "K03",
+          "<VALUE>",
+          "V31",
+          "<PAIR>",
+          "<KEY>",
+          "K10",
+          "<VALUE>",
+          "V12",
+          "<PAIR>",
+          "<KEY>",
+          "K02",
+          "<VALUE>",
+          "V02",
+          "<PAIR>",
+          "<KEY>",
+          "K12",
+          "<VALUE>",
+          "V03",
+          "<PAIR>",
+          "<KEY>",
+          "K13",
+          "<VALUE>",
+          "V11",
+          "<PAIR>",
+          "<KEY>",
+          "K01",
+          "<VALUE>",
+          "V26",
+          "<PAIR>",
+          "<KEY>",
+          "K09",
+          "<VALUE>",
+          "V14",
+          "<PAIR>",
+          "<KEY>",
+          "K00",
+          "<VALUE>",
+          "V04",
+          "<PAIR>",
+          "<KEY>",
+          "K05",
+          "<VALUE>",
+          "V24",
+          "<QUERY>",
+          "K12",
+          "<ANSWER>"
+        ],
+        "token_ids": [
+          2,
+          227,
+          228,
+          68,
+          229,
+          52,
+          227,
+          228,
+          71,
+          229,
+          32,
+          227,
+          228,
+          72,
+          229,
+          59,
+          227,
+          228,
+          79,
+          229,
+          49,
+          227,
+          228,
+          78,
+          229,
+          50,
+          227,
+          228,
+          75,
+          229,
+          48,
+          227,
+          228,
+          70,
+          229,
+          62,
+          227,
+          228,
+          67,
+          229,
+          63,
+          227,
+          228,
+          74,
+          229,
+          44,
+          227,
+          228,
+          66,
+          229,
+          34,
+          227,
+          228,
+          76,
+          229,
+          35,
+          227,
+          228,
+          77,
+          229,
+          43,
+          227,
+          228,
+          65,
+          229,
+          58,
+          227,
+          228,
+          73,
+          229,
+          46,
+          227,
+          228,
+          64,
+          229,
+          36,
+          227,
+          228,
+          69,
+          229,
+          56,
+          230,
+          76,
+          231
+        ],
+        "target_sequence": [
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          -100,
+          35
+        ],
+        "loss_mask": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "answer_id": 35,
+        "metadata": {
+          "difficulty": "level_5_pairs_16",
+          "level": 5,
+          "pairs": 16,
+          "markers": true,
+          "mapping_split": "train",
+          "token_split": "shared",
+          "vocabulary_stage": "full",
+          "mapping": [
+            [
+              68,
+              52
+            ],
+            [
+              71,
+              32
+            ],
+            [
+              72,
+              59
+            ],
+            [
+              79,
+              49
+            ],
+            [
+              78,
+              50
+            ],
+            [
+              75,
+              48
+            ],
+            [
+              70,
+              62
+            ],
+            [
+              67,
+              63
+            ],
+            [
+              74,
+              44
+            ],
+            [
+              66,
+              34
+            ],
+            [
+              76,
+              35
+            ],
+            [
+              77,
+              43
+            ],
+            [
+              65,
+              58
+            ],
+            [
+              73,
+              46
+            ],
+            [
+              64,
+              36
+            ],
+            [
+              69,
+              56
+            ]
+          ],
+          "selected_pair_index": 10,
+          "all_key_positions": [
+            3,
+            8,
+            13,
+            18,
+            23,
+            28,
+            33,
+            38,
+            43,
+            48,
+            53,
+            58,
+            63,
+            68,
+            73,
+            78
+          ],
+          "all_value_positions": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80
+          ],
+          "pair_spans": [
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              21,
+              26
+            ],
+            [
+              26,
+              31
+            ],
+            [
+              31,
+              36
+            ],
+            [
+              36,
+              41
+            ],
+            [
+              41,
+              46
+            ],
+            [
+              46,
+              51
+            ],
+            [
+              51,
+              56
+            ],
+            [
+              56,
+              61
+            ],
+            [
+              61,
+              66
+            ],
+            [
+              66,
+              71
+            ],
+            [
+              71,
+              76
+            ],
+            [
+              76,
+              81
+            ]
+          ],
+          "correct_key_position": 53,
+          "correct_value_position": 55,
+          "query_marker_position": 81,
+          "query_key_position": 82,
+          "answer_position": 83,
+          "candidate_values": [
+            52,
+            32,
+            59,
+            49,
+            50,
+            48,
+            62,
+            63,
+            44,
+            34,
+            35,
+            43,
+            58,
+            46,
+            36,
+            56
+          ],
+          "human_readable": "<KEY_LOOKUP> <PAIR> <KEY> K04 <VALUE> V20 <PAIR> <KEY> K07 <VALUE> V00 <PAIR> <KEY> K08 <VALUE> V27 <PAIR> <KEY> K15 <VALUE> V17 <PAIR> <KEY> K14 <VALUE> V18 <PAIR> <KEY> K11 <VALUE> V16 <PAIR> <KEY> K06 <VALUE> V30 <PAIR> <KEY> K03 <VALUE> V31 <PAIR> <KEY> K10 <VALUE> V12 <PAIR> <KEY> K02 <VALUE> V02 <PAIR> <KEY> K12 <VALUE> V03 <PAIR> <KEY> K13 <VALUE> V11 <PAIR> <KEY> K01 <VALUE> V26 <PAIR> <KEY> K09 <VALUE> V14 <PAIR> <KEY> K00 <VALUE> V04 <PAIR> <KEY> K05 <VALUE> V24 <QUERY> K12 <ANSWER> -> V03"
+        },
+        "causal": {
+          "answer_prediction_position": 83,
+          "required_context_positions": {
+            "correct_key": 53,
+            "correct_value": 55,
+            "query_marker": 81,
+            "query_key": 82
+          },
+          "checks": {
+            "correct_key": true,
+            "correct_value": true,
+            "query_marker": true,
+            "query_key": true
+          },
+          "pass": true
+        },
+        "ambiguity": {
+          "issues": {
+            "duplicate_key": false,
+            "duplicate_value": false,
+            "duplicate_pair": false,
+            "multiple_answers": false,
+            "answer_mismatch": false
+          },
+          "ambiguous": false
+        }
+      }
+    ],
+    "scan": {
+      "examples": 10000,
+      "causal_failures": 0,
+      "ambiguity_count": 0,
+      "duplicate_exact_sequences": 2940,
+      "unique_mapping_sets": 7054
+    },
+    "markers": [
+      "<PAIR>",
+      "<KEY>",
+      "<VALUE>",
+      "<QUERY>",
+      "<ANSWER>"
+    ],
+    "curriculum_pairs": {
+      "0": 1,
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 8,
+      "5": 16
+    }
+  },
+  "numeric": {
+    "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+    "tokenizer_vocab_size": 4096,
+    "standalone_samples": [
+      {
+        "raw_text": "0",
+        "token_ids": [
+          22
+        ],
+        "token_count": 1,
+        "decoded": "0"
+      },
+      {
+        "raw_text": "1",
+        "token_ids": [
+          23
+        ],
+        "token_count": 1,
+        "decoded": "1"
+      },
+      {
+        "raw_text": "2",
+        "token_ids": [
+          24
+        ],
+        "token_count": 1,
+        "decoded": "2"
+      },
+      {
+        "raw_text": "3",
+        "token_ids": [
+          25
+        ],
+        "token_count": 1,
+        "decoded": "3"
+      },
+      {
+        "raw_text": "4",
+        "token_ids": [
+          26
+        ],
+        "token_count": 1,
+        "decoded": "4"
+      },
+      {
+        "raw_text": "5",
+        "token_ids": [
+          27
+        ],
+        "token_count": 1,
+        "decoded": "5"
+      },
+      {
+        "raw_text": "6",
+        "token_ids": [
+          28
+        ],
+        "token_count": 1,
+        "decoded": "6"
+      },
+      {
+        "raw_text": "7",
+        "token_ids": [
+          29
+        ],
+        "token_count": 1,
+        "decoded": "7"
+      },
+      {
+        "raw_text": "8",
+        "token_ids": [
+          30
+        ],
+        "token_count": 1,
+        "decoded": "8"
+      },
+      {
+        "raw_text": "9",
+        "token_ids": [
+          31
+        ],
+        "token_count": 1,
+        "decoded": "9"
+      },
+      {
+        "raw_text": "10",
+        "token_ids": [
+          887
+        ],
+        "token_count": 1,
+        "decoded": "10"
+      },
+      {
+        "raw_text": "11",
+        "token_ids": [
+          1564
+        ],
+        "token_count": 1,
+        "decoded": "11"
+      },
+      {
+        "raw_text": "12",
+        "token_ids": [
+          1150
+        ],
+        "token_count": 1,
+        "decoded": "12"
+      },
+      {
+        "raw_text": "20",
+        "token_ids": [
+          504
+        ],
+        "token_count": 1,
+        "decoded": "20"
+      },
+      {
+        "raw_text": "32",
+        "token_ids": [
+          25,
+          24
+        ],
+        "token_count": 2,
+        "decoded": "32"
+      },
+      {
+        "raw_text": "64",
+        "token_ids": [
+          28,
+          26
+        ],
+        "token_count": 2,
+        "decoded": "64"
+      },
+      {
+        "raw_text": "99",
+        "token_ids": [
+          31,
+          31
+        ],
+        "token_count": 2,
+        "decoded": "99"
+      },
+      {
+        "raw_text": "100",
+        "token_ids": [
+          1596
+        ],
+        "token_count": 1,
+        "decoded": "100"
+      },
+      {
+        "raw_text": "123",
+        "token_ids": [
+          1150,
+          25
+        ],
+        "token_count": 2,
+        "decoded": "123"
+      },
+      {
+        "raw_text": "2026",
+        "token_ids": [
+          1522,
+          28
+        ],
+        "token_count": 2,
+        "decoded": "2026"
+      },
+      {
+        "raw_text": "12,345",
+        "token_ids": [
+          1150,
+          18,
+          25,
+          26,
+          27
+        ],
+        "token_count": 5,
+        "decoded": "12,345"
+      },
+      {
+        "raw_text": "3.14",
+        "token_ids": [
+          25,
+          20,
+          1594
+        ],
+        "token_count": 3,
+        "decoded": "3.14"
+      },
+      {
+        "raw_text": "-7",
+        "token_ids": [
+          19,
+          29
+        ],
+        "token_count": 2,
+        "decoded": "-7"
+      },
+      {
+        "raw_text": "GPA 3.5",
+        "token_ids": [
+          45,
+          54,
+          39,
+          2011,
+          20,
+          27
+        ],
+        "token_count": 6,
+        "decoded": "GPA 3.5"
+      }
+    ],
+    "actual_numeric_pattern_samples": [
+      {
+        "raw_text": "0 1 2 3 4",
+        "source_numbers": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "token_ids": [
+          22,
+          984,
+          1477,
+          2011,
+          2214
+        ],
+        "target_text": "5",
+        "target_ids": [
+          27
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "1 3 5 7 9",
+        "source_numbers": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "token_ids": [
+          23,
+          2011,
+          3329,
+          227,
+          29,
+          227,
+          31
+        ],
+        "target_text": "11",
+        "target_ids": [
+          1564
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "2 5 8 11 14",
+        "source_numbers": [
+          2,
+          5,
+          8,
+          11,
+          14
+        ],
+        "token_ids": [
+          24,
+          3329,
+          227,
+          30,
+          984,
+          23,
+          984,
+          26
+        ],
+        "target_text": "17",
+        "target_ids": [
+          1595
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "3 7 11 15 19",
+        "source_numbers": [
+          3,
+          7,
+          11,
+          15,
+          19
+        ],
+        "token_ids": [
+          25,
+          227,
+          29,
+          984,
+          23,
+          984,
+          27,
+          227,
+          491
+        ],
+        "target_text": "23",
+        "target_ids": [
+          3370
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "4 5 6 7 8",
+        "source_numbers": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "token_ids": [
+          26,
+          3329,
+          227,
+          28,
+          227,
+          29,
+          227,
+          30
+        ],
+        "target_text": "9",
+        "target_ids": [
+          31
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "5 7 9 11 13",
+        "source_numbers": [
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "token_ids": [
+          27,
+          227,
+          29,
+          227,
+          31,
+          984,
+          23,
+          984,
+          25
+        ],
+        "target_text": "15",
+        "target_ids": [
+          1315
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "6 9 12 15 18",
+        "source_numbers": [
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "token_ids": [
+          28,
+          227,
+          31,
+          984,
+          24,
+          984,
+          27,
+          984,
+          30
+        ],
+        "target_text": "21",
+        "target_ids": [
+          2872
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "7 11 15 19 23",
+        "source_numbers": [
+          7,
+          11,
+          15,
+          19,
+          23
+        ],
+        "token_ids": [
+          29,
+          984,
+          23,
+          984,
+          27,
+          227,
+          491,
+          1477,
+          25
+        ],
+        "target_text": "27",
+        "target_ids": [
+          3530
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "8 9 10 11 12",
+        "source_numbers": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "token_ids": [
+          30,
+          227,
+          31,
+          227,
+          887,
+          984,
+          23,
+          984,
+          24
+        ],
+        "target_text": "13",
+        "target_ids": [
+          1854
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "9 11 13 15 17",
+        "source_numbers": [
+          9,
+          11,
+          13,
+          15,
+          17
+        ],
+        "token_ids": [
+          31,
+          984,
+          23,
+          984,
+          25,
+          984,
+          27,
+          984,
+          29
+        ],
+        "target_text": "19",
+        "target_ids": [
+          491
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "0 3 6 9 12",
+        "source_numbers": [
+          0,
+          3,
+          6,
+          9,
+          12
+        ],
+        "token_ids": [
+          22,
+          2011,
+          227,
+          28,
+          227,
+          31,
+          984,
+          24
+        ],
+        "target_text": "15",
+        "target_ids": [
+          1315
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "1 5 9 13 17",
+        "source_numbers": [
+          1,
+          5,
+          9,
+          13,
+          17
+        ],
+        "token_ids": [
+          23,
+          3329,
+          227,
+          31,
+          984,
+          25,
+          984,
+          29
+        ],
+        "target_text": "21",
+        "target_ids": [
+          2872
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "2 3 4 5 6",
+        "source_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "token_ids": [
+          24,
+          2011,
+          2214,
+          3329,
+          227,
+          28
+        ],
+        "target_text": "7",
+        "target_ids": [
+          29
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "3 5 7 9 11",
+        "source_numbers": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "token_ids": [
+          25,
+          3329,
+          227,
+          29,
+          227,
+          31,
+          984,
+          23
+        ],
+        "target_text": "13",
+        "target_ids": [
+          1854
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "4 7 10 13 16",
+        "source_numbers": [
+          4,
+          7,
+          10,
+          13,
+          16
+        ],
+        "token_ids": [
+          26,
+          227,
+          29,
+          227,
+          887,
+          984,
+          25,
+          984,
+          28
+        ],
+        "target_text": "19",
+        "target_ids": [
+          491
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "5 9 13 17 21",
+        "source_numbers": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "token_ids": [
+          27,
+          227,
+          31,
+          984,
+          25,
+          984,
+          29,
+          1477,
+          23
+        ],
+        "target_text": "25",
+        "target_ids": [
+          2501
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "6 7 8 9 10",
+        "source_numbers": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "token_ids": [
+          28,
+          227,
+          29,
+          227,
+          30,
+          227,
+          31,
+          227,
+          887
+        ],
+        "target_text": "11",
+        "target_ids": [
+          1564
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "7 9 11 13 15",
+        "source_numbers": [
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "token_ids": [
+          29,
+          227,
+          31,
+          984,
+          23,
+          984,
+          25,
+          984,
+          27
+        ],
+        "target_text": "17",
+        "target_ids": [
+          1595
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "8 11 14 17 20",
+        "source_numbers": [
+          8,
+          11,
+          14,
+          17,
+          20
+        ],
+        "token_ids": [
+          30,
+          984,
+          23,
+          984,
+          26,
+          984,
+          29,
+          227,
+          504
+        ],
+        "target_text": "23",
+        "target_ids": [
+          3370
+        ],
+        "requires_arithmetic": true
+      },
+      {
+        "raw_text": "9 13 17 21 25",
+        "source_numbers": [
+          9,
+          13,
+          17,
+          21,
+          25
+        ],
+        "token_ids": [
+          31,
+          984,
+          25,
+          984,
+          29,
+          1477,
+          23,
+          1477,
+          27
+        ],
+        "target_text": "29",
+        "target_ids": [
+          3650
+        ],
+        "requires_arithmetic": true
+      }
+    ],
+    "old_synthetic_numeric_samples": [
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          207,
+          207,
+          203,
+          49,
+          52,
+          55,
+          58,
+          61,
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          59,
+          224,
+          225
+        ],
+        "target_ids": [
+          62
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          222,
+          199,
+          217,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63,
+          33,
+          35,
+          37,
+          224,
+          225
+        ],
+        "target_ids": [
+          39
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          207,
+          195,
+          212,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          224,
+          225
+        ],
+        "target_ids": [
+          53
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          208,
+          207,
+          206,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63,
+          33,
+          224,
+          225
+        ],
+        "target_ids": [
+          35
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          221,
+          211,
+          212,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63,
+          33,
+          224,
+          225
+        ],
+        "target_ids": [
+          35
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          217,
+          206,
+          201,
+          56,
+          58,
+          60,
+          62,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44,
+          46,
+          48,
+          50,
+          52,
+          224,
+          225
+        ],
+        "target_ids": [
+          54
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          223,
+          214,
+          203,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          224,
+          225
+        ],
+        "target_ids": [
+          34
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          204,
+          202,
+          199,
+          60,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          224,
+          225
+        ],
+        "target_ids": [
+          56
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          194,
+          213,
+          208,
+          54,
+          57,
+          60,
+          63,
+          34,
+          37,
+          40,
+          43,
+          46,
+          49,
+          52,
+          55,
+          58,
+          61,
+          32,
+          224,
+          225
+        ],
+        "target_ids": [
+          35
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          200,
+          216,
+          215,
+          36,
+          39,
+          42,
+          45,
+          48,
+          51,
+          54,
+          57,
+          60,
+          63,
+          34,
+          37,
+          40,
+          43,
+          46,
+          224,
+          225
+        ],
+        "target_ids": [
+          49
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          207,
+          200,
+          193,
+          37,
+          41,
+          45,
+          49,
+          53,
+          57,
+          61,
+          33,
+          37,
+          41,
+          45,
+          49,
+          53,
+          57,
+          61,
+          224,
+          225
+        ],
+        "target_ids": [
+          33
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          198,
+          198,
+          212,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          32,
+          224,
+          225
+        ],
+        "target_ids": [
+          33
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          223,
+          218,
+          194,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          59,
+          62,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48,
+          51,
+          224,
+          225
+        ],
+        "target_ids": [
+          54
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          203,
+          199,
+          195,
+          40,
+          43,
+          46,
+          49,
+          52,
+          55,
+          58,
+          61,
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          224,
+          225
+        ],
+        "target_ids": [
+          53
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          218,
+          197,
+          208,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          35,
+          224,
+          225
+        ],
+        "target_ids": [
+          39
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          204,
+          217,
+          223,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          32,
+          224,
+          225
+        ],
+        "target_ids": [
+          36
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          209,
+          196,
+          220,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44,
+          46,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58,
+          60,
+          224,
+          225
+        ],
+        "target_ids": [
+          62
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          219,
+          206,
+          196,
+          59,
+          60,
+          61,
+          62,
+          63,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          224,
+          225
+        ],
+        "target_ids": [
+          42
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          218,
+          214,
+          196,
+          54,
+          57,
+          60,
+          63,
+          34,
+          37,
+          40,
+          43,
+          46,
+          49,
+          52,
+          55,
+          58,
+          61,
+          32,
+          224,
+          225
+        ],
+        "target_ids": [
+          35
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      },
+      {
+        "raw_text": null,
+        "token_ids": [
+          6,
+          193,
+          215,
+          200,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          32,
+          224,
+          225
+        ],
+        "target_ids": [
+          33
+        ],
+        "atomic_synthetic_ids": true,
+        "difficulty": "numeric"
+      }
+    ],
+    "single_digit_atomic_rate": 1.0,
+    "tasks_separated": {
+      "tokenizer_independent_symbolic": "finite repeating-symbol continuation; no arithmetic; architecture gate >=95%",
+      "actual_numeric_token_pattern": "Foundation tokenizer IDs from raw decimal text; diagnostic only",
+      "deprecated_v4_numeric": "atomic synthetic IDs but modular arithmetic progression; not a pure pattern-copy test"
+    },
+    "arithmetic_audit": {
+      "deprecated_v4_numeric_requires_modular_addition": true,
+      "actual_numeric_examples_require_addition": true,
+      "symbolic_repetition_requires_arithmetic": false
+    }
+  },
+  "source_sha256": {
+    "synthetic_context_v3.py": "70dc577a69327f07275749ae762d3d9e23b857bf6fec8542e00f8684dddc4489",
+    "foundation_tokenizer": "741e450a3b976ea21ccaf452c65181da47f198822f50c2e2b6bfb059e93aa13c"
+  },
+  "final_blind_used": false,
+  "production_changed": false
+}

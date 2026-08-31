@@ -1,0 +1,255 @@
+{
+  "schema_version": "synthetic-context-benchmark-v3-loss-pilot",
+  "variant": {
+    "name": "all-token-1x-markers",
+    "supervision": "all_token",
+    "answer_weight": 1,
+    "markers": true
+  },
+  "model": {
+    "name": "reference_mha",
+    "implementation": "reference",
+    "residual_projection_init_scale": 0.22360679774997896,
+    "formal_architecture": false
+  },
+  "parameters": 17892864,
+  "level": 2,
+  "updates": 400,
+  "train_examples": 6400,
+  "unique_train_examples": 6330,
+  "curve": [
+    {
+      "update": 10,
+      "recent_loss": 3.1317902326583864,
+      "gradient_norm": 3.161345958709717,
+      "heldout": {
+        "accuracy": 0.02734375,
+        "loss": 1.9252171516418457,
+        "answer_token_loss": 4.432821035385132,
+        "non_answer_loss": 1.7323245108127594,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.9878803064425786,
+          "correct_key_mass": 0.07163605044285457,
+          "correct_value_mass": 0.07845044105003278,
+          "correct_key_value_mass": 0.1500864932934443,
+          "correct_position_mean_rank": 4.14375,
+          "attention_margin": -0.1910041775535016
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9861776232719421,
+          "max_attention_probability": 0.10833087315162022,
+          "top_3_attention_mass": 0.29996173083782196,
+          "correct_key_mass": 0.06429383593300979,
+          "correct_value_mass": 0.07891679058472316,
+          "correct_key_value_mass": 0.14321062713861465,
+          "incorrect_position_mass": 0.8567893803119659,
+          "max_position_is_correct_rate": 0.19791666666666666,
+          "correct_position_mean_rank": 4.40625,
+          "q_rms": 0.41782017548878986,
+          "k_rms": 0.4051003058751424,
+          "qk_dot_product_std": 1.950164516766866,
+          "scaled_attention_logit_std": 0.24377056459585825,
+          "attention_margin": -0.30354383246352273
+        }
+      }
+    },
+    {
+      "update": 25,
+      "recent_loss": 2.2692296743392943,
+      "gradient_norm": 1.3724397420883179,
+      "heldout": {
+        "accuracy": 0.01171875,
+        "loss": 1.5333478599786758,
+        "answer_token_loss": 3.8839454650878906,
+        "non_answer_loss": 1.3525326251983643,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.9532089640696844,
+          "correct_key_mass": 0.08780931187793613,
+          "correct_value_mass": 0.0657348162184159,
+          "correct_key_value_mass": 0.1535441281894843,
+          "correct_position_mean_rank": 4.2203125,
+          "attention_margin": -0.3547335487324744
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9017669459184011,
+          "max_attention_probability": 0.1912302648027738,
+          "top_3_attention_mass": 0.45018478234608966,
+          "correct_key_mass": 0.09161049717416365,
+          "correct_value_mass": 0.047606270760297775,
+          "correct_key_value_mass": 0.13921676700313887,
+          "incorrect_position_mass": 0.8607832193374634,
+          "max_position_is_correct_rate": 0.390625,
+          "correct_position_mean_rank": 3.0833333333333335,
+          "q_rms": 0.4730404019355774,
+          "k_rms": 0.44082437455654144,
+          "qk_dot_product_std": 4.489424188931783,
+          "scaled_attention_logit_std": 0.5611780236164728,
+          "attention_margin": -0.6878295714656512
+        }
+      }
+    },
+    {
+      "update": 50,
+      "recent_loss": 1.8598602247238158,
+      "gradient_norm": 1.1693167686462402,
+      "heldout": {
+        "accuracy": 0.02734375,
+        "loss": 1.4055298864841461,
+        "answer_token_loss": 3.635379582643509,
+        "non_answer_loss": 1.2340029776096344,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.9456081718206406,
+          "correct_key_mass": 0.08302322281524539,
+          "correct_value_mass": 0.07783360034227371,
+          "correct_key_value_mass": 0.16085682548582553,
+          "correct_position_mean_rank": 4.276041666666667,
+          "attention_margin": -0.3323573781022181
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9231508076190948,
+          "max_attention_probability": 0.16719128812352815,
+          "top_3_attention_mass": 0.4161075601975123,
+          "correct_key_mass": 0.08132053135583799,
+          "correct_value_mass": 0.084247720738252,
+          "correct_key_value_mass": 0.16556825364629427,
+          "incorrect_position_mass": 0.8344317376613617,
+          "max_position_is_correct_rate": 0.23958333333333334,
+          "correct_position_mean_rank": 4.328125,
+          "q_rms": 0.40606260299682617,
+          "k_rms": 0.44083907703558606,
+          "qk_dot_product_std": 3.9571662545204163,
+          "scaled_attention_logit_std": 0.49464578181505203,
+          "attention_margin": -0.45831299386918545
+        }
+      }
+    },
+    {
+      "update": 100,
+      "recent_loss": 1.3820177173614503,
+      "gradient_norm": 1.17052161693573,
+      "heldout": {
+        "accuracy": 0.0234375,
+        "loss": 1.375015214085579,
+        "answer_token_loss": 3.5512073040008545,
+        "non_answer_loss": 1.2076157927513123,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.9115652014811834,
+          "correct_key_mass": 0.05985099939619734,
+          "correct_value_mass": 0.07234358121252929,
+          "correct_key_value_mass": 0.13219458238066484,
+          "correct_position_mean_rank": 5.2453125,
+          "attention_margin": -0.7361486215765277
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9299071033795675,
+          "max_attention_probability": 0.14905062690377235,
+          "top_3_attention_mass": 0.39727355539798737,
+          "correct_key_mass": 0.09768540846804778,
+          "correct_value_mass": 0.05968086856106917,
+          "correct_key_value_mass": 0.15736627827088037,
+          "incorrect_position_mass": 0.8426337242126465,
+          "max_position_is_correct_rate": 0.234375,
+          "correct_position_mean_rank": 3.484375,
+          "q_rms": 0.4051811695098877,
+          "k_rms": 0.4309743046760559,
+          "qk_dot_product_std": 4.8934110800425215,
+          "scaled_attention_logit_std": 0.6116763850053152,
+          "attention_margin": -0.46306663037588197
+        }
+      }
+    },
+    {
+      "update": 200,
+      "recent_loss": 1.3182739233970642,
+      "gradient_norm": 1.2127766609191895,
+      "heldout": {
+        "accuracy": 0.1953125,
+        "loss": 1.293063223361969,
+        "answer_token_loss": 3.1693092584609985,
+        "non_answer_loss": 1.1487365812063217,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.7838550716638565,
+          "correct_key_mass": 0.0798166209012076,
+          "correct_value_mass": 0.08748047655826667,
+          "correct_key_value_mass": 0.16729709433954365,
+          "correct_position_mean_rank": 4.499479166666666,
+          "attention_margin": -1.3631876178706686
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.8762182195981344,
+          "max_attention_probability": 0.19058730701605478,
+          "top_3_attention_mass": 0.4912622521320979,
+          "correct_key_mass": 0.11654680004964273,
+          "correct_value_mass": 0.0826518473525842,
+          "correct_key_value_mass": 0.19919865081707636,
+          "incorrect_position_mass": 0.8008013566335043,
+          "max_position_is_correct_rate": 0.2916666666666667,
+          "correct_position_mean_rank": 3.3802083333333335,
+          "q_rms": 0.5066968897978464,
+          "k_rms": 0.4880327731370926,
+          "qk_dot_product_std": 7.998542269070943,
+          "scaled_attention_logit_std": 0.9998177836338679,
+          "attention_margin": -0.40432409290224314
+        }
+      }
+    },
+    {
+      "update": 400,
+      "recent_loss": 1.2029267168045044,
+      "gradient_norm": 1.443259835243225,
+      "heldout": {
+        "accuracy": 0.359375,
+        "loss": 1.2115325033664703,
+        "answer_token_loss": 2.4828453958034515,
+        "non_answer_loss": 1.1137392073869705,
+        "examples": 256
+      },
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.766264254351457,
+          "correct_key_mass": 0.045402838192512715,
+          "correct_value_mass": 0.13670343391422649,
+          "correct_key_value_mass": 0.18210627033695345,
+          "correct_position_mean_rank": 5.061979166666666,
+          "attention_margin": -1.165397886497279
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.6713145077228546,
+          "max_attention_probability": 0.44017480810483295,
+          "top_3_attention_mass": 0.6206541309754053,
+          "correct_key_mass": 0.04706902429461479,
+          "correct_value_mass": 0.21891154597202936,
+          "correct_key_value_mass": 0.2659805665413539,
+          "incorrect_position_mass": 0.7340194384256998,
+          "max_position_is_correct_rate": 0.3645833333333333,
+          "correct_position_mean_rank": 4.447916666666667,
+          "q_rms": 0.5631756782531738,
+          "k_rms": 0.5287402123212814,
+          "qk_dot_product_std": 10.211555004119873,
+          "scaled_attention_logit_std": 1.2764443755149841,
+          "attention_margin": -0.7326653326551119
+        }
+      }
+    }
+  ],
+  "wall_seconds": 80.16342940000004,
+  "peak_ram_mb": 624.8125,
+  "checkpoint_saved": false,
+  "final_blind_used": false,
+  "production_changed": false
+}
