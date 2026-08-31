@@ -1,0 +1,734 @@
+{
+  "schema_version": "foundation-v18-japanese-diagnostic-v1",
+  "model": {
+    "name": "custom_current",
+    "implementation": "custom",
+    "residual_projection_init_scale": 1.0,
+    "formal_architecture": true
+  },
+  "config": {
+    "model_name": "Foundation v1.8 Synthetic custom_current",
+    "vocab_size": 4096,
+    "context_length": 128,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "token_embedding_scale": 1.0,
+    "position_embedding_scale": 1.0,
+    "residual_projection_init_scale": 1.0,
+    "weight_tying": true
+  },
+  "parameters": 19367424,
+  "corpus": {
+    "manifest": "data/foundation_v15_diagnostic/manifest.json",
+    "train_sha256": "709560ff92a701ba9987dca1670ce7e0cd263ea0067e3eee35efdbc1e2a2f887",
+    "validation_sha256": "3b97e47fa3d5b3a93c232caffb2718c4f7257ff2eca5a7ea217fee647222ee0d",
+    "same_token_permutation_seed": 2716
+  },
+  "training": {
+    "updates": 256,
+    "tokens_processed": 131072,
+    "effective_batch_tokens": 512,
+    "wall_seconds": 146.91266159999986,
+    "history": [
+      {
+        "update": 0,
+        "tokens_processed": 0,
+        "metrics": {
+          "tokens": 8192,
+          "loss": 8.421860292553902,
+          "perplexity": 4545.351278182114,
+          "top_1_accuracy": 0.0003662109375,
+          "top_5_accuracy": 0.0009765625,
+          "top_10_accuracy": 0.0013427734375,
+          "mean_correct_token_probability": 0.00023653397511225194,
+          "frequency_buckets": {
+            "top_1_percent": {
+              "rank_range": [
+                0,
+                40
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.00021603665663860738
+            },
+            "top_5_percent_excluding_top_1": {
+              "rank_range": [
+                41,
+                204
+              ],
+              "targets": 1554,
+              "top_1_accuracy": 0.000643500650767237,
+              "top_5_accuracy": 0.001287001301534474,
+              "top_10_accuracy": 0.001287001301534474,
+              "mean_correct_token_probability": 0.00024052149092312902
+            },
+            "top_20_percent_excluding_top_5": {
+              "rank_range": [
+                205,
+                819
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.0009149130783043802,
+              "top_5_accuracy": 0.0018298261566087604,
+              "top_10_accuracy": 0.002287282608449459,
+              "mean_correct_token_probability": 0.00024848864995874465
+            },
+            "middle_20_to_80_percent": {
+              "rank_range": [
+                820,
+                3276
+              ],
+              "targets": 2140,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0009345794678665698,
+              "top_10_accuracy": 0.0018691589357331395,
+              "mean_correct_token_probability": 0.00024155635037459433
+            },
+            "rare_bottom_20_percent": {
+              "rank_range": [
+                3277,
+                4095
+              ],
+              "targets": 126,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.0002502624993212521
+            }
+          },
+          "punctuation_top1_mass": 0.0
+        },
+        "context_sensitivity": {
+          "definition": "mean total-variation distance between next-token distributions for pairs with an identical final token and different preceding 31-token contexts",
+          "pairs": 64,
+          "same_last_token_for_every_pair": true,
+          "mean_jensen_shannon_divergence": 0.013669172301888466,
+          "mean_total_variation": 0.13183677196502686,
+          "context_sensitivity_score": 13.183677673339844,
+          "top_1_changed_rate": 0.953125,
+          "bigram_distribution_difference": 0.0
+        },
+        "residual": {
+          "embedding_rms": 0.02807997353374958,
+          "layers": [
+            {
+              "layer": 0,
+              "input_rms": 0.02807997353374958,
+              "attention_rms": 0.033540062606334686,
+              "post_attention_rms": 0.043588366359472275,
+              "mlp_rms": 0.17223623394966125,
+              "output_rms": 0.17689219117164612
+            },
+            {
+              "layer": 1,
+              "input_rms": 0.17689219117164612,
+              "attention_rms": 0.09971947222948074,
+              "post_attention_rms": 0.20350195467472076,
+              "mlp_rms": 0.1648021787405014,
+              "output_rms": 0.26417598128318787
+            },
+            {
+              "layer": 2,
+              "input_rms": 0.26417598128318787,
+              "attention_rms": 0.10595862567424774,
+              "post_attention_rms": 0.2850801646709442,
+              "mlp_rms": 0.17429989576339722,
+              "output_rms": 0.33231082558631897
+            },
+            {
+              "layer": 3,
+              "input_rms": 0.33231082558631897,
+              "attention_rms": 0.12058132886886597,
+              "post_attention_rms": 0.35325300693511963,
+              "mlp_rms": 0.16524407267570496,
+              "output_rms": 0.3849049210548401
+            },
+            {
+              "layer": 4,
+              "input_rms": 0.3849049210548401,
+              "attention_rms": 0.11469528824090958,
+              "post_attention_rms": 0.4063791036605835,
+              "mlp_rms": 0.1701987087726593,
+              "output_rms": 0.4436253607273102
+            },
+            {
+              "layer": 5,
+              "input_rms": 0.4436253607273102,
+              "attention_rms": 0.12216582894325256,
+              "post_attention_rms": 0.4599063992500305,
+              "mlp_rms": 0.16881975531578064,
+              "output_rms": 0.4917586147785187
+            },
+            {
+              "layer": 6,
+              "input_rms": 0.4917586147785187,
+              "attention_rms": 0.1272803544998169,
+              "post_attention_rms": 0.5125969052314758,
+              "mlp_rms": 0.1674772948026657,
+              "output_rms": 0.5366061925888062
+            },
+            {
+              "layer": 7,
+              "input_rms": 0.5366061925888062,
+              "attention_rms": 0.12763121724128723,
+              "post_attention_rms": 0.5522902607917786,
+              "mlp_rms": 0.17335183918476105,
+              "output_rms": 0.5841047167778015
+            },
+            {
+              "layer": 8,
+              "input_rms": 0.5841047167778015,
+              "attention_rms": 0.12520839273929596,
+              "post_attention_rms": 0.592963457107544,
+              "mlp_rms": 0.16560795903205872,
+              "output_rms": 0.6233729124069214
+            },
+            {
+              "layer": 9,
+              "input_rms": 0.6233729124069214,
+              "attention_rms": 0.13106918334960938,
+              "post_attention_rms": 0.6405190825462341,
+              "mlp_rms": 0.17148526012897491,
+              "output_rms": 0.6521762013435364
+            }
+          ],
+          "layer9_rms": 0.6521762013435364,
+          "final_norm_rms": 0.9999881386756897
+        }
+      },
+      {
+        "update": 64,
+        "tokens_processed": 32768,
+        "metrics": {
+          "tokens": 8192,
+          "loss": 7.077844433486462,
+          "perplexity": 1185.4105312977115,
+          "top_1_accuracy": 0.0802001953125,
+          "top_5_accuracy": 0.1329345703125,
+          "top_10_accuracy": 0.1728515625,
+          "mean_correct_token_probability": 0.027122916653752327,
+          "frequency_buckets": {
+            "top_1_percent": {
+              "rank_range": [
+                0,
+                40
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.3005489408969879,
+              "top_5_accuracy": 0.4981701672077179,
+              "top_10_accuracy": 0.6477584838867188,
+              "mean_correct_token_probability": 0.10050752013921738
+            },
+            "top_5_percent_excluding_top_1": {
+              "rank_range": [
+                41,
+                204
+              ],
+              "targets": 1554,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.000732255051843822
+            },
+            "top_20_percent_excluding_top_5": {
+              "rank_range": [
+                205,
+                819
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.00041758344741538167
+            },
+            "middle_20_to_80_percent": {
+              "rank_range": [
+                820,
+                3276
+              ],
+              "targets": 2140,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.0001958023349288851
+            },
+            "rare_bottom_20_percent": {
+              "rank_range": [
+                3277,
+                4095
+              ],
+              "targets": 126,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 9.305167623097077e-05
+            }
+          },
+          "punctuation_top1_mass": 0.9569091796875
+        },
+        "context_sensitivity": {
+          "definition": "mean total-variation distance between next-token distributions for pairs with an identical final token and different preceding 31-token contexts",
+          "pairs": 64,
+          "same_last_token_for_every_pair": true,
+          "mean_jensen_shannon_divergence": 0.0004236520326230675,
+          "mean_total_variation": 0.017840202897787094,
+          "context_sensitivity_score": 1.7840203046798706,
+          "top_1_changed_rate": 0.0,
+          "bigram_distribution_difference": 0.0
+        },
+        "residual": {
+          "embedding_rms": 0.028373079374432564,
+          "layers": [
+            {
+              "layer": 0,
+              "input_rms": 0.028373079374432564,
+              "attention_rms": 0.03197041153907776,
+              "post_attention_rms": 0.042430415749549866,
+              "mlp_rms": 0.2062680572271347,
+              "output_rms": 0.21187928318977356
+            },
+            {
+              "layer": 1,
+              "input_rms": 0.21187928318977356,
+              "attention_rms": 0.1147351861000061,
+              "post_attention_rms": 0.2503633201122284,
+              "mlp_rms": 0.3079838156700134,
+              "output_rms": 0.45805153250694275
+            },
+            {
+              "layer": 2,
+              "input_rms": 0.45805153250694275,
+              "attention_rms": 0.13571535050868988,
+              "post_attention_rms": 0.4993969798088074,
+              "mlp_rms": 0.36586031317710876,
+              "output_rms": 0.7587045431137085
+            },
+            {
+              "layer": 3,
+              "input_rms": 0.7587045431137085,
+              "attention_rms": 0.14842815697193146,
+              "post_attention_rms": 0.8106852769851685,
+              "mlp_rms": 0.33642980456352234,
+              "output_rms": 1.048995018005371
+            },
+            {
+              "layer": 4,
+              "input_rms": 1.048995018005371,
+              "attention_rms": 0.16179534792900085,
+              "post_attention_rms": 1.1074416637420654,
+              "mlp_rms": 0.354126900434494,
+              "output_rms": 1.3685076236724854
+            },
+            {
+              "layer": 5,
+              "input_rms": 1.3685076236724854,
+              "attention_rms": 0.19287016987800598,
+              "post_attention_rms": 1.4632384777069092,
+              "mlp_rms": 0.3219238519668579,
+              "output_rms": 1.6953537464141846
+            },
+            {
+              "layer": 6,
+              "input_rms": 1.6953537464141846,
+              "attention_rms": 0.22548601031303406,
+              "post_attention_rms": 1.8179885149002075,
+              "mlp_rms": 0.33683741092681885,
+              "output_rms": 2.070519208908081
+            },
+            {
+              "layer": 7,
+              "input_rms": 2.070519208908081,
+              "attention_rms": 0.20190106332302094,
+              "post_attention_rms": 2.177757740020752,
+              "mlp_rms": 0.3808610141277313,
+              "output_rms": 2.458660364151001
+            },
+            {
+              "layer": 8,
+              "input_rms": 2.458660364151001,
+              "attention_rms": 0.22205467522144318,
+              "post_attention_rms": 2.5870652198791504,
+              "mlp_rms": 0.3746212124824524,
+              "output_rms": 2.868521213531494
+            },
+            {
+              "layer": 9,
+              "input_rms": 2.868521213531494,
+              "attention_rms": 0.22404983639717102,
+              "post_attention_rms": 2.9993205070495605,
+              "mlp_rms": 0.39656513929367065,
+              "output_rms": 3.3022303581237793
+            }
+          ],
+          "layer9_rms": 3.3022303581237793,
+          "final_norm_rms": 1.0072050094604492
+        },
+        "recent_train_loss": 7.627385027706623,
+        "gradient_norm": 1.0481489896774292,
+        "learning_rate": 0.0001
+      },
+      {
+        "update": 128,
+        "tokens_processed": 65536,
+        "metrics": {
+          "tokens": 8192,
+          "loss": 6.9165477603673935,
+          "perplexity": 1008.8312487869648,
+          "top_1_accuracy": 0.0872802734375,
+          "top_5_accuracy": 0.1351318359375,
+          "top_10_accuracy": 0.172607421875,
+          "mean_correct_token_probability": 0.04105790704488754,
+          "frequency_buckets": {
+            "top_1_percent": {
+              "rank_range": [
+                0,
+                40
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.32708144187927246,
+              "top_5_accuracy": 0.5064043998718262,
+              "top_10_accuracy": 0.6468435525894165,
+              "mean_correct_token_probability": 0.15242846310138702
+            },
+            "top_5_percent_excluding_top_1": {
+              "rank_range": [
+                41,
+                204
+              ],
+              "targets": 1554,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.001127655734308064
+            },
+            "top_20_percent_excluding_top_5": {
+              "rank_range": [
+                205,
+                819
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.000480679766042158
+            },
+            "middle_20_to_80_percent": {
+              "rank_range": [
+                820,
+                3276
+              ],
+              "targets": 2140,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.0001539114600745961
+            },
+            "rare_bottom_20_percent": {
+              "rank_range": [
+                3277,
+                4095
+              ],
+              "targets": 126,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 4.1404939111089334e-05
+            }
+          },
+          "punctuation_top1_mass": 0.957275390625
+        },
+        "context_sensitivity": {
+          "definition": "mean total-variation distance between next-token distributions for pairs with an identical final token and different preceding 31-token contexts",
+          "pairs": 64,
+          "same_last_token_for_every_pair": true,
+          "mean_jensen_shannon_divergence": 0.0005687419325113297,
+          "mean_total_variation": 0.017971977591514587,
+          "context_sensitivity_score": 1.7971978187561035,
+          "top_1_changed_rate": 0.21875,
+          "bigram_distribution_difference": 0.0
+        },
+        "residual": {
+          "embedding_rms": 0.028690967708826065,
+          "layers": [
+            {
+              "layer": 0,
+              "input_rms": 0.028690967708826065,
+              "attention_rms": 0.032594598829746246,
+              "post_attention_rms": 0.04308553785085678,
+              "mlp_rms": 0.23268157243728638,
+              "output_rms": 0.23803465068340302
+            },
+            {
+              "layer": 1,
+              "input_rms": 0.23803465068340302,
+              "attention_rms": 0.10800553113222122,
+              "post_attention_rms": 0.2675919830799103,
+              "mlp_rms": 0.36946868896484375,
+              "output_rms": 0.5326911211013794
+            },
+            {
+              "layer": 2,
+              "input_rms": 0.5326911211013794,
+              "attention_rms": 0.10507937520742416,
+              "post_attention_rms": 0.5645036697387695,
+              "mlp_rms": 0.43796125054359436,
+              "output_rms": 0.9009648561477661
+            },
+            {
+              "layer": 3,
+              "input_rms": 0.9009648561477661,
+              "attention_rms": 0.13039399683475494,
+              "post_attention_rms": 0.9476756453514099,
+              "mlp_rms": 0.4471587538719177,
+              "output_rms": 1.3006362915039062
+            },
+            {
+              "layer": 4,
+              "input_rms": 1.3006362915039062,
+              "attention_rms": 0.1345081776380539,
+              "post_attention_rms": 1.3553282022476196,
+              "mlp_rms": 0.47186940908432007,
+              "output_rms": 1.733423113822937
+            },
+            {
+              "layer": 5,
+              "input_rms": 1.733423113822937,
+              "attention_rms": 0.20379535853862762,
+              "post_attention_rms": 1.8438864946365356,
+              "mlp_rms": 0.4384872615337372,
+              "output_rms": 2.1938974857330322
+            },
+            {
+              "layer": 6,
+              "input_rms": 2.1938974857330322,
+              "attention_rms": 0.23548349738121033,
+              "post_attention_rms": 2.3386740684509277,
+              "mlp_rms": 0.4685957431793213,
+              "output_rms": 2.716658592224121
+            },
+            {
+              "layer": 7,
+              "input_rms": 2.716658592224121,
+              "attention_rms": 0.22511625289916992,
+              "post_attention_rms": 2.852426767349243,
+              "mlp_rms": 0.4966868758201599,
+              "output_rms": 3.2539851665496826
+            },
+            {
+              "layer": 8,
+              "input_rms": 3.2539851665496826,
+              "attention_rms": 0.2106478214263916,
+              "post_attention_rms": 3.376760721206665,
+              "mlp_rms": 0.4999939799308777,
+              "output_rms": 3.7827961444854736
+            },
+            {
+              "layer": 9,
+              "input_rms": 3.7827961444854736,
+              "attention_rms": 0.2542872726917267,
+              "post_attention_rms": 3.955420970916748,
+              "mlp_rms": 0.5362571477890015,
+              "output_rms": 4.396477222442627
+            }
+          ],
+          "layer9_rms": 4.396477222442627,
+          "final_norm_rms": 1.012972354888916
+        },
+        "recent_train_loss": 6.991053394973278,
+        "gradient_norm": 1.0345205068588257,
+        "learning_rate": 0.0001
+      },
+      {
+        "update": 256,
+        "tokens_processed": 131072,
+        "metrics": {
+          "tokens": 8192,
+          "loss": 6.751154817640781,
+          "perplexity": 855.0456143586607,
+          "top_1_accuracy": 0.0970458984375,
+          "top_5_accuracy": 0.150634765625,
+          "top_10_accuracy": 0.1849365234375,
+          "mean_correct_token_probability": 0.05436238273978233,
+          "frequency_buckets": {
+            "top_1_percent": {
+              "rank_range": [
+                0,
+                40
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.3613906800746918,
+              "top_5_accuracy": 0.5562671422958374,
+              "top_10_accuracy": 0.677493155002594,
+              "mean_correct_token_probability": 0.20194073021411896
+            },
+            "top_5_percent_excluding_top_1": {
+              "rank_range": [
+                41,
+                204
+              ],
+              "targets": 1554,
+              "top_1_accuracy": 0.003217503195628524,
+              "top_5_accuracy": 0.01093951053917408,
+              "top_10_accuracy": 0.019305018708109856,
+              "mean_correct_token_probability": 0.0014698321465402842
+            },
+            "top_20_percent_excluding_top_5": {
+              "rank_range": [
+                205,
+                819
+              ],
+              "targets": 2186,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0004574565391521901,
+              "top_10_accuracy": 0.0018298261566087604,
+              "mean_correct_token_probability": 0.0005620699375867844
+            },
+            "middle_20_to_80_percent": {
+              "rank_range": [
+                820,
+                3276
+              ],
+              "targets": 2140,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 0.00017592404037714005
+            },
+            "rare_bottom_20_percent": {
+              "rank_range": [
+                3277,
+                4095
+              ],
+              "targets": 126,
+              "top_1_accuracy": 0.0,
+              "top_5_accuracy": 0.0,
+              "top_10_accuracy": 0.0,
+              "mean_correct_token_probability": 3.897469650837593e-05
+            }
+          },
+          "punctuation_top1_mass": 0.7255859375
+        },
+        "context_sensitivity": {
+          "definition": "mean total-variation distance between next-token distributions for pairs with an identical final token and different preceding 31-token contexts",
+          "pairs": 64,
+          "same_last_token_for_every_pair": true,
+          "mean_jensen_shannon_divergence": 0.01015746034681797,
+          "mean_total_variation": 0.07279640436172485,
+          "context_sensitivity_score": 7.279640197753906,
+          "top_1_changed_rate": 0.328125,
+          "bigram_distribution_difference": 0.0
+        },
+        "residual": {
+          "embedding_rms": 0.029093125835061073,
+          "layers": [
+            {
+              "layer": 0,
+              "input_rms": 0.029093125835061073,
+              "attention_rms": 0.03145857900381088,
+              "post_attention_rms": 0.042688999325037,
+              "mlp_rms": 0.23576025664806366,
+              "output_rms": 0.24059253931045532
+            },
+            {
+              "layer": 1,
+              "input_rms": 0.24059253931045532,
+              "attention_rms": 0.09200430661439896,
+              "post_attention_rms": 0.25421157479286194,
+              "mlp_rms": 0.3575862646102905,
+              "output_rms": 0.5057421326637268
+            },
+            {
+              "layer": 2,
+              "input_rms": 0.5057421326637268,
+              "attention_rms": 0.10160667449235916,
+              "post_attention_rms": 0.5223022699356079,
+              "mlp_rms": 0.4367305338382721,
+              "output_rms": 0.8507097959518433
+            },
+            {
+              "layer": 3,
+              "input_rms": 0.8507097959518433,
+              "attention_rms": 0.11405492573976517,
+              "post_attention_rms": 0.875404417514801,
+              "mlp_rms": 0.45026910305023193,
+              "output_rms": 1.2197697162628174
+            },
+            {
+              "layer": 4,
+              "input_rms": 1.2197697162628174,
+              "attention_rms": 0.10511800646781921,
+              "post_attention_rms": 1.2481968402862549,
+              "mlp_rms": 0.4364566206932068,
+              "output_rms": 1.5825316905975342
+            },
+            {
+              "layer": 5,
+              "input_rms": 1.5825316905975342,
+              "attention_rms": 0.10952089726924896,
+              "post_attention_rms": 1.6145071983337402,
+              "mlp_rms": 0.4039461612701416,
+              "output_rms": 1.9229674339294434
+            },
+            {
+              "layer": 6,
+              "input_rms": 1.9229674339294434,
+              "attention_rms": 0.1440977156162262,
+              "post_attention_rms": 1.980032205581665,
+              "mlp_rms": 0.42822766304016113,
+              "output_rms": 2.3019299507141113
+            },
+            {
+              "layer": 7,
+              "input_rms": 2.3019299507141113,
+              "attention_rms": 0.15709291398525238,
+              "post_attention_rms": 2.360560655593872,
+              "mlp_rms": 0.4402770698070526,
+              "output_rms": 2.6893703937530518
+            },
+            {
+              "layer": 8,
+              "input_rms": 2.6893703937530518,
+              "attention_rms": 0.1877748817205429,
+              "post_attention_rms": 2.775254964828491,
+              "mlp_rms": 0.4367142915725708,
+              "output_rms": 3.1116199493408203
+            },
+            {
+              "layer": 9,
+              "input_rms": 3.1116199493408203,
+              "attention_rms": 0.21762312948703766,
+              "post_attention_rms": 3.2266905307769775,
+              "mlp_rms": 0.4746742844581604,
+              "output_rms": 3.597869396209717
+            }
+          ],
+          "layer9_rms": 3.597869396209717,
+          "final_norm_rms": 1.0149025917053223
+        },
+        "recent_train_loss": 6.838563825935125,
+        "gradient_norm": 1.45640230178833,
+        "learning_rate": 0.0001
+      }
+    ]
+  },
+  "checkpoint": {
+    "path": "checkpoints/foundation-v18-short-japanese/custom_current.pt",
+    "bytes": 232559833,
+    "sha256": "9ee54b72cd785d6fab27aa9b4eb2dacf771a934c61331af07a05b12317fd7a52",
+    "strict_reload": true,
+    "optimizer_state_present": true
+  },
+  "full_foundation_256k": false,
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

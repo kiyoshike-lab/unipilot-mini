@@ -1,0 +1,253 @@
+{
+  "schema_version": "foundation-v18-numeric-tokenizer-audit-v1",
+  "tokenizer_vocab_size": 4096,
+  "samples": [
+    {
+      "text": "0",
+      "token_ids": [
+        22
+      ],
+      "token_count": 1,
+      "decoded": "0",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "1",
+      "token_ids": [
+        23
+      ],
+      "token_count": 1,
+      "decoded": "1",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "2",
+      "token_ids": [
+        24
+      ],
+      "token_count": 1,
+      "decoded": "2",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "3",
+      "token_ids": [
+        25
+      ],
+      "token_count": 1,
+      "decoded": "3",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "4",
+      "token_ids": [
+        26
+      ],
+      "token_count": 1,
+      "decoded": "4",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "5",
+      "token_ids": [
+        27
+      ],
+      "token_count": 1,
+      "decoded": "5",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "6",
+      "token_ids": [
+        28
+      ],
+      "token_count": 1,
+      "decoded": "6",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "7",
+      "token_ids": [
+        29
+      ],
+      "token_count": 1,
+      "decoded": "7",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "8",
+      "token_ids": [
+        30
+      ],
+      "token_count": 1,
+      "decoded": "8",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "9",
+      "token_ids": [
+        31
+      ],
+      "token_count": 1,
+      "decoded": "9",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "10",
+      "token_ids": [
+        887
+      ],
+      "token_count": 1,
+      "decoded": "10",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "12",
+      "token_ids": [
+        1150
+      ],
+      "token_count": 1,
+      "decoded": "12",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "32",
+      "token_ids": [
+        25,
+        24
+      ],
+      "token_count": 2,
+      "decoded": "32",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "64",
+      "token_ids": [
+        28,
+        26
+      ],
+      "token_count": 2,
+      "decoded": "64",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "100",
+      "token_ids": [
+        1596
+      ],
+      "token_count": 1,
+      "decoded": "100",
+      "round_trip_exact": true,
+      "atomic": true
+    },
+    {
+      "text": "123",
+      "token_ids": [
+        1150,
+        25
+      ],
+      "token_count": 2,
+      "decoded": "123",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "2026",
+      "token_ids": [
+        1522,
+        28
+      ],
+      "token_count": 2,
+      "decoded": "2026",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "1 2 3 4",
+      "token_ids": [
+        23,
+        1477,
+        2011,
+        2214
+      ],
+      "token_count": 4,
+      "decoded": "1 2 3 4",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "12,345",
+      "token_ids": [
+        1150,
+        18,
+        25,
+        26,
+        27
+      ],
+      "token_count": 5,
+      "decoded": "12,345",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "3.14",
+      "token_ids": [
+        25,
+        20,
+        1594
+      ],
+      "token_count": 3,
+      "decoded": "3.14",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "-7",
+      "token_ids": [
+        19,
+        29
+      ],
+      "token_count": 2,
+      "decoded": "-7",
+      "round_trip_exact": true,
+      "atomic": false
+    },
+    {
+      "text": "GPA 3.5",
+      "token_ids": [
+        45,
+        54,
+        39,
+        2011,
+        20,
+        27
+      ],
+      "token_count": 6,
+      "decoded": "GPA 3.5",
+      "round_trip_exact": true,
+      "atomic": false
+    }
+  ],
+  "single_digit_atomic_rate": 1.0,
+  "round_trip_exact_rate": 1.0,
+  "synthetic_v4_numeric_representation": {
+    "uses_foundation_tokenizer": false,
+    "representation": "atomic synthetic token IDs 32-63",
+    "conclusion": "Foundation tokenizer fragmentation cannot cause Synthetic v4 numeric continuation failures; the synthetic control uses atomic IDs."
+  },
+  "production_tokenizer_changed": false
+}

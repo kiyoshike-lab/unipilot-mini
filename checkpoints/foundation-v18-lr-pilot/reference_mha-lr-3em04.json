@@ -1,0 +1,228 @@
+{
+  "schema_version": "foundation-v18-synthetic-v4-pilot",
+  "model": {
+    "name": "reference_mha",
+    "implementation": "reference",
+    "residual_projection_init_scale": 0.22360679774997896,
+    "formal_architecture": false
+  },
+  "config": {
+    "model_name": "Foundation v1.8 Synthetic reference_mha",
+    "vocab_size": 256,
+    "context_length": 80,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm_epsilon": 1e-05,
+    "residual_projection_init_scale": 0.22360679774997896,
+    "weight_tying": true
+  },
+  "parameters": 17874432,
+  "architecture_manifest": {
+    "implementation": "independent torch.nn.MultiheadAttention reference",
+    "attention": "torch.nn.MultiheadAttention(batch_first=True)",
+    "causal_mask": "upper triangular boolean attn_mask",
+    "norm_flow": "Pre-LayerNorm",
+    "final_norm": "PRESENT",
+    "position": "learned absolute",
+    "activation": "GELU",
+    "weight_tying": true,
+    "base_initialization_std": 0.02,
+    "residual_output_projection_std": 0.00447213595499958,
+    "qkv_and_mlp_input_std": 0.02,
+    "custom_attention_code_shared": false,
+    "custom_residual_block_code_shared": false
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "training": {
+    "pilot": true,
+    "updates": 300,
+    "maximum_updates": 300,
+    "stopped_early_on_full_convergence": false,
+    "batch_size": 16,
+    "train_examples": 4800,
+    "unique_train_hashes": 4800,
+    "examples_by_difficulty": {
+      "key_lookup:pairs_2_long": 176,
+      "key_lookup:pairs_2_medium": 176,
+      "key_lookup:pairs_2_short": 192,
+      "key_lookup:pairs_4_long": 176,
+      "key_lookup:pairs_4_medium": 176,
+      "key_lookup:pairs_4_short": 176,
+      "key_lookup:pairs_8_long": 176,
+      "key_lookup:pairs_8_medium": 176,
+      "key_lookup:pairs_8_short": 176,
+      "numeric:numeric": 1600,
+      "symbolic:symbolic": 1600
+    },
+    "template_counts": {
+      "key_lookup:pairs_2_long:length_40": 176,
+      "key_lookup:pairs_2_medium:length_24": 176,
+      "key_lookup:pairs_2_short:length_8": 192,
+      "key_lookup:pairs_4_long:length_44": 176,
+      "key_lookup:pairs_4_medium:length_28": 176,
+      "key_lookup:pairs_4_short:length_12": 176,
+      "key_lookup:pairs_8_long:length_52": 176,
+      "key_lookup:pairs_8_medium:length_36": 176,
+      "key_lookup:pairs_8_short:length_20": 176,
+      "numeric:numeric:length_21": 1600,
+      "symbolic:symbolic:length_25": 1600
+    },
+    "processed_input_tokens": 120192,
+    "wall_seconds": 82.08089529999961,
+    "input_tokens_per_second": 1464.3115131810773,
+    "peak_ram_mb": 775.9296875,
+    "curve": [
+      {
+        "update": 300,
+        "recent_loss": 1.9255936327576637,
+        "gradient_norm": 2.9178709983825684,
+        "evaluation": {
+          "key_lookup": {
+            "2": {
+              "short": {
+                "accuracy": 0.28125,
+                "loss": 2.306309700012207
+              },
+              "medium": {
+                "accuracy": 0.265625,
+                "loss": 2.3421460390090942
+              },
+              "long": {
+                "accuracy": 0.296875,
+                "loss": 2.4004883766174316
+              }
+            },
+            "4": {
+              "short": {
+                "accuracy": 0.15625,
+                "loss": 2.9597368240356445
+              },
+              "medium": {
+                "accuracy": 0.171875,
+                "loss": 3.1287208795547485
+              },
+              "long": {
+                "accuracy": 0.15625,
+                "loss": 3.063480257987976
+              }
+            },
+            "8": {
+              "short": {
+                "accuracy": 0.046875,
+                "loss": 3.4606869220733643
+              },
+              "medium": {
+                "accuracy": 0.109375,
+                "loss": 3.18014395236969
+              },
+              "long": {
+                "accuracy": 0.0625,
+                "loss": 3.3360928297042847
+              }
+            }
+          },
+          "numeric": {
+            "accuracy": 0.3125,
+            "loss": 1.8405412435531616
+          },
+          "symbolic": {
+            "accuracy": 0.96875,
+            "loss": 0.22849293798208237
+          },
+          "normalized_score": 0.11647727272727272
+        }
+      }
+    ]
+  },
+  "dataset_audit": {
+    "exact_train_test_overlap": null,
+    "template_overlap": "intentional shared task templates with disjoint randomized token instances",
+    "answer_leakage_in_query_suffix": null,
+    "numeric_tokens_are_atomic_synthetic_ids": true,
+    "symbolic_tokens_are_atomic_synthetic_ids": true,
+    "eos_used": false,
+    "sequence_packing": false,
+    "target_construction": "only final queried answer supervised; all other targets -100"
+  },
+  "final": {
+    "evaluation": {
+      "key_lookup": {
+        "2": {
+          "short": {
+            "accuracy": 0.28125,
+            "loss": 2.306309700012207
+          },
+          "medium": {
+            "accuracy": 0.265625,
+            "loss": 2.3421460390090942
+          },
+          "long": {
+            "accuracy": 0.296875,
+            "loss": 2.4004883766174316
+          }
+        },
+        "4": {
+          "short": {
+            "accuracy": 0.15625,
+            "loss": 2.9597368240356445
+          },
+          "medium": {
+            "accuracy": 0.171875,
+            "loss": 3.1287208795547485
+          },
+          "long": {
+            "accuracy": 0.15625,
+            "loss": 3.063480257987976
+          }
+        },
+        "8": {
+          "short": {
+            "accuracy": 0.046875,
+            "loss": 3.4606869220733643
+          },
+          "medium": {
+            "accuracy": 0.109375,
+            "loss": 3.18014395236969
+          },
+          "long": {
+            "accuracy": 0.0625,
+            "loss": 3.3360928297042847
+          }
+        }
+      },
+      "numeric": {
+        "accuracy": 0.3125,
+        "loss": 1.8405412435531616
+      },
+      "symbolic": {
+        "accuracy": 0.96875,
+        "loss": 0.22849293798208237
+      },
+      "normalized_score": 0.11647727272727272
+    },
+    "gate": null,
+    "attention": null
+  },
+  "checkpoint": {
+    "saved": false,
+    "reason": "short common-LR selection pilot",
+    "strict_in_memory_reload": true
+  },
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}

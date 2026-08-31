@@ -1,0 +1,94 @@
+{
+  "project": "UniPilot Foundation v1.8 Reference Transformer Cross-Check & Attention Retrieval Convergence Audit",
+  "seed": 42,
+  "cpu_threads": 4,
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "diagnostic_corpus_manifest": "data/foundation_v15_diagnostic/manifest.json",
+  "architecture": {
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm_epsilon": 1e-5,
+    "weight_tying": true
+  },
+  "models": [
+    {
+      "name": "custom_current",
+      "implementation": "custom",
+      "residual_projection_init_scale": 1.0,
+      "formal_architecture": true
+    },
+    {
+      "name": "custom_depth_init",
+      "implementation": "custom",
+      "residual_projection_init_scale": 0.22360679774997896,
+      "formal_architecture": false
+    },
+    {
+      "name": "reference_mha",
+      "implementation": "reference",
+      "residual_projection_init_scale": 0.22360679774997896,
+      "formal_architecture": false
+    }
+  ],
+  "synthetic_lr_pilot": {
+    "updates": 300,
+    "batch_size": 16,
+    "learning_rates": [0.0003, 0.0009, 0.003],
+    "tasks": ["key_lookup", "numeric", "symbolic"],
+    "selection": "highest cross-model mean normalized score; non-finite runs rejected"
+  },
+  "synthetic_v4": {
+    "vocab_size": 256,
+    "context_length": 80,
+    "base_updates": 2000,
+    "maximum_updates": 8000,
+    "resume_checkpoint_interval": 200,
+    "milestones": [200, 500, 1000, 2000, 4000, 8000],
+    "percent_labels": [10, 25, 50, 100, 200, 400],
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "adam_betas": [0.9, 0.95],
+    "adam_eps": 1e-8,
+    "gradient_clip": 1.0,
+    "evaluation_examples": 256,
+    "early_stop_requires_all_gate_checks": true
+  },
+  "japanese_diagnostic": {
+    "context_length": 128,
+    "token_budget": 131072,
+    "effective_batch_tokens": 512,
+    "milestone_tokens": [32768, 65536, 131072],
+    "learning_rate": 0.0001,
+    "warmup_updates": 20,
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "seed": 2716,
+    "validation_tokens": 8192
+  },
+  "gates": {
+    "copy": {"4": 0.95, "8": 0.95, "16": 0.90},
+    "key_lookup": {"2": 0.90, "4": 0.90, "8": 0.90},
+    "long_range": 0.95,
+    "patterns": {"abab": 0.95, "abcabc": 0.95, "symbolic": 0.90, "numeric": 0.90, "nested": 0.95},
+    "context_conditioned": 0.95,
+    "position": 0.95
+  },
+  "full_256k_enabled": false,
+  "standard_46m_enabled": false,
+  "corpus_expansion_enabled": false,
+  "tokenizer_change_enabled": false,
+  "rope_enabled": false,
+  "rmsnorm_enabled": false,
+  "swiglu_enabled": false,
+  "qk_norm_enabled": false,
+  "instruction_tuning_enabled": false,
+  "campus_pretraining_enabled": false,
+  "dpo_enabled": false,
+  "production_integration_enabled": false,
+  "external_ai_api": "OFF"
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": "foundation-v18-synthetic-v4-pilot",
+  "model": {
+    "name": "custom_current",
+    "implementation": "custom",
+    "residual_projection_init_scale": 1.0,
+    "formal_architecture": true
+  },
+  "config": {
+    "model_name": "Foundation v1.8 Synthetic custom_current",
+    "vocab_size": 256,
+    "context_length": 80,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm": "layernorm",
+    "norm_epsilon": 1e-05,
+    "activation": "gelu",
+    "token_embedding_scale": 1.0,
+    "position_embedding_scale": 1.0,
+    "residual_projection_init_scale": 1.0,
+    "weight_tying": true
+  },
+  "parameters": 17874432,
+  "architecture_manifest": {
+    "implementation": "UniPilot custom attention",
+    "final_norm": "PRESENT",
+    "residual_projection_init_scale": 1.0
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "training": {
+    "pilot": true,
+    "updates": 300,
+    "maximum_updates": 300,
+    "stopped_early_on_full_convergence": false,
+    "batch_size": 16,
+    "train_examples": 4800,
+    "unique_train_hashes": 4800,
+    "examples_by_difficulty": {
+      "key_lookup:pairs_2_long": 176,
+      "key_lookup:pairs_2_medium": 176,
+      "key_lookup:pairs_2_short": 192,
+      "key_lookup:pairs_4_long": 176,
+      "key_lookup:pairs_4_medium": 176,
+      "key_lookup:pairs_4_short": 176,
+      "key_lookup:pairs_8_long": 176,
+      "key_lookup:pairs_8_medium": 176,
+      "key_lookup:pairs_8_short": 176,
+      "numeric:numeric": 1600,
+      "symbolic:symbolic": 1600
+    },
+    "template_counts": {
+      "key_lookup:pairs_2_long:length_40": 176,
+      "key_lookup:pairs_2_medium:length_24": 176,
+      "key_lookup:pairs_2_short:length_8": 192,
+      "key_lookup:pairs_4_long:length_44": 176,
+      "key_lookup:pairs_4_medium:length_28": 176,
+      "key_lookup:pairs_4_short:length_12": 176,
+      "key_lookup:pairs_8_long:length_52": 176,
+      "key_lookup:pairs_8_medium:length_36": 176,
+      "key_lookup:pairs_8_short:length_20": 176,
+      "numeric:numeric:length_21": 1600,
+      "symbolic:symbolic:length_25": 1600
+    },
+    "processed_input_tokens": 120192,
+    "wall_seconds": 90.59772799999973,
+    "input_tokens_per_second": 1326.6557854519306,
+    "peak_ram_mb": 780.6171875,
+    "curve": [
+      {
+        "update": 300,
+        "recent_loss": 3.5633633279800416,
+        "gradient_norm": 3.169759511947632,
+        "evaluation": {
+          "key_lookup": {
+            "2": {
+              "short": {
+                "accuracy": 0.015625,
+                "loss": 3.526001811027527
+              },
+              "medium": {
+                "accuracy": 0.015625,
+                "loss": 3.592209219932556
+              },
+              "long": {
+                "accuracy": 0.03125,
+                "loss": 3.5651681423187256
+              }
+            },
+            "4": {
+              "short": {
+                "accuracy": 0.09375,
+                "loss": 3.5004974603652954
+              },
+              "medium": {
+                "accuracy": 0.03125,
+                "loss": 3.5954095125198364
+              },
+              "long": {
+                "accuracy": 0.046875,
+                "loss": 3.438153862953186
+              }
+            },
+            "8": {
+              "short": {
+                "accuracy": 0.046875,
+                "loss": 3.449557065963745
+              },
+              "medium": {
+                "accuracy": 0.046875,
+                "loss": 3.4545315504074097
+              },
+              "long": {
+                "accuracy": 0.046875,
+                "loss": 3.512106418609619
+              }
+            }
+          },
+          "numeric": {
+            "accuracy": 0.0234375,
+            "loss": 3.5364502668380737
+          },
+          "symbolic": {
+            "accuracy": 0.015625,
+            "loss": 3.524577558040619
+          },
+          "normalized_score": 0.0035511363636363635
+        }
+      }
+    ]
+  },
+  "dataset_audit": {
+    "exact_train_test_overlap": null,
+    "template_overlap": "intentional shared task templates with disjoint randomized token instances",
+    "answer_leakage_in_query_suffix": null,
+    "numeric_tokens_are_atomic_synthetic_ids": true,
+    "symbolic_tokens_are_atomic_synthetic_ids": true,
+    "eos_used": false,
+    "sequence_packing": false,
+    "target_construction": "only final queried answer supervised; all other targets -100"
+  },
+  "final": {
+    "evaluation": {
+      "key_lookup": {
+        "2": {
+          "short": {
+            "accuracy": 0.015625,
+            "loss": 3.526001811027527
+          },
+          "medium": {
+            "accuracy": 0.015625,
+            "loss": 3.592209219932556
+          },
+          "long": {
+            "accuracy": 0.03125,
+            "loss": 3.5651681423187256
+          }
+        },
+        "4": {
+          "short": {
+            "accuracy": 0.09375,
+            "loss": 3.5004974603652954
+          },
+          "medium": {
+            "accuracy": 0.03125,
+            "loss": 3.5954095125198364
+          },
+          "long": {
+            "accuracy": 0.046875,
+            "loss": 3.438153862953186
+          }
+        },
+        "8": {
+          "short": {
+            "accuracy": 0.046875,
+            "loss": 3.449557065963745
+          },
+          "medium": {
+            "accuracy": 0.046875,
+            "loss": 3.4545315504074097
+          },
+          "long": {
+            "accuracy": 0.046875,
+            "loss": 3.512106418609619
+          }
+        }
+      },
+      "numeric": {
+        "accuracy": 0.0234375,
+        "loss": 3.5364502668380737
+      },
+      "symbolic": {
+        "accuracy": 0.015625,
+        "loss": 3.524577558040619
+      },
+      "normalized_score": 0.0035511363636363635
+    },
+    "gate": null,
+    "attention": null
+  },
+  "checkpoint": {
+    "saved": false,
+    "reason": "short common-LR selection pilot",
+    "strict_in_memory_reload": true
+  },
+  "final_blind_used": false,
+  "external_ai_api": "OFF",
+  "production_changed": false
+}
