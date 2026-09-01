@@ -1,0 +1,1186 @@
+{
+  "schema_version": "foundation-v20-associative-retrieval-summary",
+  "gate": "TASK_COMPLEXITY_ISSUE",
+  "benchmark_validity": "FAIL",
+  "oracle": {
+    "pass": true,
+    "levels": {
+      "0": {
+        "pairs": 1,
+        "examples": 10000,
+        "unique_examples": 1,
+        "unique_mapping_combinations": 1,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "1": {
+        "pairs": 1,
+        "examples": 10000,
+        "unique_examples": 512,
+        "unique_mapping_combinations": 512,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "2": {
+        "pairs": 2,
+        "examples": 10000,
+        "unique_examples": 9887,
+        "unique_mapping_combinations": 9785,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "3": {
+        "pairs": 4,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "4": {
+        "pairs": 8,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "5": {
+        "pairs": 16,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      }
+    }
+  },
+  "reference": {
+    "parameters": 19514880,
+    "l3": {
+      "pass": false,
+      "curve": [
+        {
+          "updates": 100,
+          "examples_processed": 1600,
+          "unique_examples": 1600,
+          "tokens_processed": 38400,
+          "accuracy": 0.0625,
+          "loss": 3.4408765733242035,
+          "same_partition_accuracy": 0.0625,
+          "recent_training_loss": 3.761887526512146,
+          "gradient_norm": 4.693508625030518,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.913721286257108,
+              "correct_key_mass": 0.036824358790181574,
+              "correct_value_mass": 0.06792664217452209,
+              "correct_key_value_mass": 0.10475100123633942,
+              "correct_position_mean_rank": 9.494791666666666,
+              "attention_margin": -0.3195442648449292,
+              "max_attention_probability": 0.12612993145982423
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9997273981571198,
+              "correct_key_mass": 0.04162616158525149,
+              "correct_value_mass": 0.041633798430363335,
+              "correct_key_value_mass": 0.08325996001561482,
+              "correct_position_mean_rank": 9.661458333333334,
+              "attention_margin": -0.06475031624237697,
+              "max_attention_probability": 0.04485061516364416
+            }
+          }
+        },
+        {
+          "updates": 250,
+          "examples_processed": 4000,
+          "unique_examples": 4000,
+          "tokens_processed": 96000,
+          "accuracy": 0.15234375,
+          "loss": 3.2226686477661133,
+          "same_partition_accuracy": 0.12109375,
+          "recent_training_loss": 3.285788631439209,
+          "gradient_norm": 5.783130168914795,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.9056745449701945,
+              "correct_key_mass": 0.03740591485257028,
+              "correct_value_mass": 0.06836837471152345,
+              "correct_key_value_mass": 0.10577429017672936,
+              "correct_position_mean_rank": 9.219270833333333,
+              "attention_margin": -0.36953994582096733,
+              "max_attention_probability": 0.13442075066268444
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9898545444011688,
+              "correct_key_mass": 0.04388046575089296,
+              "correct_value_mass": 0.04005518741905689,
+              "correct_key_value_mass": 0.08393565565347672,
+              "correct_position_mean_rank": 9.515625,
+              "attention_margin": -0.13648098024229208,
+              "max_attention_probability": 0.053102798759937286
+            }
+          }
+        },
+        {
+          "updates": 500,
+          "examples_processed": 8000,
+          "unique_examples": 8000,
+          "tokens_processed": 192000,
+          "accuracy": 0.15234375,
+          "loss": 2.9772143363952637,
+          "same_partition_accuracy": 0.19921875,
+          "recent_training_loss": 3.0572672057151795,
+          "gradient_norm": 6.865644454956055,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.8316618042687575,
+              "correct_key_mass": 0.03381841662727917,
+              "correct_value_mass": 0.06660824188341698,
+              "correct_key_value_mass": 0.10042665917426348,
+              "correct_position_mean_rank": 8.031770833333333,
+              "attention_margin": -0.8781713346640269,
+              "max_attention_probability": 0.17190153598785402
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.8716201484203339,
+              "correct_key_mass": 0.03903360292315483,
+              "correct_value_mass": 0.0483719427138567,
+              "correct_key_value_mass": 0.08740554625789325,
+              "correct_position_mean_rank": 7.166666666666667,
+              "attention_margin": -0.6857094019651413,
+              "max_attention_probability": 0.11827566598852475
+            }
+          }
+        },
+        {
+          "updates": 1000,
+          "examples_processed": 16000,
+          "unique_examples": 16000,
+          "tokens_processed": 384000,
+          "accuracy": 0.22265625,
+          "loss": 2.2867279648780823,
+          "same_partition_accuracy": 0.19140625,
+          "recent_training_loss": 2.299849135875702,
+          "gradient_norm": 8.271652221679688,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.4568513388435046,
+              "correct_key_mass": 0.034542942556436175,
+              "correct_value_mass": 0.03298766329115021,
+              "correct_key_value_mass": 0.06753060574022432,
+              "correct_position_mean_rank": 9.748958333333333,
+              "attention_margin": -8.212866281469664,
+              "max_attention_probability": 0.3890250002344449
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.4896176854769389,
+              "correct_key_mass": 0.045050386960307755,
+              "correct_value_mass": 0.005374510879240309,
+              "correct_key_value_mass": 0.050424895559748016,
+              "correct_position_mean_rank": 10.651041666666666,
+              "attention_margin": -8.169854720433554,
+              "max_attention_probability": 0.34338462352752686
+            }
+          }
+        },
+        {
+          "updates": 2000,
+          "examples_processed": 32000,
+          "unique_examples": 32000,
+          "tokens_processed": 768000,
+          "accuracy": 0.26953125,
+          "loss": 1.7993038594722748,
+          "same_partition_accuracy": 0.27734375,
+          "recent_training_loss": 1.917309947013855,
+          "gradient_norm": 6.581457138061523,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.4107446221013864,
+              "correct_key_mass": 0.039154554959714004,
+              "correct_value_mass": 0.038031769347271906,
+              "correct_key_value_mass": 0.07718632336085042,
+              "correct_position_mean_rank": 9.148958333333333,
+              "attention_margin": -10.230901249249776,
+              "max_attention_probability": 0.4197180435061455
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.4648279796044032,
+              "correct_key_mass": 0.04980816754202048,
+              "correct_value_mass": 0.007977975928952219,
+              "correct_key_value_mass": 0.05778614245355129,
+              "correct_position_mean_rank": 9.744791666666666,
+              "attention_margin": -8.233247598012289,
+              "max_attention_probability": 0.3635654201110204
+            }
+          }
+        },
+        {
+          "updates": 4000,
+          "examples_processed": 64000,
+          "unique_examples": 64000,
+          "tokens_processed": 1536000,
+          "accuracy": 0.28515625,
+          "loss": 1.678362414240837,
+          "same_partition_accuracy": 0.2734375,
+          "recent_training_loss": 1.8010090577602387,
+          "gradient_norm": 6.646433353424072,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.34444117918610573,
+              "correct_key_mass": 0.030387291925995527,
+              "correct_value_mass": 0.036046811923370115,
+              "correct_key_value_mass": 0.06643410411973795,
+              "correct_position_mean_rank": 8.175520833333334,
+              "attention_margin": -13.00485118230184,
+              "max_attention_probability": 0.5202275733153026
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.3782397260268529,
+              "correct_key_mass": 0.031653864619632564,
+              "correct_value_mass": 0.008403676135155061,
+              "correct_key_value_mass": 0.040057541647305094,
+              "correct_position_mean_rank": 9.046875,
+              "attention_margin": -13.203530152638754,
+              "max_attention_probability": 0.4699546347061793
+            }
+          }
+        },
+        {
+          "updates": 8000,
+          "examples_processed": 128000,
+          "unique_examples": 128000,
+          "tokens_processed": 3072000,
+          "accuracy": 0.18359375,
+          "loss": 1.7355319112539291,
+          "same_partition_accuracy": 0.26171875,
+          "recent_training_loss": 1.6648401641845703,
+          "gradient_norm": 6.489259719848633,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.2874675141647458,
+              "correct_key_mass": 0.036901837399705074,
+              "correct_value_mass": 0.0456377817453055,
+              "correct_key_value_mass": 0.08253961962958177,
+              "correct_position_mean_rank": 7.857291666666667,
+              "attention_margin": -16.93496700922648,
+              "max_attention_probability": 0.6153165886799494
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.31315258145332336,
+              "correct_key_mass": 0.0438063545152545,
+              "correct_value_mass": 0.023595882308048505,
+              "correct_key_value_mass": 0.0674022367844979,
+              "correct_position_mean_rank": 8.15625,
+              "attention_margin": -14.230887730916342,
+              "max_attention_probability": 0.5647587378819784
+            }
+          }
+        }
+      ],
+      "final": {
+        "pairs": 4,
+        "candidate_chance": 0.25,
+        "value_vocabulary_chance": 0.03125,
+        "novel_mapping": {
+          "accuracy": 0.26171875,
+          "loss": 1.6203461438417435,
+          "examples": 256
+        },
+        "novel_sequence_same_partition": {
+          "accuracy": 0.28515625,
+          "loss": 1.5732189267873764,
+          "examples": 256
+        }
+      },
+      "controls": {
+        "correct_query": {
+          "accuracy": 0.26171875,
+          "loss": 1.6203461438417435,
+          "examples": 256
+        },
+        "counterfactual": {
+          "accuracy": 0.08984375,
+          "loss": 1.7660770863294601,
+          "examples": 256
+        },
+        "shuffled_original_target": {
+          "accuracy": 0.265625,
+          "loss": 1.5903302431106567,
+          "examples": 256
+        },
+        "wrong_query_original_target": {
+          "accuracy": 0.265625,
+          "loss": 1.6233337223529816,
+          "examples": 256
+        },
+        "wrong_query_new_target": {
+          "accuracy": 0.19140625,
+          "loss": 1.6589604914188385,
+          "examples": 256
+        },
+        "removed_query_original_target": {
+          "accuracy": 0.25390625,
+          "loss": 1.6202093809843063,
+          "examples": 256
+        },
+        "removed_relation_original_target": {
+          "accuracy": 0.0,
+          "loss": 6.7136653661727905,
+          "examples": 256
+        },
+        "drops": {
+          "shuffled": -0.00390625,
+          "wrong_query_original": -0.00390625,
+          "removed_query": 0.0078125,
+          "removed_relation": 0.26171875
+        },
+        "gate_checks": {
+          "counterfactual": false,
+          "shuffled": false,
+          "removed_relation": true,
+          "wrong_query_new_target": false,
+          "wrong_query_original_target": false,
+          "removed_query": false
+        },
+        "pass": false
+      },
+      "sample_complexity": {
+        "0.50": null,
+        "0.75": null,
+        "0.90": null,
+        "0.95": null,
+        "0.98": null
+      }
+    },
+    "l4": {
+      "pass": false,
+      "curve": [
+        {
+          "updates": 250,
+          "examples_processed": 4000,
+          "unique_examples": 4000,
+          "tokens_processed": 176000,
+          "accuracy": 0.01953125,
+          "loss": 3.5679339170455933,
+          "same_partition_accuracy": 0.01953125,
+          "recent_training_loss": 3.5247796463966368,
+          "gradient_norm": 4.6703314781188965,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.911089568088452,
+              "correct_key_mass": 0.020363479316862745,
+              "correct_value_mass": 0.028143377183005212,
+              "correct_key_value_mass": 0.04850685652345419,
+              "correct_position_mean_rank": 14.479166666666666,
+              "attention_margin": -0.7519199967073897,
+              "max_attention_probability": 0.1016625700518489
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9997632006804148,
+              "correct_key_mass": 0.02274030850579341,
+              "correct_value_mass": 0.02274260763078928,
+              "correct_key_value_mass": 0.045482917999227844,
+              "correct_position_mean_rank": 15.338541666666666,
+              "attention_margin": -0.04104123078286648,
+              "max_attention_probability": 0.02401518790672223
+            }
+          }
+        },
+        {
+          "updates": 500,
+          "examples_processed": 8000,
+          "unique_examples": 8000,
+          "tokens_processed": 352000,
+          "accuracy": 0.05859375,
+          "loss": 3.466170072555542,
+          "same_partition_accuracy": 0.09375,
+          "recent_training_loss": 3.456388192176819,
+          "gradient_norm": 4.153348445892334,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.6825739759805098,
+              "correct_key_mass": 0.020572430223116493,
+              "correct_value_mass": 0.03228627177886665,
+              "correct_key_value_mass": 0.05285870249693592,
+              "correct_position_mean_rank": 15.69375,
+              "attention_margin": -3.709278195972244,
+              "max_attention_probability": 0.2581026873551309
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9835708439350128,
+              "correct_key_mass": 0.02017016615718603,
+              "correct_value_mass": 0.022917600348591805,
+              "correct_key_value_mass": 0.043087766816218696,
+              "correct_position_mean_rank": 19.677083333333332,
+              "attention_margin": -0.39362770318984985,
+              "max_attention_probability": 0.034880957255760826
+            }
+          }
+        },
+        {
+          "updates": 1000,
+          "examples_processed": 16000,
+          "unique_examples": 16000,
+          "tokens_processed": 704000,
+          "accuracy": 0.06640625,
+          "loss": 3.456728756427765,
+          "same_partition_accuracy": 0.0625,
+          "recent_training_loss": 3.4244263577461242,
+          "gradient_norm": 4.219980239868164,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.6446818224464853,
+              "correct_key_mass": 0.01972469479188176,
+              "correct_value_mass": 0.027967862169559037,
+              "correct_key_value_mass": 0.04769255653955042,
+              "correct_position_mean_rank": 16.242708333333333,
+              "attention_margin": -5.440352509419124,
+              "max_attention_probability": 0.2391310357178251
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.6466185947259268,
+              "correct_key_mass": 0.016881662886589766,
+              "correct_value_mass": 0.0018469210287245612,
+              "correct_key_value_mass": 0.018728583430250485,
+              "correct_position_mean_rank": 22.848958333333332,
+              "attention_margin": -7.494955778121948,
+              "max_attention_probability": 0.17788862437009811
+            }
+          }
+        },
+        {
+          "updates": 2000,
+          "examples_processed": 32000,
+          "unique_examples": 32000,
+          "tokens_processed": 1408000,
+          "accuracy": 0.1015625,
+          "loss": 3.3010090589523315,
+          "same_partition_accuracy": 0.11328125,
+          "recent_training_loss": 3.322042169570923,
+          "gradient_norm": 5.351441860198975,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.41451762393797176,
+              "correct_key_mass": 0.0202075208403902,
+              "correct_value_mass": 0.019450847846504377,
+              "correct_key_value_mass": 0.03965836837887764,
+              "correct_position_mean_rank": 17.872916666666665,
+              "attention_margin": -11.041751589377721,
+              "max_attention_probability": 0.4940543348590533
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.44576628506183624,
+              "correct_key_mass": 0.010548563363651434,
+              "correct_value_mass": 0.0038894493870126703,
+              "correct_key_value_mass": 0.014438012770066658,
+              "correct_position_mean_rank": 22.401041666666668,
+              "attention_margin": -9.760510365168253,
+              "max_attention_probability": 0.4514254828294118
+            }
+          }
+        },
+        {
+          "updates": 4000,
+          "examples_processed": 64000,
+          "unique_examples": 64000,
+          "tokens_processed": 2816000,
+          "accuracy": 0.08984375,
+          "loss": 3.2616122663021088,
+          "same_partition_accuracy": 0.10546875,
+          "recent_training_loss": 3.2447289490699767,
+          "gradient_norm": 6.039892673492432,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.35309686058220296,
+              "correct_key_mass": 0.011995711828893606,
+              "correct_value_mass": 0.02259271513433608,
+              "correct_key_value_mass": 0.034588427421598074,
+              "correct_position_mean_rank": 16.973958333333332,
+              "attention_margin": -14.478972260157267,
+              "max_attention_probability": 0.5690467312932015
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.39960313340028125,
+              "correct_key_mass": 0.012500725764160356,
+              "correct_value_mass": 0.005764378938086641,
+              "correct_key_value_mass": 0.01826510496903211,
+              "correct_position_mean_rank": 19.4375,
+              "attention_margin": -12.160797119140625,
+              "max_attention_probability": 0.5157100458939871
+            }
+          }
+        },
+        {
+          "updates": 8000,
+          "examples_processed": 128000,
+          "unique_examples": 128000,
+          "tokens_processed": 5632000,
+          "accuracy": 0.09375,
+          "loss": 3.1397332549095154,
+          "same_partition_accuracy": 0.09375,
+          "recent_training_loss": 3.1261304569244386,
+          "gradient_norm": 8.799376487731934,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.3086966456475693,
+              "correct_key_mass": 0.019382811169728627,
+              "correct_value_mass": 0.038889558639130385,
+              "correct_key_value_mass": 0.05827237014984694,
+              "correct_position_mean_rank": 15.7078125,
+              "attention_margin": -17.944663715362548,
+              "max_attention_probability": 0.6287774592638016
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.4284435858329137,
+              "correct_key_mass": 0.013125870376825333,
+              "correct_value_mass": 0.04809983563609421,
+              "correct_key_value_mass": 0.06122570733229319,
+              "correct_position_mean_rank": 16.703125,
+              "attention_margin": -10.264810721079508,
+              "max_attention_probability": 0.4878704796234767
+            }
+          }
+        },
+        {
+          "updates": 16000,
+          "examples_processed": 256000,
+          "unique_examples": 256000,
+          "tokens_processed": 11264000,
+          "accuracy": 0.08984375,
+          "loss": 3.0433041751384735,
+          "same_partition_accuracy": 0.11328125,
+          "recent_training_loss": 3.0635889172554016,
+          "gradient_norm": 5.643610000610352,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.2535427266205968,
+              "correct_key_mass": 0.016140699037471725,
+              "correct_value_mass": 0.028944259630100933,
+              "correct_key_value_mass": 0.045084958817746844,
+              "correct_position_mean_rank": 17.025520833333335,
+              "attention_margin": -28.300533191363016,
+              "max_attention_probability": 0.6743553707997004
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.3168137843410174,
+              "correct_key_mass": 0.01840175734832883,
+              "correct_value_mass": 0.025616597982055584,
+              "correct_key_value_mass": 0.044018356750408806,
+              "correct_position_mean_rank": 17.197916666666668,
+              "attention_margin": -15.125499407450357,
+              "max_attention_probability": 0.6049848993619283
+            }
+          }
+        }
+      ],
+      "final": {
+        "pairs": 8,
+        "candidate_chance": 0.125,
+        "value_vocabulary_chance": 0.03125,
+        "novel_mapping": {
+          "accuracy": 0.11328125,
+          "loss": 3.061675250530243,
+          "examples": 256
+        },
+        "novel_sequence_same_partition": {
+          "accuracy": 0.15234375,
+          "loss": 3.0259011685848236,
+          "examples": 256
+        }
+      },
+      "controls": {
+        "correct_query": {
+          "accuracy": 0.11328125,
+          "loss": 3.061675250530243,
+          "examples": 256
+        },
+        "counterfactual": {
+          "accuracy": 0.4921875,
+          "loss": 2.2902213633060455,
+          "examples": 256
+        },
+        "shuffled_original_target": {
+          "accuracy": 0.15234375,
+          "loss": 3.0774502754211426,
+          "examples": 256
+        },
+        "wrong_query_original_target": {
+          "accuracy": 0.11328125,
+          "loss": 3.0573551654815674,
+          "examples": 256
+        },
+        "wrong_query_new_target": {
+          "accuracy": 0.12890625,
+          "loss": 3.024232029914856,
+          "examples": 256
+        },
+        "removed_query_original_target": {
+          "accuracy": 0.11328125,
+          "loss": 3.059071809053421,
+          "examples": 256
+        },
+        "removed_relation_original_target": {
+          "accuracy": 0.00390625,
+          "loss": 4.1383280754089355,
+          "examples": 256
+        },
+        "drops": {
+          "shuffled": -0.0390625,
+          "wrong_query_original": 0.0,
+          "removed_query": 0.0,
+          "removed_relation": 0.109375
+        },
+        "gate_checks": {
+          "counterfactual": false,
+          "shuffled": false,
+          "removed_relation": true,
+          "wrong_query_new_target": false,
+          "wrong_query_original_target": false,
+          "removed_query": false
+        },
+        "pass": false
+      },
+      "sample_complexity": {
+        "0.50": null,
+        "0.75": null,
+        "0.90": null,
+        "0.95": null,
+        "0.98": null
+      }
+    },
+    "sequential": null,
+    "lr_3x_sanity": {
+      "schema_version": "synthetic-context-benchmark-v3.1-standalone-result",
+      "model": {
+        "name": "reference_mha",
+        "implementation": "reference",
+        "residual_projection_init_scale": 0.22360679774997896
+      },
+      "parameters": 19514880,
+      "level": 3,
+      "pairs": 4,
+      "optimizer": {
+        "name": "AdamW",
+        "learning_rate": 0.0009,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "gradient_clip": 1.0
+      },
+      "training": {
+        "data_generation": "on-the-fly deterministic random stream",
+        "updates": 500,
+        "configured_maximum_updates": 500,
+        "examples_processed": 8000,
+        "unique_examples": 8000,
+        "unique_mapping_combinations": 8000,
+        "tokens_processed": 192000,
+        "batch_size": 16,
+        "gradient_accumulation": 1,
+        "effective_batch": 16,
+        "wall_seconds": 143.6370576999998,
+        "peak_ram_mb": 712.2421875,
+        "stopped_early_at_configured_target": false
+      },
+      "curve": [
+        {
+          "updates": 100,
+          "examples_processed": 1600,
+          "unique_examples": 1600,
+          "tokens_processed": 38400,
+          "accuracy": 0.0234375,
+          "loss": 3.6325806081295013,
+          "same_partition_accuracy": 0.0390625,
+          "recent_training_loss": 3.776177854537964,
+          "gradient_norm": 4.6711015701293945,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.8902209923350407,
+              "correct_key_mass": 0.03639671010215769,
+              "correct_value_mass": 0.06150117153578094,
+              "correct_key_value_mass": 0.09789788228643298,
+              "correct_position_mean_rank": 10.11875,
+              "attention_margin": -0.7998307780673106,
+              "max_attention_probability": 0.15043310895562173
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9996365408102671,
+              "correct_key_mass": 0.04146973912914594,
+              "correct_value_mass": 0.041440934563676514,
+              "correct_key_value_mass": 0.08291067183017731,
+              "correct_position_mean_rank": 9.921875,
+              "attention_margin": -0.08213335275650024,
+              "max_attention_probability": 0.04572920501232147
+            }
+          }
+        },
+        {
+          "updates": 250,
+          "examples_processed": 4000,
+          "unique_examples": 4000,
+          "tokens_processed": 96000,
+          "accuracy": 0.01953125,
+          "loss": 3.5285955369472504,
+          "same_partition_accuracy": 0.04296875,
+          "recent_training_loss": 3.522730906009674,
+          "gradient_norm": 5.145251750946045,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.7497920700677024,
+              "correct_key_mass": 0.03929254650239729,
+              "correct_value_mass": 0.05467621587837757,
+              "correct_key_value_mass": 0.09396876245737149,
+              "correct_position_mean_rank": 7.703645833333334,
+              "attention_margin": -4.023955425744256,
+              "max_attention_probability": 0.246769097695748
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.856803297996521,
+              "correct_key_mass": 0.04182955684761206,
+              "correct_value_mass": 0.038045527413487434,
+              "correct_key_value_mass": 0.07987508550286293,
+              "correct_position_mean_rank": 7.838541666666667,
+              "attention_margin": -1.4787042203048866,
+              "max_attention_probability": 0.1349614274998506
+            }
+          }
+        },
+        {
+          "updates": 500,
+          "examples_processed": 8000,
+          "unique_examples": 8000,
+          "tokens_processed": 192000,
+          "accuracy": 0.08984375,
+          "loss": 3.3829984962940216,
+          "same_partition_accuracy": 0.07421875,
+          "recent_training_loss": 3.3700687670707703,
+          "gradient_norm": 4.27655029296875,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.4483708797384223,
+              "correct_key_mass": 0.020776583825201932,
+              "correct_value_mass": 0.055080816114822496,
+              "correct_key_value_mass": 0.07585739987215359,
+              "correct_position_mean_rank": 8.0515625,
+              "attention_margin": -11.628829097747802,
+              "max_attention_probability": 0.5316885687410832
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.35378096252679825,
+              "correct_key_mass": 0.0061900327855255455,
+              "correct_value_mass": 0.03310512929844359,
+              "correct_key_value_mass": 0.03929516145338615,
+              "correct_position_mean_rank": 8.796875,
+              "attention_margin": -12.964296181996664,
+              "max_attention_probability": 0.60236922899882
+            }
+          }
+        }
+      ],
+      "sample_complexity": {
+        "0.50": null,
+        "0.75": null,
+        "0.90": null,
+        "0.95": null,
+        "0.98": null
+      },
+      "final": {
+        "pairs": 4,
+        "candidate_chance": 0.25,
+        "value_vocabulary_chance": 0.03125,
+        "novel_mapping": {
+          "accuracy": 0.07421875,
+          "loss": 3.3382209837436676,
+          "examples": 256
+        },
+        "novel_sequence_same_partition": {
+          "accuracy": 0.1015625,
+          "loss": 3.294294595718384,
+          "examples": 256
+        }
+      },
+      "fixed_mapping": {
+        "accuracy": 0.0,
+        "loss": 2.9596076011657715,
+        "examples": 1
+      },
+      "controls": {
+        "correct_query": {
+          "accuracy": 0.07421875,
+          "loss": 3.3382209837436676,
+          "examples": 256
+        },
+        "counterfactual": {
+          "accuracy": 0.03515625,
+          "loss": 3.0342173874378204,
+          "examples": 256
+        },
+        "shuffled_original_target": {
+          "accuracy": 0.0859375,
+          "loss": 3.3347873091697693,
+          "examples": 256
+        },
+        "wrong_query_original_target": {
+          "accuracy": 0.07421875,
+          "loss": 3.3388429284095764,
+          "examples": 256
+        },
+        "wrong_query_new_target": {
+          "accuracy": 0.109375,
+          "loss": 3.315811038017273,
+          "examples": 256
+        },
+        "removed_query_original_target": {
+          "accuracy": 0.07421875,
+          "loss": 3.3381253480911255,
+          "examples": 256
+        },
+        "removed_relation_original_target": {
+          "accuracy": 0.0234375,
+          "loss": 3.6820963621139526,
+          "examples": 256
+        },
+        "drops": {
+          "shuffled": -0.01171875,
+          "wrong_query_original": 0.0,
+          "removed_query": 0.0,
+          "removed_relation": 0.05078125
+        },
+        "gate_checks": {
+          "counterfactual": false,
+          "shuffled": false,
+          "removed_relation": true,
+          "wrong_query_new_target": false,
+          "wrong_query_original_target": true,
+          "removed_query": true
+        },
+        "pass": false
+      },
+      "dataset_audit": {
+        "exact_sequence_overlap": 0,
+        "exact_mapping_combination_overlap": 0,
+        "individual_relation_overlap_expected": 361,
+        "template_overlap": "intentional: identical v3 grammar",
+        "novel_mapping_definition": "exact unseen multi-relation mapping combination under canonical v3 any/any generation"
+      },
+      "pass": false,
+      "checkpoint": {
+        "path": "checkpoints/foundation-v20-benchmark-v31/lr3x/reference_mha-l3-standalone.pt",
+        "bytes": 234333399,
+        "sha256": "024d685b9ac986e5fe320484d8a11e8213664ea04fd52366cb0552a023eb505c",
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "parameters": 19514880,
+        "retained": false
+      },
+      "resume_used": true,
+      "final_blind_used": false,
+      "production_changed": false
+    },
+    "weight_decay_zero_sanity": {
+      "schema_version": "synthetic-context-benchmark-v3.1-standalone-result",
+      "model": {
+        "name": "reference_mha",
+        "implementation": "reference",
+        "residual_projection_init_scale": 0.22360679774997896
+      },
+      "parameters": 19514880,
+      "level": 3,
+      "pairs": 4,
+      "optimizer": {
+        "name": "AdamW",
+        "learning_rate": 0.0003,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "training": {
+        "data_generation": "on-the-fly deterministic random stream",
+        "updates": 1000,
+        "configured_maximum_updates": 1000,
+        "examples_processed": 16000,
+        "unique_examples": 16000,
+        "unique_mapping_combinations": 16000,
+        "tokens_processed": 384000,
+        "batch_size": 16,
+        "gradient_accumulation": 1,
+        "effective_batch": 16,
+        "wall_seconds": 269.4824587999992,
+        "peak_ram_mb": 717.1796875,
+        "stopped_early_at_configured_target": false
+      },
+      "curve": [
+        {
+          "updates": 100,
+          "examples_processed": 1600,
+          "unique_examples": 1600,
+          "tokens_processed": 38400,
+          "accuracy": 0.05859375,
+          "loss": 3.440961718559265,
+          "same_partition_accuracy": 0.0546875,
+          "recent_training_loss": 3.761810326576233,
+          "gradient_norm": 4.6921234130859375,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.9138076836864154,
+              "correct_key_mass": 0.03685094184038462,
+              "correct_value_mass": 0.0679572203507026,
+              "correct_key_value_mass": 0.10480816308408976,
+              "correct_position_mean_rank": 9.494791666666666,
+              "attention_margin": -0.3159726025691877,
+              "max_attention_probability": 0.12600036257257063
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9997328817844391,
+              "correct_key_mass": 0.041635897010564804,
+              "correct_value_mass": 0.04164295271039009,
+              "correct_key_value_mass": 0.0832788534462452,
+              "correct_position_mean_rank": 9.630208333333334,
+              "attention_margin": -0.063698369388779,
+              "max_attention_probability": 0.044811916227142014
+            }
+          }
+        },
+        {
+          "updates": 250,
+          "examples_processed": 4000,
+          "unique_examples": 4000,
+          "tokens_processed": 96000,
+          "accuracy": 0.171875,
+          "loss": 3.167385309934616,
+          "same_partition_accuracy": 0.13671875,
+          "recent_training_loss": 3.271957612037659,
+          "gradient_norm": 6.01640510559082,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.8995714681843917,
+              "correct_key_mass": 0.03626571677013999,
+              "correct_value_mass": 0.06697538743416469,
+              "correct_key_value_mass": 0.10324110441530744,
+              "correct_position_mean_rank": 9.013541666666667,
+              "attention_margin": -0.49678569498161473,
+              "max_attention_probability": 0.14488619870195787
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.9900929828484853,
+              "correct_key_mass": 0.04256523338456949,
+              "correct_value_mass": 0.03982247474292914,
+              "correct_key_value_mass": 0.08238770936926205,
+              "correct_position_mean_rank": 9.588541666666666,
+              "attention_margin": -0.19774516423543295,
+              "max_attention_probability": 0.05763573075334231
+            }
+          }
+        },
+        {
+          "updates": 500,
+          "examples_processed": 8000,
+          "unique_examples": 8000,
+          "tokens_processed": 192000,
+          "accuracy": 0.19140625,
+          "loss": 3.03367155790329,
+          "same_partition_accuracy": 0.1953125,
+          "recent_training_loss": 3.058162569999695,
+          "gradient_norm": 5.521805286407471,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.8224122633536657,
+              "correct_key_mass": 0.03290088255307637,
+              "correct_value_mass": 0.06042169641392926,
+              "correct_key_value_mass": 0.09332258036981027,
+              "correct_position_mean_rank": 8.236458333333333,
+              "attention_margin": -0.9985784764091173,
+              "max_attention_probability": 0.16995961678524812
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.8725159466266632,
+              "correct_key_mass": 0.03625739427904288,
+              "correct_value_mass": 0.03551497419054309,
+              "correct_key_value_mass": 0.07177237048745155,
+              "correct_position_mean_rank": 8.96875,
+              "attention_margin": -1.1554380257924397,
+              "max_attention_probability": 0.1331538495918115
+            }
+          }
+        },
+        {
+          "updates": 1000,
+          "examples_processed": 16000,
+          "unique_examples": 16000,
+          "tokens_processed": 384000,
+          "accuracy": 0.23828125,
+          "loss": 2.1477667093276978,
+          "same_partition_accuracy": 0.25390625,
+          "recent_training_loss": 2.235719255208969,
+          "gradient_norm": 7.830463409423828,
+          "attention": {
+            "all_layer_head_mean": {
+              "normalized_entropy": 0.49665412530303,
+              "correct_key_mass": 0.03868572507538678,
+              "correct_value_mass": 0.03305558491646631,
+              "correct_key_value_mass": 0.07174131077093383,
+              "correct_position_mean_rank": 9.615625,
+              "attention_margin": -7.003355357547601,
+              "max_attention_probability": 0.34564468810955684
+            },
+            "last_layer_mean": {
+              "normalized_entropy": 0.5406319350004196,
+              "correct_key_mass": 0.0443450640887022,
+              "correct_value_mass": 0.004264862873242237,
+              "correct_key_value_mass": 0.048609924813111625,
+              "correct_position_mean_rank": 10.223958333333334,
+              "attention_margin": -6.693285942077637,
+              "max_attention_probability": 0.295837198694547
+            }
+          }
+        }
+      ],
+      "sample_complexity": {
+        "0.50": null,
+        "0.75": null,
+        "0.90": null,
+        "0.95": null,
+        "0.98": null
+      },
+      "final": {
+        "pairs": 4,
+        "candidate_chance": 0.25,
+        "value_vocabulary_chance": 0.03125,
+        "novel_mapping": {
+          "accuracy": 0.25390625,
+          "loss": 2.170825332403183,
+          "examples": 256
+        },
+        "novel_sequence_same_partition": {
+          "accuracy": 0.26171875,
+          "loss": 2.1603802293539047,
+          "examples": 256
+        }
+      },
+      "fixed_mapping": {
+        "accuracy": 1.0,
+        "loss": 0.7520415782928467,
+        "examples": 1
+      },
+      "controls": {
+        "correct_query": {
+          "accuracy": 0.25390625,
+          "loss": 2.170825332403183,
+          "examples": 256
+        },
+        "counterfactual": {
+          "accuracy": 0.109375,
+          "loss": 2.4975377321243286,
+          "examples": 256
+        },
+        "shuffled_original_target": {
+          "accuracy": 0.21484375,
+          "loss": 2.260122001171112,
+          "examples": 256
+        },
+        "wrong_query_original_target": {
+          "accuracy": 0.25390625,
+          "loss": 2.1718159914016724,
+          "examples": 256
+        },
+        "wrong_query_new_target": {
+          "accuracy": 0.25,
+          "loss": 2.139700412750244,
+          "examples": 256
+        },
+        "removed_query_original_target": {
+          "accuracy": 0.25390625,
+          "loss": 2.171220049262047,
+          "examples": 256
+        },
+        "removed_relation_original_target": {
+          "accuracy": 0.0,
+          "loss": 5.27900904417038,
+          "examples": 256
+        },
+        "drops": {
+          "shuffled": 0.0390625,
+          "wrong_query_original": 0.0,
+          "removed_query": 0.0,
+          "removed_relation": 0.25390625
+        },
+        "gate_checks": {
+          "counterfactual": false,
+          "shuffled": false,
+          "removed_relation": true,
+          "wrong_query_new_target": false,
+          "wrong_query_original_target": false,
+          "removed_query": false
+        },
+        "pass": false
+      },
+      "dataset_audit": {
+        "exact_sequence_overlap": 0,
+        "exact_mapping_combination_overlap": 0,
+        "individual_relation_overlap_expected": 361,
+        "template_overlap": "intentional: identical v3 grammar",
+        "novel_mapping_definition": "exact unseen multi-relation mapping combination under canonical v3 any/any generation"
+      },
+      "pass": false,
+      "checkpoint": {
+        "path": "checkpoints/foundation-v20-benchmark-v31/wd0/reference_mha-l3-standalone.pt",
+        "bytes": 234333399,
+        "sha256": "777e4f7eaab9a883618704514e0f9a167194db14454406f7e524d48542d34646",
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "parameters": 19514880,
+        "retained": false
+      },
+      "resume_used": false,
+      "final_blind_used": false,
+      "production_changed": false
+    }
+  },
+  "current": null,
+  "depth": null,
+  "current_depth_skipped": true,
+  "depth_candidate": false,
+  "architecture_fatal_defect": false,
+  "full_foundation_256k_next_phase": false,
+  "manifest": {
+    "path": "evaluation/foundation-v20-synthetic-context-benchmark-v31-manifest.json",
+    "file_sha256": "002f9ce24114b9eb213ae3dee43f14d62042d560c58fdfb5368ac9ac7d482db2",
+    "content_sha256": "3ff51751e683201ff50a699b1f7f9d7b75bb1a6dbc8fcd092c60d48bd60f07f9"
+  },
+  "final_blind": {
+    "path": "data/foundation_v09/evaluation/final-blind-1000.json",
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "expected_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "match": true,
+    "content_opened": false
+  },
+  "production_changed": false,
+  "render_deployed": false,
+  "vercel_deployed": false,
+  "verification": {
+    "phase31_focused_tests": "20 passed",
+    "full_pytest": "339 passed, 3 warnings",
+    "checkpoint_independent_reload": true,
+    "resume_reproducibility": true
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "synthetic-context-benchmark-v3.1-standalone-result",
+  "model": {
+    "name": "reference_mha",
+    "implementation": "reference",
+    "residual_projection_init_scale": 0.22360679774997896
+  },
+  "parameters": 19514880,
+  "level": 3,
+  "pairs": 4,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0009,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "training": {
+    "data_generation": "on-the-fly deterministic random stream",
+    "updates": 500,
+    "configured_maximum_updates": 500,
+    "examples_processed": 8000,
+    "unique_examples": 8000,
+    "unique_mapping_combinations": 8000,
+    "tokens_processed": 192000,
+    "batch_size": 16,
+    "gradient_accumulation": 1,
+    "effective_batch": 16,
+    "wall_seconds": 143.6370576999998,
+    "peak_ram_mb": 712.2421875,
+    "stopped_early_at_configured_target": false
+  },
+  "curve": [
+    {
+      "updates": 100,
+      "examples_processed": 1600,
+      "unique_examples": 1600,
+      "tokens_processed": 38400,
+      "accuracy": 0.0234375,
+      "loss": 3.6325806081295013,
+      "same_partition_accuracy": 0.0390625,
+      "recent_training_loss": 3.776177854537964,
+      "gradient_norm": 4.6711015701293945,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.8902209923350407,
+          "correct_key_mass": 0.03639671010215769,
+          "correct_value_mass": 0.06150117153578094,
+          "correct_key_value_mass": 0.09789788228643298,
+          "correct_position_mean_rank": 10.11875,
+          "attention_margin": -0.7998307780673106,
+          "max_attention_probability": 0.15043310895562173
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9996365408102671,
+          "correct_key_mass": 0.04146973912914594,
+          "correct_value_mass": 0.041440934563676514,
+          "correct_key_value_mass": 0.08291067183017731,
+          "correct_position_mean_rank": 9.921875,
+          "attention_margin": -0.08213335275650024,
+          "max_attention_probability": 0.04572920501232147
+        }
+      }
+    },
+    {
+      "updates": 250,
+      "examples_processed": 4000,
+      "unique_examples": 4000,
+      "tokens_processed": 96000,
+      "accuracy": 0.01953125,
+      "loss": 3.5285955369472504,
+      "same_partition_accuracy": 0.04296875,
+      "recent_training_loss": 3.522730906009674,
+      "gradient_norm": 5.145251750946045,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.7497920700677024,
+          "correct_key_mass": 0.03929254650239729,
+          "correct_value_mass": 0.05467621587837757,
+          "correct_key_value_mass": 0.09396876245737149,
+          "correct_position_mean_rank": 7.703645833333334,
+          "attention_margin": -4.023955425744256,
+          "max_attention_probability": 0.246769097695748
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.856803297996521,
+          "correct_key_mass": 0.04182955684761206,
+          "correct_value_mass": 0.038045527413487434,
+          "correct_key_value_mass": 0.07987508550286293,
+          "correct_position_mean_rank": 7.838541666666667,
+          "attention_margin": -1.4787042203048866,
+          "max_attention_probability": 0.1349614274998506
+        }
+      }
+    },
+    {
+      "updates": 500,
+      "examples_processed": 8000,
+      "unique_examples": 8000,
+      "tokens_processed": 192000,
+      "accuracy": 0.08984375,
+      "loss": 3.3829984962940216,
+      "same_partition_accuracy": 0.07421875,
+      "recent_training_loss": 3.3700687670707703,
+      "gradient_norm": 4.27655029296875,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.4483708797384223,
+          "correct_key_mass": 0.020776583825201932,
+          "correct_value_mass": 0.055080816114822496,
+          "correct_key_value_mass": 0.07585739987215359,
+          "correct_position_mean_rank": 8.0515625,
+          "attention_margin": -11.628829097747802,
+          "max_attention_probability": 0.5316885687410832
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.35378096252679825,
+          "correct_key_mass": 0.0061900327855255455,
+          "correct_value_mass": 0.03310512929844359,
+          "correct_key_value_mass": 0.03929516145338615,
+          "correct_position_mean_rank": 8.796875,
+          "attention_margin": -12.964296181996664,
+          "max_attention_probability": 0.60236922899882
+        }
+      }
+    }
+  ],
+  "sample_complexity": {
+    "0.50": null,
+    "0.75": null,
+    "0.90": null,
+    "0.95": null,
+    "0.98": null
+  },
+  "final": {
+    "pairs": 4,
+    "candidate_chance": 0.25,
+    "value_vocabulary_chance": 0.03125,
+    "novel_mapping": {
+      "accuracy": 0.07421875,
+      "loss": 3.3382209837436676,
+      "examples": 256
+    },
+    "novel_sequence_same_partition": {
+      "accuracy": 0.1015625,
+      "loss": 3.294294595718384,
+      "examples": 256
+    }
+  },
+  "fixed_mapping": {
+    "accuracy": 0.0,
+    "loss": 2.9596076011657715,
+    "examples": 1
+  },
+  "controls": {
+    "correct_query": {
+      "accuracy": 0.07421875,
+      "loss": 3.3382209837436676,
+      "examples": 256
+    },
+    "counterfactual": {
+      "accuracy": 0.03515625,
+      "loss": 3.0342173874378204,
+      "examples": 256
+    },
+    "shuffled_original_target": {
+      "accuracy": 0.0859375,
+      "loss": 3.3347873091697693,
+      "examples": 256
+    },
+    "wrong_query_original_target": {
+      "accuracy": 0.07421875,
+      "loss": 3.3388429284095764,
+      "examples": 256
+    },
+    "wrong_query_new_target": {
+      "accuracy": 0.109375,
+      "loss": 3.315811038017273,
+      "examples": 256
+    },
+    "removed_query_original_target": {
+      "accuracy": 0.07421875,
+      "loss": 3.3381253480911255,
+      "examples": 256
+    },
+    "removed_relation_original_target": {
+      "accuracy": 0.0234375,
+      "loss": 3.6820963621139526,
+      "examples": 256
+    },
+    "drops": {
+      "shuffled": -0.01171875,
+      "wrong_query_original": 0.0,
+      "removed_query": 0.0,
+      "removed_relation": 0.05078125
+    },
+    "gate_checks": {
+      "counterfactual": false,
+      "shuffled": false,
+      "removed_relation": true,
+      "wrong_query_new_target": false,
+      "wrong_query_original_target": true,
+      "removed_query": true
+    },
+    "pass": false
+  },
+  "dataset_audit": {
+    "exact_sequence_overlap": 0,
+    "exact_mapping_combination_overlap": 0,
+    "individual_relation_overlap_expected": 361,
+    "template_overlap": "intentional: identical v3 grammar",
+    "novel_mapping_definition": "exact unseen multi-relation mapping combination under canonical v3 any/any generation"
+  },
+  "pass": false,
+  "checkpoint": {
+    "path": "checkpoints/foundation-v20-benchmark-v31/lr3x/reference_mha-l3-standalone.pt",
+    "bytes": 234333399,
+    "sha256": "024d685b9ac986e5fe320484d8a11e8213664ea04fd52366cb0552a023eb505c",
+    "strict_reload": true,
+    "optimizer_state_present": true,
+    "parameters": 19514880,
+    "retained": false
+  },
+  "resume_used": true,
+  "final_blind_used": false,
+  "production_changed": false
+}

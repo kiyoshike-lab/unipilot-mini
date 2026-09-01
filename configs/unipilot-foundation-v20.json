@@ -1,0 +1,89 @@
+{
+  "project": "UniPilot Foundation v2.0 Associative Retrieval Curriculum Validation",
+  "schema_version": "synthetic-context-benchmark-v3.1",
+  "seed": 43,
+  "cpu_threads": 4,
+  "architecture": {
+    "vocab_size": 4096,
+    "context_length": 512,
+    "embedding_dim": 384,
+    "n_layers": 10,
+    "n_heads": 6,
+    "ffn_dim": 1536,
+    "dropout": 0.1,
+    "bias": true,
+    "norm_epsilon": 1e-5,
+    "weight_tying": true
+  },
+  "benchmark": {
+    "version": "Synthetic Context Benchmark v3.1",
+    "task_semantics": "unchanged from v3",
+    "vocab_size": 256,
+    "markers": true,
+    "supervision": "answer_only",
+    "answer_weight": 1.0,
+    "train_mapping_split": "any",
+    "test_mapping_split": "any",
+    "on_the_fly": true,
+    "batch_size": 16,
+    "gradient_accumulation": 1,
+    "evaluation_examples": 256,
+    "attention_examples": 32,
+    "standalone": {
+      "3": {
+        "evaluation_points": [100, 250, 500, 1000, 2000, 4000, 8000],
+        "pass_accuracy": 0.95,
+        "early_stop_accuracy": 0.98
+      },
+      "4": {
+        "evaluation_points": [250, 500, 1000, 2000, 4000, 8000, 16000],
+        "pass_accuracy": 0.90,
+        "early_stop_accuracy": 0.95
+      }
+    },
+    "sequential": {
+      "levels": [1, 2, 3, 4],
+      "maximum_updates": {"1": 500, "2": 4000, "3": 8000, "4": 16000},
+      "minimum_updates": {"1": 100, "2": 500, "3": 1000, "4": 2000},
+      "evaluation_interval": {"1": 100, "2": 250, "3": 500, "4": 1000},
+      "thresholds": {"1": 0.99, "2": 0.98, "3": 0.95, "4": 0.90}
+    },
+    "controls": {
+      "counterfactual_minimum": 0.90,
+      "shuffled_minimum_drop": 0.50,
+      "removed_maximum_accuracy": 0.10,
+      "wrong_query_new_target_minimum": 0.90,
+      "wrong_query_original_maximum": 0.10,
+      "removed_query_maximum": 0.10
+    }
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [0.9, 0.95],
+    "eps": 1e-8,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "models": [
+    {"name": "reference_mha", "implementation": "reference", "residual_projection_init_scale": 0.22360679774997896},
+    {"name": "custom_current", "implementation": "custom", "residual_projection_init_scale": 1.0},
+    {"name": "custom_depth_init", "implementation": "custom", "residual_projection_init_scale": 0.22360679774997896}
+  ],
+  "validity": {
+    "oracle_accuracy": 1.0,
+    "required_levels": [1, 2, 3, 4],
+    "novel_mapping_required": true,
+    "level_5_diagnostic_only": true,
+    "reference_first": true
+  },
+  "prohibitions": {
+    "full_foundation_pretraining": true,
+    "architecture_change": true,
+    "tokenizer_change": true,
+    "production_change": true,
+    "deploy": true,
+    "main_push": true,
+    "final_blind_open": true
+  }
+}

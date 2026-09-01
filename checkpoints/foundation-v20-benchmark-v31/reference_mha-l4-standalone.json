@@ -1,0 +1,354 @@
+{
+  "schema_version": "synthetic-context-benchmark-v3.1-standalone-result",
+  "model": {
+    "name": "reference_mha",
+    "implementation": "reference",
+    "residual_projection_init_scale": 0.22360679774997896
+  },
+  "parameters": 19514880,
+  "level": 4,
+  "pairs": 8,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "training": {
+    "data_generation": "on-the-fly deterministic random stream",
+    "updates": 16000,
+    "configured_maximum_updates": 16000,
+    "examples_processed": 256000,
+    "unique_examples": 256000,
+    "unique_mapping_combinations": 256000,
+    "tokens_processed": 11264000,
+    "batch_size": 16,
+    "gradient_accumulation": 1,
+    "effective_batch": 16,
+    "wall_seconds": 7622.8880893,
+    "peak_ram_mb": 918.83203125,
+    "stopped_early_at_configured_target": false
+  },
+  "curve": [
+    {
+      "updates": 250,
+      "examples_processed": 4000,
+      "unique_examples": 4000,
+      "tokens_processed": 176000,
+      "accuracy": 0.01953125,
+      "loss": 3.5679339170455933,
+      "same_partition_accuracy": 0.01953125,
+      "recent_training_loss": 3.5247796463966368,
+      "gradient_norm": 4.6703314781188965,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.911089568088452,
+          "correct_key_mass": 0.020363479316862745,
+          "correct_value_mass": 0.028143377183005212,
+          "correct_key_value_mass": 0.04850685652345419,
+          "correct_position_mean_rank": 14.479166666666666,
+          "attention_margin": -0.7519199967073897,
+          "max_attention_probability": 0.1016625700518489
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9997632006804148,
+          "correct_key_mass": 0.02274030850579341,
+          "correct_value_mass": 0.02274260763078928,
+          "correct_key_value_mass": 0.045482917999227844,
+          "correct_position_mean_rank": 15.338541666666666,
+          "attention_margin": -0.04104123078286648,
+          "max_attention_probability": 0.02401518790672223
+        }
+      }
+    },
+    {
+      "updates": 500,
+      "examples_processed": 8000,
+      "unique_examples": 8000,
+      "tokens_processed": 352000,
+      "accuracy": 0.05859375,
+      "loss": 3.466170072555542,
+      "same_partition_accuracy": 0.09375,
+      "recent_training_loss": 3.456388192176819,
+      "gradient_norm": 4.153348445892334,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.6825739759805098,
+          "correct_key_mass": 0.020572430223116493,
+          "correct_value_mass": 0.03228627177886665,
+          "correct_key_value_mass": 0.05285870249693592,
+          "correct_position_mean_rank": 15.69375,
+          "attention_margin": -3.709278195972244,
+          "max_attention_probability": 0.2581026873551309
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9835708439350128,
+          "correct_key_mass": 0.02017016615718603,
+          "correct_value_mass": 0.022917600348591805,
+          "correct_key_value_mass": 0.043087766816218696,
+          "correct_position_mean_rank": 19.677083333333332,
+          "attention_margin": -0.39362770318984985,
+          "max_attention_probability": 0.034880957255760826
+        }
+      }
+    },
+    {
+      "updates": 1000,
+      "examples_processed": 16000,
+      "unique_examples": 16000,
+      "tokens_processed": 704000,
+      "accuracy": 0.06640625,
+      "loss": 3.456728756427765,
+      "same_partition_accuracy": 0.0625,
+      "recent_training_loss": 3.4244263577461242,
+      "gradient_norm": 4.219980239868164,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.6446818224464853,
+          "correct_key_mass": 0.01972469479188176,
+          "correct_value_mass": 0.027967862169559037,
+          "correct_key_value_mass": 0.04769255653955042,
+          "correct_position_mean_rank": 16.242708333333333,
+          "attention_margin": -5.440352509419124,
+          "max_attention_probability": 0.2391310357178251
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.6466185947259268,
+          "correct_key_mass": 0.016881662886589766,
+          "correct_value_mass": 0.0018469210287245612,
+          "correct_key_value_mass": 0.018728583430250485,
+          "correct_position_mean_rank": 22.848958333333332,
+          "attention_margin": -7.494955778121948,
+          "max_attention_probability": 0.17788862437009811
+        }
+      }
+    },
+    {
+      "updates": 2000,
+      "examples_processed": 32000,
+      "unique_examples": 32000,
+      "tokens_processed": 1408000,
+      "accuracy": 0.1015625,
+      "loss": 3.3010090589523315,
+      "same_partition_accuracy": 0.11328125,
+      "recent_training_loss": 3.322042169570923,
+      "gradient_norm": 5.351441860198975,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.41451762393797176,
+          "correct_key_mass": 0.0202075208403902,
+          "correct_value_mass": 0.019450847846504377,
+          "correct_key_value_mass": 0.03965836837887764,
+          "correct_position_mean_rank": 17.872916666666665,
+          "attention_margin": -11.041751589377721,
+          "max_attention_probability": 0.4940543348590533
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.44576628506183624,
+          "correct_key_mass": 0.010548563363651434,
+          "correct_value_mass": 0.0038894493870126703,
+          "correct_key_value_mass": 0.014438012770066658,
+          "correct_position_mean_rank": 22.401041666666668,
+          "attention_margin": -9.760510365168253,
+          "max_attention_probability": 0.4514254828294118
+        }
+      }
+    },
+    {
+      "updates": 4000,
+      "examples_processed": 64000,
+      "unique_examples": 64000,
+      "tokens_processed": 2816000,
+      "accuracy": 0.08984375,
+      "loss": 3.2616122663021088,
+      "same_partition_accuracy": 0.10546875,
+      "recent_training_loss": 3.2447289490699767,
+      "gradient_norm": 6.039892673492432,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.35309686058220296,
+          "correct_key_mass": 0.011995711828893606,
+          "correct_value_mass": 0.02259271513433608,
+          "correct_key_value_mass": 0.034588427421598074,
+          "correct_position_mean_rank": 16.973958333333332,
+          "attention_margin": -14.478972260157267,
+          "max_attention_probability": 0.5690467312932015
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.39960313340028125,
+          "correct_key_mass": 0.012500725764160356,
+          "correct_value_mass": 0.005764378938086641,
+          "correct_key_value_mass": 0.01826510496903211,
+          "correct_position_mean_rank": 19.4375,
+          "attention_margin": -12.160797119140625,
+          "max_attention_probability": 0.5157100458939871
+        }
+      }
+    },
+    {
+      "updates": 8000,
+      "examples_processed": 128000,
+      "unique_examples": 128000,
+      "tokens_processed": 5632000,
+      "accuracy": 0.09375,
+      "loss": 3.1397332549095154,
+      "same_partition_accuracy": 0.09375,
+      "recent_training_loss": 3.1261304569244386,
+      "gradient_norm": 8.799376487731934,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.3086966456475693,
+          "correct_key_mass": 0.019382811169728627,
+          "correct_value_mass": 0.038889558639130385,
+          "correct_key_value_mass": 0.05827237014984694,
+          "correct_position_mean_rank": 15.7078125,
+          "attention_margin": -17.944663715362548,
+          "max_attention_probability": 0.6287774592638016
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.4284435858329137,
+          "correct_key_mass": 0.013125870376825333,
+          "correct_value_mass": 0.04809983563609421,
+          "correct_key_value_mass": 0.06122570733229319,
+          "correct_position_mean_rank": 16.703125,
+          "attention_margin": -10.264810721079508,
+          "max_attention_probability": 0.4878704796234767
+        }
+      }
+    },
+    {
+      "updates": 16000,
+      "examples_processed": 256000,
+      "unique_examples": 256000,
+      "tokens_processed": 11264000,
+      "accuracy": 0.08984375,
+      "loss": 3.0433041751384735,
+      "same_partition_accuracy": 0.11328125,
+      "recent_training_loss": 3.0635889172554016,
+      "gradient_norm": 5.643610000610352,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.2535427266205968,
+          "correct_key_mass": 0.016140699037471725,
+          "correct_value_mass": 0.028944259630100933,
+          "correct_key_value_mass": 0.045084958817746844,
+          "correct_position_mean_rank": 17.025520833333335,
+          "attention_margin": -28.300533191363016,
+          "max_attention_probability": 0.6743553707997004
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.3168137843410174,
+          "correct_key_mass": 0.01840175734832883,
+          "correct_value_mass": 0.025616597982055584,
+          "correct_key_value_mass": 0.044018356750408806,
+          "correct_position_mean_rank": 17.197916666666668,
+          "attention_margin": -15.125499407450357,
+          "max_attention_probability": 0.6049848993619283
+        }
+      }
+    }
+  ],
+  "sample_complexity": {
+    "0.50": null,
+    "0.75": null,
+    "0.90": null,
+    "0.95": null,
+    "0.98": null
+  },
+  "final": {
+    "pairs": 8,
+    "candidate_chance": 0.125,
+    "value_vocabulary_chance": 0.03125,
+    "novel_mapping": {
+      "accuracy": 0.11328125,
+      "loss": 3.061675250530243,
+      "examples": 256
+    },
+    "novel_sequence_same_partition": {
+      "accuracy": 0.15234375,
+      "loss": 3.0259011685848236,
+      "examples": 256
+    }
+  },
+  "fixed_mapping": {
+    "accuracy": 1.0,
+    "loss": 1.2746409177780151,
+    "examples": 1
+  },
+  "controls": {
+    "correct_query": {
+      "accuracy": 0.11328125,
+      "loss": 3.061675250530243,
+      "examples": 256
+    },
+    "counterfactual": {
+      "accuracy": 0.4921875,
+      "loss": 2.2902213633060455,
+      "examples": 256
+    },
+    "shuffled_original_target": {
+      "accuracy": 0.15234375,
+      "loss": 3.0774502754211426,
+      "examples": 256
+    },
+    "wrong_query_original_target": {
+      "accuracy": 0.11328125,
+      "loss": 3.0573551654815674,
+      "examples": 256
+    },
+    "wrong_query_new_target": {
+      "accuracy": 0.12890625,
+      "loss": 3.024232029914856,
+      "examples": 256
+    },
+    "removed_query_original_target": {
+      "accuracy": 0.11328125,
+      "loss": 3.059071809053421,
+      "examples": 256
+    },
+    "removed_relation_original_target": {
+      "accuracy": 0.00390625,
+      "loss": 4.1383280754089355,
+      "examples": 256
+    },
+    "drops": {
+      "shuffled": -0.0390625,
+      "wrong_query_original": 0.0,
+      "removed_query": 0.0,
+      "removed_relation": 0.109375
+    },
+    "gate_checks": {
+      "counterfactual": false,
+      "shuffled": false,
+      "removed_relation": true,
+      "wrong_query_new_target": false,
+      "wrong_query_original_target": false,
+      "removed_query": false
+    },
+    "pass": false
+  },
+  "dataset_audit": {
+    "exact_sequence_overlap": 0,
+    "exact_mapping_combination_overlap": 0,
+    "individual_relation_overlap_expected": 402,
+    "template_overlap": "intentional: identical v3 grammar",
+    "novel_mapping_definition": "exact unseen multi-relation mapping combination under canonical v3 any/any generation"
+  },
+  "pass": false,
+  "checkpoint": {
+    "path": "checkpoints/foundation-v20-benchmark-v31/reference_mha-l4-standalone.pt",
+    "bytes": 234333399,
+    "sha256": "c1554557de9b156505f318c350f043200d4b211d0d98010676f6757521a94f46",
+    "strict_reload": true,
+    "optimizer_state_present": true,
+    "parameters": 19514880
+  },
+  "resume_used": true,
+  "final_blind_used": false,
+  "production_changed": false
+}

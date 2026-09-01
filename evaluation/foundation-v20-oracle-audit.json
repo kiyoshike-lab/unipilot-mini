@@ -1,0 +1,127 @@
+{
+  "schema_version": "synthetic-context-benchmark-v3.1-oracle-audit",
+  "oracle": {
+    "implementation": "deterministic marker parser; no model and no generator metadata",
+    "levels": {
+      "0": {
+        "pairs": 1,
+        "examples": 10000,
+        "unique_examples": 1,
+        "unique_mapping_combinations": 1,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "1": {
+        "pairs": 1,
+        "examples": 10000,
+        "unique_examples": 512,
+        "unique_mapping_combinations": 512,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "2": {
+        "pairs": 2,
+        "examples": 10000,
+        "unique_examples": 9887,
+        "unique_mapping_combinations": 9785,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "3": {
+        "pairs": 4,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "4": {
+        "pairs": 8,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      },
+      "5": {
+        "pairs": 16,
+        "examples": 10000,
+        "unique_examples": 10000,
+        "unique_mapping_combinations": 10000,
+        "accuracy": 1.0,
+        "causal_failures": 0,
+        "ambiguity_count": 0,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "generator_sets": {
+    "0": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "0e9ac1d4a49b80936f3c46d9fb87da7c14f7fd3c57b68965e271414c9b59a1f9",
+      "heldout_ordered_hash_sha256": "0e9ac1d4a49b80936f3c46d9fb87da7c14f7fd3c57b68965e271414c9b59a1f9",
+      "exact_sequence_overlap": 1,
+      "exact_mapping_combination_overlap": 1,
+      "relation_overlap": 1
+    },
+    "1": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "39b338e0d7535fd41908ed5db7d7722fae02e91339f86a5f0626ac4e12a830fe",
+      "heldout_ordered_hash_sha256": "7b8b3e294415a2f9f71a00e4592ef8591d94cab8c419e58c8044ba4e5f428340",
+      "exact_sequence_overlap": 0,
+      "exact_mapping_combination_overlap": 0,
+      "relation_overlap": 0
+    },
+    "2": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "ee7eee2acd44892faade0cd62fa4cc730289c2cad9b5957f49028017dd9e2b25",
+      "heldout_ordered_hash_sha256": "6e3513152dd516ddc57065c5c4b5a0e4f4ddc64e0d8f5e0e199e2b2b6250251d",
+      "exact_sequence_overlap": 0,
+      "exact_mapping_combination_overlap": 0,
+      "relation_overlap": 208
+    },
+    "3": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "15da89eacdb191fe56f9ef2d9c24c26ca3b7e88dd43026f7815e317a44c17d9d",
+      "heldout_ordered_hash_sha256": "06d67b744553af3eee02916d35c88e37880da73d28ba6662be73dcd6009eea4a",
+      "exact_sequence_overlap": 0,
+      "exact_mapping_combination_overlap": 0,
+      "relation_overlap": 394
+    },
+    "4": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "157a8aae4e598a697788749c4c8ea8d45cd5fc185708b920a472414fef752a8a",
+      "heldout_ordered_hash_sha256": "ad754ff8c470d9408b891333fcfe5d8b21e21e5773f3082b409ae2d23e25954d",
+      "exact_sequence_overlap": 0,
+      "exact_mapping_combination_overlap": 0,
+      "relation_overlap": 490
+    },
+    "5": {
+      "train_examples": 256,
+      "heldout_examples": 256,
+      "train_ordered_hash_sha256": "a5490b0a41095d494cda1e52560f79fce58833b72e222340d83acff07723d8a5",
+      "heldout_ordered_hash_sha256": "ceeeae62985740ca3ab69bca1d309a8a09325c1468be23a51293536f971ddfc8",
+      "exact_sequence_overlap": 0,
+      "exact_mapping_combination_overlap": 0,
+      "relation_overlap": 512
+    }
+  },
+  "task_semantics_changed_from_v3": false,
+  "final_blind_content_opened": false
+}

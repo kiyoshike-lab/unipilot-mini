@@ -1,0 +1,262 @@
+{
+  "schema_version": "synthetic-context-benchmark-v3.1-standalone-result",
+  "model": {
+    "name": "reference_mha",
+    "implementation": "reference",
+    "residual_projection_init_scale": 0.22360679774997896
+  },
+  "parameters": 19514880,
+  "level": 3,
+  "pairs": 4,
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0
+  },
+  "training": {
+    "data_generation": "on-the-fly deterministic random stream",
+    "updates": 1000,
+    "configured_maximum_updates": 1000,
+    "examples_processed": 16000,
+    "unique_examples": 16000,
+    "unique_mapping_combinations": 16000,
+    "tokens_processed": 384000,
+    "batch_size": 16,
+    "gradient_accumulation": 1,
+    "effective_batch": 16,
+    "wall_seconds": 269.4824587999992,
+    "peak_ram_mb": 717.1796875,
+    "stopped_early_at_configured_target": false
+  },
+  "curve": [
+    {
+      "updates": 100,
+      "examples_processed": 1600,
+      "unique_examples": 1600,
+      "tokens_processed": 38400,
+      "accuracy": 0.05859375,
+      "loss": 3.440961718559265,
+      "same_partition_accuracy": 0.0546875,
+      "recent_training_loss": 3.761810326576233,
+      "gradient_norm": 4.6921234130859375,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.9138076836864154,
+          "correct_key_mass": 0.03685094184038462,
+          "correct_value_mass": 0.0679572203507026,
+          "correct_key_value_mass": 0.10480816308408976,
+          "correct_position_mean_rank": 9.494791666666666,
+          "attention_margin": -0.3159726025691877,
+          "max_attention_probability": 0.12600036257257063
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9997328817844391,
+          "correct_key_mass": 0.041635897010564804,
+          "correct_value_mass": 0.04164295271039009,
+          "correct_key_value_mass": 0.0832788534462452,
+          "correct_position_mean_rank": 9.630208333333334,
+          "attention_margin": -0.063698369388779,
+          "max_attention_probability": 0.044811916227142014
+        }
+      }
+    },
+    {
+      "updates": 250,
+      "examples_processed": 4000,
+      "unique_examples": 4000,
+      "tokens_processed": 96000,
+      "accuracy": 0.171875,
+      "loss": 3.167385309934616,
+      "same_partition_accuracy": 0.13671875,
+      "recent_training_loss": 3.271957612037659,
+      "gradient_norm": 6.01640510559082,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.8995714681843917,
+          "correct_key_mass": 0.03626571677013999,
+          "correct_value_mass": 0.06697538743416469,
+          "correct_key_value_mass": 0.10324110441530744,
+          "correct_position_mean_rank": 9.013541666666667,
+          "attention_margin": -0.49678569498161473,
+          "max_attention_probability": 0.14488619870195787
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.9900929828484853,
+          "correct_key_mass": 0.04256523338456949,
+          "correct_value_mass": 0.03982247474292914,
+          "correct_key_value_mass": 0.08238770936926205,
+          "correct_position_mean_rank": 9.588541666666666,
+          "attention_margin": -0.19774516423543295,
+          "max_attention_probability": 0.05763573075334231
+        }
+      }
+    },
+    {
+      "updates": 500,
+      "examples_processed": 8000,
+      "unique_examples": 8000,
+      "tokens_processed": 192000,
+      "accuracy": 0.19140625,
+      "loss": 3.03367155790329,
+      "same_partition_accuracy": 0.1953125,
+      "recent_training_loss": 3.058162569999695,
+      "gradient_norm": 5.521805286407471,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.8224122633536657,
+          "correct_key_mass": 0.03290088255307637,
+          "correct_value_mass": 0.06042169641392926,
+          "correct_key_value_mass": 0.09332258036981027,
+          "correct_position_mean_rank": 8.236458333333333,
+          "attention_margin": -0.9985784764091173,
+          "max_attention_probability": 0.16995961678524812
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.8725159466266632,
+          "correct_key_mass": 0.03625739427904288,
+          "correct_value_mass": 0.03551497419054309,
+          "correct_key_value_mass": 0.07177237048745155,
+          "correct_position_mean_rank": 8.96875,
+          "attention_margin": -1.1554380257924397,
+          "max_attention_probability": 0.1331538495918115
+        }
+      }
+    },
+    {
+      "updates": 1000,
+      "examples_processed": 16000,
+      "unique_examples": 16000,
+      "tokens_processed": 384000,
+      "accuracy": 0.23828125,
+      "loss": 2.1477667093276978,
+      "same_partition_accuracy": 0.25390625,
+      "recent_training_loss": 2.235719255208969,
+      "gradient_norm": 7.830463409423828,
+      "attention": {
+        "all_layer_head_mean": {
+          "normalized_entropy": 0.49665412530303,
+          "correct_key_mass": 0.03868572507538678,
+          "correct_value_mass": 0.03305558491646631,
+          "correct_key_value_mass": 0.07174131077093383,
+          "correct_position_mean_rank": 9.615625,
+          "attention_margin": -7.003355357547601,
+          "max_attention_probability": 0.34564468810955684
+        },
+        "last_layer_mean": {
+          "normalized_entropy": 0.5406319350004196,
+          "correct_key_mass": 0.0443450640887022,
+          "correct_value_mass": 0.004264862873242237,
+          "correct_key_value_mass": 0.048609924813111625,
+          "correct_position_mean_rank": 10.223958333333334,
+          "attention_margin": -6.693285942077637,
+          "max_attention_probability": 0.295837198694547
+        }
+      }
+    }
+  ],
+  "sample_complexity": {
+    "0.50": null,
+    "0.75": null,
+    "0.90": null,
+    "0.95": null,
+    "0.98": null
+  },
+  "final": {
+    "pairs": 4,
+    "candidate_chance": 0.25,
+    "value_vocabulary_chance": 0.03125,
+    "novel_mapping": {
+      "accuracy": 0.25390625,
+      "loss": 2.170825332403183,
+      "examples": 256
+    },
+    "novel_sequence_same_partition": {
+      "accuracy": 0.26171875,
+      "loss": 2.1603802293539047,
+      "examples": 256
+    }
+  },
+  "fixed_mapping": {
+    "accuracy": 1.0,
+    "loss": 0.7520415782928467,
+    "examples": 1
+  },
+  "controls": {
+    "correct_query": {
+      "accuracy": 0.25390625,
+      "loss": 2.170825332403183,
+      "examples": 256
+    },
+    "counterfactual": {
+      "accuracy": 0.109375,
+      "loss": 2.4975377321243286,
+      "examples": 256
+    },
+    "shuffled_original_target": {
+      "accuracy": 0.21484375,
+      "loss": 2.260122001171112,
+      "examples": 256
+    },
+    "wrong_query_original_target": {
+      "accuracy": 0.25390625,
+      "loss": 2.1718159914016724,
+      "examples": 256
+    },
+    "wrong_query_new_target": {
+      "accuracy": 0.25,
+      "loss": 2.139700412750244,
+      "examples": 256
+    },
+    "removed_query_original_target": {
+      "accuracy": 0.25390625,
+      "loss": 2.171220049262047,
+      "examples": 256
+    },
+    "removed_relation_original_target": {
+      "accuracy": 0.0,
+      "loss": 5.27900904417038,
+      "examples": 256
+    },
+    "drops": {
+      "shuffled": 0.0390625,
+      "wrong_query_original": 0.0,
+      "removed_query": 0.0,
+      "removed_relation": 0.25390625
+    },
+    "gate_checks": {
+      "counterfactual": false,
+      "shuffled": false,
+      "removed_relation": true,
+      "wrong_query_new_target": false,
+      "wrong_query_original_target": false,
+      "removed_query": false
+    },
+    "pass": false
+  },
+  "dataset_audit": {
+    "exact_sequence_overlap": 0,
+    "exact_mapping_combination_overlap": 0,
+    "individual_relation_overlap_expected": 361,
+    "template_overlap": "intentional: identical v3 grammar",
+    "novel_mapping_definition": "exact unseen multi-relation mapping combination under canonical v3 any/any generation"
+  },
+  "pass": false,
+  "checkpoint": {
+    "path": "checkpoints/foundation-v20-benchmark-v31/wd0/reference_mha-l3-standalone.pt",
+    "bytes": 234333399,
+    "sha256": "777e4f7eaab9a883618704514e0f9a167194db14454406f7e524d48542d34646",
+    "strict_reload": true,
+    "optimizer_state_present": true,
+    "parameters": 19514880,
+    "retained": false
+  },
+  "resume_used": false,
+  "final_blind_used": false,
+  "production_changed": false
+}
