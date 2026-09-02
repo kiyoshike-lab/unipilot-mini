@@ -1,0 +1,180 @@
+{
+  "schema_version": "foundation-v21-synthetic-smoke-v1",
+  "purpose": "fatal-regression smoke only; novel mapping and numeric modular addition are not gates",
+  "seed": 32021,
+  "results": {
+    "current": {
+      "variant": "current",
+      "tiny_overfit": {
+        "accuracy": 1.0,
+        "training": {
+          "updates": 40,
+          "final_20_mean_loss": 3.5762779972969836e-07,
+          "wall_seconds": 4.8888544999999795
+        }
+      },
+      "prior_full_architecture_evidence": {
+        "source": "checkpoints/foundation-v17-synthetic/current_unscaled-seed-42.json",
+        "source_sha256": "5cdeb55579f617cb9bc9eac33bf6817ab53d2ea18945ea18823185bcfec5f7d4",
+        "source_phase": "PHASE 28 full 20M architecture synthetic validation",
+        "architecture_match": true,
+        "copy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9296875
+        },
+        "position": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9296875
+        },
+        "long_range": 1.0,
+        "context_conditioned": {
+          "correct": 1.0,
+          "shuffled": 0.0,
+          "removed": 0.24609375
+        }
+      },
+      "copy": {
+        "accuracy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9296875
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "position": {
+        "accuracy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9296875
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "long_range": {
+        "accuracy": 1.0,
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "context_conditioned": {
+        "accuracy": {
+          "correct": 1.0,
+          "shuffled": 0.0,
+          "removed": 0.24609375
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "fixed_relation_lookup": {
+        "accuracy": 1.0,
+        "training": {
+          "updates": 400,
+          "final_20_mean_loss": 2.9727753826591653e-06,
+          "wall_seconds": 68.85067580000032
+        }
+      },
+      "checks": {
+        "prior_architecture_match": true,
+        "tiny_overfit": true,
+        "copy_4": true,
+        "copy_8": true,
+        "copy_16": true,
+        "position_4": true,
+        "position_8": true,
+        "position_16": true,
+        "long_range": true,
+        "context_conditioned": true,
+        "context_control": true,
+        "fixed_relation_lookup": true
+      },
+      "pass": true
+    },
+    "depth_init": {
+      "variant": "depth_init",
+      "tiny_overfit": {
+        "accuracy": 1.0,
+        "training": {
+          "updates": 40,
+          "final_20_mean_loss": 2.6822086383049284e-07,
+          "wall_seconds": 4.7578428999995594
+        }
+      },
+      "prior_full_architecture_evidence": {
+        "source": "checkpoints/foundation-v17-synthetic/depth_scaled_residual_init-seed-42.json",
+        "source_sha256": "370a014e598a9d42da887fc36c6489b22bfc30ad5e0b8e6761fa91359a335a2a",
+        "source_phase": "PHASE 28 full 20M architecture synthetic validation",
+        "architecture_match": true,
+        "copy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.984375
+        },
+        "position": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9921875
+        },
+        "long_range": 1.0,
+        "context_conditioned": {
+          "correct": 1.0,
+          "shuffled": 0.0,
+          "removed": 0.25
+        }
+      },
+      "copy": {
+        "accuracy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.984375
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "position": {
+        "accuracy": {
+          "4": 1.0,
+          "8": 1.0,
+          "16": 0.9921875
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "long_range": {
+        "accuracy": 1.0,
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "context_conditioned": {
+        "accuracy": {
+          "correct": 1.0,
+          "shuffled": 0.0,
+          "removed": 0.25
+        },
+        "evidence": "prior_full_architecture_evidence"
+      },
+      "fixed_relation_lookup": {
+        "accuracy": 1.0,
+        "training": {
+          "updates": 400,
+          "final_20_mean_loss": 1.2766557489385377e-06,
+          "wall_seconds": 78.53481069999998
+        }
+      },
+      "checks": {
+        "prior_architecture_match": true,
+        "tiny_overfit": true,
+        "copy_4": true,
+        "copy_8": true,
+        "copy_16": true,
+        "position_4": true,
+        "position_8": true,
+        "position_16": true,
+        "long_range": true,
+        "context_conditioned": true,
+        "context_control": true,
+        "fixed_relation_lookup": true
+      },
+      "pass": true
+    }
+  },
+  "gate_pass": true,
+  "novel_random_key_lookup_gate": false,
+  "numeric_modular_addition_gate": false,
+  "production_changed": false,
+  "final_blind_used": false
+}
