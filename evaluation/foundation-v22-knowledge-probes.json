@@ -1,0 +1,1034 @@
+{
+  "schema": "foundation-v22-knowledge-probes-v1",
+  "phase": 33,
+  "representative_seed": 42,
+  "corrected_evaluator": "evaluation.investigate_foundation_v14.language_proxy",
+  "final_blind_used": false,
+  "rows": [
+    {
+      "tokens": 256000,
+      "checkpoint": "checkpoints/foundation-v21-ab/current/seed-42/checkpoint-tokens-256000.pt",
+      "mode": {
+        "name": "greedy_no_penalty",
+        "kind": "greedy",
+        "temperature": 1.0,
+        "top_k": null,
+        "top_p": null,
+        "repetition_penalty": 1.0
+      },
+      "knowledge_completion_is_observational_only": true,
+      "keyword_hit_rate": 0.0,
+      "natural_japanese_proxy_rate": 0.0,
+      "character_valid_rate": 1.0,
+      "mean_repetition_rate": 0.41,
+      "items": [
+        {
+          "prompt": "日本の首都は",
+          "expected_keywords": [
+            "東京"
+          ],
+          "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8
+          }
+        },
+        {
+          "prompt": "1日は24",
+          "expected_keywords": [
+            "時間"
+          ],
+          "text": "が、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.6
+          }
+        },
+        {
+          "prompt": "水は液体の",
+          "expected_keywords": [
+            "一種",
+            "状態"
+          ],
+          "text": "が、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "大学は高等教育",
+          "expected_keywords": [
+            "機関",
+            "教育"
+          ],
+          "text": "が、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.6
+          }
+        },
+        {
+          "prompt": "地球は太陽の周りを",
+          "expected_keywords": [
+            "公転"
+          ],
+          "text": "、、「、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "春の次に来る季節は",
+          "expected_keywords": [
+            "夏"
+          ],
+          "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8
+          }
+        },
+        {
+          "prompt": "植物は光を使って",
+          "expected_keywords": [
+            "光合成"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "物体を落とすと",
+          "expected_keywords": [
+            "重力",
+            "落下"
+          ],
+          "text": "、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "人は言葉を使って",
+          "expected_keywords": [
+            "伝",
+            "コミュニケーション"
+          ],
+          "text": "が、、、、、、ス・年、、ス・年、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.5
+          }
+        },
+        {
+          "prompt": "文章を書く前に",
+          "expected_keywords": [
+            "構成",
+            "目的",
+            "考"
+          ],
+          "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "tokens": 320000,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-320000.pt",
+      "mode": {
+        "name": "greedy_no_penalty",
+        "kind": "greedy",
+        "temperature": 1.0,
+        "top_k": null,
+        "top_p": null,
+        "repetition_penalty": 1.0
+      },
+      "knowledge_completion_is_observational_only": true,
+      "keyword_hit_rate": 0.0,
+      "natural_japanese_proxy_rate": 0.0,
+      "character_valid_rate": 1.0,
+      "mean_repetition_rate": 0.0,
+      "items": [
+        {
+          "prompt": "日本の首都は",
+          "expected_keywords": [
+            "東京"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "1日は24",
+          "expected_keywords": [
+            "時間"
+          ],
+          "text": "に、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "水は液体の",
+          "expected_keywords": [
+            "一種",
+            "状態"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "大学は高等教育",
+          "expected_keywords": [
+            "機関",
+            "教育"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "地球は太陽の周りを",
+          "expected_keywords": [
+            "公転"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "春の次に来る季節は",
+          "expected_keywords": [
+            "夏"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "植物は光を使って",
+          "expected_keywords": [
+            "光合成"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "物体を落とすと",
+          "expected_keywords": [
+            "重力",
+            "落下"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "人は言葉を使って",
+          "expected_keywords": [
+            "伝",
+            "コミュニケーション"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "文章を書く前に",
+          "expected_keywords": [
+            "構成",
+            "目的",
+            "考"
+          ],
+          "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "tokens": 384000,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-384000.pt",
+      "mode": {
+        "name": "greedy_no_penalty",
+        "kind": "greedy",
+        "temperature": 1.0,
+        "top_k": null,
+        "top_p": null,
+        "repetition_penalty": 1.0
+      },
+      "knowledge_completion_is_observational_only": true,
+      "keyword_hit_rate": 0.0,
+      "natural_japanese_proxy_rate": 0.0,
+      "character_valid_rate": 1.0,
+      "mean_repetition_rate": 0.0,
+      "items": [
+        {
+          "prompt": "日本の首都は",
+          "expected_keywords": [
+            "東京"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "1日は24",
+          "expected_keywords": [
+            "時間"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "水は液体の",
+          "expected_keywords": [
+            "一種",
+            "状態"
+          ],
+          "text": "に、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "大学は高等教育",
+          "expected_keywords": [
+            "機関",
+            "教育"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "地球は太陽の周りを",
+          "expected_keywords": [
+            "公転"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "春の次に来る季節は",
+          "expected_keywords": [
+            "夏"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "植物は光を使って",
+          "expected_keywords": [
+            "光合成"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "物体を落とすと",
+          "expected_keywords": [
+            "重力",
+            "落下"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "人は言葉を使って",
+          "expected_keywords": [
+            "伝",
+            "コミュニケーション"
+          ],
+          "text": "の、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "文章を書く前に",
+          "expected_keywords": [
+            "構成",
+            "目的",
+            "考"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "tokens": 448000,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-448000.pt",
+      "mode": {
+        "name": "greedy_no_penalty",
+        "kind": "greedy",
+        "temperature": 1.0,
+        "top_k": null,
+        "top_p": null,
+        "repetition_penalty": 1.0
+      },
+      "knowledge_completion_is_observational_only": true,
+      "keyword_hit_rate": 0.0,
+      "natural_japanese_proxy_rate": 0.0,
+      "character_valid_rate": 1.0,
+      "mean_repetition_rate": 0.5315732206861239,
+      "items": [
+        {
+          "prompt": "日本の首都は",
+          "expected_keywords": [
+            "東京"
+          ],
+          "text": "、バリリリリリリリリリリリリリリリリのル・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8709677419354839
+          }
+        },
+        {
+          "prompt": "1日は24",
+          "expected_keywords": [
+            "時間"
+          ],
+          "text": "（年）が、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "水は液体の",
+          "expected_keywords": [
+            "一種",
+            "状態"
+          ],
+          "text": "に、バリリリリリリリリリリリリリリリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8870967741935484
+          }
+        },
+        {
+          "prompt": "大学は高等教育",
+          "expected_keywords": [
+            "機関",
+            "教育"
+          ],
+          "text": "（年）が、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "地球は太陽の周りを",
+          "expected_keywords": [
+            "公転"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "春の次に来る季節は",
+          "expected_keywords": [
+            "夏"
+          ],
+          "text": "、大に、大、大、大に、バリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8548387096774194
+          }
+        },
+        {
+          "prompt": "植物は光を使って",
+          "expected_keywords": [
+            "光合成"
+          ],
+          "text": "に、この、バリリリリリリリリリリ・リリ・リリリリリリ・リリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.8412698412698413
+          }
+        },
+        {
+          "prompt": "物体を落とすと",
+          "expected_keywords": [
+            "重力",
+            "落下"
+          ],
+          "text": "、バリリリリリリリリリリリ・リリ・リリリリリリ・リリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.9032258064516129
+          }
+        },
+        {
+          "prompt": "人は言葉を使って",
+          "expected_keywords": [
+            "伝",
+            "コミュニケーション"
+          ],
+          "text": "が、この、この、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.33333333333333337
+          }
+        },
+        {
+          "prompt": "文章を書く前に",
+          "expected_keywords": [
+            "構成",
+            "目的",
+            "考"
+          ],
+          "text": "、この、この、この、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.625
+          }
+        }
+      ]
+    },
+    {
+      "tokens": 512000,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-512000.pt",
+      "mode": {
+        "name": "greedy_no_penalty",
+        "kind": "greedy",
+        "temperature": 1.0,
+        "top_k": null,
+        "top_p": null,
+        "repetition_penalty": 1.0
+      },
+      "knowledge_completion_is_observational_only": true,
+      "keyword_hit_rate": 0.0,
+      "natural_japanese_proxy_rate": 0.0,
+      "character_valid_rate": 0.9,
+      "mean_repetition_rate": 0.04285714285714286,
+      "items": [
+        {
+          "prompt": "日本の首都は",
+          "expected_keywords": [
+            "東京"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "1日は24",
+          "expected_keywords": [
+            "時間"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "水は液体の",
+          "expected_keywords": [
+            "一種",
+            "状態"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "大学は高等教育",
+          "expected_keywords": [
+            "機関",
+            "教育"
+          ],
+          "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "地球は太陽の周りを",
+          "expected_keywords": [
+            "公転"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "春の次に来る季節は",
+          "expected_keywords": [
+            "夏"
+          ],
+          "text": "、日本は、日本は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.4285714285714286
+          }
+        },
+        {
+          "prompt": "植物は光を使って",
+          "expected_keywords": [
+            "光合成"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "物体を落とすと",
+          "expected_keywords": [
+            "重力",
+            "落下"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "人は言葉を使って",
+          "expected_keywords": [
+            "伝",
+            "コミュニケーション"
+          ],
+          "text": " \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": false,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        },
+        {
+          "prompt": "文章を書く前に",
+          "expected_keywords": [
+            "構成",
+            "目的",
+            "考"
+          ],
+          "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "keyword_hits": [],
+          "keyword_hit": false,
+          "evaluation": {
+            "character_valid": true,
+            "natural_japanese_proxy": false,
+            "semantic_coherence_proxy": false,
+            "completion_proxy": false,
+            "eos_reached": false,
+            "runaway": true,
+            "repetition_rate": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

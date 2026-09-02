@@ -396,6 +396,22 @@ def generation_evaluation(
     return output
 
 
+def stateless_scheduler_state(settings: dict, update: int) -> dict:
+    """Return the fully reconstructable scheduler state used by this runner."""
+    # The compact PHASE 32 checkpoint unit test intentionally supplies only
+    # the run-limit field; retain its historical 1e-4/20-step defaults.
+    training = settings.get("training", {})
+    peak_learning_rate = float(training.get("peak_learning_rate", 1e-4))
+    warmup_updates = int(training.get("warmup_updates", 20))
+    return {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": int(update),
+        "peak_learning_rate": peak_learning_rate,
+        "warmup_updates": warmup_updates,
+        "learning_rate": peak_learning_rate * min(1.0, int(update) / warmup_updates),
+    }
+
+
 def save_checkpoint(
     path: Path,
     *,
@@ -418,6 +434,7 @@ def save_checkpoint(
         "seed": seed,
         "update": update,
         "tokens_processed": update * TOKENS_PER_UPDATE,
+        "scheduler_state": stateless_scheduler_state(settings, update),
         "permutation": permutation,
         "random_state": random_state(),
         "history": history,
@@ -510,6 +527,10 @@ def run_training(
             raise RuntimeError("PHASE 32 resume model config mismatch")
         if not torch.equal(payload["permutation"], permutation):
             raise RuntimeError("PHASE 32 resume data ordering mismatch")
+        if "scheduler_state" in payload and payload["scheduler_state"] != stateless_scheduler_state(
+            settings, int(payload["update"])
+        ):
+            raise RuntimeError("resume scheduler state mismatch")
         model.load_state_dict(payload["model_state"], strict=True)
         optimizer.load_state_dict(payload["optimizer_state"])
         restore_random_state(payload["random_state"])

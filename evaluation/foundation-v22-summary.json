@@ -1,0 +1,2191 @@
+{
+  "schema": "foundation-v22-summary-v1",
+  "phase": 33,
+  "architecture": "Current / 10L / 384D / 6H / FFN1536 / Pre-LN GELU / learned absolute position / final LN / tied embeddings",
+  "parameters": 19514880,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "curve": [
+    {
+      "tokens": 256000,
+      "seeds": 3,
+      "validation_loss": 6.780339231093724,
+      "perplexity": 880.3673389684883,
+      "top_1_accuracy": 0.08015950520833333,
+      "top_5_accuracy": 0.142822265625,
+      "top_10_accuracy": 0.18355305989583334,
+      "mean_correct_token_probability": 0.02393940898279349,
+      "training_tokens_per_second": 878.4965998883898,
+      "peak_ram_mb": 1096.87109375,
+      "gradient_norm": 2.4141815503438315,
+      "frequency_buckets": {
+        "top_1_percent": {
+          "top_1_accuracy": 0.31611969073613483,
+          "top_5_accuracy": 0.537162164847056,
+          "top_10_accuracy": 0.6779279311498007,
+          "mean_correct_token_probability": 0.0918906604250272,
+          "cross_entropy": 4.024012009302775
+        },
+        "top_5_percent_excluding_top_1": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.020325203115741413,
+          "top_10_accuracy": 0.03551561882098516,
+          "mean_correct_token_probability": 0.002264001484339436,
+          "cross_entropy": 6.341440677642822
+        },
+        "top_20_percent_excluding_top_5": {
+          "top_1_accuracy": 0.0007548308931291103,
+          "top_5_accuracy": 0.011473429699738821,
+          "top_10_accuracy": 0.019625603531797726,
+          "mean_correct_token_probability": 0.000774801728160431,
+          "cross_entropy": 7.484059015909831
+        },
+        "middle_20_to_80_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.00014867677236907184,
+          "mean_correct_token_probability": 0.00021047429860724756,
+          "cross_entropy": 8.747845967610678
+        },
+        "rare_bottom_20_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 3.786259670353805e-05,
+          "cross_entropy": 10.619179407755533
+        }
+      },
+      "top_1_percent_outside_accuracy": 0.0002723311578544478,
+      "period_comma_prediction_mass": 0.39111328125,
+      "sentence_boundaries": {
+        "。": {
+          "top_1_accuracy": 0.7792792792792792,
+          "predicted_frequency": 0.12284342447916667
+        },
+        "！": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "？": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "newline": {
+          "top_1_accuracy": 0.9535864978902954,
+          "predicted_frequency": 0.0679931640625
+        },
+        "<EOS>": {
+          "top_1_accuracy": 0.0,
+          "predicted_frequency": 0.0
+        }
+      },
+      "activation_health": {
+        "embedding_rms": 0.029317077870170277,
+        "layer_9_final_residual_rms": 4.430073897043864,
+        "layer_9_mlp_output_rms": 0.46784164508183795
+      },
+      "context_utilization": {
+        "512": {
+          "context_tokens": 512.0,
+          "probe_targets": 32.0,
+          "loss": 6.884244004885356,
+          "perplexity": 978.9679412588245,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.01923570673776946
+        },
+        "64": {
+          "context_tokens": 64.0,
+          "probe_targets": 32.0,
+          "loss": 6.882829507191976,
+          "perplexity": 976.8579624483758,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.02194943403204282
+        },
+        "16": {
+          "context_tokens": 16.0,
+          "probe_targets": 32.0,
+          "loss": 6.90707270304362,
+          "perplexity": 1015.2602593379444,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.01976091042160988
+        },
+        "2": {
+          "context_tokens": 2.0,
+          "probe_targets": 32.0,
+          "loss": 7.004727204640706,
+          "perplexity": 1121.7198286595872,
+          "top_1_accuracy": 0.0625,
+          "mean_target_probability": 0.006631584217151006
+        },
+        "1": {
+          "context_tokens": 1.0,
+          "probe_targets": 32.0,
+          "loss": 7.122101783752441,
+          "perplexity": 1271.8506698219462,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.0062605116205910845
+        },
+        "full_vs_last_1_loss_advantage": 0.23785777886708578,
+        "full_vs_last_2_loss_advantage": 0.12048319975535075
+      }
+    },
+    {
+      "tokens": 320000,
+      "seeds": 3,
+      "validation_loss": 6.664255350828171,
+      "perplexity": 783.9653773383085,
+      "top_1_accuracy": 0.08003743489583333,
+      "top_5_accuracy": 0.14701334635416666,
+      "top_10_accuracy": 0.18994140625,
+      "mean_correct_token_probability": 0.027361928174893062,
+      "training_tokens_per_second": 878.6007923806964,
+      "peak_ram_mb": 1085.76171875,
+      "gradient_norm": 2.0024784803390503,
+      "frequency_buckets": {
+        "top_1_percent": {
+          "top_1_accuracy": 0.31644144654273987,
+          "top_5_accuracy": 0.5489060481389364,
+          "top_10_accuracy": 0.6867760618527731,
+          "mean_correct_token_probability": 0.10481785237789154,
+          "cross_entropy": 3.9232943058013916
+        },
+        "top_5_percent_excluding_top_1": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.027171586950620014,
+          "top_10_accuracy": 0.05177578081687292,
+          "mean_correct_token_probability": 0.002824147076656421,
+          "cross_entropy": 6.152884801228841
+        },
+        "top_20_percent_excluding_top_5": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.011171497715016207,
+          "top_10_accuracy": 0.023550724610686302,
+          "mean_correct_token_probability": 0.0009280313388444483,
+          "cross_entropy": 7.3484147389729815
+        },
+        "middle_20_to_80_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.00014867677236907184,
+          "mean_correct_token_probability": 0.00022880879987496883,
+          "cross_entropy": 8.68288485209147
+        },
+        "rare_bottom_20_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 3.763803033507429e-05,
+          "cross_entropy": 10.589221000671387
+        }
+      },
+      "top_1_percent_outside_accuracy": 0.0,
+      "period_comma_prediction_mass": 0.3553466796875,
+      "sentence_boundaries": {
+        "。": {
+          "top_1_accuracy": 0.7942942942942942,
+          "predicted_frequency": 0.0772705078125
+        },
+        "！": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "？": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "newline": {
+          "top_1_accuracy": 0.9662447257383966,
+          "predicted_frequency": 0.08231608072916667
+        },
+        "<EOS>": {
+          "top_1_accuracy": 0.0,
+          "predicted_frequency": 0.0
+        }
+      },
+      "activation_health": {
+        "embedding_rms": 0.029606239249308903,
+        "layer_9_final_residual_rms": 4.573498725891113,
+        "layer_9_mlp_output_rms": 0.4610891242822011
+      },
+      "context_utilization": {
+        "512": {
+          "context_tokens": 512.0,
+          "probe_targets": 32.0,
+          "loss": 6.651826878388722,
+          "perplexity": 783.9690014773713,
+          "top_1_accuracy": 0.07291666666666667,
+          "mean_target_probability": 0.022448744433252916
+        },
+        "64": {
+          "context_tokens": 64.0,
+          "probe_targets": 32.0,
+          "loss": 6.668809254964192,
+          "perplexity": 797.7661986333839,
+          "top_1_accuracy": 0.0625,
+          "mean_target_probability": 0.02291969768702984
+        },
+        "16": {
+          "context_tokens": 16.0,
+          "probe_targets": 32.0,
+          "loss": 6.607644875844319,
+          "perplexity": 747.2560357382969,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.020803095151980717
+        },
+        "2": {
+          "context_tokens": 2.0,
+          "probe_targets": 32.0,
+          "loss": 6.949037392934163,
+          "perplexity": 1096.534447374426,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.009333590666453043
+        },
+        "1": {
+          "context_tokens": 1.0,
+          "probe_targets": 32.0,
+          "loss": 7.039843241373698,
+          "perplexity": 1175.0018902071124,
+          "top_1_accuracy": 0.020833333333333332,
+          "mean_target_probability": 0.00420889095403254
+        },
+        "full_vs_last_1_loss_advantage": 0.38801636298497516,
+        "full_vs_last_2_loss_advantage": 0.2972105145454407
+      }
+    },
+    {
+      "tokens": 384000,
+      "seeds": 3,
+      "validation_loss": 6.571708659331004,
+      "perplexity": 714.6889208296255,
+      "top_1_accuracy": 0.08406575520833333,
+      "top_5_accuracy": 0.15437825520833334,
+      "top_10_accuracy": 0.208740234375,
+      "mean_correct_token_probability": 0.029303481181462605,
+      "training_tokens_per_second": 879.6181694301844,
+      "peak_ram_mb": 1135.453125,
+      "gradient_norm": 2.0590781768163047,
+      "frequency_buckets": {
+        "top_1_percent": {
+          "top_1_accuracy": 0.33156370123227435,
+          "top_5_accuracy": 0.5690154433250427,
+          "top_10_accuracy": 0.7001287142435709,
+          "mean_correct_token_probability": 0.11164164543151855,
+          "cross_entropy": 3.860074043273926
+        },
+        "top_5_percent_excluding_top_1": {
+          "top_1_accuracy": 0.00106974757121255,
+          "top_5_accuracy": 0.03786906227469444,
+          "top_10_accuracy": 0.12216517080863316,
+          "mean_correct_token_probability": 0.003736360464245081,
+          "cross_entropy": 5.925355593363444
+        },
+        "top_20_percent_excluding_top_5": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.012077294600506624,
+          "top_10_accuracy": 0.03109903323153655,
+          "mean_correct_token_probability": 0.0010668090544641018,
+          "cross_entropy": 7.280511538187663
+        },
+        "middle_20_to_80_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.00014867677236907184,
+          "mean_correct_token_probability": 0.00024607512750662863,
+          "cross_entropy": 8.629028956095377
+        },
+        "rare_bottom_20_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 3.708459310776865e-05,
+          "cross_entropy": 10.571493148803711
+        }
+      },
+      "top_1_percent_outside_accuracy": 0.00027233116270508617,
+      "period_comma_prediction_mass": 0.3063151041666667,
+      "sentence_boundaries": {
+        "。": {
+          "top_1_accuracy": 0.8198198198198199,
+          "predicted_frequency": 0.08980305989583333
+        },
+        "！": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "？": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "newline": {
+          "top_1_accuracy": 0.9514767932489452,
+          "predicted_frequency": 0.06905110677083333
+        },
+        "<EOS>": {
+          "top_1_accuracy": 0.0,
+          "predicted_frequency": 0.0
+        }
+      },
+      "activation_health": {
+        "embedding_rms": 0.029920102407534916,
+        "layer_9_final_residual_rms": 4.7224836349487305,
+        "layer_9_mlp_output_rms": 0.45992422103881836
+      },
+      "context_utilization": {
+        "512": {
+          "context_tokens": 512.0,
+          "probe_targets": 32.0,
+          "loss": 6.535613040129344,
+          "perplexity": 690.7165205735083,
+          "top_1_accuracy": 0.0625,
+          "mean_target_probability": 0.023727995171308674
+        },
+        "64": {
+          "context_tokens": 64.0,
+          "probe_targets": 32.0,
+          "loss": 6.56272013982137,
+          "perplexity": 710.7429495283908,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.02512185585995515
+        },
+        "16": {
+          "context_tokens": 16.0,
+          "probe_targets": 32.0,
+          "loss": 6.516490777333577,
+          "perplexity": 679.8006121523034,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.025432662417491276
+        },
+        "2": {
+          "context_tokens": 2.0,
+          "probe_targets": 32.0,
+          "loss": 6.7194930712382,
+          "perplexity": 832.059973005671,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.013967040926218033
+        },
+        "1": {
+          "context_tokens": 1.0,
+          "probe_targets": 32.0,
+          "loss": 6.8720370928446455,
+          "perplexity": 977.3645803446819,
+          "top_1_accuracy": 0.020833333333333332,
+          "mean_target_probability": 0.0072982890997081995
+        },
+        "full_vs_last_1_loss_advantage": 0.3364240527153015,
+        "full_vs_last_2_loss_advantage": 0.1838800311088562
+      }
+    },
+    {
+      "tokens": 448000,
+      "seeds": 3,
+      "validation_loss": 6.481182485818863,
+      "perplexity": 652.7605112234779,
+      "top_1_accuracy": 0.08707682291666667,
+      "top_5_accuracy": 0.16385904947916666,
+      "top_10_accuracy": 0.21529134114583334,
+      "mean_correct_token_probability": 0.03008306274811427,
+      "training_tokens_per_second": 879.9728839340529,
+      "peak_ram_mb": 1163.24609375,
+      "gradient_norm": 3.251017173131307,
+      "frequency_buckets": {
+        "top_1_percent": {
+          "top_1_accuracy": 0.3386422097682953,
+          "top_5_accuracy": 0.5809201995531718,
+          "top_10_accuracy": 0.7142857313156128,
+          "mean_correct_token_probability": 0.11374336232741673,
+          "cross_entropy": 3.7601146697998047
+        },
+        "top_5_percent_excluding_top_1": {
+          "top_1_accuracy": 0.007274283251414697,
+          "top_5_accuracy": 0.06739409640431404,
+          "top_10_accuracy": 0.1405648266275724,
+          "mean_correct_token_probability": 0.004853324809422095,
+          "cross_entropy": 5.759930451711019
+        },
+        "top_20_percent_excluding_top_5": {
+          "top_1_accuracy": 0.00015096618638684353,
+          "top_5_accuracy": 0.014945652025441328,
+          "top_10_accuracy": 0.028683574870228767,
+          "mean_correct_token_probability": 0.0011776269335920613,
+          "cross_entropy": 7.212579409281413
+        },
+        "middle_20_to_80_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0002973535447381437,
+          "top_10_accuracy": 0.0005947070894762874,
+          "mean_correct_token_probability": 0.0002669263825130959,
+          "cross_entropy": 8.568619728088379
+        },
+        "rare_bottom_20_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 3.6347945448748455e-05,
+          "cross_entropy": 10.64908218383789
+        }
+      },
+      "top_1_percent_outside_accuracy": 0.0019063181680394337,
+      "period_comma_prediction_mass": 0.3397216796875,
+      "sentence_boundaries": {
+        "。": {
+          "top_1_accuracy": 0.8168168168168167,
+          "predicted_frequency": 0.0791015625
+        },
+        "！": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "？": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "newline": {
+          "top_1_accuracy": 0.9388185654008439,
+          "predicted_frequency": 0.06510416666666667
+        },
+        "<EOS>": {
+          "top_1_accuracy": 0.0,
+          "predicted_frequency": 0.0
+        }
+      },
+      "activation_health": {
+        "embedding_rms": 0.030201257516940434,
+        "layer_9_final_residual_rms": 4.652093887329102,
+        "layer_9_mlp_output_rms": 0.44644321997960407
+      },
+      "context_utilization": {
+        "512": {
+          "context_tokens": 512.0,
+          "probe_targets": 32.0,
+          "loss": 6.390856007734935,
+          "perplexity": 597.1096701154511,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.022905713398358785
+        },
+        "64": {
+          "context_tokens": 64.0,
+          "probe_targets": 32.0,
+          "loss": 6.382506688435872,
+          "perplexity": 591.9237656480566,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.02359877588848273
+        },
+        "16": {
+          "context_tokens": 16.0,
+          "probe_targets": 32.0,
+          "loss": 6.380105177561442,
+          "perplexity": 591.3710298980719,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.024075277149677277
+        },
+        "2": {
+          "context_tokens": 2.0,
+          "probe_targets": 32.0,
+          "loss": 6.786478837331136,
+          "perplexity": 904.9392597675204,
+          "top_1_accuracy": 0.041666666666666664,
+          "mean_target_probability": 0.014089160598814487
+        },
+        "1": {
+          "context_tokens": 1.0,
+          "probe_targets": 32.0,
+          "loss": 6.941938082377116,
+          "perplexity": 1070.4660872820293,
+          "top_1_accuracy": 0.03125,
+          "mean_target_probability": 0.00918160347888867
+        },
+        "full_vs_last_1_loss_advantage": 0.5510820746421814,
+        "full_vs_last_2_loss_advantage": 0.3956228295962016
+      }
+    },
+    {
+      "tokens": 512000,
+      "seeds": 3,
+      "validation_loss": 6.378627568483353,
+      "perplexity": 589.1882485533321,
+      "top_1_accuracy": 0.0904541015625,
+      "top_5_accuracy": 0.17236328125,
+      "top_10_accuracy": 0.228271484375,
+      "mean_correct_token_probability": 0.0311040710657835,
+      "training_tokens_per_second": 880.524202952122,
+      "peak_ram_mb": 1186.34765625,
+      "gradient_norm": 2.3220648765563965,
+      "frequency_buckets": {
+        "top_1_percent": {
+          "top_1_accuracy": 0.35247748096783954,
+          "top_5_accuracy": 0.5796331961949667,
+          "top_10_accuracy": 0.7115508317947388,
+          "mean_correct_token_probability": 0.11643450955549876,
+          "cross_entropy": 3.6901333332061768
+        },
+        "top_5_percent_excluding_top_1": {
+          "top_1_accuracy": 0.006418485039224227,
+          "top_5_accuracy": 0.10954214632511139,
+          "top_10_accuracy": 0.20667522648970285,
+          "mean_correct_token_probability": 0.006312838755548,
+          "cross_entropy": 5.523568789164226
+        },
+        "top_20_percent_excluding_top_5": {
+          "top_1_accuracy": 0.00030193237277368706,
+          "top_5_accuracy": 0.0182669082035621,
+          "top_10_accuracy": 0.033061593770980835,
+          "mean_correct_token_probability": 0.0013889746430019538,
+          "cross_entropy": 7.103529453277588
+        },
+        "middle_20_to_80_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0002973535447381437,
+          "mean_correct_token_probability": 0.00028821775534500677,
+          "cross_entropy": 8.529380162556967
+        },
+        "rare_bottom_20_percent": {
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 3.390436904737726e-05,
+          "cross_entropy": 10.6658722559611
+        }
+      },
+      "top_1_percent_outside_accuracy": 0.0017429194413125515,
+      "period_comma_prediction_mass": 0.3095703125,
+      "sentence_boundaries": {
+        "。": {
+          "top_1_accuracy": 0.8168168168168167,
+          "predicted_frequency": 0.07051595052083333
+        },
+        "！": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "？": {
+          "top_1_accuracy": null,
+          "predicted_frequency": 0.0
+        },
+        "newline": {
+          "top_1_accuracy": 0.959915611814346,
+          "predicted_frequency": 0.07450358072916667
+        },
+        "<EOS>": {
+          "top_1_accuracy": 0.0,
+          "predicted_frequency": 0.0
+        }
+      },
+      "activation_health": {
+        "embedding_rms": 0.030452841892838478,
+        "layer_9_final_residual_rms": 4.795845031738281,
+        "layer_9_mlp_output_rms": 0.45001230637232464
+      },
+      "context_utilization": {
+        "512": {
+          "context_tokens": 512.0,
+          "probe_targets": 32.0,
+          "loss": 6.318633774916331,
+          "perplexity": 555.169423592769,
+          "top_1_accuracy": 0.0625,
+          "mean_target_probability": 0.024509253232584644
+        },
+        "64": {
+          "context_tokens": 64.0,
+          "probe_targets": 32.0,
+          "loss": 6.265498320261638,
+          "perplexity": 527.0394463679867,
+          "top_1_accuracy": 0.052083333333333336,
+          "mean_target_probability": 0.02392926129202048
+        },
+        "16": {
+          "context_tokens": 16.0,
+          "probe_targets": 32.0,
+          "loss": 6.287548542022705,
+          "perplexity": 538.2379927591419,
+          "top_1_accuracy": 0.03125,
+          "mean_target_probability": 0.02269427292048931
+        },
+        "2": {
+          "context_tokens": 2.0,
+          "probe_targets": 32.0,
+          "loss": 6.435097694396973,
+          "perplexity": 626.9319254480798,
+          "top_1_accuracy": 0.03125,
+          "mean_target_probability": 0.017311889367798965
+        },
+        "1": {
+          "context_tokens": 1.0,
+          "probe_targets": 32.0,
+          "loss": 6.86556609471639,
+          "perplexity": 962.1724592496838,
+          "top_1_accuracy": 0.020833333333333332,
+          "mean_target_probability": 0.008674478391185403
+        },
+        "full_vs_last_1_loss_advantage": 0.546932319800059,
+        "full_vs_last_2_loss_advantage": 0.11646391948064168
+      }
+    }
+  ],
+  "generation": [
+    {
+      "tokens": 256000,
+      "modes": {
+        "greedy_no_penalty": {
+          "character_validity": 0.8,
+          "natural_japanese_proxy": 0.0,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.06666666666666668
+        },
+        "sampling_t07_topk40_topp09_no_penalty": {
+          "character_validity": 0.8,
+          "natural_japanese_proxy": 0.3,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.005617321306882211
+        }
+      }
+    },
+    {
+      "tokens": 320000,
+      "modes": {
+        "greedy_no_penalty": {
+          "character_validity": 0.95,
+          "natural_japanese_proxy": 0.0,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.23423055439184473
+        },
+        "sampling_t07_topk40_topp09_no_penalty": {
+          "character_validity": 0.8,
+          "natural_japanese_proxy": 0.45,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.02043752632795314
+        }
+      }
+    },
+    {
+      "tokens": 384000,
+      "modes": {
+        "greedy_no_penalty": {
+          "character_validity": 0.9,
+          "natural_japanese_proxy": 0.0,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.4065924219150026
+        },
+        "sampling_t07_topk40_topp09_no_penalty": {
+          "character_validity": 0.8,
+          "natural_japanese_proxy": 0.45,
+          "semantic_coherence_proxy": 0.05,
+          "completion_proxy": 0.05,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.018290472582679084
+        }
+      }
+    },
+    {
+      "tokens": 448000,
+      "modes": {
+        "greedy_no_penalty": {
+          "character_validity": 0.9,
+          "natural_japanese_proxy": 0.0,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.3726036913392463
+        },
+        "sampling_t07_topk40_topp09_no_penalty": {
+          "character_validity": 0.65,
+          "natural_japanese_proxy": 0.3,
+          "semantic_coherence_proxy": 0.1,
+          "completion_proxy": 0.15,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.013061490480845317
+        }
+      }
+    },
+    {
+      "tokens": 512000,
+      "modes": {
+        "greedy_no_penalty": {
+          "character_validity": 0.85,
+          "natural_japanese_proxy": 0.0,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.1217741935483871
+        },
+        "sampling_t07_topk40_topp09_no_penalty": {
+          "character_validity": 0.85,
+          "natural_japanese_proxy": 0.15,
+          "semantic_coherence_proxy": 0.0,
+          "completion_proxy": 0.0,
+          "eos_rate": 0.0,
+          "runaway_rate": 1.0,
+          "mean_repetition_rate": 0.01838117764588353
+        }
+      }
+    }
+  ],
+  "knowledge_completion": {
+    "schema": "foundation-v22-knowledge-probes-v1",
+    "phase": 33,
+    "representative_seed": 42,
+    "corrected_evaluator": "evaluation.investigate_foundation_v14.language_proxy",
+    "final_blind_used": false,
+    "rows": [
+      {
+        "tokens": 256000,
+        "checkpoint": "checkpoints/foundation-v21-ab/current/seed-42/checkpoint-tokens-256000.pt",
+        "mode": {
+          "name": "greedy_no_penalty",
+          "kind": "greedy",
+          "temperature": 1.0,
+          "top_k": null,
+          "top_p": null,
+          "repetition_penalty": 1.0
+        },
+        "knowledge_completion_is_observational_only": true,
+        "keyword_hit_rate": 0.0,
+        "natural_japanese_proxy_rate": 0.0,
+        "character_valid_rate": 1.0,
+        "mean_repetition_rate": 0.41,
+        "items": [
+          {
+            "prompt": "日本の首都は",
+            "expected_keywords": [
+              "東京"
+            ],
+            "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8
+            }
+          },
+          {
+            "prompt": "1日は24",
+            "expected_keywords": [
+              "時間"
+            ],
+            "text": "が、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.6
+            }
+          },
+          {
+            "prompt": "水は液体の",
+            "expected_keywords": [
+              "一種",
+              "状態"
+            ],
+            "text": "が、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "大学は高等教育",
+            "expected_keywords": [
+              "機関",
+              "教育"
+            ],
+            "text": "が、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.6
+            }
+          },
+          {
+            "prompt": "地球は太陽の周りを",
+            "expected_keywords": [
+              "公転"
+            ],
+            "text": "、、「、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "春の次に来る季節は",
+            "expected_keywords": [
+              "夏"
+            ],
+            "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8
+            }
+          },
+          {
+            "prompt": "植物は光を使って",
+            "expected_keywords": [
+              "光合成"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "物体を落とすと",
+            "expected_keywords": [
+              "重力",
+              "落下"
+            ],
+            "text": "、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "人は言葉を使って",
+            "expected_keywords": [
+              "伝",
+              "コミュニケーション"
+            ],
+            "text": "が、、、、、、ス・年、、ス・年、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.5
+            }
+          },
+          {
+            "prompt": "文章を書く前に",
+            "expected_keywords": [
+              "構成",
+              "目的",
+              "考"
+            ],
+            "text": "、、、、、、、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8
+            }
+          }
+        ]
+      },
+      {
+        "tokens": 320000,
+        "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-320000.pt",
+        "mode": {
+          "name": "greedy_no_penalty",
+          "kind": "greedy",
+          "temperature": 1.0,
+          "top_k": null,
+          "top_p": null,
+          "repetition_penalty": 1.0
+        },
+        "knowledge_completion_is_observational_only": true,
+        "keyword_hit_rate": 0.0,
+        "natural_japanese_proxy_rate": 0.0,
+        "character_valid_rate": 1.0,
+        "mean_repetition_rate": 0.0,
+        "items": [
+          {
+            "prompt": "日本の首都は",
+            "expected_keywords": [
+              "東京"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "1日は24",
+            "expected_keywords": [
+              "時間"
+            ],
+            "text": "に、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "水は液体の",
+            "expected_keywords": [
+              "一種",
+              "状態"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "大学は高等教育",
+            "expected_keywords": [
+              "機関",
+              "教育"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "地球は太陽の周りを",
+            "expected_keywords": [
+              "公転"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "春の次に来る季節は",
+            "expected_keywords": [
+              "夏"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "植物は光を使って",
+            "expected_keywords": [
+              "光合成"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "物体を落とすと",
+            "expected_keywords": [
+              "重力",
+              "落下"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "人は言葉を使って",
+            "expected_keywords": [
+              "伝",
+              "コミュニケーション"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "文章を書く前に",
+            "expected_keywords": [
+              "構成",
+              "目的",
+              "考"
+            ],
+            "text": "。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "tokens": 384000,
+        "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-384000.pt",
+        "mode": {
+          "name": "greedy_no_penalty",
+          "kind": "greedy",
+          "temperature": 1.0,
+          "top_k": null,
+          "top_p": null,
+          "repetition_penalty": 1.0
+        },
+        "knowledge_completion_is_observational_only": true,
+        "keyword_hit_rate": 0.0,
+        "natural_japanese_proxy_rate": 0.0,
+        "character_valid_rate": 1.0,
+        "mean_repetition_rate": 0.0,
+        "items": [
+          {
+            "prompt": "日本の首都は",
+            "expected_keywords": [
+              "東京"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "1日は24",
+            "expected_keywords": [
+              "時間"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "水は液体の",
+            "expected_keywords": [
+              "一種",
+              "状態"
+            ],
+            "text": "に、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "大学は高等教育",
+            "expected_keywords": [
+              "機関",
+              "教育"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "地球は太陽の周りを",
+            "expected_keywords": [
+              "公転"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "春の次に来る季節は",
+            "expected_keywords": [
+              "夏"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "植物は光を使って",
+            "expected_keywords": [
+              "光合成"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "物体を落とすと",
+            "expected_keywords": [
+              "重力",
+              "落下"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "人は言葉を使って",
+            "expected_keywords": [
+              "伝",
+              "コミュニケーション"
+            ],
+            "text": "の、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "文章を書く前に",
+            "expected_keywords": [
+              "構成",
+              "目的",
+              "考"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "tokens": 448000,
+        "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-448000.pt",
+        "mode": {
+          "name": "greedy_no_penalty",
+          "kind": "greedy",
+          "temperature": 1.0,
+          "top_k": null,
+          "top_p": null,
+          "repetition_penalty": 1.0
+        },
+        "knowledge_completion_is_observational_only": true,
+        "keyword_hit_rate": 0.0,
+        "natural_japanese_proxy_rate": 0.0,
+        "character_valid_rate": 1.0,
+        "mean_repetition_rate": 0.5315732206861239,
+        "items": [
+          {
+            "prompt": "日本の首都は",
+            "expected_keywords": [
+              "東京"
+            ],
+            "text": "、バリリリリリリリリリリリリリリリリのル・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8709677419354839
+            }
+          },
+          {
+            "prompt": "1日は24",
+            "expected_keywords": [
+              "時間"
+            ],
+            "text": "（年）が、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "水は液体の",
+            "expected_keywords": [
+              "一種",
+              "状態"
+            ],
+            "text": "に、バリリリリリリリリリリリリリリリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8870967741935484
+            }
+          },
+          {
+            "prompt": "大学は高等教育",
+            "expected_keywords": [
+              "機関",
+              "教育"
+            ],
+            "text": "（年）が、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "地球は太陽の周りを",
+            "expected_keywords": [
+              "公転"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "春の次に来る季節は",
+            "expected_keywords": [
+              "夏"
+            ],
+            "text": "、大に、大、大、大に、バリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8548387096774194
+            }
+          },
+          {
+            "prompt": "植物は光を使って",
+            "expected_keywords": [
+              "光合成"
+            ],
+            "text": "に、この、バリリリリリリリリリリ・リリ・リリリリリリ・リリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.8412698412698413
+            }
+          },
+          {
+            "prompt": "物体を落とすと",
+            "expected_keywords": [
+              "重力",
+              "落下"
+            ],
+            "text": "、バリリリリリリリリリリリ・リリ・リリリリリリ・リリ・リリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリリ",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.9032258064516129
+            }
+          },
+          {
+            "prompt": "人は言葉を使って",
+            "expected_keywords": [
+              "伝",
+              "コミュニケーション"
+            ],
+            "text": "が、この、この、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.33333333333333337
+            }
+          },
+          {
+            "prompt": "文章を書く前に",
+            "expected_keywords": [
+              "構成",
+              "目的",
+              "考"
+            ],
+            "text": "、この、この、この、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.625
+            }
+          }
+        ]
+      },
+      {
+        "tokens": 512000,
+        "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-512000.pt",
+        "mode": {
+          "name": "greedy_no_penalty",
+          "kind": "greedy",
+          "temperature": 1.0,
+          "top_k": null,
+          "top_p": null,
+          "repetition_penalty": 1.0
+        },
+        "knowledge_completion_is_observational_only": true,
+        "keyword_hit_rate": 0.0,
+        "natural_japanese_proxy_rate": 0.0,
+        "character_valid_rate": 0.9,
+        "mean_repetition_rate": 0.04285714285714286,
+        "items": [
+          {
+            "prompt": "日本の首都は",
+            "expected_keywords": [
+              "東京"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "1日は24",
+            "expected_keywords": [
+              "時間"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "水は液体の",
+            "expected_keywords": [
+              "一種",
+              "状態"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "大学は高等教育",
+            "expected_keywords": [
+              "機関",
+              "教育"
+            ],
+            "text": "は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "地球は太陽の周りを",
+            "expected_keywords": [
+              "公転"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "春の次に来る季節は",
+            "expected_keywords": [
+              "夏"
+            ],
+            "text": "、日本は、日本は、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.4285714285714286
+            }
+          },
+          {
+            "prompt": "植物は光を使って",
+            "expected_keywords": [
+              "光合成"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "物体を落とすと",
+            "expected_keywords": [
+              "重力",
+              "落下"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "人は言葉を使って",
+            "expected_keywords": [
+              "伝",
+              "コミュニケーション"
+            ],
+            "text": " \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": false,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          },
+          {
+            "prompt": "文章を書く前に",
+            "expected_keywords": [
+              "構成",
+              "目的",
+              "考"
+            ],
+            "text": "、\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "keyword_hits": [],
+            "keyword_hit": false,
+            "evaluation": {
+              "character_valid": true,
+              "natural_japanese_proxy": false,
+              "semantic_coherence_proxy": false,
+              "completion_proxy": false,
+              "eos_reached": false,
+              "runaway": true,
+              "repetition_rate": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "synthetic_smoke": {
+    "schema_version": "foundation-v21-synthetic-smoke-v1",
+    "purpose": "fatal-regression smoke only; novel mapping and numeric modular addition are not gates",
+    "seed": 32021,
+    "results": {
+      "current": {
+        "variant": "current",
+        "tiny_overfit": {
+          "accuracy": 1.0,
+          "training": {
+            "updates": 40,
+            "final_20_mean_loss": 3.5762779972969836e-07,
+            "wall_seconds": 4.777457300000151
+          }
+        },
+        "prior_full_architecture_evidence": {
+          "source": "checkpoints/foundation-v17-synthetic/current_unscaled-seed-42.json",
+          "source_sha256": "5cdeb55579f617cb9bc9eac33bf6817ab53d2ea18945ea18823185bcfec5f7d4",
+          "source_phase": "PHASE 28 full 20M architecture synthetic validation",
+          "architecture_match": true,
+          "copy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9296875
+          },
+          "position": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9296875
+          },
+          "long_range": 1.0,
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.24609375
+          }
+        },
+        "copy": {
+          "accuracy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9296875
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "position": {
+          "accuracy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9296875
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "long_range": {
+          "accuracy": 1.0,
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "context_conditioned": {
+          "accuracy": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.24609375
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "fixed_relation_lookup": {
+          "accuracy": 1.0,
+          "training": {
+            "updates": 400,
+            "final_20_mean_loss": 2.9727753826591653e-06,
+            "wall_seconds": 68.69240940000009
+          }
+        },
+        "checks": {
+          "prior_architecture_match": true,
+          "tiny_overfit": true,
+          "copy_4": true,
+          "copy_8": true,
+          "copy_16": true,
+          "position_4": true,
+          "position_8": true,
+          "position_16": true,
+          "long_range": true,
+          "context_conditioned": true,
+          "context_control": true,
+          "fixed_relation_lookup": true
+        },
+        "pass": true
+      },
+      "depth_init": {
+        "variant": "depth_init",
+        "tiny_overfit": {
+          "accuracy": 1.0,
+          "training": {
+            "updates": 40,
+            "final_20_mean_loss": 2.6822086383049284e-07,
+            "wall_seconds": 4.892558100000315
+          }
+        },
+        "prior_full_architecture_evidence": {
+          "source": "checkpoints/foundation-v17-synthetic/depth_scaled_residual_init-seed-42.json",
+          "source_sha256": "370a014e598a9d42da887fc36c6489b22bfc30ad5e0b8e6761fa91359a335a2a",
+          "source_phase": "PHASE 28 full 20M architecture synthetic validation",
+          "architecture_match": true,
+          "copy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.984375
+          },
+          "position": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9921875
+          },
+          "long_range": 1.0,
+          "context_conditioned": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.25
+          }
+        },
+        "copy": {
+          "accuracy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.984375
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "position": {
+          "accuracy": {
+            "4": 1.0,
+            "8": 1.0,
+            "16": 0.9921875
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "long_range": {
+          "accuracy": 1.0,
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "context_conditioned": {
+          "accuracy": {
+            "correct": 1.0,
+            "shuffled": 0.0,
+            "removed": 0.25
+          },
+          "evidence": "prior_full_architecture_evidence"
+        },
+        "fixed_relation_lookup": {
+          "accuracy": 1.0,
+          "training": {
+            "updates": 400,
+            "final_20_mean_loss": 1.2766557489385377e-06,
+            "wall_seconds": 78.80029740000009
+          }
+        },
+        "checks": {
+          "prior_architecture_match": true,
+          "tiny_overfit": true,
+          "copy_4": true,
+          "copy_8": true,
+          "copy_16": true,
+          "position_4": true,
+          "position_8": true,
+          "position_16": true,
+          "long_range": true,
+          "context_conditioned": true,
+          "context_control": true,
+          "fixed_relation_lookup": true
+        },
+        "pass": true
+      }
+    },
+    "gate_pass": true,
+    "novel_random_key_lookup_gate": false,
+    "numeric_modular_addition_gate": false,
+    "production_changed": false,
+    "final_blind_used": false
+  },
+  "checkpoint_verification": {
+    "schema": "foundation-v22-checkpoint-verification-v1",
+    "expected_checkpoints": 12,
+    "verified_checkpoints": 12,
+    "strict_reload_pass": true,
+    "resume_state_complete": true,
+    "integrity_pass": true,
+    "rows": [
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-320000.pt",
+        "seed": 42,
+        "tokens": 320000,
+        "bytes": 235031739,
+        "sha256": "09ce41bc750ad24d7e0be994f96d4239fcac04c7f61ed38e42c7c14852a61f25",
+        "expected_sha256": "09ce41bc750ad24d7e0be994f96d4239fcac04c7f61ed38e42c7c14852a61f25",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-384000.pt",
+        "seed": 42,
+        "tokens": 384000,
+        "bytes": 235054395,
+        "sha256": "92f13e6a163a14db3d09d6c454deefc382d9ef44796089964b9fadb5e730c713",
+        "expected_sha256": "92f13e6a163a14db3d09d6c454deefc382d9ef44796089964b9fadb5e730c713",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-448000.pt",
+        "seed": 42,
+        "tokens": 448000,
+        "bytes": 235077435,
+        "sha256": "0420dc54a5a73fd1a2fb3a61b36474351c399492a81988e2a279741798d5f037",
+        "expected_sha256": "0420dc54a5a73fd1a2fb3a61b36474351c399492a81988e2a279741798d5f037",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-512000.pt",
+        "seed": 42,
+        "tokens": 512000,
+        "bytes": 235098555,
+        "sha256": "566c47145c6b68509b36b901aa77afdfc37c4428e540607fc0407004efe6c404",
+        "expected_sha256": "566c47145c6b68509b36b901aa77afdfc37c4428e540607fc0407004efe6c404",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-123/checkpoint-tokens-320000.pt",
+        "seed": 123,
+        "tokens": 320000,
+        "bytes": 234895803,
+        "sha256": "25e75e1fbed3a18c212d8186e378a055ed3cc2da697e0137ed7ea06d55cf47b6",
+        "expected_sha256": "25e75e1fbed3a18c212d8186e378a055ed3cc2da697e0137ed7ea06d55cf47b6",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-123/checkpoint-tokens-384000.pt",
+        "seed": 123,
+        "tokens": 384000,
+        "bytes": 234899323,
+        "sha256": "808cd3358e5162c5c7d5957d670b84b609b2c780d0d79b506d38b0ff479cb098",
+        "expected_sha256": "808cd3358e5162c5c7d5957d670b84b609b2c780d0d79b506d38b0ff479cb098",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-123/checkpoint-tokens-448000.pt",
+        "seed": 123,
+        "tokens": 448000,
+        "bytes": 234902715,
+        "sha256": "e7395b159a5ab8e523190f86159a8d7100cf138387d0b134868c31802b47e23e",
+        "expected_sha256": "e7395b159a5ab8e523190f86159a8d7100cf138387d0b134868c31802b47e23e",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-123/checkpoint-tokens-512000.pt",
+        "seed": 123,
+        "tokens": 512000,
+        "bytes": 234906171,
+        "sha256": "90c1dd69da0e67c8c06557478baf0762c49d3e2ceb637b3a00df4442f1d0c83c",
+        "expected_sha256": "90c1dd69da0e67c8c06557478baf0762c49d3e2ceb637b3a00df4442f1d0c83c",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-2026/checkpoint-tokens-320000.pt",
+        "seed": 2026,
+        "tokens": 320000,
+        "bytes": 234894459,
+        "sha256": "87fabb3c7a1b69d4b38d1c947746e621764ed12b7fa12b00d7c9836de54e35fd",
+        "expected_sha256": "87fabb3c7a1b69d4b38d1c947746e621764ed12b7fa12b00d7c9836de54e35fd",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-2026/checkpoint-tokens-384000.pt",
+        "seed": 2026,
+        "tokens": 384000,
+        "bytes": 234897979,
+        "sha256": "01aa1efd7df8c933b4e23465f1b87f596829d4ae0155197f7e3e9136eb186e12",
+        "expected_sha256": "01aa1efd7df8c933b4e23465f1b87f596829d4ae0155197f7e3e9136eb186e12",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-2026/checkpoint-tokens-448000.pt",
+        "seed": 2026,
+        "tokens": 448000,
+        "bytes": 234901435,
+        "sha256": "15bee2c64f83363a533312122f28d8e67b28db971d37e837f0221d9036f66150",
+        "expected_sha256": "15bee2c64f83363a533312122f28d8e67b28db971d37e837f0221d9036f66150",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      },
+      {
+        "path": "checkpoints/foundation-v22-current/current/seed-2026/checkpoint-tokens-512000.pt",
+        "seed": 2026,
+        "tokens": 512000,
+        "bytes": 234904827,
+        "sha256": "d58e82f4cef327a4c54c2946283f8771af0e17aa30ce02ef14bcd35e757d22fb",
+        "expected_sha256": "d58e82f4cef327a4c54c2946283f8771af0e17aa30ce02ef14bcd35e757d22fb",
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "random_state_complete": true,
+        "scheduler_state_match": true,
+        "resume_state_complete": true,
+        "pass": true
+      }
+    ]
+  },
+  "final_blind": {
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_opened": false
+  },
+  "language_emergence_status": "PARTIAL",
+  "gate": "INVESTIGATE_GENERATION",
+  "gate_evidence": {
+    "training_stable": true,
+    "validation_learning": true,
+    "context_healthy": true,
+    "punctuation_healthy": true,
+    "generation_emerged": false,
+    "checkpoint_integrity": true
+  },
+  "foundation_base_complete": false,
+  "production_changed": false,
+  "campus_changed": false,
+  "final_blind_used": false
+}
