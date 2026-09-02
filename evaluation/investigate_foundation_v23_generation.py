@@ -56,6 +56,8 @@ def checkpoint_path(tokens: int) -> Path:
         return ROOT / "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-512000.pt"
     if tokens == 640_000:
         return ROOT / "checkpoints/foundation-v23-pilot/current/seed-42/checkpoint-tokens-640000.pt"
+    if tokens in {768_000, 896_000, 1_024_000}:
+        return ROOT / f"checkpoints/foundation-v24-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
     raise ValueError(f"unsupported diagnostic milestone: {tokens}")
 
 
@@ -298,6 +300,7 @@ def traced_generate(
         index + 1 for index, token in enumerate(generated)
         if "�" in tokenizer.decode([token], skip_special=False)
     ), None)
+    runaway = len(generated) == max_new_tokens and generated[-1] != tokenizer.eos_id
     return {
         "ids": generated,
         "text": text,
@@ -305,7 +308,8 @@ def traced_generate(
         "trace": trace,
         "divergence_position": divergence,
         "eos_reached": bool(generated and generated[-1] == tokenizer.eos_id),
-        "runaway": len(generated) == max_new_tokens and generated[-1] != tokenizer.eos_id,
+        "runaway": runaway,
+        "runaway_onset_token": max_new_tokens if runaway else None,
         "ngram_repetition": {str(n): ngram_repetition(generated, n) for n in range(1, 5)},
         **loops,
         "repetition_onset_token": loops["loop_onset_token"],
@@ -634,7 +638,11 @@ def exposure_counts(
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--tokens", type=int, choices=(256_000, 512_000, 640_000), required=True)
+    parser.add_argument(
+        "--tokens", type=int,
+        choices=(256_000, 512_000, 640_000, 768_000, 896_000, 1_024_000),
+        required=True,
+    )
     args = parser.parse_args()
     torch.set_num_threads(4)
     settings = load_json("configs/unipilot-foundation-v22.json")

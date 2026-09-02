@@ -39,7 +39,7 @@ EXPECTED_PARAMETERS = 19_514_880
 TOKENS_PER_UPDATE = 512
 VARIANT_NAMES = ("current", "depth_init")
 BOUNDARY_TEXT = ("。", "！", "？", "\n", "<EOS>")
-CALIBRATION_TEXT = ("。", "、", "の", "に", "は", "を", "が")
+CALIBRATION_TEXT = ("。", "、", "の", "に", "は", "を", "が", "と", "で")
 
 
 def load_json(path: str | Path) -> dict:
@@ -285,6 +285,7 @@ def language_metrics(
     }
     loss_value = total_loss / total
     outside_mask = torch.from_numpy(target_ranks >= boundaries[0])
+    outside_targets = targets[outside_mask]
     return {
         "tokens": total,
         "loss": loss_value,
@@ -297,7 +298,13 @@ def language_metrics(
         "tokens_per_second": total / elapsed,
         "frequency_buckets": buckets,
         "top_1_percent_outside_accuracy": float(
-            (top[outside_mask, 0] == targets[outside_mask]).float().mean()
+            (top[outside_mask, 0] == outside_targets).float().mean()
+        ),
+        "top_1_percent_outside_top_5_accuracy": float(
+            (top[outside_mask, :5] == outside_targets[:, None]).any(-1).float().mean()
+        ),
+        "top_1_percent_outside_top_10_accuracy": float(
+            (top[outside_mask] == outside_targets[:, None]).any(-1).float().mean()
         ),
         "punctuation": punctuation,
         "period_comma_prediction_mass": (

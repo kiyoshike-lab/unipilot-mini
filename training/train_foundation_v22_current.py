@@ -65,8 +65,9 @@ def preflight_resume(settings: dict, seed: int, checkpoint_path: Path) -> dict:
         raise RuntimeError("resume checkpoint format mismatch")
     if payload.get("variant") != "current" or int(payload.get("seed", -1)) != seed:
         raise RuntimeError("resume checkpoint identity mismatch")
-    if update not in {500, 625, 750, 875, 1000} or tokens != update * TOKENS_PER_UPDATE:
-        raise RuntimeError("resume checkpoint is not a permitted 256k-512k milestone")
+    permitted_updates = {500, 625, 750, 875, 1000, 1125, 1250, 1500, 1750, 2000}
+    if update not in permitted_updates or tokens != update * TOKENS_PER_UPDATE:
+        raise RuntimeError("resume checkpoint is not a permitted PHASE 32-35 milestone")
     if payload.get("config") != model.config.to_dict():
         raise RuntimeError("resume model config mismatch")
     if not torch.equal(payload.get("permutation"), expected_order):

@@ -130,7 +130,7 @@ def test_language_metrics_have_frequency_punctuation_boundary_and_topk() -> None
         model, tokenizer, validation, frequency_ranks(train, tokenizer.vocab_size), 64
     )
     assert {"top_1_accuracy", "top_5_accuracy", "top_10_accuracy"} <= set(result)
-    assert set(result["punctuation"]) == {"。", "、", "の", "に", "は", "を", "が"}
+    assert set(result["punctuation"]) == {"。", "、", "の", "に", "は", "を", "が", "と", "で"}
     assert set(result["sentence_boundaries"]) == {"。", "！", "？", "newline", "<EOS>"}
     assert len(result["frequency_buckets"]) == 5
     for bucket in result["frequency_buckets"].values():
