@@ -1,0 +1,105 @@
+{
+  "schema": "foundation-v23-inference-parity-v1",
+  "phase": 34,
+  "tolerance": 1e-05,
+  "tokenizer": {
+    "path": "tokenizer/foundation-v11-base-4096.json",
+    "vocab_size": 4096,
+    "bos_id": 1,
+    "eos_id": 2
+  },
+  "rows": [
+    {
+      "seed": 42,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-42/checkpoint-tokens-512000.pt",
+      "checkpoint_sha256": "566c47145c6b68509b36b901aa77afdfc37c4428e540607fc0407004efe6c404",
+      "strict_reload": true,
+      "model_eval": true,
+      "all_dropout_disabled": true,
+      "causal_mask_shape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "position_offset_cached": 63,
+      "embedding_weight_tied": true,
+      "final_layer_norm": "LayerNorm",
+      "lm_head": "Linear",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "training_forward_loss": 6.212785243988037,
+      "inference_forward_loss": null,
+      "training_vs_inference_max_abs": 0.0,
+      "full_vs_cached_full_max_abs": 0.0,
+      "full_vs_cached_incremental_max_abs": 1.9073486328125e-06,
+      "training_inference_pass": true,
+      "kv_cache_pass": true,
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-123/checkpoint-tokens-512000.pt",
+      "checkpoint_sha256": "90c1dd69da0e67c8c06557478baf0762c49d3e2ceb637b3a00df4442f1d0c83c",
+      "strict_reload": true,
+      "model_eval": true,
+      "all_dropout_disabled": true,
+      "causal_mask_shape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "position_offset_cached": 63,
+      "embedding_weight_tied": true,
+      "final_layer_norm": "LayerNorm",
+      "lm_head": "Linear",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "training_forward_loss": 6.219724178314209,
+      "inference_forward_loss": null,
+      "training_vs_inference_max_abs": 0.0,
+      "full_vs_cached_full_max_abs": 0.0,
+      "full_vs_cached_incremental_max_abs": 1.430511474609375e-06,
+      "training_inference_pass": true,
+      "kv_cache_pass": true,
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "checkpoint": "checkpoints/foundation-v22-current/current/seed-2026/checkpoint-tokens-512000.pt",
+      "checkpoint_sha256": "d58e82f4cef327a4c54c2946283f8771af0e17aa30ce02ef14bcd35e757d22fb",
+      "strict_reload": true,
+      "model_eval": true,
+      "all_dropout_disabled": true,
+      "causal_mask_shape": [
+        1,
+        1,
+        512,
+        512
+      ],
+      "position_offset_cached": 63,
+      "embedding_weight_tied": true,
+      "final_layer_norm": "LayerNorm",
+      "lm_head": "Linear",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "training_forward_loss": 6.235918998718262,
+      "inference_forward_loss": null,
+      "training_vs_inference_max_abs": 0.0,
+      "full_vs_cached_full_max_abs": 0.0,
+      "full_vs_cached_incremental_max_abs": 2.86102294921875e-06,
+      "training_inference_pass": true,
+      "kv_cache_pass": true,
+      "pass": true
+    }
+  ],
+  "inference_parity": "PASS",
+  "kv_cache_parity": "PASS",
+  "checkpoint_integrity": "PASS",
+  "final_blind": {
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_opened": false
+  },
+  "pass": true
+}

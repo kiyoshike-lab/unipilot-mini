@@ -1,0 +1,36 @@
+{
+  "schema": "foundation-v23-pilot-readiness-v1",
+  "phase": 34,
+  "decision_before_training": "EXECUTE_640K_PILOT",
+  "pilot_allowed": true,
+  "checks": {
+    "inference_parity_pass": true,
+    "kv_cache_parity_pass": true,
+    "checkpoint_integrity_pass": true,
+    "architecture_smoke_pass": true,
+    "validation_loss_improved": true,
+    "validation_top_k_improved": true,
+    "teacher_forced_horizon_loss_improved": true,
+    "teacher_forced_horizon_top_k_improved": true,
+    "correct_token_probability_improved": true,
+    "divergence_not_regressed": true,
+    "repetition_direction_improved": true,
+    "frequency_js_direction_improved": true,
+    "corpus_exposure_below_two_percent": true,
+    "evaluator_threshold_unchanged": true,
+    "evaluator_has_50_readable_examples": true,
+    "residual_training_stable": true
+  },
+  "learning_direction": "HEALTHY",
+  "root_cause_hypothesis": [
+    "token-limited undertraining: 512k is only 1.53% of the train corpus",
+    "free-running exposure error after an early low-margin error",
+    "generated Top-1 frequency collapse, dominated by high-frequency boundary/newline tokens",
+    "EOS supervision is scarce (132-167 EOS targets per seed by 512k)",
+    "decoding exposes some better candidates but does not establish model improvement"
+  ],
+  "architecture_changed": false,
+  "corpus_changed": false,
+  "tokenizer_changed": false,
+  "one_million_training_started": false
+}
