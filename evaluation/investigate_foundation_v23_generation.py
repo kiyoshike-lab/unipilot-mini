@@ -60,6 +60,8 @@ def checkpoint_path(tokens: int) -> Path:
         return ROOT / f"checkpoints/foundation-v24-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
     if tokens in {1_280_000, 1_536_000, 1_792_000, 2_048_000}:
         return ROOT / f"checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
+    if tokens in {2_560_000, 3_072_000, 3_584_000, 4_096_000, 4_608_000, 5_120_000}:
+        return ROOT / f"checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
     raise ValueError(f"unsupported diagnostic milestone: {tokens}")
 
 
@@ -644,7 +646,8 @@ def main() -> int:
         "--tokens", type=int,
         choices=(
             256_000, 512_000, 640_000, 768_000, 896_000, 1_024_000,
-            1_280_000, 1_536_000, 1_792_000, 2_048_000,
+            1_280_000, 1_536_000, 1_792_000, 2_048_000, 2_560_000,
+            3_072_000, 3_584_000, 4_096_000, 4_608_000, 5_120_000,
         ),
         required=True,
     )

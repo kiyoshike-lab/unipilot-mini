@@ -1,0 +1,38 @@
+{
+  "schema": "foundation-v26-intermediate-gate-v1",
+  "phase": 37,
+  "gate_tokens": 3072000,
+  "metrics": {
+    "loss_2048": 5.730536550283432,
+    "loss_3072": 5.493696242570877,
+    "top_1_2048": 0.14375813802083334,
+    "top_1_3072": 0.16451009114583334,
+    "top_5_2048": 0.2540690104166667,
+    "top_5_3072": 0.2939453125,
+    "top_10_2048": 0.3212890625,
+    "top_10_3072": 0.362060546875,
+    "sampling_naturalness_2048": 0.54,
+    "sampling_naturalness_3072": 0.5,
+    "sampling_semantic_2048": 0.32,
+    "sampling_semantic_3072": 0.28,
+    "sampling_repetition_3gram_2048": 0.086,
+    "sampling_repetition_3gram_3072": 0.013999999999999997,
+    "greedy_repetition_1gram_2048": 0.928515625,
+    "greedy_repetition_1gram_3072": 0.91265625,
+    "context_advantage_3072_min": 0.32876673340797424
+  },
+  "checks": {
+    "validation_improved": true,
+    "top_k_maintained_or_improved": true,
+    "teacher_forced_improved": true,
+    "frequency_learning_improved": true,
+    "context_maintained": true,
+    "sampling_not_majorly_regressed": true,
+    "repetition_not_majorly_worse": true,
+    "checkpoints_present": true
+  },
+  "outcome": "CONTINUE_TO_5M",
+  "baseline_gate": "CONTINUE_5M_GENERATION_LAG",
+  "production_changed": false,
+  "final_blind_used": false
+}

@@ -1,0 +1,491 @@
+{
+  "schema": "foundation-v26-nine-token-punctuation-probe-v1",
+  "phase": 37,
+  "representative_seed": 42,
+  "validation_tokens": 8192,
+  "rows": [
+    {
+      "tokens": 2048000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.0804443359375,
+          "mean_probability": 0.029221096890978515,
+          "accuracy": 0.8603603839874268
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.1734619140625,
+          "mean_probability": 0.03886105236597359,
+          "accuracy": 0.8597785830497742
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.0721435546875,
+          "mean_probability": 0.013852815784048289,
+          "accuracy": 0.28431373834609985
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.0198974609375,
+          "mean_probability": 0.010716854856582358,
+          "accuracy": 0.11926605552434921
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0240478515625,
+          "mean_probability": 0.012752648384775966,
+          "accuracy": 0.08799999952316284
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.06396484375,
+          "mean_probability": 0.01188242994248867,
+          "accuracy": 0.20270270109176636
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.0479736328125,
+          "mean_probability": 0.014551104861311615,
+          "accuracy": 0.17073170840740204
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0057373046875,
+          "mean_probability": 0.006893631856655702,
+          "accuracy": 0.05970149114727974
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.0015869140625,
+          "mean_probability": 0.007102048024535179,
+          "accuracy": 0.018518518656492233
+        }
+      },
+      "period_comma_prediction_mass": 0.25390625
+    },
+    {
+      "tokens": 2560000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.0679931640625,
+          "mean_probability": 0.026255826465785503,
+          "accuracy": 0.8513513803482056
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.16064453125,
+          "mean_probability": 0.0389817429240793,
+          "accuracy": 0.8523985147476196
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.0399169921875,
+          "mean_probability": 0.009763975482201204,
+          "accuracy": 0.1764705926179886
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.0367431640625,
+          "mean_probability": 0.009695928485598415,
+          "accuracy": 0.22018349170684814
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0762939453125,
+          "mean_probability": 0.011653293040581048,
+          "accuracy": 0.328000009059906
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.04150390625,
+          "mean_probability": 0.009524582332232967,
+          "accuracy": 0.2567567527294159
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.0155029296875,
+          "mean_probability": 0.011430737096816301,
+          "accuracy": 0.08130080997943878
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0062255859375,
+          "mean_probability": 0.006362787098623812,
+          "accuracy": 0.04477611929178238
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.0032958984375,
+          "mean_probability": 0.005714824015740305,
+          "accuracy": 0.03703703731298447
+        }
+      },
+      "period_comma_prediction_mass": 0.2286376953125
+    },
+    {
+      "tokens": 3072000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.06591796875,
+          "mean_probability": 0.02726705849636346,
+          "accuracy": 0.8558558821678162
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.168212890625,
+          "mean_probability": 0.039370597689412534,
+          "accuracy": 0.8708487153053284
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.021728515625,
+          "mean_probability": 0.010324300470529124,
+          "accuracy": 0.12745098769664764
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.0509033203125,
+          "mean_probability": 0.013218282838352025,
+          "accuracy": 0.2568807303905487
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0711669921875,
+          "mean_probability": 0.013842582644429058,
+          "accuracy": 0.31200000643730164
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.060302734375,
+          "mean_probability": 0.012643111171200871,
+          "accuracy": 0.31081080436706543
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.036376953125,
+          "mean_probability": 0.014033957791980356,
+          "accuracy": 0.13008129596710205
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0037841796875,
+          "mean_probability": 0.006539921829244122,
+          "accuracy": 0.04477611929178238
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.0010986328125,
+          "mean_probability": 0.005736586754210293,
+          "accuracy": 0.0
+        }
+      },
+      "period_comma_prediction_mass": 0.234130859375
+    },
+    {
+      "tokens": 3584000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.064697265625,
+          "mean_probability": 0.027453048387542367,
+          "accuracy": 0.837837815284729
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.1695556640625,
+          "mean_probability": 0.04176320123951882,
+          "accuracy": 0.8634686470031738
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.021484375,
+          "mean_probability": 0.009900833887513727,
+          "accuracy": 0.09803921729326248
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.026123046875,
+          "mean_probability": 0.010571259132120758,
+          "accuracy": 0.15596330165863037
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0804443359375,
+          "mean_probability": 0.013262786902487278,
+          "accuracy": 0.4320000112056732
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.023193359375,
+          "mean_probability": 0.009848105517448857,
+          "accuracy": 0.1621621549129486
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.037109375,
+          "mean_probability": 0.012689099414274096,
+          "accuracy": 0.16260161995887756
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0035400390625,
+          "mean_probability": 0.006261062546400353,
+          "accuracy": 0.04477611929178238
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.005126953125,
+          "mean_probability": 0.005915264249779284,
+          "accuracy": 0.018518518656492233
+        }
+      },
+      "period_comma_prediction_mass": 0.2342529296875
+    },
+    {
+      "tokens": 4096000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.0687255859375,
+          "mean_probability": 0.027290834113955498,
+          "accuracy": 0.8513513803482056
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.153564453125,
+          "mean_probability": 0.0355272350134328,
+          "accuracy": 0.8708487153053284
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.0574951171875,
+          "mean_probability": 0.013455982727464288,
+          "accuracy": 0.27450981736183167
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.0247802734375,
+          "mean_probability": 0.010649150179233402,
+          "accuracy": 0.24770642817020416
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0440673828125,
+          "mean_probability": 0.011393358814530075,
+          "accuracy": 0.2720000147819519
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.0179443359375,
+          "mean_probability": 0.00844515347853303,
+          "accuracy": 0.12162162363529205
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.0069580078125,
+          "mean_probability": 0.010351495584473014,
+          "accuracy": 0.06504064798355103
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.004150390625,
+          "mean_probability": 0.005090416656457819,
+          "accuracy": 0.04477611929178238
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.00341796875,
+          "mean_probability": 0.005526212160475552,
+          "accuracy": 0.07407407462596893
+        }
+      },
+      "period_comma_prediction_mass": 0.2222900390625
+    },
+    {
+      "tokens": 4608000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.0694580078125,
+          "mean_probability": 0.03199422045145184,
+          "accuracy": 0.8468468189239502
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.1483154296875,
+          "mean_probability": 0.034037359175272286,
+          "accuracy": 0.8265682458877563
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.023681640625,
+          "mean_probability": 0.011101576557848603,
+          "accuracy": 0.1568627506494522
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.0169677734375,
+          "mean_probability": 0.009848955931374803,
+          "accuracy": 0.1834862381219864
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.0731201171875,
+          "mean_probability": 0.015344886225648224,
+          "accuracy": 0.3840000033378601
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.011474609375,
+          "mean_probability": 0.009679969225544482,
+          "accuracy": 0.10810811072587967
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.04345703125,
+          "mean_probability": 0.015298558806534857,
+          "accuracy": 0.13008129596710205
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0023193359375,
+          "mean_probability": 0.006057792925275862,
+          "accuracy": 0.02985074557363987
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.0020751953125,
+          "mean_probability": 0.0057476816000416875,
+          "accuracy": 0.03703703731298447
+        }
+      },
+      "period_comma_prediction_mass": 0.2177734375
+    },
+    {
+      "tokens": 5120000,
+      "punctuation": {
+        "。": {
+          "token_id": 270,
+          "actual_frequency": 0.027099609375,
+          "top_1_predicted_frequency": 0.0721435546875,
+          "mean_probability": 0.027249362785369158,
+          "accuracy": 0.8603603839874268
+        },
+        "、": {
+          "token_id": 268,
+          "actual_frequency": 0.0330810546875,
+          "top_1_predicted_frequency": 0.14892578125,
+          "mean_probability": 0.02890418889001012,
+          "accuracy": 0.8523985147476196
+        },
+        "の": {
+          "token_id": 267,
+          "actual_frequency": 0.012451171875,
+          "top_1_predicted_frequency": 0.03271484375,
+          "mean_probability": 0.011888741835718974,
+          "accuracy": 0.1764705926179886
+        },
+        "に": {
+          "token_id": 271,
+          "actual_frequency": 0.0133056640625,
+          "top_1_predicted_frequency": 0.019775390625,
+          "mean_probability": 0.010153996961889789,
+          "accuracy": 0.2110091745853424
+        },
+        "は": {
+          "token_id": 273,
+          "actual_frequency": 0.0152587890625,
+          "top_1_predicted_frequency": 0.07421875,
+          "mean_probability": 0.014065985684283078,
+          "accuracy": 0.4320000112056732
+        },
+        "を": {
+          "token_id": 276,
+          "actual_frequency": 0.009033203125,
+          "top_1_predicted_frequency": 0.0162353515625,
+          "mean_probability": 0.008803458418697119,
+          "accuracy": 0.14864864945411682
+        },
+        "が": {
+          "token_id": 277,
+          "actual_frequency": 0.0150146484375,
+          "top_1_predicted_frequency": 0.02099609375,
+          "mean_probability": 0.011581939761526883,
+          "accuracy": 0.0731707289814949
+        },
+        "と": {
+          "token_id": 272,
+          "actual_frequency": 0.0081787109375,
+          "top_1_predicted_frequency": 0.0028076171875,
+          "mean_probability": 0.006020726199494675,
+          "accuracy": 0.02985074557363987
+        },
+        "で": {
+          "token_id": 275,
+          "actual_frequency": 0.006591796875,
+          "top_1_predicted_frequency": 0.003173828125,
+          "mean_probability": 0.005336386835551821,
+          "accuracy": 0.0555555559694767
+        }
+      },
+      "period_comma_prediction_mass": 0.2210693359375
+    }
+  ]
+}
