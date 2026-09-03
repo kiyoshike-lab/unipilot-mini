@@ -58,6 +58,8 @@ def checkpoint_path(tokens: int) -> Path:
         return ROOT / "checkpoints/foundation-v23-pilot/current/seed-42/checkpoint-tokens-640000.pt"
     if tokens in {768_000, 896_000, 1_024_000}:
         return ROOT / f"checkpoints/foundation-v24-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
+    if tokens in {1_280_000, 1_536_000, 1_792_000, 2_048_000}:
+        return ROOT / f"checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-{tokens}.pt"
     raise ValueError(f"unsupported diagnostic milestone: {tokens}")
 
 
@@ -640,7 +642,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--tokens", type=int,
-        choices=(256_000, 512_000, 640_000, 768_000, 896_000, 1_024_000),
+        choices=(
+            256_000, 512_000, 640_000, 768_000, 896_000, 1_024_000,
+            1_280_000, 1_536_000, 1_792_000, 2_048_000,
+        ),
         required=True,
     )
     args = parser.parse_args()

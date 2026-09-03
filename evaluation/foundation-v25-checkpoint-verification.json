@@ -1,0 +1,267 @@
+{
+  "schema": "foundation-v25-checkpoint-verification-v1",
+  "phase": 36,
+  "expected_checkpoints": 12,
+  "verified_checkpoints": 12,
+  "integrity_pass": true,
+  "resume_reproducibility": {
+    "method": "continuous next optimizer step vs save/reload/resume next optimizer step",
+    "compared_steps": 1,
+    "bitwise_equal_parameters": true,
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-1280000.pt",
+      "seed": 42,
+      "tokens": 1280000,
+      "bytes": 235267571,
+      "sha256": "1f249409399c2fc66d19aef3b06aeec32b7dd3967733f95bead187d58e65f1d0",
+      "next_macroblock_index": 9182,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-1536000.pt",
+      "seed": 42,
+      "tokens": 1536000,
+      "bytes": 235292211,
+      "sha256": "9ddb1f628e09541c60b881cac7e2d30bdccc92e2347f1d4fdc6e1463f76ef13c",
+      "next_macroblock_index": 41299,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-1792000.pt",
+      "seed": 42,
+      "tokens": 1792000,
+      "bytes": 235315763,
+      "sha256": "5d0f5a162fbdc0188cbe4d6a68480dbc6a82dcc148b0fd30e12d267b2d2d3223",
+      "next_macroblock_index": 44373,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-42/checkpoint-tokens-2048000.pt",
+      "seed": 42,
+      "tokens": 2048000,
+      "bytes": 235339635,
+      "sha256": "21c9d129ffb049a4a27f9056d8add05558e5cf34a7b42a8b40fe9ea4c1699d82",
+      "next_macroblock_index": 40765,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-123/checkpoint-tokens-1280000.pt",
+      "seed": 123,
+      "tokens": 1280000,
+      "bytes": 234926643,
+      "sha256": "cced7055428dcb590353e0daa0bedd63dd21e91424cffb6fae271ec9a8b3a34f",
+      "next_macroblock_index": 49446,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-123/checkpoint-tokens-1536000.pt",
+      "seed": 123,
+      "tokens": 1536000,
+      "bytes": 234930355,
+      "sha256": "854762e80b8bca2ae19c2c42a34836b979226f5f3be5c93b6f343bf15827a52a",
+      "next_macroblock_index": 23723,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-123/checkpoint-tokens-1792000.pt",
+      "seed": 123,
+      "tokens": 1792000,
+      "bytes": 234933939,
+      "sha256": "b55eba6851e6306e572891c912fcad7ccd79a41458ad230e5a2ced26912b57e3",
+      "next_macroblock_index": 56508,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-123/checkpoint-tokens-2048000.pt",
+      "seed": 123,
+      "tokens": 2048000,
+      "bytes": 234937587,
+      "sha256": "3b209751383f1f1cf86232a5b9dd56bb1e0e9c6c8e98216c06c19d2e5e92517e",
+      "next_macroblock_index": 5117,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-2026/checkpoint-tokens-1280000.pt",
+      "seed": 2026,
+      "tokens": 1280000,
+      "bytes": 234925299,
+      "sha256": "e649a9e8b5418929821f2ad1af2b8942e214c8fafb51f44b175d470a2839cfbe",
+      "next_macroblock_index": 26986,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-2026/checkpoint-tokens-1536000.pt",
+      "seed": 2026,
+      "tokens": 1536000,
+      "bytes": 234929011,
+      "sha256": "fe0ecdf64434364bbdd8f3df163e0a0d5d1aa8d8133ec6310aff0427d08db5cc",
+      "next_macroblock_index": 7153,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-2026/checkpoint-tokens-1792000.pt",
+      "seed": 2026,
+      "tokens": 1792000,
+      "bytes": 234932659,
+      "sha256": "d54554784bde8de47f416deb58b74e84dda117b860f7755c8df274dcdff395c5",
+      "next_macroblock_index": 7583,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    },
+    {
+      "path": "checkpoints/foundation-v25-current/current/seed-2026/checkpoint-tokens-2048000.pt",
+      "seed": 2026,
+      "tokens": 2048000,
+      "bytes": 234936243,
+      "sha256": "ba2359453fe8d3aa6baeb772bff1ad674dc84cb87e3be33a0647891483dcba21",
+      "next_macroblock_index": 6939,
+      "checks": {
+        "hash_match": true,
+        "format_match": true,
+        "identity_match": true,
+        "processed_tokens_match": true,
+        "strict_reload": true,
+        "optimizer_state_present": true,
+        "scheduler_state_match": true,
+        "rng_state_complete": true,
+        "sampler_match": true,
+        "next_dataset_position_valid": true
+      },
+      "pass": true
+    }
+  ]
+}
