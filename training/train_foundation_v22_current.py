@@ -68,6 +68,7 @@ def preflight_resume(settings: dict, seed: int, checkpoint_path: Path) -> dict:
     permitted_updates = {
         500, 625, 750, 875, 1000, 1125, 1250, 1500, 1750, 2000,
         2500, 3000, 3500, 4000, 5000, 6000, 7000, 8000, 9000, 10000,
+        12000, 14000, 17000, 20000,
     }
     if update not in permitted_updates or tokens != update * TOKENS_PER_UPDATE:
         raise RuntimeError("resume checkpoint is not a permitted Foundation milestone")

@@ -1,0 +1,264 @@
+{
+  "schema": "foundation-v27-summary-v1",
+  "phase": 38,
+  "training_curve": [
+    {
+      "tokens": 5120000,
+      "loss": 5.180266747872035,
+      "top_1": 0.18619791666666666,
+      "top_5": 0.3343098958333333,
+      "top_10": 0.4106852213541667,
+      "corpus_exposure_percent": 15.328075144930393
+    },
+    {
+      "tokens": 6144000,
+      "loss": 5.024624625841777,
+      "top_1": 0.2027587890625,
+      "top_5": 0.3602294921875,
+      "top_10": 0.4379475911458333,
+      "corpus_exposure_percent": 18.39369017391647
+    },
+    {
+      "tokens": 7168000,
+      "loss": 4.904651115338008,
+      "top_1": 0.21622721354166666,
+      "top_5": 0.3739420572916667,
+      "top_10": 0.4510904947916667,
+      "corpus_exposure_percent": 21.459305202902552
+    },
+    {
+      "tokens": 8704000,
+      "loss": 4.789050857226054,
+      "top_1": 0.22526041666666666,
+      "top_5": 0.3904622395833333,
+      "top_10": 0.4706217447916667,
+      "corpus_exposure_percent": 26.05772774638167
+    },
+    {
+      "tokens": 10240000,
+      "loss": 4.676526367664337,
+      "top_1": 0.235107421875,
+      "top_5": 0.4055582682291667,
+      "top_10": 0.4849039713541667,
+      "corpus_exposure_percent": 30.656150289860786
+    }
+  ],
+  "sampling": {
+    "5120000": {
+      "naturalness": 0.68,
+      "semantic": 0.32
+    },
+    "6144000": {
+      "naturalness": 0.68,
+      "semantic": 0.38
+    },
+    "7168000": {
+      "naturalness": 0.62,
+      "semantic": 0.36
+    },
+    "8704000": {
+      "naturalness": 0.54,
+      "semantic": 0.28
+    },
+    "10240000": {
+      "naturalness": 0.72,
+      "semantic": 0.4
+    }
+  },
+  "greedy": {
+    "5120000": {
+      "repetition_1": 0.908359375,
+      "runaway": 1.0
+    },
+    "6144000": {
+      "repetition_1": 0.91015625,
+      "runaway": 1.0
+    },
+    "7168000": {
+      "repetition_1": 0.8709375,
+      "runaway": 1.0
+    },
+    "8704000": {
+      "repetition_1": 0.89765625,
+      "runaway": 1.0
+    },
+    "10240000": {
+      "repetition_1": 0.887578125,
+      "runaway": 1.0
+    }
+  },
+  "intermediate_gate": "CONTINUE_TO_10M",
+  "final_gate": "CONTINUE_15M_GENERATION_LAG",
+  "language_emergence": "PARTIAL",
+  "base_maturing": true,
+  "foundation_base_complete": false,
+  "checkpoint_integrity": {
+    "schema": "foundation-v27-checkpoint-verification-v1",
+    "phase": 38,
+    "expected_checkpoints": 12,
+    "verified_checkpoints": 12,
+    "integrity_pass": true,
+    "rows": [
+      {
+        "seed": 42,
+        "tokens": 6144000,
+        "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-6144000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 42,
+        "tokens": 7168000,
+        "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-7168000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 42,
+        "tokens": 8704000,
+        "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-8704000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 42,
+        "tokens": 10240000,
+        "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-10240000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 6144000,
+        "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-6144000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 7168000,
+        "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-7168000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 8704000,
+        "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-8704000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 10240000,
+        "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-10240000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 6144000,
+        "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-6144000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 7168000,
+        "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-7168000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 8704000,
+        "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-8704000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 10240000,
+        "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-10240000.pt",
+        "checks": {
+          "strict_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "tokens": true,
+          "sha256": true
+        },
+        "pass": true
+      }
+    ]
+  },
+  "final_blind": {
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_opened": false
+  }
+}

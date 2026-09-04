@@ -1,0 +1,165 @@
+{
+  "schema": "foundation-v27-checkpoint-verification-v1",
+  "phase": 38,
+  "expected_checkpoints": 12,
+  "verified_checkpoints": 12,
+  "integrity_pass": true,
+  "rows": [
+    {
+      "seed": 42,
+      "tokens": 6144000,
+      "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-6144000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 42,
+      "tokens": 7168000,
+      "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-7168000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 42,
+      "tokens": 8704000,
+      "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-8704000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 42,
+      "tokens": 10240000,
+      "path": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-10240000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 6144000,
+      "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-6144000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 7168000,
+      "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-7168000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 8704000,
+      "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-8704000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 10240000,
+      "path": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-10240000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 6144000,
+      "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-6144000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 7168000,
+      "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-7168000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 8704000,
+      "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-8704000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 10240000,
+      "path": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-10240000.pt",
+      "checks": {
+        "strict_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "tokens": true,
+        "sha256": true
+      },
+      "pass": true
+    }
+  ]
+}

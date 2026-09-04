@@ -1,0 +1,104 @@
+{
+  "schema": "foundation-v27-resume-preflight-v1",
+  "phase": 38,
+  "stage": "final",
+  "target_tokens": 10240000,
+  "audits": {
+    "42": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-7168000.pt",
+      "checkpoint_sha256": "76b655e6692299b2c3da25374aaf5d4fd57679b1c53b5cb8c1b4b3e51fa5415b",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 42,
+      "update": 14000,
+      "tokens_processed": 7168000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 14000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "3459a9e79bc733a000c5d0d70a7413dbbea140d3f920ae557b3f07a1a6499306",
+      "last_macroblock_index": 33951,
+      "next_macroblock_index": 27166,
+      "next_update": 14001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    },
+    "123": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-7168000.pt",
+      "checkpoint_sha256": "530cd2b60a2807b5e4782b57ecc4e53aec4e6e607872098a7628733a0b03d0c6",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 123,
+      "update": 14000,
+      "tokens_processed": 7168000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 14000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "0ff4b3140a93adf5c98a104e4d5d9413aa79b72c9f05efd9a24a1fb259eb571a",
+      "last_macroblock_index": 39312,
+      "next_macroblock_index": 18475,
+      "next_update": 14001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    },
+    "2026": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-7168000.pt",
+      "checkpoint_sha256": "0ac7e939ea036b766cad4f7f5dbc2f3e579aba7afc0408c1451e52f1154f9556",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 2026,
+      "update": 14000,
+      "tokens_processed": 7168000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 14000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "bc9be5e809a4f13cf1d387e6c1c9d60f10efa350e65befcc4222f44b674c1fc1",
+      "last_macroblock_index": 42023,
+      "next_macroblock_index": 21537,
+      "next_update": 14001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    }
+  },
+  "architecture_changed": false,
+  "corpus_changed": false,
+  "tokenizer_changed": false
+}
