@@ -1,0 +1,61 @@
+{
+  "schema": "foundation-v32-pilot-training-v1",
+  "phase": 43,
+  "experimental_only": true,
+  "device": "NVIDIA GeForce RTX 2070 SUPER",
+  "precision": "fp32",
+  "amp": false,
+  "seed": 42,
+  "start_tokens": 15360000,
+  "budget_tokens": 256000,
+  "end_tokens": 15616000,
+  "updates": 500,
+  "objective": {
+    "standard_lm": true,
+    "eos_weight": 1.5,
+    "repetition_auxiliary": false
+  },
+  "training": {
+    "seconds": 22.513331000000107,
+    "tokens_per_second": 11371.040562589284,
+    "mean_weighted_loss": 4.652211157798767,
+    "mean_eos_loss": 0.8244686169624329,
+    "mean_non_eos_loss": 4.651243093967437,
+    "mean_gradient_norm": 4.153927404403687,
+    "max_gradient_norm": 7.768788814544678,
+    "all_finite": true,
+    "peak_vram_mib": 546.3623046875,
+    "telemetry": {
+      "samples": 66,
+      "gpu_utilization_percent_mean": 52.54545454545455,
+      "gpu_utilization_percent_max": 65.0,
+      "gpu_memory_used_mib_max": 1333.0,
+      "gpu_temperature_c_max": 82.0,
+      "gpu_power_w_max": 189.79
+    }
+  },
+  "checkpoint": {
+    "path": "checkpoints/experimental/phase43/standard-eos-1.5/seed-42/checkpoint-tokens-15616000.pt",
+    "sha256": "d36c545db8d80128618c0292833eb64370d9bb4a8c32388dfba9ef38096b76ab",
+    "source_sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+    "source_unchanged": true,
+    "integrity": {
+      "checks": {
+        "optimizer": true,
+        "scheduler": true,
+        "rng": true,
+        "cuda_rng": true,
+        "sampler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "experimental": true,
+        "phase": true
+      },
+      "pass": true,
+      "strict_model_reload": true,
+      "strict_optimizer_reload": true
+    }
+  },
+  "parallel_cpu_evaluation": "DISABLED"
+}

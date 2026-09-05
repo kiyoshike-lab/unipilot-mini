@@ -1,0 +1,412 @@
+{
+  "schema": "foundation-v32-maturity-evaluation-v1",
+  "phase": 43,
+  "label": "pilot",
+  "checkpoint": "checkpoints/experimental/phase43/standard-eos-1.5/seed-42/checkpoint-tokens-15616000.pt",
+  "tokens_processed": 15616000,
+  "validation": {
+    "tokens": 8192,
+    "loss": 4.42870619893074,
+    "perplexity": 83.82289657032965,
+    "top_1_accuracy": 0.26806640625,
+    "top_5_accuracy": 0.4390869140625,
+    "top_10_accuracy": 0.51904296875,
+    "mean_correct_token_probability": 0.151712566614151,
+    "wall_seconds": 1.2241270000004079,
+    "tokens_per_second": 6692.11609579502,
+    "frequency_buckets": {
+      "top_1_percent": {
+        "rank_range": [
+          0,
+          40
+        ],
+        "targets": 2072,
+        "top_1_accuracy": 0.4589768350124359,
+        "top_5_accuracy": 0.7350386381149292,
+        "top_10_accuracy": 0.834942102432251,
+        "mean_correct_token_probability": 0.2380962371826172,
+        "cross_entropy": 2.601762294769287
+      },
+      "top_5_percent_excluding_top_1": {
+        "rank_range": [
+          41,
+          204
+        ],
+        "targets": 1558,
+        "top_1_accuracy": 0.4242618680000305,
+        "top_5_accuracy": 0.6360718607902527,
+        "top_10_accuracy": 0.7317073345184326,
+        "mean_correct_token_probability": 0.2898021638393402,
+        "cross_entropy": 2.884085178375244
+      },
+      "top_20_percent_excluding_top_5": {
+        "rank_range": [
+          205,
+          819
+        ],
+        "targets": 2208,
+        "top_1_accuracy": 0.19429348409175873,
+        "top_5_accuracy": 0.34012681245803833,
+        "top_10_accuracy": 0.43025362491607666,
+        "mean_correct_token_probability": 0.0975373163819313,
+        "cross_entropy": 4.795563697814941
+      },
+      "middle_20_to_80_percent": {
+        "rank_range": [
+          820,
+          3276
+        ],
+        "targets": 2242,
+        "top_1_accuracy": 0.06913470476865768,
+        "top_5_accuracy": 0.14808206260204315,
+        "top_10_accuracy": 0.1926850974559784,
+        "mean_correct_token_probability": 0.036830782890319824,
+        "cross_entropy": 6.574963569641113
+      },
+      "rare_bottom_20_percent": {
+        "rank_range": [
+          3277,
+          4095
+        ],
+        "targets": 112,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "top_10_accuracy": 0.0,
+        "mean_correct_token_probability": 0.00040280207758769393,
+        "cross_entropy": 9.51814079284668
+      }
+    },
+    "top_1_percent_outside_accuracy": 0.2034313678741455,
+    "top_1_percent_outside_top_5_accuracy": 0.33888888359069824,
+    "top_1_percent_outside_top_10_accuracy": 0.4120914936065674,
+    "punctuation": {
+      "。": {
+        "token_id": 270,
+        "actual_frequency": 0.027099609375,
+        "top_1_predicted_frequency": 0.0611572265625,
+        "mean_probability": 0.02970745845232159,
+        "accuracy": 0.9234234094619751
+      },
+      "、": {
+        "token_id": 268,
+        "actual_frequency": 0.0330810546875,
+        "top_1_predicted_frequency": 0.1065673828125,
+        "mean_probability": 0.03451866237446666,
+        "accuracy": 0.8376383781433105
+      },
+      "の": {
+        "token_id": 267,
+        "actual_frequency": 0.012451171875,
+        "top_1_predicted_frequency": 0.017822265625,
+        "mean_probability": 0.010695905541069806,
+        "accuracy": 0.1666666716337204
+      },
+      "に": {
+        "token_id": 271,
+        "actual_frequency": 0.0133056640625,
+        "top_1_predicted_frequency": 0.021484375,
+        "mean_probability": 0.011402724776417017,
+        "accuracy": 0.31192660331726074
+      },
+      "は": {
+        "token_id": 273,
+        "actual_frequency": 0.0152587890625,
+        "top_1_predicted_frequency": 0.0413818359375,
+        "mean_probability": 0.014443320571444929,
+        "accuracy": 0.47999998927116394
+      },
+      "を": {
+        "token_id": 276,
+        "actual_frequency": 0.009033203125,
+        "top_1_predicted_frequency": 0.0235595703125,
+        "mean_probability": 0.010554802196566015,
+        "accuracy": 0.3243243098258972
+      },
+      "が": {
+        "token_id": 277,
+        "actual_frequency": 0.0150146484375,
+        "top_1_predicted_frequency": 0.0230712890625,
+        "mean_probability": 0.012945754802785814,
+        "accuracy": 0.13008129596710205
+      },
+      "と": {
+        "token_id": 272,
+        "actual_frequency": 0.0081787109375,
+        "top_1_predicted_frequency": 0.010986328125,
+        "mean_probability": 0.008507190097589046,
+        "accuracy": 0.02985074557363987
+      },
+      "で": {
+        "token_id": 275,
+        "actual_frequency": 0.006591796875,
+        "top_1_predicted_frequency": 0.0050048828125,
+        "mean_probability": 0.00539972135447897,
+        "accuracy": 0.12962962687015533
+      }
+    },
+    "period_comma_prediction_mass": 0.167724609375,
+    "sentence_boundaries": {
+      "。": {
+        "token_ids": [
+          270
+        ],
+        "targets": 222,
+        "top_1_accuracy": 0.9234234234234234,
+        "predicted_occurrences": 501,
+        "predicted_frequency": 0.0611572265625
+      },
+      "！": {
+        "token_ids": [
+          282,
+          230
+        ],
+        "targets": 0,
+        "top_1_accuracy": null,
+        "predicted_occurrences": 0,
+        "predicted_frequency": 0.0
+      },
+      "？": {
+        "token_ids": [
+          1553
+        ],
+        "targets": 0,
+        "top_1_accuracy": null,
+        "predicted_occurrences": 0,
+        "predicted_frequency": 0.0
+      },
+      "newline": {
+        "token_ids": [
+          205
+        ],
+        "targets": 158,
+        "top_1_accuracy": 0.9620253164556962,
+        "predicted_occurrences": 348,
+        "predicted_frequency": 0.04248046875
+      },
+      "<EOS>": {
+        "token_ids": [
+          2
+        ],
+        "targets": 1,
+        "top_1_accuracy": 0.0,
+        "predicted_occurrences": 0,
+        "predicted_frequency": 0.0
+      }
+    }
+  },
+  "terminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.013020253434980986,
+    "median_rank": 5.0,
+    "mean_rank": 27.234,
+    "top1_rate": 0.0,
+    "top5_rate": 0.56,
+    "top10_rate": 0.778
+  },
+  "nonterminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.0006110866334475418,
+    "median_rank": 860.0,
+    "mean_rank": 1085.728,
+    "top1_rate": 0.0,
+    "top5_rate": 0.022,
+    "top10_rate": 0.026
+  },
+  "context_loss": {
+    "512": 4.874999970197678,
+    "64": 4.945450782775879,
+    "16": 5.026019096374512,
+    "2": 5.617461204528809,
+    "1": 5.91590690612793
+  },
+  "context_diagnostics": {
+    "512": {
+      "context_tokens": 512,
+      "probe_targets": 32,
+      "loss": 4.874999970197678,
+      "perplexity": 130.97414930748474,
+      "top_1_accuracy": 0.15625,
+      "mean_target_probability": 0.07460177107714117
+    },
+    "64": {
+      "context_tokens": 64,
+      "probe_targets": 32,
+      "loss": 4.945450782775879,
+      "perplexity": 140.53418696586527,
+      "top_1_accuracy": 0.125,
+      "mean_target_probability": 0.07822845131158829
+    },
+    "16": {
+      "context_tokens": 16,
+      "probe_targets": 32,
+      "loss": 5.026019096374512,
+      "perplexity": 152.32541131460627,
+      "top_1_accuracy": 0.125,
+      "mean_target_probability": 0.07017237693071365
+    },
+    "2": {
+      "context_tokens": 2,
+      "probe_targets": 32,
+      "loss": 5.617461204528809,
+      "perplexity": 275.1898448862102,
+      "top_1_accuracy": 0.0625,
+      "mean_target_probability": 0.049777500331401825
+    },
+    "1": {
+      "context_tokens": 1,
+      "probe_targets": 32,
+      "loss": 5.91590690612793,
+      "perplexity": 370.8905131047816,
+      "top_1_accuracy": 0.0625,
+      "mean_target_probability": 0.0280983354896307
+    },
+    "full_vs_last_1_loss_advantage": 1.040906935930252,
+    "full_vs_last_2_loss_advantage": 0.742461234331131
+  },
+  "full_context_advantage_vs_1": 1.040906935930252,
+  "teacher_forced_horizons": {
+    "1": {
+      "examples": 100,
+      "loss": 4.436661444660277,
+      "accuracy": 0.28,
+      "correct_token_probability": 0.12994023049321185
+    },
+    "2": {
+      "examples": 100,
+      "loss": 4.27715016040951,
+      "accuracy": 0.34,
+      "correct_token_probability": 0.14361920980872128
+    },
+    "4": {
+      "examples": 100,
+      "loss": 4.517389564998448,
+      "accuracy": 0.25,
+      "correct_token_probability": 0.11521805889605276
+    },
+    "8": {
+      "examples": 100,
+      "loss": 4.865650445669889,
+      "accuracy": 0.23,
+      "correct_token_probability": 0.11716831767193071
+    },
+    "16": {
+      "examples": 100,
+      "loss": 4.267451893240214,
+      "accuracy": 0.29,
+      "correct_token_probability": 0.1138930096459444
+    },
+    "32": {
+      "examples": 100,
+      "loss": 4.057752336347476,
+      "accuracy": 0.24,
+      "correct_token_probability": 0.16666675330661745
+    }
+  },
+  "generation": {
+    "greedy": {
+      "examples": 100,
+      "runaway_rate": 1.0,
+      "eos_rate": 0.0,
+      "mean_repetition_1": 0.92546875,
+      "naturalness_rate": 0.02,
+      "semantic_rate": 0.01,
+      "sentence_completion_rate": 0.02,
+      "mean_eos_probability": 0.0006823899424575352,
+      "topic_retention_proxy": 0.532890625,
+      "median_loop_onset": 19.0,
+      "mean_loop_onset": 28.22,
+      "loop_onset_distribution": {
+        "entropy": 4.853419512696564,
+        "top1_probability": 0.27604596050456165,
+        "top1_top2_margin": 0.21909348216839133,
+        "eos_probability": 0.0008589947198242953
+      }
+    },
+    "temperature_0.7": {
+      "examples": 100,
+      "runaway_rate": 0.98,
+      "eos_rate": 0.02,
+      "mean_repetition_1": 0.3809699675324676,
+      "naturalness_rate": 0.73,
+      "semantic_rate": 0.65,
+      "sentence_completion_rate": 0.08,
+      "mean_eos_probability": 0.0006291934311357725,
+      "topic_retention_proxy": 0.2902069805194805
+    },
+    "temperature_0.8": {
+      "examples": 100,
+      "runaway_rate": 0.95,
+      "eos_rate": 0.05,
+      "mean_repetition_1": 0.2655881307399499,
+      "naturalness_rate": 0.68,
+      "semantic_rate": 0.63,
+      "sentence_completion_rate": 0.07,
+      "mean_eos_probability": 0.0006499984522205992,
+      "topic_retention_proxy": 0.24780955642222524
+    },
+    "top_p_0.90": {
+      "examples": 100,
+      "runaway_rate": 0.96,
+      "eos_rate": 0.04,
+      "mean_repetition_1": 0.1568243927125506,
+      "naturalness_rate": 0.52,
+      "semantic_rate": 0.47,
+      "sentence_completion_rate": 0.03,
+      "mean_eos_probability": 0.0006179478715794923,
+      "topic_retention_proxy": 0.18233181511470986
+    }
+  },
+  "free_running_divergence": {
+    "1": {
+      "mean_repetition_1": 0.0,
+      "topic_retention_proxy": 0.28,
+      "exact_reference_agreement": 0.28,
+      "mean_entropy": 4.919005393683911,
+      "mean_top1_top2_margin": 0.166014435691759
+    },
+    "2": {
+      "mean_repetition_1": 0.005,
+      "topic_retention_proxy": 0.225,
+      "exact_reference_agreement": 0.21,
+      "mean_entropy": 5.06902735568583,
+      "mean_top1_top2_margin": 0.16192986359354108
+    },
+    "4": {
+      "mean_repetition_1": 0.0925,
+      "topic_retention_proxy": 0.1875,
+      "exact_reference_agreement": 0.13,
+      "mean_entropy": 5.148248088415712,
+      "mean_top1_top2_margin": 0.16456569241709076
+    },
+    "8": {
+      "mean_repetition_1": 0.26625,
+      "topic_retention_proxy": 0.1675,
+      "exact_reference_agreement": 0.07625,
+      "mean_entropy": 5.127605149842566,
+      "mean_top1_top2_margin": 0.16693051666778047
+    },
+    "16": {
+      "mean_repetition_1": 0.515,
+      "topic_retention_proxy": 0.193125,
+      "exact_reference_agreement": 0.043125,
+      "mean_entropy": 5.119796709162765,
+      "mean_top1_top2_margin": 0.15668768452858786
+    },
+    "32": {
+      "mean_repetition_1": 0.72875,
+      "topic_retention_proxy": 0.3009375,
+      "exact_reference_agreement": 0.0296875,
+      "mean_entropy": 5.005111603425758,
+      "mean_top1_top2_margin": 0.1739347602314956
+    },
+    "64": {
+      "mean_repetition_1": 0.8553125,
+      "topic_retention_proxy": 0.41765625,
+      "exact_reference_agreement": 0.02203125,
+      "mean_entropy": 4.843777132501709,
+      "mean_top1_top2_margin": 0.203302551997549
+    }
+  },
+  "all_finite": true,
+  "wall_seconds": 64.0711938000004
+}

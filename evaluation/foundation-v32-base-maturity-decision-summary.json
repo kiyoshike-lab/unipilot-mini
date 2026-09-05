@@ -1,0 +1,146 @@
+{
+  "schema": "foundation-v32-base-maturity-decision-v1",
+  "phase": 43,
+  "scaling_classification": "SLOWING_BUT_HEALTHY",
+  "greedy_attractor": "WEAKENING",
+  "sampling_vs_greedy": "ARGMAX_DYNAMICS_FAILURE_NOT_GLOBAL_REPRESENTATION_FAILURE",
+  "exposure_bias_like_evidence": true,
+  "eos_weight_1_5_safe_for_continuation": true,
+  "repetition_auxiliary": "REJECTED_RESEARCH_BRANCH_CLOSED",
+  "architecture_defect_evidence": false,
+  "architecture_change": "NONE",
+  "standard_continuation_pilot_executed": true,
+  "pilot_result": "STANDARD_PRETRAINING_PRODUCTIVE_BUT_CONTEXT_GATE_FAILED",
+  "pilot": {
+    "seed": 42,
+    "tokens": 256000,
+    "start_tokens": 15360000,
+    "end_tokens": 15616000,
+    "validation_delta": {
+      "loss": -0.022981509566307068,
+      "top_1_accuracy": 0.0140380859375,
+      "top_5_accuracy": 0.0015869140625,
+      "top_10_accuracy": 0.00341796875
+    },
+    "terminal_eos_probability_before": 0.013436876907304395,
+    "terminal_eos_probability_after": 0.013020253434980986,
+    "matched_control_terminal_eos_probability": 0.007602432140454766,
+    "eos_1_5_terminal_eos_probability": 0.013020253434966435,
+    "semantic_before": 0.66,
+    "semantic_after": 0.65,
+    "greedy_runaway_before": 1.0,
+    "greedy_runaway_after": 1.0,
+    "greedy_repetition_before": 0.923125,
+    "greedy_repetition_after": 0.92546875,
+    "median_loop_onset_before": 20.0,
+    "median_loop_onset_after": 19.0,
+    "context_maintained": false,
+    "full_context_loss_before": 4.729927033185959,
+    "full_context_loss_after": 4.874999970197678,
+    "full_context_advantage_before": 1.6218366920948029,
+    "full_context_advantage_after": 1.040906935930252,
+    "middle_improving": true,
+    "middle_pilot_maintained": true,
+    "rare_improving": true,
+    "japanese_maintained": true,
+    "loop_not_materially_worse": true,
+    "gpu": {
+      "seconds": 22.513331000000107,
+      "tokens_per_second": 11371.040562589284,
+      "mean_weighted_loss": 4.652211157798767,
+      "mean_eos_loss": 0.8244686169624329,
+      "mean_non_eos_loss": 4.651243093967437,
+      "mean_gradient_norm": 4.153927404403687,
+      "max_gradient_norm": 7.768788814544678,
+      "all_finite": true,
+      "peak_vram_mib": 546.3623046875,
+      "telemetry": {
+        "samples": 66,
+        "gpu_utilization_percent_mean": 52.54545454545455,
+        "gpu_utilization_percent_max": 65.0,
+        "gpu_memory_used_mib_max": 1333.0,
+        "gpu_temperature_c_max": 82.0,
+        "gpu_power_w_max": 189.79
+      }
+    },
+    "thermal_caution": true,
+    "thermal_observation": "Maximum 82C observed during the 22.5-second pilot; post-run temperature returned to 53C and no compute-throttle event was observed. Sustained-above-80 duration was not recorded, so the next run must retain a duration-aware thermal trace."
+  },
+  "corpus_exposure_percent": 45.98422543479118,
+  "next_phase_gate": "CONTINUE_SHORT_GPU_GATES",
+  "continue_20m_gpu_permission": false,
+  "permission_checks": {
+    "validation_improvement": true,
+    "topk_improvement": true,
+    "semantic_maintained": true,
+    "middle_improving": true,
+    "rare_improving": true,
+    "context_maintained": false,
+    "synthetic_pass": true,
+    "architecture_defect_absent": true,
+    "gpu_stable": true,
+    "no_nan_or_inf": true
+  },
+  "recommended_training_mode": {
+    "device": "RTX 2070 SUPER CUDA",
+    "precision": "FP32",
+    "objective": "standard LM continuation",
+    "eos_weight": 1.5,
+    "repetition_auxiliary": false,
+    "evaluation_schedule": "sequential after GPU training stops",
+    "gate_cadence": "256k-512k short GPU gates until context maintenance is demonstrated"
+  },
+  "parallel_cpu_evaluation": "DISABLED",
+  "synthetic_regression": {
+    "pass": true,
+    "tiny_overfit": true,
+    "copy": true,
+    "position": true,
+    "long_range": true,
+    "context_conditioned": true,
+    "fixed_relation_lookup": true
+  },
+  "checkpoint_integrity": {
+    "official_15_360m": {
+      "verified": true,
+      "checkpoints": 6,
+      "seed_42_sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+      "source_unchanged_after_pilot": true
+    },
+    "experimental_pilot": {
+      "path": "checkpoints/experimental/phase43/standard-eos-1.5/seed-42/checkpoint-tokens-15616000.pt",
+      "sha256": "d36c545db8d80128618c0292833eb64370d9bb4a8c32388dfba9ef38096b76ab",
+      "source_sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+      "source_unchanged": true,
+      "integrity": {
+        "checks": {
+          "optimizer": true,
+          "scheduler": true,
+          "rng": true,
+          "cuda_rng": true,
+          "sampler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "experimental": true,
+          "phase": true
+        },
+        "pass": true,
+        "strict_model_reload": true,
+        "strict_optimizer_reload": true
+      }
+    },
+    "final_blind": {
+      "opened": false,
+      "expected_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+      "actual_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+      "pass": true
+    }
+  },
+  "pytest": "403 passed, 4 dependency deprecation warnings in 76.26s",
+  "foundation_base_complete": false,
+  "production_changed": false,
+  "campus_changed": false,
+  "render_changed": false,
+  "vercel_changed": false
+}

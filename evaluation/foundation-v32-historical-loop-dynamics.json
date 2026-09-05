@@ -1,0 +1,66 @@
+{
+  "schema": "foundation-v32-historical-loop-dynamics-v1",
+  "phase": 43,
+  "rows": {
+    "5_120_000": {
+      "checkpoint_sha256": "fec985e601851b7412c9ff8f874f0f07fc4174152a43354bf4495400de47530e",
+      "checkpoint_unchanged": true,
+      "examples": 100,
+      "runaway_rate": 1.0,
+      "eos_rate": 0.0,
+      "mean_repetition_1": 0.95125,
+      "naturalness_rate": 0.0,
+      "semantic_rate": 0.0,
+      "sentence_completion_rate": 0.0,
+      "mean_eos_probability": 0.0004859820207567722,
+      "median_loop_onset": 6.0,
+      "mean_loop_onset": 16.32,
+      "loop_onset_distribution": {
+        "entropy": 5.433557335138321,
+        "top1_probability": 0.24012721167411655,
+        "top1_top2_margin": 0.20317993299569934,
+        "eos_probability": 0.0027533302252049905
+      }
+    },
+    "7_168_000": {
+      "checkpoint_sha256": "76b655e6692299b2c3da25374aaf5d4fd57679b1c53b5cb8c1b4b3e51fa5415b",
+      "checkpoint_unchanged": true,
+      "examples": 100,
+      "runaway_rate": 1.0,
+      "eos_rate": 0.0,
+      "mean_repetition_1": 0.929296875,
+      "naturalness_rate": 0.01,
+      "semantic_rate": 0.01,
+      "sentence_completion_rate": 0.01,
+      "mean_eos_probability": 0.00043155990103239006,
+      "median_loop_onset": 15.5,
+      "mean_loop_onset": 26.89,
+      "loop_onset_distribution": {
+        "entropy": 5.5750538659095765,
+        "top1_probability": 0.19790366977918894,
+        "top1_top2_margin": 0.1605151081830263,
+        "eos_probability": 0.0022566996942896367
+      }
+    },
+    "10_240_000": {
+      "checkpoint_sha256": "e9d9322a1192a0253d6f4c944cb0ff87f4eec648f7fb30394aab5661f0b574aa",
+      "checkpoint_unchanged": true,
+      "examples": 100,
+      "runaway_rate": 1.0,
+      "eos_rate": 0.0,
+      "mean_repetition_1": 0.9315625,
+      "naturalness_rate": 0.0,
+      "semantic_rate": 0.0,
+      "sentence_completion_rate": 0.0,
+      "mean_eos_probability": 0.0003651624405072962,
+      "median_loop_onset": 14.5,
+      "mean_loop_onset": 22.97,
+      "loop_onset_distribution": {
+        "entropy": 5.328483153134584,
+        "top1_probability": 0.22703604864887894,
+        "top1_top2_margin": 0.18824013544712215,
+        "eos_probability": 0.0013360504057982326
+      }
+    }
+  }
+}

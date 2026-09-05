@@ -1,0 +1,149 @@
+{
+  "schema": "foundation-v32-scaling-trends-v1",
+  "classification": "SLOWING_BUT_HEALTHY",
+  "milestones": [
+    {
+      "tokens": 5120000,
+      "validation_loss": 5.180266747872035,
+      "perplexity": 177.73021382711556,
+      "top1": 0.18619791666666666,
+      "top5": 0.3343098958333333,
+      "top10": 0.4106852213541667,
+      "naturalness": 0.68,
+      "semantic": 0.32,
+      "greedy_repetition_1": 0.95125,
+      "greedy_runaway": 1.0,
+      "median_loop_onset": 6.0,
+      "terminal_eos_probability": 0.007027963936328888,
+      "corpus_exposure_percent": 15.328075144930393
+    },
+    {
+      "tokens": 7168000,
+      "validation_loss": 4.904651115338008,
+      "perplexity": 134.91583173049318,
+      "top1": 0.21622721354166666,
+      "top5": 0.3739420572916667,
+      "top10": 0.4510904947916667,
+      "naturalness": 0.62,
+      "semantic": 0.36,
+      "greedy_repetition_1": 0.929296875,
+      "greedy_runaway": 1.0,
+      "median_loop_onset": 15.5,
+      "terminal_eos_probability": 0.00766003029778949,
+      "corpus_exposure_percent": 21.459305202902552
+    },
+    {
+      "tokens": 10240000,
+      "validation_loss": 4.676526367664337,
+      "perplexity": 107.39636839372078,
+      "top1": 0.235107421875,
+      "top5": 0.4055582682291667,
+      "top10": 0.4849039713541667,
+      "naturalness": 0.72,
+      "semantic": 0.4,
+      "greedy_repetition_1": 0.9315625,
+      "greedy_runaway": 1.0,
+      "median_loop_onset": 14.5,
+      "terminal_eos_probability": 0.007175513714755653,
+      "corpus_exposure_percent": 30.656150289860786
+    },
+    {
+      "tokens": 15360000,
+      "validation_loss": 4.451942905783653,
+      "perplexity": 85.79347080750065,
+      "top1": 0.2561848958333333,
+      "top5": 0.435791015625,
+      "top10": 0.5149332682291666,
+      "naturalness": 0.7,
+      "semantic": 0.55,
+      "greedy_repetition_1": 0.923125,
+      "greedy_runaway": 1.0,
+      "median_loop_onset": 20.0,
+      "terminal_eos_probability": 0.009311349992310473,
+      "corpus_exposure_percent": 45.98422543479118
+    }
+  ],
+  "per_million": [
+    {
+      "from_tokens": 5120000,
+      "to_tokens": 7168000,
+      "million_tokens": 2.048,
+      "loss_improvement_per_million": 0.13457794557325542,
+      "top1_percentage_point_improvement_per_million": 1.4662742614746094,
+      "semantic_percentage_point_improvement_per_million": 1.9531249999999991,
+      "repetition_percentage_point_improvement_per_million": 1.0719299316406259
+    },
+    {
+      "from_tokens": 7168000,
+      "to_tokens": 10240000,
+      "million_tokens": 3.072,
+      "loss_improvement_per_million": 0.0742593579666897,
+      "top1_percentage_point_improvement_per_million": 0.6145901150173614,
+      "semantic_percentage_point_improvement_per_million": 1.3020833333333344,
+      "repetition_percentage_point_improvement_per_million": -0.0737508138020813
+    },
+    {
+      "from_tokens": 10240000,
+      "to_tokens": 15360000,
+      "million_tokens": 5.12,
+      "loss_improvement_per_million": 0.043863957398571074,
+      "top1_percentage_point_improvement_per_million": 0.4116694132486975,
+      "semantic_percentage_point_improvement_per_million": 2.9296875000000004,
+      "repetition_percentage_point_improvement_per_million": 0.16479492187499975
+    }
+  ],
+  "frequency_pilot_delta": {
+    "top_1_percent": {
+      "cross_entropy_before": 2.578110933303833,
+      "cross_entropy_after": 2.601762294769287,
+      "cross_entropy_delta": 0.0236513614654541,
+      "correct_probability_before": 0.22974109649658203,
+      "correct_probability_after": 0.2380962371826172,
+      "correct_probability_delta": 0.008355140686035156
+    },
+    "top_5_percent_excluding_top_1": {
+      "cross_entropy_before": 2.912886619567871,
+      "cross_entropy_after": 2.884085178375244,
+      "cross_entropy_delta": -0.028801441192626953,
+      "correct_probability_before": 0.2749852240085602,
+      "correct_probability_after": 0.2898021638393402,
+      "correct_probability_delta": 0.01481693983078003
+    },
+    "top_20_percent_excluding_top_5": {
+      "cross_entropy_before": 4.878206729888916,
+      "cross_entropy_after": 4.795563697814941,
+      "cross_entropy_delta": -0.08264303207397461,
+      "correct_probability_before": 0.09666245430707932,
+      "correct_probability_after": 0.0975373163819313,
+      "correct_probability_delta": 0.0008748620748519897
+    },
+    "middle_20_to_80_percent": {
+      "cross_entropy_before": 6.566574573516846,
+      "cross_entropy_after": 6.574963569641113,
+      "cross_entropy_delta": 0.008388996124267578,
+      "correct_probability_before": 0.037878721952438354,
+      "correct_probability_after": 0.036830782890319824,
+      "correct_probability_delta": -0.0010479390621185303
+    },
+    "rare_bottom_20_percent": {
+      "cross_entropy_before": 9.774674415588379,
+      "cross_entropy_after": 9.51814079284668,
+      "cross_entropy_delta": -0.2565336227416992,
+      "correct_probability_before": 0.00020100183610338718,
+      "correct_probability_after": 0.00040280207758769393,
+      "correct_probability_delta": 0.00020180024148430675
+    }
+  },
+  "frequency_interpretation": {
+    "middle_long_term_improving": true,
+    "middle_pilot_maintained_within_tolerance": true,
+    "rare_long_term_improving": true,
+    "rare_pilot_improving": true
+  },
+  "corpus": {
+    "train_tokens": 33402759,
+    "processed_tokens": 15360000,
+    "exposure_percent": 45.98422543479118,
+    "epochs_equivalent": 0.4598422543479118
+  }
+}
