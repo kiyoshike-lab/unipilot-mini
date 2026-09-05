@@ -1,0 +1,70 @@
+[
+  {
+    "arm": "eos_weight_1.5",
+    "weight": 1.5,
+    "seed": 2026,
+    "budget_tokens": 256000,
+    "start_tokens": 15360000,
+    "end_tokens": 15616000,
+    "gradient": {
+      "mean_norm": 4.187143101692199,
+      "max_norm": 27.81924057006836,
+      "eos_loss": 0.7802039484977722,
+      "non_eos_loss": 4.632061107158661
+    },
+    "evaluation": {
+      "lm": {
+        "loss": 4.4502385556697845,
+        "ppl": 85.64737323183601,
+        "top1": 0.258544921875,
+        "top5": 0.435546875,
+        "top10": 0.5137939453125
+      },
+      "terminal_eos": {
+        "locations": 500,
+        "mean_probability": 0.011640530783100985,
+        "median_rank": 5.0,
+        "mean_rank": 28.454,
+        "top1_rate": 0.0,
+        "top5_rate": 0.53,
+        "top10_rate": 0.76
+      },
+      "nonterminal_eos": {
+        "locations": 500,
+        "mean_probability": 0.00041532696334076034,
+        "median_rank": 1033.5,
+        "mean_rank": 1241.236,
+        "top1_rate": 0.0,
+        "top5_rate": 0.014,
+        "top10_rate": 0.024
+      },
+      "greedy": {
+        "examples": 100,
+        "runaway_rate": 1.0,
+        "eos_rate": 0.0,
+        "mean_repetition_1": 0.91453125,
+        "naturalness_rate": 0.01,
+        "semantic_rate": 0.0,
+        "sentence_completion_rate": 0.0,
+        "mean_eos_probability": 0.0004376449383541092,
+        "median_loop_onset": 23.5
+      },
+      "sampling_t07": {
+        "examples": 100,
+        "runaway_rate": 0.97,
+        "eos_rate": 0.03,
+        "mean_repetition_1": 0.3450417313664596,
+        "naturalness_rate": 0.71,
+        "semantic_rate": 0.65,
+        "sentence_completion_rate": 0.08,
+        "mean_eos_probability": 0.000567446367031813
+      }
+    },
+    "checkpoint": {
+      "path": "checkpoints\\foundation-v30-eos-experimental\\eos_weight_1.5\\seed-2026\\checkpoint-tokens-15616000.pt",
+      "sha256": "c2ac52aefcf401558d0a943dd40ef5da1d01ad29a18548820d50cd50a599f2b9",
+      "strict_reload": true,
+      "source_unchanged": true
+    }
+  }
+]

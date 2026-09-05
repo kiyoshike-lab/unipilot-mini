@@ -1,0 +1,15 @@
+{
+  "phase": 41,
+  "experimental_only": true,
+  "budget_tokens_per_arm": 256000,
+  "seed_42_weights": [1.0, 1.25, 1.5, 2.0],
+  "best_eos_weight": 1.5,
+  "terminal_mean_p_eos": {"42": 0.0130202571, "123": 0.0144861685, "2026": 0.0116405308},
+  "nonterminal_mean_p_eos": {"42": 0.0004471758, "123": 0.0006497180, "2026": 0.0004153270},
+  "greedy_runaway_rate": 1.0,
+  "three_seed_confirmation": true,
+  "eos_correction_validated": true,
+  "next_phase_gate": "EOS_FIXED_BUT_GREEDY_ATTRACTOR_REMAINS",
+  "continue_20m_formal": false,
+  "foundation_base_complete": false
+}
