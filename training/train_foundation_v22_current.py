@@ -79,7 +79,8 @@ def preflight_resume(settings: dict, seed: int, checkpoint_path: Path) -> dict:
     if not payload.get("optimizer_state", {}).get("state"):
         raise RuntimeError("resume optimizer state is absent")
     required_rng = {"python", "numpy", "torch_cpu"}
-    if set(payload.get("random_state", {})) != required_rng:
+    available_rng = set(payload.get("random_state", {}))
+    if not required_rng.issubset(available_rng) or available_rng - required_rng - {"torch_cuda"}:
         raise RuntimeError("resume RNG state is incomplete")
     expected_scheduler = stateless_scheduler_state(settings, update)
     if "scheduler_state" in payload and payload["scheduler_state"] != expected_scheduler:
@@ -107,7 +108,12 @@ def preflight_resume(settings: dict, seed: int, checkpoint_path: Path) -> dict:
         "tokens_processed": tokens,
         "model_state_strict_reload": True,
         "optimizer_state_present": True,
-        "random_state_present": sorted(required_rng),
+        "random_state_present": sorted(available_rng),
+        "cuda_rng_state_present": "torch_cuda" in available_rng,
+        "cuda_rng_resume_action": (
+            "restore_checkpoint_state" if "torch_cuda" in available_rng
+            else "initialize_from_seed_on_first_cuda_resume"
+        ),
         "scheduler": expected_scheduler,
         "scheduler_state_source": "checkpoint" if "scheduler_state" in payload else "derived_legacy_stateless_schedule",
         "optimizer_learning_rate": optimizer_lr,

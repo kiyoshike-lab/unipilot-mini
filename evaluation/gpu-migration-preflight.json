@@ -1,0 +1,59 @@
+{
+  "schema": "gpu-migration-preflight-v1",
+  "phase": 39,
+  "phase38_final_tokens": 10240000,
+  "phase38_gate": "CONTINUE_15M_GENERATION_LAG",
+  "device": {
+    "device": "cuda",
+    "torch_version": "2.12.1+cu130",
+    "cuda_available": true,
+    "cuda_runtime": "13.0",
+    "precision_mode": "fp32",
+    "name": "NVIDIA GeForce RTX 2070 SUPER",
+    "capability": [
+      7,
+      5
+    ],
+    "total_memory_bytes": 8589606912
+  },
+  "checkpoint": {
+    "checkpoint": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-10240000.pt",
+    "checkpoint_sha256": "e9d9322a1192a0253d6f4c944cb0ff87f4eec648f7fb30394aab5661f0b574aa",
+    "checkpoint_format": "foundation-v21-controlled-ab-v1",
+    "variant": "current",
+    "seed": 42,
+    "update": 20000,
+    "tokens_processed": 10240000,
+    "model_state_strict_reload": true,
+    "optimizer_state_present": true,
+    "random_state_present": [
+      "numpy",
+      "python",
+      "torch_cpu"
+    ],
+    "cuda_rng_state_present": false,
+    "cuda_rng_resume_action": "initialize_from_seed_on_first_cuda_resume",
+    "scheduler": {
+      "kind": "stateless_warmup_then_constant",
+      "global_step": 20000,
+      "peak_learning_rate": 0.0001,
+      "warmup_updates": 20,
+      "learning_rate": 0.0001
+    },
+    "scheduler_state_source": "checkpoint",
+    "optimizer_learning_rate": 0.0001,
+    "permutation_sha256": "3459a9e79bc733a000c5d0d70a7413dbbea140d3f920ae557b3f07a1a6499306",
+    "last_macroblock_index": 25925,
+    "next_macroblock_index": 32047,
+    "next_update": 20001,
+    "duplicate_data_prevented": true,
+    "status": "PASS"
+  },
+  "final_blind": {
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "expected_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_opened": false,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

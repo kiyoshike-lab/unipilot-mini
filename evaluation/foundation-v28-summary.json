@@ -1,0 +1,212 @@
+{
+  "schema": "foundation-v28-summary-v1",
+  "phase": 39,
+  "phase38_final_tokens": 10240000,
+  "phase38_gate": "CONTINUE_15M_GENERATION_LAG",
+  "final_tokens": 15360000,
+  "training_curve": [
+    {
+      "tokens": 10240000,
+      "loss": 4.676526367664337,
+      "top_1": 0.235107421875,
+      "top_5": 0.4055582682291667,
+      "top_10": 0.4849039713541667,
+      "corpus_exposure_percent": 30.656150289860786
+    },
+    {
+      "tokens": 12288000,
+      "loss": 4.583612600962321,
+      "top_1": 0.2366943359375,
+      "top_5": 0.4193115234375,
+      "top_10": 0.5029296875,
+      "corpus_exposure_percent": 36.78738034783294
+    },
+    {
+      "tokens": 15360000,
+      "loss": 4.451942905783653,
+      "top_1": 0.2561848958333333,
+      "top_5": 0.435791015625,
+      "top_10": 0.5149332682291666,
+      "corpus_exposure_percent": 45.98422543479118
+    }
+  ],
+  "sampling": {
+    "naturalness": 0.7,
+    "semantic_coherence": 0.55
+  },
+  "greedy": {
+    "repetition": 0.7548902902276501,
+    "runaway": 1.0
+  },
+  "language_emergence": "PARTIAL",
+  "base_maturing": true,
+  "foundation_base_complete": false,
+  "final_gate": "REVIEW_REQUIRED_GENERATION_LAG_AT_15M",
+  "checkpoint_integrity": {
+    "schema": "foundation-v28-checkpoint-verification-v1",
+    "phase": 39,
+    "expected_checkpoints": 6,
+    "verified_checkpoints": 6,
+    "integrity_pass": true,
+    "rows": [
+      {
+        "seed": 42,
+        "tokens": 12288000,
+        "path": "checkpoints/foundation-v28-current/current/seed-42/checkpoint-tokens-12288000.pt",
+        "sha256": "a2230002a41c1359f9e860fe8b53d80191f3834c4e5d28cfc5ddd187b986ef84",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 42,
+        "tokens": 15360000,
+        "path": "checkpoints/foundation-v28-current/current/seed-42/checkpoint-tokens-15360000.pt",
+        "sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 12288000,
+        "path": "checkpoints/foundation-v28-current/current/seed-123/checkpoint-tokens-12288000.pt",
+        "sha256": "add599a5f5d37fa0d96e81ba5f92a4b598d91f894d171ab5618d34a55257e481",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 123,
+        "tokens": 15360000,
+        "path": "checkpoints/foundation-v28-current/current/seed-123/checkpoint-tokens-15360000.pt",
+        "sha256": "aaf8cf8b5a70301f74043438c04f76a16bebd2fd8d8b54f8a4c3872aae43155c",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 12288000,
+        "path": "checkpoints/foundation-v28-current/current/seed-2026/checkpoint-tokens-12288000.pt",
+        "sha256": "0ffbe32f97b993c2c8a580c55bd8a8131fe1c4867e3e38b940235daf645fbf96",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      },
+      {
+        "seed": 2026,
+        "tokens": 15360000,
+        "path": "checkpoints/foundation-v28-current/current/seed-2026/checkpoint-tokens-15360000.pt",
+        "sha256": "a0556b738db8aa191a0501159701e4ff891789b85ad7e1873b0a60c753741891",
+        "checks": {
+          "strict_cpu_reload": true,
+          "optimizer": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "tokens": true,
+          "device_metadata": true,
+          "precision_fp32": true,
+          "sha256": true
+        },
+        "pass": true
+      }
+    ]
+  },
+  "gpu_migration": {
+    "gate": "GPU_MIGRATION_PASS",
+    "speed_gate": "PASS",
+    "cpu_tokens_per_second": 854.7674678894074,
+    "gpu_tokens_per_second": 13392.776334043232,
+    "speedup": 15.668327161669696,
+    "peak_vram_mb": 547.2978515625,
+    "amp_tested": true,
+    "amp_adopted": false
+  },
+  "training_tokens_per_second_by_seed": {
+    "42": 11634.695075656231,
+    "123": 11659.851949672213,
+    "2026": 11724.110374322094
+  },
+  "gpu_training_telemetry_by_seed": {
+    "42": {
+      "gpu_utilization_percent_max": 62.0,
+      "gpu_temperature_c_max": 83.0,
+      "gpu_power_w_max": 208.59,
+      "nvidia_smi_memory_used_mib_max": 1305.0,
+      "torch_peak_vram_mb": 546.361328125
+    },
+    "123": {
+      "gpu_utilization_percent_max": 60.0,
+      "gpu_temperature_c_max": 84.0,
+      "gpu_power_w_max": 237.76,
+      "nvidia_smi_memory_used_mib_max": 1313.0,
+      "torch_peak_vram_mb": 546.361328125
+    },
+    "2026": {
+      "gpu_utilization_percent_max": 59.0,
+      "gpu_temperature_c_max": 83.0,
+      "gpu_power_w_max": 194.22,
+      "nvidia_smi_memory_used_mib_max": 1313.0,
+      "torch_peak_vram_mb": 546.361328125
+    }
+  },
+  "gpu_training_telemetry_max": {
+    "gpu_utilization_percent_max": 62.0,
+    "gpu_temperature_c_max": 84.0,
+    "gpu_power_w_max": 237.76,
+    "nvidia_smi_memory_used_mib_max": 1313.0,
+    "torch_peak_vram_mb": 546.361328125
+  },
+  "precision_mode": "fp32",
+  "final_blind": {
+    "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "content_opened": false
+  }
+}

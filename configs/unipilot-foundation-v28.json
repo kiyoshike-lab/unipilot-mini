@@ -1,0 +1,21 @@
+{
+  "project": "UniPilot Foundation v2.8 PHASE 39 GPU continuation to 15.360M",
+  "cpu_threads": 4,
+  "seeds": [42, 123, 2026],
+  "representative_generation_seed": 42,
+  "tokenizer": "tokenizer/foundation-v11-base-4096.json",
+  "corpus_manifest": "data/foundation_v11/packed/vocab-4096/manifest.json",
+  "architecture": {"context_length": 512, "embedding_dim": 384, "n_layers": 10, "n_heads": 6, "ffn_dim": 1536, "dropout": 0.1, "bias": true, "norm": "layernorm", "norm_epsilon": 1e-5, "activation": "gelu", "token_embedding_scale": 1.0, "position_embedding_scale": 1.0, "weight_tying": true},
+  "variants": [{"name": "current", "residual_projection_init_scale": 1.0, "formal_name": "Current"}],
+  "training": {"token_budget": 15360000, "effective_batch_tokens": 512, "optimizer": "AdamW", "betas": [0.9, 0.95], "epsilon": 1e-8, "weight_decay": 0.1, "gradient_clip": 1.0, "peak_learning_rate": 0.0001, "warmup_updates": 20, "schedule_after_warmup": "constant", "milestone_tokens": [10240000, 12288000, 15360000]},
+  "evaluation": {"validation_tokens": 8192, "context_probe_targets": 32, "activation_probe_tokens": 128, "generation_examples": 20, "generation_max_new_tokens": 64, "generation_modes": ["greedy_no_penalty", "sampling_t07_topk40_topp09_no_penalty"]},
+  "parameter_target": 19514880,
+  "final_blind": {"path": "data/foundation_v09/evaluation/final-blind-1000.json", "expected_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b", "content_opened": false},
+  "phase38_final_gate": "CONTINUE_15M_GENERATION_LAG",
+  "phase38_final_tokens": 10240000,
+  "maximum_allowed_tokens_per_run": 15360000,
+  "foundation_base_complete": false,
+  "production_changed": false,
+  "campus_changed": false,
+  "external_ai_api": "OFF"
+}

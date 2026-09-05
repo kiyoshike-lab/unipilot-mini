@@ -226,6 +226,7 @@ def context_sensitivity(model: DiagnosticTransformer, validation: np.memmap) -> 
 
 @torch.inference_mode()
 def context_ablation(model: DiagnosticTransformer, validation: np.memmap, probes: int = 128) -> dict:
+    device = next(model.parameters()).device
     result = {}
     target_positions = np.arange(4096, 4096 + probes, dtype=np.int64)
     for context in (512, 64, 16, 2, 1):
@@ -233,13 +234,15 @@ def context_ablation(model: DiagnosticTransformer, validation: np.memmap, probes
             np.asarray(validation[position - context:position], dtype=np.int64)
             for position in target_positions
         ])
-        targets = torch.from_numpy(np.asarray(validation[target_positions], dtype=np.int64).copy())
+        targets = torch.from_numpy(
+            np.asarray(validation[target_positions], dtype=np.int64).copy()
+        ).to(device)
         loss_sum = 0.0
         assigned_sum = 0.0
         correct = 0
         batch_size = 4 if context == 512 else 32
         for start in range(0, probes, batch_size):
-            x = torch.from_numpy(inputs[start:start + batch_size].copy())
+            x = torch.from_numpy(inputs[start:start + batch_size].copy()).to(device)
             y = targets[start:start + batch_size]
             logits, _ = model(x)
             final_logits = logits[:, -1]

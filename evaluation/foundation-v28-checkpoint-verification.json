@@ -1,0 +1,117 @@
+{
+  "schema": "foundation-v28-checkpoint-verification-v1",
+  "phase": 39,
+  "expected_checkpoints": 6,
+  "verified_checkpoints": 6,
+  "integrity_pass": true,
+  "rows": [
+    {
+      "seed": 42,
+      "tokens": 12288000,
+      "path": "checkpoints/foundation-v28-current/current/seed-42/checkpoint-tokens-12288000.pt",
+      "sha256": "a2230002a41c1359f9e860fe8b53d80191f3834c4e5d28cfc5ddd187b986ef84",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 42,
+      "tokens": 15360000,
+      "path": "checkpoints/foundation-v28-current/current/seed-42/checkpoint-tokens-15360000.pt",
+      "sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 12288000,
+      "path": "checkpoints/foundation-v28-current/current/seed-123/checkpoint-tokens-12288000.pt",
+      "sha256": "add599a5f5d37fa0d96e81ba5f92a4b598d91f894d171ab5618d34a55257e481",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 123,
+      "tokens": 15360000,
+      "path": "checkpoints/foundation-v28-current/current/seed-123/checkpoint-tokens-15360000.pt",
+      "sha256": "aaf8cf8b5a70301f74043438c04f76a16bebd2fd8d8b54f8a4c3872aae43155c",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 12288000,
+      "path": "checkpoints/foundation-v28-current/current/seed-2026/checkpoint-tokens-12288000.pt",
+      "sha256": "0ffbe32f97b993c2c8a580c55bd8a8131fe1c4867e3e38b940235daf645fbf96",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    },
+    {
+      "seed": 2026,
+      "tokens": 15360000,
+      "path": "checkpoints/foundation-v28-current/current/seed-2026/checkpoint-tokens-15360000.pt",
+      "sha256": "a0556b738db8aa191a0501159701e4ff891789b85ad7e1873b0a60c753741891",
+      "checks": {
+        "strict_cpu_reload": true,
+        "optimizer": true,
+        "rng": true,
+        "sampler": true,
+        "scheduler": true,
+        "tokens": true,
+        "device_metadata": true,
+        "precision_fp32": true,
+        "sha256": true
+      },
+      "pass": true
+    }
+  ]
+}

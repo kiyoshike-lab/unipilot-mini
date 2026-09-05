@@ -1,0 +1,286 @@
+{
+  "schema": "gpu-migration-report-v1",
+  "phase": 39,
+  "preflight": {
+    "schema": "gpu-migration-preflight-v1",
+    "phase": 39,
+    "phase38_final_tokens": 10240000,
+    "phase38_gate": "CONTINUE_15M_GENERATION_LAG",
+    "device": {
+      "device": "cuda",
+      "torch_version": "2.12.1+cu130",
+      "cuda_available": true,
+      "cuda_runtime": "13.0",
+      "precision_mode": "fp32",
+      "name": "NVIDIA GeForce RTX 2070 SUPER",
+      "capability": [
+        7,
+        5
+      ],
+      "total_memory_bytes": 8589606912
+    },
+    "checkpoint": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-10240000.pt",
+      "checkpoint_sha256": "e9d9322a1192a0253d6f4c944cb0ff87f4eec648f7fb30394aab5661f0b574aa",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 42,
+      "update": 20000,
+      "tokens_processed": 10240000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "cuda_rng_state_present": false,
+      "cuda_rng_resume_action": "initialize_from_seed_on_first_cuda_resume",
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 20000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "3459a9e79bc733a000c5d0d70a7413dbbea140d3f920ae557b3f07a1a6499306",
+      "last_macroblock_index": 25925,
+      "next_macroblock_index": 32047,
+      "next_update": 20001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    },
+    "final_blind": {
+      "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+      "expected_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+      "content_opened": false,
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "pytorch_selection": {
+    "version": "2.12.1+cu130",
+    "cuda_runtime": "13.0",
+    "wheel_source": "https://download.pytorch.org/whl/cu130",
+    "reason": "official stable patch matching the repository torch==2.12.1 pin"
+  },
+  "cpu_checkpoint_to_gpu": "PASS",
+  "optimizer_gpu_state_devices": [
+    "cuda:0"
+  ],
+  "numerical_parity": {
+    "cpu": {
+      "loss": 5.306600570678711,
+      "logit_mean": -3.0359506607055664,
+      "logit_std": 1.858959674835205,
+      "logit_min": -11.83518123626709,
+      "logit_max": 11.262988090515137,
+      "top_1": 0.17578125,
+      "top_5": 0.310546875,
+      "top_10": 0.396484375,
+      "all_finite": true
+    },
+    "gpu": {
+      "loss": 5.306600093841553,
+      "logit_mean": -3.0359506607055664,
+      "logit_std": 1.858959674835205,
+      "logit_min": -11.83518123626709,
+      "logit_max": 11.262989044189453,
+      "top_1": 0.17578125,
+      "top_5": 0.310546875,
+      "top_10": 0.396484375,
+      "all_finite": true
+    },
+    "differences": {
+      "loss_absolute": 4.76837158203125e-07,
+      "logit_mean_absolute": 0.0,
+      "logit_std_absolute": 0.0,
+      "logit_max_absolute": 1.811981201171875e-05,
+      "top_1_absolute": 0.0,
+      "top_5_absolute": 0.0,
+      "top_10_absolute": 0.0
+    },
+    "tolerances": {
+      "loss_absolute": 0.0005,
+      "logit_mean_absolute": 0.0002,
+      "logit_std_absolute": 0.0002,
+      "topk_absolute": 0.002,
+      "one_step_loss_absolute": 0.001,
+      "gradient_norm_relative": 0.01,
+      "parameter_delta_relative": 0.02,
+      "learning_rate_absolute": 1e-12
+    },
+    "status": "PASS"
+  },
+  "one_step_parity": {
+    "method": "optimizer step with dropout disabled to isolate CPU/CUDA kernels",
+    "cpu": {
+      "pre_step_loss": 5.306600570678711,
+      "post_step_loss": 5.226320743560791,
+      "gradient_norm": 4.034529685974121,
+      "parameter_delta_norm": 0.09634135401635827,
+      "learning_rate": 0.0001,
+      "all_finite": true
+    },
+    "gpu": {
+      "pre_step_loss": 5.306600093841553,
+      "post_step_loss": 5.226325035095215,
+      "gradient_norm": 4.034827709197998,
+      "parameter_delta_norm": 0.09634049121698007,
+      "learning_rate": 0.0001,
+      "all_finite": true
+    },
+    "gpu_optimizer_state_devices": [
+      "cuda:0"
+    ],
+    "cuda_rng_resume_action": "initialized_from_seed_for_legacy_cpu_checkpoint",
+    "differences": {
+      "pre_step_loss_absolute": 4.76837158203125e-07,
+      "post_step_loss_absolute": 4.291534423828125e-06,
+      "gradient_norm_relative": 7.386268890678138e-05,
+      "parameter_delta_relative": 8.955649284796145e-06,
+      "learning_rate_absolute": 0.0
+    },
+    "status": "PASS"
+  },
+  "resume_safety": {
+    "legacy_cpu_checkpoint_cuda_rng_action": "initialized_from_seed_for_legacy_cpu_checkpoint",
+    "gpu_checkpoint": {
+      "path": "checkpoints/foundation-v28-gpu-validation/seed-42/gpu-resume-step-1.pt",
+      "bytes": 235633470,
+      "sha256": "09c37ee0a2cfee9dcb7b9ce9de6b9b18d42c7c1e1f0df669dd8854a825a2155f",
+      "strict_reload": true,
+      "optimizer_state_present": true,
+      "integrity": "PASS"
+    },
+    "gpu_to_cpu": {
+      "strict_model_reload": true,
+      "optimizer_state": true,
+      "optimizer_devices": [
+        "cpu"
+      ],
+      "scheduler": true,
+      "rng": true,
+      "sampler": true,
+      "processed_tokens": true
+    },
+    "gpu_reload_cuda_rng_action": "restored_from_checkpoint",
+    "gpu_optimizer_state_devices_after_reload": [
+      "cuda:0"
+    ],
+    "first_step": {
+      "pre_step_loss": 5.364718437194824,
+      "post_step_loss": 5.231700897216797,
+      "gradient_norm": 3.8681368827819824,
+      "parameter_delta_norm": 0.09711492610188949,
+      "learning_rate": 0.0001,
+      "all_finite": true
+    },
+    "continuation_step": {
+      "pre_step_loss": 4.820087432861328,
+      "post_step_loss": 4.697166919708252,
+      "gradient_norm": 3.1020655632019043,
+      "parameter_delta_norm": 0.09702926779751164,
+      "learning_rate": 0.0001,
+      "all_finite": true
+    },
+    "status": "PASS"
+  },
+  "benchmark": {
+    "cpu_fp32": {
+      "device": "cpu",
+      "precision": "fp32",
+      "warmup_steps": 5,
+      "measurement_steps": 50,
+      "tokens": 25600,
+      "seconds": 29.94966580000002,
+      "tokens_per_second": 854.7674678894074,
+      "milliseconds_per_update": 598.9933160000004,
+      "peak_ram_mb": 2182.9765625,
+      "peak_vram_mb": null,
+      "process_cpu_percent": 710.8,
+      "gpu_telemetry": null,
+      "mean_loss": 4.838743982315063,
+      "max_gradient_norm": 5.214664936065674,
+      "all_finite": true
+    },
+    "gpu_fp32": {
+      "device": "cuda:0",
+      "precision": "fp32",
+      "warmup_steps": 5,
+      "measurement_steps": 50,
+      "tokens": 25600,
+      "seconds": 1.9114782000000332,
+      "tokens_per_second": 13392.776334043232,
+      "milliseconds_per_update": 38.229564000000664,
+      "peak_ram_mb": 1943.171875,
+      "peak_vram_mb": 547.2978515625,
+      "process_cpu_percent": 102.2,
+      "gpu_telemetry": {
+        "samples": 10,
+        "gpu_utilization_percent_mean": 45.0,
+        "gpu_utilization_percent_max": 63.0,
+        "gpu_memory_used_mib_max": 1099.0,
+        "gpu_temperature_c_max": 59.0,
+        "gpu_power_w_max": 164.13
+      },
+      "mean_loss": 4.8328091907501225,
+      "max_gradient_norm": 4.78523063659668,
+      "all_finite": true
+    },
+    "speedup": 15.668327161669696,
+    "speed_gate": "PASS"
+  },
+  "amp": {
+    "tested": true,
+    "benchmark": {
+      "device": "cuda:0",
+      "precision": "amp_fp16",
+      "warmup_steps": 5,
+      "measurement_steps": 50,
+      "tokens": 25600,
+      "seconds": 2.2984332999999992,
+      "tokens_per_second": 11138.021712442127,
+      "milliseconds_per_update": 45.968665999999985,
+      "peak_ram_mb": 2039.53515625,
+      "peak_vram_mb": 493.11279296875,
+      "process_cpu_percent": 101.3,
+      "gpu_telemetry": {
+        "samples": 12,
+        "gpu_utilization_percent_mean": 34.75,
+        "gpu_utilization_percent_max": 56.0,
+        "gpu_memory_used_mib_max": 1035.0,
+        "gpu_temperature_c_max": 55.0,
+        "gpu_power_w_max": 111.14
+      },
+      "mean_loss": 4.833630571365356,
+      "max_gradient_norm": 4.753955841064453,
+      "all_finite": true
+    },
+    "speedup_vs_gpu_fp32": 0.8316439724398501,
+    "adopted": false,
+    "reason": "diagnostic only; formal PHASE 39 keeps the FP32 safety baseline"
+  },
+  "peak_vram_mb": 547.2978515625,
+  "total_vram_mb": 8191.6875,
+  "gate_checks": {
+    "cuda_available": true,
+    "rtx_2070_super_recognized": true,
+    "checkpoint_load": true,
+    "optimizer_device_migration": true,
+    "scheduler_continuity": true,
+    "rng_sampler_continuity": true,
+    "numerical_parity": true,
+    "one_step_parity": true,
+    "gpu_save_reload": true,
+    "gpu_to_cpu_checkpoint": true,
+    "vram_safe": true,
+    "gpu_utilization_confirmed": true,
+    "no_nan_inf": true
+  },
+  "gpu_migration_gate": "GPU_MIGRATION_PASS",
+  "speed_gate": "PASS",
+  "formal_training_allowed": true
+}

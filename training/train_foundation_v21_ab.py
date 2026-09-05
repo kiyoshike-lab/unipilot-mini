@@ -31,6 +31,14 @@ from foundation.diagnostic_transformer_v17 import (
     DiagnosticTransformerV17,
 )
 from training.optimizer import create_optimizer
+from training.device import (
+    NvidiaSmiMonitor,
+    describe_device,
+    model_device,
+    move_optimizer_state_to_device,
+    optimizer_state_devices,
+    resolve_device,
+)
 from training.train_foundation_v15_controlled import macro_batch
 
 
@@ -61,18 +69,32 @@ def tensor_sha256(values: torch.Tensor) -> str:
     return hashlib.sha256(values.detach().cpu().numpy().tobytes()).hexdigest()
 
 
-def random_state() -> dict:
-    return {
+def random_state(device: str | torch.device | None = None) -> dict:
+    state = {
         "python": random.getstate(),
         "numpy": np.random.get_state(),
         "torch_cpu": torch.get_rng_state(),
     }
+    if device is not None and torch.device(device).type == "cuda":
+        state["torch_cuda"] = torch.cuda.get_rng_state_all()
+    return state
 
 
-def restore_random_state(state: dict) -> None:
+def restore_random_state(
+    state: dict,
+    device: str | torch.device | None = None,
+    cuda_seed: int | None = None,
+) -> str:
     random.setstate(state["python"])
     np.random.set_state(state["numpy"])
     torch.set_rng_state(state["torch_cpu"].cpu())
+    if device is None or torch.device(device).type != "cuda":
+        return "not_applicable"
+    if "torch_cuda" in state:
+        torch.cuda.set_rng_state_all([value.cpu() for value in state["torch_cuda"]])
+        return "restored_from_checkpoint"
+    torch.cuda.manual_seed_all(int(cuda_seed if cuda_seed is not None else 0))
+    return "initialized_from_seed_for_legacy_cpu_checkpoint"
 
 
 def variant_spec(settings: dict, name: str) -> dict:
@@ -205,6 +227,7 @@ def language_metrics(
     probe_tokens: int,
 ) -> dict:
     model.eval()
+    device = model_device(model)
     vocab = model.config.vocab_size
     probe_tokens = min(probe_tokens, len(validation) - 1)
     named_ids = {text: _atomic_id(tokenizer, text) for text in CALIBRATION_TEXT}
@@ -219,8 +242,8 @@ def language_metrics(
     for start in range(0, probe_tokens, context):
         size = min(context, probe_tokens - start)
         values = np.asarray(validation[start:start + size + 1], dtype=np.int64).copy()
-        inputs = torch.from_numpy(values[:-1]).unsqueeze(0)
-        targets = torch.from_numpy(values[1:])
+        inputs = torch.from_numpy(values[:-1]).unsqueeze(0).to(device)
+        targets = torch.from_numpy(values[1:]).to(device)
         logits, loss = model(inputs, targets.unsqueeze(0))
         logits = logits[0]
         probabilities = torch.softmax(logits.float(), dim=-1)
@@ -431,7 +454,9 @@ def save_checkpoint(
     history: list[dict],
     training_seconds: float,
     settings: dict,
+    precision_mode: str = "fp32",
 ) -> dict:
+    actual_device = model_device(model)
     payload = {
         "checkpoint_format": CHECKPOINT_FORMAT,
         "model_state": model.state_dict(),
@@ -443,7 +468,9 @@ def save_checkpoint(
         "tokens_processed": update * TOKENS_PER_UPDATE,
         "scheduler_state": stateless_scheduler_state(settings, update),
         "permutation": permutation,
-        "random_state": random_state(),
+        "random_state": random_state(actual_device),
+        "device_metadata": describe_device(actual_device),
+        "precision_mode": precision_mode,
         "history": history,
         "training_seconds": training_seconds,
         "production_changed": False,
@@ -459,7 +486,7 @@ def save_checkpoint(
     restored = DiagnosticTransformerV17(DiagnosticConfigV17(**loaded["config"]))
     restored.load_state_dict(loaded["model_state"], strict=True)
     strict_reload = all(
-        torch.equal(left, right)
+        torch.equal(left.detach().cpu(), right.detach().cpu())
         for left, right in zip(model.state_dict().values(), restored.state_dict().values())
     )
     del loaded, restored
@@ -491,7 +518,12 @@ def run_training(
     validation_tokens: int | None = None,
     include_generation: bool = True,
     resume: Path | None = None,
+    device: str | torch.device = "cpu",
+    precision_mode: str = "fp32",
 ) -> dict:
+    if precision_mode != "fp32":
+        raise ValueError("Foundation continuation currently permits fp32 only")
+    actual_device = resolve_device(device)
     training = settings["training"]
     token_budget = int(token_budget or training["token_budget"])
     if token_budget > int(settings["maximum_allowed_tokens_per_run"]):
@@ -506,7 +538,7 @@ def run_training(
     validation_meta = corpus["splits"]["validation"]
     train = np.memmap(ROOT / train_meta["path"], dtype=np.uint16, mode="r")
     validation = np.memmap(ROOT / validation_meta["path"], dtype=np.uint16, mode="r")
-    model = build_paired_model(settings, tokenizer, variant, seed)
+    model = build_paired_model(settings, tokenizer, variant, seed).to(actual_device)
     if model.parameter_count() != EXPECTED_PARAMETERS:
         raise RuntimeError(f"parameter target mismatch: {model.parameter_count()}")
     optimizer = create_optimizer(
@@ -540,7 +572,10 @@ def run_training(
             raise RuntimeError("resume scheduler state mismatch")
         model.load_state_dict(payload["model_state"], strict=True)
         optimizer.load_state_dict(payload["optimizer_state"])
-        restore_random_state(payload["random_state"])
+        move_optimizer_state_to_device(optimizer, actual_device)
+        cuda_rng_resume_action = restore_random_state(
+            payload["random_state"], actual_device, cuda_seed=seed
+        )
         update = int(payload["update"])
         history = payload["history"]
         training_seconds = float(payload["training_seconds"])
@@ -549,13 +584,20 @@ def run_training(
         random.seed(seed)
         np.random.seed(seed)
         torch.manual_seed(seed)
+        if actual_device.type == "cuda":
+            torch.cuda.manual_seed_all(seed)
+        cuda_rng_resume_action = (
+            "initialized_from_seed" if actual_device.type == "cuda" else "not_applicable"
+        )
+    resume_update = update
+    session_training_seconds = 0.0
     ranks = frequency_ranks(train, tokenizer.vocab_size)
     audit_tokens = torch.from_numpy(
         np.asarray(
             validation[8192:8192 + int(settings["evaluation"]["activation_probe_tokens"])],
             dtype=np.int64,
         ).copy()
-    ).unsqueeze(0)
+    ).unsqueeze(0).to(actual_device)
     prompts = fixed_generation_prompts(
         validation, tokenizer, int(settings["evaluation"]["generation_examples"])
     )
@@ -565,6 +607,10 @@ def run_training(
     configured_milestones.update((0, token_budget))
     milestone_updates = {value // TOKENS_PER_UPDATE for value in configured_milestones}
     peak_ram = _rss_mb()
+    if actual_device.type == "cuda":
+        torch.cuda.reset_peak_memory_stats(actual_device)
+    telemetry = NvidiaSmiMonitor(actual_device.type == "cuda")
+    telemetry.start()
     recent_losses: list[float] = []
 
     def evaluate(current_update: int, gradient_norm: float | None, lr: float) -> dict:
@@ -593,7 +639,19 @@ def run_training(
                 current_update * TOKENS_PER_UPDATE / training_seconds
                 if training_seconds > 0 else None
             ),
+            "session_training_tokens_per_second": (
+                (current_update - resume_update) * TOKENS_PER_UPDATE
+                / session_training_seconds
+                if session_training_seconds > 0 else None
+            ),
             "peak_ram_mb": max(peak_ram, _rss_mb()),
+            "device": str(actual_device),
+            "precision_mode": precision_mode,
+            "peak_vram_mb": (
+                torch.cuda.max_memory_allocated(actual_device) / (1024 * 1024)
+                if actual_device.type == "cuda" else None
+            ),
+            "gpu_telemetry": telemetry.snapshot(reset=True),
             "activation_health": activation_summary(probe),
             "context_utilization": context,
         }
@@ -626,6 +684,7 @@ def run_training(
             history=[row],
             training_seconds=training_seconds,
             settings=settings,
+            precision_mode=precision_mode,
         )
         history.append(row)
         print(json.dumps({"variant": variant, "seed": seed, "milestone": 0}), flush=True)
@@ -633,6 +692,8 @@ def run_training(
         inputs, targets = macro_batch(
             train, int(permutation[current_update - 1]), int(model.config.context_length)
         )
+        inputs = inputs.to(actual_device)
+        targets = targets.to(actual_device)
         lr = float(training["peak_learning_rate"]) * min(
             1.0, current_update / int(training["warmup_updates"])
         )
@@ -649,7 +710,11 @@ def run_training(
             model.parameters(), float(training["gradient_clip"])
         ))
         optimizer.step()
-        training_seconds += time.perf_counter() - train_started
+        if actual_device.type == "cuda":
+            torch.cuda.synchronize(actual_device)
+        step_seconds = time.perf_counter() - train_started
+        training_seconds += step_seconds
+        session_training_seconds += step_seconds
         recent_losses.append(float(loss.detach()))
         peak_ram = max(peak_ram, _rss_mb())
         if current_update not in milestone_updates:
@@ -671,6 +736,7 @@ def run_training(
             history=[*history, row],
             training_seconds=training_seconds,
             settings=settings,
+            precision_mode=precision_mode,
         )
         history.append(row)
         print(json.dumps({
@@ -684,6 +750,7 @@ def run_training(
             "context_advantage": row["context_utilization"]["full_vs_last_1_loss_advantage"],
         }), flush=True)
     final = history[-1]
+    final_telemetry = telemetry.stop()
     result = {
         "schema_version": "foundation-v21-controlled-ab-run-v1",
         "variant": variant_spec(settings, variant),
@@ -706,6 +773,23 @@ def run_training(
             "warmup_updates": training["warmup_updates"],
             "schedule_after_warmup": training["schedule_after_warmup"],
             "training_seconds": training_seconds,
+            "session_training_seconds": session_training_seconds,
+            "session_training_tokens": (final["update"] - resume_update) * TOKENS_PER_UPDATE,
+            "session_training_tokens_per_second": (
+                (final["update"] - resume_update) * TOKENS_PER_UPDATE
+                / session_training_seconds
+                if session_training_seconds > 0 else None
+            ),
+            "device": str(actual_device),
+            "device_metadata": describe_device(actual_device),
+            "precision_mode": precision_mode,
+            "optimizer_state_devices": optimizer_state_devices(optimizer),
+            "cuda_rng_resume_action": cuda_rng_resume_action,
+            "peak_vram_mb": (
+                torch.cuda.max_memory_allocated(actual_device) / (1024 * 1024)
+                if actual_device.type == "cuda" else None
+            ),
+            "gpu_telemetry_final": final_telemetry,
             "history": history,
         },
         "corpus": {

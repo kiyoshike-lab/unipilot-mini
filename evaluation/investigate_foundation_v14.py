@@ -152,10 +152,11 @@ def generate_ids(
     max_new_tokens: int = 64,
 ) -> dict:
     model.eval()
+    device = next(model.parameters()).device
     all_ids = list(prompt_ids)
     generated: list[int] = []
     eos_probabilities: list[float] = []
-    generator = torch.Generator().manual_seed(seed)
+    generator = torch.Generator(device=device).manual_seed(seed)
     forbidden = [
         token_id for token, token_id in tokenizer.special_to_id.items()
         if token != "<EOS>"
@@ -166,7 +167,7 @@ def generate_ids(
         if len(current) > model.config.context_length:
             current = current[-model.config.context_length:]
         logits, _, past = model(
-            torch.tensor([current], dtype=torch.long),
+            torch.tensor([current], dtype=torch.long, device=device),
             past_key_values=past,
             use_cache=True,
         )

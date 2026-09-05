@@ -1,0 +1,130 @@
+{
+  "schema": "foundation-v28-resume-preflight-v1",
+  "phase": 39,
+  "phase38": {
+    "final_tokens": 10240000,
+    "final_gate": "CONTINUE_15M_GENERATION_LAG",
+    "checkpoint_integrity": "PASS"
+  },
+  "target_tokens": 15360000,
+  "requested_device": "cuda",
+  "device": {
+    "device": "cuda",
+    "torch_version": "2.12.1+cu130",
+    "cuda_available": true,
+    "cuda_runtime": "13.0",
+    "precision_mode": "fp32",
+    "name": "NVIDIA GeForce RTX 2070 SUPER",
+    "capability": [
+      7,
+      5
+    ],
+    "total_memory_bytes": 8589606912
+  },
+  "precision_mode": "fp32",
+  "audits": {
+    "42": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-42/checkpoint-tokens-10240000.pt",
+      "checkpoint_sha256": "e9d9322a1192a0253d6f4c944cb0ff87f4eec648f7fb30394aab5661f0b574aa",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 42,
+      "update": 20000,
+      "tokens_processed": 10240000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "cuda_rng_state_present": false,
+      "cuda_rng_resume_action": "initialize_from_seed_on_first_cuda_resume",
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 20000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "3459a9e79bc733a000c5d0d70a7413dbbea140d3f920ae557b3f07a1a6499306",
+      "last_macroblock_index": 25925,
+      "next_macroblock_index": 32047,
+      "next_update": 20001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    },
+    "123": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-123/checkpoint-tokens-10240000.pt",
+      "checkpoint_sha256": "d7d6868f2230a1a8f298653fec1b9a4c7940de4179831025562a20a7c779af38",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 123,
+      "update": 20000,
+      "tokens_processed": 10240000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "cuda_rng_state_present": false,
+      "cuda_rng_resume_action": "initialize_from_seed_on_first_cuda_resume",
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 20000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "0ff4b3140a93adf5c98a104e4d5d9413aa79b72c9f05efd9a24a1fb259eb571a",
+      "last_macroblock_index": 4622,
+      "next_macroblock_index": 37896,
+      "next_update": 20001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    },
+    "2026": {
+      "checkpoint": "checkpoints/foundation-v26-current/current/seed-2026/checkpoint-tokens-10240000.pt",
+      "checkpoint_sha256": "d6c4f7fc2ab00ba5b9272d8ed28d62068ad71f1435db179cb9c9b8c20113f485",
+      "checkpoint_format": "foundation-v21-controlled-ab-v1",
+      "variant": "current",
+      "seed": 2026,
+      "update": 20000,
+      "tokens_processed": 10240000,
+      "model_state_strict_reload": true,
+      "optimizer_state_present": true,
+      "random_state_present": [
+        "numpy",
+        "python",
+        "torch_cpu"
+      ],
+      "cuda_rng_state_present": false,
+      "cuda_rng_resume_action": "initialize_from_seed_on_first_cuda_resume",
+      "scheduler": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 20000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "scheduler_state_source": "checkpoint",
+      "optimizer_learning_rate": 0.0001,
+      "permutation_sha256": "bc9be5e809a4f13cf1d387e6c1c9d60f10efa350e65befcc4222f44b674c1fc1",
+      "last_macroblock_index": 49454,
+      "next_macroblock_index": 55745,
+      "next_update": 20001,
+      "duplicate_data_prevented": true,
+      "status": "PASS"
+    }
+  },
+  "architecture_changed": false,
+  "corpus_changed": false,
+  "tokenizer_changed": false,
+  "new_warmup": false
+}
