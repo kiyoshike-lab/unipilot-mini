@@ -1,0 +1,412 @@
+[
+  {
+    "arm": "A",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "7ff4d8c2bb2cc9b1189792c7fffcc0d548d0d7d4c0e5812a318c1b10abb1574c",
+    "checkpoint_unchanged": true,
+    "seconds": 31.758423199999925,
+    "lm": {
+      "loss": 4.428535372018814,
+      "ppl": 83.8085785867431,
+      "top1": 0.268310546875,
+      "top5": 0.4388427734375,
+      "top10": 0.5189208984375
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.007602432140454766,
+      "median_rank": 7.0,
+      "mean_rank": 31.008,
+      "top1_rate": 0.0,
+      "top5_rate": 0.402,
+      "top10_rate": 0.66
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0004068513012428525,
+      "median_rank": 902.0,
+      "mean_rank": 1101.678,
+      "top1_rate": 0.0,
+      "top5_rate": 0.01,
+      "top10_rate": 0.024
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 18.0,
+      "mean_loop_onset": 27.75,
+      "repetition": {
+        "1": 0.925234375,
+        "2": 0.9011811023622047,
+        "3": 0.8792063492063492,
+        "4": 0.85952
+      },
+      "mean_maximum_repeated_span": 88.28,
+      "loop_taxonomy": {
+        "3_to_4_token_loop": 31,
+        "1_token_loop": 18,
+        "short_phrase_loop": 27,
+        "sentence_level_loop": 13,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.885251062065363,
+        "top1_probability": 0.2725378883909434,
+        "margin": 0.2158454815670848,
+        "eos_probability": 0.0006239231808172008
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.72,
+      "semantic": 0.67,
+      "completion": 0.04,
+      "repetition_1": 0.36940625
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.01703125,
+      "は": 0.003828125,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.028671875,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.911301523447037,
+      "64": 4.523515373468399,
+      "16": 4.972414255142212,
+      "2": 5.306276500225067,
+      "1": 6.2304897010326385
+    }
+  },
+  {
+    "arm": "B",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "7bfbc60684f3693a6f409d9bcfab4c12319059d9e52062c6d80ff1fdc134bd5c",
+    "checkpoint_unchanged": true,
+    "seconds": 30.882376999999906,
+    "lm": {
+      "loss": 4.42870619893074,
+      "ppl": 83.82289657032965,
+      "top1": 0.26806640625,
+      "top5": 0.4390869140625,
+      "top10": 0.51904296875
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.013020253434966435,
+      "median_rank": 5.0,
+      "mean_rank": 27.234,
+      "top1_rate": 0.0,
+      "top5_rate": 0.56,
+      "top10_rate": 0.778
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0006110866334475418,
+      "median_rank": 860.0,
+      "mean_rank": 1085.728,
+      "top1_rate": 0.0,
+      "top5_rate": 0.022,
+      "top10_rate": 0.026
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 19.0,
+      "mean_loop_onset": 28.22,
+      "repetition": {
+        "1": 0.92546875,
+        "2": 0.9015748031496065,
+        "3": 0.8796031746031747,
+        "4": 0.8599199999999999
+      },
+      "mean_maximum_repeated_span": 87.61,
+      "loop_taxonomy": {
+        "short_phrase_loop": 28,
+        "1_token_loop": 18,
+        "3_to_4_token_loop": 30,
+        "sentence_level_loop": 13,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.853419610708952,
+        "top1_probability": 0.2760459723509848,
+        "margin": 0.2190935019403696,
+        "eos_probability": 0.0008589948513781564
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.71,
+      "semantic": 0.66,
+      "completion": 0.06,
+      "repetition_1": 0.36487499999999995
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.01703125,
+      "は": 0.00390625,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.02875,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.912725269794464,
+      "64": 4.524707525968552,
+      "16": 4.971389651298523,
+      "2": 5.3032034039497375,
+      "1": 6.229405373334885
+    }
+  },
+  {
+    "arm": "C",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "c99ba2fc1c43a8e08557b044734faff478d6ac476eb838c1a7249265a0e46374",
+    "checkpoint_unchanged": true,
+    "seconds": 31.184682900000098,
+    "lm": {
+      "loss": 4.428705602884293,
+      "ppl": 83.8228466080048,
+      "top1": 0.2681884765625,
+      "top5": 0.4390869140625,
+      "top10": 0.51904296875
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.013062557975164963,
+      "median_rank": 5.0,
+      "mean_rank": 27.196,
+      "top1_rate": 0.0,
+      "top5_rate": 0.56,
+      "top10_rate": 0.778
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0006133779157980826,
+      "median_rank": 860.0,
+      "mean_rank": 1085.532,
+      "top1_rate": 0.0,
+      "top5_rate": 0.022,
+      "top10_rate": 0.026
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 19.0,
+      "mean_loop_onset": 27.8,
+      "repetition": {
+        "1": 0.92546875,
+        "2": 0.9015748031496065,
+        "3": 0.8795238095238096,
+        "4": 0.8596800000000002
+      },
+      "mean_maximum_repeated_span": 87.66,
+      "loop_taxonomy": {
+        "short_phrase_loop": 29,
+        "1_token_loop": 18,
+        "3_to_4_token_loop": 30,
+        "sentence_level_loop": 12,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.878303556963801,
+        "top1_probability": 0.272570624165237,
+        "margin": 0.21621580773964524,
+        "eos_probability": 0.0008787639123579538
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.72,
+      "semantic": 0.67,
+      "completion": 0.06,
+      "repetition_1": 0.3684375
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.01703125,
+      "は": 0.00390625,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.02875,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.911955147981644,
+      "64": 4.5245011150836945,
+      "16": 4.971195697784424,
+      "2": 5.3033996522426605,
+      "1": 6.229026049375534
+    }
+  },
+  {
+    "arm": "D",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "69e3bd0c58cae3cf1a677e78ebfdd4f8c0407bb864538c00d36417dd90da3caa",
+    "checkpoint_unchanged": true,
+    "seconds": 31.100885599999856,
+    "lm": {
+      "loss": 4.428724020719528,
+      "ppl": 83.82439045759975,
+      "top1": 0.2681884765625,
+      "top5": 0.4390869140625,
+      "top10": 0.518798828125
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.013144269800279289,
+      "median_rank": 5.0,
+      "mean_rank": 27.176,
+      "top1_rate": 0.0,
+      "top5_rate": 0.56,
+      "top10_rate": 0.778
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0006176884431453118,
+      "median_rank": 855.5,
+      "mean_rank": 1085.096,
+      "top1_rate": 0.0,
+      "top5_rate": 0.022,
+      "top10_rate": 0.026
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 19.0,
+      "mean_loop_onset": 27.57,
+      "repetition": {
+        "1": 0.925,
+        "2": 0.901259842519685,
+        "3": 0.8798412698412699,
+        "4": 0.8608000000000001
+      },
+      "mean_maximum_repeated_span": 88.19,
+      "loop_taxonomy": {
+        "3_to_4_token_loop": 31,
+        "1_token_loop": 18,
+        "short_phrase_loop": 26,
+        "sentence_level_loop": 14,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.881202656552196,
+        "top1_probability": 0.2713870130851865,
+        "margin": 0.2149083149712533,
+        "eos_probability": 0.0008841408310991028
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.73,
+      "semantic": 0.67,
+      "completion": 0.06,
+      "repetition_1": 0.3640625
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.016953125,
+      "は": 0.0040625,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.0284375,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.910710245370865,
+      "64": 4.5240762531757355,
+      "16": 4.970905244350433,
+      "2": 5.303929954767227,
+      "1": 6.228367984294891
+    }
+  },
+  {
+    "arm": "E",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "755a0cf5ecc1bb29ff150f250fe1dad908eed680ea8518ad2a0d4d8403c5bddf",
+    "checkpoint_unchanged": true,
+    "seconds": 29.23992179999982,
+    "lm": {
+      "loss": 4.428784251213074,
+      "ppl": 83.82943939405659,
+      "top1": 0.268310546875,
+      "top5": 0.439208984375,
+      "top10": 0.518798828125
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.013222585637893644,
+      "median_rank": 5.0,
+      "mean_rank": 27.18,
+      "top1_rate": 0.0,
+      "top5_rate": 0.56,
+      "top10_rate": 0.778
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0006217053221393485,
+      "median_rank": 852.5,
+      "mean_rank": 1084.75,
+      "top1_rate": 0.0,
+      "top5_rate": 0.022,
+      "top10_rate": 0.026
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 18.0,
+      "mean_loop_onset": 26.13,
+      "repetition": {
+        "1": 0.9246875,
+        "2": 0.9007874015748033,
+        "3": 0.8792063492063492,
+        "4": 0.86024
+      },
+      "mean_maximum_repeated_span": 88.02,
+      "loop_taxonomy": {
+        "3_to_4_token_loop": 31,
+        "1_token_loop": 17,
+        "short_phrase_loop": 27,
+        "sentence_level_loop": 13,
+        "2_token_loop": 12
+      },
+      "onset_distribution": {
+        "entropy": 4.813554523065687,
+        "top1_probability": 0.27949360419996083,
+        "margin": 0.2233064988348633,
+        "eos_probability": 0.000928967830664078
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.73,
+      "semantic": 0.67,
+      "completion": 0.06,
+      "repetition_1": 0.36265625
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.017109375,
+      "は": 0.004609375,
+      "を": 0.00875,
+      "が": 0.002109375,
+      "と": 0.027734375,
+      "で": 0.00015625,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.909889072179794,
+      "64": 4.5236497819423676,
+      "16": 4.970783293247223,
+      "2": 5.304628759622574,
+      "1": 6.227923542261124
+    }
+  }
+]

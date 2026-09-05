@@ -1,0 +1,82 @@
+{
+  "arm": "E",
+  "seed": 42,
+  "cpu_threads": 2,
+  "checkpoint_sha256": "755a0cf5ecc1bb29ff150f250fe1dad908eed680ea8518ad2a0d4d8403c5bddf",
+  "checkpoint_unchanged": true,
+  "seconds": 29.23992179999982,
+  "lm": {
+    "loss": 4.428784251213074,
+    "ppl": 83.82943939405659,
+    "top1": 0.268310546875,
+    "top5": 0.439208984375,
+    "top10": 0.518798828125
+  },
+  "terminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.013222585637893644,
+    "median_rank": 5.0,
+    "mean_rank": 27.18,
+    "top1_rate": 0.0,
+    "top5_rate": 0.56,
+    "top10_rate": 0.778
+  },
+  "nonterminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.0006217053221393485,
+    "median_rank": 852.5,
+    "mean_rank": 1084.75,
+    "top1_rate": 0.0,
+    "top5_rate": 0.022,
+    "top10_rate": 0.026
+  },
+  "greedy": {
+    "runaway_rate": 1.0,
+    "first_break": false,
+    "median_loop_onset": 18.0,
+    "mean_loop_onset": 26.13,
+    "repetition": {
+      "1": 0.9246875,
+      "2": 0.9007874015748033,
+      "3": 0.8792063492063492,
+      "4": 0.86024
+    },
+    "mean_maximum_repeated_span": 88.02,
+    "loop_taxonomy": {
+      "3_to_4_token_loop": 31,
+      "1_token_loop": 17,
+      "short_phrase_loop": 27,
+      "sentence_level_loop": 13,
+      "2_token_loop": 12
+    },
+    "onset_distribution": {
+      "entropy": 4.813554523065687,
+      "top1_probability": 0.27949360419996083,
+      "margin": 0.2233064988348633,
+      "eos_probability": 0.000928967830664078
+    }
+  },
+  "sampling_t07": {
+    "naturalness": 0.73,
+    "semantic": 0.67,
+    "completion": 0.06,
+    "repetition_1": 0.36265625
+  },
+  "japanese_function_word_rates": {
+    "の": 0.01078125,
+    "に": 0.017109375,
+    "は": 0.004609375,
+    "を": 0.00875,
+    "が": 0.002109375,
+    "と": 0.027734375,
+    "で": 0.00015625,
+    "て": 7.8125e-05
+  },
+  "context_loss": {
+    "512": 4.909889072179794,
+    "64": 4.5236497819423676,
+    "16": 4.970783293247223,
+    "2": 5.304628759622574,
+    "1": 6.227923542261124
+  }
+}

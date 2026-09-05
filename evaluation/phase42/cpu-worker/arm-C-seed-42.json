@@ -1,0 +1,82 @@
+{
+  "arm": "C",
+  "seed": 42,
+  "cpu_threads": 2,
+  "checkpoint_sha256": "c99ba2fc1c43a8e08557b044734faff478d6ac476eb838c1a7249265a0e46374",
+  "checkpoint_unchanged": true,
+  "seconds": 31.184682900000098,
+  "lm": {
+    "loss": 4.428705602884293,
+    "ppl": 83.8228466080048,
+    "top1": 0.2681884765625,
+    "top5": 0.4390869140625,
+    "top10": 0.51904296875
+  },
+  "terminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.013062557975164963,
+    "median_rank": 5.0,
+    "mean_rank": 27.196,
+    "top1_rate": 0.0,
+    "top5_rate": 0.56,
+    "top10_rate": 0.778
+  },
+  "nonterminal_eos": {
+    "locations": 500,
+    "mean_probability": 0.0006133779157980826,
+    "median_rank": 860.0,
+    "mean_rank": 1085.532,
+    "top1_rate": 0.0,
+    "top5_rate": 0.022,
+    "top10_rate": 0.026
+  },
+  "greedy": {
+    "runaway_rate": 1.0,
+    "first_break": false,
+    "median_loop_onset": 19.0,
+    "mean_loop_onset": 27.8,
+    "repetition": {
+      "1": 0.92546875,
+      "2": 0.9015748031496065,
+      "3": 0.8795238095238096,
+      "4": 0.8596800000000002
+    },
+    "mean_maximum_repeated_span": 87.66,
+    "loop_taxonomy": {
+      "short_phrase_loop": 29,
+      "1_token_loop": 18,
+      "3_to_4_token_loop": 30,
+      "sentence_level_loop": 12,
+      "2_token_loop": 11
+    },
+    "onset_distribution": {
+      "entropy": 4.878303556963801,
+      "top1_probability": 0.272570624165237,
+      "margin": 0.21621580773964524,
+      "eos_probability": 0.0008787639123579538
+    }
+  },
+  "sampling_t07": {
+    "naturalness": 0.72,
+    "semantic": 0.67,
+    "completion": 0.06,
+    "repetition_1": 0.3684375
+  },
+  "japanese_function_word_rates": {
+    "の": 0.01078125,
+    "に": 0.01703125,
+    "は": 0.00390625,
+    "を": 0.00890625,
+    "が": 0.002109375,
+    "と": 0.02875,
+    "で": 0.000234375,
+    "て": 7.8125e-05
+  },
+  "context_loss": {
+    "512": 4.911955147981644,
+    "64": 4.5245011150836945,
+    "16": 4.971195697784424,
+    "2": 5.3033996522426605,
+    "1": 6.229026049375534
+  }
+}
