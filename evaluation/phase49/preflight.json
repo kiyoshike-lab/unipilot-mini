@@ -1,0 +1,422 @@
+{
+  "phase": 49,
+  "expected_head": "130f1db67c705a691cd7b365b9fba0ba3014cb9d",
+  "branch": "foundation-research",
+  "origin_verified": true,
+  "immutable_checkpoints": [
+    {
+      "path": "checkpoints/foundation-v33-context-gate/gate-2/seed-42/checkpoint-tokens-15872000.pt",
+      "sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/foundation-v33-context-gate/gate-2/seed-123/checkpoint-tokens-15872000.pt",
+      "sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/foundation-v33-context-gate/gate-2/seed-2026/checkpoint-tokens-15872000.pt",
+      "sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-42/checkpoint-tokens-16128000.pt",
+      "sha256": "77a5fd77746d94dde44c101ae93ec3ef7aea4d0e25f5643cab606134acf82a5a",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-123/checkpoint-tokens-16128000.pt",
+      "sha256": "6a7b48fc7009e6a41ff7e9ec5d2e9615c1b0da064272248b4c94a0c4f98bdce4",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-2026/checkpoint-tokens-16128000.pt",
+      "sha256": "e48e2af2752c4306dcef2660ea85e99ac82fb18d65af4a596f68beaac7f82474",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase47/arm-A/seed-42/checkpoint-tokens-16128000.pt",
+      "sha256": "3bedf302b82fa6144904566a6bd10491ad277337cc1fb9e6758f3ba62a6b79d5",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase47/arm-B/seed-42/checkpoint-tokens-16128000.pt",
+      "sha256": "49169ca001596167b4b58529dd559172cc10e99aa84943751badb0fa660ccb03",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase47/arm-C/seed-123/checkpoint-tokens-16128000.pt",
+      "sha256": "88ade424118356fe6bf5e841d148224527c1ccf6d2da07bddc697d6a765c2c0a",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase47/arm-C/seed-2026/checkpoint-tokens-16128000.pt",
+      "sha256": "dde889780b63dd15d276a75b600ed1268b893b65c0ce4a7a876b0f51918c85ea",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase47/arm-C/seed-42/checkpoint-tokens-16128000.pt",
+      "sha256": "80010161ab9b288ddf2f9fd0ac6cafc7803e106c4f9364c7ad9e7be6dcf9cf6c",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase48/arm-B/seed-123/checkpoint-tokens-16128000.pt",
+      "sha256": "3983d66527bb71fb431385188225a46dba1cc579cdaf13361a9efdebacfd59ab",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase48/arm-B/seed-2026/checkpoint-tokens-16128000.pt",
+      "sha256": "f58cabad14986365189f2c532459229fa505430511995e41eb8a5ec03692c08d",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase48/arm-C/seed-123/checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase48/arm-C/seed-2026/checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints/experimental/phase48/arm-C/seed-42/checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ],
+  "preserved_files": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\.gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\run_foundation_v30_eos_experiment.py",
+      "sha256": "4045f05cac718e7fc0d0ee36e9881cd5f304e07b2d06d145e23b08b07ff3f115"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\run_foundation_v31_pipeline.py",
+      "sha256": "34cb4e66a18d00ba2c07618e0a21890770ab59548d8f241a7a89827deac1b7c7"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\run_foundation_v32_maturity_pilot.py",
+      "sha256": "a8c7317cee568e1a506e634b43819f52ed63348b21b54a041b963247390c88d2"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\run_foundation_v33_context_gate.py",
+      "sha256": "aeffac5f33cb05afee94ca3d6dff9f75fef0e49c6086305512701deb19614226"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\train.py",
+      "sha256": "da78318a044588dfd3856c1c693d95240b5dadaa303553d18bc9d926f3bf0476"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\train_foundation_continue.py",
+      "sha256": "de0d23f573e0f993a8e8157ccffacf3d4c830e7eb7dc479b2e6a2f6d5115cafa"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\train_foundation_v21_ab.py",
+      "sha256": "ac330adbf4b5cfaedb40ecc8c9a93fbceba0c4df87c0aa9b53b3033c6ad4931b"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\training\\checkpoint_paths.py",
+      "sha256": "371011f985e8afb5b137c0e3c3fa50a11047b2128c6b24093bc4aa36171f1f3c"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\tests\\test_checkpoint_paths.py",
+      "sha256": "dfa43a781ee94c15dfd816e23d465911d8d2243eb3d16b401b183ced7297f987"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints\\experimental\\phase42\\arm-A\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "2da12b7d1e8e8721fd9d42ac1986a4c794fdfbc90fce1beea4a39db83e86af8b"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints\\experimental\\phase42\\arm-B\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "9fd953d86efce44792708ec2571b54583d382fc2180bd907a5920211f174be08"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints\\experimental\\phase42\\arm-C\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "e5e8c44bab2997fc0ed1e056fd4e47c3f90212686b58b3901758630ba3a58084"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints\\experimental\\phase42\\arm-D\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "874f49859cc8e64662ca84c43141982ba6be161006308169ff6a3e0fca65dbeb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints\\experimental\\phase42\\arm-E\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "0a31eaa77d5037f6a122910661f1b038a6c6503baaea29ad7db13fec59d96b3b"
+    }
+  ],
+  "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+  "free_bytes": 68453285888,
+  "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+  "pass": true
+}

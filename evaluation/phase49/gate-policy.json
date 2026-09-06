@@ -1,0 +1,17 @@
+{
+  "phase":49,
+  "defined_before_new_512k_training_and_v2_checkpoint_evaluation":true,
+  "core_selection":"Train frequency rank >= ceil(4096*0.8), validation occurrence count >= 10; include every eligible target position, excluding index 0 which has no preceding input. No model-dependent selection. Core and legacy Tail may overlap in token IDs but differ in evaluation support.",
+  "tail_selection":"Unchanged PHASE47 58 IDs and 112 positions, not all occurrences of those IDs.",
+  "bootstrap":"2000 deterministic paired document-cluster replicates, seed 4900. Documents identified by BOS boundaries in packed validation. Resample complete document groups with replacement, retain all selected occurrences. Report percentile 95% intervals. Fixed targets/contexts across checkpoints.",
+  "core_delta_upper_limit":0.10,
+  "tail_delta_upper_limit":0.25,
+  "frequency_approval":"All seeds must have paired CE delta CI upper bound <= practical margin. A wide CI containing zero is not proof of stability. Macro CE is reported as a complementary token-balanced metric.",
+  "minimum_core_types":100,
+  "minimum_core_occurrences":1000,
+  "minimum_documents":10,
+  "other_safety":"Unchanged PHASE48 non-frequency thresholds. Fixed 15.872M baseline for Middle/Context; own 256k checkpoint for LM/Top-k/EOS/Sampling/teacher-forced/Greedy checks. Each seed's 512k LM must improve over baseline. Tail point-estimate rule is replaced only by the preregistered paired CI noninferiority rule.",
+  "selection":"Approve only an arm passing every safety criterion in all seeds. If both pass, use paired document-bootstrap Core difference: prefer an arm only if mean LM improves and mean paired Core CE CI is strictly below zero; otherwise unresolved. No approval by lowest validation loss alone.",
+  "candidate_limit":16128000,
+  "20m_permission":false
+}
