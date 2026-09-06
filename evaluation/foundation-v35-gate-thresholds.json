@@ -1,0 +1,19 @@
+{
+  "schema": "foundation-v35-preregistered-thresholds-v1",
+  "phase": 46,
+  "defined_before_training": true,
+  "validation_mean_loss_max_increase": 0.03,
+  "validation_single_seed_loss_max_increase": 0.05,
+  "topk_mean_max_drop": 0.005,
+  "context_mean_full_loss_max_increase": 0.05,
+  "context_minimum_full_advantage": 0.1,
+  "frequency_ce_max_increase": 0.05,
+  "rare_median_probability_min_ratio": 0.8,
+  "sampling_semantic_max_drop": 0.08,
+  "sampling_naturalness_max_drop": 0.08,
+  "eos_terminal_min_ratio": 0.9,
+  "premature_eos_top1_required": 0.0,
+  "teacher_forced_loss_max_increase": 0.1,
+  "hardware_thermal_throttling_is_stability_failure": true,
+  "source": "PHASE 43-45 multi-seed standard deviations and PHASE 45 HEALTHY_SHORT_TERM_VARIANCE classification"
+}
