@@ -1,0 +1,17 @@
+{
+  "passed": 437,
+  "failed": 0,
+  "warnings": 4,
+  "seconds": 83.15,
+  "command": ".venv-gpu/Scripts/python.exe -m pytest -q",
+  "preflight_passed": 430,
+  "phase48_added_tests": 7,
+  "test_generated_files_restored_to_starting_clean_state": [
+    "evaluation/campus-ai-quality-100.json",
+    "evaluation/campus-ai-quality-20.json",
+    "evaluation/campus-ai-review-queue.json",
+    "evaluation/campus-v21-close-analysis.json",
+    "evaluation/campus-v21-critical-failure.json"
+  ],
+  "protected_four_files_not_restored_or_staged": true
+}

@@ -1,0 +1,21 @@
+{
+  "defined_before_new_training": true,
+  "winner_lm_advantage": 0.01,
+  "winner_rare_ce_advantage": 0.02,
+  "comparison_sampling_tolerance": 0.08,
+  "winner_rule": "Prefer an LR only when mean loss is >=0.01 lower AND Rare CE >=0.02 lower, both metrics improve in at least two seeds, sampling is within 8 percentage points, and the number of non-frequency safety failures does not increase. Otherwise unresolved; extend both only when unresolved. A winner still requires cumulative 512k confirmation.",
+  "safety_reference": "Fixed 15.872M baseline for cumulative frequency/context stability. The matching same-seed 1e-4 result is the 256k comparator. For 512k continuation, use that LR's own 256k point for LM/Top-k/EOS/sampling/teacher-forced safety; no unperformed 512k 1e-4 control is invented.",
+  "rare_ce_max_increase": 0.05,
+  "rare_median_min_ratio": 0.8,
+  "middle_ce_max_increase": 0.05,
+  "context_max_increase": 0.05,
+  "context_min_advantage": 0.1,
+  "lm_max_increase": 0.02,
+  "topk_max_drop": 0.005,
+  "terminal_eos_min_ratio": 0.9,
+  "sampling_max_drop": 0.08,
+  "teacher_forced_loss_max_increase": 0.10,
+  "approval": "All three seeds must pass safety; cumulative loss improves in all three. Greedy runaway alone is not a failure. A joint earlier-onset, higher-repetition, higher-margin pattern is negative evidence and prevents approval. Experimental checkpoints are never promoted.",
+  "window_too_short": "256k frequency failure becomes a 512k frequency pass in all seeds, mean CE improves, and cross-seed Rare CE standard deviation decreases. Otherwise do not claim a too-short gate.",
+  "exposure_hypothesis": "Descriptive support only if deterioration correlates negatively with exposure in both problematic seeds (rho<=-0.3), positive CE contributions concentrate (>50%) in <=4-exposure tokens beyond their population share, and cumulative exposure evidence agrees. Association alone is not causation."
+}

@@ -1,0 +1,142 @@
+{
+  "phase": 48,
+  "arm": "C",
+  "seed": 123,
+  "lr": 5e-05,
+  "start_tokens": 16128000,
+  "end_tokens": 16384000,
+  "budget": 256000,
+  "cumulative_budget": 512000,
+  "checkpoint": "checkpoints/experimental/phase48/arm-C/seed-123/checkpoint-tokens-16384000.pt",
+  "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+  "source_sha256": "88ade424118356fe6bf5e841d148224527c1ccf6d2da07bddc697d6a765c2c0a",
+  "source_unchanged": true,
+  "continuity": {
+    "model_state": "0f368a534cd50ad99dd00b9d30376c9f856f575e3dbe9aea3a3a8279cb4d86ee",
+    "optimizer_state": "c2be772087f3066f0ed53c0185dbfd690bf5a69554015cef424be60c2b01dc84",
+    "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+    "random_state": "ac6e050cc6c63fc6c37319ada486d371abdffc2f9ed07048af9baf31dacdd843",
+    "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085"
+  },
+  "integrity": {
+    "checks": {
+      "strict_model_optimizer_reload": true,
+      "parameter_count": true,
+      "fp32": true,
+      "finite_weights": true,
+      "finite_optimizer": true,
+      "seed_tokens": true,
+      "scheduler": true,
+      "lr": true,
+      "optimizer_steps": true,
+      "sampler": true,
+      "rng": true,
+      "eos_rep": true
+    },
+    "pass": true
+  },
+  "cooldown": {
+    "target_c": 60.0,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 448.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 47.4,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.11518330000035348
+    },
+    "end": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 448.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 47.4,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.11518330000035348
+    },
+    "waited_seconds": 0.11518330000035348,
+    "target_reached": true,
+    "samples": [
+      {
+        "gpu_utilization_percent": 0.0,
+        "gpu_memory_used_mib": 448.0,
+        "gpu_temperature_c": 54.0,
+        "sm_clock_mhz": 1185.0,
+        "power_w": 47.4,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "elapsed_seconds": 0.11518330000035348
+      }
+    ]
+  },
+  "train_loss": 4.567976956367493,
+  "gradient_mean": 4.047388039112091,
+  "gradient_std": 0.5202397713046377,
+  "gradient_max": 7.350820541381836,
+  "tokens_per_second": 13089.337515138626,
+  "seconds": 19.557903499999156,
+  "peak_vram_mib": 546.36181640625,
+  "telemetry": {
+    "samples": 54,
+    "start": {
+      "gpu_utilization_percent": 2.0,
+      "gpu_memory_used_mib": 864.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 53.66,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.11210839999876043
+    },
+    "midpoint": {
+      "gpu_utilization_percent": 62.0,
+      "gpu_memory_used_mib": 1164.0,
+      "gpu_temperature_c": 80.0,
+      "sm_clock_mhz": 1935.0,
+      "power_w": 186.19,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 10.16986689999976
+    },
+    "end": {
+      "gpu_utilization_percent": 62.0,
+      "gpu_memory_used_mib": 1164.0,
+      "gpu_temperature_c": 81.0,
+      "sm_clock_mhz": 1920.0,
+      "power_w": 175.81,
+      "software_thermal_slowdown": true,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 19.52505689999998
+    },
+    "maximum_temperature_sample": {
+      "gpu_utilization_percent": 62.0,
+      "gpu_memory_used_mib": 1163.0,
+      "gpu_temperature_c": 82.0,
+      "sm_clock_mhz": 1935.0,
+      "power_w": 193.32,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 14.933457899998757
+    },
+    "gpu_utilization_percent_mean": 58.2037037037037,
+    "gpu_utilization_percent_max": 64.0,
+    "gpu_memory_used_mib_max": 1164.0,
+    "gpu_temperature_c_max": 82.0,
+    "sm_clock_mhz_min": 1605.0,
+    "sm_clock_mhz_max": 1965.0,
+    "gpu_power_w_max": 193.32,
+    "software_thermal_slowdown": true,
+    "hardware_thermal_slowdown": false,
+    "thermal_classification": "SOFTWARE_THERMAL_SLOWDOWN",
+    "thermal_attention": false
+  },
+  "parallel_cpu_evaluation": "DISABLED",
+  "device": "CUDA",
+  "precision": "FP32",
+  "amp": false,
+  "eos_weight": 1.5,
+  "repetition_auxiliary": false
+}
