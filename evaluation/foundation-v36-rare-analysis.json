@@ -1,0 +1,1470 @@
+{
+  "phase": 47,
+  "population_fixed": true,
+  "deterministic_repeat": true,
+  "phase46_metric_match": true,
+  "rank_sha256": "2281a4edeabb73897de36f0cf6fd119db5675f5dbc9fbf7f88224544a5c4c02b",
+  "train_sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+  "validation_sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935",
+  "bucket_definition": "Train token-frequency ranks; disjoint 0-1%, 1-5%, 5-20%, 20-80%, 80-100% vocabulary ranks, ceil boundaries; 8192 fixed validation targets; occurrence-weighted arithmetic mean of -log P(correct). No checkpoint-dependent membership.",
+  "tie_policy": "Existing NumPy argsort(counts)[::-1], fixed population/rank hash; no ranking change in PHASE47.",
+  "classification": "SEED_LOCAL_VARIANCE",
+  "per_seed": {
+    "42": {
+      "ce_delta": 0.043274798573506905,
+      "fraction_positions_worse": 0.49107142857142855,
+      "median_position_delta": -0.013388576461738744,
+      "top10_positive_contribution_share": 0.712504981688666,
+      "unique_tokens": 58,
+      "top50": [
+        {
+          "token_id": 4018,
+          "ce_sum_delta": 7.05060585501965,
+          "mean_ce_contribution": 0.06295183799124687,
+          "text": "の距離",
+          "raw_token": "ãģ®è·ĿéĽ¢",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3624,
+          "ce_sum_delta": 1.965480211071906,
+          "mean_ce_contribution": 0.017548930455999163,
+          "text": "小さい",
+          "raw_token": "å°ıãģķãģĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 14
+        },
+        {
+          "token_id": 3202,
+          "ce_sum_delta": 1.838210390402879,
+          "mean_ce_contribution": 0.016412592771454276,
+          "text": "��",
+          "raw_token": "ĺİ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 3616,
+          "ce_sum_delta": 1.6594617943743248,
+          "mean_ce_contribution": 0.014816623164056473,
+          "text": "えると",
+          "raw_token": "ãģĪãĤĭãģ¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 3166,
+          "ce_sum_delta": 1.6422487292968295,
+          "mean_ce_contribution": 0.014662935083007407,
+          "text": "で表",
+          "raw_token": "ãģ§è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2656,
+          "ce_sum_delta": 1.5658529475691303,
+          "mean_ce_contribution": 0.013980829889010091,
+          "text": "さまざま",
+          "raw_token": "ãģķãģ¾ãģĸãģ¾",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 0
+        },
+        {
+          "token_id": 2362,
+          "ce_sum_delta": 1.2067082135775085,
+          "mean_ce_contribution": 0.010774180478370612,
+          "text": "シング",
+          "raw_token": "ãĤ·ãĥ³ãĤ°",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2799,
+          "ce_sum_delta": 1.1389660132320234,
+          "mean_ce_contribution": 0.010169339403857352,
+          "text": " お",
+          "raw_token": "ĠãģĬ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 0
+        },
+        {
+          "token_id": 3574,
+          "ce_sum_delta": 1.1133863064247773,
+          "mean_ce_contribution": 0.00994094916450694,
+          "text": "大きさ",
+          "raw_token": "å¤§ãģįãģķ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 2431,
+          "ce_sum_delta": 0.9302712244020057,
+          "mean_ce_contribution": 0.008305993075017908,
+          "text": "さま",
+          "raw_token": "ãģķãģ¾",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3641,
+          "ce_sum_delta": 0.9185659677969671,
+          "mean_ce_contribution": 0.008201481855330064,
+          "text": "の実験",
+          "raw_token": "ãģ®å®Łé¨ĵ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 2363,
+          "ce_sum_delta": 0.7500279447180436,
+          "mean_ce_contribution": 0.006696678077839675,
+          "text": "香港",
+          "raw_token": "é¦Ļæ¸¯",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3219,
+          "ce_sum_delta": 0.7381222500453557,
+          "mean_ce_contribution": 0.006590377232547818,
+          "text": "ちょう",
+          "raw_token": "ãģ¡ãĤĩãģĨ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 5
+        },
+        {
+          "token_id": 3701,
+          "ce_sum_delta": 0.7211598768327026,
+          "mean_ce_contribution": 0.006438927471720558,
+          "text": "の質",
+          "raw_token": "ãģ®è³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 4073,
+          "ce_sum_delta": 0.7009150418444872,
+          "mean_ce_contribution": 0.006258170016468635,
+          "text": "似た",
+          "raw_token": "ä¼¼ãģŁ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 2442,
+          "ce_sum_delta": 0.5976260200687555,
+          "mean_ce_contribution": 0.005335946607756746,
+          "text": "比例",
+          "raw_token": "æ¯Ķä¾ĭ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 2373,
+          "ce_sum_delta": 0.5902184766214003,
+          "mean_ce_contribution": 0.005269807826976788,
+          "text": "ずれ",
+          "raw_token": "ãģļãĤĮ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 1352,
+          "ce_sum_delta": 0.5670403206196557,
+          "mean_ce_contribution": 0.00506286000553264,
+          "text": "ッパ",
+          "raw_token": "ãĥĥãĥĳ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 5
+        },
+        {
+          "token_id": 3893,
+          "ce_sum_delta": 0.5579975842085325,
+          "mean_ce_contribution": 0.004982121287576183,
+          "text": "どのような",
+          "raw_token": "ãģ©ãģ®ãĤĪãģĨãģª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 4016,
+          "ce_sum_delta": 0.5051718419084334,
+          "mean_ce_contribution": 0.0045104628741824415,
+          "text": "に関しては",
+          "raw_token": "ãģ«éĸ¢ãģĹãģ¦ãģ¯",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 2795,
+          "ce_sum_delta": 0.46135331859293593,
+          "mean_ce_contribution": 0.004119226058865499,
+          "text": "の角",
+          "raw_token": "ãģ®è§Ĵ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 3785,
+          "ce_sum_delta": 0.360148135984641,
+          "mean_ce_contribution": 0.003215608357005723,
+          "text": "なくなる",
+          "raw_token": "ãģªãģıãģªãĤĭ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 12
+        },
+        {
+          "token_id": 3008,
+          "ce_sum_delta": 0.2756600169800514,
+          "mean_ce_contribution": 0.002461250151607602,
+          "text": "活用",
+          "raw_token": "æ´»çĶ¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 4031,
+          "ce_sum_delta": 0.13975454470777926,
+          "mean_ce_contribution": 0.0012478084348908863,
+          "text": "の文字",
+          "raw_token": "ãģ®æĸĩåŃĹ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 2973,
+          "ce_sum_delta": 0.12045672572778976,
+          "mean_ce_contribution": 0.0010755064797124086,
+          "text": "書く",
+          "raw_token": "æĽ¸ãģı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2671,
+          "ce_sum_delta": 0.11062684031452541,
+          "mean_ce_contribution": 0.0009877396456654055,
+          "text": "の式",
+          "raw_token": "ãģ®å¼ı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        }
+      ],
+      "training_interval_exposure": {
+        "all_tokens": 256000,
+        "rare_occurrences": 3626,
+        "probe_rare_token_types_absent": 2,
+        "probe_rare_token_types": 58,
+        "note": "Observed exposure counts, not a causal test of corpus composition."
+      },
+      "taxonomy_top50_counts": {
+        "Japanese_character_or_subword": 25,
+        "other_or_partial_byte_fragment": 1
+      },
+      "baseline": {
+        "sample_count": 112,
+        "mean": 0.0001849621813586769,
+        "median": 4.8199201046372764e-05,
+        "q25": 2.0447107999643777e-05,
+        "q75": 0.0001224619263666682,
+        "ce": 9.818052774290422
+      },
+      "final": {
+        "sample_count": 112,
+        "mean": 0.00013072240942792388,
+        "median": 4.7876397729851305e-05,
+        "q25": 1.97219060282805e-05,
+        "q75": 0.0001509508365415968,
+        "ce": 9.861327572863928
+      },
+      "population_class_comparison": {
+        "Japanese_character_or_subword": {
+          "occurrences": 97,
+          "ce_delta_sum": 5.999413185605104,
+          "worse_occurrences": 48,
+          "mean_ce_delta": 0.061849620470155714,
+          "contribution_to_rare_ce": 0.05356618915718843
+        },
+        "other_or_partial_byte_fragment": {
+          "occurrences": 13,
+          "ce_delta_sum": 0.38201944001223875,
+          "worse_occurrences": 7,
+          "mean_ce_delta": 0.02938611077017221,
+          "contribution_to_rare_ce": 0.0034108878572521317
+        },
+        "Latin": {
+          "occurrences": 2,
+          "ce_delta_sum": -1.5346551853845698,
+          "worse_occurrences": 0,
+          "mean_ce_delta": -0.7673275926922849,
+          "contribution_to_rare_ce": -0.01370227844093366
+        }
+      }
+    },
+    "123": {
+      "ce_delta": 0.20115913520594278,
+      "fraction_positions_worse": 0.6071428571428571,
+      "median_position_delta": 0.1628050925071136,
+      "top10_positive_contribution_share": 0.6539232639505652,
+      "unique_tokens": 58,
+      "top50": [
+        {
+          "token_id": 3701,
+          "ce_sum_delta": 4.213863053635887,
+          "mean_ce_contribution": 0.03762377726460613,
+          "text": "の質",
+          "raw_token": "ãģ®è³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 1352,
+          "ce_sum_delta": 3.1907372446786564,
+          "mean_ce_contribution": 0.028488725398916576,
+          "text": "ッパ",
+          "raw_token": "ãĥĥãĥĳ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 2492,
+          "ce_sum_delta": 3.1728180446718977,
+          "mean_ce_contribution": 0.02832873254171337,
+          "text": "エネル",
+          "raw_token": "ãĤ¨ãĥįãĥ«",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3958,
+          "ce_sum_delta": 3.019271517795027,
+          "mean_ce_contribution": 0.02695778140888417,
+          "text": "の表",
+          "raw_token": "ãģ®è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 4005,
+          "ce_sum_delta": 2.4844983660469726,
+          "mean_ce_contribution": 0.022183021125419398,
+          "text": "の半",
+          "raw_token": "ãģ®åįĬ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3219,
+          "ce_sum_delta": 2.3442514859997257,
+          "mean_ce_contribution": 0.020930816839283266,
+          "text": "ちょう",
+          "raw_token": "ãģ¡ãĤĩãģĨ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 4018,
+          "ce_sum_delta": 1.9114525938697264,
+          "mean_ce_contribution": 0.017066541016693988,
+          "text": "の距離",
+          "raw_token": "ãģ®è·ĿéĽ¢",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3166,
+          "ce_sum_delta": 1.8681590676454363,
+          "mean_ce_contribution": 0.01667999167540568,
+          "text": "で表",
+          "raw_token": "ãģ§è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 3159,
+          "ce_sum_delta": 1.6987146975280014,
+          "mean_ce_contribution": 0.01516709551364287,
+          "text": "の性質",
+          "raw_token": "ãģ®æĢ§è³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 10
+        },
+        {
+          "token_id": 4073,
+          "ce_sum_delta": 1.5617466192154392,
+          "mean_ce_contribution": 0.013944166242994993,
+          "text": "似た",
+          "raw_token": "ä¼¼ãģŁ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3549,
+          "ce_sum_delta": 1.4305204029770273,
+          "mean_ce_contribution": 0.012772503598009173,
+          "text": "の�",
+          "raw_token": "ãģ®çŃ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 4016,
+          "ce_sum_delta": 1.3310159110103417,
+          "mean_ce_contribution": 0.011884070634020907,
+          "text": "に関しては",
+          "raw_token": "ãģ«éĸ¢ãģĹãģ¦ãģ¯",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 5
+        },
+        {
+          "token_id": 3483,
+          "ce_sum_delta": 1.2390917358426865,
+          "mean_ce_contribution": 0.011063319070023987,
+          "text": "iki",
+          "raw_token": "iki",
+          "taxonomy": "Latin",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3574,
+          "ce_sum_delta": 1.133587187120078,
+          "mean_ce_contribution": 0.010121314170714981,
+          "text": "大きさ",
+          "raw_token": "å¤§ãģįãģķ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 2671,
+          "ce_sum_delta": 1.0037666454894953,
+          "mean_ce_contribution": 0.008962202191870494,
+          "text": "の式",
+          "raw_token": "ãģ®å¼ı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 4031,
+          "ce_sum_delta": 0.9721002097699571,
+          "mean_ce_contribution": 0.008679466158660332,
+          "text": "の文字",
+          "raw_token": "ãģ®æĸĩåŃĹ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 2373,
+          "ce_sum_delta": 0.92748402005234,
+          "mean_ce_contribution": 0.008281107321895893,
+          "text": "ずれ",
+          "raw_token": "ãģļãĤĮ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 2799,
+          "ce_sum_delta": 0.6784046293268293,
+          "mean_ce_contribution": 0.006057184190418119,
+          "text": " お",
+          "raw_token": "ĠãģĬ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 2413,
+          "ce_sum_delta": 0.6767187170214894,
+          "mean_ce_contribution": 0.006042131401977584,
+          "text": "といい",
+          "raw_token": "ãģ¨ãģĦãģĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 3359,
+          "ce_sum_delta": 0.6751989174227404,
+          "mean_ce_contribution": 0.00602856176270304,
+          "text": "反射",
+          "raw_token": "åıįå°Ħ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3720,
+          "ce_sum_delta": 0.6213679851398712,
+          "mean_ce_contribution": 0.00554792843874885,
+          "text": "の�",
+          "raw_token": "ãģ®æĥ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 4047,
+          "ce_sum_delta": 0.5109107854630874,
+          "mean_ce_contribution": 0.004561703441634709,
+          "text": "レコード",
+          "raw_token": "ãĥ¬ãĤ³ãĥ¼ãĥī",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 4052,
+          "ce_sum_delta": 0.5004091205153536,
+          "mean_ce_contribution": 0.004467938576029943,
+          "text": "見た",
+          "raw_token": "è¦ĭãģŁ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 3705,
+          "ce_sum_delta": 0.32621976950773046,
+          "mean_ce_contribution": 0.0029126765134618792,
+          "text": "の色",
+          "raw_token": "ãģ®èī²",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 14
+        },
+        {
+          "token_id": 2795,
+          "ce_sum_delta": 0.2567594797125228,
+          "mean_ce_contribution": 0.002292495354576096,
+          "text": "の角",
+          "raw_token": "ãģ®è§Ĵ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 2458,
+          "ce_sum_delta": 0.23803436929537902,
+          "mean_ce_contribution": 0.002125306868708741,
+          "text": "公表",
+          "raw_token": "åħ¬è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 10
+        },
+        {
+          "token_id": 1936,
+          "ce_sum_delta": 0.2171443535450841,
+          "mean_ce_contribution": 0.0019387888709382509,
+          "text": "等しい",
+          "raw_token": "çŃīãģĹãģĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 3075,
+          "ce_sum_delta": 0.20961649204023303,
+          "mean_ce_contribution": 0.0018715758217877948,
+          "text": "竜",
+          "raw_token": "ç«ľ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 2973,
+          "ce_sum_delta": 0.20838401765531245,
+          "mean_ce_contribution": 0.0018605715862081468,
+          "text": "書く",
+          "raw_token": "æĽ¸ãģı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 13
+        },
+        {
+          "token_id": 3714,
+          "ce_sum_delta": 0.15745255731019725,
+          "mean_ce_contribution": 0.0014058264045553326,
+          "text": "をしている",
+          "raw_token": "ãĤĴãģĹãģ¦ãģĦãĤĭ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 2962,
+          "ce_sum_delta": 0.14733649212232258,
+          "mean_ce_contribution": 0.0013155043939493088,
+          "text": "衝",
+          "raw_token": "è¡Ŀ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 3781,
+          "ce_sum_delta": 0.01562558569377437,
+          "mean_ce_contribution": 0.00013951415798012828,
+          "text": "実質",
+          "raw_token": "å®Łè³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        }
+      ],
+      "training_interval_exposure": {
+        "all_tokens": 256000,
+        "rare_occurrences": 3660,
+        "probe_rare_token_types_absent": 0,
+        "probe_rare_token_types": 58,
+        "note": "Observed exposure counts, not a causal test of corpus composition."
+      },
+      "taxonomy_top50_counts": {
+        "Japanese_character_or_subword": 29,
+        "other_or_partial_byte_fragment": 2,
+        "Latin": 1
+      },
+      "baseline": {
+        "sample_count": 112,
+        "mean": 0.0001962734853252966,
+        "median": 7.570914021926001e-05,
+        "q25": 2.11770529858768e-05,
+        "q75": 0.00020089193640160374,
+        "ce": 9.60407633607476
+      },
+      "final": {
+        "sample_count": 112,
+        "mean": 0.00018537871206599936,
+        "median": 4.585569695336744e-05,
+        "q25": 1.7963788650376955e-05,
+        "q75": 0.00018110841119778343,
+        "ce": 9.805235471280705
+      },
+      "population_class_comparison": {
+        "Japanese_character_or_subword": {
+          "occurrences": 97,
+          "ce_delta_sum": 21.39620955687504,
+          "worse_occurrences": 61,
+          "mean_ce_delta": 0.2205794799677839,
+          "contribution_to_rare_ce": 0.19103758532924142
+        },
+        "other_or_partial_byte_fragment": {
+          "occurrences": 13,
+          "ce_delta_sum": 0.15958212966687046,
+          "worse_occurrences": 6,
+          "mean_ce_delta": 0.012275548435913112,
+          "contribution_to_rare_ce": 0.0014248404434542006
+        },
+        "Latin": {
+          "occurrences": 2,
+          "ce_delta_sum": 0.9740314565236776,
+          "worse_occurrences": 1,
+          "mean_ce_delta": 0.4870157282618388,
+          "contribution_to_rare_ce": 0.00869670943324712
+        }
+      }
+    },
+    "2026": {
+      "ce_delta": 0.41896411858295796,
+      "fraction_positions_worse": 0.7678571428571429,
+      "median_position_delta": 0.32064528015664573,
+      "top10_positive_contribution_share": 0.5449295030247561,
+      "unique_tokens": 58,
+      "top50": [
+        {
+          "token_id": 4018,
+          "ce_sum_delta": 10.595515397659547,
+          "mean_ce_contribution": 0.09460281605053167,
+          "text": "の距離",
+          "raw_token": "ãģ®è·ĿéĽ¢",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3829,
+          "ce_sum_delta": 3.3047806471295207,
+          "mean_ce_contribution": 0.029506970063656435,
+          "text": "ルツ",
+          "raw_token": "ãĥ«ãĥĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 3720,
+          "ce_sum_delta": 2.869224920573732,
+          "mean_ce_contribution": 0.025618079647979748,
+          "text": "の�",
+          "raw_token": "ãģ®æĥ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 2442,
+          "ce_sum_delta": 2.6352750068638215,
+          "mean_ce_contribution": 0.02352924113271269,
+          "text": "比例",
+          "raw_token": "æ¯Ķä¾ĭ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 5
+        },
+        {
+          "token_id": 3166,
+          "ce_sum_delta": 2.301664960988038,
+          "mean_ce_contribution": 0.02055058000882177,
+          "text": "で表",
+          "raw_token": "ãģ§è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 3075,
+          "ce_sum_delta": 2.3002237277590805,
+          "mean_ce_contribution": 0.02053771185499179,
+          "text": "竜",
+          "raw_token": "ç«ľ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3549,
+          "ce_sum_delta": 2.250339663548198,
+          "mean_ce_contribution": 0.020092318424537483,
+          "text": "の�",
+          "raw_token": "ãģ®çŃ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3701,
+          "ce_sum_delta": 2.2345798345989287,
+          "mean_ce_contribution": 0.019951605666061863,
+          "text": "の質",
+          "raw_token": "ãģ®è³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3958,
+          "ce_sum_delta": 2.1022131853046915,
+          "mean_ce_contribution": 0.018769760583077603,
+          "text": "の表",
+          "raw_token": "ãģ®è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 10
+        },
+        {
+          "token_id": 4016,
+          "ce_sum_delta": 1.8505069378392545,
+          "mean_ce_contribution": 0.01652238337356477,
+          "text": "に関しては",
+          "raw_token": "ãģ«éĸ¢ãģĹãģ¦ãģ¯",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 1712,
+          "ce_sum_delta": 1.718305698392621,
+          "mean_ce_contribution": 0.015342015164219831,
+          "text": "ミング",
+          "raw_token": "ãĥŁãĥ³ãĤ°",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 3714,
+          "ce_sum_delta": 1.5971338103011306,
+          "mean_ce_contribution": 0.014260123306260095,
+          "text": "をしている",
+          "raw_token": "ãĤĴãģĹãģ¦ãģĦãĤĭ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 2443,
+          "ce_sum_delta": 1.3989342805294687,
+          "mean_ce_contribution": 0.012490484647584541,
+          "text": "の大き",
+          "raw_token": "ãģ®å¤§ãģį",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2182,
+          "ce_sum_delta": 1.3932559300192313,
+          "mean_ce_contribution": 0.012439785089457422,
+          "text": "の�",
+          "raw_token": "ãģ®çĤ",
+          "taxonomy": "other_or_partial_byte_fragment",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 3624,
+          "ce_sum_delta": 1.336278726473342,
+          "mean_ce_contribution": 0.011931060057797696,
+          "text": "小さい",
+          "raw_token": "å°ıãģķãģĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 1535,
+          "ce_sum_delta": 1.2206490907684966,
+          "mean_ce_contribution": 0.010898652596147291,
+          "text": "方程式",
+          "raw_token": "æĸ¹ç¨ĭå¼ı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 1277,
+          "ce_sum_delta": 1.2078157029664585,
+          "mean_ce_contribution": 0.010784068776486236,
+          "text": "表す",
+          "raw_token": "è¡¨ãģĻ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 2362,
+          "ce_sum_delta": 1.154245820261778,
+          "mean_ce_contribution": 0.010305766252337303,
+          "text": "シング",
+          "raw_token": "ãĤ·ãĥ³ãĤ°",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 4005,
+          "ce_sum_delta": 1.1510536548008297,
+          "mean_ce_contribution": 0.010277264775007408,
+          "text": "の半",
+          "raw_token": "ãģ®åįĬ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 2656,
+          "ce_sum_delta": 1.1155505140183006,
+          "mean_ce_contribution": 0.00996027244659197,
+          "text": "さまざま",
+          "raw_token": "ãģķãģ¾ãģĸãģ¾",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 2962,
+          "ce_sum_delta": 1.0639379971079297,
+          "mean_ce_contribution": 0.009499446402749372,
+          "text": "衝",
+          "raw_token": "è¡Ŀ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2431,
+          "ce_sum_delta": 1.0597679897359313,
+          "mean_ce_contribution": 0.009462214194070815,
+          "text": "さま",
+          "raw_token": "ãģķãģ¾",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 12
+        },
+        {
+          "token_id": 3008,
+          "ce_sum_delta": 1.0392647241034094,
+          "mean_ce_contribution": 0.00927914932235187,
+          "text": "活用",
+          "raw_token": "æ´»çĶ¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 2492,
+          "ce_sum_delta": 1.023243153188055,
+          "mean_ce_contribution": 0.009136099582036206,
+          "text": "エネル",
+          "raw_token": "ãĤ¨ãĥįãĥ«",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3093,
+          "ce_sum_delta": 0.9942676390646277,
+          "mean_ce_contribution": 0.008877389634505604,
+          "text": "延長",
+          "raw_token": "å»¶éķ·",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 6
+        },
+        {
+          "token_id": 3574,
+          "ce_sum_delta": 0.8195769600954925,
+          "mean_ce_contribution": 0.00731765142942404,
+          "text": "大きさ",
+          "raw_token": "å¤§ãģįãģķ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 3159,
+          "ce_sum_delta": 0.7303690466237462,
+          "mean_ce_contribution": 0.006521152201997734,
+          "text": "の性質",
+          "raw_token": "ãģ®æĢ§è³ª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 9
+        },
+        {
+          "token_id": 2973,
+          "ce_sum_delta": 0.7073729367602493,
+          "mean_ce_contribution": 0.0063158297925022255,
+          "text": "書く",
+          "raw_token": "æĽ¸ãģı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 11
+        },
+        {
+          "token_id": 1458,
+          "ce_sum_delta": 0.6867169946913059,
+          "mean_ce_contribution": 0.006131401738315231,
+          "text": "ンター",
+          "raw_token": "ãĥ³ãĤ¿ãĥ¼",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 3282,
+          "ce_sum_delta": 0.6484365363854838,
+          "mean_ce_contribution": 0.005789611932013249,
+          "text": "の区",
+          "raw_token": "ãģ®åĮº",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 2
+        },
+        {
+          "token_id": 2671,
+          "ce_sum_delta": 0.6282163272081434,
+          "mean_ce_contribution": 0.005609074350072708,
+          "text": "の式",
+          "raw_token": "ãģ®å¼ı",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 4
+        },
+        {
+          "token_id": 2413,
+          "ce_sum_delta": 0.5990135636440845,
+          "mean_ce_contribution": 0.005348335389679326,
+          "text": "といい",
+          "raw_token": "ãģ¨ãģĦãģĦ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 14
+        },
+        {
+          "token_id": 3359,
+          "ce_sum_delta": 0.5934854247452943,
+          "mean_ce_contribution": 0.005298977006654414,
+          "text": "反射",
+          "raw_token": "åıįå°Ħ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 3705,
+          "ce_sum_delta": 0.5552505036672777,
+          "mean_ce_contribution": 0.004957593782743551,
+          "text": "の色",
+          "raw_token": "ãģ®èī²",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 2102,
+          "ce_sum_delta": 0.5163437855711397,
+          "mean_ce_contribution": 0.00461021237117089,
+          "text": "手続き",
+          "raw_token": "æīĭç¶ļãģį",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 3
+        },
+        {
+          "token_id": 4073,
+          "ce_sum_delta": 0.35834549689341877,
+          "mean_ce_contribution": 0.0031995133651198104,
+          "text": "似た",
+          "raw_token": "ä¼¼ãģŁ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 12
+        },
+        {
+          "token_id": 2458,
+          "ce_sum_delta": 0.2781490856722879,
+          "mean_ce_contribution": 0.0024834739792168564,
+          "text": "公表",
+          "raw_token": "åħ¬è¡¨",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 2795,
+          "ce_sum_delta": 0.2652157858064683,
+          "mean_ce_contribution": 0.0023679980875577528,
+          "text": "の角",
+          "raw_token": "ãģ®è§Ĵ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3219,
+          "ce_sum_delta": 0.26379056979592974,
+          "mean_ce_contribution": 0.0023552729446065157,
+          "text": "ちょう",
+          "raw_token": "ãģ¡ãĤĩãģĨ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 3893,
+          "ce_sum_delta": 0.23820998939958926,
+          "mean_ce_contribution": 0.0021268749053534757,
+          "text": "どのような",
+          "raw_token": "ãģ©ãģ®ãĤĪãģĨãģª",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 7
+        },
+        {
+          "token_id": 2799,
+          "ce_sum_delta": 0.23625626346639805,
+          "mean_ce_contribution": 0.0021094309238071257,
+          "text": " お",
+          "raw_token": "ĠãģĬ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 1
+        },
+        {
+          "token_id": 4031,
+          "ce_sum_delta": 0.2281838328440582,
+          "mean_ce_contribution": 0.0020373556503933766,
+          "text": "の文字",
+          "raw_token": "ãģ®æĸĩåŃĹ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 18
+        },
+        {
+          "token_id": 4052,
+          "ce_sum_delta": 0.13083595722116037,
+          "mean_ce_contribution": 0.0011681781894746462,
+          "text": "見た",
+          "raw_token": "è¦ĭãģŁ",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 8
+        },
+        {
+          "token_id": 4047,
+          "ce_sum_delta": 0.12921859495956056,
+          "mean_ce_contribution": 0.0011537374549960764,
+          "text": "レコード",
+          "raw_token": "ãĥ¬ãĤ³ãĥ¼ãĥī",
+          "taxonomy": "Japanese_character_or_subword",
+          "training_interval_occurrences": 12
+        },
+        {
+          "token_id": 2545,
+          "ce_sum_delta": 0.007555021340303725,
+          "mean_ce_contribution": 6.745554768128326e-05,
+          "text": "IP",
+          "raw_token": "IP",
+          "taxonomy": "Latin",
+          "training_interval_occurrences": 8
+        }
+      ],
+      "training_interval_exposure": {
+        "all_tokens": 256000,
+        "rare_occurrences": 3768,
+        "probe_rare_token_types_absent": 0,
+        "probe_rare_token_types": 58,
+        "note": "Observed exposure counts, not a causal test of corpus composition."
+      },
+      "taxonomy_top50_counts": {
+        "Japanese_character_or_subword": 41,
+        "other_or_partial_byte_fragment": 3,
+        "Latin": 1
+      },
+      "baseline": {
+        "sample_count": 112,
+        "mean": 0.0002197094798118217,
+        "median": 8.16315077827312e-05,
+        "q25": 3.0223376143112546e-05,
+        "q75": 0.00025991966685978696,
+        "ce": 9.356723469375392
+      },
+      "final": {
+        "sample_count": 112,
+        "mean": 0.00016204119980045562,
+        "median": 5.093091385788284e-05,
+        "q25": 2.3027262614050414e-05,
+        "q75": 0.00012181237252661958,
+        "ce": 9.775687587958348
+      },
+      "population_class_comparison": {
+        "Japanese_character_or_subword": {
+          "occurrences": 97,
+          "ce_delta_sum": 45.553527943619066,
+          "worse_occurrences": 78,
+          "mean_ce_delta": 0.46962399941875327,
+          "contribution_to_rare_ce": 0.4067279280680274
+        },
+        "other_or_partial_byte_fragment": {
+          "occurrences": 13,
+          "ce_delta_sum": 1.566370073630405,
+          "worse_occurrences": 7,
+          "mean_ce_delta": 0.1204900056638773,
+          "contribution_to_rare_ce": 0.013985447085985758
+        },
+        "Latin": {
+          "occurrences": 2,
+          "ce_delta_sum": -0.1959167359581837,
+          "worse_occurrences": 1,
+          "mean_ce_delta": -0.09795836797909185,
+          "contribution_to_rare_ce": -0.0017492565710552116
+        }
+      }
+    }
+  },
+  "trajectory": {
+    "42": {
+      "15360000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.06735058128833771,
+          "top_5_accuracy": 0.14808206260204315,
+          "top_10_accuracy": 0.1886708289384842,
+          "mean_correct_token_probability": 0.037878721952438354,
+          "cross_entropy": 6.566574573516846
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00020100183610338718,
+          "cross_entropy": 9.774674415588379
+        }
+      },
+      "15616000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.06913470476865768,
+          "top_5_accuracy": 0.14808206260204315,
+          "top_10_accuracy": 0.1926850974559784,
+          "mean_correct_token_probability": 0.036830782890319824,
+          "cross_entropy": 6.574963569641113
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00040280207758769393,
+          "cross_entropy": 9.51814079284668
+        }
+      },
+      "15872000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07181088626384735,
+          "top_5_accuracy": 0.16280107200145721,
+          "top_10_accuracy": 0.19848349690437317,
+          "mean_correct_token_probability": 0.038550200565296566,
+          "median_correct_token_probability": 0.0008556193788535893,
+          "geometric_mean_correct_token_probability": 0.0014185570828032814,
+          "cross_entropy": 6.558115062859
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.0001849621813586769,
+          "median_correct_token_probability": 4.8199201046372764e-05,
+          "geometric_mean_correct_token_probability": 5.445952600554461e-05,
+          "cross_entropy": 9.818052774290422
+        }
+      },
+      "16128000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07002676278352737,
+          "top_5_accuracy": 0.16190901398658752,
+          "top_10_accuracy": 0.20606601238250732,
+          "mean_correct_token_probability": 0.03614451641642805,
+          "median_correct_token_probability": 0.0009224834793712944,
+          "geometric_mean_correct_token_probability": 0.0014925102445246055,
+          "cross_entropy": 6.507295848717988
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00013072240942792388,
+          "median_correct_token_probability": 4.7876397729851305e-05,
+          "geometric_mean_correct_token_probability": 5.2153066700699116e-05,
+          "cross_entropy": 9.861327572863928
+        }
+      }
+    },
+    "123": {
+      "15360000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.06512042880058289,
+          "top_5_accuracy": 0.14719000458717346,
+          "top_10_accuracy": 0.1926850974559784,
+          "mean_correct_token_probability": 0.03735795244574547,
+          "cross_entropy": 6.564011573791504
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.008928571827709675,
+          "mean_correct_token_probability": 0.0005075362860225141,
+          "cross_entropy": 9.566248893737793
+        }
+      },
+      "15616000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07582515478134155,
+          "top_5_accuracy": 0.15075825154781342,
+          "top_10_accuracy": 0.19134701788425446,
+          "mean_correct_token_probability": 0.03823131322860718,
+          "cross_entropy": 6.556160926818848
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.008928571827709675,
+          "mean_correct_token_probability": 0.00024472601944580674,
+          "cross_entropy": 9.543344497680664
+        }
+      },
+      "15872000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07760927826166153,
+          "top_5_accuracy": 0.1565566509962082,
+          "top_10_accuracy": 0.19937555491924286,
+          "mean_correct_token_probability": 0.03868999747299493,
+          "median_correct_token_probability": 0.0009726556891109794,
+          "geometric_mean_correct_token_probability": 0.0015369890062108412,
+          "cross_entropy": 6.477929967209333
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.0001962734853252966,
+          "median_correct_token_probability": 7.570914021926001e-05,
+          "geometric_mean_correct_token_probability": 6.745321334299127e-05,
+          "cross_entropy": 9.60407633607476
+        }
+      },
+      "16128000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.06645851582288742,
+          "top_5_accuracy": 0.15343444049358368,
+          "top_10_accuracy": 0.19134701788425446,
+          "mean_correct_token_probability": 0.037341878402621584,
+          "median_correct_token_probability": 0.0008668648661114275,
+          "geometric_mean_correct_token_probability": 0.0013472409373642494,
+          "cross_entropy": 6.609696527939484
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.008928571827709675,
+          "mean_correct_token_probability": 0.00018537871206599936,
+          "median_correct_token_probability": 4.585569695336744e-05,
+          "geometric_mean_correct_token_probability": 5.5162042819943525e-05,
+          "cross_entropy": 9.805235471280705
+        }
+      }
+    },
+    "2026": {
+      "15360000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.06735058128833771,
+          "top_5_accuracy": 0.14897413551807404,
+          "top_10_accuracy": 0.19402319192886353,
+          "mean_correct_token_probability": 0.039202943444252014,
+          "cross_entropy": 6.601276397705078
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00013239953841548413,
+          "cross_entropy": 9.965719223022461
+        }
+      },
+      "15616000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07448706775903702,
+          "top_5_accuracy": 0.15700267255306244,
+          "top_10_accuracy": 0.19491524994373322,
+          "mean_correct_token_probability": 0.03884938359260559,
+          "cross_entropy": 6.566864490509033
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00017138505063485354,
+          "cross_entropy": 9.7388277053833
+        }
+      },
+      "15872000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07671722024679184,
+          "top_5_accuracy": 0.1565566509962082,
+          "top_10_accuracy": 0.19491524994373322,
+          "mean_correct_token_probability": 0.038627384176823765,
+          "median_correct_token_probability": 0.00097421117243357,
+          "geometric_mean_correct_token_probability": 0.0015282257479490838,
+          "cross_entropy": 6.483647858346032
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.0002197094798118217,
+          "median_correct_token_probability": 8.16315077827312e-05,
+          "geometric_mean_correct_token_probability": 8.638267100214038e-05,
+          "cross_entropy": 9.356723469375392
+        }
+      },
+      "16128000": {
+        "middle_20_to_80_percent": {
+          "rank_range": [
+            820,
+            3276
+          ],
+          "targets": 2242,
+          "top_1_accuracy": 0.07983943074941635,
+          "top_5_accuracy": 0.1645851880311966,
+          "top_10_accuracy": 0.20338982343673706,
+          "mean_correct_token_probability": 0.03963665854723512,
+          "median_correct_token_probability": 0.0008577257685828954,
+          "geometric_mean_correct_token_probability": 0.0014528997527463827,
+          "cross_entropy": 6.534193890066373
+        },
+        "rare_bottom_20_percent": {
+          "rank_range": [
+            3277,
+            4095
+          ],
+          "targets": 112,
+          "top_1_accuracy": 0.0,
+          "top_5_accuracy": 0.0,
+          "top_10_accuracy": 0.0,
+          "mean_correct_token_probability": 0.00016204119980045562,
+          "median_correct_token_probability": 5.093091385788284e-05,
+          "geometric_mean_correct_token_probability": 5.681628372874433e-05,
+          "cross_entropy": 9.775687587958348
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Rare probe is a small fixed validation subset, not all rare-language ability.",
+    "Taxonomy describes decoded fragments; proper names/foreign words cannot reliably be inferred from isolated BPE bytes.",
+    "Classification thresholds are descriptive: >0.05 CE in all seeds for broad regression; otherwise seed-local; top10 >=50% positive contributions for concentration."
+  ],
+  "taxonomy_caveat": "Class contributions must be compared with occurrence counts; Japanese fragments dominate this Japanese probe, so counts alone do not establish a class-specific defect."
+}

@@ -33,11 +33,12 @@ def test_eos_and_repetition_losses_coexist_finitely():
     assert torch.isfinite(total) and torch.isfinite(z.grad).all()
 
 def test_worker_output_directories_do_not_collide():
-    assert pipeline.OUT != pipeline.EVAL != pipeline.LOG
-    assert 'experimental' in pipeline.OUT.parts and 'cpu-worker' in pipeline.EVAL.parts
+    output = pipeline.checkpoint('A').parent.parent.parent
+    assert len({output, pipeline.EVAL, pipeline.LOG}) == 3
+    assert 'experimental' in output.parts and 'cpu-worker' in pipeline.EVAL.parts
 
 def test_ready_protocol_rejects_missing_marker(tmp_path,monkeypatch):
-    monkeypatch.setattr(pipeline,'OUT',tmp_path)
+    monkeypatch.setattr(pipeline, 'checkpoint', lambda arm, seed=42: tmp_path / 'missing.pt')
     try: pipeline.cpu_worker('A')
     except RuntimeError as error: assert 'READY' in str(error)
     else: raise AssertionError('missing READY marker accepted')

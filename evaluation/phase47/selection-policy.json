@@ -1,0 +1,19 @@
+{
+  "defined_before_lr_experiments": true,
+  "description": "All candidates use the unchanged Phase46 evaluator. Candidate selection is multi-metric, not minimum loss. Tolerances govern this experiment only; Phase46 recorded gate remains unchanged.",
+  "loss_max_increase_vs_control": 0.02,
+  "topk_max_drop_vs_control": 0.005,
+  "middle_ce_max_increase_vs_baseline": 0.05,
+  "rare_ce_max_increase_vs_baseline": 0.05,
+  "rare_median_min_ratio_vs_baseline": 0.8,
+  "full_context_max_increase_vs_baseline": 0.05,
+  "full_context_min_advantage": 0.1,
+  "terminal_eos_min_ratio_vs_control": 0.9,
+  "premature_eos_required": 0.0,
+  "sampling_max_drop_vs_control": 0.08,
+  "teacher_forced_loss_max_increase_vs_control": 0.10,
+  "clear_rare_ce_improvement_vs_control": 0.05,
+  "greedy_note": "Runaway alone never rejects. Earlier loop onset together with higher repetition and confidence is negative evidence; isolated conflicting loop signals are reported as mixed, not decisive.",
+  "selection": "A reduced LR is a clear candidate only if all safety checks pass, Rare CE improves by >=0.05 versus A, and loop onset/repetition/confidence do not jointly worsen. Among eligible candidates prefer lower Rare CE; difference <0.02 prefers the smaller LR change (B). If none qualify, best=null and no further-seed training.",
+  "confirmation": "Reuse selected seed42 experiment, train only remaining seeds 123 and 2026 once. Apply same checks to each seed and report aggregate. Never promote experimental checkpoints."
+}

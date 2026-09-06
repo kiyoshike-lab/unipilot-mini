@@ -99,6 +99,8 @@ def test_campus_v21_human_endpoint_persists_five_axes(tmp_path, monkeypatch):
                                 "competitor_scores": {}, "chatgpt_answer": "", "gemini_answer": "",
                                 "notes": ""}], ensure_ascii=False), encoding="utf-8")
     monkeypatch.setattr(api_main, "HUMAN_CAMPUS_V21", path)
+    monkeypatch.setattr(api_main, "HUMAN_CAMPUS_V21_RESULTS", tmp_path / "campus-v21-human-results.json")
+    monkeypatch.setattr(api_main, "HUMAN_CAMPUS_V21_REPORT", tmp_path / "campus-v21-human-report.md")
     monkeypatch.setattr(api_main, "load_runtime", lambda checkpoint=None: None)
     payload = {"item_id": "v21-x", "correctness": 5, "relevance": 5, "actionable": 4,
                "naturalness": 5, "would_use_again": 4, "notes": "manual"}

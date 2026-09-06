@@ -1,0 +1,237 @@
+{
+  "count": 11,
+  "pass": true,
+  "checkpoints": [
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+      "sha256_unchanged": true,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ]
+}

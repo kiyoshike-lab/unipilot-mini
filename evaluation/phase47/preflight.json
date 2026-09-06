@@ -1,0 +1,148 @@
+{
+  "free_bytes": 72005238784,
+  "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+  "torch": "2.12.1+cu130",
+  "cuda_build": "13.0",
+  "checkpoints": [
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+      "sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+      "sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+      "sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+      "sha256": "77a5fd77746d94dde44c101ae93ec3ef7aea4d0e25f5643cab606134acf82a5a",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+      "sha256": "6a7b48fc7009e6a41ff7e9ec5d2e9615c1b0da064272248b4c94a0c4f98bdce4",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "sha256": "e48e2af2752c4306dcef2660ea85e99ac82fb18d65af4a596f68beaac7f82474",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ],
+  "pass": true,
+  "previous_failures": [
+    {
+      "test": "test_worker_output_directories_do_not_collide",
+      "expected": "three isolated directories",
+      "actual": "AttributeError: OUT missing"
+    },
+    {
+      "test": "test_ready_protocol_rejects_missing_marker",
+      "expected": "RuntimeError for absent READY marker",
+      "actual": "AttributeError: OUT missing"
+    }
+  ],
+  "failure_root_cause": "Existing storage routing replaced OUT with OUT_PARTS/checkpoint(); tests referenced removed internal constant. Tests now use checkpoint() and preserve behavioral assertions."
+}
