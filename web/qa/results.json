@@ -1,0 +1,150 @@
+{
+  "layouts": [
+    {
+      "route": "/",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/study",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/sources",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/study",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/study",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/study",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/sources",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/study",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/sources",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "functional": {
+    "chat": true,
+    "stream": true,
+    "visibleIntermediateStream": true,
+    "fallback": true,
+    "responseMode": true,
+    "session": true,
+    "toolCards": true,
+    "clarify": true,
+    "clipboard": true,
+    "sourceMetadata": true,
+    "studyPrompt": true,
+    "routeNavigation": true,
+    "offlineRetry": true,
+    "reportSave": true,
+    "reducedMotion": true,
+    "keyboardFocus": true
+  },
+  "pageErrors": [],
+  "fixtureOnly": true,
+  "externalApiRequestsSent": false
+}
