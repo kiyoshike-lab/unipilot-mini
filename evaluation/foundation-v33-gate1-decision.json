@@ -1,0 +1,300 @@
+{
+  "gate": 1,
+  "context": {
+    "threshold": {
+      "material_absolute_delta": 0.05,
+      "material_relative_delta": 0.01,
+      "confidence_z": 1.96,
+      "minimum_full_advantage": 0.1,
+      "regression_requires": "mean delta above max(0.05, 1% baseline), paired 95% CI lower bound above zero, and positive deltas in at least two of three seeds"
+    },
+    "baseline_full_mean": 4.806842946175796,
+    "candidate_full_mean": 4.815427611812386,
+    "absolute_delta": 0.008584665636590216,
+    "relative_delta": 0.0017859259669425983,
+    "seed_deltas": {
+      "42": 0.0030999168811831623,
+      "123": 0.03386382712778868,
+      "2026": -0.011209747099201195
+    },
+    "positive_seed_deltas": 2,
+    "paired_targets": 768,
+    "paired_delta_mean": 0.008584665636590216,
+    "paired_delta_sem": 0.024924004443963206,
+    "paired_delta_95pct_ci": [
+      -0.04026638307357767,
+      0.0574357143467581
+    ],
+    "material_regression": false,
+    "statistically_positive": false,
+    "multi_seed_reproduction": true,
+    "single_seed_anomaly": false,
+    "context_regression": false,
+    "full_advantage_by_seed": {
+      "42": 1.3216278345498722,
+      "123": 1.0509011070316774,
+      "2026": 1.120966875954764
+    },
+    "full_advantage_maintained": true,
+    "relationship_checks": {
+      "full_not_materially_worse_than_64": true,
+      "full_not_materially_worse_than_16": true,
+      "full_better_than_2": true,
+      "full_better_than_1": true
+    },
+    "sanity_pass": true,
+    "pass": true
+  },
+  "lm": {
+    "validation_loss_before": 4.451942885915439,
+    "validation_loss_after": 4.441238274176915,
+    "validation_loss_delta": -0.01070461173852344,
+    "topk_checks": {
+      "top_1_accuracy": true,
+      "top_5_accuracy": true,
+      "top_10_accuracy": true
+    },
+    "semantic_before": 0.62,
+    "semantic_after": 0.6266666666666667,
+    "naturalness_before": 0.71,
+    "naturalness_after": 0.7066666666666667,
+    "frequency": {
+      "middle_20_to_80_percent": {
+        "cross_entropy_before": 6.577287515004476,
+        "cross_entropy_after": 6.565996328989665,
+        "probability_before": 0.03814653928081194,
+        "probability_after": 0.03797049323717753,
+        "maintained_or_improved": true
+      },
+      "rare_bottom_20_percent": {
+        "cross_entropy_before": 9.768880844116211,
+        "cross_entropy_after": 9.600104331970215,
+        "probability_before": 0.00028031255351379514,
+        "probability_after": 0.00027297104922278476,
+        "maintained_or_improved": true
+      }
+    },
+    "teacher_forced_horizon_checks": {
+      "1": true,
+      "2": true,
+      "4": true,
+      "8": true,
+      "16": true,
+      "32": true
+    },
+    "checks": {
+      "validation_loss_improved": true,
+      "topk_maintained_or_improved": true,
+      "semantic_maintained": true,
+      "naturalness_japanese_maintained": true,
+      "middle_maintained_or_improved": true,
+      "rare_maintained_or_improved": true,
+      "teacher_forced_horizons_maintained": true,
+      "finite": true
+    },
+    "pass": true
+  },
+  "eos": {
+    "terminal_probability_before": 0.009311347382725217,
+    "terminal_probability_after": 0.01304898349456198,
+    "terminal_maintained": true,
+    "premature_eos_top1": 0.0,
+    "premature_eos_safe": true,
+    "pass": true
+  },
+  "training": {
+    "checks": {
+      "three_seeds": true,
+      "all_finite": true,
+      "checkpoint_integrity": true,
+      "parallel_cpu_evaluation_disabled": true
+    },
+    "pass": true,
+    "mean_tokens_per_second": 13387.200816013621,
+    "peak_vram_mib": 547.30029296875,
+    "max_gpu_temperature_c": 83.0,
+    "max_longest_above_80_seconds": 8.238502400000016,
+    "thermal_attention": true,
+    "rows": [
+      {
+        "gate": 1,
+        "seed": 42,
+        "start_tokens": 15360000,
+        "end_tokens": 15616000,
+        "budget_tokens": 256000,
+        "source_sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+        "checkpoint": {
+          "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-42/checkpoint-tokens-15616000.pt",
+          "sha256": "86c216c8644ef6b6dfc878c22627bd153dba524e9b12f9701ce36a1505753630",
+          "integrity": {
+            "checks": {
+              "strict_identity": true,
+              "optimizer": true,
+              "scheduler": true,
+              "cpu_rng": true,
+              "cuda_rng": true,
+              "all_rng": true,
+              "sampler": true,
+              "processed_tokens": true,
+              "precision_fp32": true,
+              "phase": true,
+              "eos_weight": true,
+              "repetition_auxiliary_off": true,
+              "phase43_pilot_not_promoted": true
+            },
+            "pass": true,
+            "strict_model_reload": true,
+            "strict_optimizer_reload": true,
+            "source_unchanged": true
+          }
+        },
+        "training": {
+          "device": "NVIDIA GeForce RTX 2070 SUPER",
+          "precision": "fp32",
+          "amp": false,
+          "seconds": 19.39499109999997,
+          "tokens_per_second": 13199.284221378188,
+          "mean_weighted_loss": 4.652211157798767,
+          "mean_eos_loss": 0.8244686169624329,
+          "mean_non_eos_loss": 4.651243093967437,
+          "mean_gradient_norm": 4.153927404403687,
+          "max_gradient_norm": 7.768788814544678,
+          "all_finite": true,
+          "peak_vram_mib": 546.3623046875,
+          "telemetry": {
+            "samples": 56,
+            "gpu_utilization_percent_mean": 59.339285714285715,
+            "gpu_utilization_percent_max": 65.0,
+            "gpu_memory_used_mib_max": 1109.0,
+            "gpu_temperature_c_max": 83.0,
+            "gpu_power_w_max": 198.62,
+            "longest_above_80_seconds": 8.238502400000016,
+            "sustained_threshold_seconds": 5.0,
+            "thermal_attention": true
+          }
+        },
+        "parallel_cpu_evaluation": "DISABLED"
+      },
+      {
+        "gate": 1,
+        "seed": 123,
+        "start_tokens": 15360000,
+        "end_tokens": 15616000,
+        "budget_tokens": 256000,
+        "source_sha256": "aaf8cf8b5a70301f74043438c04f76a16bebd2fd8d8b54f8a4c3872aae43155c",
+        "checkpoint": {
+          "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-123/checkpoint-tokens-15616000.pt",
+          "sha256": "41762ab556ec9bfe56789233b9213ce04fefc57120f1bbff3dedafab55996cc1",
+          "integrity": {
+            "checks": {
+              "strict_identity": true,
+              "optimizer": true,
+              "scheduler": true,
+              "cpu_rng": true,
+              "cuda_rng": true,
+              "all_rng": true,
+              "sampler": true,
+              "processed_tokens": true,
+              "precision_fp32": true,
+              "phase": true,
+              "eos_weight": true,
+              "repetition_auxiliary_off": true,
+              "phase43_pilot_not_promoted": true
+            },
+            "pass": true,
+            "strict_model_reload": true,
+            "strict_optimizer_reload": true,
+            "source_unchanged": true
+          }
+        },
+        "training": {
+          "device": "NVIDIA GeForce RTX 2070 SUPER",
+          "precision": "fp32",
+          "amp": false,
+          "seconds": 19.024291100000028,
+          "tokens_per_second": 13456.480383650123,
+          "mean_weighted_loss": 4.664461524963379,
+          "mean_eos_loss": 0.8061314315795899,
+          "mean_non_eos_loss": 4.663463997840881,
+          "mean_gradient_norm": 4.139444704055786,
+          "max_gradient_norm": 8.01345443725586,
+          "all_finite": true,
+          "peak_vram_mib": 547.30029296875,
+          "telemetry": {
+            "samples": 56,
+            "gpu_utilization_percent_mean": 60.035714285714285,
+            "gpu_utilization_percent_max": 65.0,
+            "gpu_memory_used_mib_max": 1109.0,
+            "gpu_temperature_c_max": 83.0,
+            "gpu_power_w_max": 192.37,
+            "longest_above_80_seconds": 4.002666799999815,
+            "sustained_threshold_seconds": 5.0,
+            "thermal_attention": false
+          }
+        },
+        "parallel_cpu_evaluation": "DISABLED"
+      },
+      {
+        "gate": 1,
+        "seed": 2026,
+        "start_tokens": 15360000,
+        "end_tokens": 15616000,
+        "budget_tokens": 256000,
+        "source_sha256": "a0556b738db8aa191a0501159701e4ff891789b85ad7e1873b0a60c753741891",
+        "checkpoint": {
+          "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-2026/checkpoint-tokens-15616000.pt",
+          "sha256": "c81e587c39ce169d8d72a2076bf52a39d883c2e6afd8c66e5d7f1291540f8622",
+          "integrity": {
+            "checks": {
+              "strict_identity": true,
+              "optimizer": true,
+              "scheduler": true,
+              "cpu_rng": true,
+              "cuda_rng": true,
+              "all_rng": true,
+              "sampler": true,
+              "processed_tokens": true,
+              "precision_fp32": true,
+              "phase": true,
+              "eos_weight": true,
+              "repetition_auxiliary_off": true,
+              "phase43_pilot_not_promoted": true
+            },
+            "pass": true,
+            "strict_model_reload": true,
+            "strict_optimizer_reload": true,
+            "source_unchanged": true
+          }
+        },
+        "training": {
+          "device": "NVIDIA GeForce RTX 2070 SUPER",
+          "precision": "fp32",
+          "amp": false,
+          "seconds": 18.954766300000074,
+          "tokens_per_second": 13505.837843012552,
+          "mean_weighted_loss": 4.6330056834220885,
+          "mean_eos_loss": 0.7802039484977722,
+          "mean_non_eos_loss": 4.632061107158661,
+          "mean_gradient_norm": 4.187143101692199,
+          "max_gradient_norm": 27.81924057006836,
+          "all_finite": true,
+          "peak_vram_mib": 547.30029296875,
+          "telemetry": {
+            "samples": 53,
+            "gpu_utilization_percent_mean": 60.301886792452834,
+            "gpu_utilization_percent_max": 67.0,
+            "gpu_memory_used_mib_max": 1110.0,
+            "gpu_temperature_c_max": 82.0,
+            "gpu_power_w_max": 199.56,
+            "longest_above_80_seconds": 1.9730097999999998,
+            "sustained_threshold_seconds": 5.0,
+            "thermal_attention": false
+          }
+        },
+        "parallel_cpu_evaluation": "DISABLED"
+      }
+    ]
+  },
+  "pass": true,
+  "decision": "CONTINUE_PLUS_256K"
+}

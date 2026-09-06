@@ -1,0 +1,184 @@
+{
+  "schema": "foundation-v33-gate-training-v1",
+  "phase": 44,
+  "gate": 1,
+  "results": [
+    {
+      "gate": 1,
+      "seed": 42,
+      "start_tokens": 15360000,
+      "end_tokens": 15616000,
+      "budget_tokens": 256000,
+      "source_sha256": "5f2364a42814e40f1f14237db61296176ae63976db43be12c7d834ffb0292ee9",
+      "checkpoint": {
+        "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-42/checkpoint-tokens-15616000.pt",
+        "sha256": "86c216c8644ef6b6dfc878c22627bd153dba524e9b12f9701ce36a1505753630",
+        "integrity": {
+          "checks": {
+            "strict_identity": true,
+            "optimizer": true,
+            "scheduler": true,
+            "cpu_rng": true,
+            "cuda_rng": true,
+            "all_rng": true,
+            "sampler": true,
+            "processed_tokens": true,
+            "precision_fp32": true,
+            "phase": true,
+            "eos_weight": true,
+            "repetition_auxiliary_off": true,
+            "phase43_pilot_not_promoted": true
+          },
+          "pass": true,
+          "strict_model_reload": true,
+          "strict_optimizer_reload": true,
+          "source_unchanged": true
+        }
+      },
+      "training": {
+        "device": "NVIDIA GeForce RTX 2070 SUPER",
+        "precision": "fp32",
+        "amp": false,
+        "seconds": 19.39499109999997,
+        "tokens_per_second": 13199.284221378188,
+        "mean_weighted_loss": 4.652211157798767,
+        "mean_eos_loss": 0.8244686169624329,
+        "mean_non_eos_loss": 4.651243093967437,
+        "mean_gradient_norm": 4.153927404403687,
+        "max_gradient_norm": 7.768788814544678,
+        "all_finite": true,
+        "peak_vram_mib": 546.3623046875,
+        "telemetry": {
+          "samples": 56,
+          "gpu_utilization_percent_mean": 59.339285714285715,
+          "gpu_utilization_percent_max": 65.0,
+          "gpu_memory_used_mib_max": 1109.0,
+          "gpu_temperature_c_max": 83.0,
+          "gpu_power_w_max": 198.62,
+          "longest_above_80_seconds": 8.238502400000016,
+          "sustained_threshold_seconds": 5.0,
+          "thermal_attention": true
+        }
+      },
+      "parallel_cpu_evaluation": "DISABLED"
+    },
+    {
+      "gate": 1,
+      "seed": 123,
+      "start_tokens": 15360000,
+      "end_tokens": 15616000,
+      "budget_tokens": 256000,
+      "source_sha256": "aaf8cf8b5a70301f74043438c04f76a16bebd2fd8d8b54f8a4c3872aae43155c",
+      "checkpoint": {
+        "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-123/checkpoint-tokens-15616000.pt",
+        "sha256": "41762ab556ec9bfe56789233b9213ce04fefc57120f1bbff3dedafab55996cc1",
+        "integrity": {
+          "checks": {
+            "strict_identity": true,
+            "optimizer": true,
+            "scheduler": true,
+            "cpu_rng": true,
+            "cuda_rng": true,
+            "all_rng": true,
+            "sampler": true,
+            "processed_tokens": true,
+            "precision_fp32": true,
+            "phase": true,
+            "eos_weight": true,
+            "repetition_auxiliary_off": true,
+            "phase43_pilot_not_promoted": true
+          },
+          "pass": true,
+          "strict_model_reload": true,
+          "strict_optimizer_reload": true,
+          "source_unchanged": true
+        }
+      },
+      "training": {
+        "device": "NVIDIA GeForce RTX 2070 SUPER",
+        "precision": "fp32",
+        "amp": false,
+        "seconds": 19.024291100000028,
+        "tokens_per_second": 13456.480383650123,
+        "mean_weighted_loss": 4.664461524963379,
+        "mean_eos_loss": 0.8061314315795899,
+        "mean_non_eos_loss": 4.663463997840881,
+        "mean_gradient_norm": 4.139444704055786,
+        "max_gradient_norm": 8.01345443725586,
+        "all_finite": true,
+        "peak_vram_mib": 547.30029296875,
+        "telemetry": {
+          "samples": 56,
+          "gpu_utilization_percent_mean": 60.035714285714285,
+          "gpu_utilization_percent_max": 65.0,
+          "gpu_memory_used_mib_max": 1109.0,
+          "gpu_temperature_c_max": 83.0,
+          "gpu_power_w_max": 192.37,
+          "longest_above_80_seconds": 4.002666799999815,
+          "sustained_threshold_seconds": 5.0,
+          "thermal_attention": false
+        }
+      },
+      "parallel_cpu_evaluation": "DISABLED"
+    },
+    {
+      "gate": 1,
+      "seed": 2026,
+      "start_tokens": 15360000,
+      "end_tokens": 15616000,
+      "budget_tokens": 256000,
+      "source_sha256": "a0556b738db8aa191a0501159701e4ff891789b85ad7e1873b0a60c753741891",
+      "checkpoint": {
+        "path": "checkpoints/foundation-v33-context-gate/gate-1/seed-2026/checkpoint-tokens-15616000.pt",
+        "sha256": "c81e587c39ce169d8d72a2076bf52a39d883c2e6afd8c66e5d7f1291540f8622",
+        "integrity": {
+          "checks": {
+            "strict_identity": true,
+            "optimizer": true,
+            "scheduler": true,
+            "cpu_rng": true,
+            "cuda_rng": true,
+            "all_rng": true,
+            "sampler": true,
+            "processed_tokens": true,
+            "precision_fp32": true,
+            "phase": true,
+            "eos_weight": true,
+            "repetition_auxiliary_off": true,
+            "phase43_pilot_not_promoted": true
+          },
+          "pass": true,
+          "strict_model_reload": true,
+          "strict_optimizer_reload": true,
+          "source_unchanged": true
+        }
+      },
+      "training": {
+        "device": "NVIDIA GeForce RTX 2070 SUPER",
+        "precision": "fp32",
+        "amp": false,
+        "seconds": 18.954766300000074,
+        "tokens_per_second": 13505.837843012552,
+        "mean_weighted_loss": 4.6330056834220885,
+        "mean_eos_loss": 0.7802039484977722,
+        "mean_non_eos_loss": 4.632061107158661,
+        "mean_gradient_norm": 4.187143101692199,
+        "max_gradient_norm": 27.81924057006836,
+        "all_finite": true,
+        "peak_vram_mib": 547.30029296875,
+        "telemetry": {
+          "samples": 53,
+          "gpu_utilization_percent_mean": 60.301886792452834,
+          "gpu_utilization_percent_max": 67.0,
+          "gpu_memory_used_mib_max": 1110.0,
+          "gpu_temperature_c_max": 82.0,
+          "gpu_power_w_max": 199.56,
+          "longest_above_80_seconds": 1.9730097999999998,
+          "sustained_threshold_seconds": 5.0,
+          "thermal_attention": false
+        }
+      },
+      "parallel_cpu_evaluation": "DISABLED"
+    }
+  ]
+}
