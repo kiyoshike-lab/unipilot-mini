@@ -1,0 +1,292 @@
+{
+  "schema": "foundation-v34-recipe-comparison-v1",
+  "phase": 45,
+  "source": "existing PHASE 41/42 matched seed-42 256k control; no duplicate training",
+  "new_recipe_pilot_executed": false,
+  "standard_ce_eos_1_0": {
+    "arm": "A",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "7ff4d8c2bb2cc9b1189792c7fffcc0d548d0d7d4c0e5812a318c1b10abb1574c",
+    "checkpoint_unchanged": true,
+    "seconds": 31.758423199999925,
+    "lm": {
+      "loss": 4.428535372018814,
+      "ppl": 83.8085785867431,
+      "top1": 0.268310546875,
+      "top5": 0.4388427734375,
+      "top10": 0.5189208984375
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.007602432140454766,
+      "median_rank": 7.0,
+      "mean_rank": 31.008,
+      "top1_rate": 0.0,
+      "top5_rate": 0.402,
+      "top10_rate": 0.66
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0004068513012428525,
+      "median_rank": 902.0,
+      "mean_rank": 1101.678,
+      "top1_rate": 0.0,
+      "top5_rate": 0.01,
+      "top10_rate": 0.024
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 18.0,
+      "mean_loop_onset": 27.75,
+      "repetition": {
+        "1": 0.925234375,
+        "2": 0.9011811023622047,
+        "3": 0.8792063492063492,
+        "4": 0.85952
+      },
+      "mean_maximum_repeated_span": 88.28,
+      "loop_taxonomy": {
+        "3_to_4_token_loop": 31,
+        "1_token_loop": 18,
+        "short_phrase_loop": 27,
+        "sentence_level_loop": 13,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.885251062065363,
+        "top1_probability": 0.2725378883909434,
+        "margin": 0.2158454815670848,
+        "eos_probability": 0.0006239231808172008
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.72,
+      "semantic": 0.67,
+      "completion": 0.04,
+      "repetition_1": 0.36940625
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.01703125,
+      "は": 0.003828125,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.028671875,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.911301523447037,
+      "64": 4.523515373468399,
+      "16": 4.972414255142212,
+      "2": 5.306276500225067,
+      "1": 6.2304897010326385
+    }
+  },
+  "eos_weight_1_5": {
+    "arm": "B",
+    "seed": 42,
+    "cpu_threads": 2,
+    "checkpoint_sha256": "7bfbc60684f3693a6f409d9bcfab4c12319059d9e52062c6d80ff1fdc134bd5c",
+    "checkpoint_unchanged": true,
+    "seconds": 30.882376999999906,
+    "lm": {
+      "loss": 4.42870619893074,
+      "ppl": 83.82289657032965,
+      "top1": 0.26806640625,
+      "top5": 0.4390869140625,
+      "top10": 0.51904296875
+    },
+    "terminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.013020253434966435,
+      "median_rank": 5.0,
+      "mean_rank": 27.234,
+      "top1_rate": 0.0,
+      "top5_rate": 0.56,
+      "top10_rate": 0.778
+    },
+    "nonterminal_eos": {
+      "locations": 500,
+      "mean_probability": 0.0006110866334475418,
+      "median_rank": 860.0,
+      "mean_rank": 1085.728,
+      "top1_rate": 0.0,
+      "top5_rate": 0.022,
+      "top10_rate": 0.026
+    },
+    "greedy": {
+      "runaway_rate": 1.0,
+      "first_break": false,
+      "median_loop_onset": 19.0,
+      "mean_loop_onset": 28.22,
+      "repetition": {
+        "1": 0.92546875,
+        "2": 0.9015748031496065,
+        "3": 0.8796031746031747,
+        "4": 0.8599199999999999
+      },
+      "mean_maximum_repeated_span": 87.61,
+      "loop_taxonomy": {
+        "short_phrase_loop": 28,
+        "1_token_loop": 18,
+        "3_to_4_token_loop": 30,
+        "sentence_level_loop": 13,
+        "2_token_loop": 11
+      },
+      "onset_distribution": {
+        "entropy": 4.853419610708952,
+        "top1_probability": 0.2760459723509848,
+        "margin": 0.2190935019403696,
+        "eos_probability": 0.0008589948513781564
+      }
+    },
+    "sampling_t07": {
+      "naturalness": 0.71,
+      "semantic": 0.66,
+      "completion": 0.06,
+      "repetition_1": 0.36487499999999995
+    },
+    "japanese_function_word_rates": {
+      "の": 0.01078125,
+      "に": 0.01703125,
+      "は": 0.00390625,
+      "を": 0.00890625,
+      "が": 0.002109375,
+      "と": 0.02875,
+      "で": 0.000234375,
+      "て": 7.8125e-05
+    },
+    "context_loss": {
+      "512": 4.912725269794464,
+      "64": 4.524707525968552,
+      "16": 4.971389651298523,
+      "2": 5.3032034039497375,
+      "1": 6.229405373334885
+    }
+  },
+  "detailed_frequency": {
+    "standard_ce_eos_1_0": {
+      "middle_20_to_80_percent": {
+        "rank_range": [
+          820,
+          3276
+        ],
+        "targets": 2242,
+        "top_1_accuracy": 0.06958073377609253,
+        "top_5_accuracy": 0.14808206260204315,
+        "top_10_accuracy": 0.1926850974559784,
+        "mean_correct_token_probability": 0.0368399520191762,
+        "median_correct_token_probability": 0.0008253793930634856,
+        "geometric_mean_correct_token_probability": 0.0013943516048138254,
+        "cross_entropy": 6.575325771178153,
+        "probability_quantiles": {
+          "p00": 4.450156666280236e-06,
+          "p10": 0.00010659460967872292,
+          "p25": 0.00026952980988426134,
+          "p50": 0.0008253793930634856,
+          "p75": 0.004135240102186799,
+          "p90": 0.048457607254385984,
+          "p100": 0.9274758100509644
+        }
+      },
+      "rare_bottom_20_percent": {
+        "rank_range": [
+          3277,
+          4095
+        ],
+        "targets": 112,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "top_10_accuracy": 0.0,
+        "mean_correct_token_probability": 0.0004031654955209011,
+        "median_correct_token_probability": 6.442329322453588e-05,
+        "geometric_mean_correct_token_probability": 7.343774616723466e-05,
+        "cross_entropy": 9.519072501566942,
+        "probability_quantiles": {
+          "p00": 2.3028626401355723e-06,
+          "p10": 1.1775583061535144e-05,
+          "p25": 2.1052942884125514e-05,
+          "p50": 6.442329322453588e-05,
+          "p75": 0.00015543613699264824,
+          "p90": 0.0005659214220941068,
+          "p100": 0.00637196097522974
+        }
+      }
+    },
+    "eos_weight_1_5": {
+      "middle_20_to_80_percent": {
+        "rank_range": [
+          820,
+          3276
+        ],
+        "targets": 2242,
+        "top_1_accuracy": 0.06913470476865768,
+        "top_5_accuracy": 0.14808206260204315,
+        "top_10_accuracy": 0.1926850974559784,
+        "mean_correct_token_probability": 0.03683078404922864,
+        "median_correct_token_probability": 0.0008248231606557965,
+        "geometric_mean_correct_token_probability": 0.0013948559363193079,
+        "cross_entropy": 6.574964140497365,
+        "probability_quantiles": {
+          "p00": 4.419393007992767e-06,
+          "p10": 0.00010680917548597791,
+          "p25": 0.0002699213655432686,
+          "p50": 0.0008248231606557965,
+          "p75": 0.00414169195573777,
+          "p90": 0.04824580512940887,
+          "p100": 0.927420437335968
+        }
+      },
+      "rare_bottom_20_percent": {
+        "rank_range": [
+          3277,
+          4095
+        ],
+        "targets": 112,
+        "top_1_accuracy": 0.0,
+        "top_5_accuracy": 0.0,
+        "top_10_accuracy": 0.0,
+        "mean_correct_token_probability": 0.00040280205653735787,
+        "median_correct_token_probability": 6.452002708101645e-05,
+        "geometric_mean_correct_token_probability": 7.350623520575907e-05,
+        "cross_entropy": 9.51814032261216,
+        "probability_quantiles": {
+          "p00": 2.29231432058441e-06,
+          "p10": 1.1844704567920417e-05,
+          "p25": 2.107436921505723e-05,
+          "p50": 6.452002708101645e-05,
+          "p75": 0.0001553153088025283,
+          "p90": 0.0005694827996194364,
+          "p100": 0.006358885206282139
+        }
+      }
+    }
+  },
+  "delta_eos_1_5_minus_standard": {
+    "validation_loss": 0.00017082691192626953,
+    "top1": -0.000244140625,
+    "top5": 0.000244140625,
+    "top10": 0.0001220703125,
+    "terminal_eos_probability": 0.005417821294511669,
+    "rare_cross_entropy": -0.000932178954782259,
+    "context_full_loss": 0.0014237463474273682,
+    "semantic": -0.010000000000000009,
+    "naturalness": -0.010000000000000009
+  },
+  "checks": {
+    "terminal_eos_clear_improvement": true,
+    "validation_no_regression": true,
+    "topk_no_regression": true,
+    "rare_no_regression": true,
+    "context_no_regression": true,
+    "semantic_no_regression": true,
+    "naturalness_no_major_regression": true,
+    "premature_eos_top1_zero": true
+  },
+  "adoption_criterion_pass": true,
+  "greedy_runaway_improved": false,
+  "recommended_eos_weight": 1.5
+}
