@@ -1,0 +1,20 @@
+{
+  "phase": 50,
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "migration_gate": "Z_CHECKPOINT_MIGRATION_PASS",
+  "command": ".venv-gpu/Scripts/python.exe -m pytest -q",
+  "passed": 480,
+  "failed": 0,
+  "warnings": 5,
+  "seconds": 96.85,
+  "scope": "Full current working tree including retained pre-existing infrastructure edits; those unrelated edits are not automatically staged",
+  "additional_targeted_tests": {"passed": 15, "failed": 0, "includes_web_framing_contract": true, "seconds": 2.68},
+  "ml_reevaluation_reused": true,
+  "new_gpu_training": false,
+  "formal_lr": "FORMAL_LR_STILL_UNRESOLVED",
+  "protected_original_4": "SHA256 PASS",
+  "phase42_ready_5": "SHA256 PASS at pre-existing D active/archive locations; unchanged and unstaged",
+  "test_generated_5_files": "Restored to byte-identical contents captured immediately before final pytest",
+  "checkpoint_binary_staging": "PROHIBITED",
+  "production_deploy": false
+}
