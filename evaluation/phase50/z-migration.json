@@ -1,0 +1,1214 @@
+{
+  "gate": "Z_CHECKPOINT_MIGRATION_PASS",
+  "started_at_utc": "2026-09-09T10:49:41.601180+00:00",
+  "destination_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "source_roots": [
+    "D:\\UniPilot\\active\\checkpoints",
+    "D:\\UniPilot\\archive\\checkpoints",
+    "Z:\\AI\\unipilot-mini\\backup\\checkpoints",
+    "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\checkpoints"
+  ],
+  "free_bytes_before": 83948449792,
+  "new_gpu_training": false,
+  "rows": [
+    {
+      "relative_path": "checkpoints/foundation-v33-context-gate/gate-2/seed-42/checkpoint-tokens-15872000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+      "bytes": 235702079,
+      "sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "17d5e67ba5a564a31ff5f740c0906551a1eafe0b3fa04ccd710cbf1744a7521a",
+          "optimizer_state": "6a0a9dc88a46c97ac4cfff19c1a9655bfdf953da99bb39e77f780ad82a2dc5e8",
+          "scheduler_state": "03dd945f2fc2535f61a10d9e5b6d08d39d947904fee404f3dade2740d0d7a2bf",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "ba9b894457758e8192cf9f77d046b235884b7f2dde2a2f223a4df3ee579e6120"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 0.0001,
+          "processed_tokens": 15872000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-1/seed-42/checkpoint-tokens-15616000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\foundation-v33-context-gate\\gate-1\\seed-42\\checkpoint-tokens-15616000.pt",
+          "parent_sha256": "86c216c8644ef6b6dfc878c22627bd153dba524e9b12f9701ce36a1505753630"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/foundation-v33-context-gate/gate-2/seed-123/checkpoint-tokens-15872000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+      "bytes": 234996671,
+      "sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "85e2c9341a293e7b82be340949fe443affce4b8a33abd7d795550178ef7af522",
+          "optimizer_state": "fafbda4ddab8323a38e6045d7a33c9844c0e9194e09a644a54489bbb9292ac32",
+          "scheduler_state": "03dd945f2fc2535f61a10d9e5b6d08d39d947904fee404f3dade2740d0d7a2bf",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "75025a58a3b68c62e8ae0c960194b31b2014a123eb04db0a2bef6e7807d16b0d"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 0.0001,
+          "processed_tokens": 15872000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-1/seed-123/checkpoint-tokens-15616000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\foundation-v33-context-gate\\gate-1\\seed-123\\checkpoint-tokens-15616000.pt",
+          "parent_sha256": "41762ab556ec9bfe56789233b9213ce04fefc57120f1bbff3dedafab55996cc1"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/foundation-v33-context-gate/gate-2/seed-2026/checkpoint-tokens-15872000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+      "bytes": 234995327,
+      "sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "1f48a13d2105a0214c55fce88959dbbf5ea5f4e1e85e07dc7278cda65f37c17a",
+          "optimizer_state": "7801e2be0a4cc1541875b46fb2b92ee7b66e9c5c48ae4fdabceb185b51a6550a",
+          "scheduler_state": "03dd945f2fc2535f61a10d9e5b6d08d39d947904fee404f3dade2740d0d7a2bf",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "07d4e87a5daba7ad90f9d403085cfb71623090437304aa2050bd18c1a8f74b05"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 0.0001,
+          "processed_tokens": 15872000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-1/seed-2026/checkpoint-tokens-15616000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\foundation-v33-context-gate\\gate-1\\seed-2026\\checkpoint-tokens-15616000.pt",
+          "parent_sha256": "c81e587c39ce169d8d72a2076bf52a39d883c2e6afd8c66e5d7f1291540f8622"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-42/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+      "bytes": 235702079,
+      "sha256": "77a5fd77746d94dde44c101ae93ec3ef7aea4d0e25f5643cab606134acf82a5a",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "609e2c8e7197c0269379748b65e98f046fd40b73b411dd687ebc7f12b35b5034",
+          "optimizer_state": "8106fbd9192a7fbdf1bf39a550fc14cabd4f8a22a8c19e0e17fb7910019a0ab4",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "386e0d4eaa7414243acf8dc282367e26b8bfa1fe1d3111284fde69d9efa43100"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 0.0001,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-2/seed-42/checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-123/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+      "bytes": 234996671,
+      "sha256": "6a7b48fc7009e6a41ff7e9ec5d2e9615c1b0da064272248b4c94a0c4f98bdce4",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "c96cc5b86968dcf5ce47085f2287c56c538902ebc2f68bf9084f0a58d66888a9",
+          "optimizer_state": "1d6f6a43dacc12487253172bb0f5505091de714cdbfed9da5b6e7631341be81e",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "ac6e050cc6c63fc6c37319ada486d371abdffc2f9ed07048af9baf31dacdd843"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 0.0001,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-2/seed-123/checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/foundation-v35-thermal-short-gate/gate-1/seed-2026/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "bytes": 234995391,
+      "sha256": "e48e2af2752c4306dcef2660ea85e99ac82fb18d65af4a596f68beaac7f82474",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "478f7a7024c130eb2a21e31190d44f1238ee30b9f5814272a0f5a02d53329088",
+          "optimizer_state": "a5d41318e92faa27b7edf937efac1c36f9dc3781791b3df55e75ae2026057b66",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "6d53820e9e5c8b0d7c9c204f780fecc6fa8d778b72d158f2d505828282a6a73a"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 0.0001,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-2/seed-2026/checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase47/arm-A/seed-42/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+      "bytes": 235702207,
+      "sha256": "3bedf302b82fa6144904566a6bd10491ad277337cc1fb9e6758f3ba62a6b79d5",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "609e2c8e7197c0269379748b65e98f046fd40b73b411dd687ebc7f12b35b5034",
+          "optimizer_state": "8106fbd9192a7fbdf1bf39a550fc14cabd4f8a22a8c19e0e17fb7910019a0ab4",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "386e0d4eaa7414243acf8dc282367e26b8bfa1fe1d3111284fde69d9efa43100"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 0.0001,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase47/arm-B/seed-42/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+      "bytes": 235702207,
+      "sha256": "49169ca001596167b4b58529dd559172cc10e99aa84943751badb0fa660ccb03",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "8ad7ce4ad4a84f963eba5dc2afbaaec6e7cc7a2004ce0cefedfd7397ed88fc0d",
+          "optimizer_state": "eaa3d481fb8537c1b2fe21017873979f9b2529e2eefcebb0457061175fa6f8fb",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "386e0d4eaa7414243acf8dc282367e26b8bfa1fe1d3111284fde69d9efa43100"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 7.5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase47/arm-C/seed-123/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+      "bytes": 234996735,
+      "sha256": "88ade424118356fe6bf5e841d148224527c1ccf6d2da07bddc697d6a765c2c0a",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "0f368a534cd50ad99dd00b9d30376c9f856f575e3dbe9aea3a3a8279cb4d86ee",
+          "optimizer_state": "c2be772087f3066f0ed53c0185dbfd690bf5a69554015cef424be60c2b01dc84",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "ac6e050cc6c63fc6c37319ada486d371abdffc2f9ed07048af9baf31dacdd843"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints\\experimental\\phase47\\sources\\seed-123\\checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase47\\sources\\seed-123\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase47/arm-C/seed-2026/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "bytes": 234995455,
+      "sha256": "dde889780b63dd15d276a75b600ed1268b893b65c0ce4a7a876b0f51918c85ea",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "8d502aa8431789048326ee35527941f1dc37cfbe9641b4b94c94eff5bbecd657",
+          "optimizer_state": "d67f770ae54d34711b35b5b9290e3202bd2b24b55f594c6f3c188e17dfe44d40",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "6d53820e9e5c8b0d7c9c204f780fecc6fa8d778b72d158f2d505828282a6a73a"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints\\experimental\\phase47\\sources\\seed-2026\\checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase47\\sources\\seed-2026\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase47/arm-C/seed-42/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+      "bytes": 235702207,
+      "sha256": "80010161ab9b288ddf2f9fd0ac6cafc7803e106c4f9364c7ad9e7be6dcf9cf6c",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "ddeace373f52c1eec66daff7a3334255f2892924044416932367427701d87597",
+          "optimizer_state": "437d03d1414ad29b57f7b913f79a22f182781aee3470703221700a1618f36d24",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "386e0d4eaa7414243acf8dc282367e26b8bfa1fe1d3111284fde69d9efa43100"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase47\\sources\\seed-42\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase48/arm-B/seed-123/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+      "bytes": 234996799,
+      "sha256": "3983d66527bb71fb431385188225a46dba1cc579cdaf13361a9efdebacfd59ab",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "4fb2999dd2ba3f3cc6ce824b309872ce979a30301a44d42cbe8f72c709b7570f",
+          "optimizer_state": "68b46e96d726ff44c6787524c59ee2922a321e4eaf65b8335c6753f9ff880ba7",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "ac6e050cc6c63fc6c37319ada486d371abdffc2f9ed07048af9baf31dacdd843"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 7.5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-2/seed-123/checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "8bb7db50919a3f9afbbe69402d1c883b7f56725deb0e909e97f1e7543a923255"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase48/arm-B/seed-2026/checkpoint-tokens-16128000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-B\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-2026\\checkpoint-tokens-16128000.pt",
+      "bytes": 234995519,
+      "sha256": "f58cabad14986365189f2c532459229fa505430511995e41eb8a5ec03692c08d",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "3094c51bb8ef07e295012d4b59dd20625c441e44c693661634ef0743fdaf0bb1",
+          "optimizer_state": "98348668a85727e5e063950d82ea57d2e7ba6f452eeb23bce27b5c5ba849e361",
+          "scheduler_state": "da31685a72210725e2b6593e0ddbf060e8be9a723f3bd64216507cc707300970",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "6d53820e9e5c8b0d7c9c204f780fecc6fa8d778b72d158f2d505828282a6a73a"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 7.5e-05,
+          "processed_tokens": 16128000,
+          "parent_record": "checkpoints/foundation-v33-context-gate/gate-2/seed-2026/checkpoint-tokens-15872000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+          "parent_sha256": "191b3ad232db0031848b69940e7a0a9e508617c69442ac7597948f94b2b294a3"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase48/arm-C/seed-123/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "bytes": 234996799,
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "946949c05038a31832756894361bdef5c696a5582cb161855abc4eaa2aae529b",
+          "optimizer_state": "155aaa705a35e2f9bbea962260f1a5c4adc143379b9dc30debdd2eddbf92867a",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "0de5133ed45bf1e38c857d75b6fe7bb702b0b67471f03460efd862cef528293a"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase47/arm-C/seed-123/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "88ade424118356fe6bf5e841d148224527c1ccf6d2da07bddc697d6a765c2c0a"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase48/arm-C/seed-2026/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "bytes": 234995455,
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "dfb9af1eb9c80f6bafb362a81bca0a482d75bc90d183f3106cc10e2a95b3c8c2",
+          "optimizer_state": "60ba485d9e91c653910a1e846d265470f0473639129c240d9f55a111de47d5d8",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "d634df41e5f6e4a796c2e351187b4179133e868e1d5e25409e34646eae8c6bdf"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase47/arm-C/seed-2026/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "dde889780b63dd15d276a75b600ed1268b893b65c0ce4a7a876b0f51918c85ea"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase48/arm-C/seed-42/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "bytes": 235702207,
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "af60f991e773d0a95b9fec03c156e2716326b2ea8247b9682272df6d645824c1",
+          "optimizer_state": "0fe0e8f05218f0f73667fbb313292df817e2ae081c8533ad9773f9b3318a3432",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "af5bd05c2a8ba0a582227df37683489055fcbcce6620019f2086b42b4a46da56"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase47/arm-C/seed-42/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "80010161ab9b288ddf2f9fd0ac6cafc7803e106c4f9364c7ad9e7be6dcf9cf6c"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase49/arm-B/seed-42/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+      "bytes": 235702527,
+      "sha256": "9460514688ad03f849ee4ed31ce0f11eca8c09a10fde296c45ee8394fa4e0036",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "31f48b4c824c5ba1e9759fb7107745529b352bbd5c25f51c0bab5164c6f2d55e",
+          "optimizer_state": "88031600b07c478bc946e7cc7fb362561bc448629edf4ca57e9b2c1b54c7e448",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "9a6cbfba22f447a23085bf16177d58145b9247341929d77ac5c136e76e43a8d4",
+          "random_state": "af5bd05c2a8ba0a582227df37683489055fcbcce6620019f2086b42b4a46da56"
+        },
+        "metadata": {
+          "seed": 42,
+          "lr": 7.5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase47/arm-B/seed-42/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "49169ca001596167b4b58529dd559172cc10e99aa84943751badb0fa660ccb03"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase49/arm-B/seed-123/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase49\\arm-B\\seed-123\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-123\\checkpoint-tokens-16384000.pt",
+      "bytes": 234997183,
+      "sha256": "6f07f622ab8b8aa0ab7c9d1a4f4db6069d89812bfdaeb29aae499e53946e5476",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "25da48a82e918340407fcfa96d39ad2a167a75f6af0d60b437687eb68c050867",
+          "optimizer_state": "ebfe494de1484fb09891e2f64ac8ccc946d4b2feb223231a5254db37e00446e0",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "6b6832a8165dc3a19879447abb6e230ea24b39e9492bdac30adbb9bfc11c3085",
+          "random_state": "0de5133ed45bf1e38c857d75b6fe7bb702b0b67471f03460efd862cef528293a"
+        },
+        "metadata": {
+          "seed": 123,
+          "lr": 7.5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase48/arm-B/seed-123/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "3983d66527bb71fb431385188225a46dba1cc579cdaf13361a9efdebacfd59ab"
+        }
+      },
+      "pass": true
+    },
+    {
+      "relative_path": "checkpoints/experimental/phase49/arm-B/seed-2026/checkpoint-tokens-16384000.pt",
+      "source": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase49\\arm-B\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "destination": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "bytes": 234995839,
+      "sha256": "eb173ffc92161f03fd8f17e6d9da517aaf49e0f81b2642733955335dd028aee0",
+      "copied_this_run": true,
+      "copy_checks": {
+        "size_match": true,
+        "sha_match": true,
+        "model_state_match": true,
+        "optimizer_state_match": true,
+        "scheduler_state_match": true,
+        "permutation_match": true,
+        "random_state_match": true
+      },
+      "resume_state": {
+        "pass": true,
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true,
+          "python_rng": true,
+          "numpy_rng": true,
+          "pytorch_rng": true,
+          "cuda_rng": true,
+          "sampler_permutation": true,
+          "parent_metadata": true
+        },
+        "components": {
+          "model_state": "9667acd4561474a08f85f33104f1eb847701ccaeef7ea1daa40db954eb0fadba",
+          "optimizer_state": "4aa19fb56c6ed00a8fa188996606deb3d3784d6185939ae139d01f0312c0ada7",
+          "scheduler_state": "5c5d80436fb5fa759d5b1f7cb3299da34d222ca596ccd705a9211472d7261d21",
+          "permutation": "db9cebd421c4684221bd4e4daff3d1a19cc936e53abe61ffa1810c0228797fca",
+          "random_state": "d634df41e5f6e4a796c2e351187b4179133e868e1d5e25409e34646eae8c6bdf"
+        },
+        "metadata": {
+          "seed": 2026,
+          "lr": 7.5e-05,
+          "processed_tokens": 16384000,
+          "parent_record": "checkpoints/experimental/phase48/arm-B/seed-2026/checkpoint-tokens-16128000.pt",
+          "parent_path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase48\\arm-B\\seed-2026\\checkpoint-tokens-16128000.pt",
+          "parent_sha256": "f58cabad14986365189f2c532459229fa505430511995e41eb8a5ec03692c08d"
+        }
+      },
+      "pass": true
+    }
+  ],
+  "missing": [],
+  "copied": [
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-123\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-2026\\checkpoint-tokens-16384000.pt"
+  ],
+  "protected_files": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\.gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-A\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "2da12b7d1e8e8721fd9d42ac1986a4c794fdfbc90fce1beea4a39db83e86af8b"
+    },
+    {
+      "path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase42\\arm-B\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "9fd953d86efce44792708ec2571b54583d382fc2180bd907a5920211f174be08"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-C\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "e5e8c44bab2997fc0ed1e056fd4e47c3f90212686b58b3901758630ba3a58084"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-D\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "874f49859cc8e64662ca84c43141982ba6be161006308169ff6a3e0fca65dbeb"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-E\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "0a31eaa77d5037f6a122910661f1b038a6c6503baaea29ad7db13fec59d96b3b"
+    }
+  ],
+  "initial_destination_inventory": [
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-env-smoke-20260906\\checkpoint-step-1.pt",
+      "bytes": 1580603
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-env-smoke-20260906\\training_history.csv",
+      "bytes": 199
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-routing-smoke-20260907\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+      "bytes": 1649
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-routing-smoke-20260907\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+      "bytes": 1649
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-routing-smoke-20260907\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+      "bytes": 1649
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\active-smoke\\download-source.pt",
+      "bytes": 23
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\active-smoke\\downloaded-production-smoke.pt",
+      "bytes": 23
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\active-smoke\\explicit-export.export.json",
+      "bytes": 464
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\active-smoke\\explicit-export.pt",
+      "bytes": 1889
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\active-smoke\\export-source.pt",
+      "bytes": 1683
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\exports\\export-source-inference.export.json",
+      "bytes": 467
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\codex-active-routing-smoke-20260908\\exports\\export-source-inference.pt",
+      "bytes": 2009
+    }
+  ],
+  "initial_partial_artifacts": [],
+  "missing_before": [
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-123\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-2026\\checkpoint-tokens-15872000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v35-thermal-short-gate\\gate-1\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-A\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-B\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase47\\arm-C\\seed-42\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-123\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-B\\seed-2026\\checkpoint-tokens-16128000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-123\\checkpoint-tokens-16384000.pt",
+    "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-2026\\checkpoint-tokens-16384000.pt"
+  ],
+  "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+  "free_bytes_after": 79478538240,
+  "finished_at_utc": "2026-09-09T10:53:12.908912+00:00"
+}
