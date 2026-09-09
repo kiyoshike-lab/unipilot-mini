@@ -1,0 +1,33 @@
+{
+  "tested_at_utc": "2026-09-09T15:22:00.721748+00:00",
+  "preview_url": "https://unipilot-mini-pjgy-jrrblw0tq-kiyoshike-labs-projects.vercel.app",
+  "preview_source": "GitHub deployment 6296102205, success, PHASE49 HEAD c5012cdd",
+  "preview": {
+    "status": 200,
+    "final_origin": "https://vercel.com",
+    "final_path": "/login",
+    "access_control_allow_origin": "*",
+    "access_control_allow_methods": null
+  },
+  "authentication_required": true,
+  "NEXT_PUBLIC_API_URL": "NOT_TESTED",
+  "expected_api_url": "https://unipilot-mini.onrender.com",
+  "compiled_api_matches": [],
+  "compiled_localhost_matches": [],
+  "health": {
+    "error": "TimeoutError: The read operation timed out"
+  },
+  "health_payload": null,
+  "chat_preflight": {
+    "error": "TimeoutError: The read operation timed out"
+  },
+  "CORS": "NOT_TESTED",
+  "LIVE": "NOT_TESTED",
+  "initial_health_attempt": "25 second read timeout; later HTTPS GET 200. Cold start is plausible, not proved.",
+  "historical_observation_2026_09_07": {"health_status": 200, "chat_preflight_status": 400, "access_control_allow_origin": null, "CORS": "FAIL"},
+  "diagnosis": "Preview redirects to Vercel login; built app JS is not observable. Current Render health and preflight requests timed out; current CORS behavior could not be measured. Prior 2026-09-07 CORS rejection is historical, not a result of this attempt.",
+  "next_action": "Use an authorized preview session to inspect built API URL; deployment owner must explicitly allow the exact approved preview origin in Render CORS configuration. Do not use wildcard origins or disable Vercel protection.",
+  "production_settings_changed": false,
+  "chat_post_sent": false,
+  "external_ai_api_called": false
+}

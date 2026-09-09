@@ -6,4 +6,4 @@ export type SourceItem = { id: string; title: string; publisher?: string; url?: 
 export type ResponseMode = "short" | "normal" | "detailed";
 export type Message = { id: string; role: "user" | "assistant"; text: string; cards?: ToolCard[]; mode?: string };
 export type AcademicMode = "ask" | "study" | "report" | "research";
-export type StudyOptions = { subject: string; level: string; method: string };
+export type StudyOptions = { subject: string; level: string; method: string; topic?: string; difficulty?: string; studentAnswer?: string };
