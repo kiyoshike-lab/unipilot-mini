@@ -1,0 +1,64 @@
+{
+  "gate": "PROCESS_ENV_Z_ROOT_PASS",
+  "user_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "initial_process_root": "D:\\UniPilot\\active\\checkpoints",
+  "corrected_process_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "python_resolver": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "migration_repeated": false,
+  "checkpoint_copy": 0,
+  "manifest_reused": true,
+  "manifest_sha256": "fbecc09c55e75ca5753657ea29383e0fc528b7f38dd5b5d8a637ffcf4c19b9fc",
+  "destinations_match": 19,
+  "representative_integrity_previously_verified": [
+    "baseline-2026",
+    "C-123",
+    "B-2026"
+  ],
+  "representative_sha_strict_load_metadata": "PASS",
+  "runtime_hardcoded_D_path": false,
+  "head": "7ebec725cbf1c7cddcf7b7953659f5f2e23e5025",
+  "branch": "foundation-research",
+  "origin_match": true,
+  "c_free_bytes": 137963413504,
+  "z_free_bytes": 79478538240,
+  "cuda_available": true,
+  "protected_files": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\.gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-A\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "2da12b7d1e8e8721fd9d42ac1986a4c794fdfbc90fce1beea4a39db83e86af8b"
+    },
+    {
+      "path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase42\\arm-B\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "9fd953d86efce44792708ec2571b54583d382fc2180bd907a5920211f174be08"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-C\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "e5e8c44bab2997fc0ed1e056fd4e47c3f90212686b58b3901758630ba3a58084"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-D\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "874f49859cc8e64662ca84c43141982ba6be161006308169ff6a3e0fca65dbeb"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-E\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "0a31eaa77d5037f6a122910661f1b038a6c6503baaea29ad7db13fec59d96b3b"
+    }
+  ],
+  "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b"
+}
