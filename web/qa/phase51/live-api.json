@@ -1,0 +1,34 @@
+{
+  "tested_at_utc": "2026-09-10T10:21:48.400266+00:00",
+  "preview_url": "https://unipilot-mini-pjgy-jrrblw0tq-kiyoshike-labs-projects.vercel.app",
+  "api_url": "https://unipilot-mini.onrender.com",
+  "preview": {
+    "status": 200,
+    "final_origin": "https://vercel.com",
+    "final_path": "/login",
+    "access_control_allow_origin": "*",
+    "access_control_allow_methods": null,
+    "access_control_allow_credentials": null
+  },
+  "authentication_required": true,
+  "compiled_api_url": "NOT_TESTED",
+  "compiled_api_matches": [],
+  "compiled_localhost_matches": [],
+  "script_errors": [],
+  "health": {
+    "error": "TimeoutError: The read operation timed out"
+  },
+  "health_payload": null,
+  "chat_preflight": {
+    "error": "TimeoutError: The read operation timed out"
+  },
+  "CORS": "NOT_TESTED",
+  "LIVE": "NOT_TESTED",
+  "live_readiness": "NOT_READY",
+  "manual_authenticated_preview_qa": "NOT_TESTED",
+  "reason": "GET/OPTIONS readiness is not an authenticated end-to-end student workflow. Manual authorized browser QA remains required.",
+  "production_settings_changed": false,
+  "chat_post_sent": false,
+  "external_ai_api_called": false,
+  "authentication_bypass": false
+}
