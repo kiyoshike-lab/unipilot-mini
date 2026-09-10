@@ -1,0 +1,75 @@
+{
+  "DEMO": "PASS",
+  "fixtureOnly": true,
+  "layouts": [
+    {
+      "route": "/gpa",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/gpa",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/gpa",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/gpa",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/gpa",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/degree",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/degree",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/degree",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/degree",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/degree",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "weightedGpa": true,
+  "whatIf": true,
+  "targetImpossible": true,
+  "retakeModes": true,
+  "rounding": true,
+  "exclude": true,
+  "invalidInput": true,
+  "errorAssociation": true,
+  "sessionSaveReload": true,
+  "clear": true,
+  "jsonExport": true,
+  "degreeCategories": true,
+  "degreeMissingSource": true,
+  "degreeVersionConflict": true,
+  "targets44": true,
+  "keyboardFocus": true,
+  "reducedMotion": true,
+  "noPost": true,
+  "pageErrors": []
+}

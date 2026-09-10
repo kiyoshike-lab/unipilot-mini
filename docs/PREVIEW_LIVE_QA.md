@@ -1,6 +1,6 @@
-# Authorized Preview QA — PHASE51
+# Authorized Preview QA — PHASE51/52
 
-No Render or Vercel Production deployment/configuration change is authorized in PHASE51. Vercel Preview protection stays enabled. Local Demo, read-only Live readiness and manual authenticated Preview workflow results must be reported separately.
+No Render or Vercel Production deployment/configuration change is authorized in PHASE51/52. Vercel Preview protection stays enabled. Local Demo, read-only Live readiness and manual authenticated Preview workflow results must be reported separately.
 
 ## Bounded CORS preparation (code only)
 
@@ -39,3 +39,12 @@ An authorized user opens the exact Preview, signs in through the normal Vercel f
 - Test360/390/768/1024/1440 widths, keyboard focus,44px controls and reduced motion. Record failures and uncertainty; no quality claims from synthetic Demo outputs.
 
 Record the three outcomes independently: DEMO; LIVE read-only readiness; MANUAL_AUTHENTICATED_PREVIEW (with actual workflow evidence). Local exact-origin middleware tests are not evidence of deployed Render CORS. Production and external AI APIs remain unchanged/OFF in this phase.
+
+## Stage4 short owner checklist
+
+1. Open the intended **Stage4** protected Preview through normal Vercel login. Record its deployment SHA/URL/time. The historical PHASE49 URL checked in `web/qa/phase52/live-api.json` does not prove Stage4 deployment.
+2. Verify compiled/runtime API origin is `https://unipilot-mini.onrender.com`, health really returns loaded=true, and exact-origin chat preflight succeeds. Keep protection and bounded CORS; production configuration changes require separate authorization.
+3. With an approved non-sensitive message, test Tutor streaming and Materials/Exam. Then test Report/Research matching/nonmatching spans, claim links and local Save/Clear. Record actual results, not Demo outputs.
+4. On GPA, enter A=4×3 credits and C=2×1 credit: Current3.5; change C to B in What-if:3.75. Test impossible target, retakes, Save/reload, JSON export and Clear. No grade data should leave the browser.
+5. On Degree, verify TEST UNIVERSITY fixture totals; switch to missing-source and version-conflict cases. Neither may claim verified real graduation requirements. Check all nine routes at360/390/768/1024/1440, keyboard focus, errors and mobile navigation scroll.
+6. Record DEMO / LIVE / MANUAL_AUTHENTICATED_PREVIEW separately. PHASE52 local QA is PASS; historical Preview login plus API timeouts leave Live/manual NOT_TESTED. Do not turn that into PASS or disable authentication. The requested all-QA push gate remains pending until authorized Live QA succeeds or the user explicitly narrows that gate to local QA.
