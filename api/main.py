@@ -9,6 +9,7 @@ import sys
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from api.cors import allowed_origins
 
 from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, CampusV21HumanScoreRequest,
                          CampusV21QuickScoreRequest, CampusAIReviewRequest,
@@ -18,7 +19,7 @@ from api.schemas import (CampusHumanScoreRequest, CampusV2HumanScoreRequest, Cam
 
 
 app = FastAPI(title="UniPilot Mini Local API", version="0.3.0")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://unipilot-mini-pjgy.vercel.app"],
+app.add_middleware(CORSMiddleware, allow_origins=allowed_origins(os.environ.get("UNIPILOT_CORS_ALLOWED_ORIGINS")),
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 runtime = {"model": None, "tokenizer": None, "device": "not loaded", "checkpoint": None, "payload": {}, "pipeline": None}
 
