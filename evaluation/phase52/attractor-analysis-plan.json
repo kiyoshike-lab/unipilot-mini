@@ -1,0 +1,8 @@
+{
+  "source": "PHASE51 fixed900 greedy traces; observational reuse only",
+  "families": "Retain existing prefix taxonomy and lengths; no inferred factual/procedural/intention relabeling",
+  "onset_window": "up to32 generated tokens before detected onset, plus onset; early onsets have fewer than32 (no invented trace)",
+  "ngram_selection": "Top20 exact generated loop cycles by example count; length1..32, from all9 checkpoints; counts in frozen training corpus, not pasted source prose",
+  "causal_policy": "Association only. No intervention proves EOS/position/data cause. MIXED_OR_UNKNOWN unless mechanism independently identified.",
+  "decoder_mitigation": "Reuse existing temperature.7 observations only; no new decoder parameter search or beta claim"
+}

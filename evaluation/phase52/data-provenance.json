@@ -1,0 +1,2007 @@
+{
+  "phase": 52,
+  "availability": "PROVENANCE_UNCERTAIN",
+  "rows": [
+    {
+      "name": "test.json",
+      "path": "data/campus_v21/retrieval/test.json",
+      "sha256": "5c58bbf40281c5c1d0af091749b6d6a119b0c786b42a97a781bca69812681d21",
+      "documents_or_items": 338,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0dc1878 feat: add UniPilot Campus v2.1",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "tests/test_campus_v21.py",
+          "line": 80,
+          "excerpt": "rows = json.loads(Path(\"data/campus_v21/retrieval/test.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "validation.json",
+      "path": "data/campus_v21/retrieval/validation.json",
+      "sha256": "dfbdac95eec0f79c2672f29826f122aedfa851d831e09d7c6727adab5b2dbcd1",
+      "documents_or_items": 152,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0dc1878 feat: add UniPilot Campus v2.1",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_campus_v21_retrieval.py",
+          "line": 87,
+          "excerpt": "\"selection_split\": \"data/campus_v21/retrieval/validation.json\","
+        }
+      ]
+    },
+    {
+      "name": "adversarial-validation-300.json",
+      "path": "data/campus_v21/router/adversarial-validation-300.json",
+      "sha256": "45d7290e9013d2998013cd63be9b34889cc4cafde85b5ab4347d449467c02003",
+      "documents_or_items": 300,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0dc1878 feat: add UniPilot Campus v2.1",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_campus_v21.py",
+          "line": 195,
+          "excerpt": "adversarial_validation = json.loads((ROOT / \"data/campus_v21/router/adversarial-validation-300.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "clarification-validation-1200.json",
+      "path": "data/campus_v21/router/clarification-validation-1200.json",
+      "sha256": "fe1374cc356420d1113d4c06e645444c79cae5b0810d2f4a777a1b0db9b41580",
+      "documents_or_items": 1200,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0dc1878 feat: add UniPilot Campus v2.1",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "human-knowledge-100.jsonl",
+      "path": "data/campus_v22/benchmarks/human-knowledge-100.jsonl",
+      "sha256": "5cc999b6dcc9aa6905dac5a4a8545ff09b9c3981b41abaa82bb1daeb2e36e412",
+      "documents_or_items": 100,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "4dbf638 feat: add Campus v2.2 knowledge RAG",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/build_campus_v22_evaluation.py",
+          "line": 281,
+          "excerpt": "write_jsonl(OUT_ROOT / \"human-knowledge-100.jsonl\", human)"
+        },
+        {
+          "path": "tests/test_campus_v22.py",
+          "line": 93,
+          "excerpt": "human = load_jsonl(\"data/campus_v22/benchmarks/human-knowledge-100.jsonl\")"
+        }
+      ]
+    },
+    {
+      "name": "blind-300.json",
+      "path": "data/campus_v22/generalization/blind-300.json",
+      "sha256": "0af8e1d96380fc020b809a758ddc62136bb713e14a9bae0095d04ee096112998",
+      "documents_or_items": 300,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "bf76360 feat: add Campus v2.2 generalization",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/build_campus_v23_holdouts.py",
+          "line": 67,
+          "excerpt": "ROOT / \"data/campus_v22/generalization/blind-300.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 148,
+          "excerpt": "ROOT / \"data/campus_v22/generalization/blind-300.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v10.py",
+          "line": 25,
+          "excerpt": "\"data/campus_v22/generalization/blind-300.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v11.py",
+          "line": 37,
+          "excerpt": "\"data/campus_v22/generalization/blind-300.json\","
+        },
+        {
+          "path": "scripts/prepare_standard_short_phase.py",
+          "line": 44,
+          "excerpt": "ROOT / \"data/campus_v22/generalization/blind-300.json\","
+        },
+        {
+          "path": "evaluation/evaluate_campus_v22_generalization.py",
+          "line": 20,
+          "excerpt": "BLIND_PATH = ROOT / \"data/campus_v22/generalization/blind-300.json\""
+        },
+        {
+          "path": "tests/test_campus_v22_generalization.py",
+          "line": 107,
+          "excerpt": "blind = json.loads(Path(\"data/campus_v22/generalization/blind-300.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "blind-500.json",
+      "path": "data/campus_v23/holdouts/blind-500.json",
+      "sha256": "a7ce49248423abf16e5f720ae8e211831e07c389de13ab5d36a3300b9656afde",
+      "documents_or_items": 500,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "7e23823 feat: add Campus v2.3 precision retrieval",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 150,
+          "excerpt": "ROOT / \"data/campus_v23/holdouts/blind-500.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v10.py",
+          "line": 23,
+          "excerpt": "\"data/campus_v23/holdouts/blind-500.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v11.py",
+          "line": 35,
+          "excerpt": "\"data/campus_v23/holdouts/blind-500.json\","
+        },
+        {
+          "path": "scripts/prepare_standard_short_phase.py",
+          "line": 46,
+          "excerpt": "ROOT / \"data/campus_v23/holdouts/blind-500.json\","
+        },
+        {
+          "path": "evaluation/evaluate_campus_v23.py",
+          "line": 31,
+          "excerpt": "NEW_BLIND = ROOT / \"data/campus_v23/holdouts/blind-500.json\""
+        },
+        {
+          "path": "tests/test_campus_v23.py",
+          "line": 168,
+          "excerpt": "blind_path = Path(\"data/campus_v23/holdouts/blind-500.json\")"
+        }
+      ]
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/foundation_v09/base/test.jsonl",
+      "sha256": "71f1fe70e0594a42deca5e335124df9b39fb817165cd48e8b42b3ff834d655e7",
+      "documents_or_items": 54,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/foundation_v09/base/validation.jsonl",
+      "sha256": "de1b72be8b45a60d4ae40b7a335731cf632432d5eb18023cb6f3cd9067e210e0",
+      "documents_or_items": 120,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/foundation_v09/campus/test.jsonl",
+      "sha256": "e02557c9336b0401fa2cc0a6a40ca4ed136c39fa3dfeff4a2e2ae7593f4ce248",
+      "documents_or_items": 17,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/foundation_v09/campus/validation.jsonl",
+      "sha256": "5e056375f0a44d56e407dea7664d7c57ed76425fca96908f4096d4aeaa37397d",
+      "documents_or_items": 31,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "final-blind-1000.json",
+      "path": "data/foundation_v09/evaluation/final-blind-1000.json",
+      "sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+      "documents_or_items": 1000,
+      "count_basis": "declared user-protected item count; hash only",
+      "first_phase_used": "PROTECTED_NOT_USED",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "excluded by user; hash only"
+      ],
+      "selection_influence": "NO",
+      "confirmatory_eligible": "NO",
+      "reason": "User-protected FinalBlind excluded",
+      "references": [
+        {
+          "path": "training/run_foundation_v37_stability.py",
+          "line": 91,
+          "excerpt": "blind=file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json')"
+        },
+        {
+          "path": "training/run_foundation_v38_gate.py",
+          "line": 63,
+          "excerpt": "assert file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json')==old['final_blind_sha256']"
+        },
+        {
+          "path": "scripts/audit_foundation_v10_1000.py",
+          "line": 75,
+          "excerpt": "default=\"data/foundation_v09/evaluation/final-blind-1000.json\","
+        },
+        {
+          "path": "scripts/audit_foundation_v11_corpus.py",
+          "line": 89,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "scripts/investigate_foundation_v12.py",
+          "line": 766,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "scripts/migrate_phase50_checkpoints.py",
+          "line": 136,
+          "excerpt": "assert file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json')==pre['final_blind_sha256']"
+        },
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 403,
+          "excerpt": "\"final_blind\": \"data/foundation_v09/evaluation/final-blind-1000.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v10.py",
+          "line": 22,
+          "excerpt": "\"data/foundation_v09/evaluation/final-blind-1000.json\","
+        },
+        {
+          "path": "scripts/summarize_foundation_v13.py",
+          "line": 192,
+          "excerpt": "final_blind_path = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/analyze_foundation_v32_maturity.py",
+          "line": 301,
+          "excerpt": "final_blind_hash = sha256_only(ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\")"
+        },
+        {
+          "path": "evaluation/analyze_foundation_v33_context_gate.py",
+          "line": 412,
+          "excerpt": "blind_hash = sha256_only(ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\")"
+        },
+        {
+          "path": "evaluation/analyze_foundation_v35_short_gate.py",
+          "line": 261,
+          "excerpt": "blind = sha(ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\")"
+        },
+        {
+          "path": "evaluation/analyze_foundation_v36_lr_review.py",
+          "line": 114,
+          "excerpt": "blind=file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json')"
+        },
+        {
+          "path": "evaluation/analyze_foundation_v37_stability.py",
+          "line": 135,
+          "excerpt": "blind=file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json'); assert blind==preflight['final_blind_sha256']"
+        },
+        {
+          "path": "evaluation/analyze_foundation_v38_gate.py",
+          "line": 77,
+          "excerpt": "assert file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json')==pre['final_blind_sha256']"
+        },
+        {
+          "path": "evaluation/audit_foundation_v20_benchmark.py",
+          "line": 140,
+          "excerpt": "final_blind_path = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/diagnose_foundation_v40.py",
+          "line": 38,
+          "excerpt": "BLIND = ROOT / 'data/foundation_v09/evaluation/final-blind-1000.json'"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v09_sanity.py",
+          "line": 24,
+          "excerpt": "FINAL_BLIND = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v34_lm_gate.py",
+          "line": 208,
+          "excerpt": "blind_path = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v39_gate.py",
+          "line": 74,
+          "excerpt": "assert file_sha256(ROOT/'data/foundation_v09/evaluation/final-blind-1000.json') == old['final_blind_sha256']"
+        },
+        {
+          "path": "evaluation/investigate_foundation_v14.py",
+          "line": 1176,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/report_foundation_v15.py",
+          "line": 54,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/report_foundation_v16.py",
+          "line": 120,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/report_foundation_v17.py",
+          "line": 377,
+          "excerpt": "final_blind = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        },
+        {
+          "path": "evaluation/report_foundation_v18.py",
+          "line": 287,
+          "excerpt": "blind_path = ROOT / \"data/foundation_v09/evaluation/final-blind-1000.json\""
+        }
+      ]
+    },
+    {
+      "name": "validation-200.json",
+      "path": "data/foundation_v09/evaluation/validation-200.json",
+      "sha256": "0e118e97e56a05c9532a98a1cd4d76c1893ece073a98dd24d944f77bad3e880b",
+      "documents_or_items": 200,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/benchmark_foundation_v09_tokenizer.py",
+          "line": 103,
+          "excerpt": "validation = json.loads((ROOT / \"data/foundation_v09/evaluation/validation-200.json\").read_text("
+        },
+        {
+          "path": "scripts/benchmark_foundation_v10_tokenizers.py",
+          "line": 79,
+          "excerpt": "payload = json.loads((ROOT / \"data/foundation_v09/evaluation/validation-200.json\").read_text("
+        },
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 402,
+          "excerpt": "\"evaluation\": {\"validation\": \"data/foundation_v09/evaluation/validation-200.json\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v09_sanity.py",
+          "line": 23,
+          "excerpt": "VALIDATION = ROOT / \"data/foundation_v09/evaluation/validation-200.json\""
+        }
+      ]
+    },
+    {
+      "name": "human-approved.jsonl",
+      "path": "data/foundation_v09/human-approved.jsonl",
+      "sha256": "aac6c8ad7a7a5ee906a3eb46ceee057c0f4ed0cabeafcd02d18b83d102c25ccc",
+      "documents_or_items": 4,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 344,
+          "excerpt": "write_jsonl(OUT / \"human-approved.jsonl\", human_rows)"
+        },
+        {
+          "path": "tests/test_foundation_v09.py",
+          "line": 55,
+          "excerpt": "rows = read_jsonl(\"data/foundation_v09/human-approved.jsonl\")"
+        }
+      ]
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/foundation_v09/instruction/test.jsonl",
+      "sha256": "4cff123af9368ba3ca399947188e80e27028762266e4081abf61d303f9ea65c0",
+      "documents_or_items": 597,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/foundation_v09/instruction/validation.jsonl",
+      "sha256": "360ee1548f43bdd96d67a58b882eedc318ca2ae2ffaab5580cc918607463b80f",
+      "documents_or_items": 1238,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "e132d81 feat: start UniPilot foundation phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "training/train_foundation_v09.py",
+          "line": 272,
+          "excerpt": "model, tokenizer, \"data/foundation_v09/instruction/validation.jsonl\"))"
+        }
+      ]
+    },
+    {
+      "name": "test.jsonl.gz",
+      "path": "data/foundation_v10/documents/test.jsonl.gz",
+      "sha256": "788afca2e6bcb0296324942b32bf5a073f5be8c28cfac34b4f218062897cf020",
+      "documents_or_items": 185,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_foundation_v10_base.py",
+          "line": 27,
+          "excerpt": "with gzip.open(ROOT / \"data/foundation_v10/documents/test.jsonl.gz\", \"rt\","
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl.gz",
+      "path": "data/foundation_v10/documents/validation.jsonl.gz",
+      "sha256": "2de6c0c74445a37af599d8bb28b22a7b78a7f89c296fb0904b294692f7bcdd00",
+      "documents_or_items": 171,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "training/train_foundation_v10.py",
+          "line": 104,
+          "excerpt": "path = ROOT / \"data/foundation_v10/documents/validation.jsonl.gz\""
+        }
+      ]
+    },
+    {
+      "name": "test.bin",
+      "path": "data/foundation_v10/packed/vocab-4096/test.bin",
+      "sha256": "a9bf8a0923540df9271e345c6f6b538861b1ae25f0b0a1c67f9560348852de88",
+      "documents_or_items": null,
+      "count_basis": "not established without reading dataset content",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.bin",
+      "path": "data/foundation_v10/packed/vocab-4096/validation.bin",
+      "sha256": "e6d4c1c9741b4cdef7972519c54b55a51ad203561233dc7f6b44eca44ffc7f6a",
+      "documents_or_items": null,
+      "count_basis": "not established without reading dataset content",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl.gz",
+      "path": "data/foundation_v11/documents/test.jsonl.gz",
+      "sha256": "193552b0fbbb4be29e60eeae70385314049dd54f4b34a65e140c790e0a4703c4",
+      "documents_or_items": 157,
+      "count_basis": "packed manifest documents",
+      "first_phase_used": "Foundation v1.1 (defa0da); diagnostic reuse v1.4 onward",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "generation/completion and failure diagnosis; subsequent architecture/LR decisions"
+      ],
+      "selection_influence": "YES",
+      "confirmatory_eligible": "NO",
+      "reason": "Entire split already exposed to decision/diagnostic use; do not carve remaining documents post hoc",
+      "references": [
+        {
+          "path": "evaluation/evaluate_foundation_v11_completion.py",
+          "line": 58,
+          "excerpt": "with gzip.open(ROOT / \"data/foundation_v11/documents/test.jsonl.gz\", \"rt\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v11_completion.py",
+          "line": 58,
+          "excerpt": "test.jsonl.gz used to build heldout_continuation prompts"
+        },
+        {
+          "path": "evaluation/investigate_foundation_v14.py",
+          "line": 1038,
+          "excerpt": "base-completion-50 reused in language-emergence failure diagnosis"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl.gz",
+      "path": "data/foundation_v11/documents/validation.jsonl.gz",
+      "sha256": "40c6ebda5455b31c63b3c382c4e22592175b924316e3e336e3573c4a9dbf1618",
+      "documents_or_items": 146,
+      "count_basis": "packed manifest documents",
+      "first_phase_used": "Foundation v1.1 (defa0da); diagnostic reuse v1.4 onward",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "generation/completion and failure diagnosis; subsequent architecture/LR decisions"
+      ],
+      "selection_influence": "YES",
+      "confirmatory_eligible": "NO",
+      "reason": "Entire split already exposed to decision/diagnostic use; do not carve remaining documents post hoc",
+      "references": [
+        {
+          "path": "evaluation/audit_foundation_v15_architecture.py",
+          "line": 422,
+          "excerpt": "validation_ids = split_ids(ROOT / \"data/foundation_v11/documents/validation.jsonl.gz\")"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v13.py",
+          "line": 298,
+          "excerpt": "path = ROOT / \"data/foundation_v11/documents/validation.jsonl.gz\""
+        }
+      ]
+    },
+    {
+      "name": "base-completion-50.json",
+      "path": "data/foundation_v11/evaluation/base-completion-50.json",
+      "sha256": "93d8ac3a41fcb66498bd2ee262cba688808477e3b99af50a338fc479e8872ba6",
+      "documents_or_items": 50,
+      "count_basis": "build_prompts count assertion",
+      "first_phase_used": "Foundation v1.1 (defa0da); diagnostic reuse v1.4 onward",
+      "first_tracked_commit": "defa0da feat: rebuild Foundation v1.1 clean corpus",
+      "purposes_used": [
+        "generation/completion and failure diagnosis; subsequent architecture/LR decisions"
+      ],
+      "selection_influence": "YES",
+      "confirmatory_eligible": "NO",
+      "reason": "Entire split already exposed to decision/diagnostic use; do not carve remaining documents post hoc",
+      "references": [
+        {
+          "path": "evaluation/evaluate_foundation_v11_completion.py",
+          "line": 181,
+          "excerpt": "dataset = ROOT / \"data/foundation_v11/evaluation/base-completion-50.json\""
+        },
+        {
+          "path": "evaluation/investigate_foundation_v14.py",
+          "line": 1038,
+          "excerpt": "prompt_items = load_json(\"data/foundation_v11/evaluation/base-completion-50.json\")[\"items\"]"
+        },
+        {
+          "path": "tests/test_foundation_v11.py",
+          "line": 89,
+          "excerpt": "dataset = load(\"data/foundation_v11/evaluation/base-completion-50.json\")"
+        }
+      ]
+    },
+    {
+      "name": "test.bin",
+      "path": "data/foundation_v11/packed/vocab-4096/test.bin",
+      "sha256": "78c8f44e1689ed341b7abb9c31b1ca6d53139cb72384e0912092d32f8a0afd6c",
+      "documents_or_items": 157,
+      "count_basis": "packed manifest documents",
+      "first_phase_used": "Foundation v1.1 (defa0da); diagnostic reuse v1.4 onward",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "generation/completion and failure diagnosis; subsequent architecture/LR decisions"
+      ],
+      "selection_influence": "YES",
+      "confirmatory_eligible": "NO",
+      "reason": "Entire split already exposed to decision/diagnostic use; do not carve remaining documents post hoc",
+      "references": [
+        {
+          "path": "evaluation/evaluate_foundation_v11_completion.py",
+          "line": 58,
+          "excerpt": "test.jsonl.gz used to build heldout_continuation prompts"
+        },
+        {
+          "path": "evaluation/investigate_foundation_v14.py",
+          "line": 1038,
+          "excerpt": "base-completion-50 reused in language-emergence failure diagnosis"
+        }
+      ]
+    },
+    {
+      "name": "validation.bin",
+      "path": "data/foundation_v11/packed/vocab-4096/validation.bin",
+      "sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935",
+      "documents_or_items": 146,
+      "count_basis": "packed manifest documents",
+      "first_phase_used": "Foundation v1.1 (defa0da); diagnostic reuse v1.4 onward",
+      "first_tracked_commit": null,
+      "purposes_used": [
+        "generation/completion and failure diagnosis; subsequent architecture/LR decisions"
+      ],
+      "selection_influence": "YES",
+      "confirmatory_eligible": "NO",
+      "reason": "Entire split already exposed to decision/diagnostic use; do not carve remaining documents post hoc",
+      "references": [
+        {
+          "path": "training/run_foundation_v30_eos_experiment.py",
+          "line": 52,
+          "excerpt": "p,m,opt=load(source,device); start=int(p['update']); train=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/train.bin',dtype=np.uint16,mode='r'); val=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin',dtype=np.uint16,mode='r'); tok=FoundationTokenizer.load(ROOT/'tokenizer/foundation-v11-base-4096.json')"
+        },
+        {
+          "path": "training/run_foundation_v31_pipeline.py",
+          "line": 51,
+          "excerpt": "before=file_sha256(target); p=torch.load(target,map_location='cpu',weights_only=False); model=DiagnosticTransformerV17(DiagnosticConfigV17(**p['config'])); model.load_state_dict(p['model_state'],strict=True); model.eval(); tok=FoundationTokenizer.load(ROOT/'tokenizer/foundation-v11-base-4096.json'); val=np.memmap(ROOT/'data/foundation_v11/packed/vo"
+        },
+        {
+          "path": "evaluation/diagnose_foundation_v29_generation.py",
+          "line": 482,
+          "excerpt": "validation = np.memmap(ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\", dtype=np.uint16, mode=\"r\")"
+        },
+        {
+          "path": "evaluation/diagnose_foundation_v40.py",
+          "line": 57,
+          "excerpt": "val = np.memmap(ROOT / 'data/foundation_v11/packed/vocab-4096/validation.bin', dtype=np.uint16, mode='r')"
+        },
+        {
+          "path": "evaluation/diagnose_foundation_v40.py",
+          "line": 115,
+          "excerpt": "ROOT/'evaluation/evaluate_foundation_v33_context_gate.py', ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin']},"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v32_historical_loops.py",
+          "line": 82,
+          "excerpt": "ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v32_maturity.py",
+          "line": 239,
+          "excerpt": "ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v33_context_gate.py",
+          "line": 191,
+          "excerpt": "\"validation_path\": \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v33_context_gate.py",
+          "line": 228,
+          "excerpt": "ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v34_lm_gate.py",
+          "line": 158,
+          "excerpt": "ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\", dtype=np.uint16, mode=\"r\""
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v35_short_gate.py",
+          "line": 145,
+          "excerpt": "validation = np.memmap(ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\", dtype=np.uint16, mode=\"r\")"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v36_lr_review.py",
+          "line": 107,
+          "excerpt": "val = np.memmap(ROOT/\"data/foundation_v11/packed/vocab-4096/validation.bin\",dtype=np.uint16,mode=\"r\")"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v36_lr_review.py",
+          "line": 151,
+          "excerpt": "\"validation_sha256\":file_sha256(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin'),"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v36_lr_review.py",
+          "line": 163,
+          "excerpt": "val=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin',dtype=np.uint16,mode='r')"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v37_stability.py",
+          "line": 27,
+          "excerpt": "val=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin',dtype=np.uint16,mode='r')"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v38_gate.py",
+          "line": 31,
+          "excerpt": "val=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin',dtype=np.uint16,mode='r')"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v38_gate.py",
+          "line": 47,
+          "excerpt": "'validation_sha256':file_sha256(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin'),"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v38_gate.py",
+          "line": 85,
+          "excerpt": "val=np.memmap(ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin',dtype=np.uint16,mode='r')"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v38_gate.py",
+          "line": 107,
+          "excerpt": "valpath=ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin'"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v39_gate.py",
+          "line": 86,
+          "excerpt": "valpath = ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin'"
+        },
+        {
+          "path": "evaluation/evaluate_foundation_v39_gate.py",
+          "line": 122,
+          "excerpt": "valpath = ROOT/'data/foundation_v11/packed/vocab-4096/validation.bin'"
+        },
+        {
+          "path": "tests/test_foundation_v21_ab.py",
+          "line": 114,
+          "excerpt": "ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        },
+        {
+          "path": "tests/test_foundation_v33_context_gate.py",
+          "line": 38,
+          "excerpt": "training.ROOT / \"data/foundation_v11/packed/vocab-4096/validation.bin\","
+        }
+      ]
+    },
+    {
+      "name": "validation.bin",
+      "path": "data/foundation_v15_diagnostic/validation.bin",
+      "sha256": "3b97e47fa3d5b3a93c232caffb2718c4f7257ff2eca5a7ea217fee647222ee0d",
+      "documents_or_items": null,
+      "count_basis": "not established without reading dataset content",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "b058130 feat: audit Foundation v1.5 architecture capacity",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "tests/test_foundation_v18_diagnostics.py",
+          "line": 137,
+          "excerpt": "\"data/foundation_v15_diagnostic/validation.bin\", dtype=np.uint16, mode=\"r\""
+        }
+      ]
+    },
+    {
+      "name": "blind-200.json",
+      "path": "data/standard_50m_short/blind-200.json",
+      "sha256": "e98714b22dd92e119c673861beb59856851430fd8790fce720a01b31d48cf7f1",
+      "documents_or_items": 200,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "ff2945e feat: validate Standard 50M short phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 152,
+          "excerpt": "ROOT / \"data/standard_50m_short/blind-200.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v10.py",
+          "line": 27,
+          "excerpt": "\"data/standard_50m_short/blind-200.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v11.py",
+          "line": 39,
+          "excerpt": "\"data/standard_50m_short/blind-200.json\","
+        },
+        {
+          "path": "evaluation/evaluate_standard_short_blind.py",
+          "line": 23,
+          "excerpt": "BLIND = ROOT / \"data/standard_50m_short/blind-200.json\""
+        },
+        {
+          "path": "tests/test_standard_short.py",
+          "line": 46,
+          "excerpt": "path = ROOT / \"data/standard_50m_short/blind-200.json\""
+        },
+        {
+          "path": "tests/test_standard_short.py",
+          "line": 61,
+          "excerpt": "blind = read_json(\"data/standard_50m_short/blind-200.json\")[\"items\"]"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/standard_50m_short/curriculum/validation.jsonl",
+      "sha256": "9dd5aaca6d33178f05c09bc2cd6f7efc85dcc576ea9da850b40d057178ea9841",
+      "documents_or_items": 400,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "ff2945e feat: validate Standard 50M short phase",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v03/stage_a/test.jsonl",
+      "sha256": "053c8aa7dc450e834e92457be22172b3feadcc5c76252f0279afa4f2808c9fde",
+      "documents_or_items": 1000,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v03.py",
+          "line": 41,
+          "excerpt": "\"general\": stage_loss(model, tokenizer, \"data/v03/stage_a/test.jsonl\", device, False, args.loss_batches),"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v03/stage_a/validation.jsonl",
+      "sha256": "67ab969a293a1b9afddbba43607b832c94075d3a50ebb97be532fce80c401d7a",
+      "documents_or_items": 1000,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v03/stage_b/test.jsonl",
+      "sha256": "0fcb4876aabce4477602d96e52cefccb5d7e90c714717d3e67ab3002e95205da",
+      "documents_or_items": 500,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v03.py",
+          "line": 42,
+          "excerpt": "\"university\": stage_loss(model, tokenizer, \"data/v03/stage_b/test.jsonl\", device, False, args.loss_batches),"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v03/stage_b/validation.jsonl",
+      "sha256": "fda08a277e008f67b9ee0c60cddbdae2a57bf4651b30030900556ea91c47e9d0",
+      "documents_or_items": 500,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v03/stage_c/test.jsonl",
+      "sha256": "226d86c1fc65f3b01c8e8b4f7995f51220d3131617bf8d7cee2ff5a1dd76f8d0",
+      "documents_or_items": 600,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v03.py",
+          "line": 43,
+          "excerpt": "\"conversation\": stage_loss(model, tokenizer, \"data/v03/stage_c/test.jsonl\", device, True, args.loss_batches),"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v03/stage_c/validation.jsonl",
+      "sha256": "7f8145e0a0af5168c8ff57ceda4329ca4e2ce6f7629931a0fdf4989e56b42f5e",
+      "documents_or_items": 600,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v04/stage_c/test.jsonl",
+      "sha256": "c1f339a66b46e04ef3a372ccebec5490f25245a2640b47fe062892a11653fc0e",
+      "documents_or_items": 400,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "b8a8d40 feat: add clean v0.4 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v04.py",
+          "line": 23,
+          "excerpt": "dataset = CurriculumDataset(\"data/v04/stage_c/test.jsonl\", tokenizer, model.config.context_length, True)"
+        },
+        {
+          "path": "tests/test_v04.py",
+          "line": 31,
+          "excerpt": "dataset = CurriculumDataset(\"data/v04/stage_c/test.jsonl\", tokenizer, 256, True, max_records=1)"
+        }
+      ]
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v04/stage_c/validation.jsonl",
+      "sha256": "7d07d1f1dca88231f994ffab369d11ca37b828df694dd4871f85efc41ba975f0",
+      "documents_or_items": 400,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "b8a8d40 feat: add clean v0.4 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v05/conversation/test.jsonl",
+      "sha256": "889d03683358745c60fdeea661b074d0babb2e3c80af1eb8ad24e66f2aa55886",
+      "documents_or_items": 12,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "196b00b feat: optimize local inference and evaluate v0.5",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v05/conversation/validation.jsonl",
+      "sha256": "74bfc8075cb5490d73cdab15ca86c8926295f1d33452d3fd49e88360000ecb11",
+      "documents_or_items": 12,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "196b00b feat: optimize local inference and evaluate v0.5",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v05.py",
+          "line": 34,
+          "excerpt": "dataset = CurriculumDataset(\"data/v05/conversation/validation.jsonl\", tokenizer, model.config.context_length, True)"
+        }
+      ]
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v06/instruction/test.jsonl",
+      "sha256": "e9fb8abb1ee151a9a74f36d56575b82895b91c3dd6fa94d304fdf71d8654c3cf",
+      "documents_or_items": 36,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "827150f feat: implement v0.6 staged quality evaluation",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v06/instruction/validation.jsonl",
+      "sha256": "a9679534ae987138e9d95f5bd537ade0fa626cdd0d255dab5e3198d04d257152",
+      "documents_or_items": 38,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "827150f feat: implement v0.6 staged quality evaluation",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_v06.py",
+          "line": 116,
+          "excerpt": "dataset = CurriculumDataset(\"data/v06/instruction/validation.jsonl\", tokenizer, model.config.context_length, True)"
+        }
+      ]
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v07/training/test.jsonl",
+      "sha256": "c24120202d25332f9a25819016df68d5fcebcf99387aae0c592b4d6b80c97b8b",
+      "documents_or_items": 200,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "488754b feat: implement v0.7 grounded retrieval pipeline",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v07/training/validation.jsonl",
+      "sha256": "7a1e39754a6c487f711ee8546751494bfa025249432f0db924cc221cf1106e51",
+      "documents_or_items": 150,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "488754b feat: implement v0.7 grounded retrieval pipeline",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/A/test.jsonl",
+      "sha256": "ed015778654d9c4c088cb3243d415a4e6fcced6e3ede004d0fb216dc5c58233b",
+      "documents_or_items": 130,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/A/validation.jsonl",
+      "sha256": "dc33a4a5161ae29b2b8ec33a582f447f175e226f039e76b2bfd1f200eb7c6be5",
+      "documents_or_items": 180,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/B/test.jsonl",
+      "sha256": "3be16fb7ac66d1d1fea45bae19e72c34d1946373d410545d98b9d2e4d0727e8a",
+      "documents_or_items": 166,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/B/validation.jsonl",
+      "sha256": "4617eff594e6322dccbd981d9d1eb28538eb74da183af89ff1d29b69547a261d",
+      "documents_or_items": 338,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/C/test.jsonl",
+      "sha256": "8f0d7d1b41059387f0e79299e5ea0cc161bfdbde88d907f5febb17e19d698cde",
+      "documents_or_items": 498,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/C/validation.jsonl",
+      "sha256": "f75eeaa8cea9d4835ae14b8f7476e1c1f15b73fe7fa8c17f3646e44331d9cda6",
+      "documents_or_items": 1014,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/D/test.jsonl",
+      "sha256": "6cf0fadb334cc156593496e93d7028685c12e13e8f3e1f466402f152ddb15b17",
+      "documents_or_items": 166,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/D/validation.jsonl",
+      "sha256": "ff1aabc3b96cdb3090afe636cd0d6f961b84bfa19156deda4c826d4279a7f156",
+      "documents_or_items": 338,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/E/test.jsonl",
+      "sha256": "2975b87d7a63ce9daeb9389be8ea45161847b28123b29a62c6c393460c6f2c8d",
+      "documents_or_items": 52,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/E/validation.jsonl",
+      "sha256": "14220aaaaec1c87033f2371b26aae410d8837ac7eb2d891f279080cb247de4b1",
+      "documents_or_items": 120,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "test.jsonl",
+      "path": "data/v08/curriculum/F/test.jsonl",
+      "sha256": "b7a61c2d2401e4881f6ca4ceed523271fb84e0fabb35b26ec27f8e72046eaab6",
+      "documents_or_items": 166,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "validation.jsonl",
+      "path": "data/v08/curriculum/F/validation.jsonl",
+      "sha256": "471a3866ad30ad021e205f92e50d27c55713a34b04a8980ef002d205d6fadf6e",
+      "documents_or_items": 338,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "fixed_prompts_v02.json",
+      "path": "evaluation/fixed_prompts_v02.json",
+      "sha256": "03031d90193e4f68be73e3d101dfd404e030adafaf55c54026f54495311b9bde",
+      "documents_or_items": 300,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "62f3077 feat: expand UniPilot training dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/generate_dataset_v02.py",
+          "line": 229,
+          "excerpt": "Path(\"evaluation/fixed_prompts_v02.json\").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "evaluation/evaluate_v02.py",
+          "line": 37,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v02.json\")"
+        }
+      ]
+    },
+    {
+      "name": "fixed_prompts_v03.json",
+      "path": "evaluation/fixed_prompts_v03.json",
+      "sha256": "4f5be2589616030b166b6d06cd83f3374a4c5b98cf449f0b23ea48314d36ba30",
+      "documents_or_items": 300,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/check_dataset_v03.py",
+          "line": 42,
+          "excerpt": "fixed = json.loads(Path(\"evaluation/fixed_prompts_v03.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "scripts/prepare_dataset_v03.py",
+          "line": 231,
+          "excerpt": "Path(\"evaluation/fixed_prompts_v03.json\").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "evaluation/build_v04_artifacts.py",
+          "line": 27,
+          "excerpt": "schemas = {row[\"category\"]: row for row in load(\"fixed_prompts_v03.json\")}"
+        },
+        {
+          "path": "evaluation/evaluate_v03.py",
+          "line": 33,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v03.json\"); parser.add_argument(\"--prompt-count\", type=int, default=300)"
+        },
+        {
+          "path": "evaluation/evaluate_v04.py",
+          "line": 39,
+          "excerpt": "prompts = balanced_prompts(json.loads(Path(\"evaluation/fixed_prompts_v03.json\").read_text(encoding=\"utf-8\")), args.prompt_count)"
+        },
+        {
+          "path": "evaluation/search_generation_v03.py",
+          "line": 20,
+          "excerpt": "prompts = balanced_prompts(json.loads(Path(\"evaluation/fixed_prompts_v03.json\").read_text(encoding=\"utf-8\")), args.prompt_count)"
+        }
+      ]
+    },
+    {
+      "name": "fixed_prompts_v05.json",
+      "path": "evaluation/fixed_prompts_v05.json",
+      "sha256": "fcd472b19ed96141f874d949d346532161b4b56523e82d87cf6859621b73c14a",
+      "documents_or_items": 60,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "196b00b feat: optimize local inference and evaluate v0.5",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/prepare_dataset_v05.py",
+          "line": 146,
+          "excerpt": "Path(\"evaluation/fixed_prompts_v05.json\").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "evaluation/evaluate_v05.py",
+          "line": 45,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v05.json\")"
+        }
+      ]
+    },
+    {
+      "name": "fixed_prompts_v06.json",
+      "path": "evaluation/fixed_prompts_v06.json",
+      "sha256": "5f0b384e99fbde351a92c4d49826bc53cb273785e911f9fa9f7070d35f4e78e2",
+      "documents_or_items": 300,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "827150f feat: implement v0.6 staged quality evaluation",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/prepare_dataset_v06.py",
+          "line": 358,
+          "excerpt": "Path(\"evaluation/fixed_prompts_v06.json\").write_text(json.dumps(fixed_prompts(), ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "scripts/prepare_dataset_v06.py",
+          "line": 369,
+          "excerpt": "\"quality_report\": \"evaluation/dataset-quality-v06.json\", \"evaluation\": \"evaluation/fixed_prompts_v06.json\","
+        },
+        {
+          "path": "scripts/prepare_dataset_v07.py",
+          "line": 217,
+          "excerpt": "prompts = json.loads(Path(\"evaluation/fixed_prompts_v06.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "evaluation/evaluate_v06.py",
+          "line": 129,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v06.json\")"
+        },
+        {
+          "path": "tests/test_v06.py",
+          "line": 33,
+          "excerpt": "prompts = json.loads(Path(\"evaluation/fixed_prompts_v06.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "fixed_prompts_v07.json",
+      "path": "evaluation/fixed_prompts_v07.json",
+      "sha256": "3428b66c5f8a21f8a89e69b674bcc5d1df77ad460857274241fab2c17edd3c9a",
+      "documents_or_items": 300,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "488754b feat: implement v0.7 grounded retrieval pipeline",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/benchmark_classifier_v07.py",
+          "line": 19,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v07.json\")"
+        },
+        {
+          "path": "scripts/benchmark_pipeline_v07.py",
+          "line": 21,
+          "excerpt": "prompts = json.loads(Path(\"evaluation/fixed_prompts_v07.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "scripts/benchmark_retrieval_v07.py",
+          "line": 16,
+          "excerpt": "prompts = json.loads(Path(\"evaluation/fixed_prompts_v07.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "scripts/prepare_dataset_v07.py",
+          "line": 222,
+          "excerpt": "Path(\"evaluation/fixed_prompts_v07.json\").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "evaluation/evaluate_v07.py",
+          "line": 34,
+          "excerpt": "parser.add_argument(\"--prompts\", default=\"evaluation/fixed_prompts_v07.json\")"
+        }
+      ]
+    },
+    {
+      "name": "human-comparison-campus-v1.json",
+      "path": "evaluation/human-comparison-campus-v1.json",
+      "sha256": "0702990e961bdf30a1cbc028de8919f9bd96bc62435b92b134c9d013c2ee9dcb",
+      "documents_or_items": 100,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "33bb517 feat: add UniPilot Campus v1 orchestration",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/build_campus_report.py",
+          "line": 74,
+          "excerpt": "Path(\"evaluation/human-comparison-campus-v1.json\").write_text(json.dumps(manual, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        }
+      ]
+    },
+    {
+      "name": "human-comparison-campus-v2.json",
+      "path": "evaluation/human-comparison-campus-v2.json",
+      "sha256": "6f238ef7fc7f64326a30fe2acaf055e11001c615754cd0e13f281f1384128fc4",
+      "documents_or_items": 100,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0c3bb23 feat: add UniPilot Campus v2 router",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "evaluation/evaluate_campus_v2.py",
+          "line": 213,
+          "excerpt": "(ROOT / \"evaluation\" / \"human-comparison-campus-v2.json\").write_text("
+        },
+        {
+          "path": "evaluation/evaluate_campus_v2.py",
+          "line": 225,
+          "excerpt": "human_rows = json.loads((ROOT / \"evaluation\" / \"human-comparison-campus-v2.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "human-comparison-campus-v21.json",
+      "path": "evaluation/human-comparison-campus-v21.json",
+      "sha256": "e10a5674004ab7fadf2a19f1269fce95cca45139313f11397776b9d832e6fec7",
+      "documents_or_items": 100,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "0dc1878 feat: add UniPilot Campus v2.1",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/build_campus_v22_generalization.py",
+          "line": 22,
+          "excerpt": "REFERENCE_100 = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "scripts/build_campus_v23_holdouts.py",
+          "line": 66,
+          "excerpt": "ROOT / \"evaluation/human-comparison-campus-v21.json\","
+        },
+        {
+          "path": "scripts/build_campus_v23_holdouts.py",
+          "line": 72,
+          "excerpt": "if path.name == \"human-comparison-campus-v21.json\":"
+        },
+        {
+          "path": "scripts/prepare_foundation_v09.py",
+          "line": 147,
+          "excerpt": "ROOT / \"evaluation/human-comparison-campus-v21.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v10.py",
+          "line": 29,
+          "excerpt": "\"evaluation/human-comparison-campus-v21.json\","
+        },
+        {
+          "path": "scripts/prepare_foundation_v11.py",
+          "line": 41,
+          "excerpt": "\"evaluation/human-comparison-campus-v21.json\","
+        },
+        {
+          "path": "scripts/prepare_standard_short_phase.py",
+          "line": 43,
+          "excerpt": "ROOT / \"evaluation/human-comparison-campus-v21.json\","
+        },
+        {
+          "path": "evaluation/build_campus_v21_human_rc.py",
+          "line": 189,
+          "excerpt": "old_path = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "evaluation/evaluate_campus_ai_quality.py",
+          "line": 16,
+          "excerpt": "HUMAN_100 = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "evaluation/evaluate_campus_v21.py",
+          "line": 169,
+          "excerpt": "path = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "evaluation/evaluate_campus_v21_rc_human.py",
+          "line": 12,
+          "excerpt": "HUMAN = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "evaluation/evaluate_campus_v21_rc_routes.py",
+          "line": 20,
+          "excerpt": "HUMAN = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "evaluation/evaluate_campus_v22_generalization.py",
+          "line": 259,
+          "excerpt": "source_100 = read_json(ROOT / \"evaluation/human-comparison-campus-v21.json\")"
+        },
+        {
+          "path": "evaluation/evaluate_campus_v23.py",
+          "line": 29,
+          "excerpt": "OLD_100_SOURCE = ROOT / \"evaluation/human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "tests/test_campus_v21.py",
+          "line": 171,
+          "excerpt": "source = tmp_path / \"human-comparison-campus-v21.json\""
+        },
+        {
+          "path": "tests/test_campus_v21_quick_eval.py",
+          "line": 42,
+          "excerpt": "source = {item[\"id\"]: item for item in read(\"evaluation/human-comparison-campus-v21.json\")}"
+        },
+        {
+          "path": "tests/test_campus_v21_rc.py",
+          "line": 32,
+          "excerpt": "rows = read(\"evaluation/human-comparison-campus-v21.json\")"
+        }
+      ]
+    },
+    {
+      "name": "human-eval-v03.json",
+      "path": "evaluation/human-eval-v03.json",
+      "sha256": "9af8056e35dc020f595b0a8d62345c9d6ffc6778b9320bed6cd450bb14aec3ad",
+      "documents_or_items": 50,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": [
+        {
+          "path": "scripts/check_dataset_v03.py",
+          "line": 44,
+          "excerpt": "human = json.loads(Path(\"evaluation/human-eval-v03.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "scripts/prepare_dataset_v03.py",
+          "line": 234,
+          "excerpt": "Path(\"evaluation/human-eval-v03.json\").write_text(json.dumps(human, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "path": "evaluation/evaluate_v04.py",
+          "line": 58,
+          "excerpt": "base_human = json.loads(Path(\"evaluation/human-eval-v03.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "tests/test_v03.py",
+          "line": 44,
+          "excerpt": "rows = json.loads(Path(\"evaluation/human-eval-v03.json\").read_text(encoding=\"utf-8\"))"
+        },
+        {
+          "path": "tests/test_v04.py",
+          "line": 68,
+          "excerpt": "items = json.loads(Path(\"evaluation/human-eval-v03.json\").read_text(encoding=\"utf-8\"))"
+        }
+      ]
+    },
+    {
+      "name": "human-spot-check-v06-best.json",
+      "path": "evaluation/human-spot-check-v06-best.json",
+      "sha256": "5a4b09c35fafb8ee624067e0853d633e5cc7fb1957ee37f82f21fc610c1ccb4a",
+      "documents_or_items": 10,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "827150f feat: implement v0.6 staged quality evaluation",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "human-spot-check-v07.json",
+      "path": "evaluation/human-spot-check-v07.json",
+      "sha256": "6e1911d01db21e0c8bfea2e5a90da5c082368bbbd6802f5b119d0190628e0543",
+      "documents_or_items": 10,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED; see first tracked commit and references",
+      "first_tracked_commit": "488754b feat: implement v0.7 grounded retrieval pipeline",
+      "purposes_used": [
+        "historical references found; exact execution/selection influence not independently established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Lack of recorded use is not proof of a clean, sealed set; no first-use custody/access record",
+      "references": []
+    },
+    {
+      "name": "chatgpt-gemini-manual.json",
+      "path": "data/v08/benchmarks/chatgpt-gemini-manual.json",
+      "sha256": "d92ea7cd9bcee75e24a0b7050033e611db353fa12f3a7bb32433ad54f9fb2bab",
+      "documents_or_items": 100,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "evaluation.json",
+      "path": "data/v08/blind/evaluation.json",
+      "sha256": "abcb8dc79cee24b97df88d6e99355d9dd1dca7e8ce41f6e56614589c1eeffdf4",
+      "documents_or_items": 528,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "3068b22 feat: add UniPilot Standard v0.8 experiment",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "base-japanese-100.json",
+      "path": "data/foundation_v10/evaluation/base-japanese-100.json",
+      "sha256": "1ef2e2a5c2c5a907cba7850a375530b15c01eda5dff165f6be3dd172b03688f8",
+      "documents_or_items": 100,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "94a29f8 feat: build UniPilot Foundation v1.0 base phase",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "comparison-50.json",
+      "path": "data/campus_v23/holdouts/comparison-50.json",
+      "sha256": "5fc7d6b6e4ded246403c6fdf626c9d4bb407e54a475d3985adac7b1a407f7fdc",
+      "documents_or_items": 50,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "7e23823 feat: add Campus v2.3 precision retrieval",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "stress-200.json",
+      "path": "data/campus_v23/holdouts/stress-200.json",
+      "sha256": "e952f5b4d2c7406a1bbd79bd3b4f9e3e9bf7f397d53b384b67abffe250b45489",
+      "documents_or_items": 200,
+      "count_basis": "items array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "7e23823 feat: add Campus v2.3 precision retrieval",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "hallucination-500.jsonl",
+      "path": "data/campus_v22/benchmarks/hallucination-500.jsonl",
+      "sha256": "459416a8599a2de9fd7f25e0f92a1bff74bd6ec7e327b01e85ddf8a54e21e12f",
+      "documents_or_items": 500,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "4dbf638 feat: add Campus v2.2 knowledge RAG",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "knowledge-1000.jsonl",
+      "path": "data/campus_v22/benchmarks/knowledge-1000.jsonl",
+      "sha256": "2055d15090cfc4e57b3ea95a96387a6a771e788b584fcfe70efbce503900c437",
+      "documents_or_items": 1000,
+      "count_basis": "JSONL nonempty record count; no source prose displayed",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "4dbf638 feat: add Campus v2.2 knowledge RAG",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "manifest.json",
+      "path": "data/campus_v22/benchmarks/manifest.json",
+      "sha256": "43b48cad8fc61ed616734310e661fa3b87aed5fb7a22a221354863a93326cb66",
+      "documents_or_items": null,
+      "count_basis": "metadata/result object, no unambiguous item population; not an independent clean set",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "4dbf638 feat: add Campus v2.2 knowledge RAG",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "evaluation-2000.json",
+      "path": "data/campus_v2/blind/evaluation-2000.json",
+      "sha256": "c599d8a3af026d24ddf075d62070fdbf2d405e0872a0c680e49248788bb7e996",
+      "documents_or_items": 2000,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "0c3bb23 feat: add UniPilot Campus v2 router",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    },
+    {
+      "name": "evaluation.json",
+      "path": "data/campus_v1/blind/evaluation.json",
+      "sha256": "7865458ee420d65c6ff984783ca04351f38733c79b917aa29a8242a89ccc0f44",
+      "documents_or_items": 1000,
+      "count_basis": "top-level array count",
+      "first_phase_used": "NOT_ESTABLISHED",
+      "first_tracked_commit": "33bb517 feat: add UniPilot Campus v1 orchestration",
+      "purposes_used": [
+        "Repository heldout/benchmark family; first-use custody not established"
+      ],
+      "selection_influence": "UNKNOWN",
+      "confirmatory_eligible": "NO",
+      "reason": "Folder-based inventory extension; no evidence of fresh sealed custody",
+      "references": []
+    }
+  ],
+  "history_searches": {
+    "documents/test.jsonl.gz": [
+      "defa0da feat: rebuild Foundation v1.1 clean corpus",
+      "94a29f8 feat: build UniPilot Foundation v1.0 base phase"
+    ],
+    "base-completion-50.json": [
+      "a28de27 feat: investigate Foundation v1.4 language emergence",
+      "defa0da feat: rebuild Foundation v1.1 clean corpus"
+    ],
+    "validation.bin": [
+      "a194faa research: diagnose eos core and sampling gates",
+      "8da4b42 research: complete phase 50",
+      "6be1eac research: recalibrate rare core-tail gate and compare 512k learning rates",
+      "130f1db PHASE 48: audit rare exposure and confirm cumulative LR stability",
+      "a9f45b9 research: audit frequency regression and fixed LR stability (phase 47)",
+      "8998b4b research: complete phase 46 thermal-aware short gate",
+      "875b065 research: complete phase 45 lm gate review",
+      "cf138de research: complete phase 44 context gate recovery",
+      "7993064 research: complete phase 43 base maturity gate",
+      "cddbbc7 Complete PHASE 42 greedy attractor research",
+      "567598e Run PHASE 41 EOS correction experiment",
+      "b474b0e Complete PHASE 40 generation lag diagnostics",
+      "2abf838 research: select foundation architecture at 256k",
+      "a2c023f feat: audit Foundation v1.8 reference transformer",
+      "b058130 feat: audit Foundation v1.5 architecture capacity",
+      "a28de27 feat: investigate Foundation v1.4 language emergence"
+    ],
+    "fixed_prompts": [
+      "488754b feat: implement v0.7 grounded retrieval pipeline",
+      "827150f feat: implement v0.6 staged quality evaluation",
+      "196b00b feat: optimize local inference and evaluate v0.5",
+      "99aabed feat: add generation termination metrics",
+      "a9c5a7b feat: add EOS weighted training",
+      "063a108 feat: add v0.3 model comparison dashboard",
+      "b8b60b1 feat: add curriculum training pipeline",
+      "f9228fc feat: add v0.3 semantic evaluation",
+      "acc5956 feat: improve UniPilot v0.3 conversation dataset",
+      "0d12972 feat: add fixed evaluation suite",
+      "62f3077 feat: expand UniPilot training dataset"
+    ]
+  },
+  "audit_scope": "All candidate-named datasets under data, fixed/human prompt banks under evaluation; current code/reports plus all local Git refs. Dataset contents not opened; hashes and metadata only. Off-repository access history cannot be proved. Supplement: folder-based evaluation/holdouts/benchmarks/blind inventory; non-protected dataset structures counted locally, no prose displayed. FinalBlind remained hash-only.",
+  "clean_set_found": false,
+  "unknown_policy": "UNKNOWN selection influence is explicitly unresolved, never silently NO or eligible. Item counts not in manifests remain null rather than invented.",
+  "known_foundation_test_ineligible": true,
+  "known_validation_ineligible": true,
+  "final_blind_content_opened": false
+}

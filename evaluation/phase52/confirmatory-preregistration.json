@@ -1,0 +1,18 @@
+{
+  "phase": 52,
+  "status": "NOT_REGISTERED_NO_PROVEN_CLEAN_SET",
+  "availability": "PROVENANCE_UNCERTAIN",
+  "reason": "Foundation validation and test-derived completion prompts already used; other candidate banks lack verifiable fresh custody. FinalBlind prohibited. No post-hoc gate/population created.",
+  "confirmatory_evaluation_started": false,
+  "checkpoint_set_if_future_authorized": [
+    "C/B 16.384M seeds42/123/2026"
+  ],
+  "future_holdout_design": {
+    "collection": "Independent licensed/consented Japanese documents and student-authored prompts not in existing corpora/banks; no collection performed now",
+    "custody": "Independent custodian seals IDs/content hashes/access log before model outputs; deduplicate source IDs and text against all train/eval corpora",
+    "sampling": "Stratified source/topic/document-length design fixed before labels or model scores; sample size determined prospectively by power/precision simulation, not observed candidate advantage",
+    "human": "Randomized anonymized C/B outputs, multiple independent raters, written naturalness/relevance/completion rubric; disclose disagreement and adjudication",
+    "analysis": "Preregister paired document/prompt metrics, multiplicity policy, noninferiority safety margins, bootstrap RNG, fixed decoder and missing-data handling before first model access",
+    "promotion": "One-shot held-out confirmatory readout; failed/uncertain results remain failures; no canonical permission from confirmation alone"
+  }
+}
