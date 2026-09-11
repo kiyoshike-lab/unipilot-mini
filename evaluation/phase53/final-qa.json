@@ -1,7 +1,7 @@
 {
   "phase": 53,
   "date_jst": "2026-09-11",
-  "phase_status": "PARTIAL: Track C execution pending explicit inference clarification",
+  "phase_status": "PARTIAL: Track C complete; Fresh Holdout remains too small and Formal LR unresolved",
   "local_implemented_scope_qa": "PASS",
   "starting_head_and_origin": "aacbc4c276066472d4e1bcb976b35fcac63fde2d",
   "branch": "foundation-research",
@@ -25,9 +25,11 @@
   "confirmatory_gate": "CONFIRMATORY_DATA_INVALID",
   "lr_status": "FORMAL_LR_UNRESOLVED",
   "generation_preregistration_sha256": "927918616584d738a2f86dc54d6445497de8d013dabee012be7120f3f76d6c2d",
-  "generation_study_execution": "NOT_RUN; pending clarification",
-  "attractor_gate": "ATTRACTOR_CAUSE_STILL_UNKNOWN",
-  "new_gpu_inference": false,
+  "generation_study_execution": "DONE: 20 existing-prompt CUDA FP32 runs (C/B seed42 x 5 registered decoders x 2 fixed RNG bases); no fresh data",
+  "generation_results_sha256": "58bee116e157eb6c4a347f7f2d0faff3db13c80d76ca53d880dbe18c02215af9",
+  "generation_best_safe_setting": "NONE",
+  "attractor_gate": "GENERATION_POLICY_UNSAFE",
+  "new_gpu_inference": true,
   "new_training": false,
   "canonical_training": false,
   "20m_permission": false,
@@ -36,7 +38,7 @@
   "feature9": "Beta; local-only generic Planner",
   "feature10": "Beta; Template draft only, no active model integration",
   "todays_unipilot": "Foundation; saved user records only",
-  "pytest": {"passed": 505, "failed": 0, "warnings": 5},
+  "pytest": {"passed": 508, "failed": 0, "warnings": 5},
   "web_framing_contract_pytest": {"passed": 1, "failed": 0},
   "web_unit": {"passed": 45, "failed": 0},
   "npm_lint": "PASS",
@@ -54,5 +56,5 @@
   "downloaded_corpus": "Z:\\AI\\unipilot-mini\\data\\phase53-fresh; not staged",
   "checkpoint_binaries_and_raw_diagnostics": "NOT_STAGED",
   "main_and_production_actions": "No main merge/push or Render/Vercel Production deployment/configuration change",
-  "push_policy": "PHASE53 explicitly permits foundation-research push after local QA PASS; Live NOT_TESTED alone does not block. Track C remains unfinished even if commits are pushed."
+  "push_policy": "PHASE53 explicitly permits foundation-research push after local QA PASS; Live NOT_TESTED alone does not block. Track C is complete, but its gate is GENERATION_POLICY_UNSAFE."
 }

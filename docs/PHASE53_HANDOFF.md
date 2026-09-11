@@ -1,6 +1,6 @@
 # PHASE53 — 実施済み成果と停止地点
 
-2026-09-11 JST。Fresh pool構築・admissibility判断・Stage5 Web実装・ローカルQAは完了。**PHASE53全体はPARTIAL：Track Cの新規inferenceは確認待ちで未実施**。Confirmatory評価も文書数不足で未実施。新学習は一切開始していません。
+2026-09-11 JST。Fresh pool構築・admissibility判断・Stage5 Web実装・ローカルQA、および承認済みTrack C generation policy studyは完了。**PHASE53全体はPARTIAL**：Fresh holdoutは文書数不足、Confirmatory評価は未実施で、Formal LRは未解決です。新学習は一切開始していません。
 
 ## ML結果
 
@@ -19,8 +19,8 @@
 | Confirmatory Gate | `CONFIRMATORY_DATA_INVALID`。実測モデルFAILではなく、適格データ不足 |
 | 5e-5 /7.5e-5 metrics、EOS、Sampling | すべてfresh確認はNOT_RUN。過去5e-5比較優位は独立confirmatory証拠ではない |
 | LR status | `FORMAL_LR_UNRESOLVED` |
-| Generation policy / best safe setting | 固定gridのみ準備、未実施。bestなし。旧greedy runaway100%、after未測定 |
-| Attractor Gate | `ATTRACTOR_CAUSE_STILL_UNKNOWN`。MODEL_FIXED / staging安全性を主張しない |
+| Generation policy / best safe setting | 既存PHASE51固定prompt 24件、C/B seed42、CUDA FP32で固定grid 20 runsを実施。best safe settingは`NONE`。greedy runawayは両arm 100%、非greedy最良でもC 95.83% / B 97.92% |
+| Attractor Gate | `GENERATION_POLICY_UNSAFE`。登録済み品質screenを全settingがFAIL。MODEL_FIXED / staging安全性を主張しない |
 | New training / canonical /20M / Base | すべてNO |
 
 Fresh本文・取得rawは `Z:\AI\unipilot-mini\data\phase53-fresh`、Git外。checkpointとは別の保存先。COPY/MOVE/DELETE/OVERWRITE禁止対象のcheckpoint操作はすべて0。既存の正式成果物・PHASE42 READY・Final Blindを変更しない。
@@ -41,6 +41,6 @@ Demo PASS、Live Preview **NOT_TESTED**。Stage5の認証済みセッション�
 
 開始HEAD/originは `aacbc4c276066472d4e1bcb976b35fcac63fde2d`、branch `foundation-research`。指定のresearch /planner /emailの3commitに分離。実SHA/push結果は最終応答またはGit履歴を参照。
 
-PHASE53はローカル全QA PASSならpush可と明記しているため、Live未検証のみを理由にpushを禁止しない。ただしpushしても未実施Track Cが完了したことにはならない。main、Render/Vercel Production、Foundation production promotionは変更しない。保護4・READY5はSHA維持、stage禁止。checkpoint binary・large downloaded corpus・huge rawもstage禁止。既存storage関連dirty/deletionには触れない。
+PHASE53はローカル全QA PASSならpush可と明記しているため、Live未検証のみを理由にpushを禁止しない。Track Cは完了したが、generation policyは安全ではない。main、Render/Vercel Production、Foundation production promotionは変更しない。保護4・READY5はSHA維持、stage禁止。checkpoint binary・large downloaded corpus・huge rawもstage禁止。既存storage関連dirty/deletionには触れない。
 
-停止地点：小規模Track C（既存PHASE51プロンプト24件、C/B seed42、CUDA FP32、greedy/temperature/top-k/top-p/repetitionおよびstop replay）をfresh gate不足と独立に実施してよいか、ユーザー確認待ち。明示承認が得られた場合だけ `study_foundation_v42_generation.py run --approved-existing-prompts` を実行する。現在のprocessでZ rootを設定し、重いQAと重ねない。登録済みgrid/品質条件/SHAを変更して合格させず、終了後に結果summary/reportとfull QAを更新する。Fresh acquisitionや封印Reserveを最初からやり直さない。
+停止地点：Track Cは完了。loop-stop replayはrunawayをC greedyで25.00%、B greedyで33.33%へ下げた一方、triggered outputのEOS率は0%で、正常なmath/list/definition対照も未登録のため誤停止率を推定できない。安全候補のstagingは行わない。以後はFresh Holdout Gateの適格化と、必要なら事前登録済み正常対照を含む独立decoder studyを新規に承認してから扱う。Fresh acquisitionや封印Reserveを最初からやり直さない。
