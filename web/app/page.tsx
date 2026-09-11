@@ -1,2 +1,3 @@
 import { ChatWorkspace } from "../components/ChatWorkspace";
-export default function Home() { return <ChatWorkspace/>; }
+import {TodaysUniPilot} from '../components/PlannerWorkspace';
+export default function Home() { return <><TodaysUniPilot/><ChatWorkspace/></>; }
