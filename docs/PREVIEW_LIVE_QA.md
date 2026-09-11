@@ -1,6 +1,8 @@
-# Authorized Preview QA — PHASE51/52
+# Authorized Preview QA — PHASE51/52/53
 
 No Render or Vercel Production deployment/configuration change is authorized in PHASE51/52. Vercel Preview protection stays enabled. Local Demo, read-only Live readiness and manual authenticated Preview workflow results must be reported separately.
+
+PHASE53 retains these security boundaries and explicitly permits `foundation-research` push after **local full QA PASS**, even if authenticated Live QA is NOT_TESTED. The PHASE52 push hold recorded below is historical: at PHASE53 start, local HEAD and origin both matched `aacbc4c276066472d4e1bcb976b35fcac63fde2d`. It is not the current phase's push rule. No new Stage5 Live deployment/session was verified in PHASE53; never relabel historical PHASE49/52 readiness as Stage5 Live PASS.
 
 ## Bounded CORS preparation (code only)
 
@@ -48,3 +50,7 @@ Record the three outcomes independently: DEMO; LIVE read-only readiness; MANUAL_
 4. On GPA, enter A=4×3 credits and C=2×1 credit: Current3.5; change C to B in What-if:3.75. Test impossible target, retakes, Save/reload, JSON export and Clear. No grade data should leave the browser.
 5. On Degree, verify TEST UNIVERSITY fixture totals; switch to missing-source and version-conflict cases. Neither may claim verified real graduation requirements. Check all nine routes at360/390/768/1024/1440, keyboard focus, errors and mobile navigation scroll.
 6. Record DEMO / LIVE / MANUAL_AUTHENTICATED_PREVIEW separately. PHASE52 local QA is PASS; historical Preview login plus API timeouts leave Live/manual NOT_TESTED. Do not turn that into PASS or disable authentication. The requested all-QA push gate remains pending until authorized Live QA succeeds or the user explicitly narrows that gate to local QA.
+
+## Stage5 additions for the authorized owner
+
+After identifying the actual Stage5 deployment SHA and signing in normally, add a fictional/non-sensitive timetable slot, attendance record and assignment on Planner. Confirm overlap rejection, explicit timezone, overdue/Today, local Save/reload, JSON export/import and Clear. Home must show saved inputs only. On Email, leave the name/date empty and verify placeholders, edit a Template draft, Copy and Clear. There must be no email POST/send or silently invented promise. Retest features1–8 and the five widths. Keep these manual results separate from `web/qa/phase53/` local Demo fixtures. No production settings, CORS wildcard or authentication bypass is authorized.

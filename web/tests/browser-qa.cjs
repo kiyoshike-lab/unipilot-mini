@@ -2,7 +2,7 @@
 const {chromium}=require(process.env.UNIPILOT_PLAYWRIGHT_MODULE || 'playwright');
 const fs=require('node:fs'); const path=require('node:path'); const assert=require('node:assert/strict');
 const base=process.env.UNIPILOT_QA_URL || 'http://127.0.0.1:3049';
-const out=path.resolve(__dirname,'../qa/phase52'); fs.mkdirSync(out,{recursive:true});
+const out=path.resolve(__dirname,process.env.UNIPILOT_QA_OUTPUT||'../qa/phase53'); fs.mkdirSync(out,{recursive:true});
 (async()=>{
  const browser=await chromium.launch({headless:true}); const context=await browser.newContext({viewport:{width:1440,height:1000}});
  const page=await context.newPage(); const errors=[]; page.on('pageerror',e=>errors.push(e.message)); const requests=[];let mode='stream';let healthMode='online';
@@ -30,7 +30,7 @@ const out=path.resolve(__dirname,'../qa/phase52'); fs.mkdirSync(out,{recursive:t
    await route.continue();
  });
  const widths=[360,390,768,1024,1440];const layouts=[];
- for(const width of widths){await page.setViewportSize({width,height:900});for(const route of ['/','/study','/materials','/exam','/report','/research','/sources','/gpa','/degree']){
+ for(const width of widths){await page.setViewportSize({width,height:900});for(const route of ['/','/study','/materials','/exam','/report','/research','/sources','/gpa','/degree','/planner','/email']){
    await page.goto(base+route);await page.locator('h1').waitFor();
    const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
    assert.ok(size.scroll<=size.client,`${route} overflows at ${width}: ${JSON.stringify(size)}`);layouts.push({route,width,overflow:false});
@@ -109,5 +109,5 @@ const out=path.resolve(__dirname,'../qa/phase52'); fs.mkdirSync(out,{recursive:t
  await page.evaluate(()=>{const original=window.fetch;window.fetch=async(...args)=>{if(String(args[0]).endsWith('/chat/stream'))return new Response(new ReadableStream({async start(c){const encoder=new TextEncoder();c.enqueue(encoder.encode('{"text":"Demo: first chunk"}\n'));await new Promise(r=>setTimeout(r,1200));c.enqueue(encoder.encode('{"text":"Demo: final chunk"}'));c.close();}}));return original(...args);};});
  await page.getByLabel('大学生活について聞く',{exact:true}).fill('Demo: gradual');await page.getByRole('button',{name:'送信 ↗',exact:true}).click();await page.getByText('Demo: first chunk',{exact:true}).waitFor();await page.getByText('Demo: final chunk',{exact:true}).waitFor();
  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({layouts,functional:{chat:true,stream:true,visibleIntermediateStream:true,fallback:true,responseMode:true,session:true,toolCards:true,clarify:true,clipboard:true,sourceMetadata:true,studyPrompt:true,hintOnly:true,checkAnswer:true,studySessionPersistence:true,homeNavigation:true,materialsPaste:true,materialsLimits:true,examCountdown:true,examInvalidDate:true,noFakeExam:true,apiMeasuredStates:true,mobileTargets44:true,semanticHeadings:true,routeNavigation:true,offlineRetry:true,reportSave:true,reducedMotion:true,keyboardFocus:true},pageErrors:errors,fixtureOnly:true,DEMO:'PASS',LIVE:'NOT_TESTED',externalApiRequestsSent:false},null,2)+'\n');
- await browser.close();console.log('PASS: 45 route + 10 populated responsive checks; Stage 3 evidence and prior functional browser QA');
+ await browser.close();console.log('PASS: 55 route + 10 populated responsive checks; evidence and prior functional browser QA');
 })().catch(e=>{console.error(e);process.exit(1);});

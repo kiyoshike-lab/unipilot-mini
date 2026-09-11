@@ -1,7 +1,7 @@
 // Local Demo only; no health/chat/model request reaches an external service.
 const {chromium}=require(process.env.UNIPILOT_PLAYWRIGHT_MODULE||'playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-const base=process.env.UNIPILOT_QA_URL||'http://127.0.0.1:3049',out=path.resolve(__dirname,'../qa/phase52');fs.mkdirSync(out,{recursive:true});
+const base=process.env.UNIPILOT_QA_URL||'http://127.0.0.1:3049',out=path.resolve(__dirname,process.env.UNIPILOT_QA_OUTPUT||'../qa/phase53');fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();const errors=[],posts=[],layouts=[];page.on('pageerror',e=>errors.push(e.message));
  await context.route('**/*',async route=>{const req=route.request(),url=new URL(req.url());if(req.method()==='POST')posts.push(url.pathname);if(url.pathname==='/health')return route.fulfill({status:200,headers:{'content-type':'application/json','access-control-allow-origin':'*'},body:'{"status":"ok","loaded":true}'});if(url.origin!==new URL(base).origin)return route.abort();return route.continue();});
  await page.goto(base+'/gpa');await page.getByRole('button',{name:'科目を追加',exact:true}).click();await page.getByLabel('科目名 1',{exact:true}).fill('Demo: 科目A');await page.getByLabel('単位 1',{exact:true}).fill('3');await page.getByRole('button',{name:'科目を追加',exact:true}).click();await page.getByLabel('科目名 2',{exact:true}).fill('Demo: 科目B');await page.getByLabel('単位 2',{exact:true}).fill('1');await page.getByLabel('成績 2',{exact:true}).selectOption('c');assert.equal(await page.getByTestId('current-gpa').innerText(),'3.500');
