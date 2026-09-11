@@ -1,0 +1,1995 @@
+{
+  "plan_sha256": "e1071e8a1cb62445f76e823a8e1a36f5434f9e15d5e31fa4d6484dae664d07e3",
+  "historical_texts": 11916,
+  "input_files": [
+    {
+      "path": "data\\foundation_v11\\documents\\test.jsonl.gz",
+      "sha256": "193552b0fbbb4be29e60eeae70385314049dd54f4b34a65e140c790e0a4703c4"
+    },
+    {
+      "path": "data\\foundation_v11\\documents\\train.jsonl.gz",
+      "sha256": "d7af5c543d95579a1ee47f5c3c8a9d81c969de0f682eea3b3b7d96eb93960a4c"
+    },
+    {
+      "path": "data\\foundation_v11\\documents\\validation.jsonl.gz",
+      "sha256": "40c6ebda5455b31c63b3c382c4e22592175b924316e3e336e3573c4a9dbf1618"
+    },
+    {
+      "path": "data\\campus_v21\\retrieval\\test.json",
+      "sha256": "5c58bbf40281c5c1d0af091749b6d6a119b0c786b42a97a781bca69812681d21"
+    },
+    {
+      "path": "data\\campus_v21\\retrieval\\validation.json",
+      "sha256": "dfbdac95eec0f79c2672f29826f122aedfa851d831e09d7c6727adab5b2dbcd1"
+    },
+    {
+      "path": "data\\campus_v21\\router\\adversarial-validation-300.json",
+      "sha256": "45d7290e9013d2998013cd63be9b34889cc4cafde85b5ab4347d449467c02003"
+    },
+    {
+      "path": "data\\campus_v21\\router\\clarification-validation-1200.json",
+      "sha256": "fe1374cc356420d1113d4c06e645444c79cae5b0810d2f4a777a1b0db9b41580"
+    },
+    {
+      "path": "data\\campus_v22\\generalization\\blind-300.json",
+      "sha256": "0af8e1d96380fc020b809a758ddc62136bb713e14a9bae0095d04ee096112998"
+    },
+    {
+      "path": "data\\campus_v23\\holdouts\\blind-500.json",
+      "sha256": "a7ce49248423abf16e5f720ae8e211831e07c389de13ab5d36a3300b9656afde"
+    },
+    {
+      "path": "data\\foundation_v09\\evaluation\\validation-200.json",
+      "sha256": "0e118e97e56a05c9532a98a1cd4d76c1893ece073a98dd24d944f77bad3e880b"
+    },
+    {
+      "path": "data\\foundation_v11\\evaluation\\base-completion-50.json",
+      "sha256": "93d8ac3a41fcb66498bd2ee262cba688808477e3b99af50a338fc479e8872ba6"
+    },
+    {
+      "path": "data\\standard_50m_short\\blind-200.json",
+      "sha256": "e98714b22dd92e119c673861beb59856851430fd8790fce720a01b31d48cf7f1"
+    },
+    {
+      "path": "evaluation\\fixed_prompts_v02.json",
+      "sha256": "03031d90193e4f68be73e3d101dfd404e030adafaf55c54026f54495311b9bde"
+    },
+    {
+      "path": "evaluation\\fixed_prompts_v03.json",
+      "sha256": "4f5be2589616030b166b6d06cd83f3374a4c5b98cf449f0b23ea48314d36ba30"
+    },
+    {
+      "path": "evaluation\\fixed_prompts_v05.json",
+      "sha256": "fcd472b19ed96141f874d949d346532161b4b56523e82d87cf6859621b73c14a"
+    },
+    {
+      "path": "evaluation\\fixed_prompts_v06.json",
+      "sha256": "5f0b384e99fbde351a92c4d49826bc53cb273785e911f9fa9f7070d35f4e78e2"
+    },
+    {
+      "path": "evaluation\\fixed_prompts_v07.json",
+      "sha256": "3428b66c5f8a21f8a89e69b674bcc5d1df77ad460857274241fab2c17edd3c9a"
+    },
+    {
+      "path": "evaluation\\human-comparison-campus-v1.json",
+      "sha256": "0702990e961bdf30a1cbc028de8919f9bd96bc62435b92b134c9d013c2ee9dcb"
+    },
+    {
+      "path": "evaluation\\human-comparison-campus-v2.json",
+      "sha256": "6f238ef7fc7f64326a30fe2acaf055e11001c615754cd0e13f281f1384128fc4"
+    },
+    {
+      "path": "evaluation\\human-comparison-campus-v21.json",
+      "sha256": "e10a5674004ab7fadf2a19f1269fce95cca45139313f11397776b9d832e6fec7"
+    },
+    {
+      "path": "evaluation\\human-eval-v03.json",
+      "sha256": "9af8056e35dc020f595b0a8d62345c9d6ffc6778b9320bed6cd450bb14aec3ad"
+    },
+    {
+      "path": "evaluation\\human-spot-check-v06-best.json",
+      "sha256": "5a4b09c35fafb8ee624067e0853d633e5cc7fb1957ee37f82f21fc610c1ccb4a"
+    },
+    {
+      "path": "evaluation\\human-spot-check-v07.json",
+      "sha256": "6e1911d01db21e0c8bfea2e5a90da5c082368bbbd6802f5b119d0190628e0543"
+    },
+    {
+      "path": "data\\v08\\benchmarks\\chatgpt-gemini-manual.json",
+      "sha256": "d92ea7cd9bcee75e24a0b7050033e611db353fa12f3a7bb32433ad54f9fb2bab"
+    },
+    {
+      "path": "data\\v08\\blind\\evaluation.json",
+      "sha256": "abcb8dc79cee24b97df88d6e99355d9dd1dca7e8ce41f6e56614589c1eeffdf4"
+    },
+    {
+      "path": "data\\foundation_v10\\evaluation\\base-japanese-100.json",
+      "sha256": "1ef2e2a5c2c5a907cba7850a375530b15c01eda5dff165f6be3dd172b03688f8"
+    },
+    {
+      "path": "data\\campus_v23\\holdouts\\comparison-50.json",
+      "sha256": "5fc7d6b6e4ded246403c6fdf626c9d4bb407e54a475d3985adac7b1a407f7fdc"
+    },
+    {
+      "path": "data\\campus_v23\\holdouts\\stress-200.json",
+      "sha256": "e952f5b4d2c7406a1bbd79bd3b4f9e3e9bf7f397d53b384b67abffe250b45489"
+    },
+    {
+      "path": "data\\campus_v22\\benchmarks\\manifest.json",
+      "sha256": "43b48cad8fc61ed616734310e661fa3b87aed5fb7a22a221354863a93326cb66"
+    },
+    {
+      "path": "data\\campus_v2\\blind\\evaluation-2000.json",
+      "sha256": "c599d8a3af026d24ddf075d62070fdbf2d405e0872a0c680e49248788bb7e996"
+    },
+    {
+      "path": "data\\campus_v1\\blind\\evaluation.json",
+      "sha256": "7865458ee420d65c6ff984783ca04351f38733c79b917aa29a8242a89ccc0f44"
+    }
+  ],
+  "excluded": [
+    {
+      "page_id": 5292358,
+      "revision_id": 110968484,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292359,
+      "revision_id": 110968493,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292360,
+      "revision_id": 110968497,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292361,
+      "revision_id": 110968541,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292363,
+      "revision_id": 110968657,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292364,
+      "revision_id": 110968669,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292365,
+      "revision_id": 110968684,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292366,
+      "revision_id": 110968707,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292367,
+      "revision_id": 110968722,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292370,
+      "revision_id": 110968741,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292371,
+      "revision_id": 110968837,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292372,
+      "revision_id": 110968865,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292373,
+      "revision_id": 110968878,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292374,
+      "revision_id": 110968893,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292375,
+      "revision_id": 110969000,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292376,
+      "revision_id": 110969030,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292377,
+      "revision_id": 110969055,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292380,
+      "revision_id": 110969094,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292381,
+      "revision_id": 110969116,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292384,
+      "revision_id": 110969217,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292388,
+      "revision_id": 110969478,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292389,
+      "revision_id": 110969479,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292401,
+      "revision_id": 110969631,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292325,
+      "revision_id": 110966810,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292327,
+      "revision_id": 110966871,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292328,
+      "revision_id": 110966873,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292329,
+      "revision_id": 110966885,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292332,
+      "revision_id": 110966899,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292334,
+      "revision_id": 110966956,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292335,
+      "revision_id": 110966992,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292336,
+      "revision_id": 110967059,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292338,
+      "revision_id": 110967147,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292339,
+      "revision_id": 110967181,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292340,
+      "revision_id": 110967197,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292341,
+      "revision_id": 110967218,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292342,
+      "revision_id": 110967398,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292344,
+      "revision_id": 110967521,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292346,
+      "revision_id": 110967669,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292348,
+      "revision_id": 110967781,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292349,
+      "revision_id": 110967957,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292350,
+      "revision_id": 110968117,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292353,
+      "revision_id": 110968277,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292354,
+      "revision_id": 110968319,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292355,
+      "revision_id": 110968329,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292275,
+      "revision_id": 110964483,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292277,
+      "revision_id": 110964725,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292278,
+      "revision_id": 110964761,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292281,
+      "revision_id": 110964819,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292282,
+      "revision_id": 110964861,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292283,
+      "revision_id": 110964875,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292287,
+      "revision_id": 110965127,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292289,
+      "revision_id": 110965139,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292291,
+      "revision_id": 110965152,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292298,
+      "revision_id": 110965427,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292299,
+      "revision_id": 110965453,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292302,
+      "revision_id": 110965626,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292303,
+      "revision_id": 110965710,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292307,
+      "revision_id": 110965882,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292309,
+      "revision_id": 110965944,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292310,
+      "revision_id": 110965946,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292311,
+      "revision_id": 110966096,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292312,
+      "revision_id": 110966158,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292314,
+      "revision_id": 110966198,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292317,
+      "revision_id": 110966324,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292321,
+      "revision_id": 110966704,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292322,
+      "revision_id": 110966712,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292243,
+      "revision_id": 110963551,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292247,
+      "revision_id": 110963652,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292248,
+      "revision_id": 110963666,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292249,
+      "revision_id": 110963680,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292252,
+      "revision_id": 110963710,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292258,
+      "revision_id": 110963912,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292259,
+      "revision_id": 110963916,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292260,
+      "revision_id": 110963968,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292262,
+      "revision_id": 110964081,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292263,
+      "revision_id": 110964121,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292265,
+      "revision_id": 110964183,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292266,
+      "revision_id": 110964203,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292270,
+      "revision_id": 110964313,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292272,
+      "revision_id": 110964333,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292274,
+      "revision_id": 110964388,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292206,
+      "revision_id": 110962533,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292207,
+      "revision_id": 110962540,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292209,
+      "revision_id": 110962577,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292215,
+      "revision_id": 110962718,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292216,
+      "revision_id": 110962748,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292220,
+      "revision_id": 110962911,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292222,
+      "revision_id": 110962989,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292229,
+      "revision_id": 110963230,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292230,
+      "revision_id": 110963232,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292235,
+      "revision_id": 110963397,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292165,
+      "revision_id": 110961578,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292166,
+      "revision_id": 110961594,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292167,
+      "revision_id": 110961604,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292168,
+      "revision_id": 110961615,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292169,
+      "revision_id": 110961655,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292171,
+      "revision_id": 110961725,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292173,
+      "revision_id": 110961750,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292176,
+      "revision_id": 110961867,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292177,
+      "revision_id": 110961897,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292181,
+      "revision_id": 110961933,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5292184,
+      "revision_id": 110962010,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292185,
+      "revision_id": 110962078,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292187,
+      "revision_id": 110962089,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292193,
+      "revision_id": 110962218,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292195,
+      "revision_id": 110962260,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292196,
+      "revision_id": 110962279,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292198,
+      "revision_id": 110962318,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292200,
+      "revision_id": 110962343,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292201,
+      "revision_id": 110962380,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292128,
+      "revision_id": 110960186,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292132,
+      "revision_id": 110960331,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292136,
+      "revision_id": 110960460,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5292137,
+      "revision_id": 110960469,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292142,
+      "revision_id": 110960557,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292144,
+      "revision_id": 110960601,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292146,
+      "revision_id": 110960675,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292147,
+      "revision_id": 110960676,
+      "reason": "residual_markup"
+    },
+    {
+      "page_id": 5292149,
+      "revision_id": 110960683,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292154,
+      "revision_id": 110960994,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292156,
+      "revision_id": 110961146,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292157,
+      "revision_id": 110961251,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292158,
+      "revision_id": 110961268,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292160,
+      "revision_id": 110961428,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292164,
+      "revision_id": 110961566,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292099,
+      "revision_id": 110959541,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292100,
+      "revision_id": 110959548,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292101,
+      "revision_id": 110959612,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292102,
+      "revision_id": 110959637,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292103,
+      "revision_id": 110959639,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292104,
+      "revision_id": 110959685,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292106,
+      "revision_id": 110959806,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292108,
+      "revision_id": 110959953,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292109,
+      "revision_id": 110959979,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292110,
+      "revision_id": 110959985,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292111,
+      "revision_id": 110959996,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292112,
+      "revision_id": 110960000,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292113,
+      "revision_id": 110960002,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292114,
+      "revision_id": 110960011,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292116,
+      "revision_id": 110960015,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292117,
+      "revision_id": 110960017,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292118,
+      "revision_id": 110960021,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292119,
+      "revision_id": 110960037,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292120,
+      "revision_id": 110960049,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292121,
+      "revision_id": 110960056,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292122,
+      "revision_id": 110960066,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292123,
+      "revision_id": 110960072,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292124,
+      "revision_id": 110960074,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292125,
+      "revision_id": 110960085,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292126,
+      "revision_id": 110960090,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292052,
+      "revision_id": 110956909,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292059,
+      "revision_id": 110956974,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292061,
+      "revision_id": 110957142,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292063,
+      "revision_id": 110957190,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292065,
+      "revision_id": 110957307,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292067,
+      "revision_id": 110957346,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292068,
+      "revision_id": 110957374,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292069,
+      "revision_id": 110957402,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292074,
+      "revision_id": 110957925,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292081,
+      "revision_id": 110958198,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292082,
+      "revision_id": 110958267,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292083,
+      "revision_id": 110958405,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292084,
+      "revision_id": 110958416,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292086,
+      "revision_id": 110958561,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5292087,
+      "revision_id": 110959039,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292088,
+      "revision_id": 110959192,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292090,
+      "revision_id": 110959288,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292091,
+      "revision_id": 110959300,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292092,
+      "revision_id": 110959355,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292093,
+      "revision_id": 110959362,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292023,
+      "revision_id": 110956387,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292024,
+      "revision_id": 110956449,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292025,
+      "revision_id": 110956497,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292027,
+      "revision_id": 110956545,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292028,
+      "revision_id": 110956605,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292030,
+      "revision_id": 110956642,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292032,
+      "revision_id": 110956657,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292033,
+      "revision_id": 110956722,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292035,
+      "revision_id": 110956726,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292036,
+      "revision_id": 110956731,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292037,
+      "revision_id": 110956738,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292038,
+      "revision_id": 110956742,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292039,
+      "revision_id": 110956745,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292040,
+      "revision_id": 110956750,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292041,
+      "revision_id": 110956762,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292042,
+      "revision_id": 110956766,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292045,
+      "revision_id": 110956816,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292046,
+      "revision_id": 110956838,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292047,
+      "revision_id": 110956849,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292048,
+      "revision_id": 110956883,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292050,
+      "revision_id": 110956907,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292051,
+      "revision_id": 110956908,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292053,
+      "revision_id": 110956910,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291984,
+      "revision_id": 110955166,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291986,
+      "revision_id": 110955248,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291987,
+      "revision_id": 110955260,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291989,
+      "revision_id": 110955312,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291990,
+      "revision_id": 110955348,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291991,
+      "revision_id": 110955367,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291992,
+      "revision_id": 110955389,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291993,
+      "revision_id": 110955426,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291994,
+      "revision_id": 110955432,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291996,
+      "revision_id": 110955494,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291997,
+      "revision_id": 110955507,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291999,
+      "revision_id": 110955608,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292000,
+      "revision_id": 110955618,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292001,
+      "revision_id": 110955620,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292004,
+      "revision_id": 110955752,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292006,
+      "revision_id": 110955799,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292009,
+      "revision_id": 110956025,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292011,
+      "revision_id": 110956066,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292014,
+      "revision_id": 110956097,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5292016,
+      "revision_id": 110956154,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292019,
+      "revision_id": 110956236,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5292021,
+      "revision_id": 110956259,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291937,
+      "revision_id": 110953915,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291942,
+      "revision_id": 110954066,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291945,
+      "revision_id": 110954128,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291946,
+      "revision_id": 110954130,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291947,
+      "revision_id": 110954172,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291950,
+      "revision_id": 110954216,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291951,
+      "revision_id": 110954220,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291952,
+      "revision_id": 110954224,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291953,
+      "revision_id": 110954229,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291960,
+      "revision_id": 110954487,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291961,
+      "revision_id": 110954542,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291962,
+      "revision_id": 110954629,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291965,
+      "revision_id": 110954728,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291968,
+      "revision_id": 110954794,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291973,
+      "revision_id": 110954869,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291983,
+      "revision_id": 110955163,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291896,
+      "revision_id": 110952439,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291902,
+      "revision_id": 110952656,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291903,
+      "revision_id": 110952662,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291904,
+      "revision_id": 110952704,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291905,
+      "revision_id": 110952734,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291906,
+      "revision_id": 110952785,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291912,
+      "revision_id": 110952989,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291914,
+      "revision_id": 110953032,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291915,
+      "revision_id": 110953083,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291921,
+      "revision_id": 110953367,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291922,
+      "revision_id": 110953372,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291923,
+      "revision_id": 110953397,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291924,
+      "revision_id": 110953454,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291926,
+      "revision_id": 110953486,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291927,
+      "revision_id": 110953529,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291928,
+      "revision_id": 110953540,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291929,
+      "revision_id": 110953566,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291931,
+      "revision_id": 110953728,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291932,
+      "revision_id": 110953737,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291933,
+      "revision_id": 110953740,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291853,
+      "revision_id": 110950787,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291865,
+      "revision_id": 110951173,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291866,
+      "revision_id": 110951201,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291867,
+      "revision_id": 110951221,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291868,
+      "revision_id": 110951258,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291869,
+      "revision_id": 110951268,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291873,
+      "revision_id": 110951509,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291874,
+      "revision_id": 110951519,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291875,
+      "revision_id": 110951536,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291876,
+      "revision_id": 110951557,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291879,
+      "revision_id": 110951761,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291882,
+      "revision_id": 110952035,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5291884,
+      "revision_id": 110952071,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291888,
+      "revision_id": 110952171,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291813,
+      "revision_id": 110949111,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291815,
+      "revision_id": 110949145,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291819,
+      "revision_id": 110949365,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291822,
+      "revision_id": 110949658,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291823,
+      "revision_id": 110949753,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291827,
+      "revision_id": 110949976,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291828,
+      "revision_id": 110949987,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291829,
+      "revision_id": 110949999,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291833,
+      "revision_id": 110950216,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291834,
+      "revision_id": 110950245,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291836,
+      "revision_id": 110950306,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291839,
+      "revision_id": 110950361,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291842,
+      "revision_id": 110950462,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291844,
+      "revision_id": 110950482,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291845,
+      "revision_id": 110950601,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291846,
+      "revision_id": 110950634,
+      "reason": "residual_markup"
+    },
+    {
+      "page_id": 5291773,
+      "revision_id": 110947988,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291774,
+      "revision_id": 110948127,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291777,
+      "revision_id": 110948323,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291780,
+      "revision_id": 110948463,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291782,
+      "revision_id": 110948471,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291783,
+      "revision_id": 110948474,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291789,
+      "revision_id": 110948595,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291792,
+      "revision_id": 110948702,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291796,
+      "revision_id": 110948781,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291800,
+      "revision_id": 110948822,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291801,
+      "revision_id": 110948826,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291802,
+      "revision_id": 110948838,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291803,
+      "revision_id": 110948934,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291807,
+      "revision_id": 110948993,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291809,
+      "revision_id": 110949039,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291701,
+      "revision_id": 110946165,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291703,
+      "revision_id": 110946303,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291704,
+      "revision_id": 110946328,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291707,
+      "revision_id": 110946414,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291708,
+      "revision_id": 110946480,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291719,
+      "revision_id": 110946957,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291724,
+      "revision_id": 110947044,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291745,
+      "revision_id": 110947164,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291746,
+      "revision_id": 110947165,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291747,
+      "revision_id": 110947166,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291755,
+      "revision_id": 110947380,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291763,
+      "revision_id": 110947687,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291764,
+      "revision_id": 110947699,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291765,
+      "revision_id": 110947723,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291768,
+      "revision_id": 110947787,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291769,
+      "revision_id": 110947801,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291770,
+      "revision_id": 110947869,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291652,
+      "revision_id": 110944717,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291654,
+      "revision_id": 110944790,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291655,
+      "revision_id": 110944836,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291657,
+      "revision_id": 110944914,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291659,
+      "revision_id": 110945000,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291661,
+      "revision_id": 110945024,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291662,
+      "revision_id": 110945033,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291665,
+      "revision_id": 110945112,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291667,
+      "revision_id": 110945197,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291668,
+      "revision_id": 110945228,
+      "reason": "residual_markup"
+    },
+    {
+      "page_id": 5291672,
+      "revision_id": 110945364,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5291675,
+      "revision_id": 110945493,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291676,
+      "revision_id": 110945505,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291678,
+      "revision_id": 110945556,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291680,
+      "revision_id": 110945567,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291682,
+      "revision_id": 110945591,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291693,
+      "revision_id": 110945814,
+      "reason": "low_japanese_ratio"
+    },
+    {
+      "page_id": 5291700,
+      "revision_id": 110946153,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291613,
+      "revision_id": 110943493,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291615,
+      "revision_id": 110943585,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291618,
+      "revision_id": 110943635,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291619,
+      "revision_id": 110943645,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291620,
+      "revision_id": 110943646,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291623,
+      "revision_id": 110943831,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291624,
+      "revision_id": 110943832,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291625,
+      "revision_id": 110943833,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291627,
+      "revision_id": 110943919,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291628,
+      "revision_id": 110943995,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291630,
+      "revision_id": 110944013,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291631,
+      "revision_id": 110944015,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291636,
+      "revision_id": 110944096,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291641,
+      "revision_id": 110944262,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291642,
+      "revision_id": 110944296,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291644,
+      "revision_id": 110944316,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291645,
+      "revision_id": 110944390,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291646,
+      "revision_id": 110944437,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291647,
+      "revision_id": 110944452,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291648,
+      "revision_id": 110944508,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291649,
+      "revision_id": 110944592,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291651,
+      "revision_id": 110944684,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291559,
+      "revision_id": 110941876,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291562,
+      "revision_id": 110941978,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291566,
+      "revision_id": 110942137,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291575,
+      "revision_id": 110942276,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291576,
+      "revision_id": 110942292,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291578,
+      "revision_id": 110942394,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291587,
+      "revision_id": 110942543,
+      "reason": "residual_markup"
+    },
+    {
+      "page_id": 5291591,
+      "revision_id": 110942661,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291592,
+      "revision_id": 110942666,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291593,
+      "revision_id": 110942696,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291594,
+      "revision_id": 110942721,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291595,
+      "revision_id": 110942727,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291596,
+      "revision_id": 110942765,
+      "reason": "list_or_navigation_heavy"
+    },
+    {
+      "page_id": 5291599,
+      "revision_id": 110942848,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291603,
+      "revision_id": 110942948,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291605,
+      "revision_id": 110943093,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291610,
+      "revision_id": 110943224,
+      "reason": "character_bound"
+    },
+    {
+      "page_id": 5291611,
+      "revision_id": 110943257,
+      "reason": "character_bound"
+    }
+  ],
+  "counts": {
+    "character_bound": 290,
+    "list_or_navigation_heavy": 71,
+    "low_japanese_ratio": 6,
+    "residual_markup": 4
+  },
+  "FinalBlind_content_opened": false,
+  "limitations": "Local known text/source matching is not proof against undetectable paraphrases or off-repository use; only initial post-cutoff revisions admitted."
+}

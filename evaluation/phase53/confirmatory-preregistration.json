@@ -1,0 +1,13 @@
+{
+  "phase": 53,
+  "status": "NOT_REGISTERED_FRESH_HOLDOUT_TOO_SMALL",
+  "reason": "Frozen acquisition admitted 129 independent pages, below the preregistered 250-document minimum; 174885 tokens exceed the token minimum but cannot replace document support.",
+  "checkpoint_evaluation_started": false,
+  "consumed_for_model_selection": false,
+  "future_reserve_scored": false,
+  "checkpoint_set_if_later_authorized": {"arms": ["C", "B"], "learning_rates": [0.00005, 0.000075], "seeds": [42, 123, 2026], "experimental_processed_tokens": 16384000},
+  "decision_thresholds": null,
+  "threshold_policy": "No score-dependent thresholds or fabricated one-shot gate. A new adequate independent pool and fully frozen metrics, decoder/RNG, support and safety margins are required before any confirmation.",
+  "canonical_permission": false,
+  "new_training": false
+}

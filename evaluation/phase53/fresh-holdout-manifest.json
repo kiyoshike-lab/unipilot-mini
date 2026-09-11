@@ -1,0 +1,36 @@
+{
+  "gate": "FRESH_HOLDOUT_TOO_SMALL",
+  "documents": 129,
+  "tokens": 174885,
+  "splits": {
+    "diagnostic": {
+      "path": "Z:\\AI\\unipilot-mini\\data\\phase53-fresh\\diagnostic.json",
+      "sha256": "537d7c4432604c9db516765ac4512f877bb2a6510fb3c9d91d328c3983b22841",
+      "documents": 77,
+      "tokens": 100094,
+      "model_scored": false,
+      "consumed_for_model_selection": false
+    },
+    "confirmatory": {
+      "path": "Z:\\AI\\unipilot-mini\\data\\phase53-fresh\\confirmatory.json",
+      "sha256": "a80f1d33abdca489766c2ea3d9357045537a6e628f75f2e194ceb5ccad823c83",
+      "documents": 25,
+      "tokens": 36960,
+      "model_scored": false,
+      "consumed_for_model_selection": false
+    },
+    "future-reserve": {
+      "path": "Z:\\AI\\unipilot-mini\\data\\phase53-fresh\\future-reserve.json",
+      "sha256": "f333cf828308e48ad0f5e4bd58f6472c7f463cbfeadbfe21e2ec84de5f7778a2",
+      "documents": 27,
+      "tokens": 37831,
+      "model_scored": false,
+      "consumed_for_model_selection": false
+    }
+  },
+  "plan_sha256": "e1071e8a1cb62445f76e823a8e1a36f5434f9e15d5e31fa4d6484dae664d07e3",
+  "reserve_sealed": true,
+  "checkpoint_scoring_started": false,
+  "new_training": false,
+  "errors": []
+}
