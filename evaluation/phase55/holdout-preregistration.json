@@ -1,0 +1,24 @@
+{
+  "phase": 55,
+  "frozen_at": "2026-09-15T12:19:45.524271+00:00",
+  "internal_results_seen": false,
+  "pool_path": "Z:\\AI\\unipilot-mini\\data\\phase54-supplemental\\unqualified-pool.json",
+  "pool_sha256": "42e37b405f452cd9b02b52ddbf0bc4b43a79bdcae3921244639270ef0d0a4f94",
+  "inputs": {
+    "evaluation\\phase54\\acquisition-plan.json": "50c00aafa0758a1f0d3ceb4eb19d336ed5b74388533f110fe3177595c87e2f3c",
+    "evaluation\\phase54\\supplemental-provenance.json": "d0d2d8542aa1023316579160c94a6cbf6d6f174805317201d196473747593e2b",
+    "evaluation\\phase54\\leakage-report.json": "e60f834e2dad73b68fb32557ec3d21c9c664a1c54ccf93610afd1c23abdf59e8",
+    "evaluation\\phase54\\fresh-holdout-manifest.json": "04eee82320b8e27a34ad9c4d21e3f09faa49c415c4280961f84b6421052b4e6d"
+  },
+  "internal_rule": "All unordered pairs: exact SHA, normalized SHA; near if full normalized-character5gram set Jaccard >= 0.8 (no SimHash prefilter). Connected components retain lowest page/revision ID.",
+  "fingerprint": "Before split: SHA256-64 domain phase55-char5|, bottom256 KMV; stored hashes only. Future candidates compare shared hashes in smallest256 union. Estimated Jaccard >=0.75 flags exclusion/review. Sketch estimate is not proof of no paraphrase; low-entropy grams may permit dictionary membership inference, never raw text reconstruction.",
+  "split_seed": "phase55-v2-5501",
+  "split_algorithm": "Within each category sort SHA256(seed|page_id|revision_id); floor(.5*n) diagnostic, floor(.3*n) confirmatory, remainder reserve2. Categories n<6: whole category to diagnostic to avoid artificial small strata. Final lists sort by numeric page/revision ID.",
+  "ready_documents_min": 250,
+  "ready_tokens_min": 200000,
+  "reacquisition": false,
+  "window_change": false,
+  "historical_reuse": "PHASE54 historical exact/normalized/near + PHASE53 identity metadata; verify all source file hashes.",
+  "retired_reserve_near_comparison": "NOT_REQUIRED_UNKNOWN",
+  "new_training": false
+}

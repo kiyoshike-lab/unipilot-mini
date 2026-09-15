@@ -1,0 +1,21 @@
+{
+  "gate": "FRESH_HOLDOUT_V2_READY",
+  "preregistration_sha256": "b188e4c91f56c759738b8e0d8fb169ff7875ee4de633f974a4c1b2ebeb86944f",
+  "historical_checks": "PASS_REUSED_INPUT_SHA_VERIFIED",
+  "historical_texts": 11916,
+  "historical_rule": "existing 32-bit 5-character SimHash Hamming<=3 AND normalized character5-gram Jaccard>=0.8; deterministic candidate retrieval, no random sampling",
+  "internal_pairs_checked": 174345,
+  "duplicate_pairs": [],
+  "counts": {
+    "exact": 0,
+    "normalized": 0,
+    "near": 0
+  },
+  "excluded_documents": 0,
+  "provenance_complete": true,
+  "license_complete": true,
+  "retired_reserve_relation": "UNKNOWN; no present/future independence claim",
+  "FinalBlind_opened": false,
+  "phase53_reserve_opened": false,
+  "limitation": "Checks cover local known sources and stated lexical rules, not arbitrary paraphrases/off-repository contamination."
+}

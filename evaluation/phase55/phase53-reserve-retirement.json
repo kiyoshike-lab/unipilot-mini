@@ -1,0 +1,24 @@
+{
+  "phase": 55,
+  "status": "RETIRED_UNSCORABLE",
+  "documents": 27,
+  "path": "Z:\\AI\\unipilot-mini\\data\\phase53-fresh\\future-reserve.json",
+  "sha256": "f333cf828308e48ad0f5e4bd58f6472c7f463cbfeadbfe21e2ec84de5f7778a2",
+  "retired_at": "2026-09-15T12:19:45.523417+00:00",
+  "reason": "No presealed near-duplicate fingerprints; independence cannot be established without violating seal.",
+  "permanent_prohibited_uses": [
+    "validation",
+    "test",
+    "confirmatory",
+    "future blind",
+    "model selection",
+    "threshold setting",
+    "hyperparameter setting",
+    "quality evaluation"
+  ],
+  "body_opened": false,
+  "body_scored": false,
+  "prompt_generation": false,
+  "fingerprint_reconstruction": false,
+  "supplemental_near_relation": "UNKNOWN; excluded from eligibility requirement by PHASE55 user authorization; never claim independence between these sets"
+}
