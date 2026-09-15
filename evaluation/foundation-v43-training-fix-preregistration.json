@@ -1,0 +1,49 @@
+{
+  "phase": 54,
+  "gate": "MORE_ROOT_CAUSE_WORK_REQUIRED",
+  "status": "DESIGN_ONLY_NOT_EXECUTABLE",
+  "formal_lr": "FORMAL_LR_UNRESOLVED",
+  "approved_lr": null,
+  "phase55_arms": [],
+  "maximum_future_intervention_arms": 2,
+  "future_budget_proposal": {"initial_tokens": 65536, "maximum_tokens": 262144, "extension_requires_interim_gate": true},
+  "architecture_change": false,
+  "eos_weight": 1.5,
+  "repetition_auxiliary": "OFF; exact PHASE42 teacher-forced repeated3/4-gram method excluded",
+  "generation_policy_previous": "GENERATION_POLICY_UNSAFE",
+  "success_targets": {
+    "per_seed_greedy_runaway_max": 0.25,
+    "per_seed_sampling_runaway_max": 0.10,
+    "greedy_absolute_reduction_min": 0.50,
+    "forced_stop_credit": false,
+    "normal_control_correctness_min": 0.95,
+    "new_severe_normal_control_errors_max": 0,
+    "lm_ce_delta_max": 0.03,
+    "top1_top5_top10_absolute_drop_max": 0.01,
+    "supported_core_tail_ce_delta_max": 0.03,
+    "terminal_eos_relative_drop_max": 0.10,
+    "premature_eos_absolute_increase_max": 0.01,
+    "short_full_context_ce_delta_max": 0.03,
+    "naturalness_semantic_proxy_absolute_drop_max": 0.05,
+    "human_quality_review_required": true,
+    "uncertainty": "Paired doc/prompt95% bootstrap intervals must support superiority/noninferiority; all3 seeds reported; inadequate support is inconclusive"
+  },
+  "required_metrics": ["CE", "perplexity", "Top1/5/10", "Core", "Supported Tail", "EOS", "Context128/512", "Naturalness proxy", "Semantic proxy", "Greedy runaway", "Sampling runaway", "loop onset", "normal repetition controls"],
+  "normal_controls": {
+    "status": "TEMPLATES_FIXED_NO_MODEL_SCORING; concrete tokenizer prefixes and independent boundary-label review required before any experiment",
+    "values": [2, 3, 4, 5],
+    "families": [
+      {"id": "math", "template": "n回の加算を省略せず書く: 1をn回足す式と合計。nはvaluesの値。", "allowed": "Exactly n occurrences of1, n-1 plus signs, then sum n", "pathological": "Continues repeating beyond the requested finite expression"},
+      {"id": "lists", "template": "番号1からnまでの箇条書きで、各行に確認済みと書く。", "allowed": "n numbered rows, repeated確認済み is required", "pathological": "Extra rows or repeated row number after n"},
+      {"id": "definitions", "template": "n行で用語を定義する。各行を定義:で始め、順に変数、関数、集合、写像、命題からn個使う。", "allowed": "n definition labels with distinct requested terms", "pathological": "Identical full definition cycling or excess rows"},
+      {"id": "code", "template": "Pythonでprint(1)からprint(n)まで1行ずつ書く。", "allowed": "n print calls; print repetition is necessary", "pathological": "Repeated identical call or extra calls after n"},
+      {"id": "terminology", "template": "各文に標本平均を一度含め、異なる説明をn文書く。", "allowed": "n repeated term occurrences, different explanations", "pathological": "Same full sentence cycling or extra sentences"}
+    ],
+    "total_templates": 20,
+    "independent_human_boundary_review": "PENDING"
+  },
+  "new_training": false,
+  "canonical": false,
+  "20m": false,
+  "foundation_base": false
+}
