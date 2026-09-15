@@ -1,6 +1,7 @@
 "use client";
 import {useEffect,useState} from 'react';
 import Link from 'next/link';
+import {NextStudy} from './StudyPlanWorkspace';
 import {PLANNER_KEY,emptyPlanner,restorePlanner,validatePlanner,exportPlanner,deleteClass,attendanceSummary,todayView,civilAt} from '../lib/planner';
 import type {Planner,ClassSlot,Assignment,Attendance} from '../lib/planner';
 const days=['日','月','火','水','木','金','土'];
@@ -17,7 +18,7 @@ function Today({data,now}:{data:Planner;now:number}){
     <section><h3>今日の課題</h3>{view.today.length?<ul>{view.today.map(a=><li key={a.id}>{a.title}</li>)}</ul>:<p>登録された今日の課題はありません。</p>}<h3>期限が近い課題・期限超過</h3>{view.tasks.length?<ul>{view.tasks.map(a=><li key={a.id}>{a.title} — {a.overdue?'期限超過':`残り${Math.ceil(a.remainingMs/3600000)}時間`} ({a.due.replace('T',' ')} {a.timezone})</li>)}</ul>:<p>登録された72時間以内の未完了課題はありません。</p>}</section>
     <section><h3>出席状況注意</h3>{view.warnings.length?<ul>{view.warnings.map(c=><li key={c.id}>{c.name}：あなたの欠席注意閾値に到達</li>)}</ul>:<p>設定した注意条件に該当する授業はありません。</p>}<h3>今やるなら</h3><p>{view.recommendation||'入力済みデータに候補はありません。'}</p><p className="muted">固定rule：期限超過→24h以内→72h以内→次の授業。期限順、同時刻はpriority順。大学の単位認定ルールではありません。</p></section></div>;
 }
-export function TodaysUniPilot(){const {data,ready,notice}=useRecords(),now=useClock();return <aside className="today-home writing-workspace" aria-label="Today's UniPilot"><p className="eyebrow">TODAY’S UNIPILOT / FOUNDATION</p><h2>入力した予定から、今日を整理。</h2><Link className="secondary-button" href="/planner">Plannerを開く ↗</Link>{notice&&<p role="status">{notice}</p>}{ready&&now!==null?<Today data={data} now={now}/>:<p>ローカルの予定を確認中…</p>}</aside>;}
+export function TodaysUniPilot(){const {data,ready,notice}=useRecords(),now=useClock();return <aside className="today-home writing-workspace" aria-label="Today's UniPilot"><p className="eyebrow">TODAY’S UNIPILOT / FOUNDATION</p><h2>入力した予定から、今日を整理。</h2><Link className="secondary-button" href="/planner">Plannerを開く ↗</Link>{notice&&<p role="status">{notice}</p>}{ready&&now!==null?<Today data={data} now={now}/>:<p>ローカルの予定を確認中…</p>}<NextStudy/></aside>;}
 const blankClass=():ClassSlot=>({id:'',name:'',day:1,start:'',end:'',location:'',instructor:''});
 const blankTask=(timezone:string):Assignment=>({id:'',title:'',courseId:'',due:'',timezone,status:'not-started',priority:'normal',note:''});
 export function PlannerWorkspace(){
