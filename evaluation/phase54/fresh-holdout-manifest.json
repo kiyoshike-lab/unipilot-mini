@@ -1,0 +1,29 @@
+{
+  "gate": "LEAKAGE_RISK_TOO_HIGH",
+  "documents": 591,
+  "tokens": 1078706,
+  "category_distribution": {
+    "general_encyclopedia": 406,
+    "history": 74,
+    "mathematics": 3,
+    "education": 27,
+    "society_economics": 38,
+    "computing": 12,
+    "science": 25,
+    "procedure": 1,
+    "language_writing": 5
+  },
+  "splits": {},
+  "new_diagnostic_size": 0,
+  "new_confirmatory_size": 0,
+  "future_reserve2_size": 0,
+  "future_reserve2_scored": false,
+  "phase53_reserve": "UNTOUCHED",
+  "checkpoint_scoring_started": false,
+  "new_training": false,
+  "limitations": [
+    "PHASE53 sealed Reserve lacks precomputed SimHash/Jaccard features; mandated near-duplicate comparison cannot PASS from SHA/page metadata alone.",
+    "No PHASE53 content was reopened. PHASE53 near-duplicate check remains NOT_VERIFIED across all129 documents.",
+    "Historical source matching inherits PHASE53 provenance coverage; exact matching cannot detect arbitrary paraphrases."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "phase": 54,
+  "frozen_at": "2026-09-11T13:16:47.160402+00:00",
+  "checkpoint_outputs_seen": false,
+  "source": "https://ja.wikipedia.org/w/api.php",
+  "corpus_cutoff": {
+    "retrieval_upper_bound": "2026-08-27T13:21:24.057451+00:00",
+    "dump_date": "UNKNOWN: reports reference latest, not an immutable dated dump",
+    "revision_min": "2005-09-03T00:58:37Z",
+    "revision_max": "2026-08-24T10:02:56Z",
+    "sources": [
+      {
+        "path": "evaluation\\foundation-v11-wikipedia-dump.json",
+        "sha256": "1a6809dfd4419faeb2c76348aee8d966307b30eeab9b83fb8031fb698f8d4b02",
+        "dump_url": "https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles1.xml-p1p114794.bz2",
+        "dump_sha256": "775f8071f8e82bf43f38f31cdf8914ffad0e6d8b0c164b63a7bd05644bf6b79b",
+        "retrieved_at": "2026-08-27T13:17:35.792146+00:00",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "path": "evaluation\\foundation-v11-wikibooks-dump.json",
+        "sha256": "806e9acced066a8a7c913540d9aa99d2f9064be854968dcbb54ff7879fe94d0f",
+        "dump_url": "https://dumps.wikimedia.org/jawikibooks/latest/jawikibooks-latest-pages-articles.xml.bz2",
+        "dump_sha256": "c86adca6b217fdab1e616a3795b22fd4ecbd11be71950e189e35747ab3cf7f35",
+        "retrieved_at": "2026-08-27T13:21:24.057451+00:00",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "candidate_window": {
+    "after": "2026-08-28T00:00:00Z",
+    "before": "2026-09-11T13:16:47.160424+00:00",
+    "maximum": 3000,
+    "type": "namespace 0 recentchanges new pages; exact initial revision, newest first; fixed before retrieval"
+  },
+  "quality": "Existing strict_quality_reason and cleaner; 600..12000 cleaned characters; no output-dependent selection",
+  "leakage": {
+    "normalization": "NFKC whitespace removal casefold",
+    "exact_sha256": true,
+    "source_identity": "exclude any known source page, revision or canonical URL",
+    "near_duplicate": "existing 32-bit 5-character SimHash Hamming<=3 AND normalized character5-gram Jaccard>=0.8; deterministic candidate retrieval, no random sampling",
+    "historical": "all Foundation v11 train/validation/test documents and text fields from PHASE52 provenance candidate banks; Final Blind excluded"
+  },
+  "split": "Only if all leakage checks PASS: SHA256(phase54-v1|page_id), 60/20/20; confirmatory >=50 documents and >=40000 tokens",
+  "ready_rule": {
+    "documents": 250,
+    "tokenizer_tokens": 200000
+  },
+  "reserve": "metadata/hash only in Git; no model scoring or inference",
+  "storage": "Z:\\AI\\unipilot-mini\\data\\phase54-supplemental",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_policy": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+  "no_external_ai": true,
+  "new_training": false,
+  "phase53_reserve_policy": "Hash/metadata only. No text, raw reconstruction or content-derived new fingerprints. Missing precomputed near-duplicate features blocks READY.",
+  "phase53_metadata_sha256": "945fda13269b2d156bffaa197092dccb81877c858c9863dcefd5e8c75e6a80ff",
+  "old_phase53_splits_unchanged": true
+}

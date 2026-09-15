@@ -1,0 +1,53 @@
+{
+  "phase": 54,
+  "status": "NOT_REGISTERED_SUPPLEMENTAL_GATE_BLOCKED",
+  "gate": "LEAKAGE_RISK_TOO_HIGH",
+  "checkpoint_identities": [
+    {
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8"
+    },
+    {
+      "arm": "C",
+      "seed": 123,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20"
+    },
+    {
+      "arm": "C",
+      "seed": 2026,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069"
+    },
+    {
+      "arm": "B",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "9460514688ad03f849ee4ed31ce0f11eca8c09a10fde296c45ee8394fa4e0036"
+    },
+    {
+      "arm": "B",
+      "seed": 123,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "6f07f622ab8b8aa0ab7c9d1a4f4db6069d89812bfdaeb29aae499e53946e5476"
+    },
+    {
+      "arm": "B",
+      "seed": 2026,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase49\\arm-B\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "eb173ffc92161f03fd8f17e6d9da517aaf49e0f81b2642733955335dd028aee0"
+    }
+  ],
+  "documents": [],
+  "categories": [],
+  "metrics": [],
+  "decoder_settings": null,
+  "rng": null,
+  "bootstrap": null,
+  "decision_criteria": null,
+  "reason": "No qualified confirmatory set exists. Do not invent an executable preregistration or score any checkpoint. A complete one-shot registration is required after the data gate passes.",
+  "scoring_started": false,
+  "new_training": false
+}
