@@ -1,0 +1,9 @@
+# Learning Memory — Feature11 Local Beta
+
+`/memory` stores only user-entered or user-confirmed learning records in `unipilot-learning-memory-v1` localStorage. Fields: subject, topic, student confidence1–5, last studied, mistakes, confirmed weak points, mastered items, student note, source type and source reference. Confidence is always labelled student self-assessment, never model confidence. Non-user source types require an explicit result/session reference; this is user-supplied provenance, not independent verification.
+
+Typing/editing does not write storage. Only **Save to learning memory** adds or updates an item. Editing weakness text invalidates its confirmation checkbox. Add/edit/delete, Clear all and JSON export work locally, with schema/size/date/confidence validation. Delete clears an active edit of that record; Clear all also clears the input draft. No automatic age-based deletion or silent weakness classification exists. Maximum200 records, bounded text fields; storage errors are visible rather than reported as success.
+
+Records are local to this browser/profile, not encrypted storage or an account backup. Shared-browser users can access them. There is no server synchronization or external model request. Export includes the saved records only. Plan imports are explicit copies: deleting Memory does not remove a previously saved Plan copy. Both screens explain this and provide deletion controls. Automatic Tutor/Exam capture is not implemented; their existing workflows are unchanged, and source references can be entered manually.
+
+Validation: `web/tests/memory.test.mjs` and `web/tests/memory-plan-qa.cjs` cover consent, no silent save, add/edit/delete/clear/export, provenance, confidence and weakness confirmation. Local browser fixture tests are not authenticated Live student validation. Feature11 is Beta, not Validated or Complete.
