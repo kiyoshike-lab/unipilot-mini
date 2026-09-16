@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {emptyOffice,officeErrors,prepareOffice,OFFICE_MODES} from '../lib/officeHours.ts';
+const valid=()=>({...emptyOffice(),course:'数学',question:'積分の前提は？'});
+test('missing course/question have associated error keys',()=>{assert.ok(officeErrors(emptyOffice()).course);assert.ok(officeErrors(emptyOffice()).question);assert.throws(()=>prepareOffice(emptyOffice()));});
+test('no material means no grounded claim, evidence escalation',()=>{const r=prepareOffice(valid());assert.equal(r.material,null);assert.ok(r.escalation.length);assert.match(r.disclaimer,/教授の代理ではありません/);});
+test('material is exact student quote, never verified or extrapolated',()=>{const r=prepareOffice({...valid(),excerpt:'定義Aだけ。',source:'学生資料p1'});assert.equal(r.material.quote,'定義Aだけ。');assert.match(r.material.status,/未検証/);assert.ok(r.general.every(s=>!s.includes('定義A')));});
+test('hint first withholds solved answer and reasoning check refuses grading',()=>{assert.match(prepareOffice({...valid(),mode:'Hint first'}).general.join(''),/答えを先に出さず/);assert.match(prepareOffice({...valid(),mode:'Check my reasoning',understood:'仮定'}).general.join(''),/正誤の自動判定は行っていません/);});
+test('professor draft is student question with no invented recipient',()=>{const r=prepareOffice({...valid(),mode:'Prepare professor question'});assert.match(r.professorDraft,/質問があります/);assert.match(r.professorDraft,/未確認/);assert.doesNotMatch(r.professorDraft,/教授はこう考え/);});
+test('policy and insufficient-evidence escalation across modes',()=>{for(const mode of OFFICE_MODES){const r=prepareOffice({...valid(),mode,question:'採点とdeadline exception',excerpt:'資料',source:'講義'});assert.match(r.escalation.join(''),/教授\/TA/);assert.match(r.disclaimer,/代弁しません/);}});
+test('input snapshot, no mutation, length/mode validation',()=>{const input=valid(),r=prepareOffice(input);input.question='変更';assert.notEqual(r.input.question,input.question);assert.throws(()=>prepareOffice({...valid(),question:'x'.repeat(2001)}));assert.ok(officeErrors({...valid(),mode:'invent'}).mode);});
