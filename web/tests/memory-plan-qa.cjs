@@ -1,7 +1,7 @@
 // Isolated local browser fixtures; no student records, external model or production calls.
 const {chromium}=require(process.env.UNIPILOT_PLAYWRIGHT_MODULE||'playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-const base=process.env.UNIPILOT_QA_URL||'http://127.0.0.1:3054',out=path.resolve(__dirname,'../qa/phase54');
+const base=process.env.UNIPILOT_QA_URL||'http://127.0.0.1:3054',out=path.resolve(__dirname,process.env.UNIPILOT_QA_OUTPUT||'../qa/phase54');
 (async()=>{
  fs.mkdirSync(out,{recursive:true});const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1440,height:1000},timezoneId:'Asia/Tokyo'}),page=await context.newPage();const errors=[],posts=[],layouts=[];
  page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());

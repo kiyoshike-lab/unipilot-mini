@@ -1,0 +1,106 @@
+{
+  "DEMO": "PASS",
+  "fixtureOnly": true,
+  "layouts": [
+    {
+      "route": "today",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "today",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "today",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "today",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "today",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "scheduleAddEditDelete": true,
+  "overlap": true,
+  "invalidTime": true,
+  "attendance": true,
+  "customThreshold": true,
+  "assignmentDue": true,
+  "overdue": true,
+  "todaySavedDataOnly": true,
+  "localSaveReload": true,
+  "exportImport": true,
+  "invalidImportPreserves": true,
+  "clear": true,
+  "emailTemplate": true,
+  "noInventedFacts": true,
+  "noInventedCommitment": true,
+  "previewEditable": true,
+  "staleCopyDisabled": true,
+  "copyOnly": true,
+  "templateDisclosure": true,
+  "targets44": true,
+  "keyboardFocus": true,
+  "reducedMotion": true,
+  "errorAssociation": true,
+  "noPost": true,
+  "pageErrors": []
+}

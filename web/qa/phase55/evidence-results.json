@@ -1,0 +1,70 @@
+{
+  "functional": {
+    "exactSpan": true,
+    "nonmatch": true,
+    "noFakeMetadata": true,
+    "claimTrace": true,
+    "structuredPersistence": true,
+    "deleteUnlinks": true,
+    "reportClear": true,
+    "literatureProvenance": true,
+    "noAutoVerified": true,
+    "researchClear": true,
+    "legacyMigration": true,
+    "noGenerationOrServerSave": true
+  },
+  "populatedLayouts": [
+    {
+      "route": "/report",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/report",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/research",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "DEMO": "PASS",
+  "fixtureOnly": true
+}

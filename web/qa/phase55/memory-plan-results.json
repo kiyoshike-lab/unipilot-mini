@@ -1,0 +1,405 @@
+{
+  "gate": "PASS",
+  "layouts": [
+    {
+      "route": "memory",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "study",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "study",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "study",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "study",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "study",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "materials",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "materials",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "materials",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "materials",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "materials",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "exam",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "exam",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "exam",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "exam",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "exam",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "report",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "report",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "report",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "report",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "report",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "research",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "research",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "research",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "research",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "research",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "sources",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "sources",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "sources",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "gpa",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "gpa",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "gpa",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "gpa",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "gpa",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "degree",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "degree",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "degree",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "degree",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "degree",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "planner",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "email",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "memory",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "plan",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "consent",
+    "no silent save",
+    "memory add/edit/delete/clear/export",
+    "student confidence",
+    "provenance",
+    "weakness confirmation",
+    "plan capacity",
+    "zero availability",
+    "deadline rejection",
+    "out-of-order reschedule",
+    "memory opt-in/off",
+    "planner opt-in",
+    "local persistence",
+    "plan export/delete",
+    "Today saved only",
+    "labels",
+    "44px",
+    "focus",
+    "reduced motion"
+  ],
+  "pageErrors": [],
+  "postRequests": [],
+  "DEMO": "PASS",
+  "LIVE": "NOT_TESTED"
+}
