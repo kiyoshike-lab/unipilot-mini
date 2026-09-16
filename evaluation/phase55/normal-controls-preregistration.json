@@ -1,0 +1,184 @@
+{
+  "source_sha256": "45ad22cae9a818b4c24906e59c38e57a654ef06a912a15cd8a4830d14d331af5",
+  "prompts": [
+    {
+      "id": "math-2",
+      "family": "math",
+      "n": 2,
+      "prompt": "n回の加算を省略せず書く: 1をn回足す式と合計。nはvaluesの値。\nn=2。",
+      "allowed": "Exactly n occurrences of1, n-1 plus signs, then sum n",
+      "pathological": "Continues repeating beyond the requested finite expression"
+    },
+    {
+      "id": "math-3",
+      "family": "math",
+      "n": 3,
+      "prompt": "n回の加算を省略せず書く: 1をn回足す式と合計。nはvaluesの値。\nn=3。",
+      "allowed": "Exactly n occurrences of1, n-1 plus signs, then sum n",
+      "pathological": "Continues repeating beyond the requested finite expression"
+    },
+    {
+      "id": "math-4",
+      "family": "math",
+      "n": 4,
+      "prompt": "n回の加算を省略せず書く: 1をn回足す式と合計。nはvaluesの値。\nn=4。",
+      "allowed": "Exactly n occurrences of1, n-1 plus signs, then sum n",
+      "pathological": "Continues repeating beyond the requested finite expression"
+    },
+    {
+      "id": "math-5",
+      "family": "math",
+      "n": 5,
+      "prompt": "n回の加算を省略せず書く: 1をn回足す式と合計。nはvaluesの値。\nn=5。",
+      "allowed": "Exactly n occurrences of1, n-1 plus signs, then sum n",
+      "pathological": "Continues repeating beyond the requested finite expression"
+    },
+    {
+      "id": "lists-2",
+      "family": "lists",
+      "n": 2,
+      "prompt": "番号1からnまでの箇条書きで、各行に確認済みと書く。\nn=2。",
+      "allowed": "n numbered rows, repeated確認済み is required",
+      "pathological": "Extra rows or repeated row number after n"
+    },
+    {
+      "id": "lists-3",
+      "family": "lists",
+      "n": 3,
+      "prompt": "番号1からnまでの箇条書きで、各行に確認済みと書く。\nn=3。",
+      "allowed": "n numbered rows, repeated確認済み is required",
+      "pathological": "Extra rows or repeated row number after n"
+    },
+    {
+      "id": "lists-4",
+      "family": "lists",
+      "n": 4,
+      "prompt": "番号1からnまでの箇条書きで、各行に確認済みと書く。\nn=4。",
+      "allowed": "n numbered rows, repeated確認済み is required",
+      "pathological": "Extra rows or repeated row number after n"
+    },
+    {
+      "id": "lists-5",
+      "family": "lists",
+      "n": 5,
+      "prompt": "番号1からnまでの箇条書きで、各行に確認済みと書く。\nn=5。",
+      "allowed": "n numbered rows, repeated確認済み is required",
+      "pathological": "Extra rows or repeated row number after n"
+    },
+    {
+      "id": "definitions-2",
+      "family": "definitions",
+      "n": 2,
+      "prompt": "n行で用語を定義する。各行を定義:で始め、順に変数、関数、集合、写像、命題からn個使う。\nn=2。",
+      "allowed": "n definition labels with distinct requested terms",
+      "pathological": "Identical full definition cycling or excess rows"
+    },
+    {
+      "id": "definitions-3",
+      "family": "definitions",
+      "n": 3,
+      "prompt": "n行で用語を定義する。各行を定義:で始め、順に変数、関数、集合、写像、命題からn個使う。\nn=3。",
+      "allowed": "n definition labels with distinct requested terms",
+      "pathological": "Identical full definition cycling or excess rows"
+    },
+    {
+      "id": "definitions-4",
+      "family": "definitions",
+      "n": 4,
+      "prompt": "n行で用語を定義する。各行を定義:で始め、順に変数、関数、集合、写像、命題からn個使う。\nn=4。",
+      "allowed": "n definition labels with distinct requested terms",
+      "pathological": "Identical full definition cycling or excess rows"
+    },
+    {
+      "id": "definitions-5",
+      "family": "definitions",
+      "n": 5,
+      "prompt": "n行で用語を定義する。各行を定義:で始め、順に変数、関数、集合、写像、命題からn個使う。\nn=5。",
+      "allowed": "n definition labels with distinct requested terms",
+      "pathological": "Identical full definition cycling or excess rows"
+    },
+    {
+      "id": "code-2",
+      "family": "code",
+      "n": 2,
+      "prompt": "Pythonでprint(1)からprint(n)まで1行ずつ書く。\nn=2。",
+      "allowed": "n print calls; print repetition is necessary",
+      "pathological": "Repeated identical call or extra calls after n"
+    },
+    {
+      "id": "code-3",
+      "family": "code",
+      "n": 3,
+      "prompt": "Pythonでprint(1)からprint(n)まで1行ずつ書く。\nn=3。",
+      "allowed": "n print calls; print repetition is necessary",
+      "pathological": "Repeated identical call or extra calls after n"
+    },
+    {
+      "id": "code-4",
+      "family": "code",
+      "n": 4,
+      "prompt": "Pythonでprint(1)からprint(n)まで1行ずつ書く。\nn=4。",
+      "allowed": "n print calls; print repetition is necessary",
+      "pathological": "Repeated identical call or extra calls after n"
+    },
+    {
+      "id": "code-5",
+      "family": "code",
+      "n": 5,
+      "prompt": "Pythonでprint(1)からprint(n)まで1行ずつ書く。\nn=5。",
+      "allowed": "n print calls; print repetition is necessary",
+      "pathological": "Repeated identical call or extra calls after n"
+    },
+    {
+      "id": "terminology-2",
+      "family": "terminology",
+      "n": 2,
+      "prompt": "各文に標本平均を一度含め、異なる説明をn文書く。\nn=2。",
+      "allowed": "n repeated term occurrences, different explanations",
+      "pathological": "Same full sentence cycling or extra sentences"
+    },
+    {
+      "id": "terminology-3",
+      "family": "terminology",
+      "n": 3,
+      "prompt": "各文に標本平均を一度含め、異なる説明をn文書く。\nn=3。",
+      "allowed": "n repeated term occurrences, different explanations",
+      "pathological": "Same full sentence cycling or extra sentences"
+    },
+    {
+      "id": "terminology-4",
+      "family": "terminology",
+      "n": 4,
+      "prompt": "各文に標本平均を一度含め、異なる説明をn文書く。\nn=4。",
+      "allowed": "n repeated term occurrences, different explanations",
+      "pathological": "Same full sentence cycling or extra sentences"
+    },
+    {
+      "id": "terminology-5",
+      "family": "terminology",
+      "n": 5,
+      "prompt": "各文に標本平均を一度含め、異なる説明をn文書く。\nn=5。",
+      "allowed": "n repeated term occurrences, different explanations",
+      "pathological": "Same full sentence cycling or extra sentences"
+    }
+  ],
+  "models": [
+    "baseline-42",
+    "C-42",
+    "B-42"
+  ],
+  "decoder": {
+    "name": "greedy",
+    "kind": "greedy",
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram": null,
+    "eos_threshold": null
+  },
+  "max_new_tokens": 128,
+  "rng": "0..19 (greedy unused)",
+  "purpose": "normal repetition descriptive risk check; not LR selection; no human correctness certification",
+  "new_training": false
+}

@@ -1,0 +1,476 @@
+{
+  "phase": 55,
+  "confirmatory_gate": "VALID_COMPLETED",
+  "formal_lr_gate": "FORMAL_LR_APPROVED_5E5",
+  "approved_lr": 5e-05,
+  "preregistration_sha256": "d9e93c9854c2a44abd4dc4a1c6cd76022a79f40a036c3add345c4add36fe16c2",
+  "consumed_for_model_selection": true,
+  "primary_paired_ci": {
+    "mean": -0.030158276769468848,
+    "lower": -0.0311326576649771,
+    "upper": -0.029221729358721818,
+    "documents_or_prompts": 172
+  },
+  "per_seed_ci": {
+    "42": {
+      "mean": -0.0306080349178901,
+      "lower": -0.033242768643257294,
+      "upper": -0.02845611280179732,
+      "documents_or_prompts": 172
+    },
+    "123": {
+      "mean": -0.028661514516049022,
+      "lower": -0.030231636221473106,
+      "upper": -0.027056318733448464,
+      "documents_or_prompts": 172
+    },
+    "2026": {
+      "mean": -0.03120528087446743,
+      "lower": -0.0325714110329887,
+      "upper": -0.029846799905219063,
+      "documents_or_prompts": 172
+    }
+  },
+  "metrics": {
+    "C": {
+      "by_seed": [
+        {
+          "seed": 42,
+          "full": {
+            "ce": 4.382589620276097,
+            "top1": 0.24886809371777235,
+            "top5": 0.43962508060383076,
+            "top10": 0.5245122198254745,
+            "nonterminal_eos_probability": 0.00043639334085178693,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.47610671613824,
+            "top1": 0.23866211755717706,
+            "top5": 0.42705121264952933,
+            "top10": 0.5119223233437079,
+            "nonterminal_eos_probability": 0.00043010448123554756,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.01005810492329887,
+            "rank": 26.13372093023256,
+            "top1": 0.0,
+            "top5": 0.47093023255813954,
+            "top10": 0.6802325581395349
+          },
+          "perplexity": 80.04505152866834,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 0.984375,
+            "eos_rate": 0.015625,
+            "mean_repetition_1": 0.296875,
+            "naturalness_rate": 0.7109375,
+            "semantic_rate": 0.640625,
+            "sentence_completion_rate": 0.1015625,
+            "mean_eos_probability": 0.00039315901923285275,
+            "japanese_validity": 0.7421875,
+            "topic_retention_proxy": 0.2017836781953818,
+            "repetition_1": 0.296875,
+            "repetition_2": 0.08745359703020997,
+            "repetition_3": 0.02888944892473118,
+            "repetition_4": 0.0061607899943470915,
+            "unique_token_ratio": 0.703125,
+            "loop_onset": 30.171875,
+            "loop_cycle_length": 1.15625
+          }
+        },
+        {
+          "seed": 123,
+          "full": {
+            "ce": 4.390278930227545,
+            "top1": 0.24645497361393365,
+            "top5": 0.4370975811444604,
+            "top10": 0.5235802071915031,
+            "nonterminal_eos_probability": 0.00045977503580842095,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.465938842364062,
+            "top1": 0.23863468963166098,
+            "top5": 0.42650271119357513,
+            "top10": 0.5134482746814456,
+            "nonterminal_eos_probability": 0.00045419963572104364,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.011150539882290231,
+            "rank": 19.226744186046513,
+            "top1": 0.0,
+            "top5": 0.47674418604651164,
+            "top10": 0.6627906976744186
+          },
+          "perplexity": 80.66291516818009,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 1.0,
+            "eos_rate": 0.0,
+            "mean_repetition_1": 0.3336181640625,
+            "naturalness_rate": 0.703125,
+            "semantic_rate": 0.640625,
+            "sentence_completion_rate": 0.0625,
+            "mean_eos_probability": 0.000581618015580921,
+            "japanese_validity": 0.765625,
+            "topic_retention_proxy": 0.2215411124559536,
+            "repetition_1": 0.3336181640625,
+            "repetition_2": 0.11433531746031747,
+            "repetition_3": 0.044732862903225805,
+            "repetition_4": 0.01741803278688525,
+            "unique_token_ratio": 0.6663818359375,
+            "loop_onset": 38.53125,
+            "loop_cycle_length": 1.171875
+          }
+        },
+        {
+          "seed": 2026,
+          "full": {
+            "ce": 4.385239144770914,
+            "top1": 0.24874345353864727,
+            "top5": 0.43831271932360355,
+            "top10": 0.5252016470199861,
+            "nonterminal_eos_probability": 0.0004406833157181573,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.470114029016872,
+            "top1": 0.2393743250779682,
+            "top5": 0.42579566564851207,
+            "top10": 0.513340026662687,
+            "nonterminal_eos_probability": 0.0004479924156815694,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.008618458998044358,
+            "rank": 23.790697674418606,
+            "top1": 0.0,
+            "top5": 0.5058139534883721,
+            "top10": 0.6976744186046512
+          },
+          "perplexity": 80.25741405901363,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 0.984375,
+            "eos_rate": 0.015625,
+            "mean_repetition_1": 0.3394189177259887,
+            "naturalness_rate": 0.7578125,
+            "semantic_rate": 0.7109375,
+            "sentence_completion_rate": 0.0859375,
+            "mean_eos_probability": 0.0005050771554587537,
+            "japanese_validity": 0.8203125,
+            "topic_retention_proxy": 0.204805475098078,
+            "repetition_1": 0.3394189177259887,
+            "repetition_2": 0.13800781055630196,
+            "repetition_3": 0.0657258064516129,
+            "repetition_4": 0.028887750455373416,
+            "unique_token_ratio": 0.6605810822740114,
+            "loop_onset": 30.75,
+            "loop_cycle_length": 1.296875
+          }
+        }
+      ],
+      "full": {
+        "ce": 4.3860358984248515,
+        "top1": 0.24802217362345108,
+        "top5": 0.4383451270239649,
+        "top10": 0.5244313580123212,
+        "nonterminal_eos_probability": 0.00044561723079278835,
+        "premature_eos": 0.0
+      },
+      "short_ce": 4.4707198625063915,
+      "terminal_probability": 0.009942367934544486,
+      "sampling": {
+        "examples": 64.0,
+        "runaway_rate": 0.9895833333333334,
+        "eos_rate": 0.010416666666666666,
+        "mean_repetition_1": 0.3233040272628296,
+        "naturalness_rate": 0.7239583333333334,
+        "semantic_rate": 0.6640625,
+        "sentence_completion_rate": 0.08333333333333333,
+        "mean_eos_probability": 0.0004932847300908425,
+        "japanese_validity": 0.7760416666666666,
+        "topic_retention_proxy": 0.20937675524980448,
+        "repetition_1": 0.3233040272628296,
+        "repetition_2": 0.1132655750156098,
+        "repetition_3": 0.04644937275985663,
+        "repetition_4": 0.01748885774553525,
+        "unique_token_ratio": 0.6766959727371704,
+        "loop_onset": 33.151041666666664,
+        "loop_cycle_length": 1.2083333333333333
+      }
+    },
+    "B": {
+      "by_seed": [
+        {
+          "seed": 42,
+          "full": {
+            "ce": 4.413197655193986,
+            "top1": 0.24415780769263304,
+            "top5": 0.43501228993816077,
+            "top10": 0.5206859355547397,
+            "nonterminal_eos_probability": 0.0004521305000519151,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.508038373512448,
+            "top1": 0.2338636650775435,
+            "top5": 0.42233553649331246,
+            "top10": 0.5079785123299226,
+            "nonterminal_eos_probability": 0.00043653647755714493,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.01034493048800234,
+            "rank": 25.819767441860463,
+            "top1": 0.0,
+            "top5": 0.436046511627907,
+            "top10": 0.6802325581395349
+          },
+          "perplexity": 82.53295393273531,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 0.984375,
+            "eos_rate": 0.015625,
+            "mean_repetition_1": 0.291259765625,
+            "naturalness_rate": 0.7421875,
+            "semantic_rate": 0.671875,
+            "sentence_completion_rate": 0.03125,
+            "mean_eos_probability": 0.00037608073621822873,
+            "japanese_validity": 0.78125,
+            "topic_retention_proxy": 0.2014182906042946,
+            "repetition_1": 0.291259765625,
+            "repetition_2": 0.08184523809523811,
+            "repetition_3": 0.028603830645161282,
+            "repetition_4": 0.0064036885245901684,
+            "unique_token_ratio": 0.708740234375,
+            "loop_onset": 34.609375,
+            "loop_cycle_length": 1.09375
+          }
+        },
+        {
+          "seed": 123,
+          "full": {
+            "ce": 4.418940444743593,
+            "top1": 0.2428916514075614,
+            "top5": 0.43241153947913735,
+            "top10": 0.5190079029732424,
+            "nonterminal_eos_probability": 0.0004120215764599578,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.489640168234164,
+            "top1": 0.2353680718798473,
+            "top5": 0.4231803975232374,
+            "top10": 0.5100275402126301,
+            "nonterminal_eos_probability": 0.0004164836750761075,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.010240532018902149,
+            "rank": 22.209302325581394,
+            "top1": 0.0,
+            "top5": 0.42441860465116277,
+            "top10": 0.6104651162790697
+          },
+          "perplexity": 83.00828688026213,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 0.9921875,
+            "eos_rate": 0.0078125,
+            "mean_repetition_1": 0.3388671875,
+            "naturalness_rate": 0.75,
+            "semantic_rate": 0.671875,
+            "sentence_completion_rate": 0.078125,
+            "mean_eos_probability": 0.0005606844271053117,
+            "japanese_validity": 0.78125,
+            "topic_retention_proxy": 0.2178835687827649,
+            "repetition_1": 0.3388671875,
+            "repetition_2": 0.11830357142857145,
+            "repetition_3": 0.0477570564516129,
+            "repetition_4": 0.02036372950819673,
+            "unique_token_ratio": 0.6611328125,
+            "loop_onset": 39.4375,
+            "loop_cycle_length": 1.0546875
+          }
+        },
+        {
+          "seed": 2026,
+          "full": {
+            "ce": 4.416444425645381,
+            "top1": 0.24354406968286726,
+            "top5": 0.4338819644762528,
+            "top10": 0.52146003390046,
+            "nonterminal_eos_probability": 0.0004465116707701248,
+            "premature_eos": 0.0
+          },
+          "short": {
+            "ce": 4.505009371612321,
+            "top1": 0.23447435931751093,
+            "top5": 0.4215596386395231,
+            "top10": 0.5091909054282022,
+            "nonterminal_eos_probability": 0.00044885007585015183,
+            "premature_eos": 0.0
+          },
+          "terminal": {
+            "probability": 0.008161768817910003,
+            "rank": 20.680232558139537,
+            "top1": 0.0,
+            "top5": 0.5116279069767442,
+            "top10": 0.7151162790697675
+          },
+          "perplexity": 82.80135497133158,
+          "sampling": {
+            "examples": 64.0,
+            "runaway_rate": 0.9921875,
+            "eos_rate": 0.0078125,
+            "mean_repetition_1": 0.379638671875,
+            "naturalness_rate": 0.640625,
+            "semantic_rate": 0.5390625,
+            "sentence_completion_rate": 0.0625,
+            "mean_eos_probability": 0.0005303989925274555,
+            "japanese_validity": 0.7734375,
+            "topic_retention_proxy": 0.2102111786982842,
+            "repetition_1": 0.379638671875,
+            "repetition_2": 0.17472718253968256,
+            "repetition_3": 0.09488407258064516,
+            "repetition_4": 0.047643442622950824,
+            "unique_token_ratio": 0.620361328125,
+            "loop_onset": 35.7890625,
+            "loop_cycle_length": 1.2578125
+          }
+        }
+      ],
+      "full": {
+        "ce": 4.41619417519432,
+        "top1": 0.24353117626102058,
+        "top5": 0.43376859796451706,
+        "top10": 0.5203846241428141,
+        "nonterminal_eos_probability": 0.00043688791576066587,
+        "premature_eos": 0.0
+      },
+      "short_ce": 4.500895971119643,
+      "terminal_probability": 0.00958241044160483,
+      "sampling": {
+        "examples": 64.0,
+        "runaway_rate": 0.9895833333333334,
+        "eos_rate": 0.010416666666666666,
+        "mean_repetition_1": 0.3365885416666667,
+        "naturalness_rate": 0.7109375,
+        "semantic_rate": 0.6276041666666666,
+        "sentence_completion_rate": 0.057291666666666664,
+        "mean_eos_probability": 0.0004890547186169986,
+        "japanese_validity": 0.7786458333333334,
+        "topic_retention_proxy": 0.20983767936178124,
+        "repetition_1": 0.3365885416666667,
+        "repetition_2": 0.12495866402116403,
+        "repetition_3": 0.057081653225806446,
+        "repetition_4": 0.02480362021857924,
+        "unique_token_ratio": 0.6634114583333334,
+        "loop_onset": 36.611979166666664,
+        "loop_cycle_length": 1.1354166666666667
+      }
+    }
+  },
+  "safety": {
+    "context128_ce_increase": {
+      "mean": -0.030176108613252598,
+      "lower": -0.031219436823272072,
+      "upper": -0.02919693982885426,
+      "documents_or_prompts": 172,
+      "material_worsening_boundary": 0.03,
+      "clear_material_regression": false
+    },
+    "context_benefit_loss": {
+      "mean": 1.7831843783750928e-05,
+      "lower": -0.00045842891767398545,
+      "upper": 0.0005015412114360455,
+      "documents_or_prompts": 172,
+      "material_worsening_boundary": 0.03,
+      "clear_material_regression": false
+    },
+    "terminal_eos_relative_drop": {
+      "mean": -0.0022764395812606207,
+      "lower": -0.0026125422212820455,
+      "upper": -0.00198317552442598,
+      "documents_or_prompts": 172,
+      "material_worsening_boundary": 0,
+      "clear_material_regression": false
+    },
+    "premature_eos_absolute_increase": {
+      "mean": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "documents_or_prompts": 172,
+      "material_worsening_boundary": 0.01,
+      "clear_material_regression": false
+    },
+    "sampling_runaway_increase": {
+      "mean": 1.734723475976807e-18,
+      "lower": -0.007812499999999998,
+      "upper": 0.007812500000000003,
+      "documents_or_prompts": 64,
+      "material_worsening_boundary": 0.08,
+      "clear_material_regression": false
+    },
+    "sampling_naturalness_drop": {
+      "mean": -0.013020833333333334,
+      "lower": -0.06510416666666669,
+      "upper": 0.03645833333333333,
+      "documents_or_prompts": 64,
+      "material_worsening_boundary": 0.08,
+      "clear_material_regression": false
+    },
+    "sampling_semantic_drop": {
+      "mean": -0.03645833333333334,
+      "lower": -0.09635416666666669,
+      "upper": 0.020833333333333322,
+      "documents_or_prompts": 64,
+      "material_worsening_boundary": 0.08,
+      "clear_material_regression": false
+    },
+    "sampling_japanese_validity_drop": {
+      "mean": 0.002604166666666666,
+      "lower": -0.044270833333333336,
+      "upper": 0.046875,
+      "documents_or_prompts": 64,
+      "material_worsening_boundary": 0.08,
+      "clear_material_regression": false
+    }
+  },
+  "shared_generation_blocker": "GENERATION_POLICY_UNSAFE; relative research LR approval does not validate generation safety",
+  "uncertainty": "One fresh lexical holdout, unequal category coverage, automatic proxies, fixed3 training seeds and limited64prompt power. No guarantee of no regression; confidence intervals reported.",
+  "raw_artifacts": [
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\C-42.json",
+      "sha256": "d3bcb3af50cfa5e9c4f70cfe988de1e3b2c97cd2d33cc7aec411c3470d0c3d92"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\C-123.json",
+      "sha256": "e304f70f7f5a38e8e6878eb11fd9128a50c4fea79bd29c66005d040d00da9b79"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\C-2026.json",
+      "sha256": "56fc4cd8baefd4c5e264428ee5b2973072636e46fc596c7d7139a421d8c09726"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\B-42.json",
+      "sha256": "e36ab2b1517687817078a9dc112777ed675e95d9587c36fb96cec31c491a8ab1"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\B-123.json",
+      "sha256": "5c8f42c0bf9aa4501c57e86b101b5f72eac6b8cb75dd6c84195c63329395387a"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase55\\B-2026.json",
+      "sha256": "8f2d4fe142015d88c7b61acdc459e859ae94aa920944d91174f1f77506fa53b9"
+    }
+  ],
+  "new_training": false,
+  "canonical": false,
+  "20m": false,
+  "foundation_base": false
+}
