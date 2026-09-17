@@ -1,0 +1,82 @@
+{
+  "gate": "PASS",
+  "DEMO": "PASS",
+  "LIVE": "NOT_TESTED",
+  "feature13": "Foundation template only",
+  "feature14": "Foundation fixture only",
+  "layouts": [
+    {
+      "route": "office-hours",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "office-hours",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "office-hours",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "office-hours",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "office-hours",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "official-search",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "official-search",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "official-search",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "official-search",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "official-search",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "missing required fields",
+    "five-mode contract via unit tests",
+    "hint",
+    "reasoning",
+    "professor draft",
+    "no impersonation",
+    "exact supplied excerpt",
+    "general/material separation",
+    "policy escalation",
+    "no auto persistence",
+    "no POST",
+    "domain/freshness/year/conflict/unknown",
+    "citation metadata",
+    "labels",
+    "error association",
+    "aria-live",
+    "44px targets",
+    "focus-visible",
+    "reduced-motion"
+  ],
+  "errors": [],
+  "posts": []
+}
