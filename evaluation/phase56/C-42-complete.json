@@ -1,0 +1,1614 @@
+{
+  "complete": true,
+  "runs": [
+    {
+      "name": "doc00-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-free.json",
+      "sha256": "54b403fbdedf77bf58b9ec8cadd7a63032cc27de3b4b8121f930aa885c801f96",
+      "vectors_sha256": "beeda0ab615b0764a194cafa304e773ded95e06ac38a6ce0961ae66d268d6e60"
+    },
+    {
+      "name": "doc00-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-teacher.json",
+      "sha256": "0b7f3a45b9611e0cbd5fb5d16e8887aa4573271b107d435e144588b8fdf2fda1",
+      "vectors_sha256": "26dd536f28b2e7842d7e1ae03ea77772acb0c2321b67f245375461d48333d1ee"
+    },
+    {
+      "name": "doc00-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-short.json",
+      "sha256": "dad26bb3e45d83368e77934a7662751604dfb14da9dfd9bf1a4ad15998c7f4c3",
+      "vectors_sha256": "bff8b3fed8aa7e09dd20d0094077025173d301e2e645cbb24acd9e5277c01915"
+    },
+    {
+      "name": "doc00-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-top2-4.json",
+      "sha256": "5d6e6709d29c285329ad5e71b5127adb35dcd7b2983e9adf7779a81e8843ac32",
+      "vectors_sha256": "3356839727b2ce323244f566cca8a847c1e0b170cd6f7c5a12075f7f6c40d7ed"
+    },
+    {
+      "name": "doc00-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-truth-4.json",
+      "sha256": "06a487d802132aa0d9916efdd0adddfadacb68efe809f586e0cccc3f61901602",
+      "vectors_sha256": "23f4274b7be5f92f6bd58e4eaf9d0334d70d79f7e1be4703fd805ad8b47889b6"
+    },
+    {
+      "name": "doc00-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-top2-8.json",
+      "sha256": "4996e7c27355e10e1a65111d186e690de813b9a6722778dfcad095ab5840a6fd",
+      "vectors_sha256": "d8ba688964fbb97cd2fd933c24d6f7d95d7569a3b5f21187a00aa0222888567b"
+    },
+    {
+      "name": "doc00-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-truth-8.json",
+      "sha256": "7ced59d602b253b858ad49c301037ecae837c5faae4ab29f01919ba137ed8f04",
+      "vectors_sha256": "7a88cc658a61eda8dd536f061d48452b99f77724dedd56ff7d64a0b4e217f42d"
+    },
+    {
+      "name": "doc00-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-top2-16.json",
+      "sha256": "ecd21d5711e633e5fbebdf071f7a94ae5e12ff8d0f81db28dd3b57cffc186bc8",
+      "vectors_sha256": "a105ff0c3a462eae0e96d3debca9de443c2f2428df863bf72a7ed8d4d2f29b4c"
+    },
+    {
+      "name": "doc00-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc00-truth-16.json",
+      "sha256": "6ad5eec6ba77f559fedcaae5f95c0431b0da8ff833d15a90a28e21e801e4bccd",
+      "vectors_sha256": "fa867d7190c779306be9da372a7eb47125bb7b194cd07e2332fc6ef994b19203"
+    },
+    {
+      "name": "doc01-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-free.json",
+      "sha256": "2bbe010091b6784f60e5680ad2f158bbc55babf9821be50876812d3aa7ea44e6",
+      "vectors_sha256": "6ce340e249610545012b475395c77fad564bb0c65895a2ba9f3a702dc71a519f"
+    },
+    {
+      "name": "doc01-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-teacher.json",
+      "sha256": "9dd9c24cb8d8ea8d929f7b30430130019006f838cd8eb1c6bfbb93a88e577591",
+      "vectors_sha256": "63962e947b0c578af3456ad095b07558851b1c8703938f6933ea6a2c3245350f"
+    },
+    {
+      "name": "doc01-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-short.json",
+      "sha256": "017b8eb74a6e1063907adca765554d34b13537558c0c5f21b3dc5781b369b57a",
+      "vectors_sha256": "c5967c94e57e496cb5207c3b96217f8d5faa0c816ad7dad11b9cdddb42a3b2bd"
+    },
+    {
+      "name": "doc01-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-top2-4.json",
+      "sha256": "99a600dbc8ef7a1cf05b094de32bbb0bc4e2e90ad22185bfcb6bad9110cf2801",
+      "vectors_sha256": "2b9eee6c60265226673136eb6b620273acce92177d605dd809762fd6e2a382e4"
+    },
+    {
+      "name": "doc01-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-truth-4.json",
+      "sha256": "4010781ea423c3864e1deb3392d19f2b5b747eb42e2194fdc76930b139e9e438",
+      "vectors_sha256": "edfbb45d27584769711728bb50d82a6cee89c01c0f5b7ca5b2415920ed01ebb1"
+    },
+    {
+      "name": "doc01-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-top2-8.json",
+      "sha256": "395fe6c9fdbb19bf59744ccc89a299af7af17c04a13cd3a95396d4053755dc27",
+      "vectors_sha256": "483b97dd1070908909883ecb566046c3b2065d8c305c6fae5323fb5a11fb62dd"
+    },
+    {
+      "name": "doc01-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-truth-8.json",
+      "sha256": "731a77fca2600325682daae03409e1bd879d9f9b82139226b0a819346ccc7efb",
+      "vectors_sha256": "e7a8f5b5e5e976aadfd5d69cc7637e600548b7c028dc4cdeef6912628de3c409"
+    },
+    {
+      "name": "doc01-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-top2-16.json",
+      "sha256": "f67fbd42994060a506e1f72fdd1fc861ee6c1c63a0b7439967264b2df0c5eda8",
+      "vectors_sha256": "1911774cdaba3cbeed0dfd3e5176f02e3be40a8847def4f0f0ecae0c36aed4b3"
+    },
+    {
+      "name": "doc01-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc01-truth-16.json",
+      "sha256": "946179733cbd7eb0e65ab12187e86571db5c61af8d6ee9324eb19002f6401059",
+      "vectors_sha256": "4e3e5b92225678a0177e44c08a495c0814c98deaf2f3474efbbcf069d8f74577"
+    },
+    {
+      "name": "doc02-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-free.json",
+      "sha256": "37eded8c5f6617e84d227c451e29219b9c241157829c3c4384a512e3c815ca0f",
+      "vectors_sha256": "02f6ae2074ae1531efb149bd3ed6701eb3e26b6208839ac232fd1de1a1595c66"
+    },
+    {
+      "name": "doc02-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-teacher.json",
+      "sha256": "191ef04aac18922b71bf593c71e2ef9741758fa6ac19942dbcdded682ec25517",
+      "vectors_sha256": "0c0a9ac9af7680511f0b12535fa67ec85285a575e1430f087bc893fd69522a28"
+    },
+    {
+      "name": "doc02-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-short.json",
+      "sha256": "4b3cdfdf49e99fa92af7a4c72265906f9e32a37614956a78f2b07a15ba83db5d",
+      "vectors_sha256": "6854c7f08e0cab5933f4a642da9ddc215b926fd99a33a4e20974723365081aa7"
+    },
+    {
+      "name": "doc02-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-top2-4.json",
+      "sha256": "1ad3057a4a391b09fb29423038bf89d72f3bb4928517555e78129d59a1c2cd4a",
+      "vectors_sha256": "be7b76f50687013dc676b745afeb4b99831adf0a8dfe1133f6e5930f88408377"
+    },
+    {
+      "name": "doc02-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-truth-4.json",
+      "sha256": "476a61310b734e03646f9339481699ed3b68feb36ae249ed1a67352198725e04",
+      "vectors_sha256": "71479b77deae524284063df759ad8f5a52253a2686185a1a6be7e07357999d9d"
+    },
+    {
+      "name": "doc02-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-top2-8.json",
+      "sha256": "75e4e977727f2cff42b14d35c20707cda921617470b42ff20ac5d4cd1c6085c3",
+      "vectors_sha256": "3208e2616c30938b3c052277df167ad28fd6198a01a5fd74aa1d4b927390e062"
+    },
+    {
+      "name": "doc02-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc02-truth-8.json",
+      "sha256": "76087dbbc2a90678359ef9c8c1c83dd1d35f3f500e5df2e1b464f00400dc8975",
+      "vectors_sha256": "ea60c80a82b8d3e090996dd05a4f8921b2d300d55527472a6c8f32da58757cbb"
+    },
+    {
+      "name": "doc03-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc03-free.json",
+      "sha256": "2b43bbdf406b724a944480a09d0e09706677a67b3365f00a7205d1c85f77228b",
+      "vectors_sha256": "016ae6f445caec013d1132c11115a3d9ca4807a2234808798632c301b009d3d6"
+    },
+    {
+      "name": "doc03-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc03-teacher.json",
+      "sha256": "e2a3edea3bc9c7016f748e943894ed174b16074221400d487c650befada53058",
+      "vectors_sha256": "f81e858150324c9dcd7126fa1547366c53d67edb03bfb27f381ece61084b1732"
+    },
+    {
+      "name": "doc03-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc03-short.json",
+      "sha256": "847ad102f9e3507f40e9d7ac9387d30e83779872707040c650b9ffa0be621ba4",
+      "vectors_sha256": "7edc1602fc586a858e887b59814929fc3c02c847183cebae65f307dfcf6c992e"
+    },
+    {
+      "name": "doc04-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc04-free.json",
+      "sha256": "e07d4584e380baf3c2688a2127fda231f3706cb538381335eaca94536e0b7446",
+      "vectors_sha256": "4c75151ac6eab5fd044fc48bacd26618136c5374e8a52a89126ceb9c40b8a055"
+    },
+    {
+      "name": "doc04-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc04-teacher.json",
+      "sha256": "3eb72beacb8b99109bbf63ace0027979ed01e042a828971b0f898dbde75505df",
+      "vectors_sha256": "9c95773982635ac695c85b0b3dfa0aba01b7479e71c44c84395d6dcab30504f6"
+    },
+    {
+      "name": "doc04-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc04-short.json",
+      "sha256": "18a68f0795d67133091ecc11e20382d391d9ca2f72a5ab8447aa75fa1ad4719b",
+      "vectors_sha256": "dc33eb8c3b2991a0e3208863e3682f9a9ad80967a8bdd9719bb7baed6680c1ea"
+    },
+    {
+      "name": "doc05-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-free.json",
+      "sha256": "dc86b13cebca8a81482ef3bbd8720867b96f593cd01c809dec208e53c7029ada",
+      "vectors_sha256": "9d45f9f6ed8c353076419ec2bf530f76ed1c76df2b849264b3664e0bc36fbe59"
+    },
+    {
+      "name": "doc05-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-teacher.json",
+      "sha256": "25f57a3f06a3f6d7fe3bd2541c18a753ba6883f178b9628a620c01bd3cd137a4",
+      "vectors_sha256": "a90891f2f4e42a60a887a7db8c0eeacfb0b4683a8fd83bd115fe1c95179e3b22"
+    },
+    {
+      "name": "doc05-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-short.json",
+      "sha256": "b8ecd669d207fe2488d19c69b4f46153749d9a675d95dc7f643239e346164e44",
+      "vectors_sha256": "d0ef806622739017a735812cf200e490edaa7093c9430fd5b244ab33fad86cb1"
+    },
+    {
+      "name": "doc05-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-top2-4.json",
+      "sha256": "792a27993853d9ef1512ea757cad4d8efb29cba941bde7de0e59c476a498ddae",
+      "vectors_sha256": "f716198de218ac890989daecb2425fd3ea700090b3ad4bff17ee59153053aa0f"
+    },
+    {
+      "name": "doc05-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-truth-4.json",
+      "sha256": "94e23a8b2ec6c1ff9c8e9c707f565a05670366bb3479b4d5e1a6120c94bd9017",
+      "vectors_sha256": "08cfcfd54134f13fa028d07d3aeb22aec9bdc2d967045cc0de3586b69fbb6c6d"
+    },
+    {
+      "name": "doc05-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-top2-8.json",
+      "sha256": "839561b3d77df81ab8a7c672141801a6ff0d5814486b895cd650cea557900a2f",
+      "vectors_sha256": "1b4cc72679257dfd49101e55a55ebce1b8c8a484e565534f1aef52500ff4428c"
+    },
+    {
+      "name": "doc05-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-truth-8.json",
+      "sha256": "a3e7ee6c3f627e04a26d3c83401b8de0c639594a0a8fb55fedc086f7af17ca7f",
+      "vectors_sha256": "c2efcce76f498c707e8087e346042d421b220ccc15bc78f57f2c07e39f0cb451"
+    },
+    {
+      "name": "doc05-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-top2-16.json",
+      "sha256": "71daca62fcade47d3c3850fa54edad6c876ec9b5191512b53793077192891b11",
+      "vectors_sha256": "e0816a4cb0c883b8fe7109bea812be71023af22daefa06463c561062079ab5ad"
+    },
+    {
+      "name": "doc05-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc05-truth-16.json",
+      "sha256": "3ee391534bebd863517568bd6e8a0ef7b6fa1090f563e4faac160d8f2fa9b40b",
+      "vectors_sha256": "5c487bfe84dd687e0e67c3f3abb098baffe1349f8a9064cb7217a460283662ab"
+    },
+    {
+      "name": "doc06-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-free.json",
+      "sha256": "44776702d374cfa037f6509eb68749dfa5de783b22ccc272f1b5c8670b72d505",
+      "vectors_sha256": "cbb392359deb1246de83f087a09067286d9fa84204e1a0575bffd1aa13d9a1ab"
+    },
+    {
+      "name": "doc06-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-teacher.json",
+      "sha256": "44e93175750a76ddc715439b02c4d0725cdbb7074bcc42317fd20a912701965e",
+      "vectors_sha256": "5343d5885b755670144a93816499a02e4f0172e54424779268440a4e2c6425d0"
+    },
+    {
+      "name": "doc06-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-short.json",
+      "sha256": "5c323842dc85f0ac57ddc6e2d7abb7291f6e54a5600dcd92a5134ce80ddeafe4",
+      "vectors_sha256": "d4b5dd24a03ba75b3fa7e085a871278ce81c82838a3f66a6db130d54a19f7a2b"
+    },
+    {
+      "name": "doc06-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-top2-4.json",
+      "sha256": "ee7e3aa31e303135143ae163eef1f3096bfb31ede78fbf51c127e506e3926d5b",
+      "vectors_sha256": "67673c41daca0842333e091af48e8399e48d007c22837ba5a02385311b561075"
+    },
+    {
+      "name": "doc06-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-truth-4.json",
+      "sha256": "068560cb070344015cca7e9a4262208078c116dbb01d669d2ba9bb2a4277c25a",
+      "vectors_sha256": "3106e0e9e2c4a1615e8e6882f1866366f87b7d8a0ebacedd74b981147d53dba7"
+    },
+    {
+      "name": "doc06-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-top2-8.json",
+      "sha256": "a9c47b85cf31d45ee5ba067120b1bd9b568cbbfeaa5900b9d328eeb755cecb1e",
+      "vectors_sha256": "838fa5394a96bc7595170315e9cd04e1c91a56608f0330802108f6e9696773b3"
+    },
+    {
+      "name": "doc06-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc06-truth-8.json",
+      "sha256": "98ff4512ad20f695dc6e7155f17d4baf72de837557dd75116fcb33c3c043b7d4",
+      "vectors_sha256": "451ea546976e52ab75bafbe6e334d386439c3cfb81afe2b2b84e59c57af2b03d"
+    },
+    {
+      "name": "doc07-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc07-free.json",
+      "sha256": "fcb9e18cb821c2e0d3eb74b4e3d78d4bd43e61ea5e393c63c0c405af9e704388",
+      "vectors_sha256": "d2dd159c3c27c78803a7cb23379ed5262ef2081194a7ef18b70d36fa19282b08"
+    },
+    {
+      "name": "doc07-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc07-teacher.json",
+      "sha256": "cb5201bdc47a3f9e4889ad2f99bcb00e5870dc340d64a4263e79e68f12c4aef2",
+      "vectors_sha256": "c934bea43b4ec9c7f7af66224a5ddca7d1a4deb51cc7f2cdd2b6b67dd426208a"
+    },
+    {
+      "name": "doc07-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc07-short.json",
+      "sha256": "92d8452b5df735b489b88e69645dae0c8b2fdb09bd1c919ba83ba87c5c2f5307",
+      "vectors_sha256": "7adff25d0543a5c43af0c4774ae2d74f36070b35a53d47fcc92a00ac89c3942a"
+    },
+    {
+      "name": "doc07-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc07-top2-4.json",
+      "sha256": "12cb196e45c1ae519a92db10b632fcbdda2acf19f1c30d300cd4f02db0d7108e",
+      "vectors_sha256": "20e7284aa7fa52a2deac0bab65311c6fc0055360d1a412c969d8bdd15aef1351"
+    },
+    {
+      "name": "doc07-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc07-truth-4.json",
+      "sha256": "b907e0d01bd8683bd61cc239355b13ea7d7c7ad50a22e4b0e9a08ce2e6c0b781",
+      "vectors_sha256": "dc0d76c522ce28928702395cae7ad92796f56e1b26051e6bce5a02f2742eff7c"
+    },
+    {
+      "name": "doc08-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-free.json",
+      "sha256": "7b6e2c74924b107a4f5a6bc3367caa1c981796adf5f003e2e67dee36c8700377",
+      "vectors_sha256": "06bc92889283ee45a7e6fcb6691737d2444987b9c6bbcde4d39bbce6428c840d"
+    },
+    {
+      "name": "doc08-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-teacher.json",
+      "sha256": "ac6f3d8f31b43cb1f0166c961909818f17e3bba8442852dcbe2b7e260fe6aff0",
+      "vectors_sha256": "8ad3fd5f610e625ec5054ffd57b961bcd855364d07b2d56e3066e7c40fe3a5ad"
+    },
+    {
+      "name": "doc08-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-short.json",
+      "sha256": "0067f9f8541c587e3fe59d25ac32138b9ed03e5b9c2bb1d435405d234a39d230",
+      "vectors_sha256": "2b5d4ff25d523f2a8c3eaf7b12e98f8612616cfee1820456bdc405f644b2556a"
+    },
+    {
+      "name": "doc08-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-top2-4.json",
+      "sha256": "64a1f93a296d2da653b3ac655c3ddaf32b17b66eab327a693e388d6c533e328e",
+      "vectors_sha256": "3cd8dd933ad5097f55845f78decaf56d4432642247fb4e2494e9fdded4532b16"
+    },
+    {
+      "name": "doc08-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-truth-4.json",
+      "sha256": "af0890f7702fccdd0c8a1b4c543c6f89d29677db1a60159a66cca4aea77ba09d",
+      "vectors_sha256": "aa811fef182d83c1c470ef40203c62f6accb2b5fd129ab9c5a3a29417957471a"
+    },
+    {
+      "name": "doc08-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-top2-8.json",
+      "sha256": "96e9abea221fe60fbf5a6cf6fa268b4029b6e7bd904856e0f76bdcf39e16ec68",
+      "vectors_sha256": "3219668bcb0555023c5806632793a5409d45a5e4d983c0cc54f2a9b0646bd462"
+    },
+    {
+      "name": "doc08-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-truth-8.json",
+      "sha256": "357264f3f0fd8d137f9d1787e232a253ea6c2fffe4f164c04cd27ab307eae8ab",
+      "vectors_sha256": "71935e3a627a0904b2d6dcda7f3439a26140196351536d5e617379eecf5a969f"
+    },
+    {
+      "name": "doc08-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-top2-16.json",
+      "sha256": "049fee912282a8be0ff320f3b8dbc41ba492c8ab45fac0fe70ecbbd9418ea02d",
+      "vectors_sha256": "b7d7baddc738ad7b69e43d1581191818a8761ba4f00f069b7a738674b93c54a4"
+    },
+    {
+      "name": "doc08-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc08-truth-16.json",
+      "sha256": "fcf784e6404b119013b6c3a89bd2bf4c25ade4c65c3c35d752cee82d32b1f0e8",
+      "vectors_sha256": "77a3b7c04a3af3640dce58ec430b3e4be5c3d7e759862a4fdfcca72b283cebdd"
+    },
+    {
+      "name": "doc09-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-free.json",
+      "sha256": "a76b9441fa22110d5f3987e1125030e714aa5befbbbc0edf25693fe46574c4e8",
+      "vectors_sha256": "a0f1f12da901ac2ed4f6892f915fe4464771d9833bd3215e771e197021bfe1f9"
+    },
+    {
+      "name": "doc09-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-teacher.json",
+      "sha256": "4fbde7a0c64a1f39eb9c74a654e804e7bcfe22fdd9799f7ec232fdc6dcd0e3b0",
+      "vectors_sha256": "199005980932b79cf173a2e1540ab7bf6b49e7658757796d123caea2797b8d17"
+    },
+    {
+      "name": "doc09-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-short.json",
+      "sha256": "e654256542fee3ccc430ebf9094829c4fe924d278564ff04b1b5ee1fed306d9d",
+      "vectors_sha256": "49d0e13245aee9aae4110260619ff67b1c215dba6d4c0d77abcd39be1bfbc0d9"
+    },
+    {
+      "name": "doc09-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-top2-4.json",
+      "sha256": "06f450cc76304895648322f706b65b128ad3a0f89b4e7c0aa89774e1081776df",
+      "vectors_sha256": "cd9340aec62751112cf2f83dd1ae84e77262bd7fdf7583977028fc47a6a6753e"
+    },
+    {
+      "name": "doc09-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-truth-4.json",
+      "sha256": "b142e9407a37072cb5bee5a4e0276c824cf24e6ac9525c9aa49b66c79f57c8d3",
+      "vectors_sha256": "7a4d63d4250585f248648d9a6633572cbe553c4676de80ce32baca5b376e3fa5"
+    },
+    {
+      "name": "doc09-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-top2-8.json",
+      "sha256": "239dcbdaac8f3f24123295352ba605169bc9e9da9f57f5dec8602b2cd4673861",
+      "vectors_sha256": "f5925176d4865ee963a834998f8cc70f0abefffb0755669ae45c674f91c4bbcd"
+    },
+    {
+      "name": "doc09-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-truth-8.json",
+      "sha256": "193a78eb9f3483f94fc60f828fbfaa27f583978696332ed05182db0f6b4cb66c",
+      "vectors_sha256": "c6fad697542d15cbcedacf285c1b46c52990407d1251f6b86438318e92fc5ee6"
+    },
+    {
+      "name": "doc09-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-top2-16.json",
+      "sha256": "a0f3c88b669966cb858bde9c76f7892da5f693af358be39c01da06c02d8e2d3e",
+      "vectors_sha256": "2e145c8babd622ebad30919653269b3907ba6f5fb64eae75aea4eebe95418dee"
+    },
+    {
+      "name": "doc09-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc09-truth-16.json",
+      "sha256": "a91dbe9869c717f921a6f8b2ab363ece5d0917ae2be04db1dd3c4ba04d762318",
+      "vectors_sha256": "2bfbc99644d8b71f882b0456ed32a589613ac87c4100af477fd243b8f7783ade"
+    },
+    {
+      "name": "doc10-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-free.json",
+      "sha256": "dcb2d2dedc4b17a4b99a6db2c8445eb1f754a797ce2252b85e46d668583ecb91",
+      "vectors_sha256": "8715a161bff609d3107f11dcc46d184853bb1d6a2945ecd1bdbace38ecb35c7a"
+    },
+    {
+      "name": "doc10-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-teacher.json",
+      "sha256": "47e155cb2129212ba2466aa50ec335d8b2a32565106ee9c826981e6043a1979a",
+      "vectors_sha256": "3833a60588b6fd77f8e3db2d1a23bf40bf12c0c9b32caa9716b8a84df51efde1"
+    },
+    {
+      "name": "doc10-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-short.json",
+      "sha256": "fbb6409c661754f9db36024595bda8307f984eac99ea0ff963ace9876eb3f757",
+      "vectors_sha256": "0b0c652eb3b38f5e4030785da72e1f8dc8da0e6d95ba32e05fd3f9bb79458979"
+    },
+    {
+      "name": "doc10-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-top2-4.json",
+      "sha256": "9afc9f3f6e3d056c0427e887b60f927a586ae648a131f7c2e605c090bcbd6b61",
+      "vectors_sha256": "90ce71a12232f9154f3c9adc565d2690a8b273f9ebac15ebb7f9192397ff308b"
+    },
+    {
+      "name": "doc10-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-truth-4.json",
+      "sha256": "cc4fdc42592182dd643329f9876e9c9c9361092472be88b5990a5566092e3799",
+      "vectors_sha256": "af6b35b4d51e8c3fc6cd51fc6f745938bf9c28978af98ab65aacc1d9103de22a"
+    },
+    {
+      "name": "doc10-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-top2-8.json",
+      "sha256": "cd1215994d1c1a07452a8af0adfec75219cc74d6db1b493c32ce4ccf501afbfb",
+      "vectors_sha256": "0de057c5f98b29b98af7c6bc9a9a1a0b4b2c2c7faa472c97bce459a8c55b4096"
+    },
+    {
+      "name": "doc10-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc10-truth-8.json",
+      "sha256": "6827298aa39196210fc1af02e75b6fc845d2d91f409c428e456524a2202835e6",
+      "vectors_sha256": "8c9b88f9a93cc292d53d7254fcfadab0708018ce8bc70b5ab87de281c18b314d"
+    },
+    {
+      "name": "doc11-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-free.json",
+      "sha256": "a1019200ef7361c7eb5fc78a2152a3e8b2b578a8b1251da3e9336f28091ca629",
+      "vectors_sha256": "5faf7745b2f448bb874f909d69128ba189c8d0d252bbd39ded55a95130a42491"
+    },
+    {
+      "name": "doc11-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-teacher.json",
+      "sha256": "8475790783c553c352d55a135605ccf4394c957bb0f2489bf3edeb0fed332c8b",
+      "vectors_sha256": "a6135257cbda0d5823ac0e9feb242d7e5f8a65abb2d9b909c1db1e1bb4dea1ac"
+    },
+    {
+      "name": "doc11-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-short.json",
+      "sha256": "56af573ec2f65005d7764d01172ebcdd5f03e29075dc9a28f6c4947345f77aaf",
+      "vectors_sha256": "0f43daef5a97d41ad9dd9ca7ac1cb77c64d8f745b7ab9584f821ad20f5c8d8f3"
+    },
+    {
+      "name": "doc11-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-top2-4.json",
+      "sha256": "619fdc675b793757d8a05c0324321b273fe3104eab326557d8c98eb14083c041",
+      "vectors_sha256": "9b9c18651a760057dd8d4deb62902e853964c9e706e1c98f228eaec0b468bf22"
+    },
+    {
+      "name": "doc11-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-truth-4.json",
+      "sha256": "6f7cea158ada11ed88d9cda20e96124b4ec3b3ee4d918f984b568b23b883c3ae",
+      "vectors_sha256": "16c611b696b1f6a855ed3fd28be650ed42018aec73faf8498e7302eee9252a8c"
+    },
+    {
+      "name": "doc11-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-top2-8.json",
+      "sha256": "593f6184e56deddd70054e0d1ac0433b85198fc65b9631a3ee89095a2a3dcfa2",
+      "vectors_sha256": "718814c936157f489a5043a558286fbd6456037d44e936060fd3ea7ab886201a"
+    },
+    {
+      "name": "doc11-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-truth-8.json",
+      "sha256": "18c29ea5a32f83a4eeafd9663ecf31b45915d9ce56266a91ff42c6deb24d6116",
+      "vectors_sha256": "402efdcdbd1bc70f8f4c2f6ab38ed9df49e9778b6ea05dc03e1c71877b4ac248"
+    },
+    {
+      "name": "doc11-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-top2-16.json",
+      "sha256": "1ad812e901c90462ead1d8cf77f5d629d652d89b8f25a6a581d388cc7dc4306f",
+      "vectors_sha256": "e466672460e46a6f56d9b1f081db0a696e90344b568fbd780d55cb1ac2a4a8d8"
+    },
+    {
+      "name": "doc11-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc11-truth-16.json",
+      "sha256": "149a2d5785a22707abc3e25513f76af51435ac8cc7c27624f03761d532468eac",
+      "vectors_sha256": "6d32e83b9be50eb3141e52724a761f68d1bdab47b26d93ca6dd2a6a364df0fe7"
+    },
+    {
+      "name": "doc12-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc12-free.json",
+      "sha256": "f0f011cec27c84ab8d320ce3f685dc93eb43cd1afbc901f158fe54322412729a",
+      "vectors_sha256": "1d1d53c7529fef1d1f61a418793f1cc5567c988158321cfd2c291872ac788f9e"
+    },
+    {
+      "name": "doc12-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc12-teacher.json",
+      "sha256": "cd6c5a3e9189a53807268993595ccbd400f431d3e2a61e1c65f72d728effeabe",
+      "vectors_sha256": "11a269f8584a80ad6adefa72b34985be8f37759810081f34364392452996477b"
+    },
+    {
+      "name": "doc12-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc12-short.json",
+      "sha256": "d1421115cccee7ddc11e68afd37a29e8e09c26ee0161327690e58871e0a6c3bd",
+      "vectors_sha256": "51ac2d725c48e343da63d44e622230c00ac7b6fe2d3a1229d80e14aeec98ed31"
+    },
+    {
+      "name": "doc13-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-free.json",
+      "sha256": "03afcaede4753a27a10b3bda03923d03cb4322d837b41797acf7d1027fe91255",
+      "vectors_sha256": "b019da94098fe3faadd8f32fbc5a0638225f3a9b4e720ebece1238bb14584f67"
+    },
+    {
+      "name": "doc13-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-teacher.json",
+      "sha256": "1eb793b7d43ec013ba32e153cd71dd1cd2d962f5cfdbce54654c7396f88e580a",
+      "vectors_sha256": "8ea9879f4e9cbbd1e61b0659579f4aaefad1f0d7210e552990746ce9eb830acc"
+    },
+    {
+      "name": "doc13-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-short.json",
+      "sha256": "78650f8ec8b1e822d48d2b112132f8bcd4e9f7e211c24c44ec4fea4e2c06db1a",
+      "vectors_sha256": "c96f1fddb40b95411e490ce24050db60b5b43bf2c96df8265c87189e693961cb"
+    },
+    {
+      "name": "doc13-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-top2-4.json",
+      "sha256": "0b7eed8b011e265bec74320c78ac6d6d2565d891cf473f05faad3c86dc4160f8",
+      "vectors_sha256": "d48d04ccce57212b099123e2bbd9e6fc57086a95d4dc5d4cdc8e145735cbb717"
+    },
+    {
+      "name": "doc13-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-truth-4.json",
+      "sha256": "9008d51da3cb3f82e057531beb33f6167dd485aa0096136ef891269bba012f9d",
+      "vectors_sha256": "9df501ff7d27406a9bc2e962ec9d8137d0e7110c4927fcec34fac5f5b478f7d9"
+    },
+    {
+      "name": "doc13-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-top2-8.json",
+      "sha256": "393f4269cbdee4041f43397bb6f94f0ec8108ca39fdd70c69479fcc7bd5a32ce",
+      "vectors_sha256": "dcdb3017169468a9b010c3d636e5115f077031ab194d3ee1921d5acb99e2616d"
+    },
+    {
+      "name": "doc13-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc13-truth-8.json",
+      "sha256": "2edcee1132248ef3c6e6959ef6a11d7d910aa0fb20d6804dbd09ea91edd7017f",
+      "vectors_sha256": "cb7cb46d7d5ee68917f1d60a7d4d801391cc2fbe4ca098a856908940a2138224"
+    },
+    {
+      "name": "doc14-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-free.json",
+      "sha256": "18961468809d61290d62a6cc717a9e64382057a0fa05e82d9190c851ea279ec9",
+      "vectors_sha256": "702e3cfc7a542924e6680b086df947368506edaed68a7c4c2381c13134497192"
+    },
+    {
+      "name": "doc14-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-teacher.json",
+      "sha256": "053f860ca2afd57714330d77d0f3cea536bd5009d46715d2001a2ad3f4e4902d",
+      "vectors_sha256": "44ad6dfa595c01e9517f31395f1593a4f0ebbea5edffd550785e6dd755260ee5"
+    },
+    {
+      "name": "doc14-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-short.json",
+      "sha256": "c0a3f4eb2de40e81ff3052b7adbe46820186d276b6b03c4c1ab19f8fe9fe0228",
+      "vectors_sha256": "807c9d878064929c25e6205abbc6f5f3d0497b927a3e3c761ed7742132b5af65"
+    },
+    {
+      "name": "doc14-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-top2-4.json",
+      "sha256": "9376462f3ef5ec8495360d5570c4995a0b3eeba5bd1a5570a22ac07a4749136a",
+      "vectors_sha256": "5936255cf296f1570b57c6d064fd2f3749a7b07260ed2e464bb2b467e54a0ceb"
+    },
+    {
+      "name": "doc14-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-truth-4.json",
+      "sha256": "ebe97ab33da3860ac8caadc6c34cc8bb5020d340d227ddcdef68db7229ad8f5c",
+      "vectors_sha256": "b22184b3dd313a1ec2049d10fa1f16da7560113a36f3f7cd27865cdac21db451"
+    },
+    {
+      "name": "doc14-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-top2-8.json",
+      "sha256": "72b0651d6f62af669106711afa7bfcf3326b6c02f577277266f9581b559d0442",
+      "vectors_sha256": "bcfa95ba765f51d53e2a58a5e991756aaaacdc59425c171f34a350fb73363135"
+    },
+    {
+      "name": "doc14-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-truth-8.json",
+      "sha256": "cb700230e5be6bfe763a7107d91a46bc561d7e9cddc0b2960f85b0ad2678780b",
+      "vectors_sha256": "8ff407efd82a6d0f6a5726352bd192edbb720ad38b4b4dfe71733d3f76dac217"
+    },
+    {
+      "name": "doc14-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-top2-16.json",
+      "sha256": "1bb114b933a7f179b870a1f00d81f216eae2413b120a9c5afd32f27b0cc7f580",
+      "vectors_sha256": "1cf9581cf35af7b7de0598999e5629ddfa972cf5bac4d9b4b8110f778f016b53"
+    },
+    {
+      "name": "doc14-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc14-truth-16.json",
+      "sha256": "92ff94da473a33389acece35922d01bdb872767a64583b3996ac57c7d4bc6da6",
+      "vectors_sha256": "324788625c3166ed06eb05c341b16ec37e8c37fcdc11b54e22eead64f75f78a0"
+    },
+    {
+      "name": "doc15-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-free.json",
+      "sha256": "04481caa3b63d279a92eea2278a21bf2508b89298ef857f27fc789021390ef50",
+      "vectors_sha256": "337858df1f38c972112a9460299b90d94f5b4713a034967242a6c49553b4e845"
+    },
+    {
+      "name": "doc15-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-teacher.json",
+      "sha256": "96c7fdf9d81d76a54acd3e19ecbcce7618e15a7baddffad99a729aedc3e54909",
+      "vectors_sha256": "77457355570e95262e1d2e300b529f59802ae71dda8a70833611f0376409b6a1"
+    },
+    {
+      "name": "doc15-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-short.json",
+      "sha256": "262c638953a2dfecf301d1b80f45125eb39a7c948d68837d8c9894e8a4b5958a",
+      "vectors_sha256": "20c3e9cd2e7b82011b41f1a9447115b3d19b57e552a3424a2eaa620d82f94c52"
+    },
+    {
+      "name": "doc15-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-top2-4.json",
+      "sha256": "0e1a68c85004bf306712ce1146896fce28f1b98dbadbea720a3c6dc3ca95c84d",
+      "vectors_sha256": "5663b0df89f2d722aec1f291505a06501b19e3e400ba3f72478d3070c16a6ed1"
+    },
+    {
+      "name": "doc15-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-truth-4.json",
+      "sha256": "0a47eb12d4b8381b35a3ffdd59a8da538b823dd0b0bb0f0f656371c05eeba1c8",
+      "vectors_sha256": "ced995e0a8355f9eacd66df17af4baecb05c36f5d6dd08462d098266e3863ce9"
+    },
+    {
+      "name": "doc15-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-top2-8.json",
+      "sha256": "faff51ca446ade3701d294eb52225c9ed820d4f35bad3de3d3947d4a7fe8c2db",
+      "vectors_sha256": "f706c167f6a0d35d9ad5f45960c4b856e8107af29a80cbd0a9787ea863869ec1"
+    },
+    {
+      "name": "doc15-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-truth-8.json",
+      "sha256": "f6b6b311d899e86549ea1e9c9dcc6b5d86ffccaa2036fe10974352d888965b18",
+      "vectors_sha256": "e6b7c146389c17e38eaebec26dc2b1d537c48d81e57f51b5ce6f9f26c57c860d"
+    },
+    {
+      "name": "doc15-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-top2-16.json",
+      "sha256": "9823cfce8481b80612ae9e29809774f123b39a4b2207f82fa770fb4d4bf59758",
+      "vectors_sha256": "a752605fc4da3de0f2dcd704e1fb5ba3664ef3ea02b18f0f38db8012902b2e72"
+    },
+    {
+      "name": "doc15-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc15-truth-16.json",
+      "sha256": "0dd33393c9d68a4717fc6d74727e0f8b6eb1b07e1cac130efed6e9ed3f01c640",
+      "vectors_sha256": "bff653328ad297b51a1578183a192b935c89f20498081d040bee56ccda23636c"
+    },
+    {
+      "name": "doc16-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-free.json",
+      "sha256": "2ea6d60f5cf43ce98fcb9f5f2c2d931436f3f0985be032e427c31f4c1fba56a0",
+      "vectors_sha256": "b3109c1b815fe76bc904b130bda69f7f17928c9f5ea3a07db26f37510b16587a"
+    },
+    {
+      "name": "doc16-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-teacher.json",
+      "sha256": "d10a2ee4e4d3173e16c423dba6df5c18e616d31d4a80106c073897a41d0a28bb",
+      "vectors_sha256": "56a08a190c2ba93bc494e26bed6b0aae696c2aee6a557a4f7d4ad98d64ea36c1"
+    },
+    {
+      "name": "doc16-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-short.json",
+      "sha256": "0aa872da015a8d5a5e4eccbffadf12a5ee1842a321d699da548056ded8f6bd95",
+      "vectors_sha256": "9bd0a190d9cea8a686d47a2ecddaa9bd6e1594496913f807fcfcf2dad39f7a05"
+    },
+    {
+      "name": "doc16-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-top2-4.json",
+      "sha256": "250e04f464f5843cc51cedba490c0b5c5c19b6f1b4e0a4777ae53c9efef52764",
+      "vectors_sha256": "ae6bb48e72cdf0c614b8592539771265b172fe0ec10a72d1fb00782742983aaf"
+    },
+    {
+      "name": "doc16-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-truth-4.json",
+      "sha256": "f661dc705617b29a34737a7240f3c4ff975a708636e66602ca75c0b7f85b1007",
+      "vectors_sha256": "9cdf24e3bd2667bbdb435b072c4453300a29ca12f9521dbd901d739bca1777ca"
+    },
+    {
+      "name": "doc16-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-top2-8.json",
+      "sha256": "28c79b29a051b608e4cc9b8a522ac78a72432b3c0728603e03e910b533bf5ac6",
+      "vectors_sha256": "84705e744ae5444e976669e33f5df179e2de8995bd5f58c13ea91df8d2de71cd"
+    },
+    {
+      "name": "doc16-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-truth-8.json",
+      "sha256": "17822be838ad58bc48bdb51a4da7e6597b1626778cb41e0e0118b9edeb1949bd",
+      "vectors_sha256": "e014ecbb2e7aadac32d70d0e459ac26bf3fbec48dfad3838cadf82334ee2f38e"
+    },
+    {
+      "name": "doc16-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-top2-16.json",
+      "sha256": "6fa9dc1a83e91286f6edda5f3ade24a0698503354b4dd4fe28c36bcc5128a89d",
+      "vectors_sha256": "c48331eff4067e6391b10f9b66017bd149485b757378f349febdf33d2ab03a53"
+    },
+    {
+      "name": "doc16-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc16-truth-16.json",
+      "sha256": "8fe1ffb4914988a8ad9f87281e786c76ddbf54791d30b223c3e58180fbc43c9b",
+      "vectors_sha256": "4c94681c5e21a90f05288e24b7f82c16986c6305df16e6bfd6d31c1b8dbd3144"
+    },
+    {
+      "name": "doc17-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-free.json",
+      "sha256": "224370d7c09da07fdbccc72b8593301798f3bc9cc82c28601566e89f99423ac1",
+      "vectors_sha256": "d0460735b699e295e2025b94965281db5b4a38a7e0fda1ec063a7a6aac338d27"
+    },
+    {
+      "name": "doc17-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-teacher.json",
+      "sha256": "3cdb3740b764b6b3e250146a031a7a8a7c0d52d724f4cf1cf819ef481a82681b",
+      "vectors_sha256": "f031da93f658af8ec0257c023cee079f3dda49f0a556545aaa43dcf695982b83"
+    },
+    {
+      "name": "doc17-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-short.json",
+      "sha256": "485c9e717b791f5c8ba32763a8f872476862bd1a1103a0749860009a2ac023ed",
+      "vectors_sha256": "44b686553311ff5cc6c4880dfa74062ac9ce09c14ad96bfa1ce411a79a6deede"
+    },
+    {
+      "name": "doc17-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-top2-4.json",
+      "sha256": "fd0e444a6c24f36ca60102942f8d35d8493455a67bf66a57c0ba2e57bb000871",
+      "vectors_sha256": "5f49db6dda90847c54ce785a83ef028a173dac6e382343ae12af67d6dc3c288b"
+    },
+    {
+      "name": "doc17-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-truth-4.json",
+      "sha256": "d592aa896fc2432553daa86fa03410ac1e6a5af3ca255be5e149d70f76faaa13",
+      "vectors_sha256": "4f4fbd2163bba60ee9a563d0ef4ef6caed3c3ea32408f889c6e9caf83318795d"
+    },
+    {
+      "name": "doc17-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-top2-8.json",
+      "sha256": "ecd4a625d795a85e9d841b19a2d3dd288e590fb1de95c3087dd07fdde3a78de3",
+      "vectors_sha256": "0c51f8e528c1708dba2f0e8dca6f8c4a24349b0a943b6ddbb5f215a3e35f38eb"
+    },
+    {
+      "name": "doc17-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-truth-8.json",
+      "sha256": "28d2c50489af6a46d969568c51978fbd2d038f5501ff883d87346eea13936014",
+      "vectors_sha256": "91ce59650fa0d8abf2ff1a1a644c54afaeec8956b09ed292a1f2bb3347619791"
+    },
+    {
+      "name": "doc17-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-top2-16.json",
+      "sha256": "38e83cbd20f113fa8a8e6694d6d292244dabf0ec535267298ba0f33ffb0667b9",
+      "vectors_sha256": "2f8539b9d2d436d351c1db037da8489f48dc45082a09ac7535748ae0445253df"
+    },
+    {
+      "name": "doc17-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc17-truth-16.json",
+      "sha256": "6e46c1a96992d8e665291b05825b388890c64ab24f9b46374c5a3495d0a2d468",
+      "vectors_sha256": "1102f523a6e49026ec4397ae5cc4d8a0f4a3c4bfb32db1e8fc84179f4043d80a"
+    },
+    {
+      "name": "doc18-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc18-free.json",
+      "sha256": "460435883d1aeaba7ae6e8324272250eacd34205d1a058745acc5d96f2dd8c11",
+      "vectors_sha256": "ed0d75e1775025bafe075b41470b4f5c4a042ecac2c8f0868c790a41f87842d8"
+    },
+    {
+      "name": "doc18-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc18-teacher.json",
+      "sha256": "f1aeba71798172cbbabbf52cf931b369e26ed7b0f95a1910fc0b60bec94594c8",
+      "vectors_sha256": "e7e3b9d165bf608f41619531aff444b70dac9b7ade6fbce2fdc02f3b617e74b1"
+    },
+    {
+      "name": "doc18-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc18-short.json",
+      "sha256": "aa4632f0ed635f8648b43f8fafee7fa9cf5fed765318b77539e8e6c2d1631195",
+      "vectors_sha256": "5bced71eb379d0bd983bb6b934fe0b29e6bc303fcf10355eb305f562e860383f"
+    },
+    {
+      "name": "doc19-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc19-free.json",
+      "sha256": "6c3d14ce91a3269ccd43be5bc20dca793eb5c3ac30126493774dcc9e45eae6b7",
+      "vectors_sha256": "890c84043fca702d1fd486292fed209f2948632479e30af06dfe66ac453ea58e"
+    },
+    {
+      "name": "doc19-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc19-teacher.json",
+      "sha256": "923e7494b4571a85cf7448ca3b0e23d5640e1e42172ff0885dc8250a91489d62",
+      "vectors_sha256": "eb1990c9f5eda1666b3664d1e3c5bae2ec19c0a1994ffe709472faf761189fc7"
+    },
+    {
+      "name": "doc19-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc19-short.json",
+      "sha256": "d323b33f490cd11937ca6c70b9175da1bf8c4febf34578db3ac137c37af8d6d7",
+      "vectors_sha256": "fe2e31e8168bffa012c550af2a6f1e34170492a6f317bf43fdc54f89a8ed1bcb"
+    },
+    {
+      "name": "doc19-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc19-top2-4.json",
+      "sha256": "174b2bfe20a922a53b6ac230938b55f8684e899e3af8d10115771ceee332b3b7",
+      "vectors_sha256": "457ae5643b9f7c2c2aa8c032442d0fcdacf23ddaca9f8de572c89b18aaa6681c"
+    },
+    {
+      "name": "doc19-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc19-truth-4.json",
+      "sha256": "1126f547ab71ceab1517f76f03981ede1dfcfd6f51a0885012ab5527ad5c5a58",
+      "vectors_sha256": "c9a0c85aa3d702d05aa2bc4ba6e5d9a39ca152a3a3fe820951a52cad1406d244"
+    },
+    {
+      "name": "doc20-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-free.json",
+      "sha256": "db867277116e1100541d7f68112cb8bca946bbc4651a4f755251d72d27886e30",
+      "vectors_sha256": "bb12d22c69fb07fb271e1d077ad3b96d97c87d871d5f2e4c50ddb114dcf4c51f"
+    },
+    {
+      "name": "doc20-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-teacher.json",
+      "sha256": "984bedaf6d2dabe4f43188a79121f51ffdab5e58985d83e9493a7d7325261d5d",
+      "vectors_sha256": "f7d6db524fbe064d8195071209c75d4d3c6c13c5a527abb8ba1bf6389cf51086"
+    },
+    {
+      "name": "doc20-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-short.json",
+      "sha256": "2318d8eac519db1ba0c14496ff6c56d1ed80f0d194b8c28ea475a5146294ffa1",
+      "vectors_sha256": "dd8798df0b7f9745a29f275a59197dfbc937d7ccc0741ab062262546ae86b863"
+    },
+    {
+      "name": "doc20-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-top2-4.json",
+      "sha256": "051d5111f8b0038f39e097c7963e95f5158ca12e850faab09bfa31c94f14fa87",
+      "vectors_sha256": "928663cedc769eadef39918d5b10ddfe67c2cb22f7105ed5f915add27e7123a9"
+    },
+    {
+      "name": "doc20-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-truth-4.json",
+      "sha256": "4cc4cc827a4be385eee9a9c0005965291f807fd28c830f6bf8fb3983831c724b",
+      "vectors_sha256": "4595a395ca6ad6f6ea506569351b545fd584611ec7283725e2a93c02a044b6a4"
+    },
+    {
+      "name": "doc20-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-top2-8.json",
+      "sha256": "13166980e5e8d11c681bacec55eb01677b5cec29a11963eb72da56ae449718f4",
+      "vectors_sha256": "58b75e3e2e5b89b3e47216ab955bae5f7b7749746a91eb4a4b4b6ca798dcd30e"
+    },
+    {
+      "name": "doc20-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc20-truth-8.json",
+      "sha256": "71ed962386eb519e2b2882855604b59e65971e8318befb43d1395e5648ff28ee",
+      "vectors_sha256": "1eec336a9beeec489f16db5044515d9242c8e4f6c6e613cee0d27422c43cb8e5"
+    },
+    {
+      "name": "doc21-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-free.json",
+      "sha256": "a3de5930a22815ad34f12b93287b526be6dc53f9d0d24f48882ba9df50fc0237",
+      "vectors_sha256": "2fbc9b3fa491dc6adb527a049ef0f799c2663e57baa5c6d571b85a959650bd0d"
+    },
+    {
+      "name": "doc21-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-teacher.json",
+      "sha256": "8643c25b11cba53b1a9668bd7672b1adf025a898cb4dbb17d6c7a2d9e3b37db8",
+      "vectors_sha256": "4171d9a5f9a6532f3c4335578df43c0e6a8b98cf239624ed415767f28173ea69"
+    },
+    {
+      "name": "doc21-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-short.json",
+      "sha256": "375bbb82557897628d2dd6b87cc218374c4b368bd10208feb73bde3f729d34d5",
+      "vectors_sha256": "8e5a1055eaaa3ed2251e6074574b6b2e04c70c2d86dba554c6b30a381766ff02"
+    },
+    {
+      "name": "doc21-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-top2-4.json",
+      "sha256": "7893c1330ac8fb1e471585fa21001ca5b52437df3b53fea372f491e6633c1923",
+      "vectors_sha256": "115861a8b0dc212897212c3d254ed21ea628b13c5beb855a491a6ffdc61435b0"
+    },
+    {
+      "name": "doc21-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-truth-4.json",
+      "sha256": "3e9455eb9db640b90b4dbacac5afd2e65ae5575eda5a6b6d121524ca0dbb395c",
+      "vectors_sha256": "c4bdf0490d33a9f4b5a75f64b83e9f75a569015ff54c9759f591308dec299325"
+    },
+    {
+      "name": "doc21-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-top2-8.json",
+      "sha256": "af02dbb3bd172aa52ab8102508c640eab8969c8ef53c923db63ef67769537b1c",
+      "vectors_sha256": "13cdb6e0f151769f72f71554a4821841be040161b9dfb9c5d672032211e5d08b"
+    },
+    {
+      "name": "doc21-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc21-truth-8.json",
+      "sha256": "7b8c6e10b49ab085b56ad18649f757c1c2ee307582769ca1b92d4a1dab3a7ca9",
+      "vectors_sha256": "68a4d710d8458d5192210b85cd4d7b67c643a97ee093c1601299b7cc82c7563a"
+    },
+    {
+      "name": "doc22-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc22-free.json",
+      "sha256": "5a07b9d4397c00587a8d8c8c3ebf7bc9099c4b4e7593176eaf3030a15bb5675b",
+      "vectors_sha256": "c04db53d0e60a11a91b77ef584583aa5adc5e3875316c7feaa6401c829e6e362"
+    },
+    {
+      "name": "doc22-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc22-teacher.json",
+      "sha256": "ad0c5761c162f36718e310fbcb6f128f2af1c705f3ffe96edfaab7e0c45f4716",
+      "vectors_sha256": "604dbd532011ed5e840e214a2c862cba8588ac44468991576a8814d1db62e433"
+    },
+    {
+      "name": "doc22-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc22-short.json",
+      "sha256": "1c56de4830375ec254892fd909122a0d0e597a7c69e932ba09d49cf45d404e79",
+      "vectors_sha256": "3b1077ba4adce3504ef884b6020045c5b008a02c05afcc5587f929c65476ecbd"
+    },
+    {
+      "name": "doc23-free",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-free.json",
+      "sha256": "28bc62e9a4403e9f6c03eab8fa1eec92ec7ac2134b00abf752e6555e4a4fc827",
+      "vectors_sha256": "0ac41833bbeedbb82d1bf5be5a74098312429ab80a3ee420c60eecf8729c0b29"
+    },
+    {
+      "name": "doc23-teacher",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-teacher.json",
+      "sha256": "3b51c041ac657bd72ceb354b638eb903128661273af45744f3984375ef16a97d",
+      "vectors_sha256": "ce5c29feb2196b6789d07d7e311c548d0d4c71fa21ba0664597e4790ccd0b5ab"
+    },
+    {
+      "name": "doc23-short",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-short.json",
+      "sha256": "980b127b45c9c49aec9e1e94ad689ffc0d46f9a4c0ed3246e8e563647de7310d",
+      "vectors_sha256": "2d9297f7ba52929a196559f9b0ea79d58c87d6a54f42bd243a56d22fcd13308a"
+    },
+    {
+      "name": "doc23-top2-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-top2-4.json",
+      "sha256": "344b38c6cd5da5ed6e131c76eae915ca72fd8800f4473ab727a13015c3e633ba",
+      "vectors_sha256": "9d3dc02a225e318d20da8f8a8a987231d013337f0f85ef799f7169ac184466b8"
+    },
+    {
+      "name": "doc23-truth-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-truth-4.json",
+      "sha256": "edde207937c794cb3a28ce1f648e166a40532780931a9f15c395040ed03d9fb2",
+      "vectors_sha256": "9d3dc02a225e318d20da8f8a8a987231d013337f0f85ef799f7169ac184466b8"
+    },
+    {
+      "name": "doc23-top2-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-top2-8.json",
+      "sha256": "476b34a8bf9e878e812627a0c82bf9e257da1f592b1ac4f8c20baa14f01c2f55",
+      "vectors_sha256": "a6da8da144e3a9de81e2a27b67eec81e619011f4886771954de87143f6eb30d8"
+    },
+    {
+      "name": "doc23-truth-8",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-truth-8.json",
+      "sha256": "83a0f955bc0382cf97186e7bc61c1fa5d0577bcd2c34f198ea7f7f01e164c962",
+      "vectors_sha256": "3526659e4b534b8096209128b9bc09411528d1cd8489c3625990dbabae361d81"
+    },
+    {
+      "name": "doc23-top2-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-top2-16.json",
+      "sha256": "68def83bed6749adc470423b7bab2b0230e7904d286b3939866fdd8585c371f8",
+      "vectors_sha256": "c99937c5f1c12cf2e2e047e7b590debad970d0fa1343bd1167e93de9b90c6cb5"
+    },
+    {
+      "name": "doc23-truth-16",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-doc23-truth-16.json",
+      "sha256": "2346458547cd09d04d782b0dfb61c3f74997b569f4dc458d36d0a1a824fe086b",
+      "vectors_sha256": "0e5f7003f050d5ed075a460778a1a3683e7f038b4118c84fed80ec4e2fabfa7d"
+    },
+    {
+      "name": "legacy00",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy00.json",
+      "sha256": "c9a1ee2bf9339ebb300602862ddbfff82213e4d9feb6bdc75134960010cfeaa1",
+      "vectors_sha256": "fa247265f16b3fc29bae107155aaf6689e7b60414fd3d39292c2c3112bdb0047"
+    },
+    {
+      "name": "legacy01",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy01.json",
+      "sha256": "f9c807027c1c05b04e49b40b7063ae6d066dfe0c60b4cfaf8b83ce646eacec7f",
+      "vectors_sha256": "a40dd6616559d518c3ec0bed81f12fcc52ffb8d44d56f3a35501c81a5bf5bbed"
+    },
+    {
+      "name": "legacy02",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy02.json",
+      "sha256": "ecc2d5416277aafe70d63c41ead03816eb7e1ea4bbbd7bbd5a0cab726b5d454d",
+      "vectors_sha256": "7eaf3750c1e27d117a490702926707755c0571aa11f8332bfdec66bd21d7833a"
+    },
+    {
+      "name": "legacy03",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy03.json",
+      "sha256": "5146b86460b20fb470a04801e231013d1751169d309d6ec98d6ec05c80394f1d",
+      "vectors_sha256": "6b232ec55f548c464464775eda53633f17402d92a7c326e4543eb4ea1f2c617a"
+    },
+    {
+      "name": "legacy04",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy04.json",
+      "sha256": "f4a79646729eb1910848de041b50b18448276d5625d12a977718b52e6d4dc2c6",
+      "vectors_sha256": "4df1cd87f7853e4e75baa70328a7d9d2bb47d0c6d4de6490d718eb42606540bc"
+    },
+    {
+      "name": "legacy05",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy05.json",
+      "sha256": "be4716932c83e08cab241c31f6b2b0f651f009a5f3646b866d6ac965ec98b0a6",
+      "vectors_sha256": "33038ff9f4af322109075d8d9f3790d2a4956da70abcbbb9aa8692fd2d850c1b"
+    },
+    {
+      "name": "legacy06",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy06.json",
+      "sha256": "b89ee8a1468d60edaf53609cb6f354147cb673f024e73f40d0cdac1236ac1d1e",
+      "vectors_sha256": "cfb802f0867710aaf22d7b4954beac8c79885e61d06af1995cee16ec208c60b0"
+    },
+    {
+      "name": "legacy07",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-legacy07.json",
+      "sha256": "f8856868168f1834a1b7fb81594d93a9e19c94304dfab7868e47031a63e01e34",
+      "vectors_sha256": "cc72e76c560a1917e56dcb53a3d7d6b8292227beb21211f0ac820b252bc6e5c5"
+    },
+    {
+      "name": "normal-math-2",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-math-2.json",
+      "sha256": "7c5bffdc0e7c3fb4d225a0e493a7bda15166d28acda53b301e1f57d8e8e37a27",
+      "vectors_sha256": "310e40570f59e79f88e8bbd4e906952b008df2253f0316150409d310b80c7c9d"
+    },
+    {
+      "name": "normal-math-3",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-math-3.json",
+      "sha256": "c976c4d4ee8954aa1a4c72d6239c9d3c07eb30f6a83e52ef781e3212114b5840",
+      "vectors_sha256": "cb4cfea5928094bc63b1120e4e798af49bd6f7684e1c8773b89e0256b2c50f7d"
+    },
+    {
+      "name": "normal-math-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-math-4.json",
+      "sha256": "d92e2ce1d41fcf331b2ad7fc2614dbb7e9ae11f0c6f08e20a76adee252eaf139",
+      "vectors_sha256": "0b68626d89b97397ba5a9323a7461afbc216272e5797cf0fca4715837abeb607"
+    },
+    {
+      "name": "normal-math-5",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-math-5.json",
+      "sha256": "d75a55727fe709845aa68a37b164de6146769fbd6420dad9703eb366bd4d9e85",
+      "vectors_sha256": "c7b59ed14cd1e84c637baa841f7bdc5ce3f99e18da9e3310b8caafdf86f387ae"
+    },
+    {
+      "name": "normal-lists-2",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-lists-2.json",
+      "sha256": "1686d445bfd96f635488214fbebe2e2fd4dad9af4d30810a72d34fe17c3c68f7",
+      "vectors_sha256": "95d14d669b0e40386af449bdf91ddbc832f29b58d2c528ceab427e8d861c24e5"
+    },
+    {
+      "name": "normal-lists-3",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-lists-3.json",
+      "sha256": "c7a04f8026d2aadc1d96f0718e5dc71cd81bb2daadfbdcccd68fede30e1b3b0a",
+      "vectors_sha256": "8eb494bc9d0ab15b43cdd84a2530256b8ae3b14552f9e6427f03e1f3a6e55130"
+    },
+    {
+      "name": "normal-lists-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-lists-4.json",
+      "sha256": "abee04d5fa89ba27d3118ba34524af302435fc0dc916f787ad854cee22af68bf",
+      "vectors_sha256": "b0e4c44b3c903ead4d857b988763c8ce7d582ca186763f0252009dd51be1eb75"
+    },
+    {
+      "name": "normal-lists-5",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-lists-5.json",
+      "sha256": "63ecae0acc66bc9464773d7e5e2a2fc82fcff23d2094378275f546fe6a12d105",
+      "vectors_sha256": "6dba619a89f1acb828fa846ea57f9b9c7454585b11fdc4d158a7dca35416a20d"
+    },
+    {
+      "name": "normal-definitions-2",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-definitions-2.json",
+      "sha256": "1656aa97f500c80d21ec435bc9b0871b631e66f7171e1acfeddb81abdd8e09f7",
+      "vectors_sha256": "c63e55ab6a6bddeb536c5aa40e9707966caa7316f6ef2000163bc0a07badd33e"
+    },
+    {
+      "name": "normal-definitions-3",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-definitions-3.json",
+      "sha256": "7e907966dade908f724f7c6fbbe1c2f5f245bc2b3b8e0812b71ae71e3fb633ec",
+      "vectors_sha256": "0c3b225025718a46b948940f25769fa146034e7fd7b4c7db64cee94484c9c8cd"
+    },
+    {
+      "name": "normal-definitions-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-definitions-4.json",
+      "sha256": "c1653015a0cd21ceb7d23aeb66b206f0d1ac05aad209b60b6dd3b908bd91f560",
+      "vectors_sha256": "5e0894cbf872ba71f0eee829079131f11c9e9124914ad4aeb04f4cc25a10b0ac"
+    },
+    {
+      "name": "normal-definitions-5",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-definitions-5.json",
+      "sha256": "4ae93047910b2f9a69e72941a9a2796a7f2facbcc80cc33ea2948d9769fad161",
+      "vectors_sha256": "84993571c8cd1141187e8eccad1097153557eb2cc236ce78bcbb77e0b6c848db"
+    },
+    {
+      "name": "normal-code-2",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-code-2.json",
+      "sha256": "ca80ab604bbe596954a06254efb13bc300d90c9cf7d182a27bdbeee47638d466",
+      "vectors_sha256": "474d377166631afe0cce804ba9a4cb8aa4078ea74cfe3a73e115963948f65424"
+    },
+    {
+      "name": "normal-code-3",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-code-3.json",
+      "sha256": "fc6c5a6f5b47af663bda9b8e0c5ba264fd31bc10d8bc82ee6d466355e4ac9658",
+      "vectors_sha256": "3da6ec4b571339584e7cb1d9d950ee2554824a2f2b7ed5ecd01d4b420b965860"
+    },
+    {
+      "name": "normal-code-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-code-4.json",
+      "sha256": "b9f5ebbe64e216e9dcce8fd591596d01ee16c7430f42b5f88d154e42f535f57c",
+      "vectors_sha256": "5101797b9ab6bc68ac378a66e5e9e2cefd4a7b7bdcafddb9e48e16fc13c551c5"
+    },
+    {
+      "name": "normal-code-5",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-code-5.json",
+      "sha256": "8b901be58528e5f556d22cfd61a3c3f25d4179773b59c07a1039d6848110c0ee",
+      "vectors_sha256": "be373a0963b0610e9921550981578c399851bae56d544e273a30782acb3163e0"
+    },
+    {
+      "name": "normal-terminology-2",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-terminology-2.json",
+      "sha256": "7bda123d948118488300d1b4258c3c3d9fa4c0b3c5f2f5156bace3c4d49045ca",
+      "vectors_sha256": "1235a46fba0e4cc810ac5d593c5b4d98c5647a0f1d15bd50c2823ae3b52f5a58"
+    },
+    {
+      "name": "normal-terminology-3",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-terminology-3.json",
+      "sha256": "b7c68470cd4b90ce954d0f39d18bfede8cb9e7b62db3622b20783af5b6a87dc2",
+      "vectors_sha256": "7a67d2c610b11be454b364aa823ed72896c567e50cb315b9eccc8957d06ddfca"
+    },
+    {
+      "name": "normal-terminology-4",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-terminology-4.json",
+      "sha256": "9379e27ae4ffa75a87fe15043c3bf6b326d205bf86296c5a597377ffe96a79d9",
+      "vectors_sha256": "4594dbf70f3c0460f34f5148ebdaa6819b250046be22447cbe3cbc88ad8e78bd"
+    },
+    {
+      "name": "normal-terminology-5",
+      "arm": "C",
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase56\\C-42-normal-terminology-5.json",
+      "sha256": "def3a8151da52a51bc10a2d77d1267df8bc399c52c5b2d580c69429c23b47b73",
+      "vectors_sha256": "72762d64de4e5c387b3e67c74fe9fffbda9b7f53f4c18db8feac498299574612"
+    }
+  ],
+  "thermal": {
+    "samples": 713,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 768.0,
+      "gpu_temperature_c": 56.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 52.01,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.11577440000007755
+    },
+    "midpoint": {
+      "gpu_utilization_percent": 14.0,
+      "gpu_memory_used_mib": 820.0,
+      "gpu_temperature_c": 55.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 47.61,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 136.3660602000001
+    },
+    "end": {
+      "gpu_utilization_percent": 12.0,
+      "gpu_memory_used_mib": 815.0,
+      "gpu_temperature_c": 55.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 49.37,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 274.35246510000013
+    },
+    "maximum_temperature_sample": {
+      "gpu_utilization_percent": 13.0,
+      "gpu_memory_used_mib": 823.0,
+      "gpu_temperature_c": 58.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 49.72,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 65.283951
+    },
+    "gpu_utilization_percent_mean": 12.406732117812062,
+    "gpu_utilization_percent_max": 14.0,
+    "gpu_memory_used_mib_max": 829.0,
+    "gpu_temperature_c_max": 58.0,
+    "sm_clock_mhz_min": 1185.0,
+    "sm_clock_mhz_max": 1605.0,
+    "gpu_power_w_max": 56.59,
+    "software_thermal_slowdown": false,
+    "hardware_thermal_slowdown": false,
+    "thermal_classification": "NO_THERMAL_CONCERN",
+    "thermal_attention": false
+  },
+  "hook_logits_equal": true,
+  "model_tensors_unchanged": true,
+  "new_training": false
+}
