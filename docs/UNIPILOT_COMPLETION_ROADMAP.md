@@ -1,8 +1,8 @@
 # UniPilot — 15-feature completion roadmap
 
-PHASE55 / Academic OS Stage 7. PHASE49–54 evidence remains historical and unchanged.
+PHASE56 / Academic OS Stage 8. PHASE49–55 evidence remains historical and unchanged.
 
-Overall Stage 7: **PARTIAL**. Feature13 adds a five-mode local Office Hours template Foundation; Feature14 adds a fictional official-source registry/search Foundation with domain, year, freshness, conflict and missing-evidence boundaries. Neither is Beta or a validated model/live-search capability. Consent-based Learning Memory and deterministic Study Plan remain Local Beta alongside Planner, template-only Professor Email and generic GPA. Today's UniPilot reads only saved study blocks; new features never insert records. Degree-rule/credit audit remains Foundation using explicit fictional fixtures. Report/Research retain evidence and claim traces. Live and manual authenticated Preview QA remain NOT_TESTED. Bounded exact-origin CORS code is preserved, not deployed. No feature is Complete. Foundation Base remains incomplete; no research model promotion.
+Overall Stage 8: **PARTIAL**. Feature15 adds Career Foundation: manual profile, selected-only Memory/Planner copies, evidence-linked skills, Self-PR/ES/interview templates and isolated explicit Save/export/Clear. Company-source integration is NOT_IMPLEMENTED; no invented achievements or automatic applications. Feature13 Office Hours and Feature14 fictional official-source search remain Foundation, not Beta. Consent-based Learning Memory and deterministic Study Plan remain Local Beta alongside Planner, template-only Professor Email and generic GPA. Today reads saved Planner/Plan records only. Degree remains fictional-rule Foundation; Report/Research retain evidence and claim traces. All15 features now have initial implementations, but UI existence is not validation. Live authenticated Preview QA remains NOT_TESTED. No feature is Complete; Foundation Base remains incomplete, with no research model promotion or Production deployment. See `ACADEMIC_OS_V1_ARCHITECTURE.md` and `ACADEMIC_OS_PRIVACY_BOUNDARIES.md` for the integration audit.
 
 ## Status and completion gate
 
@@ -28,7 +28,7 @@ The definition of done in every row requires: **F** functional tests; **Q** repr
 | 12 | AI学習計画 | Beta | Integer duration/capacity constraints, priority/deadline order, reschedule and opt-in source copies; no personalized optimization claim | Local deterministic day scheduler and persistence, Memory/Planner opt-in, saved-only Today | Student feasibility review and separate clock-time scheduling if needed; see STUDY_PLAN_ENGINE.md |
 | 13 | AIオフィスアワー | Foundation | Course-scoped tutoring dialogue with escalation to instructor, source grounding and limits | Local five-mode template workflow, separate student excerpts and general study steps; no model/persistence/impersonation | Validate subject-specific model answers and student learning quality; see AI_OFFICE_HOURS.md |
 | 14 | 大学公式情報検索 | Foundation | University/year-specific official evidence, freshness/license/provenance, conflict handling and refusal when evidence missing | Application-owned registry, exact-domain and explicit subdomain contracts, six evidence states, Citation mapping; fictional local fixtures only | Authorized real-university retrieval, ownership/terms/freshness QA and student workflows; see OFFICIAL_SOURCE_REGISTRY.md |
-| 15 | 就活接続 | Not started | Consented mapping from real coursework/skills to career options; no invented achievements, biased ranking or unauthorized submissions | User-owned records; verified careers sources; privacy/fairness review | Define opt-in profile and evidence-linked skills schema |
+| 15 | 就活接続 | Foundation | Consented mapping from real coursework/skills to career options; no invented achievements, biased ranking or unauthorized submissions | Manual local profile, selective Memory/Planner copies, evidence-linked skills, PR/ES/interview templates; no model or company retrieval | Real-student quality/privacy/fairness review and authorized source verification; see CAREER_FOUNDATION.md |
 
 Existing Campus prototypes (tool cards, advice and local knowledge) are acknowledged above. They do not establish completion of the integrated 15-feature OS. SessionStorage for Tutor settings is not durable learning memory. Source Inspector is display infrastructure, not an independent Citation Engine.
 
@@ -77,4 +77,8 @@ PHASE53 adds14 Planner/Email unit cases and browser scenarios for persistence/im
 | 10 professor mail | Local Template Beta implemented; independent student quality review and any model integration require further validation; sending stays OFF |
 | 12 plan, 13 office hours | Reuse bounded Tutor/Materials/Exam inputs and source traces; validate feasibility and instructor-escalation criteria |
 | 14 official search | Add authorized official-source provenance/freshness before promoting metadata to Verified |
-| 15 careers | Define an opt-in skill→coursework/evidence schema; no fabricated achievements or external submissions |
+| 15 careers | Stage8 implements opt-in skill→coursework/evidence copies; next is student quality/privacy review and authorized source integration, not automatic applications |
+
+## Stage8 integration evidence
+
+The architecture audit maps all15 dependencies, deterministic/AI/retrieval responsibilities, source verification and future server-persistence requirements. Shared-module duplication is documented without a broad refactor. Desktop navigation groups all16 routes; mobile retains five primary routes plus an accessible all-feature menu. New Career data never silently enters Memory, Planner, Study Plan or a server. Local Demo regressions cover existing features1–14 plus Career at360/390/768/1024/1440; final counts and caveats are in `PHASE56_HANDOFF.md`. Live and real-user validation are still separate outstanding gates.

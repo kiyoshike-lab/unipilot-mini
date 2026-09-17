@@ -1,0 +1,181 @@
+{
+  "gate": "PASS",
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "z_available": true,
+  "z_free_bytes": 78423982080,
+  "resolver": "PASS",
+  "checkpoint_post_sha_strict_resume": [
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\foundation-v33-context-gate\\gate-2\\seed-42\\checkpoint-tokens-15872000.pt",
+      "sha256": "4b2ad19314d3f95202e4cc927d716107b008075d51980a6ebb46ba0216ee2ac6",
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ],
+  "copy_move_delete_overwrite": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "protected4_preserved": true,
+  "ready5_preserved": true,
+  "sealed_sets_hash_only": "PASS",
+  "final_blind_hash_only": "PASS",
+  "raw_trajectories": 622,
+  "raw_hash_inventory": "PASS",
+  "partial_artifacts": 0,
+  "raw_root": "Z:\\AI\\unipilot-mini\\evaluation\\phase56",
+  "thermal_max_c": {
+    "C-42": 58.0,
+    "C-123": 59.0,
+    "C-2026": 59.0,
+    "baseline-42": 58.0
+  },
+  "observability_source_freeze": "PASS",
+  "training_preregistration_hash": "PASS",
+  "new_training": false,
+  "pytest": {
+    "passed": 526,
+    "failed": 0,
+    "warnings": 5,
+    "preexisting5_generated_artifacts_restored": "SHA_PASS"
+  },
+  "objective_observability_tests": 11,
+  "web_unit": {
+    "passed": 83,
+    "failed": 0
+  },
+  "npm_lint": "PASS",
+  "npm_build": "PASS",
+  "browser_demo": "PASS",
+  "live_preview": "NOT_TESTED",
+  "browser_receipts": [
+    {
+      "path": "web\\qa\\phase56\\results.json",
+      "sha256": "5e06eadaf15bd24ed1d50869f90138bbbbbbd81b1310af26a338868d07844e59"
+    },
+    {
+      "path": "web\\qa\\phase56\\evidence-results.json",
+      "sha256": "01c7d2cada7eccef470c492a6ccbefc332b552f9d4610ed494f8d8e8ca20743e"
+    },
+    {
+      "path": "web\\qa\\phase56\\calculator-results.json",
+      "sha256": "8bac11bda64f1bc8af2f2226bc4becb1c59def964bd8d9d01c36c34d7bf77028"
+    },
+    {
+      "path": "web\\qa\\phase56\\planner-email-results.json",
+      "sha256": "c0258b8438ee8d5b11748a8f59f7f487706864ba4bd5c157877afb4f04d132ff"
+    },
+    {
+      "path": "web\\qa\\phase56\\memory-plan-results.json",
+      "sha256": "0580675f36e242585a76f3a598810e7116854b6b2f00803451bad8c787302a91"
+    },
+    {
+      "path": "web\\qa\\phase56\\office-official-results.json",
+      "sha256": "8512853b561461f6a5db52898fb36df8344a722d4fba7a7f3f7ba2ce195df263"
+    },
+    {
+      "path": "web\\qa\\phase56\\career-integration-results.json",
+      "sha256": "7d4fb729b89e5b734fe469447d9e7f3c18c87176d8a6c8f51a731e2aed065438"
+    }
+  ],
+  "widths": [
+    360,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "feature15": "Foundation",
+  "feature13_14": "Foundation",
+  "fake_achievements_in_fixture_outputs": 0,
+  "career_external_model_requests": 0,
+  "automatic_submission": false,
+  "branch": "foundation-research",
+  "precommit_head": "d3df3f4eb9155294d2b615792870d7ab8fa8af13",
+  "origin_main": "b4c21da8976e2c2f95fbcca0499cd915aed8a9df",
+  "render_vercel_production": "UNCHANGED_BY_THIS_TASK",
+  "external_ai_api": "OFF",
+  "canonical": false,
+  "20m": false,
+  "foundation_base": false
+}
