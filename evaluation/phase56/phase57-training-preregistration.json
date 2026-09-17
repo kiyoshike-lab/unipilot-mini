@@ -1,0 +1,159 @@
+{
+  "phase": 57,
+  "registered_in_phase": 56,
+  "registered_at_utc": "2026-09-17T12:03:20.164038+00:00",
+  "status": "PHASE57_TRAINING_READY",
+  "scope": "Design and synthetic objective contract ready; no execution in PHASE56. PHASE57 must implement and pass runtime preflight before any optimizer step.",
+  "root_cause_gate": "MIXED_CAUSE_WITH_ACTIONABLE_TARGET",
+  "root_evidence": {
+    "path": "evaluation/phase56/generation-observatory-summary.json",
+    "sha256": "d9d57a7f6b00ebc073e27047653857c2c73db3eb167a6d8e8f8181a8fc599220"
+  },
+  "parent_checkpoint": {
+    "root_environment": "UNIPILOT_CHECKPOINT_ROOT",
+    "relative_path": "experimental/phase48/arm-C/seed-42/checkpoint-tokens-16384000.pt",
+    "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+    "processed_tokens": 16384000,
+    "seed": 42
+  },
+  "seed": 42,
+  "approved_lr": 5e-05,
+  "eos_weight": 1.5,
+  "device": "CUDA",
+  "precision": "FP32",
+  "tf32": false,
+  "amp": false,
+  "architecture_change": false,
+  "continuity": "Strict reload parent model/optimizer/scheduler/permutation and Python/NumPy/PyTorch/CUDA RNG. Same next permutation entries, macro_batch512, optimizer hyperparameters and gradient clipping1.0. Constant approved LR; scheduler global_step follows updates. Parent tensors are read-only.",
+  "arms": [
+    {
+      "id": "control",
+      "objective": "L_LM = mean(w(y)*CE(z,y)), w(EOS)=1.5 else1.0",
+      "coefficient": 0.0,
+      "old_repetition_auxiliary": false
+    },
+    {
+      "id": "A",
+      "name": "generated-prefix contiguous-cycle unlikelihood with reference veto",
+      "coefficient": 0.05,
+      "objective": "L = L_LM + 0.05*L_GP on every8th update, otherwise L_LM. L_GP = mean_{(t,v) in M}[-log(1-min(p_theta(v|prefix,g_<t),1-1e-6))]; empty mask gives differentiable zero.",
+      "mask": "Detached parent greedy continuation only; t>=4w with smallest widthw in1..8, previous4 contiguous cycles identical and nextgenerated token extends cycle. Exclude special tokens including EOS/BOS/PAD/UNK, actual aligned TRAIN target, and any repeated4w+1-token snippet occurring anywhere in the original32-token TRAIN continuation. Exact prototype determines mask.",
+      "objective_prototype": {
+        "path": "evaluation/generation_prefix_objective_v45.py",
+        "sha256": "c7dbb5264a9573a61eda36d329fba461f15bc682a29cf167be3d25852367131f"
+      },
+      "normal_protection": "No negative loss on teacher-forced LM stream; aligned reference target and reference-supported repetition veto. Frozen normal controls evaluate CE non-degradation, not a zero-accuracy improvement claim.",
+      "phase42_difference": "PHASE42 searched3/4gram candidates in ground-truth teacher-forced histories on every update. A instead conditions on offline free-running parent prefixes, requires4 contiguous cycles and reference veto, and applies once per8 updates. Same mathematical UL family, materially different histories, mask and dose; never relabel the old auxiliary."
+    }
+  ],
+  "arm_B": null,
+  "training_data": {
+    "base": {
+      "path": "data/foundation_v11/packed/vocab-4096/train.bin",
+      "sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a"
+    },
+    "rollout_selection": "First128 TRAIN documents ordered by SHA256(phase57-generated-prefix-v1|zero-based document index), with >=95 non-special text tokens and no special in first95. Prefix BOS+first63 text tokens (64 total); detached parent generates32 greedy tokens; reference is text[63:95]. No Diagnostic, validation, Confirmatory or Reserve tokens in gradients/cache.",
+    "cache": "Generate once before optimizer steps from unchanged parent, eval(), same PHASE51 special mask and no decoder repetition controls. No EOS-reaching or <32-token episode eligible. Store local Z raw+ID/hash manifest; freeze cache SHA before either arm; identical cache order for both arms. No new cache selection by outcome.",
+    "aux_batch": "Every8th update use next frozen cache episode, cycling deterministically. Forward prefix+generated first31 tokens predicts32 continuation choices; charge96 input positions conservatively even though actual length95. Auxiliary eval-mode/dropout OFF with gradients only for A; restore train mode. Control executes matching forward without auxiliary gradient. Main LM dropout/RNG stream must remain identical across arms before diverging weights.",
+    "cache_insufficient": "If <20 eligible negative events across128 frozen episodes, STOP_NO_SAFE_OBJECTIVE before training. Never expand/redraw cache or change mask after this gate."
+  },
+  "token_budget": {
+    "first_gate_ceiling": 64000,
+    "maximum_ceiling": 128000,
+    "first_gate_updates": 122,
+    "first_gate_lm_tokens": 62464,
+    "first_gate_aux_positions": 1440,
+    "first_gate_total_gradient_input_ceiling": 63904,
+    "maximum_updates": 244,
+    "maximum_lm_tokens": 124928,
+    "maximum_aux_positions": 2880,
+    "maximum_total_gradient_input_ceiling": 127808,
+    "accounting": "512 LM tokens/update plus96 auxiliary positions at updates8,16,...; both arms charged identical slots. Below64k/128k ceilings, not an extra unreported auxiliary training budget. tokens_processed advances only LM tokens; auxiliary_positions and total_gradient_inputs stored separately. Frozen-cache inference is not training and is logged separately (<=128*96 positions). No256k+ run.",
+    "extension": "At first gate, stop SUCCESS_SCREEN if all success+safety thresholds pass. Only if all safety pass and both runaway rates are<=.75 and at least one improves>=.10 absolute versus parent, permit continuation of the same control/A pair to maximum. Otherwise STOP_NO_EFFECT. Maximum gate must meet full success thresholds; no further budget."
+  },
+  "evaluation_sets": {
+    "generation": {
+      "path": "evaluation/phase51/preregistration.json",
+      "sha256": "e94c0205935d8ba3ad31ff1c76c1ca1f1d0b832a3389713c1905f5cb55139bb5"
+    },
+    "generation_contract": "All100 frozen legacy prompts; greedy128 tokens; sampling temperature0.7 max64, no topk/topp/rep controls, RNG bases44000/51000/52000 plus prompt index. Same loop_details and budget-exhaustion runaway definition. Parent+control+A paired. No repeat PHASE55 Confirmatory.",
+    "validation": {
+      "path": "data/foundation_v11/packed/vocab-4096/validation.bin",
+      "sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935"
+    },
+    "lm_contract": "All validation next-token positions1..N-1, nonoverlapping512-input blocks (short final block included), no dropped targets; token-weighted CE and Top1/5/10. Same parent/control/A geometry.",
+    "frequency_population": {
+      "path": "evaluation/foundation-v39-supported-tail.json",
+      "sha256": "7d4a890faf0b4d366ad147eb01fc7c2f4cfb7a4e610b305f616471e720cd2c85"
+    },
+    "frequency_contract": "Unchanged Core and disjoint Supported Tail membership/positions, same packed512 block geometry as evaluate_foundation_v39_gate; micro CE and macro-per-token CE, Top1/5/10 and paired document bootstrap10000 seed5701. Do not redefine old gates.",
+    "eos_contract": "PHASE51 frozen terminal and nonterminal positions, context128; P(EOS), rank, Top1/5/10, nonterminal argmax EOS rate. No terminal probability alone establishes useful generation.",
+    "context_contract": "Same PHASE56 selected24 Diagnostic IDs, consumed diagnostic only, never gradients. Entire each document, contexts128 and512 using existing document_metrics in confirm_foundation_v44.py; equal-document mean CE; relative long-context benefit compared with each comparator.",
+    "normal_controls": {
+      "path": "evaluation/phase55/normal-controls-preregistration.json",
+      "sha256": "003bcb811c2c1f2766b60ed1dcd8476f9b133617e905de5e2a69cbf90051b876"
+    },
+    "normal_contract": "All20 PHASE54-family/PHASE55-concretized controls; exact normal_truth from frozen PHASE56 runner, EOS appended, teacher-forced CE with identical prefix. Compare mean and each family CE plus terminal EOS. Also report output shape accuracy descriptively; PHASE55 floor0/60 forbids declaring non-degradation solely from accuracy."
+  },
+  "success_thresholds": {
+    "greedy_runaway_max": 0.5,
+    "sampling_runaway_max": 0.5,
+    "preferred_each_max": 0.25,
+    "sampling_rule": "Pooled across3 fixed RNGs and each RNG individually <=.50; preferred each<=.25.",
+    "attribution": "Both runaway reductions versus matched control >=.10 absolute, plus all safety thresholds versus BOTH unchanged parent and matched control. If control improves too without intervention separation, report CONTROL_IMPROVEMENT_NOT_INTERVENTION_EVIDENCE.",
+    "interpretation": "Mechanistic seed42 screen only, repeatedly used diagnostic/validation sets, not fresh confirmatory evidence or model promotion. Multiseed123/2026 requires separate approval/registration if a candidate survives."
+  },
+  "quality_safeguards_vs_each_parent_and_control": {
+    "validation_ce_increase_max": 0.05,
+    "validation_top1_drop_absolute_max": 0.01,
+    "validation_top5_top10_drop_absolute_max": 0.02,
+    "context_ce_increase_each_128_512_max": 0.05,
+    "context_long_benefit_loss_max": 0.02,
+    "terminal_mean_eos_probability_ratio_min": 0.9,
+    "terminal_eos_top1_drop_absolute_max": 0.02,
+    "nonterminal_eos_probability_increase_max": 0.001,
+    "premature_argmax_eos_increase_max": 0.01,
+    "core_micro_macro_ce_increase_max": 0.1,
+    "supported_tail_micro_macro_ce_increase_max": 0.25,
+    "frequency_ce_paired_ci95_upper_max": {
+      "core": 0.1,
+      "supported_tail": 0.25
+    },
+    "frequency_top1_drop_absolute_max": 0.005,
+    "frequency_top5_top10_drop_absolute_max": 0.01,
+    "normal_mean_ce_increase_max": 0.05,
+    "normal_each_family_ce_increase_max": 0.1,
+    "normal_terminal_eos_probability_ratio_min": 0.9,
+    "sampling_naturalness_semantic_proxy_drop_max": 0.05,
+    "sampling_topic_retention_drop_max": 0.05,
+    "japanese_validity_drop_max": 0.01,
+    "missing_metric": "FAIL_CLOSED; no averaging away a failed safeguard; zero denominator or undefined ratio requires review, not PASS"
+  },
+  "stop_conditions": [
+    "Any parent/resolver/hash/state/permutation/RNG mismatch, sealed-set access, nonfinite loss/gradient/weights/optimizer or unknown partial artifact: stop before next update.",
+    "GPU>=80C pause/cool<=65C; >=85C or hardware thermal slowdown abort. No parallel CPU evaluation, npm build or browser QA while GPU training/inference runs.",
+    "Any quality safeguard failure at first gate: stop A; no coefficient/threshold/population edits and no extension. Control remains necessary matched evidence, never promotion.",
+    "Raw main-gradient norm>10 for3 consecutive updates or >100 once: stop; existing clip1.0 remains. Auxiliary contribution>25% of LM loss for3 auxiliary updates: stop.",
+    "Insufficient disk for2x estimated next checkpoint plus2GiB, output already exists, or budget ceiling reached: stop; never overwrite/copy/move/delete parent checkpoints.",
+    "No safe normal-control outcome, incomplete evaluator or fewer than20 negative cache events: stop before training; do not declare readiness execution PASS from synthetic tests alone."
+  ],
+  "unit_test_evidence": {
+    "path": "evaluation/phase56/objective-unit-tests.xml",
+    "sha256": "b0d870aa3e337c18742937bb5a555086920f9092f0193fc87d27aee7856569f4"
+  },
+  "normal_safety_limit": "Synthetic tests establish fixture behavior and gradient sign, NOT universal semantic safety. Generated text may have legitimate repetition absent from the reference; bounded dose and strict teacher-forced safeguards are essential. No deployment claim.",
+  "new_training_in_phase56": false,
+  "canonical": false,
+  "20m": false,
+  "foundation_base": false,
+  "source_hashes": {
+    "evaluation/register_foundation_v45_intervention.py": "d8fcbb1ceebcffb6e294dec54bdc18b814a5edf31945243750b98a0c84098940",
+    "evaluation/generation_prefix_objective_v45.py": "c7dbb5264a9573a61eda36d329fba461f15bc682a29cf167be3d25852367131f",
+    "tests/test_foundation_v45_objective.py": "8cae1ca05fb8c280af2a9b0cb6af2ed08a6c65284c7d9100383a91de2d0ffb4d",
+    "training/foundation_v31_objective.py": "e15cc2dc463a56d486488c831149ddc60e2f1f04bef7af3ff486cfdfe5e0af32",
+    "evaluation/run_foundation_v45_observatory.py": "05c357a5956ceb1299eec8df93f4dd1512f9efba5d9fc472ddd4ec88131fb96a",
+    "evaluation/confirm_foundation_v44.py": "a58caba4f772669bbd451745b35a7e87546ee2844254d233cded6045b831643d",
+    "evaluation/evaluate_foundation_v39_gate.py": "6e26796855ea366cafb5fbbcf14ffa1b736fa648620bbd03ce76edae4955aba1",
+    "evaluation/diagnose_foundation_v29_generation.py": "738e50126c9ca0d5bb7f2dce854acdc6c2fee978589380d7820d75e853dd8a24"
+  }
+}
