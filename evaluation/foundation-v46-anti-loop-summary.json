@@ -1,0 +1,32 @@
+{
+  "phase": 57,
+  "status": "EXPERIMENT_INVALID",
+  "automatic_64k_gate": "CONTROL_DRIFT_REVIEW_REQUIRED",
+  "reason": "Post-evaluation contract audit found that the Phase57 safety wrapper referenced natural_japanese_proxy and semantic_coherence_proxy, while the frozen registered generation runner emits naturalness_rate and semantic_rate. The wrapper therefore did not score those two registered automatic safeguards. Rewriting and rerunning the evaluator after observing outputs is prohibited; no efficacy conclusion or extension is valid.",
+  "approved_lr": 0.00005,
+  "seed": 42,
+  "arms": ["control", "A"],
+  "first_gate_gradient_input_tokens_each": 63904,
+  "second_gate_executed": false,
+  "new_training": true,
+  "intervention_promising": false,
+  "model_fixed": false,
+  "canonical_promotion": false,
+  "permission_20m": false,
+  "foundation_base": false,
+  "final_blind": "SHA_ONLY",
+  "reserve2": "SEALED_UNSCORED",
+  "checkpoints": {
+    "control_64k_sha256": "75848b7e79c5a9ff4aacce3230c374a32cb13c4978e591a743f683c2df6f3906",
+    "arm_a_64k_sha256": "a6f9591b2004ff4b0c5b662815bf5baa7fb8c24b7617fa699614fea57d17535e",
+    "strict_reload": true,
+    "experimental_not_canonical_not_production": true
+  },
+  "evidence": {
+    "preflight": "evaluation/phase57/preflight.json",
+    "control_summary": "evaluation/phase57/control-64k-summary.json",
+    "arm_a_summary": "evaluation/phase57/arm-a-64k-summary.json",
+    "automatic_gate": "evaluation/phase57/gate-64k.json",
+    "raw_root": "Z:/AI/unipilot-mini/evaluation/phase57"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "phase": 57,
+  "authorized_training": true,
+  "at": "2026-09-17T12:34:01.606308+00:00",
+  "branch": "foundation-research",
+  "authorized_start_head": "e91bb8f8f8ad6966a9305c748e9684194db11783",
+  "implementation_head": "551a481647dc54bf837cfbd5324ed5c9494d406a",
+  "origin_at_initial_gate": "e91bb8f8f8ad6966a9305c748e9684194db11783",
+  "resolver_gate": "PASS",
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "preregistration_path": "evaluation\\phase56\\phase57-training-preregistration.json",
+  "preregistration_sha256": "c517eceaabe5dc9e0ba060f1cf6197b0d3bed8a4a17017d3c8d9a5618c091afe",
+  "parent_checkpoint": {
+    "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+    "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+    "bytes": 235702207,
+    "integrity": {
+      "checks": {
+        "strict_model_optimizer_reload": true,
+        "parameter_count": true,
+        "fp32": true,
+        "finite_weights": true,
+        "finite_optimizer": true,
+        "seed_tokens": true,
+        "scheduler": true,
+        "lr": true,
+        "optimizer_steps": true,
+        "sampler": true,
+        "rng": true,
+        "eos_rep": true
+      },
+      "pass": true
+    },
+    "tokens_processed": 16384000,
+    "metadata": {
+      "seed": 42,
+      "phase": 48,
+      "experimental_lr": 5e-05,
+      "eos_weight": 1.5,
+      "repetition_auxiliary": false,
+      "parent": "80010161ab9b288ddf2f9fd0ac6cafc7803e106c4f9364c7ad9e7be6dcf9cf6c"
+    }
+  },
+  "tokenizer": {
+    "path": "tokenizer\\foundation-v11-base-4096.json",
+    "sha256": "741e450a3b976ea21ccaf452c65181da47f198822f50c2e2b6bfb059e93aa13c",
+    "vocab_size": 4096
+  },
+  "training_data": {
+    "path": "data\\foundation_v11\\packed\\vocab-4096\\train.bin",
+    "sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+    "tokens": 33402759
+  },
+  "cuda": {
+    "available": true,
+    "torch": "2.12.1+cu130",
+    "build": "13.0",
+    "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+    "vram_mib": 8191.6875,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 479.0,
+      "gpu_temperature_c": 56.0,
+      "sm_clock_mhz": 1185.0,
+      "power_w": 46.88,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false
+    }
+  },
+  "ram": {
+    "total": 17114112000,
+    "available": 8486535168,
+    "percent": 50.4,
+    "used": 8627576832,
+    "free": 8486535168
+  },
+  "free_bytes": {
+    "C": 138998149120,
+    "Z": 78423982080
+  },
+  "atomic_storage_requirement_bytes": 2618888062,
+  "objective_contract": "PASS",
+  "negative_sample_sufficiency": "PASS",
+  "copy_move_delete_overwrite_existing_checkpoint": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_blind": "SHA_ONLY_PASS",
+  "reserve2": "SEALED_UNSCORED_HASH_ONLY",
+  "confirmatory_rerun": false,
+  "new_arms": 0,
+  "run_order": [
+    "control-64k",
+    "cooldown",
+    "A-64k"
+  ],
+  "cache_manifest_sha256": "edca148699f20858c9e3cdbd400991092917d706fe1c360e50324c6b027fc5c6",
+  "cache_raw_sha256": "4978d51cb66326bccee71a966d6337555387ce74f5ac2d4415506076a69416dc"
+}

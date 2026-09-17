@@ -290,6 +290,8 @@ def compact_evaluation(row):
       'eos':{k:v for k,v in row['eos'].items() if k not in ('terminal','nonterminal')},'context':row['context'],
       'normal_controls':{k:v for k,v in row['normal_controls'].items() if k!='rows'},
       'generation':{'greedy':row['generation']['greedy']['metrics'],'sampling':{k:v['metrics'] for k,v in row['generation']['sampling'].items()}},'thermal':row['thermal'],'raw_only':True}
+def compact_training(row):
+    return {k:v for k,v in row.items() if k!='stats'}
 def existing_evaluation(label,path):
     target=raw_path(f'{label}-evaluation.json')
     if target.exists():
@@ -311,7 +313,7 @@ def gate_stage(total_updates):
     result={'phase':57,'stage':stage,'gate':gate,'arm_a_success':full_success,'control_drift':control_drift,'safety':s,'control_vs_parent_safety':control_safety,'generation':{'parent':{'greedy':pg,'sampling':ps},'control':{'greedy':cg,'sampling':cs},'arm_a':{'greedy':g,'sampling':samples},'attribution_reduction_control_minus_a':{'greedy':cg-g,'sampling_mean':control_sampling_mean-sampling_mean},'parent_reduction_arm_a':{'greedy':pg-g,'sampling_mean':parent_sampling_mean-sampling_mean}},'extension_authorized':total_updates==122 and extension and not full_success,'reason':'Registered thresholds only; no post-hoc extension.','new_training':True,'canonical':False,'20m':False}
     atomic_json(gate_path,result)
     for name,row in [(f'control-{stage}-summary.json',control),(f'arm-a-{stage}-summary.json',arm)]:
-        arm_id='control' if name.startswith('control') else 'A';atomic_json(OUT/name,{'phase':57,'evaluation':compact_evaluation(row),'training':read(raw_path(f'{arm_id}-{stage}-training.json')),'gate':gate})
+        arm_id='control' if name.startswith('control') else 'A';atomic_json(OUT/name,{'phase':57,'evaluation':compact_evaluation(row),'training':compact_training(read(raw_path(f'{arm_id}-{stage}-training.json'))),'gate':gate})
     print('PHASE57',stage.upper(),'GATE',gate,flush=True);return result
 def gate64(): return gate_stage(122)
 def gate128(): return gate_stage(244)

@@ -1,0 +1,734 @@
+{
+  "phase": 57,
+  "stage": "64k",
+  "gate": "CONTROL_DRIFT_REVIEW_REQUIRED",
+  "arm_a_success": false,
+  "control_drift": true,
+  "safety": {
+    "parent_validation_ce": {
+      "delta": 0.0003900462069612587,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_validation_top1_drop": {
+      "delta": -0.0005291152635829022,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_validation_top5_drop": {
+      "delta": -0.0003813057365091854,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_validation_top10_drop": {
+      "delta": -0.0011953292189444964,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_context_128_ce": {
+      "delta": -0.009599508955321134,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_context_512_ce": {
+      "delta": -0.005508487051019806,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_context_long_benefit_loss": {
+      "delta": 0.0040910219043013285,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_terminal_eos_ratio": {
+      "value": 1.502996983609615,
+      "limit": 0.9,
+      "pass": true
+    },
+    "parent_terminal_eos_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_nonterminal_eos_increase": {
+      "delta": 6.4277799527531e-05,
+      "limit": 0.001,
+      "pass": true
+    },
+    "parent_premature_eos_increase": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_micro_ce": {
+      "delta": 0.10442615874746508,
+      "limit": 0.1,
+      "pass": false
+    },
+    "parent_core_macro_per_token_ce": {
+      "delta": 0.12105758360019081,
+      "limit": 0.1,
+      "pass": false
+    },
+    "parent_core_top1_drop": {
+      "delta": -0.0004508566275924254,
+      "limit": 0.005,
+      "pass": true
+    },
+    "parent_core_top5_drop": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_top10_drop": {
+      "delta": -0.003606853020739407,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_ce_ci95": {
+      "mean": 0.1044261587474653,
+      "lower": 0.05055042426623059,
+      "upper": 0.15788412303382773
+    },
+    "parent_supported_tail_micro_ce": {
+      "delta": 0.0913972931070468,
+      "limit": 0.25,
+      "pass": true
+    },
+    "parent_supported_tail_macro_per_token_ce": {
+      "delta": 0.08118445682082331,
+      "limit": 0.25,
+      "pass": true
+    },
+    "parent_supported_tail_top1_drop": {
+      "delta": -0.0013089005235602093,
+      "limit": 0.005,
+      "pass": true
+    },
+    "parent_supported_tail_top5_drop": {
+      "delta": -0.0032722513089005253,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_supported_tail_top10_drop": {
+      "delta": -0.0032722513089005235,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_supported_tail_ce_ci95": {
+      "mean": 0.09139729310704775,
+      "lower": 0.043743775981862944,
+      "upper": 0.14178542826021123
+    },
+    "parent_normal_mean_ce": {
+      "delta": 0.02885096073150617,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_normal_terminal_eos_ratio": {
+      "value": 1.0209438811289209,
+      "limit": 0.9,
+      "pass": true
+    },
+    "parent_normal_code_ce": {
+      "delta": -0.016849935054779053,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_definitions_ce": {
+      "delta": 0.09321022033691406,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_lists_ce": {
+      "delta": -0.019031643867492676,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_math_ce": {
+      "delta": -0.00155562162399292,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_terminology_ce": {
+      "delta": 0.08848178386688232,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_sampling_natural_japanese_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_semantic_coherence_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_topic_retention_proxy_drop": {
+      "delta": -0.006787683782831511,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_japanese_validity_drop": {
+      "delta": 0.010000000000000009,
+      "limit": 0.01,
+      "pass": false
+    },
+    "parent_all_pass": false,
+    "control_validation_ce": {
+      "delta": 0.0010637559165651567,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_validation_top1_drop": {
+      "delta": 0.00014995169413284382,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_validation_top5_drop": {
+      "delta": -0.00013281435766049343,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_validation_top10_drop": {
+      "delta": -0.00010496618589295181,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_context_128_ce": {
+      "delta": -0.0009070645838269442,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_context_512_ce": {
+      "delta": -0.0005693909428545751,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_context_long_benefit_loss": {
+      "delta": 0.00033767364097236907,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_terminal_eos_ratio": {
+      "value": 1.1116334475649967,
+      "limit": 0.9,
+      "pass": true
+    },
+    "control_terminal_eos_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_nonterminal_eos_increase": {
+      "delta": 1.4953651757650729e-05,
+      "limit": 0.001,
+      "pass": true
+    },
+    "control_premature_eos_increase": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_micro_ce": {
+      "delta": -0.0019838010625221614,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_core_macro_per_token_ce": {
+      "delta": -0.0022185088732893377,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_core_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.005,
+      "pass": true
+    },
+    "control_core_top5_drop": {
+      "delta": 0.0002254283137962127,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_top10_drop": {
+      "delta": -0.00022542831379621445,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_ce_ci95": {
+      "mean": -0.0019838010625220074,
+      "lower": -0.003062541161400945,
+      "upper": -0.0010191157530827551
+    },
+    "control_supported_tail_micro_ce": {
+      "delta": -0.002743079088121547,
+      "limit": 0.25,
+      "pass": true
+    },
+    "control_supported_tail_macro_per_token_ce": {
+      "delta": -0.002503253868775701,
+      "limit": 0.25,
+      "pass": true
+    },
+    "control_supported_tail_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.005,
+      "pass": true
+    },
+    "control_supported_tail_top5_drop": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_supported_tail_top10_drop": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_supported_tail_ce_ci95": {
+      "mean": -0.0027430790881211847,
+      "lower": -0.003989165509743075,
+      "upper": -0.0016233376917838941
+    },
+    "control_normal_mean_ce": {
+      "delta": -0.013014185428619207,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_normal_terminal_eos_ratio": {
+      "value": 0.9967354499230225,
+      "limit": 0.9,
+      "pass": true
+    },
+    "control_normal_code_ce": {
+      "delta": -0.008440494537353516,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_definitions_ce": {
+      "delta": 0.001305699348449707,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_lists_ce": {
+      "delta": -0.0005539655685424805,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_math_ce": {
+      "delta": -0.05350738763809204,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_terminology_ce": {
+      "delta": -0.0038747787475585938,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_sampling_natural_japanese_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_semantic_coherence_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_topic_retention_proxy_drop": {
+      "delta": 2.218736429271395e-05,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_japanese_validity_drop": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_all_pass": true
+  },
+  "control_vs_parent_safety": {
+    "parent_validation_ce": {
+      "delta": -0.000673709709603898,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_validation_top1_drop": {
+      "delta": -0.000679066957715746,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_validation_top5_drop": {
+      "delta": -0.000248491378848692,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_validation_top10_drop": {
+      "delta": -0.0010903630330515446,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_context_128_ce": {
+      "delta": -0.00869244437149419,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_context_512_ce": {
+      "delta": -0.004939096108165231,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_context_long_benefit_loss": {
+      "delta": 0.0037533482633289594,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_terminal_eos_ratio": {
+      "value": 1.3520616772569138,
+      "limit": 0.9,
+      "pass": true
+    },
+    "parent_terminal_eos_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.02,
+      "pass": true
+    },
+    "parent_nonterminal_eos_increase": {
+      "delta": 4.9324147769880266e-05,
+      "limit": 0.001,
+      "pass": true
+    },
+    "parent_premature_eos_increase": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_micro_ce": {
+      "delta": 0.10640995980998724,
+      "limit": 0.1,
+      "pass": false
+    },
+    "parent_core_macro_per_token_ce": {
+      "delta": 0.12327609247348015,
+      "limit": 0.1,
+      "pass": false
+    },
+    "parent_core_top1_drop": {
+      "delta": -0.0004508566275924254,
+      "limit": 0.005,
+      "pass": true
+    },
+    "parent_core_top5_drop": {
+      "delta": -0.0002254283137962127,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_top10_drop": {
+      "delta": -0.0033814247069431924,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_core_ce_ci95": {
+      "mean": 0.10640995980998731,
+      "lower": 0.05227659745522194,
+      "upper": 0.16010384429745586
+    },
+    "parent_supported_tail_micro_ce": {
+      "delta": 0.09414037219516835,
+      "limit": 0.25,
+      "pass": true
+    },
+    "parent_supported_tail_macro_per_token_ce": {
+      "delta": 0.08368771068959902,
+      "limit": 0.25,
+      "pass": true
+    },
+    "parent_supported_tail_top1_drop": {
+      "delta": -0.0013089005235602093,
+      "limit": 0.005,
+      "pass": true
+    },
+    "parent_supported_tail_top5_drop": {
+      "delta": -0.0032722513089005253,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_supported_tail_top10_drop": {
+      "delta": -0.0032722513089005235,
+      "limit": 0.01,
+      "pass": true
+    },
+    "parent_supported_tail_ce_ci95": {
+      "mean": 0.09414037219516894,
+      "lower": 0.04654744373114438,
+      "upper": 0.14483187772064776
+    },
+    "parent_normal_mean_ce": {
+      "delta": 0.04186514616012538,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_normal_terminal_eos_ratio": {
+      "value": 1.024287719683059,
+      "limit": 0.9,
+      "pass": true
+    },
+    "parent_normal_code_ce": {
+      "delta": -0.008409440517425537,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_definitions_ce": {
+      "delta": 0.09190452098846436,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_lists_ce": {
+      "delta": -0.018477678298950195,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_math_ce": {
+      "delta": 0.05195176601409912,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_normal_terminology_ce": {
+      "delta": 0.09235656261444092,
+      "limit": 0.1,
+      "pass": true
+    },
+    "parent_sampling_natural_japanese_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_semantic_coherence_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_topic_retention_proxy_drop": {
+      "delta": -0.006809871147124225,
+      "limit": 0.05,
+      "pass": true
+    },
+    "parent_sampling_japanese_validity_drop": {
+      "delta": 0.010000000000000009,
+      "limit": 0.01,
+      "pass": false
+    },
+    "parent_all_pass": false,
+    "control_validation_ce": {
+      "delta": -0.000673709709603898,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_validation_top1_drop": {
+      "delta": -0.000679066957715746,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_validation_top5_drop": {
+      "delta": -0.000248491378848692,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_validation_top10_drop": {
+      "delta": -0.0010903630330515446,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_context_128_ce": {
+      "delta": -0.00869244437149419,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_context_512_ce": {
+      "delta": -0.004939096108165231,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_context_long_benefit_loss": {
+      "delta": 0.0037533482633289594,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_terminal_eos_ratio": {
+      "value": 1.3520616772569138,
+      "limit": 0.9,
+      "pass": true
+    },
+    "control_terminal_eos_top1_drop": {
+      "delta": 0.0,
+      "limit": 0.02,
+      "pass": true
+    },
+    "control_nonterminal_eos_increase": {
+      "delta": 4.9324147769880266e-05,
+      "limit": 0.001,
+      "pass": true
+    },
+    "control_premature_eos_increase": {
+      "delta": 0.0,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_micro_ce": {
+      "delta": 0.10640995980998724,
+      "limit": 0.1,
+      "pass": false
+    },
+    "control_core_macro_per_token_ce": {
+      "delta": 0.12327609247348015,
+      "limit": 0.1,
+      "pass": false
+    },
+    "control_core_top1_drop": {
+      "delta": -0.0004508566275924254,
+      "limit": 0.005,
+      "pass": true
+    },
+    "control_core_top5_drop": {
+      "delta": -0.0002254283137962127,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_top10_drop": {
+      "delta": -0.0033814247069431924,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_core_ce_ci95": {
+      "mean": 0.10640995980998731,
+      "lower": 0.05227659745522194,
+      "upper": 0.16010384429745586
+    },
+    "control_supported_tail_micro_ce": {
+      "delta": 0.09414037219516835,
+      "limit": 0.25,
+      "pass": true
+    },
+    "control_supported_tail_macro_per_token_ce": {
+      "delta": 0.08368771068959902,
+      "limit": 0.25,
+      "pass": true
+    },
+    "control_supported_tail_top1_drop": {
+      "delta": -0.0013089005235602093,
+      "limit": 0.005,
+      "pass": true
+    },
+    "control_supported_tail_top5_drop": {
+      "delta": -0.0032722513089005253,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_supported_tail_top10_drop": {
+      "delta": -0.0032722513089005235,
+      "limit": 0.01,
+      "pass": true
+    },
+    "control_supported_tail_ce_ci95": {
+      "mean": 0.09414037219516894,
+      "lower": 0.04654744373114438,
+      "upper": 0.14483187772064776
+    },
+    "control_normal_mean_ce": {
+      "delta": 0.04186514616012538,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_normal_terminal_eos_ratio": {
+      "value": 1.024287719683059,
+      "limit": 0.9,
+      "pass": true
+    },
+    "control_normal_code_ce": {
+      "delta": -0.008409440517425537,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_definitions_ce": {
+      "delta": 0.09190452098846436,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_lists_ce": {
+      "delta": -0.018477678298950195,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_math_ce": {
+      "delta": 0.05195176601409912,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_normal_terminology_ce": {
+      "delta": 0.09235656261444092,
+      "limit": 0.1,
+      "pass": true
+    },
+    "control_sampling_natural_japanese_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_semantic_coherence_proxy_drop": {
+      "delta": 0.0,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_topic_retention_proxy_drop": {
+      "delta": -0.006809871147124225,
+      "limit": 0.05,
+      "pass": true
+    },
+    "control_sampling_japanese_validity_drop": {
+      "delta": 0.010000000000000009,
+      "limit": 0.01,
+      "pass": false
+    },
+    "control_all_pass": false
+  },
+  "generation": {
+    "parent": {
+      "greedy": 1.0,
+      "sampling": {
+        "44000": 0.99,
+        "51000": 0.98,
+        "52000": 0.98
+      }
+    },
+    "control": {
+      "greedy": 1.0,
+      "sampling": {
+        "44000": 1.0,
+        "51000": 0.99,
+        "52000": 1.0
+      }
+    },
+    "arm_a": {
+      "greedy": 1.0,
+      "sampling": {
+        "44000": 1.0,
+        "51000": 0.98,
+        "52000": 1.0
+      }
+    },
+    "attribution_reduction_control_minus_a": {
+      "greedy": 0.0,
+      "sampling_mean": 0.0033333333333334103
+    },
+    "parent_reduction_arm_a": {
+      "greedy": 0.0,
+      "sampling_mean": -0.009999999999999898
+    }
+  },
+  "extension_authorized": false,
+  "reason": "Registered thresholds only; no post-hoc extension.",
+  "new_training": true,
+  "canonical": false,
+  "20m": false
+}
