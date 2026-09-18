@@ -1,0 +1,417 @@
+{
+  "schema_version": "generation-eval-v2",
+  "safety_schema_version": "quality-safety-v2",
+  "canonical_fields": {
+    "runaway_rate": "ratio_0_1",
+    "completion_rate": "ratio_0_1",
+    "naturalness_rate": "ratio_0_1",
+    "semantic_rate": "ratio_0_1",
+    "topic_retention_rate": "ratio_0_1",
+    "japanese_validity_rate": "ratio_0_1",
+    "eos_completion_rate": "ratio_0_1",
+    "mean_eos_probability": "probability",
+    "repetition_1": "ratio_0_1",
+    "repetition_2": "ratio_0_1",
+    "repetition_3": "ratio_0_1",
+    "repetition_4": "ratio_0_1",
+    "unique_token_ratio": "ratio_0_1",
+    "loop_onset": "generated_token_index",
+    "loop_cycle_length": "tokens"
+  },
+  "explicit_source_version": "phase51-metrics-v1",
+  "explicit_conversion": {
+    "runaway_rate": "runaway_rate",
+    "completion_rate": "sentence_completion_rate",
+    "naturalness_rate": "naturalness_rate",
+    "semantic_rate": "semantic_rate",
+    "topic_retention_rate": "topic_retention_proxy",
+    "japanese_validity_rate": "japanese_validity",
+    "eos_completion_rate": "eos_rate",
+    "mean_eos_probability": "mean_eos_probability",
+    "repetition_1": "repetition_1",
+    "repetition_2": "repetition_2",
+    "repetition_3": "repetition_3",
+    "repetition_4": "repetition_4",
+    "unique_token_ratio": "unique_token_ratio",
+    "loop_onset": "loop_onset",
+    "loop_cycle_length": "loop_cycle_length"
+  },
+  "unknown_missing_type_nonfinite": "FAIL_CLOSED",
+  "ratio_range": [
+    0,
+    1
+  ],
+  "percentage_input": "REJECT",
+  "completion_definition": "sentence_completion_rate automatic proxy, not EOS",
+  "loop_onset_definition": "legacy mean; no-loop sentinel 129 retained",
+  "safeguard_mapping": [
+    {
+      "id": "validation.ce",
+      "producer_field": "validation.ce",
+      "consumer_field": "validation.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "validation_ce_increase_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "validation.top1",
+      "producer_field": "validation.top1",
+      "consumer_field": "validation.top1",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "validation_top1_drop_absolute_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "validation.top5",
+      "producer_field": "validation.top5",
+      "consumer_field": "validation.top5",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "validation_top5_top10_drop_absolute_max",
+      "threshold": 0.02,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "validation.top10",
+      "producer_field": "validation.top10",
+      "consumer_field": "validation.top10",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "validation_top5_top10_drop_absolute_max",
+      "threshold": 0.02,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "context.128.ce",
+      "producer_field": "context.128.mean_ce",
+      "consumer_field": "context.128.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "context_ce_increase_each_128_512_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "context.512.ce",
+      "producer_field": "context.512.mean_ce",
+      "consumer_field": "context.512.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "context_ce_increase_each_128_512_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "context.long_benefit",
+      "producer_field": "context.128.ce - context.512.ce",
+      "consumer_field": "context.long_benefit",
+      "unit": "CE_difference_nats",
+      "comparison": "drop",
+      "threshold_key": "context_long_benefit_loss_max",
+      "threshold": 0.02,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "eos.terminal_probability",
+      "producer_field": "eos.terminal_mean_probability",
+      "consumer_field": "eos.terminal_probability",
+      "unit": "probability",
+      "comparison": "ratio_min",
+      "threshold_key": "terminal_mean_eos_probability_ratio_min",
+      "threshold": 0.9,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "eos.terminal_top1",
+      "producer_field": "eos.terminal_top1",
+      "consumer_field": "eos.terminal_top1",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "terminal_eos_top1_drop_absolute_max",
+      "threshold": 0.02,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "eos.nonterminal_probability",
+      "producer_field": "eos.nonterminal_mean_probability",
+      "consumer_field": "eos.nonterminal_probability",
+      "unit": "probability",
+      "comparison": "increase",
+      "threshold_key": "nonterminal_eos_probability_increase_max",
+      "threshold": 0.001,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "eos.premature_argmax",
+      "producer_field": "eos.premature_argmax_eos",
+      "consumer_field": "eos.premature_argmax",
+      "unit": "ratio_0_1",
+      "comparison": "increase",
+      "threshold_key": "premature_argmax_eos_increase_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.micro_ce",
+      "producer_field": "core.metrics.micro_ce",
+      "consumer_field": "core.micro_ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "core_micro_macro_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.macro_ce",
+      "producer_field": "core.metrics.macro_per_token_ce",
+      "consumer_field": "core.macro_ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "core_micro_macro_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.top1",
+      "producer_field": "core.metrics.top1",
+      "consumer_field": "core.top1",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top1_drop_absolute_max",
+      "threshold": 0.005,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.top5",
+      "producer_field": "core.metrics.top5",
+      "consumer_field": "core.top5",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top5_top10_drop_absolute_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.top10",
+      "producer_field": "core.metrics.top10",
+      "consumer_field": "core.top10",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top5_top10_drop_absolute_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "core.paired_ce_ci95_upper",
+      "producer_field": "paired_document_bootstrap_10000_seed5701.core.upper",
+      "consumer_field": "core.paired_ce_ci95_upper",
+      "unit": "CE_difference_nats",
+      "comparison": "upper",
+      "threshold_key": "frequency_ce_paired_ci95_upper_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.micro_ce",
+      "producer_field": "supported_tail.metrics.micro_ce",
+      "consumer_field": "supported_tail.micro_ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "supported_tail_micro_macro_ce_increase_max",
+      "threshold": 0.25,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.macro_ce",
+      "producer_field": "supported_tail.metrics.macro_per_token_ce",
+      "consumer_field": "supported_tail.macro_ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "supported_tail_micro_macro_ce_increase_max",
+      "threshold": 0.25,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.top1",
+      "producer_field": "supported_tail.metrics.top1",
+      "consumer_field": "supported_tail.top1",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top1_drop_absolute_max",
+      "threshold": 0.005,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.top5",
+      "producer_field": "supported_tail.metrics.top5",
+      "consumer_field": "supported_tail.top5",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top5_top10_drop_absolute_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.top10",
+      "producer_field": "supported_tail.metrics.top10",
+      "consumer_field": "supported_tail.top10",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "frequency_top5_top10_drop_absolute_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "supported_tail.paired_ce_ci95_upper",
+      "producer_field": "paired_document_bootstrap_10000_seed5701.supported_tail.upper",
+      "consumer_field": "supported_tail.paired_ce_ci95_upper",
+      "unit": "CE_difference_nats",
+      "comparison": "upper",
+      "threshold_key": "frequency_ce_paired_ci95_upper_max",
+      "threshold": 0.25,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.mean_ce",
+      "producer_field": "normal_controls.mean_ce",
+      "consumer_field": "normal.mean_ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_mean_ce_increase_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.terminal_probability",
+      "producer_field": "normal_controls.terminal_eos_probability",
+      "consumer_field": "normal.terminal_probability",
+      "unit": "probability",
+      "comparison": "ratio_min",
+      "threshold_key": "normal_terminal_eos_probability_ratio_min",
+      "threshold": 0.9,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.math.ce",
+      "producer_field": "normal_controls.family_ce.math",
+      "consumer_field": "normal.math.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_each_family_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.code.ce",
+      "producer_field": "normal_controls.family_ce.code",
+      "consumer_field": "normal.code.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_each_family_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.lists.ce",
+      "producer_field": "normal_controls.family_ce.lists",
+      "consumer_field": "normal.lists.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_each_family_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.definitions.ce",
+      "producer_field": "normal_controls.family_ce.definitions",
+      "consumer_field": "normal.definitions.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_each_family_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "normal.terminology.ce",
+      "producer_field": "normal_controls.family_ce.terminology",
+      "consumer_field": "normal.terminology.ce",
+      "unit": "CE_nats",
+      "comparison": "increase",
+      "threshold_key": "normal_each_family_ce_increase_max",
+      "threshold": 0.1,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "sampling.naturalness_rate",
+      "producer_field": "sampling[*].metrics.naturalness_rate (equal 100-prompt RNG mean)",
+      "consumer_field": "sampling.naturalness_rate",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "sampling_naturalness_semantic_proxy_drop_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "sampling.semantic_rate",
+      "producer_field": "sampling[*].metrics.semantic_rate (equal 100-prompt RNG mean)",
+      "consumer_field": "sampling.semantic_rate",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "sampling_naturalness_semantic_proxy_drop_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "sampling.topic_retention_rate",
+      "producer_field": "sampling[*].metrics.topic_retention_rate (equal 100-prompt RNG mean)",
+      "consumer_field": "sampling.topic_retention_rate",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "sampling_topic_retention_drop_max",
+      "threshold": 0.05,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    },
+    {
+      "id": "sampling.japanese_validity_rate",
+      "producer_field": "sampling[*].metrics.japanese_validity_rate (equal 100-prompt RNG mean)",
+      "consumer_field": "sampling.japanese_validity_rate",
+      "unit": "ratio_0_1",
+      "comparison": "drop",
+      "threshold_key": "japanese_validity_drop_max",
+      "threshold": 0.01,
+      "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+    }
+  ],
+  "thresholds": {
+    "validation_ce_increase_max": 0.05,
+    "validation_top1_drop_absolute_max": 0.01,
+    "validation_top5_top10_drop_absolute_max": 0.02,
+    "context_ce_increase_each_128_512_max": 0.05,
+    "context_long_benefit_loss_max": 0.02,
+    "terminal_mean_eos_probability_ratio_min": 0.9,
+    "terminal_eos_top1_drop_absolute_max": 0.02,
+    "nonterminal_eos_probability_increase_max": 0.001,
+    "premature_argmax_eos_increase_max": 0.01,
+    "core_micro_macro_ce_increase_max": 0.1,
+    "supported_tail_micro_macro_ce_increase_max": 0.25,
+    "frequency_ce_paired_ci95_upper_max": {
+      "core": 0.1,
+      "supported_tail": 0.25
+    },
+    "frequency_top1_drop_absolute_max": 0.005,
+    "frequency_top5_top10_drop_absolute_max": 0.01,
+    "normal_mean_ce_increase_max": 0.05,
+    "normal_each_family_ce_increase_max": 0.1,
+    "normal_terminal_eos_probability_ratio_min": 0.9,
+    "sampling_naturalness_semantic_proxy_drop_max": 0.05,
+    "sampling_topic_retention_drop_max": 0.05,
+    "japanese_validity_drop_max": 0.01,
+    "missing_metric": "FAIL_CLOSED; no averaging away a failed safeguard; zero denominator or undefined ratio requires review, not PASS"
+  },
+  "comparison_arithmetic": "Decimal(str(value)); exact inclusive decimal thresholds, no epsilon or margin relaxation",
+  "interpretation": "automatic proxies; no human quality guarantee"
+}

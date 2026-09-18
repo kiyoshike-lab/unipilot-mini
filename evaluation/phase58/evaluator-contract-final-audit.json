@@ -1,0 +1,378 @@
+{
+  "schema_version": "phase58-audit-v1",
+  "phase": 58,
+  "new_training": false,
+  "gate": "EVALUATOR_CONTRACT_READY",
+  "generation_schema_version": "generation-eval-v2",
+  "contract_sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b",
+  "dry_fixture_sha256": "22dcad649856e975c05f16bf76aaf6ebe0ce51fa75ba3632d705ef4a22fa99bd",
+  "old_mismatch_reproduced": true,
+  "rename_fail_closed": true,
+  "all_safeguards_mapped": {
+    "threshold_families": 20,
+    "threshold_families_required": 20,
+    "concrete_comparisons": 34
+  },
+  "dry_run": "PASS",
+  "dry_run_quality_claim": false,
+  "synthetic_non_generation_metrics": true,
+  "generation": {
+    "44000": {
+      "schema_version": "generation-eval-v2",
+      "examples": 2,
+      "metrics": {
+        "runaway_rate": 1.0,
+        "completion_rate": 0.0,
+        "naturalness_rate": 0.0,
+        "semantic_rate": 0.0,
+        "topic_retention_rate": 0.16666666666666666,
+        "japanese_validity_rate": 1.0,
+        "eos_completion_rate": 0.0,
+        "mean_eos_probability": 0.0002553530412114924,
+        "repetition_1": 0.1875,
+        "repetition_2": 0.07142857142857145,
+        "repetition_3": 0.0,
+        "repetition_4": 0.0,
+        "unique_token_ratio": 0.8125,
+        "loop_onset": 66.0,
+        "loop_cycle_length": 0.5
+      }
+    },
+    "51000": {
+      "schema_version": "generation-eval-v2",
+      "examples": 2,
+      "metrics": {
+        "runaway_rate": 1.0,
+        "completion_rate": 0.0,
+        "naturalness_rate": 0.0,
+        "semantic_rate": 0.0,
+        "topic_retention_rate": 0.125,
+        "japanese_validity_rate": 1.0,
+        "eos_completion_rate": 0.0,
+        "mean_eos_probability": 0.00024382056290050969,
+        "repetition_1": 0.0,
+        "repetition_2": 0.0,
+        "repetition_3": 0.0,
+        "repetition_4": 0.0,
+        "unique_token_ratio": 1.0,
+        "loop_onset": 129.0,
+        "loop_cycle_length": 0.0
+      }
+    },
+    "52000": {
+      "schema_version": "generation-eval-v2",
+      "examples": 2,
+      "metrics": {
+        "runaway_rate": 1.0,
+        "completion_rate": 0.0,
+        "naturalness_rate": 0.0,
+        "semantic_rate": 0.0,
+        "topic_retention_rate": 0.1,
+        "japanese_validity_rate": 1.0,
+        "eos_completion_rate": 0.0,
+        "mean_eos_probability": 0.0008993254036795406,
+        "repetition_1": 0.25,
+        "repetition_2": 0.07142857142857145,
+        "repetition_3": 0.0,
+        "repetition_4": 0.0,
+        "unique_token_ratio": 0.75,
+        "loop_onset": 129.0,
+        "loop_cycle_length": 0.0
+      }
+    }
+  },
+  "greedy": {
+    "schema_version": "generation-eval-v2",
+    "examples": 2,
+    "metrics": {
+      "runaway_rate": 1.0,
+      "completion_rate": 0.0,
+      "naturalness_rate": 0.0,
+      "semantic_rate": 0.0,
+      "topic_retention_rate": 0.30000000000000004,
+      "japanese_validity_rate": 1.0,
+      "eos_completion_rate": 0.0,
+      "mean_eos_probability": 0.0002475031355970714,
+      "repetition_1": 0.375,
+      "repetition_2": 0.2857142857142857,
+      "repetition_3": 0.16666666666666663,
+      "repetition_4": 0.0,
+      "unique_token_ratio": 0.625,
+      "loop_onset": 66.5,
+      "loop_cycle_length": 1.0
+    }
+  },
+  "wrapper_to_gate": {
+    "schema_version": "quality-safety-v2",
+    "gate": "CONTROL_SAFETY_PASS",
+    "checks": {
+      "validation.ce": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "validation.top1": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "validation.top5": {
+        "value": 0.0,
+        "threshold": 0.02,
+        "pass": true
+      },
+      "validation.top10": {
+        "value": 0.0,
+        "threshold": 0.02,
+        "pass": true
+      },
+      "context.128.ce": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "context.512.ce": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "context.long_benefit": {
+        "value": 0.0,
+        "threshold": 0.02,
+        "pass": true
+      },
+      "eos.terminal_probability": {
+        "value": 1.0,
+        "threshold": 0.9,
+        "pass": true
+      },
+      "eos.terminal_top1": {
+        "value": 0.0,
+        "threshold": 0.02,
+        "pass": true
+      },
+      "eos.nonterminal_probability": {
+        "value": 0.0,
+        "threshold": 0.001,
+        "pass": true
+      },
+      "eos.premature_argmax": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "core.micro_ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "core.macro_ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "core.top1": {
+        "value": 0.0,
+        "threshold": 0.005,
+        "pass": true
+      },
+      "core.top5": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "core.top10": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "core.paired_ce_ci95_upper": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "supported_tail.micro_ce": {
+        "value": 0.0,
+        "threshold": 0.25,
+        "pass": true
+      },
+      "supported_tail.macro_ce": {
+        "value": 0.0,
+        "threshold": 0.25,
+        "pass": true
+      },
+      "supported_tail.top1": {
+        "value": 0.0,
+        "threshold": 0.005,
+        "pass": true
+      },
+      "supported_tail.top5": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "supported_tail.top10": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      },
+      "supported_tail.paired_ce_ci95_upper": {
+        "value": 0.0,
+        "threshold": 0.25,
+        "pass": true
+      },
+      "normal.mean_ce": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "normal.terminal_probability": {
+        "value": 1.0,
+        "threshold": 0.9,
+        "pass": true
+      },
+      "normal.math.ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "normal.code.ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "normal.lists.ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "normal.definitions.ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "normal.terminology.ce": {
+        "value": 0.0,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "sampling.naturalness_rate": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "sampling.semantic_rate": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "sampling.topic_retention_rate": {
+        "value": 0.0,
+        "threshold": 0.05,
+        "pass": true
+      },
+      "sampling.japanese_validity_rate": {
+        "value": 0.0,
+        "threshold": 0.01,
+        "pass": true
+      }
+    }
+  },
+  "no_grad_matching_forward": {
+    "rng_unchanged": true,
+    "state_unchanged": true,
+    "mode": "eval/no_grad",
+    "weights_updated": false
+  },
+  "cooldown": {
+    "target_c": 60.0,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 503.0,
+      "gpu_temperature_c": 53.0,
+      "sm_clock_mhz": 1200.0,
+      "power_w": 46.97,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.10963519999995697
+    },
+    "end": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 503.0,
+      "gpu_temperature_c": 53.0,
+      "sm_clock_mhz": 1200.0,
+      "power_w": 46.97,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.10963519999995697
+    },
+    "waited_seconds": 0.10963519999995697,
+    "target_reached": true,
+    "samples": [
+      {
+        "gpu_utilization_percent": 0.0,
+        "gpu_memory_used_mib": 503.0,
+        "gpu_temperature_c": 53.0,
+        "sm_clock_mhz": 1200.0,
+        "power_w": 46.97,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "elapsed_seconds": 0.10963519999995697
+      }
+    ]
+  },
+  "thermal": {
+    "samples": 4,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 684.0,
+      "gpu_temperature_c": 53.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 51.43,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.12906900000007226
+    },
+    "midpoint": {
+      "gpu_utilization_percent": 2.0,
+      "gpu_memory_used_mib": 732.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 50.93,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.899570199999971
+    },
+    "end": {
+      "gpu_utilization_percent": 5.0,
+      "gpu_memory_used_mib": 732.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 51.07,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 1.264679600000136
+    },
+    "maximum_temperature_sample": {
+      "gpu_utilization_percent": 2.0,
+      "gpu_memory_used_mib": 732.0,
+      "gpu_temperature_c": 54.0,
+      "sm_clock_mhz": 1605.0,
+      "power_w": 50.87,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false,
+      "elapsed_seconds": 0.5399348999999347
+    },
+    "gpu_utilization_percent_mean": 2.25,
+    "gpu_utilization_percent_max": 5.0,
+    "gpu_memory_used_mib_max": 732.0,
+    "gpu_temperature_c_max": 54.0,
+    "sm_clock_mhz_min": 1605.0,
+    "sm_clock_mhz_max": 1605.0,
+    "gpu_power_w_max": 51.43,
+    "software_thermal_slowdown": false,
+    "hardware_thermal_slowdown": false,
+    "thermal_classification": "NO_THERMAL_CONCERN",
+    "thermal_attention": false
+  }
+}

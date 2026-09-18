@@ -1,0 +1,17 @@
+{
+  "schema_version": "phase58-contract-fixture-v1",
+  "purpose": "contract plumbing only, no model-quality decision",
+  "prompts": [
+    "日本の大学では",
+    "数学の基礎は"
+  ],
+  "greedy_tokens": 8,
+  "sampling_tokens": 8,
+  "sampling_rng_bases": [
+    44000,
+    51000,
+    52000
+  ],
+  "synthetic_non_generation_metrics": true,
+  "training": false
+}
