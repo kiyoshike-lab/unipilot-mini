@@ -1,0 +1,279 @@
+{
+  "schema_version": "phase58-audit-v1",
+  "phase": 58,
+  "new_training": false,
+  "diagnostic_only": true,
+  "micro_sum": 0.10640995980998731,
+  "macro_sum": 0.12327609247347943,
+  "macro_definition": "Equal mean of per-token CE deltas, no occurrence weighting",
+  "all_core_token_types": 236,
+  "frequency_groups": {
+    "train_rank_3277_3480": {
+      "types": 140,
+      "occurrences": 2794,
+      "micro_contribution": 0.042447401997545105,
+      "macro_contribution": 0.04871816326341563
+    },
+    "train_rank_3481_3685": {
+      "types": 69,
+      "occurrences": 1192,
+      "micro_contribution": 0.038917878923166754,
+      "macro_contribution": 0.044194797888875086
+    },
+    "train_rank_3686_3890": {
+      "types": 24,
+      "occurrences": 404,
+      "micro_contribution": 0.015723282200888106,
+      "macro_contribution": 0.019183917296122437
+    },
+    "train_rank_3891_4095": {
+      "types": 3,
+      "occurrences": 46,
+      "micro_contribution": 0.009321396688387348,
+      "macro_contribution": 0.011179214025066279
+    }
+  },
+  "top20_macro_contributors": [
+    {
+      "id": 2771,
+      "count": 13,
+      "ce_delta": 1.1926812392014723,
+      "micro_contribution": 0.003495233568444351,
+      "document_support": 3,
+      "token_types": 1,
+      "train_count": 165,
+      "frequency_rank": 3911,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.005053734064413018
+    },
+    {
+      "id": 3180,
+      "count": 21,
+      "ce_delta": 0.9441667057219005,
+      "micro_contribution": 0.004469680076681675,
+      "document_support": 1,
+      "token_types": 1,
+      "train_count": 209,
+      "frequency_rank": 3892,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0040007063801775445
+    },
+    {
+      "id": 178,
+      "count": 21,
+      "ce_delta": 0.9242433820452008,
+      "micro_contribution": 0.004375363170186929,
+      "document_support": 2,
+      "token_types": 1,
+      "train_count": 232,
+      "frequency_rank": 3872,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.003916285517140681
+    },
+    {
+      "id": 2243,
+      "count": 15,
+      "ce_delta": 0.7592312494913737,
+      "micro_contribution": 0.002567283305313482,
+      "document_support": 4,
+      "token_types": 1,
+      "train_count": 599,
+      "frequency_rank": 3671,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.003217081565641414
+    },
+    {
+      "id": 3701,
+      "count": 25,
+      "ce_delta": 0.6259096717834473,
+      "micro_contribution": 0.0035274440474720877,
+      "document_support": 9,
+      "token_types": 1,
+      "train_count": 951,
+      "frequency_rank": 3475,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0026521596262010475
+    },
+    {
+      "id": 4018,
+      "count": 33,
+      "ce_delta": 0.6066523609739362,
+      "micro_contribution": 0.0045129684202299125,
+      "document_support": 8,
+      "token_types": 1,
+      "train_count": 965,
+      "frequency_rank": 3465,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.002570560851584475
+    },
+    {
+      "id": 2301,
+      "count": 21,
+      "ce_delta": 0.5888573555719285,
+      "micro_contribution": 0.0027876475353946118,
+      "document_support": 6,
+      "token_types": 1,
+      "train_count": 1113,
+      "frequency_rank": 3378,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.002495158286321731
+    },
+    {
+      "id": 3604,
+      "count": 33,
+      "ce_delta": 0.5850172187342788,
+      "micro_contribution": 0.004352021690313616,
+      "document_support": 5,
+      "token_types": 1,
+      "train_count": 803,
+      "frequency_rank": 3569,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0024788865200605034
+    },
+    {
+      "id": 3279,
+      "count": 11,
+      "ce_delta": 0.5317270972511985,
+      "micro_contribution": 0.0013185297722640179,
+      "document_support": 4,
+      "token_types": 1,
+      "train_count": 695,
+      "frequency_rank": 3622,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.002253080920555926
+    },
+    {
+      "id": 3613,
+      "count": 12,
+      "ce_delta": 0.5014465649922689,
+      "micro_contribution": 0.0013564830432613224,
+      "document_support": 1,
+      "token_types": 1,
+      "train_count": 150,
+      "frequency_rank": 3919,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0021247735804757156
+    },
+    {
+      "id": 2492,
+      "count": 18,
+      "ce_delta": 0.4979868464999729,
+      "micro_contribution": 0.002020686031785282,
+      "document_support": 3,
+      "token_types": 1,
+      "train_count": 341,
+      "frequency_rank": 3809,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0021101137563558172
+    },
+    {
+      "id": 3630,
+      "count": 16,
+      "ce_delta": 0.46085458993911743,
+      "micro_contribution": 0.0016622347698435254,
+      "document_support": 4,
+      "token_types": 1,
+      "train_count": 1256,
+      "frequency_rank": 3291,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.001952773686182701
+    },
+    {
+      "id": 2944,
+      "count": 19,
+      "ce_delta": 0.44783381411903783,
+      "micro_contribution": 0.0019181340099778447,
+      "document_support": 8,
+      "token_types": 1,
+      "train_count": 1007,
+      "frequency_rank": 3441,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0018976009072840586
+    },
+    {
+      "id": 2402,
+      "count": 11,
+      "ce_delta": 0.4441618485884233,
+      "micro_contribution": 0.0011013932223788675,
+      "document_support": 4,
+      "token_types": 1,
+      "train_count": 409,
+      "frequency_rank": 3781,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0018820417313068782
+    },
+    {
+      "id": 3249,
+      "count": 20,
+      "ce_delta": 0.4441246032714844,
+      "micro_contribution": 0.002002365208618054,
+      "document_support": 10,
+      "token_types": 1,
+      "train_count": 936,
+      "frequency_rank": 3488,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0018818839121673067
+    },
+    {
+      "id": 3116,
+      "count": 11,
+      "ce_delta": 0.44035512750799005,
+      "micro_contribution": 0.0010919536525220673,
+      "document_support": 4,
+      "token_types": 1,
+      "train_count": 387,
+      "frequency_rank": 3791,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.001865911557237246
+    },
+    {
+      "id": 3574,
+      "count": 10,
+      "ce_delta": 0.4397623062133789,
+      "micro_contribution": 0.000991348751608158,
+      "document_support": 7,
+      "token_types": 1,
+      "train_count": 613,
+      "frequency_rank": 3659,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0018633996025990633
+    },
+    {
+      "id": 3478,
+      "count": 46,
+      "ce_delta": 0.4379503415978473,
+      "micro_contribution": 0.004541414723512393,
+      "document_support": 8,
+      "token_types": 1,
+      "train_count": 840,
+      "frequency_rank": 3546,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0018557217864315562
+    },
+    {
+      "id": 628,
+      "count": 12,
+      "ce_delta": 0.43229393164316815,
+      "micro_contribution": 0.001169415504895856,
+      "document_support": 1,
+      "token_types": 1,
+      "train_count": 846,
+      "frequency_rank": 3542,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.001831753947640543
+    },
+    {
+      "id": 4001,
+      "count": 10,
+      "ce_delta": 0.4225738525390625,
+      "micro_contribution": 0.0009526011103225034,
+      "document_support": 5,
+      "token_types": 1,
+      "train_count": 518,
+      "frequency_rank": 3724,
+      "frequency_bucket": "bottom20pct",
+      "macro_contribution": 0.0017905671717756886
+    }
+  ],
+  "formal_gate": false
+}
