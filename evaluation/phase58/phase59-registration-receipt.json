@@ -1,0 +1,16 @@
+{
+  "schema_version": "phase58-audit-v1",
+  "gate": "PHASE59_DESIGN_REGISTERED",
+  "preregistration_sha256": "0a16e3e6e9589f984ad7d88039b0a28c91c430837170ec499106ab7cc9967261",
+  "conditions": {
+    "contract_ready": true,
+    "forensic_complete": true,
+    "control_drift_audit_complete": true,
+    "dose_audit_complete": true,
+    "parents_valid": true,
+    "evaluation_artifacts_available": true,
+    "sealed_set_safety": true
+  },
+  "training_authorized": false,
+  "new_training": false
+}
