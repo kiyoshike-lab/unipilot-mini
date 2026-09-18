@@ -1,0 +1,1 @@
+"# PHASE 59 — Control Stability Replication\n\nFinal gate: **CONTROL_STABILITY_MIXED**\n\n- Approved LR: 5e-5\n- Seeds: 123 / 2026\n- New checkpoints: EXPERIMENTAL, NOT_CANONICAL, NOT_PRODUCTION\n- Generation Policy: UNSAFE\n- PHASE57: EXPERIMENT_INVALID\n"

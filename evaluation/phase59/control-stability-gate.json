@@ -1,0 +1,23 @@
+{
+  "phase": 59,
+  "seed_results": {
+    "123": {
+      "valid": true,
+      "all_safety_pass": false,
+      "core_micro_pass": true,
+      "core_macro_pass": true
+    },
+    "2026": {
+      "valid": true,
+      "all_safety_pass": false,
+      "core_micro_pass": false,
+      "core_macro_pass": false
+    }
+  },
+  "final_gate": "CONTROL_STABILITY_MIXED",
+  "new_training": true,
+  "experimental": true,
+  "canonical": false,
+  "generation_policy": "UNSAFE",
+  "phase57_status": "EXPERIMENT_INVALID"
+}

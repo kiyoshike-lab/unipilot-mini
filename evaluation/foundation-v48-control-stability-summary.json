@@ -1,0 +1,1224 @@
+{
+  "phase": 59,
+  "final_gate": "CONTROL_STABILITY_MIXED",
+  "seeds": {
+    "123": {
+      "phase": 59,
+      "seed": 123,
+      "parent": {
+        "phase": 59,
+        "label": "seed-123-parent",
+        "checkpoint_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+        "validation": {
+          "tokens": 466817,
+          "ce": 4.430803822164922,
+          "top1": 0.24895408693342358,
+          "top5": 0.43938631198092615,
+          "top10": 0.5248266451307472
+        },
+        "core": {
+          "population_sha256": "1441f3a91c40330bf438119d59fc8fcdbeb62978bd1f723ae98a4279d4b045ca",
+          "metrics": {
+            "micro_ce": 9.287453144864322,
+            "macro_per_token_ce": 9.329310108835116,
+            "top1": 0.006762849413886384,
+            "top5": 0.022091974752028856,
+            "top10": 0.04147880973850315,
+            "mean_probability": 0.005848364488103457,
+            "token_count": 236,
+            "occurrence_count": 4436,
+            "document_count": 146
+          }
+        },
+        "supported_tail": {
+          "population_sha256": "a73d20341ee27b2533693b126a888c0903b56a5bc57d601d7e95833ac2d23cf4",
+          "metrics": {
+            "micro_ce": 9.78684291200644,
+            "macro_per_token_ce": 10.00864281532506,
+            "top1": 0.0058900523560209425,
+            "top5": 0.020942408376963352,
+            "top10": 0.030104712041884817,
+            "mean_probability": 0.00226336856592547,
+            "token_count": 290,
+            "occurrence_count": 1528,
+            "document_count": 141
+          }
+        },
+        "eos": {
+          "terminal_mean_probability": 0.01148220918869574,
+          "terminal_top1": 0.0,
+          "nonterminal_mean_probability": 0.0003821045186716674,
+          "premature_argmax_eos": 0.0
+        },
+        "context": {
+          "128": {
+            "mean_ce": 4.525261133737705,
+            "documents": 24
+          },
+          "512": {
+            "mean_ce": 4.440529166828989,
+            "documents": 24
+          }
+        },
+        "normal_controls": {
+          "mean_ce": 4.295673871040345,
+          "family_ce": {
+            "code": 2.4975061416625977,
+            "definitions": 4.78949248790741,
+            "lists": 4.545087814331055,
+            "math": 4.656003832817078,
+            "terminology": 4.9902790784835815
+          },
+          "terminal_eos_probability": 0.004911849621566944,
+          "shape_proxy_passes": 0,
+          "shape_proxy_examples": 20,
+          "shape_not_semantic_correctness": true
+        },
+        "generation": {
+          "greedy": {
+            "examples": 100,
+            "runaway_rate": 1.0,
+            "eos_rate": 0.0,
+            "mean_repetition_1": 0.9196875,
+            "naturalness_rate": 0.01,
+            "semantic_rate": 0.0,
+            "sentence_completion_rate": 0.01,
+            "mean_eos_probability": 0.0004002613261310173,
+            "japanese_validity": 0.92,
+            "topic_retention_proxy": 0.461251577568166,
+            "repetition_1": 0.9196875,
+            "repetition_2": 0.8937007874015748,
+            "repetition_3": 0.8726190476190477,
+            "repetition_4": 0.8536800000000001,
+            "unique_token_ratio": 0.0803125,
+            "loop_onset": 26.14,
+            "loop_cycle_length": 7.05,
+            "entropy": 4.404669747632288,
+            "top1_top2_margin": 0.28263456298042
+          },
+          "sampling": {
+            "44000": {
+              "examples": 100,
+              "runaway_rate": 1.0,
+              "eos_rate": 0.0,
+              "mean_repetition_1": 0.36015625,
+              "naturalness_rate": 0.73,
+              "semantic_rate": 0.64,
+              "sentence_completion_rate": 0.1,
+              "mean_eos_probability": 0.0004633173869422702,
+              "japanese_validity": 0.83,
+              "topic_retention_proxy": 0.1950283715410754,
+              "repetition_1": 0.36015625,
+              "repetition_2": 0.13476190476190478,
+              "repetition_3": 0.05612903225806451,
+              "repetition_4": 0.023934426229508202,
+              "unique_token_ratio": 0.63984375,
+              "loop_onset": 35.56,
+              "loop_cycle_length": 1.26
+            },
+            "51000": {
+              "examples": 100,
+              "runaway_rate": 0.98,
+              "eos_rate": 0.02,
+              "mean_repetition_1": 0.38219647129186607,
+              "naturalness_rate": 0.65,
+              "semantic_rate": 0.56,
+              "sentence_completion_rate": 0.02,
+              "mean_eos_probability": 0.00043008408373446,
+              "japanese_validity": 0.8,
+              "topic_retention_proxy": 0.2045641287606763,
+              "repetition_1": 0.38219647129186607,
+              "repetition_2": 0.1568253968253968,
+              "repetition_3": 0.075,
+              "repetition_4": 0.03721311475409837,
+              "unique_token_ratio": 0.6178035287081339,
+              "loop_onset": 33.96,
+              "loop_cycle_length": 1.48
+            },
+            "52000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.3862982954545454,
+              "naturalness_rate": 0.64,
+              "semantic_rate": 0.56,
+              "sentence_completion_rate": 0.04,
+              "mean_eos_probability": 0.00042417620720885474,
+              "japanese_validity": 0.74,
+              "topic_retention_proxy": 0.21102814471574216,
+              "repetition_1": 0.3862982954545454,
+              "repetition_2": 0.15605820105820106,
+              "repetition_3": 0.07129032258064516,
+              "repetition_4": 0.031803278688524596,
+              "unique_token_ratio": 0.6137017045454546,
+              "loop_onset": 37.48,
+              "loop_cycle_length": 1.41
+            }
+          }
+        },
+        "thermal": {
+          "samples": 176,
+          "start": {
+            "gpu_utilization_percent": 1.0,
+            "gpu_memory_used_mib": 701.0,
+            "gpu_temperature_c": 57.0,
+            "sm_clock_mhz": 1605.0,
+            "power_w": 49.92,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.12037159999999858
+          },
+          "midpoint": {
+            "gpu_utilization_percent": 56.0,
+            "gpu_memory_used_mib": 1150.0,
+            "gpu_temperature_c": 78.0,
+            "sm_clock_mhz": 1935.0,
+            "power_w": 125.21,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 31.575813499999867
+          },
+          "end": {
+            "gpu_utilization_percent": 26.0,
+            "gpu_memory_used_mib": 1193.0,
+            "gpu_temperature_c": 48.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 52.32,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 64.75931409999998
+          },
+          "maximum_temperature_sample": {
+            "gpu_utilization_percent": 70.0,
+            "gpu_memory_used_mib": 703.0,
+            "gpu_temperature_c": 83.0,
+            "sm_clock_mhz": 1890.0,
+            "power_w": 182.49,
+            "software_thermal_slowdown": true,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 3.293051199999809
+          },
+          "gpu_utilization_percent_mean": 42.25568181818182,
+          "gpu_utilization_percent_max": 80.0,
+          "gpu_memory_used_mib_max": 1212.0,
+          "gpu_temperature_c_max": 83.0,
+          "sm_clock_mhz_min": 1155.0,
+          "sm_clock_mhz_max": 1980.0,
+          "gpu_power_w_max": 219.43,
+          "software_thermal_slowdown": true,
+          "hardware_thermal_slowdown": false,
+          "thermal_classification": "SOFTWARE_THERMAL_SLOWDOWN",
+          "thermal_attention": true
+        },
+        "raw_only": true
+      },
+      "candidate": {
+        "phase": 59,
+        "label": "seed-123-candidate",
+        "checkpoint_sha256": "620dcdab001304bec7e78d849ba5857fc60c28476a2d41d946e754383eb6c8c6",
+        "validation": {
+          "tokens": 466817,
+          "ce": 4.428825361960127,
+          "top1": 0.24932896616875563,
+          "top5": 0.4401553499551216,
+          "top10": 0.5257863359731972
+        },
+        "core": {
+          "population_sha256": "1441f3a91c40330bf438119d59fc8fcdbeb62978bd1f723ae98a4279d4b045ca",
+          "metrics": {
+            "micro_ce": 9.28900177899926,
+            "macro_per_token_ce": 9.34810193221082,
+            "top1": 0.004959422903516681,
+            "top5": 0.019612263300270515,
+            "top10": 0.03967538322813345,
+            "mean_probability": 0.004629521046844825,
+            "token_count": 236,
+            "occurrence_count": 4436,
+            "document_count": 146
+          }
+        },
+        "supported_tail": {
+          "population_sha256": "a73d20341ee27b2533693b126a888c0903b56a5bc57d601d7e95833ac2d23cf4",
+          "metrics": {
+            "micro_ce": 9.82375695197526,
+            "macro_per_token_ce": 10.042373575891997,
+            "top1": 0.006544502617801047,
+            "top5": 0.022905759162303665,
+            "top10": 0.0281413612565445,
+            "mean_probability": 0.002469041540446272,
+            "token_count": 290,
+            "occurrence_count": 1528,
+            "document_count": 141
+          }
+        },
+        "eos": {
+          "terminal_mean_probability": 0.020293532507672005,
+          "terminal_top1": 0.0,
+          "nonterminal_mean_probability": 0.0005827565729381945,
+          "premature_argmax_eos": 0.0
+        },
+        "context": {
+          "128": {
+            "mean_ce": 4.534843343203037,
+            "documents": 24
+          },
+          "512": {
+            "mean_ce": 4.435919676636616,
+            "documents": 24
+          }
+        },
+        "normal_controls": {
+          "mean_ce": 4.416363215446472,
+          "family_ce": {
+            "code": 2.8151806592941284,
+            "definitions": 4.806211233139038,
+            "lists": 4.6771674156188965,
+            "math": 4.591440558433533,
+            "terminology": 5.191816210746765
+          },
+          "terminal_eos_probability": 0.005253778815676924,
+          "shape_proxy_passes": 0,
+          "shape_proxy_examples": 20,
+          "shape_not_semantic_correctness": true
+        },
+        "generation": {
+          "greedy": {
+            "examples": 100,
+            "runaway_rate": 1.0,
+            "eos_rate": 0.0,
+            "mean_repetition_1": 0.9190625,
+            "naturalness_rate": 0.0,
+            "semantic_rate": 0.0,
+            "sentence_completion_rate": 0.0,
+            "mean_eos_probability": 0.0004116529197782692,
+            "japanese_validity": 0.92,
+            "topic_retention_proxy": 0.45814731097649053,
+            "repetition_1": 0.9190625,
+            "repetition_2": 0.8904724409448819,
+            "repetition_3": 0.8665873015873017,
+            "repetition_4": 0.8447199999999999,
+            "unique_token_ratio": 0.0809375,
+            "loop_onset": 31.28,
+            "loop_cycle_length": 7.82,
+            "entropy": 4.422382308809902,
+            "top1_top2_margin": 0.2718369413448454
+          },
+          "sampling": {
+            "44000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.38829545454545455,
+              "naturalness_rate": 0.65,
+              "semantic_rate": 0.54,
+              "sentence_completion_rate": 0.06,
+              "mean_eos_probability": 0.0007187718119621365,
+              "japanese_validity": 0.81,
+              "topic_retention_proxy": 0.21062364510688172,
+              "repetition_1": 0.38829545454545455,
+              "repetition_2": 0.15063492063492062,
+              "repetition_3": 0.06762903225806452,
+              "repetition_4": 0.028360655737704923,
+              "unique_token_ratio": 0.6117045454545454,
+              "loop_onset": 38.12,
+              "loop_cycle_length": 1.17
+            },
+            "51000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.378125,
+              "naturalness_rate": 0.64,
+              "semantic_rate": 0.53,
+              "sentence_completion_rate": 0.06,
+              "mean_eos_probability": 0.0008412154931185256,
+              "japanese_validity": 0.79,
+              "topic_retention_proxy": 0.20633499091038165,
+              "repetition_1": 0.378125,
+              "repetition_2": 0.1490476190476191,
+              "repetition_3": 0.0667741935483871,
+              "repetition_4": 0.03000000000000001,
+              "unique_token_ratio": 0.621875,
+              "loop_onset": 32.11,
+              "loop_cycle_length": 1.28
+            },
+            "52000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.36541666666666667,
+              "naturalness_rate": 0.65,
+              "semantic_rate": 0.57,
+              "sentence_completion_rate": 0.12,
+              "mean_eos_probability": 0.0008156386300991825,
+              "japanese_validity": 0.76,
+              "topic_retention_proxy": 0.20271930499861518,
+              "repetition_1": 0.36541666666666667,
+              "repetition_2": 0.1384667342114151,
+              "repetition_3": 0.06064516129032258,
+              "repetition_4": 0.023442622950819683,
+              "unique_token_ratio": 0.6345833333333333,
+              "loop_onset": 30.26,
+              "loop_cycle_length": 1.28
+            }
+          }
+        },
+        "thermal": {
+          "samples": 177,
+          "start": {
+            "gpu_utilization_percent": 0.0,
+            "gpu_memory_used_mib": 699.0,
+            "gpu_temperature_c": 47.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 49.84,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.10777029999985643
+          },
+          "midpoint": {
+            "gpu_utilization_percent": 42.0,
+            "gpu_memory_used_mib": 1174.0,
+            "gpu_temperature_c": 65.0,
+            "sm_clock_mhz": 1965.0,
+            "power_w": 92.29,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 32.84399379999991
+          },
+          "end": {
+            "gpu_utilization_percent": 26.0,
+            "gpu_memory_used_mib": 1223.0,
+            "gpu_temperature_c": 48.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 52.89,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 66.41576139999984
+          },
+          "maximum_temperature_sample": {
+            "gpu_utilization_percent": 55.0,
+            "gpu_memory_used_mib": 1127.0,
+            "gpu_temperature_c": 81.0,
+            "sm_clock_mhz": 1935.0,
+            "power_w": 195.61,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 21.049062299999832
+          },
+          "gpu_utilization_percent_mean": 40.49717514124294,
+          "gpu_utilization_percent_max": 75.0,
+          "gpu_memory_used_mib_max": 1241.0,
+          "gpu_temperature_c_max": 81.0,
+          "sm_clock_mhz_min": 1185.0,
+          "sm_clock_mhz_max": 1995.0,
+          "gpu_power_w_max": 219.78,
+          "software_thermal_slowdown": true,
+          "hardware_thermal_slowdown": false,
+          "thermal_classification": "SOFTWARE_THERMAL_SLOWDOWN",
+          "thermal_attention": false
+        },
+        "raw_only": true
+      },
+      "paired_document_bootstrap_10000_seed5701": {
+        "core": {
+          "mean": 0.001548634134938418,
+          "lower": -0.057131482412248545,
+          "upper": 0.060703928889190635
+        },
+        "supported_tail": {
+          "mean": 0.036914039968820145,
+          "lower": -0.0027494642642495438,
+          "upper": 0.07890800427539307
+        }
+      },
+      "safety_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_FAIL",
+        "checks": {
+          "validation.ce": {
+            "value": -0.001978460204795,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": -0.00037487923533205,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": -0.00076903797419545,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": -0.00095969084245,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.009582209465332,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": -0.004609490192373,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": -0.0141916996577045,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.767389199602027,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0002006520542665271,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.001548634134938,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.018791823375704,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.001803426510369703,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.002479711451758341,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0018034265103697,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.060703928889190635,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.03691403996882,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.033730760566937,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": -0.0006544502617801045,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": -0.001963350785340313,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.001963350785340317,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.07890800427539307,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.120689344406127,
+            "threshold": 0.05,
+            "pass": false
+          },
+          "normal.terminal_probability": {
+            "value": 1.06961312345733,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": -0.064563274383545,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.3176745176315307,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "normal.lists.ce": {
+            "value": 0.1320796012878415,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "normal.definitions.ce": {
+            "value": 0.016718745231628,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.2015371322631835,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.02666666666666667,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.04,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": -0.00301909866612823,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0033333333333333335,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      },
+      "all_34_safeguards_pass": false
+    },
+    "2026": {
+      "phase": 59,
+      "seed": 2026,
+      "parent": {
+        "phase": 59,
+        "label": "seed-2026-parent",
+        "checkpoint_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+        "validation": {
+          "tokens": 466817,
+          "ce": 4.431562342548629,
+          "top1": 0.24961173222054894,
+          "top5": 0.4387607991996864,
+          "top10": 0.5235499135635592
+        },
+        "core": {
+          "population_sha256": "1441f3a91c40330bf438119d59fc8fcdbeb62978bd1f723ae98a4279d4b045ca",
+          "metrics": {
+            "micro_ce": 9.26817004866327,
+            "macro_per_token_ce": 9.272429664183695,
+            "top1": 0.007213706041478809,
+            "top5": 0.03764652840396754,
+            "top10": 0.047114517583408476,
+            "mean_probability": 0.004110204365277891,
+            "token_count": 236,
+            "occurrence_count": 4436,
+            "document_count": 146
+          }
+        },
+        "supported_tail": {
+          "population_sha256": "a73d20341ee27b2533693b126a888c0903b56a5bc57d601d7e95833ac2d23cf4",
+          "metrics": {
+            "micro_ce": 9.768016546457538,
+            "macro_per_token_ce": 9.995920474220641,
+            "top1": 0.0058900523560209425,
+            "top5": 0.015052356020942409,
+            "top10": 0.034031413612565446,
+            "mean_probability": 0.002602441197684373,
+            "token_count": 290,
+            "occurrence_count": 1528,
+            "document_count": 141
+          }
+        },
+        "eos": {
+          "terminal_mean_probability": 0.008186938927281841,
+          "terminal_top1": 0.0,
+          "nonterminal_mean_probability": 0.00037042975715144167,
+          "premature_argmax_eos": 0.0
+        },
+        "context": {
+          "128": {
+            "mean_ce": 4.526496791062687,
+            "documents": 24
+          },
+          "512": {
+            "mean_ce": 4.43473900157779,
+            "documents": 24
+          }
+        },
+        "normal_controls": {
+          "mean_ce": 4.285903990268707,
+          "family_ce": {
+            "code": 2.3245564103126526,
+            "definitions": 4.903336405754089,
+            "lists": 4.438135266304016,
+            "math": 4.476404666900635,
+            "terminology": 5.2870872020721436
+          },
+          "terminal_eos_probability": 0.0028547792782774193,
+          "shape_proxy_passes": 0,
+          "shape_proxy_examples": 20,
+          "shape_not_semantic_correctness": true
+        },
+        "generation": {
+          "greedy": {
+            "examples": 100,
+            "runaway_rate": 1.0,
+            "eos_rate": 0.0,
+            "mean_repetition_1": 0.925625,
+            "naturalness_rate": 0.01,
+            "semantic_rate": 0.01,
+            "sentence_completion_rate": 0.01,
+            "mean_eos_probability": 0.0004052565440194944,
+            "japanese_validity": 0.91,
+            "topic_retention_proxy": 0.4519958801929289,
+            "repetition_1": 0.925625,
+            "repetition_2": 0.9028346456692914,
+            "repetition_3": 0.8839682539682541,
+            "repetition_4": 0.86536,
+            "unique_token_ratio": 0.074375,
+            "loop_onset": 24.35,
+            "loop_cycle_length": 5.54,
+            "entropy": 4.130063960991975,
+            "top1_top2_margin": 0.3267004246214856
+          },
+          "sampling": {
+            "44000": {
+              "examples": 100,
+              "runaway_rate": 1.0,
+              "eos_rate": 0.0,
+              "mean_repetition_1": 0.3953125,
+              "naturalness_rate": 0.6,
+              "semantic_rate": 0.51,
+              "sentence_completion_rate": 0.05,
+              "mean_eos_probability": 0.0005634133255602625,
+              "japanese_validity": 0.73,
+              "topic_retention_proxy": 0.18575565372909777,
+              "repetition_1": 0.3953125,
+              "repetition_2": 0.17063492063492064,
+              "repetition_3": 0.0867741935483871,
+              "repetition_4": 0.03786885245901641,
+              "unique_token_ratio": 0.6046875,
+              "loop_onset": 35.25,
+              "loop_cycle_length": 1.4
+            },
+            "51000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.38,
+              "naturalness_rate": 0.62,
+              "semantic_rate": 0.55,
+              "sentence_completion_rate": 0.08,
+              "mean_eos_probability": 0.0005180203900607073,
+              "japanese_validity": 0.75,
+              "topic_retention_proxy": 0.18671791639573082,
+              "repetition_1": 0.38,
+              "repetition_2": 0.17047619047619048,
+              "repetition_3": 0.08741935483870965,
+              "repetition_4": 0.04344262295081968,
+              "unique_token_ratio": 0.62,
+              "loop_onset": 33.27,
+              "loop_cycle_length": 1.36
+            },
+            "52000": {
+              "examples": 100,
+              "runaway_rate": 1.0,
+              "eos_rate": 0.0,
+              "mean_repetition_1": 0.398125,
+              "naturalness_rate": 0.55,
+              "semantic_rate": 0.43,
+              "sentence_completion_rate": 0.03,
+              "mean_eos_probability": 0.000520304818842563,
+              "japanese_validity": 0.76,
+              "topic_retention_proxy": 0.19575236048808425,
+              "repetition_1": 0.398125,
+              "repetition_2": 0.18380952380952378,
+              "repetition_3": 0.0946774193548387,
+              "repetition_4": 0.04704918032786885,
+              "unique_token_ratio": 0.601875,
+              "loop_onset": 35.8,
+              "loop_cycle_length": 1.38
+            }
+          }
+        },
+        "thermal": {
+          "samples": 171,
+          "start": {
+            "gpu_utilization_percent": 2.0,
+            "gpu_memory_used_mib": 729.0,
+            "gpu_temperature_c": 49.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 69.26,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.11875720000011825
+          },
+          "midpoint": {
+            "gpu_utilization_percent": 65.0,
+            "gpu_memory_used_mib": 1171.0,
+            "gpu_temperature_c": 71.0,
+            "sm_clock_mhz": 1965.0,
+            "power_w": 93.64,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 31.97328790000006
+          },
+          "end": {
+            "gpu_utilization_percent": 26.0,
+            "gpu_memory_used_mib": 1210.0,
+            "gpu_temperature_c": 48.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 51.62,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 64.5546988000001
+          },
+          "maximum_temperature_sample": {
+            "gpu_utilization_percent": 75.0,
+            "gpu_memory_used_mib": 730.0,
+            "gpu_temperature_c": 81.0,
+            "sm_clock_mhz": 1935.0,
+            "power_w": 222.06,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 7.468927399999984
+          },
+          "gpu_utilization_percent_mean": 41.771929824561404,
+          "gpu_utilization_percent_max": 76.0,
+          "gpu_memory_used_mib_max": 1220.0,
+          "gpu_temperature_c_max": 81.0,
+          "sm_clock_mhz_min": 1185.0,
+          "sm_clock_mhz_max": 1980.0,
+          "gpu_power_w_max": 222.06,
+          "software_thermal_slowdown": true,
+          "hardware_thermal_slowdown": false,
+          "thermal_classification": "SOFTWARE_THERMAL_SLOWDOWN",
+          "thermal_attention": false
+        },
+        "raw_only": true
+      },
+      "candidate": {
+        "phase": 59,
+        "label": "seed-2026-candidate",
+        "checkpoint_sha256": "81beefad437c235c42fa46297a64eebadba3dbf11bf54260a82656b2f4c43476",
+        "validation": {
+          "tokens": 466817,
+          "ce": 4.424945628337848,
+          "top1": 0.2507192325900728,
+          "top5": 0.4395598275127084,
+          "top10": 0.5251758183613707
+        },
+        "core": {
+          "population_sha256": "1441f3a91c40330bf438119d59fc8fcdbeb62978bd1f723ae98a4279d4b045ca",
+          "metrics": {
+            "micro_ce": 9.444680479868266,
+            "macro_per_token_ce": 9.429381476153857,
+            "top1": 0.007439134355275023,
+            "top5": 0.029531109107303877,
+            "top10": 0.0405770964833183,
+            "mean_probability": 0.00451338345227749,
+            "token_count": 236,
+            "occurrence_count": 4436,
+            "document_count": 146
+          }
+        },
+        "supported_tail": {
+          "population_sha256": "a73d20341ee27b2533693b126a888c0903b56a5bc57d601d7e95833ac2d23cf4",
+          "metrics": {
+            "micro_ce": 9.931048678790088,
+            "macro_per_token_ce": 10.173922179699858,
+            "top1": 0.006544502617801047,
+            "top5": 0.014397905759162303,
+            "top10": 0.032722513089005235,
+            "mean_probability": 0.003363572375730936,
+            "token_count": 290,
+            "occurrence_count": 1528,
+            "document_count": 141
+          }
+        },
+        "eos": {
+          "terminal_mean_probability": 0.007246443476978042,
+          "terminal_top1": 0.0,
+          "nonterminal_mean_probability": 0.00033465213748394264,
+          "premature_argmax_eos": 0.0
+        },
+        "context": {
+          "128": {
+            "mean_ce": 4.513378536206748,
+            "documents": 24
+          },
+          "512": {
+            "mean_ce": 4.419527316491917,
+            "documents": 24
+          }
+        },
+        "normal_controls": {
+          "mean_ce": 4.31979159116745,
+          "family_ce": {
+            "code": 2.4135366082191467,
+            "definitions": 4.876082420349121,
+            "lists": 4.494446277618408,
+            "math": 4.626971125602722,
+            "terminology": 5.187921524047852
+          },
+          "terminal_eos_probability": 0.003171126640518196,
+          "shape_proxy_passes": 0,
+          "shape_proxy_examples": 20,
+          "shape_not_semantic_correctness": true
+        },
+        "generation": {
+          "greedy": {
+            "examples": 100,
+            "runaway_rate": 1.0,
+            "eos_rate": 0.0,
+            "mean_repetition_1": 0.92328125,
+            "naturalness_rate": 0.0,
+            "semantic_rate": 0.0,
+            "sentence_completion_rate": 0.0,
+            "mean_eos_probability": 0.00038583069230514023,
+            "japanese_validity": 0.9,
+            "topic_retention_proxy": 0.47416088639967086,
+            "repetition_1": 0.92328125,
+            "repetition_2": 0.897244094488189,
+            "repetition_3": 0.8757142857142857,
+            "repetition_4": 0.85536,
+            "unique_token_ratio": 0.07671875,
+            "loop_onset": 22.47,
+            "loop_cycle_length": 7.02,
+            "entropy": 4.299045053044974,
+            "top1_top2_margin": 0.28352234835481793
+          },
+          "sampling": {
+            "44000": {
+              "examples": 100,
+              "runaway_rate": 1.0,
+              "eos_rate": 0.0,
+              "mean_repetition_1": 0.359375,
+              "naturalness_rate": 0.69,
+              "semantic_rate": 0.61,
+              "sentence_completion_rate": 0.04,
+              "mean_eos_probability": 0.0004172230879131999,
+              "japanese_validity": 0.82,
+              "topic_retention_proxy": 0.19359520545851386,
+              "repetition_1": 0.359375,
+              "repetition_2": 0.12555555555555556,
+              "repetition_3": 0.0529032258064516,
+              "repetition_4": 0.025737704918032792,
+              "unique_token_ratio": 0.640625,
+              "loop_onset": 39.52,
+              "loop_cycle_length": 1.19
+            },
+            "51000": {
+              "examples": 100,
+              "runaway_rate": 1.0,
+              "eos_rate": 0.0,
+              "mean_repetition_1": 0.36984375,
+              "naturalness_rate": 0.7,
+              "semantic_rate": 0.59,
+              "sentence_completion_rate": 0.03,
+              "mean_eos_probability": 0.0003896898957123973,
+              "japanese_validity": 0.78,
+              "topic_retention_proxy": 0.18659951962438348,
+              "repetition_1": 0.36984375,
+              "repetition_2": 0.13730158730158734,
+              "repetition_3": 0.05774193548387096,
+              "repetition_4": 0.024754098360655744,
+              "unique_token_ratio": 0.63015625,
+              "loop_onset": 33.33,
+              "loop_cycle_length": 1.22
+            },
+            "52000": {
+              "examples": 100,
+              "runaway_rate": 0.99,
+              "eos_rate": 0.01,
+              "mean_repetition_1": 0.36098958333333336,
+              "naturalness_rate": 0.75,
+              "semantic_rate": 0.67,
+              "sentence_completion_rate": 0.07,
+              "mean_eos_probability": 0.0004085722202509493,
+              "japanese_validity": 0.82,
+              "topic_retention_proxy": 0.1960542323606803,
+              "repetition_1": 0.36098958333333336,
+              "repetition_2": 0.12675651392632525,
+              "repetition_3": 0.04629032258064516,
+              "repetition_4": 0.015409836065573779,
+              "unique_token_ratio": 0.6390104166666667,
+              "loop_onset": 34.5,
+              "loop_cycle_length": 1.21
+            }
+          }
+        },
+        "thermal": {
+          "samples": 172,
+          "start": {
+            "gpu_utilization_percent": 0.0,
+            "gpu_memory_used_mib": 716.0,
+            "gpu_temperature_c": 49.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 50.21,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.11212010000008377
+          },
+          "midpoint": {
+            "gpu_utilization_percent": 29.0,
+            "gpu_memory_used_mib": 1158.0,
+            "gpu_temperature_c": 65.0,
+            "sm_clock_mhz": 1950.0,
+            "power_w": 90.98,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 32.193862699999954
+          },
+          "end": {
+            "gpu_utilization_percent": 24.0,
+            "gpu_memory_used_mib": 1217.0,
+            "gpu_temperature_c": 48.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 47.19,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 64.66035080000006
+          },
+          "maximum_temperature_sample": {
+            "gpu_utilization_percent": 57.0,
+            "gpu_memory_used_mib": 1096.0,
+            "gpu_temperature_c": 81.0,
+            "sm_clock_mhz": 1935.0,
+            "power_w": 182.66,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 20.561440800000128
+          },
+          "gpu_utilization_percent_mean": 41.122093023255815,
+          "gpu_utilization_percent_max": 75.0,
+          "gpu_memory_used_mib_max": 1238.0,
+          "gpu_temperature_c_max": 81.0,
+          "sm_clock_mhz_min": 1155.0,
+          "sm_clock_mhz_max": 1980.0,
+          "gpu_power_w_max": 223.32,
+          "software_thermal_slowdown": true,
+          "hardware_thermal_slowdown": false,
+          "thermal_classification": "SOFTWARE_THERMAL_SLOWDOWN",
+          "thermal_attention": false
+        },
+        "raw_only": true
+      },
+      "paired_document_bootstrap_10000_seed5701": {
+        "core": {
+          "mean": 0.17651043120499557,
+          "lower": 0.13066227658526477,
+          "upper": 0.22267614135722386
+        },
+        "supported_tail": {
+          "mean": 0.16303213233254968,
+          "lower": 0.13736681833666078,
+          "upper": 0.18911920290007025
+        }
+      },
+      "safety_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_FAIL",
+        "checks": {
+          "validation.ce": {
+            "value": -0.006616714210781,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": -0.00110750036952386,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": -0.000799028313022,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": -0.0016259047978115,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": -0.013118254855939,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": -0.015211685085873,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": -0.0020934302299338,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 0.8851224543559586,
+            "threshold": 0.9,
+            "pass": false
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": -3.577761966749903e-05,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.176510431204996,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "core.macro_ce": {
+            "value": 0.156951811970162,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "core.top1": {
+            "value": -0.000225428313796214,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.008115419296663663,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.006537421100090176,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.22267614135722386,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.16303213233255,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.178001705479217,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": -0.0006544502617801045,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.000654450261780106,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.001308900523560211,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.18911920290007025,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.033887600898743,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.110813247331563,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.150566458702087,
+            "threshold": 0.1,
+            "pass": false
+          },
+          "normal.code.ce": {
+            "value": 0.0889801979064941,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.056311011314392,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": -0.027253985404968,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": -0.0991656780242916,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": -0.12333333333333334,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": -0.12666666666666668,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": -0.0026743422768882668,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": -0.06,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      },
+      "all_34_safeguards_pass": false
+    }
+  },
+  "generation_policy": "UNSAFE",
+  "canonical_promotion": false,
+  "20m": false,
+  "foundation_base": false
+}
