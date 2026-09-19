@@ -1,0 +1,26 @@
+{
+  "phase": 61,
+  "kind": "post_abort_inventory_correction",
+  "final_gate_unchanged": "EXPERIMENT_INVALID",
+  "reason": "A final filesystem inventory found a third atomic checkpoint saved before process termination, without its companion run receipt. This does not make the run or study valid.",
+  "checkpoint": {
+    "seed": 123,
+    "arm": "control",
+    "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-123\\checkpoint-tokens-16446464.pt",
+    "sha256": "2ba2e6b38d92b2b3f6fc348437b8e98714afd5823e0e12c0cf0bbb2bbd4ac1b4",
+    "bytes": 234997503,
+    "strict_model_optimizer_scheduler_sampler_rng_reload": "PASS",
+    "runtime_lr": 0.00005,
+    "markers": ["EXPERIMENTAL", "NOT_CANONICAL", "NOT_PRODUCTION"],
+    "run_receipt": "MISSING_INCOMPLETE"
+  },
+  "operations": {
+    "copy": 0,
+    "move": 0,
+    "delete": 0,
+    "overwrite": 0,
+    "rename": 0,
+    "evaluation": 0,
+    "retry": 0
+  }
+}

@@ -255,9 +255,9 @@ def invalidate():
     for seed in SEEDS:
         for arm,lr in ARMS:
             row={'seed':seed,'arm':arm,'lr':lr,'checkpoint':str(target(seed,arm)),'run_artifact':str(run_artifact(seed,arm))}
-            if target(seed,arm).exists() and run_artifact(seed,arm).exists():
+            if target(seed,arm).exists():
                 payload=torch.load(target(seed,arm),map_location='cpu',weights_only=False)
-                row.update({'status':'COMPLETED_BEFORE_ABORT','checkpoint_sha256':sha(target(seed,arm)),'checkpoint_bytes':target(seed,arm).stat().st_size,'integrity':verify_payload(payload,seed,16_446_464,lr),'runtime_lr_contract':payload.get('phase61_runtime_lr_contract'),'resume_integrity':'PASS'})
+                row.update({'status':'COMPLETED_BEFORE_ABORT' if run_artifact(seed,arm).exists() else 'CHECKPOINT_SAVED_WITHOUT_RUN_RECEIPT_INCOMPLETE','checkpoint_sha256':sha(target(seed,arm)),'checkpoint_bytes':target(seed,arm).stat().st_size,'integrity':verify_payload(payload,seed,16_446_464,lr),'runtime_lr_contract':payload.get('phase61_runtime_lr_contract'),'resume_integrity':'PASS'})
             else: row['status']='NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT'
             runs.append(row)
     parents=[]
@@ -268,7 +268,7 @@ def invalidate():
     emit(OUT/'final-gate.json',invalid)
     summary={k:invalid[k] for k in ('phase','final_gate','reason','runs','approved_research_lr','stabilization_candidate_lr','formal_lr_changed','generation_policy','phase57','phase59','canonical','20m','foundation_base','production')}
     emit(ROOT/'evaluation/foundation-v50-continuation-stability-summary.json',summary)
-    report=['# PHASE61 / Foundation v5.0 — Continuation Stability Experiment','', '**EXPERIMENT_INVALID**','',invalid['reason'],'','Two seed42 checkpoints were atomically completed before the stop and passed strict model/optimizer/scheduler/sampler/RNG reload checks. They remain EXPERIMENTAL, NOT_CANONICAL and NOT_PRODUCTION. They are not evaluated and cannot support any efficacy, LR-selection, or generation claim.','', 'The four remaining registered runs were not started after the abort. The three parents were re-hashed and strict-reloaded unchanged. No checkpoint was copied, moved, deleted, overwritten, renamed, staged, or promoted.','', 'Approved research LR remains 5e-5. The 2.5e-5 arm remains an unvalidated stabilization candidate only. Formal LR changed: NO. Generation Policy: UNSAFE. PHASE57 remains EXPERIMENT_INVALID; PHASE59 remains CONTROL_STABILITY_MIXED. Foundation Base, 20M and Production: NO.']
+    report=['# PHASE61 / Foundation v5.0 — Continuation Stability Experiment','', '**EXPERIMENT_INVALID**','',invalid['reason'],'','Any atomically saved checkpoint is retained and strict-reloaded, but is not evaluated and cannot support any efficacy, LR-selection, or generation claim. Every saved checkpoint remains EXPERIMENTAL, NOT_CANONICAL and NOT_PRODUCTION.','', 'The remaining registered runs were not started after the abort. The three parents were re-hashed and strict-reloaded unchanged. No checkpoint was copied, moved, deleted, overwritten, renamed, staged, or promoted.','', 'Approved research LR remains 5e-5. The 2.5e-5 arm remains an unvalidated stabilization candidate only. Formal LR changed: NO. Generation Policy: UNSAFE. PHASE57 remains EXPERIMENT_INVALID; PHASE59 remains CONTROL_STABILITY_MIXED. Foundation Base, 20M and Production: NO.']
     emit_text(ROOT/'evaluation/foundation-v50-continuation-stability-report.md','\n'.join(report)+'\n')
     print('PHASE61_GATE EXPERIMENT_INVALID',flush=True)
 
