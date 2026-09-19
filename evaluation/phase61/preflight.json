@@ -1,0 +1,1071 @@
+{
+  "phase": 61,
+  "explicit_phase61_authorization": true,
+  "training_authorized_by_user_instruction": true,
+  "at": "2026-09-19T14:10:02.981006+00:00",
+  "start_head": "4cf502e45a9f09166b4f0b39f56b557e10b317e5",
+  "origin_sha": "4cf502e45a9f09166b4f0b39f56b557e10b317e5",
+  "branch": "foundation-research",
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "preregistration_path": "evaluation\\phase60\\phase61-continuation-stability-preregistration.json",
+  "preregistration_sha256": "1f21f56d345e34a2aa58df7180ed40f5b3071feacab75cd31385b7fd2ffa89fc",
+  "evaluator_schema_sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b",
+  "safeguard_mapping": "34/34 PASS",
+  "parents": [
+    {
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "bytes": 235702207,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "58551fa0110f3221caa72cd1382ce6e5ca05a0757bd88776071b5efeddb426f8",
+      "rng_roundtrip": true
+    },
+    {
+      "seed": 123,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "bytes": 234996799,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "685d76f443d25bd4d271e1550a174e0b6380ad5b8d47020607e12947eb3440c9",
+      "rng_roundtrip": true
+    },
+    {
+      "seed": 2026,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "bytes": 234995455,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "8e6cd015ea3e49605306d2be18a67e6c95b1126bcfdf82eb4e25bdda4efc136c",
+      "rng_roundtrip": true
+    }
+  ],
+  "matching_cache_sha256": "4978d51cb66326bccee71a966d6337555387ce74f5ac2d4415506076a69416dc",
+  "data_sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+  "cuda": {
+    "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+    "torch": "2.12.1+cu130",
+    "cuda_build": "13.0",
+    "fp32": true,
+    "amp": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "start": {
+      "gpu_utilization_percent": 0.0,
+      "gpu_memory_used_mib": 468.0,
+      "gpu_temperature_c": 51.0,
+      "sm_clock_mhz": 1200.0,
+      "power_w": 46.08,
+      "software_thermal_slowdown": false,
+      "hardware_thermal_slowdown": false
+    }
+  },
+  "free_bytes": {
+    "C": 145377828864,
+    "Z": 77379694592
+  },
+  "atomic_reserve_required_bytes": 2618888062,
+  "protected_files": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\.gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-A\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "2da12b7d1e8e8721fd9d42ac1986a4c794fdfbc90fce1beea4a39db83e86af8b"
+    },
+    {
+      "path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase42\\arm-B\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "9fd953d86efce44792708ec2571b54583d382fc2180bd907a5920211f174be08"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-C\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "e5e8c44bab2997fc0ed1e056fd4e47c3f90212686b58b3901758630ba3a58084"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-D\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "874f49859cc8e64662ca84c43141982ba6be161006308169ff6a3e0fca65dbeb"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-E\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "0a31eaa77d5037f6a122910661f1b038a6c6503baaea29ad7db13fec59d96b3b"
+    }
+  ],
+  "dirty_files": [
+    {
+      "status": " M",
+      "path": ".gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v09-sanity/checkpoint-step-100.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v09-sanity/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-100.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-250.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-50.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/20m/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/30m/checkpoint-step-50.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/30m/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/46m/checkpoint-step-50.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v10-sanity/46m/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-10.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-100.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-25.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-50.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-75.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v11-clean-100/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-100.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-150.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-200.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-250.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-50.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v13-clean-250/training-log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/context128_constant.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/context256_constant.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/context256_long_cosine.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/context512_constant.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_1x.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_2x.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_4x.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/fewer_layers_wider.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/more_layers_narrower.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/pre_rmsnorm.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/tied_embedding_sqrt_scale.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v15-architecture-audit/untied_lm_head.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-123.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-2026.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-123.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-2026.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-short-japanese/current_unscaled.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-short-japanese/sqrt_scaled_a.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-synthetic/current_unscaled.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v16-synthetic/sqrt_scaled_a.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-reproduction/balanced_position_sqrt-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-123.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-2026.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-short-japanese/depth_scaled_residual_init.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-synthetic/balanced_position_sqrt-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-synthetic/current_unscaled-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-synthetic/depth_scaled_residual_init-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v17-synthetic/sqrt_scaled_a-seed-42.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-3em03.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-9em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-3em03.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-9em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-3em03.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-9em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-short-japanese/custom_current.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-short-japanese/custom_depth_init.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-short-japanese/reference_mha.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-synthetic/custom_current-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-synthetic/custom_depth_init-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v18-synthetic/reference_mha-lr-3em04.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-16x-markers.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-1x-markers.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-4x-markers.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-markers-long.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-markers.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-no-markers.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v19-benchmark-v3/reference_mha.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v20-benchmark-v31/lr3x/reference_mha-l3-standalone.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v20-benchmark-v31/reference_mha-l3-standalone.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v20-benchmark-v31/reference_mha-l4-standalone.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/foundation-v20-benchmark-v31/wd0/reference_mha-l3-standalone.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/sanity-100/training_history.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/sanity/training_history.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/unipilot-v02-step-100/training_log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/unipilot-v02-step-1000/training_log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/unipilot-v02-step-500/training_log.csv",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/best-checkpoints.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-a/checkpoint-step-1000.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-a/checkpoint-step-500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-1500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-2000.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-2500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-3000.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-3500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-4000.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-4500.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-5000.manifest.json",
+      "sha256": null
+    },
+    {
+      "status": " D",
+      "path": "checkpoints/v03-scratch-001/training_log.csv",
+      "sha256": null
+    },
+    {
+      "status": " M",
+      "path": "evaluation/analyze_foundation_v37_stability.py",
+      "sha256": "6c9a092e8f81587848dfa6a9ba48fc8c10a35fa6e96cf4896012753774911a5f"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/analyze_foundation_v38_gate.py",
+      "sha256": "88f10818c3695ef86f805e984436cf0c980583a3ea57c5ce5207d920f418f2da"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-ai-quality-100.json",
+      "sha256": "f4f4a46d73b031daf619571ef651ea60d25ab73c1bcf5533fe7873b5d83c43e3"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-ai-quality-20.json",
+      "sha256": "edcf8f3f850cbc1b0c15755e089a015e18c4edfb7e43c3b4e64f7f31a436003e"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-ai-review-queue.json",
+      "sha256": "58cd791042a32e5425e3066be124b846a4c4e742c131a1da9b9569d732844bf1"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-v21-close-analysis.json",
+      "sha256": "3ffbeca250bd1d6bb4c883fbc3504c3bcc3a0876e9361c46120482a47856ab3d"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-v21-critical-failure.json",
+      "sha256": "bb14c3880fe08879f773c88c0602bb14a94aec406221f3d2c0ca3463dfab4a08"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "status": " M",
+      "path": "evaluation/campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "status": " M",
+      "path": "scripts/benchmark_quantization_v08.py",
+      "sha256": "6755fdce1478c819dcf90673c302e3f7bdbfe4f6da59590773b3e02f0c106c26"
+    },
+    {
+      "status": " M",
+      "path": "scripts/download_production_checkpoint.py",
+      "sha256": "aacebb23e5705780b17bef8a15a9e7b1033c038fb64589ed2c73e5bbfed78427"
+    },
+    {
+      "status": " M",
+      "path": "scripts/export_inference_checkpoint.py",
+      "sha256": "8e92fe4d253a9e914842a35115faaa6f1bdff81f904c0852aa91ad4ec8b4f2a7"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_checkpoint_paths.py",
+      "sha256": "302000cc59ce9e94feb06d97fe4ed1d02d836b3d147cd43f60b00d041280a9c6"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v09.py",
+      "sha256": "c223fb3d01c198920a80da5f5846d22b656803a4eba8d961fa5ca87c7802b562"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v10.py",
+      "sha256": "c2593c26bd2b89094f5931a2f3574944c31d9265bb2a7a3665b7f2b9a6786884"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v11.py",
+      "sha256": "fc74fb4009cec6968c8f9f389f7df47296af92b8ae6d62bfdd9c52c0999dd076"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v13.py",
+      "sha256": "cee35e0a66c884d6a4c083c20df2c10fbffaeec6f31391813ad50593bfde4d34"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v14.py",
+      "sha256": "15cfc36a3b44b2dccfd114284a50025abc38ee7815a5b116b97220aa9009bca4"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v16_architecture_fix.py",
+      "sha256": "2b2b97fdfa705d89246ce3ebd2e57e770a15849ad73283c77a803bf5b0f0834a"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v17_isolation.py",
+      "sha256": "f14d636260c3e441c031682b6e22001769dd5b8375e228b8718a53a1fdc6aeae"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v36_lr_review.py",
+      "sha256": "e46ec5e5c73f1feb2933c91f05d60cc6255af2ebdaa98b45bcdb190781dde3ea"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v37_stability.py",
+      "sha256": "439232bec132559931df244d6bd7c5664641c9eaab36c7f67486571dc62d9a44"
+    },
+    {
+      "status": " M",
+      "path": "tests/test_foundation_v38_gate.py",
+      "sha256": "7c01f1dcd208ece0fd5921746dca6209c7a0164b2a8821fcf5604529433c872f"
+    },
+    {
+      "status": " M",
+      "path": "training/checkpoint_paths.py",
+      "sha256": "d503b04ae1039cf850175b48b9282cec582b5ce02f442eecf5722790c7f4a9ed"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v30_eos_experiment.py",
+      "sha256": "4045f05cac718e7fc0d0ee36e9881cd5f304e07b2d06d145e23b08b07ff3f115"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v31_pipeline.py",
+      "sha256": "34cb4e66a18d00ba2c07618e0a21890770ab59548d8f241a7a89827deac1b7c7"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v32_maturity_pilot.py",
+      "sha256": "a8c7317cee568e1a506e634b43819f52ed63348b21b54a041b963247390c88d2"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v33_context_gate.py",
+      "sha256": "5f6482a0c7e1ad83465370267e31ed8c5d9c14153a1b484ed1a9e6756566f6c4"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v35_thermal_gate.py",
+      "sha256": "2668cf45311eabd05e5b683170a70c786bbd34b04cd0f97774d5a44e87acc4ad"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v36_lr_review.py",
+      "sha256": "c13d0f8d688c84f81e8d6c444e679c6f713e8b039e8773897ec9f066395301e2"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v37_stability.py",
+      "sha256": "385f3e9657cc7388c8e5013f6cf76a576117c27f05c2461cdd105d72c7b3d11f"
+    },
+    {
+      "status": " M",
+      "path": "training/run_foundation_v38_gate.py",
+      "sha256": "ba891436acadf005d6b927fc098956c540cfd0bdfd9df47b774e40676b63c410"
+    },
+    {
+      "status": " M",
+      "path": "training/train.py",
+      "sha256": "da78318a044588dfd3856c1c693d95240b5dadaa303553d18bc9d926f3bf0476"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_continue.py",
+      "sha256": "de0d23f573e0f993a8e8157ccffacf3d4c830e7eb7dc479b2e6a2f6d5115cafa"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v21_ab.py",
+      "sha256": "b39434deef8fa424a05c70f8c6c199b86d4440e8b0768fc6d1e9e1a8b8a36b4c"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v22_current.py",
+      "sha256": "ba33b675b15b8fdfa58ba678a20a4d94d4c07e6f819ab1771d1d5cad453f963e"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v23_pilot.py",
+      "sha256": "de641745071f1130e3a42a70f2f12039f208f6682aab9b1aa2e0bc7659991d75"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v24_current.py",
+      "sha256": "e306bd13fc091862175ce2934653badeca94a2729c558e94fabdccff1e84c5d1"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v25_current.py",
+      "sha256": "0cd8b24735dab2e2b64ff61e6be0d547f14551b67c7baade3180dd8f9af6c14a"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v26_current.py",
+      "sha256": "3748cf3e7b0e9ad99b207edfe292c5d4d640efced95deb344183a10f6a13f9ea"
+    },
+    {
+      "status": " M",
+      "path": "training/train_foundation_v27_current.py",
+      "sha256": "ce35d22ed220dd7c48ff6f9182342e3ab11e44b27fa2535df8b421d904e7c681"
+    },
+    {
+      "status": " M",
+      "path": "training/train_standard_short.py",
+      "sha256": "b04e67bbb39e0a909ad9ef59018e274c1f4a6854ab84d04746efe08af0cbe895"
+    },
+    {
+      "status": " M",
+      "path": "training/train_v08.py",
+      "sha256": "098e70c9e7324d20ee9790cc9dc8db3021044fdf07b4238691614010d5388dc5"
+    },
+    {
+      "status": " M",
+      "path": "training/validate_gpu_migration.py",
+      "sha256": "1a4d60c5ae89cd502558d93ad8314fbee1b9881038bd03189da41c6ad57b2d34"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/B-seed-123.json",
+      "sha256": "0b84fd83e3e404f2ba44adc04f25056112952d791202a7f73a5683936ba8c02d"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/B-seed-2026.json",
+      "sha256": "14d58784cd7441d88f4666631cb48e4b8427fee30090b24cea50fb70474ef9a6"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/B-seed-42.json",
+      "sha256": "3033039b4390623468378ce066108bddd712eeed82ca3d3f3bb98e985d2a778e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/C-seed-123.json",
+      "sha256": "5910778f01c40be84a12b30c22d4d7a6e8257d65db5411afb4e9787fd4b5eb16"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/C-seed-2026.json",
+      "sha256": "8efc614e902d8866bbc5e951cfeab761e12c6d9c36c64475cc2237777a60608e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/C-seed-42.json",
+      "sha256": "1278366629418f7230f69450984a67f2583e10595b4fca7188e8886df1cc4d03"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/baseline-seed-123.json",
+      "sha256": "cb3b59b67b85a7f7943cafeb379c6cde7ae4532404e45187714fb2dd08acc3ea"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/baseline-seed-2026.json",
+      "sha256": "5848bda41e3616f03f0c073934239ccb65ef82853bb5e1ec505d34cd013a9a93"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase51/raw/baseline-seed-42.json",
+      "sha256": "50acb458da2be6d6d5543555c37da2572cc4b9878283522c531a0438f03bde8b"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase52/raw/attractor-time-series.json",
+      "sha256": "39f1790eb78a4e19aeae55010c5238dd4177995b3e985e7c48f8d1cd0cd699df"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase52/raw/pre-onset-logit-dynamics.json",
+      "sha256": "ce93be6a28b549a5478ae3a568c1021c75db2d6a20e2b53978ac29084dc4b59e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-greedy-53000.json",
+      "sha256": "8f8ca2d95856f2a34046ff291bbe793fadc9199159da11150bea0a68a8e6e89e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-greedy-53100.json",
+      "sha256": "cd4a42d424fb3a9f7aae5d070b4d440595d9107a8daf376789a84169b690f23b"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-repetition_1.10-53000.json",
+      "sha256": "0cda8b10f698828f99482ee252cb78fffbecb76a8ddcc285abc7867c555c102e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-repetition_1.10-53100.json",
+      "sha256": "4464f8425f48b07ec144a020458ce878f02b58d859b9cebf699501dabc613d80"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-temperature_0.7-53000.json",
+      "sha256": "5f3c3fa8d0ed9aad070d01781d1f043d067d8d731317f594965f0d0fabf5346e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-temperature_0.7-53100.json",
+      "sha256": "e39f214c81f55df0286eb8c026df38dd448aa796cd6c7659b0b5d4b770988715"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-top_k_50-53000.json",
+      "sha256": "84bd87d1358e8b2a9bfb9e586fa6d10753c766f0280d683e7383b43bec1af2b5"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-top_k_50-53100.json",
+      "sha256": "5d78b7779678602b76c5dd8c4589538e366cc9d747c3e421491adc23e43a2261"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-top_p_0.90-53000.json",
+      "sha256": "8503a9a0855dd822188588ba1f3bf16465271ecbe4db1f3973ba32e4eaee2302"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-B-top_p_0.90-53100.json",
+      "sha256": "54d4fa8b024f8283e8140c57d505d92afc08820df04ab89267c4945e21dd2826"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-greedy-53000.json",
+      "sha256": "3eb9d84d28d815b9148dd3aa6d2c4a0a2492957ad510148de978153baf605b7e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-greedy-53100.json",
+      "sha256": "65cb97842740956379303f44f8c4262adf6a19f9b552b25bef198bfaf6849ef6"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-repetition_1.10-53000.json",
+      "sha256": "1519740b99ca69d7ef4b7334c54b51c14a3b2382170fb69c285426b0d8403e01"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-repetition_1.10-53100.json",
+      "sha256": "142a72003bfaa345b5c4b8f30eaf854bf8eb6566a1e527acf30847424ee0cb6f"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-temperature_0.7-53000.json",
+      "sha256": "5cccdc8c518a31133719d32cf962d97e93d05badca30e52c8ed36142747db13f"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-temperature_0.7-53100.json",
+      "sha256": "087c26978486883c0c88301552f43c2991045f7f19dc04bb8ed861d9dcf4bd04"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-top_k_50-53000.json",
+      "sha256": "84f6df0c68fe01daa436eed64f759c773f18304d897f080d3c71d5fe05f3e21d"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-top_k_50-53100.json",
+      "sha256": "44872577df73054580b119b70deebdae7f0cba16220b10bef86654ed69ce9b8c"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-top_p_0.90-53000.json",
+      "sha256": "9e0a4289ed43f9907840f6d2752e1a52fb5e056dd7492ecb5ce8ba4a5c137bc9"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase53/raw/generation-C-top_p_0.90-53100.json",
+      "sha256": "e6aac7948de8574ed410493197e1cdd033a89db937308fd35bcd9b2fe6effe8e"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/phase55/lr-confirmatory-preregistration.json",
+      "sha256": "d9e93c9854c2a44abd4dc4a1c6cd76022a79f40a036c3add345c4add36fe16c2"
+    },
+    {
+      "status": "??",
+      "path": "evaluation/run_foundation_v50_phase61.py",
+      "sha256": "4442ff2b073e51363a42a2a1d77575d47df0c907a432454f5ee8a59a04dbc48b"
+    },
+    {
+      "status": "??",
+      "path": "scripts/storage_preflight_check.py",
+      "sha256": "c316bca2793a0466866848e6307ac949feb2126db60784a86cc28512bc584b57"
+    },
+    {
+      "status": "??",
+      "path": "tests/checkpoint_resolver.py",
+      "sha256": "a3056128c1881e37b57389327e2c05de865d2fb4bb7a28b8df03be2237f93c44"
+    },
+    {
+      "status": "??",
+      "path": "tests/test_checkpoint_storage_policy.py",
+      "sha256": "191bcad0d3359fab922911bb662889a4e4b7a38a0856dcef0a5af7504467a994"
+    },
+    {
+      "status": "??",
+      "path": "tests/test_foundation_v50_phase61.py",
+      "sha256": "953abdab40e430611e642c61245f028e7b565c735249d4008dd55f6260d33562"
+    }
+  ],
+  "parent_operations": {
+    "copy": 0,
+    "move": 0,
+    "delete": 0,
+    "overwrite": 0,
+    "rename": 0
+  },
+  "final_blind": "SHA_ONLY_PASS",
+  "reserve2": "SEALED_UNSCORED_HASH_ONLY",
+  "phase53_reserve": "RETIRED_UNSCORABLE_NOT_OPENED"
+}

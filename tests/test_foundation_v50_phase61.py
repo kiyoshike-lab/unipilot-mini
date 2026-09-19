@@ -5,7 +5,9 @@ from evaluation import generation_contract_v47 as c
 def test_only_registered_arms_seeds_and_budget_are_reachable():
     assert p.SEEDS == (42,123,2026)
     assert p.ARMS == (('control',5e-5),('half-lr',2.5e-5))
-    assert "choices=('preflight','dry-run','train','evaluate')" in p.Path(p.__file__).read_text(encoding='utf8')
+    text=p.Path(p.__file__).read_text(encoding='utf8')
+    assert "choices=('preflight','dry-run','train','evaluate','invalidate')" in text
+    assert 'RESOURCE_ISOLATION_VIOLATION' in text
 
 def test_registered_contract_remains_34_checks():
     spec=p.read(p.SPEC)

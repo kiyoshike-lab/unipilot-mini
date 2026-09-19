@@ -1,0 +1,11 @@
+{
+  "phase": 61,
+  "scope": "pretraining targeted",
+  "command": "python -m pytest tests/test_foundation_v50_phase61.py tests/test_foundation_v49_registration.py -q",
+  "exit_code": 0,
+  "passed": 7,
+  "failed": 0,
+  "skipped": 0,
+  "warnings": 0,
+  "repo_output_isolation": "PASS"
+}

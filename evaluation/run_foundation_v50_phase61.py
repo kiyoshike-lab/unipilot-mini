@@ -61,6 +61,10 @@ def emit(path, value):
     p=Path(path); new(p); p.parent.mkdir(parents=True,exist_ok=True); tmp=p.with_suffix(p.suffix+'.tmp')
     with tmp.open('x',encoding='utf8') as f: json.dump(value,f,ensure_ascii=False,indent=2,allow_nan=False);f.write('\n');f.flush();os.fsync(f.fileno())
     tmp.replace(p)
+def emit_text(path, value):
+    p=Path(path);new(p);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.tmp')
+    with tmp.open('x',encoding='utf8') as f: f.write(value);f.flush();os.fsync(f.fileno())
+    tmp.replace(p)
 def finite(value):
     if torch.is_tensor(value): return bool(torch.isfinite(value).all())
     if isinstance(value,dict): return all(finite(x) for x in value.values())
@@ -245,7 +249,30 @@ def evaluate_all():
         emit(OUT/f'seed{seed}-gate.json',gate);results[str(seed)]={'valid':True,'control_all34_vs_parent':gate['all34']['control_vs_parent'],'half_lr_all34_vs_parent':gate['all34']['half_lr_vs_parent'],'half_lr_all34_vs_control':gate['all34']['half_lr_vs_control']}
     final=phase61_decision(results);emit(OUT/'final-gate.json',{'phase':61,'final_gate':final,'seeds':results,'approved_research_lr':5e-5,'stabilization_candidate_lr':2.5e-5,'formal_lr_changed':False,'generation_policy':'UNSAFE','phase57':'EXPERIMENT_INVALID','phase59':'CONTROL_STABILITY_MIXED','canonical':False,'20m':False,'foundation_base':False,'production':False});print('PHASE61_GATE',final,flush=True)
 
+def invalidate():
+    """Close an interrupted run without touching its experimental checkpoints."""
+    spec=source_spec();pre=read(OUT/'preflight.json');runs=[]
+    for seed in SEEDS:
+        for arm,lr in ARMS:
+            row={'seed':seed,'arm':arm,'lr':lr,'checkpoint':str(target(seed,arm)),'run_artifact':str(run_artifact(seed,arm))}
+            if target(seed,arm).exists() and run_artifact(seed,arm).exists():
+                payload=torch.load(target(seed,arm),map_location='cpu',weights_only=False)
+                row.update({'status':'COMPLETED_BEFORE_ABORT','checkpoint_sha256':sha(target(seed,arm)),'checkpoint_bytes':target(seed,arm).stat().st_size,'integrity':verify_payload(payload,seed,16_446_464,lr),'runtime_lr_contract':payload.get('phase61_runtime_lr_contract'),'resume_integrity':'PASS'})
+            else: row['status']='NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT'
+            runs.append(row)
+    parents=[]
+    for seed in SEEDS:
+        _,row=strict_parent(seed);parents.append({'seed':seed,**row})
+    invalid={'phase':61,'final_gate':'EXPERIMENT_INVALID','reason':'RESOURCE_ISOLATION_VIOLATION: two CUDA Python process trees overlapped after the execution host returned before a foreground training command had completed. The study must fail closed; no retry, extension, evaluation, checkpoint deletion, overwrite, or promotion is allowed.','execution_stopped':True,'new_training_after_detection':False,'runs':runs,'parents':parents,'preflight_sha256':sha(OUT/'preflight.json'),'preregistration_sha256':sha(SPEC),'safeguard_mapping':'34/34 PASS before training','formal_lr_changed':False,'approved_research_lr':5e-5,'stabilization_candidate_lr':2.5e-5,'generation_policy':'UNSAFE','phase57':'EXPERIMENT_INVALID','phase59':'CONTROL_STABILITY_MIXED','canonical':False,'20m':False,'foundation_base':False,'production':False,'checkpoint_operations_after_abort':dict.fromkeys(('copy','move','delete','overwrite','rename'),0),'raw_staged':False}
+    emit(OUT/'incomplete-run-inventory.json',invalid)
+    emit(OUT/'final-gate.json',invalid)
+    summary={k:invalid[k] for k in ('phase','final_gate','reason','runs','approved_research_lr','stabilization_candidate_lr','formal_lr_changed','generation_policy','phase57','phase59','canonical','20m','foundation_base','production')}
+    emit(ROOT/'evaluation/foundation-v50-continuation-stability-summary.json',summary)
+    report=['# PHASE61 / Foundation v5.0 — Continuation Stability Experiment','', '**EXPERIMENT_INVALID**','',invalid['reason'],'','Two seed42 checkpoints were atomically completed before the stop and passed strict model/optimizer/scheduler/sampler/RNG reload checks. They remain EXPERIMENTAL, NOT_CANONICAL and NOT_PRODUCTION. They are not evaluated and cannot support any efficacy, LR-selection, or generation claim.','', 'The four remaining registered runs were not started after the abort. The three parents were re-hashed and strict-reloaded unchanged. No checkpoint was copied, moved, deleted, overwritten, renamed, staged, or promoted.','', 'Approved research LR remains 5e-5. The 2.5e-5 arm remains an unvalidated stabilization candidate only. Formal LR changed: NO. Generation Policy: UNSAFE. PHASE57 remains EXPERIMENT_INVALID; PHASE59 remains CONTROL_STABILITY_MIXED. Foundation Base, 20M and Production: NO.']
+    emit_text(ROOT/'evaluation/foundation-v50-continuation-stability-report.md','\n'.join(report)+'\n')
+    print('PHASE61_GATE EXPERIMENT_INVALID',flush=True)
+
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=('preflight','dry-run','train','evaluate'));args=parser.parse_args();torch.set_num_threads(2)
-    {'preflight':preflight,'dry-run':dry_run,'train':train,'evaluate':evaluate_all}[args.action]()
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=('preflight','dry-run','train','evaluate','invalidate'));args=parser.parse_args();torch.set_num_threads(2)
+    {'preflight':preflight,'dry-run':dry_run,'train':train,'evaluate':evaluate_all,'invalidate':invalidate}[args.action]()
 if __name__=='__main__': main()

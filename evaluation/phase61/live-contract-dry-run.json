@@ -1,0 +1,1772 @@
+{
+  "phase": 61,
+  "kind": "six_cuda_live_contract_dry_runs",
+  "results": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "lr": 5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 470.0,
+          "gpu_temperature_c": 51.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.23,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10784879999994246
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 470.0,
+          "gpu_temperature_c": 51.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.23,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10784879999994246
+        },
+        "waited_seconds": 0.10784879999994246,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 0.0,
+            "gpu_memory_used_mib": 470.0,
+            "gpu_temperature_c": 51.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 46.23,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.10784879999994246
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 3,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 653.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.98,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.11218050000002222
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 695.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 51.06,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.4749214999999367
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 696.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 53.18,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.8494998999999552
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 696.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 53.18,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.8494998999999552
+        },
+        "gpu_utilization_percent_mean": 0.0,
+        "gpu_utilization_percent_max": 0.0,
+        "gpu_memory_used_mib_max": 696.0,
+        "gpu_temperature_c_max": 53.0,
+        "sm_clock_mhz_min": 1605.0,
+        "sm_clock_mhz_max": 1605.0,
+        "gpu_power_w_max": 53.18,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.30000000000000004,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.0002475031355970714,
+          "repetition_1": 0.375,
+          "repetition_2": 0.2857142857142857,
+          "repetition_3": 0.16666666666666663,
+          "repetition_4": 0.0,
+          "unique_token_ratio": 0.625,
+          "loop_onset": 66.5,
+          "loop_cycle_length": 1.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.41,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.11797930000000179
+        },
+        "end": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.41,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.11797930000000179
+        },
+        "waited_seconds": 0.11797930000000179,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 1.0,
+            "gpu_memory_used_mib": 602.0,
+            "gpu_temperature_c": 53.0,
+            "sm_clock_mhz": 1605.0,
+            "power_w": 50.41,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.11797930000000179
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 1,
+        "start": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 52.69,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.1195840999999973
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 52.69,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.1195840999999973
+        },
+        "end": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 52.69,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.1195840999999973
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 1.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 52.69,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.1195840999999973
+        },
+        "gpu_utilization_percent_mean": 1.0,
+        "gpu_utilization_percent_max": 1.0,
+        "gpu_memory_used_mib_max": 674.0,
+        "gpu_temperature_c_max": 53.0,
+        "sm_clock_mhz_min": 1605.0,
+        "sm_clock_mhz_max": 1605.0,
+        "gpu_power_w_max": 52.69,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.30000000000000004,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.0002475031355970714,
+          "repetition_1": 0.375,
+          "repetition_2": 0.2857142857142857,
+          "repetition_3": 0.16666666666666663,
+          "repetition_4": 0.0,
+          "unique_token_ratio": 0.625,
+          "loop_onset": 66.5,
+          "loop_cycle_length": 1.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "lr": 5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.67,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10398600000007718
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.67,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10398600000007718
+        },
+        "waited_seconds": 0.10398600000007718,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 0.0,
+            "gpu_memory_used_mib": 602.0,
+            "gpu_temperature_c": 53.0,
+            "sm_clock_mhz": 1605.0,
+            "power_w": 50.67,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.10398600000007718
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 1,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 55.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.14433840000003784
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 55.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.14433840000003784
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 55.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.14433840000003784
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 55.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.14433840000003784
+        },
+        "gpu_utilization_percent_mean": 0.0,
+        "gpu_utilization_percent_max": 0.0,
+        "gpu_memory_used_mib_max": 674.0,
+        "gpu_temperature_c_max": 53.0,
+        "sm_clock_mhz_min": 1605.0,
+        "sm_clock_mhz_max": 1605.0,
+        "gpu_power_w_max": 55.29,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.29166666666666663,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.00028094654817323317,
+          "repetition_1": 0.5625,
+          "repetition_2": 0.5,
+          "repetition_3": 0.4166666666666667,
+          "repetition_4": 0.3,
+          "unique_token_ratio": 0.4375,
+          "loop_onset": 2.5,
+          "loop_cycle_length": 2.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 5.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.6,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.09890660000007756
+        },
+        "end": {
+          "gpu_utilization_percent": 5.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1605.0,
+          "power_w": 50.6,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.09890660000007756
+        },
+        "waited_seconds": 0.09890660000007756,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 5.0,
+            "gpu_memory_used_mib": 602.0,
+            "gpu_temperature_c": 53.0,
+            "sm_clock_mhz": 1605.0,
+            "power_w": 50.6,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.09890660000007756
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 1,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 48.81,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13479949999998553
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 48.81,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13479949999998553
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 48.81,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13479949999998553
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 53.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 48.81,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13479949999998553
+        },
+        "gpu_utilization_percent_mean": 0.0,
+        "gpu_utilization_percent_max": 0.0,
+        "gpu_memory_used_mib_max": 674.0,
+        "gpu_temperature_c_max": 53.0,
+        "sm_clock_mhz_min": 1200.0,
+        "sm_clock_mhz_max": 1200.0,
+        "gpu_power_w_max": 48.81,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.29166666666666663,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.00028094654817323317,
+          "repetition_1": 0.5625,
+          "repetition_2": 0.5,
+          "repetition_3": 0.4166666666666667,
+          "repetition_4": 0.3,
+          "unique_token_ratio": 0.4375,
+          "loop_onset": 2.5,
+          "loop_cycle_length": 2.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "arm": "control",
+      "lr": 5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 6.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.11195789999999306
+        },
+        "end": {
+          "gpu_utilization_percent": 6.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.29,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.11195789999999306
+        },
+        "waited_seconds": 0.11195789999999306,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 6.0,
+            "gpu_memory_used_mib": 602.0,
+            "gpu_temperature_c": 52.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 46.29,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.11195789999999306
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 1,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.95,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13681150000002162
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.95,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13681150000002162
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.95,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13681150000002162
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.95,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13681150000002162
+        },
+        "gpu_utilization_percent_mean": 0.0,
+        "gpu_utilization_percent_max": 0.0,
+        "gpu_memory_used_mib_max": 674.0,
+        "gpu_temperature_c_max": 52.0,
+        "sm_clock_mhz_min": 1200.0,
+        "sm_clock_mhz_max": 1200.0,
+        "gpu_power_w_max": 46.95,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.45,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.00012322976886025572,
+          "repetition_1": 0.5625,
+          "repetition_2": 0.5,
+          "repetition_3": 0.4166666666666667,
+          "repetition_4": 0.3,
+          "unique_token_ratio": 0.4375,
+          "loop_onset": 2.0,
+          "loop_cycle_length": 2.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "pass": true,
+      "cooldown": {
+        "target_c": 60.0,
+        "start": {
+          "gpu_utilization_percent": 6.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.19,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10967970000001515
+        },
+        "end": {
+          "gpu_utilization_percent": 6.0,
+          "gpu_memory_used_mib": 602.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.19,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.10967970000001515
+        },
+        "waited_seconds": 0.10967970000001515,
+        "target_reached": true,
+        "samples": [
+          {
+            "gpu_utilization_percent": 6.0,
+            "gpu_memory_used_mib": 602.0,
+            "gpu_temperature_c": 52.0,
+            "sm_clock_mhz": 1200.0,
+            "power_w": 46.19,
+            "software_thermal_slowdown": false,
+            "hardware_thermal_slowdown": false,
+            "elapsed_seconds": 0.10967970000001515
+          }
+        ]
+      },
+      "thermal": {
+        "samples": 1,
+        "start": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.52,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13241629999993165
+        },
+        "midpoint": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.52,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13241629999993165
+        },
+        "end": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.52,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13241629999993165
+        },
+        "maximum_temperature_sample": {
+          "gpu_utilization_percent": 0.0,
+          "gpu_memory_used_mib": 674.0,
+          "gpu_temperature_c": 52.0,
+          "sm_clock_mhz": 1200.0,
+          "power_w": 46.52,
+          "software_thermal_slowdown": false,
+          "hardware_thermal_slowdown": false,
+          "elapsed_seconds": 0.13241629999993165
+        },
+        "gpu_utilization_percent_mean": 0.0,
+        "gpu_utilization_percent_max": 0.0,
+        "gpu_memory_used_mib_max": 674.0,
+        "gpu_temperature_c_max": 52.0,
+        "sm_clock_mhz_min": 1200.0,
+        "sm_clock_mhz_max": 1200.0,
+        "gpu_power_w_max": 46.52,
+        "software_thermal_slowdown": false,
+        "hardware_thermal_slowdown": false,
+        "thermal_classification": "NO_THERMAL_CONCERN",
+        "thermal_attention": false
+      },
+      "greedy": {
+        "schema_version": "generation-eval-v2",
+        "examples": 2,
+        "metrics": {
+          "runaway_rate": 1.0,
+          "completion_rate": 0.0,
+          "naturalness_rate": 0.0,
+          "semantic_rate": 0.0,
+          "topic_retention_rate": 0.45,
+          "japanese_validity_rate": 1.0,
+          "eos_completion_rate": 0.0,
+          "mean_eos_probability": 0.00012322976886025572,
+          "repetition_1": 0.5625,
+          "repetition_2": 0.5,
+          "repetition_3": 0.4166666666666667,
+          "repetition_4": 0.3,
+          "unique_token_ratio": 0.4375,
+          "loop_onset": 2.0,
+          "loop_cycle_length": 2.0
+        }
+      },
+      "contract_gate": {
+        "schema_version": "quality-safety-v2",
+        "gate": "CONTROL_SAFETY_PASS",
+        "checks": {
+          "validation.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "validation.top1": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "validation.top5": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "validation.top10": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "context.128.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.512.ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "context.long_benefit": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "eos.terminal_top1": {
+            "value": 0.0,
+            "threshold": 0.02,
+            "pass": true
+          },
+          "eos.nonterminal_probability": {
+            "value": 0.0,
+            "threshold": 0.001,
+            "pass": true
+          },
+          "eos.premature_argmax": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "core.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "core.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "core.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "supported_tail.micro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.macro_ce": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "supported_tail.top1": {
+            "value": 0.0,
+            "threshold": 0.005,
+            "pass": true
+          },
+          "supported_tail.top5": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.top10": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          },
+          "supported_tail.paired_ce_ci95_upper": {
+            "value": 0.0,
+            "threshold": 0.25,
+            "pass": true
+          },
+          "normal.mean_ce": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "normal.terminal_probability": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "normal.math.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.code.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.lists.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.definitions.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "normal.terminology.ce": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "sampling.naturalness_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.semantic_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.topic_retention_rate": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "sampling.japanese_validity_rate": {
+            "value": 0.0,
+            "threshold": 0.01,
+            "pass": true
+          }
+        }
+      }
+    }
+  ],
+  "all_pass": true,
+  "new_training": false
+}

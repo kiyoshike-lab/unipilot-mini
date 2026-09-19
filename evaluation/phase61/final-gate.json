@@ -1,0 +1,209 @@
+{
+  "phase": 61,
+  "final_gate": "EXPERIMENT_INVALID",
+  "reason": "RESOURCE_ISOLATION_VIOLATION: two CUDA Python process trees overlapped after the execution host returned before a foreground training command had completed. The study must fail closed; no retry, extension, evaluation, checkpoint deletion, overwrite, or promotion is allowed.",
+  "execution_stopped": true,
+  "new_training_after_detection": false,
+  "runs": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "lr": 5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-42\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed42-control.json",
+      "status": "COMPLETED_BEFORE_ABORT",
+      "checkpoint_sha256": "83cbafa7e3aba0850cba5bc08d8e236ca79c73aa839014699fe2e92ff2b8b0ee",
+      "checkpoint_bytes": 235702975,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "runtime_lr_contract": {
+        "arm": "control",
+        "optimizer_group_lr": 5e-05,
+        "constant_schedule": true,
+        "scheduler_step_called": false,
+        "historical_scheduler_metadata_warning": "learning_rate and peak_learning_rate are preserved historical metadata, not runtime authority"
+      },
+      "resume_integrity": "PASS"
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\half-lr\\seed-42\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed42-half-lr.json",
+      "status": "COMPLETED_BEFORE_ABORT",
+      "checkpoint_sha256": "f86e69df68f964c8375185d3810cf8fd8a30a6d4cd6c0f6cfa9fbddeedd97edd",
+      "checkpoint_bytes": 235702975,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "runtime_lr_contract": {
+        "arm": "half-lr",
+        "optimizer_group_lr": 2.5e-05,
+        "constant_schedule": true,
+        "scheduler_step_called": false,
+        "historical_scheduler_metadata_warning": "learning_rate and peak_learning_rate are preserved historical metadata, not runtime authority"
+      },
+      "resume_integrity": "PASS"
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "lr": 5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-123\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed123-control.json",
+      "status": "NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT"
+    },
+    {
+      "seed": 123,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\half-lr\\seed-123\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed123-half-lr.json",
+      "status": "NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT"
+    },
+    {
+      "seed": 2026,
+      "arm": "control",
+      "lr": 5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-2026\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed2026-control.json",
+      "status": "NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT"
+    },
+    {
+      "seed": 2026,
+      "arm": "half-lr",
+      "lr": 2.5e-05,
+      "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\half-lr\\seed-2026\\checkpoint-tokens-16446464.pt",
+      "run_artifact": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed2026-half-lr.json",
+      "status": "NOT_STARTED_OR_INCOMPLETE_AFTER_ABORT"
+    }
+  ],
+  "parents": [
+    {
+      "seed": 42,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "bytes": 235702207,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "58551fa0110f3221caa72cd1382ce6e5ca05a0757bd88776071b5efeddb426f8",
+      "rng_roundtrip": true
+    },
+    {
+      "seed": 123,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "bytes": 234996799,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "685d76f443d25bd4d271e1550a174e0b6380ad5b8d47020607e12947eb3440c9",
+      "rng_roundtrip": true
+    },
+    {
+      "seed": 2026,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "bytes": 234995455,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "next_122_permutation_sha256": "8e6cd015ea3e49605306d2be18a67e6c95b1126bcfdf82eb4e25bdda4efc136c",
+      "rng_roundtrip": true
+    }
+  ],
+  "preflight_sha256": "e7e0ae721b70a24983405c893bf245bfbc4209023ace6da8557f1aeb00721a21",
+  "preregistration_sha256": "1f21f56d345e34a2aa58df7180ed40f5b3071feacab75cd31385b7fd2ffa89fc",
+  "safeguard_mapping": "34/34 PASS before training",
+  "formal_lr_changed": false,
+  "approved_research_lr": 5e-05,
+  "stabilization_candidate_lr": 2.5e-05,
+  "generation_policy": "UNSAFE",
+  "phase57": "EXPERIMENT_INVALID",
+  "phase59": "CONTROL_STABILITY_MIXED",
+  "canonical": false,
+  "20m": false,
+  "foundation_base": false,
+  "production": false,
+  "checkpoint_operations_after_abort": {
+    "copy": 0,
+    "move": 0,
+    "delete": 0,
+    "overwrite": 0,
+    "rename": 0
+  },
+  "raw_staged": false
+}
