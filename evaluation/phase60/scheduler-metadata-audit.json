@@ -1,0 +1,124 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "checkpoints": [
+    {
+      "seed": 42,
+      "role": "parent",
+      "checkpoint_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    },
+    {
+      "seed": 42,
+      "role": "candidate",
+      "checkpoint_sha256": "75848b7e79c5a9ff4aacce3230c374a32cb13c4978e591a743f683c2df6f3906",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32122,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    },
+    {
+      "seed": 123,
+      "role": "parent",
+      "checkpoint_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    },
+    {
+      "seed": 123,
+      "role": "candidate",
+      "checkpoint_sha256": "620dcdab001304bec7e78d849ba5857fc60c28476a2d41d946e754383eb6c8c6",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32122,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    },
+    {
+      "seed": 2026,
+      "role": "parent",
+      "checkpoint_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32000,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    },
+    {
+      "seed": 2026,
+      "role": "candidate",
+      "checkpoint_sha256": "81beefad437c235c42fa46297a64eebadba3dbf11bf54260a82656b2f4c43476",
+      "scheduler_state": {
+        "kind": "stateless_warmup_then_constant",
+        "global_step": 32122,
+        "peak_learning_rate": 0.0001,
+        "warmup_updates": 20,
+        "learning_rate": 0.0001
+      },
+      "actual_optimizer_group_LR": [
+        5e-05,
+        5e-05
+      ],
+      "experimental_lr_metadata": 5e-05,
+      "legacy_scheduler_lr_disagrees": true
+    }
+  ],
+  "parent_log_continuity_all_three": true,
+  "finding": "Historical scheduler LR metadata is1e-4 for all six payloads; all optimizer groups actually hold5e-5. Shared mismatch, not a demonstrated between-seed mechanism.",
+  "code_evidence": {
+    "evaluation\\run_foundation_v46_phase57.py": "07211a918286b6d9aba72fbfbcf296a6e00a48604bf6e620a7fa75bc9e002b9d",
+    "evaluation\\run_foundation_v48_phase59.py": "03af919383130f6a90284d3fbb5b90b58eaf1292a2fbc92a9f9fabbb888f211d",
+    "training\\run_foundation_v30_eos_experiment.py": "4045f05cac718e7fc0d0ee36e9881cd5f304e07b2d06d145e23b08b07ff3f115"
+  },
+  "source_inspection": "Frozen training loops step the loaded optimizer, never scheduler.step; saved scheduler only advances global_step.",
+  "future_requirement": "Assert per-step actual group LR; preserve old metadata separately from explicit new runtime LR contract."
+}

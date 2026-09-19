@@ -1,0 +1,1498 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "net_parameter_updates": {
+    "42": {
+      "total": {
+        "net_update_norm": 2.0987230239927386,
+        "parameter_relative_net_update_norm": 0.01291720596521289,
+        "net_norm_divided_by_122": 0.017202647737645398
+      },
+      "component:embedding_tied_head": {
+        "net_update_norm": 0.6665925804511693,
+        "parameter_relative_net_update_norm": 0.007999696711244803,
+        "net_norm_divided_by_122": 0.005463873610255486
+      },
+      "layer:outside_blocks": {
+        "net_update_norm": 0.7042507389668747,
+        "parameter_relative_net_update_norm": 0.007492280403658549,
+        "net_norm_divided_by_122": 0.005772547040712088
+      },
+      "component:position_embedding": {
+        "net_update_norm": 0.22212957972211878,
+        "parameter_relative_net_update_norm": 0.03481021949445938,
+        "net_norm_divided_by_122": 0.001820734260017367
+      },
+      "component:LayerNorm": {
+        "net_update_norm": 0.06946613042180914,
+        "parameter_relative_net_update_norm": 0.0006791664401004055,
+        "net_norm_divided_by_122": 0.0005693945116541733
+      },
+      "layer:0": {
+        "net_update_norm": 0.6149366275169774,
+        "parameter_relative_net_update_norm": 0.01574543221030918,
+        "net_norm_divided_by_122": 0.005040464159975225
+      },
+      "component:attention": {
+        "net_update_norm": 1.1302012884216233,
+        "parameter_relative_net_update_norm": 0.022109269748339457,
+        "net_norm_divided_by_122": 0.009263944987062485
+      },
+      "component:FFN": {
+        "net_update_norm": 1.6213483947972054,
+        "parameter_relative_net_update_norm": 0.020363585598317815,
+        "net_norm_divided_by_122": 0.0132897409409607
+      },
+      "layer:1": {
+        "net_update_norm": 0.6126815581691312,
+        "parameter_relative_net_update_norm": 0.01588784667968603,
+        "net_norm_divided_by_122": 0.005021979984992878
+      },
+      "layer:2": {
+        "net_update_norm": 0.6004703800512833,
+        "parameter_relative_net_update_norm": 0.01518616562947016,
+        "net_norm_divided_by_122": 0.004921888361076093
+      },
+      "layer:3": {
+        "net_update_norm": 0.5998527389121574,
+        "parameter_relative_net_update_norm": 0.014614469590667943,
+        "net_norm_divided_by_122": 0.004916825728788175
+      },
+      "layer:4": {
+        "net_update_norm": 0.6215787352569622,
+        "parameter_relative_net_update_norm": 0.014601753085495158,
+        "net_norm_divided_by_122": 0.005094907666040673
+      },
+      "layer:5": {
+        "net_update_norm": 0.6357031262630819,
+        "parameter_relative_net_update_norm": 0.014472887594288759,
+        "net_norm_divided_by_122": 0.005210681362812147
+      },
+      "layer:6": {
+        "net_update_norm": 0.6428976418603121,
+        "parameter_relative_net_update_norm": 0.014404043891227469,
+        "net_norm_divided_by_122": 0.0052696528021337055
+      },
+      "layer:7": {
+        "net_update_norm": 0.6492063752501546,
+        "parameter_relative_net_update_norm": 0.01452817119570496,
+        "net_norm_divided_by_122": 0.005321363731558644
+      },
+      "layer:8": {
+        "net_update_norm": 0.6473899000646608,
+        "parameter_relative_net_update_norm": 0.01460467791131194,
+        "net_norm_divided_by_122": 0.005306474590693941
+      },
+      "layer:9": {
+        "net_update_norm": 0.6248015106215348,
+        "parameter_relative_net_update_norm": 0.015586542981312899,
+        "net_norm_divided_by_122": 0.005121323857553563
+      }
+    },
+    "123": {
+      "total": {
+        "net_update_norm": 2.1109974999176986,
+        "parameter_relative_net_update_norm": 0.012830947782855507,
+        "net_norm_divided_by_122": 0.01730325819604671
+      },
+      "component:embedding_tied_head": {
+        "net_update_norm": 0.6841157959215838,
+        "parameter_relative_net_update_norm": 0.007874708923931684,
+        "net_norm_divided_by_122": 0.005607506523947408
+      },
+      "layer:outside_blocks": {
+        "net_update_norm": 0.7210675028199408,
+        "parameter_relative_net_update_norm": 0.007424932056402895,
+        "net_norm_divided_by_122": 0.005910389367376564
+      },
+      "component:position_embedding": {
+        "net_update_norm": 0.22294357067251205,
+        "parameter_relative_net_update_norm": 0.03439493078173934,
+        "net_norm_divided_by_122": 0.0018274063169878038
+      },
+      "component:LayerNorm": {
+        "net_update_norm": 0.06914653178894804,
+        "parameter_relative_net_update_norm": 0.0006750463562066924,
+        "net_norm_divided_by_122": 0.0005667748507290824
+      },
+      "layer:0": {
+        "net_update_norm": 0.6163688392990819,
+        "parameter_relative_net_update_norm": 0.015688696845658455,
+        "net_norm_divided_by_122": 0.005052203600812147
+      },
+      "component:attention": {
+        "net_update_norm": 1.1336960501906024,
+        "parameter_relative_net_update_norm": 0.02208951756685365,
+        "net_norm_divided_by_122": 0.009292590575332806
+      },
+      "component:FFN": {
+        "net_update_norm": 1.6274348557312308,
+        "parameter_relative_net_update_norm": 0.020418977436721168,
+        "net_norm_divided_by_122": 0.013339629965010088
+      },
+      "layer:1": {
+        "net_update_norm": 0.6121630668617057,
+        "parameter_relative_net_update_norm": 0.015925860489020397,
+        "net_norm_divided_by_122": 0.00501773005624349
+      },
+      "layer:2": {
+        "net_update_norm": 0.598871182729634,
+        "parameter_relative_net_update_norm": 0.015226143976684396,
+        "net_norm_divided_by_122": 0.004908780186308475
+      },
+      "layer:3": {
+        "net_update_norm": 0.6165919367835754,
+        "parameter_relative_net_update_norm": 0.014677928586988381,
+        "net_norm_divided_by_122": 0.005054032268717831
+      },
+      "layer:4": {
+        "net_update_norm": 0.6307822782557152,
+        "parameter_relative_net_update_norm": 0.014640507028182778,
+        "net_norm_divided_by_122": 0.005170346543079633
+      },
+      "layer:5": {
+        "net_update_norm": 0.6380007762469682,
+        "parameter_relative_net_update_norm": 0.014473820067937357,
+        "net_norm_divided_by_122": 0.005229514559401379
+      },
+      "layer:6": {
+        "net_update_norm": 0.6428729213471366,
+        "parameter_relative_net_update_norm": 0.014518653704571624,
+        "net_norm_divided_by_122": 0.005269450174976529
+      },
+      "layer:7": {
+        "net_update_norm": 0.6478897585171463,
+        "parameter_relative_net_update_norm": 0.01448370147561802,
+        "net_norm_divided_by_122": 0.00531057179112415
+      },
+      "layer:8": {
+        "net_update_norm": 0.6462730933024173,
+        "parameter_relative_net_update_norm": 0.014733578419236884,
+        "net_norm_divided_by_122": 0.00529732043690506
+      },
+      "layer:9": {
+        "net_update_norm": 0.6222850698547778,
+        "parameter_relative_net_update_norm": 0.015464318662005249,
+        "net_norm_divided_by_122": 0.0051006972938916215
+      }
+    },
+    "2026": {
+      "total": {
+        "net_update_norm": 2.123238312517345,
+        "parameter_relative_net_update_norm": 0.012877441582105298,
+        "net_norm_divided_by_122": 0.01740359272555201
+      },
+      "component:embedding_tied_head": {
+        "net_update_norm": 0.7308161687341144,
+        "parameter_relative_net_update_norm": 0.008325394237206615,
+        "net_norm_divided_by_122": 0.005990296465033724
+      },
+      "layer:outside_blocks": {
+        "net_update_norm": 0.765492032348517,
+        "parameter_relative_net_update_norm": 0.007821681113625101,
+        "net_norm_divided_by_122": 0.006274524855315713
+      },
+      "component:position_embedding": {
+        "net_update_norm": 0.22307794785448806,
+        "parameter_relative_net_update_norm": 0.03417660148645477,
+        "net_norm_divided_by_122": 0.0018285077692990824
+      },
+      "component:LayerNorm": {
+        "net_update_norm": 0.0677893774138373,
+        "parameter_relative_net_update_norm": 0.0006626066193089628,
+        "net_norm_divided_by_122": 0.00055565063453965
+      },
+      "layer:0": {
+        "net_update_norm": 0.6145265290088757,
+        "parameter_relative_net_update_norm": 0.01562556097312284,
+        "net_norm_divided_by_122": 0.005037102696794063
+      },
+      "component:attention": {
+        "net_update_norm": 1.1285851380476062,
+        "parameter_relative_net_update_norm": 0.022063348282701258,
+        "net_norm_divided_by_122": 0.009250697852849231
+      },
+      "component:FFN": {
+        "net_update_norm": 1.6266484177372922,
+        "parameter_relative_net_update_norm": 0.020406453165879468,
+        "net_norm_divided_by_122": 0.013333183751945019
+      },
+      "layer:1": {
+        "net_update_norm": 0.6038179144169168,
+        "parameter_relative_net_update_norm": 0.015740096451813082,
+        "net_norm_divided_by_122": 0.004949327167351777
+      },
+      "layer:2": {
+        "net_update_norm": 0.5935691986118633,
+        "parameter_relative_net_update_norm": 0.01510122638051358,
+        "net_norm_divided_by_122": 0.00486532130009724
+      },
+      "layer:3": {
+        "net_update_norm": 0.6109749722759255,
+        "parameter_relative_net_update_norm": 0.014585437185292247,
+        "net_norm_divided_by_122": 0.005007991576032176
+      },
+      "layer:4": {
+        "net_update_norm": 0.6253795489018847,
+        "parameter_relative_net_update_norm": 0.014527535815585588,
+        "net_norm_divided_by_122": 0.005126061876244957
+      },
+      "layer:5": {
+        "net_update_norm": 0.6404979334935961,
+        "parameter_relative_net_update_norm": 0.014479023836639892,
+        "net_norm_divided_by_122": 0.005249983061422919
+      },
+      "layer:6": {
+        "net_update_norm": 0.6423216824397093,
+        "parameter_relative_net_update_norm": 0.014481701744334496,
+        "net_norm_divided_by_122": 0.005264931823276306
+      },
+      "layer:7": {
+        "net_update_norm": 0.6498130088617446,
+        "parameter_relative_net_update_norm": 0.014651826247363744,
+        "net_norm_divided_by_122": 0.005326336138211022
+      },
+      "layer:8": {
+        "net_update_norm": 0.6541073596997994,
+        "parameter_relative_net_update_norm": 0.01489977706699991,
+        "net_norm_divided_by_122": 0.005361535735244258
+      },
+      "layer:9": {
+        "net_update_norm": 0.6247250835461827,
+        "parameter_relative_net_update_norm": 0.015531242837406976,
+        "net_norm_divided_by_122": 0.005120697406116252
+      }
+    }
+  },
+  "moments": {
+    "42": {
+      "parent": {
+        "total": {
+          "first_moment_norm": 0.22426525714707995,
+          "second_moment_norm": 0.007138108029184602,
+          "first_moment_relative_to_parameter": 0.0013803062549430948,
+          "normalized_direction_norm": 978.2537670504861,
+          "lr_scaled_adaptive_direction_norm": 0.04891268835252431,
+          "relative_lr_scaled_direction_norm": 0.00030104747626955665
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.1591071571062054,
+          "second_moment_norm": 0.003561461663673785,
+          "first_moment_relative_to_parameter": 0.0019094256953423444,
+          "normalized_direction_norm": 247.26543099615122,
+          "lr_scaled_adaptive_direction_norm": 0.012363271549807563,
+          "relative_lr_scaled_direction_norm": 0.00014837012240712604
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.1700533504688079,
+          "second_moment_norm": 0.0035705806757647383,
+          "first_moment_relative_to_parameter": 0.0018091388688679202,
+          "normalized_direction_norm": 265.8629488188051,
+          "lr_scaled_adaptive_direction_norm": 0.013293147440940255,
+          "relative_lr_scaled_direction_norm": 0.00014142120492597037
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.059484913901785785,
+          "second_moment_norm": 0.00020497626777700779,
+          "first_moment_relative_to_parameter": 0.00932195933617026,
+          "normalized_direction_norm": 97.29199396758047,
+          "lr_scaled_adaptive_direction_norm": 0.004864599698379023,
+          "relative_lr_scaled_direction_norm": 0.0007623378366136292
+        },
+        "component:attention": {
+          "first_moment_norm": 0.11175299354878286,
+          "second_moment_norm": 0.006171831994907793,
+          "first_moment_relative_to_parameter": 0.00218613896910791,
+          "normalized_direction_norm": 547.2088463680655,
+          "lr_scaled_adaptive_direction_norm": 0.027360442318403278,
+          "relative_lr_scaled_direction_norm": 0.0005352315608277683
+        },
+        "layer:0": {
+          "first_moment_norm": 0.10679849804091823,
+          "second_moment_norm": 0.006171883215362844,
+          "first_moment_relative_to_parameter": 0.0027345720450188825,
+          "normalized_direction_norm": 291.9454762236853,
+          "lr_scaled_adaptive_direction_norm": 0.014597273811184266,
+          "relative_lr_scaled_direction_norm": 0.00037376271792003134
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09375879477924938,
+          "second_moment_norm": 0.00015709650668187025,
+          "first_moment_relative_to_parameter": 0.001177578643312602,
+          "normalized_direction_norm": 765.6042571958544,
+          "lr_scaled_adaptive_direction_norm": 0.038280212859792724,
+          "relative_lr_scaled_direction_norm": 0.00048078648228452864
+        },
+        "layer:1": {
+          "first_moment_norm": 0.034210019768221085,
+          "second_moment_norm": 3.970586243706997e-05,
+          "first_moment_relative_to_parameter": 0.0008871224239403086,
+          "normalized_direction_norm": 297.4576166668269,
+          "lr_scaled_adaptive_direction_norm": 0.014872880833341347,
+          "relative_lr_scaled_direction_norm": 0.00038567841191677925
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03681993129109988,
+          "second_moment_norm": 5.046876951571415e-05,
+          "first_moment_relative_to_parameter": 0.000931192601048197,
+          "normalized_direction_norm": 302.1656418035054,
+          "lr_scaled_adaptive_direction_norm": 0.01510828209017527,
+          "relative_lr_scaled_direction_norm": 0.0003820952403656683
+        },
+        "layer:3": {
+          "first_moment_norm": 0.03728223177515742,
+          "second_moment_norm": 7.487220178424148e-05,
+          "first_moment_relative_to_parameter": 0.0009083230053069105,
+          "normalized_direction_norm": 301.0432591609909,
+          "lr_scaled_adaptive_direction_norm": 0.015052162958049545,
+          "relative_lr_scaled_direction_norm": 0.00036672230291576175
+        },
+        "layer:4": {
+          "first_moment_norm": 0.03515346471073256,
+          "second_moment_norm": 3.632386623191634e-05,
+          "first_moment_relative_to_parameter": 0.0008258040095171272,
+          "normalized_direction_norm": 300.60496662264273,
+          "lr_scaled_adaptive_direction_norm": 0.015030248331132139,
+          "relative_lr_scaled_direction_norm": 0.0003530815365717724
+        },
+        "layer:5": {
+          "first_moment_norm": 0.03458542134082796,
+          "second_moment_norm": 3.1148497029836695e-05,
+          "first_moment_relative_to_parameter": 0.0007873972846560594,
+          "normalized_direction_norm": 300.9976073496637,
+          "lr_scaled_adaptive_direction_norm": 0.015049880367483188,
+          "relative_lr_scaled_direction_norm": 0.0003426367086575187
+        },
+        "layer:6": {
+          "first_moment_norm": 0.032090839115737034,
+          "second_moment_norm": 2.626537000462474e-05,
+          "first_moment_relative_to_parameter": 0.0007189913681933055,
+          "normalized_direction_norm": 299.8426034071205,
+          "lr_scaled_adaptive_direction_norm": 0.014992130170356026,
+          "relative_lr_scaled_direction_norm": 0.0003358968627913003
+        },
+        "layer:7": {
+          "first_moment_norm": 0.028205624484611214,
+          "second_moment_norm": 1.818016974314084e-05,
+          "first_moment_relative_to_parameter": 0.0006311954977895939,
+          "normalized_direction_norm": 295.3455747154238,
+          "lr_scaled_adaptive_direction_norm": 0.014767278735771192,
+          "relative_lr_scaled_direction_norm": 0.0003304674164441307
+        },
+        "layer:8": {
+          "first_moment_norm": 0.027420342870037636,
+          "second_moment_norm": 1.8956618223235313e-05,
+          "first_moment_relative_to_parameter": 0.0006185843736435189,
+          "normalized_direction_norm": 290.23444750497157,
+          "lr_scaled_adaptive_direction_norm": 0.014511722375248582,
+          "relative_lr_scaled_direction_norm": 0.00032737463344379624
+        },
+        "layer:9": {
+          "first_moment_norm": 0.03233689709143344,
+          "second_moment_norm": 0.0003130472129665463,
+          "first_moment_relative_to_parameter": 0.000806688888918553,
+          "normalized_direction_norm": 297.18592832025956,
+          "lr_scaled_adaptive_direction_norm": 0.01485929641601298,
+          "relative_lr_scaled_direction_norm": 0.00037068582313423167
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.012724777929401722,
+          "second_moment_norm": 0.0003322232658329414,
+          "first_moment_relative_to_parameter": 0.00012440943629511155,
+          "normalized_direction_norm": 28.055429290631515,
+          "lr_scaled_adaptive_direction_norm": 0.0014027714645315759,
+          "relative_lr_scaled_direction_norm": 1.3714817509703033e-05
+        }
+      },
+      "candidate": {
+        "total": {
+          "first_moment_norm": 0.22471644221515313,
+          "second_moment_norm": 0.007171189183292644,
+          "first_moment_relative_to_parameter": 0.0013831045080235425,
+          "normalized_direction_norm": 977.7327355786376,
+          "lr_scaled_adaptive_direction_norm": 0.0488866367789319,
+          "relative_lr_scaled_direction_norm": 0.00030089176850847617
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.1516926964527888,
+          "second_moment_norm": 0.0029815634200013614,
+          "first_moment_relative_to_parameter": 0.0018209451109682268,
+          "normalized_direction_norm": 233.2935956878578,
+          "lr_scaled_adaptive_direction_norm": 0.01166467978439289,
+          "relative_lr_scaled_direction_norm": 0.0001400248141215611
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.16381864739057891,
+          "second_moment_norm": 0.00299158952830478,
+          "first_moment_relative_to_parameter": 0.0017427934018749642,
+          "normalized_direction_norm": 253.7471569338695,
+          "lr_scaled_adaptive_direction_norm": 0.012687357846693476,
+          "relative_lr_scaled_direction_norm": 0.00013497513191966176
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.06150388419985431,
+          "second_moment_norm": 0.0002157991733415585,
+          "first_moment_relative_to_parameter": 0.009639860218125252,
+          "normalized_direction_norm": 99.36671995283389,
+          "lr_scaled_adaptive_direction_norm": 0.004968335997641695,
+          "relative_lr_scaled_direction_norm": 0.0007787160950406977
+        },
+        "component:attention": {
+          "first_moment_norm": 0.12097766177362938,
+          "second_moment_norm": 0.006512036912110192,
+          "first_moment_relative_to_parameter": 0.0023669037890384037,
+          "normalized_direction_norm": 538.1659075403153,
+          "lr_scaled_adaptive_direction_norm": 0.026908295377015768,
+          "relative_lr_scaled_direction_norm": 0.000526455424503056
+        },
+        "layer:0": {
+          "first_moment_norm": 0.11607690662405822,
+          "second_moment_norm": 0.006511626420012978,
+          "first_moment_relative_to_parameter": 0.002972864483447201,
+          "normalized_direction_norm": 294.3244216564663,
+          "lr_scaled_adaptive_direction_norm": 0.01471622108282332,
+          "relative_lr_scaled_direction_norm": 0.0003768995251516707
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09449448885507492,
+          "second_moment_norm": 0.00015009066358162435,
+          "first_moment_relative_to_parameter": 0.0011870130767578878,
+          "normalized_direction_norm": 775.3876323437173,
+          "lr_scaled_adaptive_direction_norm": 0.03876938161718588,
+          "relative_lr_scaled_direction_norm": 0.00048701002053142456
+        },
+        "layer:1": {
+          "first_moment_norm": 0.033959951319192834,
+          "second_moment_norm": 3.974928391136169e-05,
+          "first_moment_relative_to_parameter": 0.0008808705251135864,
+          "normalized_direction_norm": 297.4709242223522,
+          "lr_scaled_adaptive_direction_norm": 0.014873546211117613,
+          "relative_lr_scaled_direction_norm": 0.0003857976219737339
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03653944392719529,
+          "second_moment_norm": 5.08124580029669e-05,
+          "first_moment_relative_to_parameter": 0.0009242808549197618,
+          "normalized_direction_norm": 302.15532383861967,
+          "lr_scaled_adaptive_direction_norm": 0.015107766191930981,
+          "relative_lr_scaled_direction_norm": 0.00038215740446484903
+        },
+        "layer:3": {
+          "first_moment_norm": 0.03969405874247016,
+          "second_moment_norm": 0.00010558181309076195,
+          "first_moment_relative_to_parameter": 0.0009672034385416165,
+          "normalized_direction_norm": 303.7901552777281,
+          "lr_scaled_adaptive_direction_norm": 0.015189507763886403,
+          "relative_lr_scaled_direction_norm": 0.0003701144353693086
+        },
+        "layer:4": {
+          "first_moment_norm": 0.03612350957321508,
+          "second_moment_norm": 4.0495425346937655e-05,
+          "first_moment_relative_to_parameter": 0.000848588109568345,
+          "normalized_direction_norm": 300.65573508075744,
+          "lr_scaled_adaptive_direction_norm": 0.015032786754037871,
+          "relative_lr_scaled_direction_norm": 0.0003531396656600574
+        },
+        "layer:5": {
+          "first_moment_norm": 0.03455603135803545,
+          "second_moment_norm": 3.33413331885056e-05,
+          "first_moment_relative_to_parameter": 0.0007866942087415904,
+          "normalized_direction_norm": 295.9429299024504,
+          "lr_scaled_adaptive_direction_norm": 0.014797146495122522,
+          "relative_lr_scaled_direction_norm": 0.0003368682396714784
+        },
+        "layer:6": {
+          "first_moment_norm": 0.03212788850777822,
+          "second_moment_norm": 2.6675578197140206e-05,
+          "first_moment_relative_to_parameter": 0.0007198090660789203,
+          "normalized_direction_norm": 299.62135539106885,
+          "lr_scaled_adaptive_direction_norm": 0.014981067769553442,
+          "relative_lr_scaled_direction_norm": 0.0003356432339914454
+        },
+        "layer:7": {
+          "first_moment_norm": 0.02923543576101899,
+          "second_moment_norm": 1.993844879379141e-05,
+          "first_moment_relative_to_parameter": 0.0006541167665521542,
+          "normalized_direction_norm": 298.9095816538535,
+          "lr_scaled_adaptive_direction_norm": 0.014945479082692673,
+          "relative_lr_scaled_direction_norm": 0.00033439174746896413
+        },
+        "layer:8": {
+          "first_moment_norm": 0.027683154135437694,
+          "second_moment_norm": 1.8888899622432138e-05,
+          "first_moment_relative_to_parameter": 0.0006243972416066989,
+          "normalized_direction_norm": 295.8065460304516,
+          "lr_scaled_adaptive_direction_norm": 0.014790327301522582,
+          "relative_lr_scaled_direction_norm": 0.0003335978091350875
+        },
+        "layer:9": {
+          "first_moment_norm": 0.031156992279276034,
+          "second_moment_norm": 0.0002356711468764481,
+          "first_moment_relative_to_parameter": 0.0007772940422482702,
+          "normalized_direction_norm": 297.10952926444145,
+          "lr_scaled_adaptive_direction_norm": 0.014855476463222071,
+          "relative_lr_scaled_direction_norm": 0.0003706093722436236
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.011801457573228535,
+          "second_moment_norm": 0.0002459931704098778,
+          "first_moment_relative_to_parameter": 0.00011535039262107936,
+          "normalized_direction_norm": 28.515451401740904,
+          "lr_scaled_adaptive_direction_norm": 0.0014257725700870453,
+          "relative_lr_scaled_direction_norm": 1.3935857052182212e-05
+        }
+      }
+    },
+    "123": {
+      "parent": {
+        "total": {
+          "first_moment_norm": 0.22361835145913056,
+          "second_moment_norm": 0.007078476681437443,
+          "first_moment_relative_to_parameter": 0.0013591846465816262,
+          "normalized_direction_norm": 975.007167873176,
+          "lr_scaled_adaptive_direction_norm": 0.04875035839365878,
+          "relative_lr_scaled_direction_norm": 0.00029631172133975247
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.15499491414547356,
+          "second_moment_norm": 0.003165405705518124,
+          "first_moment_relative_to_parameter": 0.0017841129248319374,
+          "normalized_direction_norm": 242.3252440258679,
+          "lr_scaled_adaptive_direction_norm": 0.012116262201293396,
+          "relative_lr_scaled_direction_norm": 0.00013946767294371575
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.16613550391144105,
+          "second_moment_norm": 0.00317359902052851,
+          "first_moment_relative_to_parameter": 0.0017107203193523174,
+          "normalized_direction_norm": 260.9474389032991,
+          "lr_scaled_adaptive_direction_norm": 0.013047371945164954,
+          "relative_lr_scaled_direction_norm": 0.00013435059800726883
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.05941541432741258,
+          "second_moment_norm": 0.00020994097716785804,
+          "first_moment_relative_to_parameter": 0.009166396039119711,
+          "normalized_direction_norm": 96.36261178415923,
+          "lr_scaled_adaptive_direction_norm": 0.004818130589207961,
+          "relative_lr_scaled_direction_norm": 0.0007433238268019777
+        },
+        "component:attention": {
+          "first_moment_norm": 0.11665889479373068,
+          "second_moment_norm": 0.006322845320419591,
+          "first_moment_relative_to_parameter": 0.0022730419722663746,
+          "normalized_direction_norm": 542.4255996173889,
+          "lr_scaled_adaptive_direction_norm": 0.027121279980869453,
+          "relative_lr_scaled_direction_norm": 0.0005284449835317405
+        },
+        "layer:0": {
+          "first_moment_norm": 0.11346852231578547,
+          "second_moment_norm": 0.006322680762652025,
+          "first_moment_relative_to_parameter": 0.0028881623058062997,
+          "normalized_direction_norm": 300.502112382537,
+          "lr_scaled_adaptive_direction_norm": 0.01502510561912685,
+          "relative_lr_scaled_direction_norm": 0.0003824403702830595
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09342667106577963,
+          "second_moment_norm": 0.00015000070500266488,
+          "first_moment_relative_to_parameter": 0.0011721987407127133,
+          "normalized_direction_norm": 766.5625845982422,
+          "lr_scaled_adaptive_direction_norm": 0.038328129229912106,
+          "relative_lr_scaled_direction_norm": 0.0004808924935957975
+        },
+        "layer:1": {
+          "first_moment_norm": 0.036879880840866554,
+          "second_moment_norm": 5.0725999044195075e-05,
+          "first_moment_relative_to_parameter": 0.0009594565058202445,
+          "normalized_direction_norm": 299.8437061968903,
+          "lr_scaled_adaptive_direction_norm": 0.014992185309844515,
+          "relative_lr_scaled_direction_norm": 0.0003900324351388288
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03703955922117915,
+          "second_moment_norm": 8.435773274220276e-05,
+          "first_moment_relative_to_parameter": 0.0009417211543959216,
+          "normalized_direction_norm": 294.10006125879823,
+          "lr_scaled_adaptive_direction_norm": 0.014705003062939913,
+          "relative_lr_scaled_direction_norm": 0.0003738708761930696
+        },
+        "layer:3": {
+          "first_moment_norm": 0.03603696770171227,
+          "second_moment_norm": 5.1772980847784576e-05,
+          "first_moment_relative_to_parameter": 0.0008578575340711939,
+          "normalized_direction_norm": 293.7844451530981,
+          "lr_scaled_adaptive_direction_norm": 0.014689222257654904,
+          "relative_lr_scaled_direction_norm": 0.00034967592411435863
+        },
+        "layer:4": {
+          "first_moment_norm": 0.03335908063505353,
+          "second_moment_norm": 3.473412129166219e-05,
+          "first_moment_relative_to_parameter": 0.0007742669243051013,
+          "normalized_direction_norm": 292.98881060521256,
+          "lr_scaled_adaptive_direction_norm": 0.01464944053026063,
+          "relative_lr_scaled_direction_norm": 0.0003400146840448797
+        },
+        "layer:5": {
+          "first_moment_norm": 0.03227280158469506,
+          "second_moment_norm": 3.1932897618990826e-05,
+          "first_moment_relative_to_parameter": 0.0007321475782096898,
+          "normalized_direction_norm": 293.9824125947728,
+          "lr_scaled_adaptive_direction_norm": 0.014699120629738643,
+          "relative_lr_scaled_direction_norm": 0.00033346734843060343
+        },
+        "layer:6": {
+          "first_moment_norm": 0.03025564955152598,
+          "second_moment_norm": 2.2126693847746813e-05,
+          "first_moment_relative_to_parameter": 0.0006832941377045295,
+          "normalized_direction_norm": 298.42769536594955,
+          "lr_scaled_adaptive_direction_norm": 0.014921384768297477,
+          "relative_lr_scaled_direction_norm": 0.0003369848239829673
+        },
+        "layer:7": {
+          "first_moment_norm": 0.02911320697384739,
+          "second_moment_norm": 1.9122973324645346e-05,
+          "first_moment_relative_to_parameter": 0.0006508314003483773,
+          "normalized_direction_norm": 302.73928645041116,
+          "lr_scaled_adaptive_direction_norm": 0.015136964322520556,
+          "relative_lr_scaled_direction_norm": 0.00033838977945299035
+        },
+        "layer:8": {
+          "first_moment_norm": 0.02698671632719272,
+          "second_moment_norm": 1.762716414824126e-05,
+          "first_moment_relative_to_parameter": 0.0006152366629602762,
+          "normalized_direction_norm": 297.69346891117306,
+          "lr_scaled_adaptive_direction_norm": 0.014884673445558654,
+          "relative_lr_scaled_direction_norm": 0.0003393372023802481
+        },
+        "layer:9": {
+          "first_moment_norm": 0.02920120378410065,
+          "second_moment_norm": 0.00020260157898758122,
+          "first_moment_relative_to_parameter": 0.0007256750041212945,
+          "normalized_direction_norm": 296.5363876256668,
+          "lr_scaled_adaptive_direction_norm": 0.014826819381283341,
+          "relative_lr_scaled_direction_norm": 0.00036845920103734694
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.01066356590031218,
+          "second_moment_norm": 0.00020022606668347202,
+          "first_moment_relative_to_parameter": 0.00010410357712729452,
+          "normalized_direction_norm": 28.070862754629754,
+          "lr_scaled_adaptive_direction_norm": 0.0014035431377314878,
+          "relative_lr_scaled_direction_norm": 1.3702157669981421e-05
+        }
+      },
+      "candidate": {
+        "total": {
+          "first_moment_norm": 0.22718916025441166,
+          "second_moment_norm": 0.0068624824386844694,
+          "first_moment_relative_to_parameter": 0.001380811597393182,
+          "normalized_direction_norm": 981.2165789609702,
+          "lr_scaled_adaptive_direction_norm": 0.049060828948048515,
+          "relative_lr_scaled_direction_norm": 0.00029818219105756416
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.15152362820631013,
+          "second_moment_norm": 0.0030903377398607875,
+          "first_moment_relative_to_parameter": 0.0017442534811610666,
+          "normalized_direction_norm": 233.76849564292925,
+          "lr_scaled_adaptive_direction_norm": 0.011688424782146463,
+          "relative_lr_scaled_direction_norm": 0.00013455047148019136
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.1647017942734773,
+          "second_moment_norm": 0.003099343656628886,
+          "first_moment_relative_to_parameter": 0.0016956826125146857,
+          "normalized_direction_norm": 254.0777248552625,
+          "lr_scaled_adaptive_direction_norm": 0.012703886242763125,
+          "relative_lr_scaled_direction_norm": 0.00013079249748457002
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.06420311141566694,
+          "second_moment_norm": 0.00021841912477700695,
+          "first_moment_relative_to_parameter": 0.009907640296437295,
+          "normalized_direction_norm": 99.06120671057288,
+          "lr_scaled_adaptive_direction_norm": 0.0049530603355286435,
+          "relative_lr_scaled_direction_norm": 0.0007643420869941503
+        },
+        "component:attention": {
+          "first_moment_norm": 0.12307686836008788,
+          "second_moment_norm": 0.006118635552404899,
+          "first_moment_relative_to_parameter": 0.0023983863811872126,
+          "normalized_direction_norm": 541.0665017883668,
+          "lr_scaled_adaptive_direction_norm": 0.027053325089418347,
+          "relative_lr_scaled_direction_norm": 0.0005271853868629337
+        },
+        "layer:0": {
+          "first_moment_norm": 0.11961552078501624,
+          "second_moment_norm": 0.00611860856097058,
+          "first_moment_relative_to_parameter": 0.003045336876397872,
+          "normalized_direction_norm": 294.8809261637384,
+          "lr_scaled_adaptive_direction_norm": 0.01474404630818692,
+          "relative_lr_scaled_direction_norm": 0.0003753742627625967
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09620779323595356,
+          "second_moment_norm": 0.0001539801522550718,
+          "first_moment_relative_to_parameter": 0.0012072399936204606,
+          "normalized_direction_norm": 777.621183447923,
+          "lr_scaled_adaptive_direction_norm": 0.03888105917239615,
+          "relative_lr_scaled_direction_norm": 0.00048788947390281595
+        },
+        "layer:1": {
+          "first_moment_norm": 0.037685174980157304,
+          "second_moment_norm": 4.840134528476179e-05,
+          "first_moment_relative_to_parameter": 0.0009806361456562338,
+          "normalized_direction_norm": 301.6459938689476,
+          "lr_scaled_adaptive_direction_norm": 0.01508229969344738,
+          "relative_lr_scaled_direction_norm": 0.0003924686099189421
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03936392691933045,
+          "second_moment_norm": 7.75557440632207e-05,
+          "first_moment_relative_to_parameter": 0.0010009497861728557,
+          "normalized_direction_norm": 302.03839118529237,
+          "lr_scaled_adaptive_direction_norm": 0.01510191955926462,
+          "relative_lr_scaled_direction_norm": 0.0003840130885473837
+        },
+        "layer:3": {
+          "first_moment_norm": 0.037165606065262445,
+          "second_moment_norm": 5.173169237296686e-05,
+          "first_moment_relative_to_parameter": 0.0008847525780655958,
+          "normalized_direction_norm": 298.6765995464508,
+          "lr_scaled_adaptive_direction_norm": 0.014933829977322538,
+          "relative_lr_scaled_direction_norm": 0.0003555099989390175
+        },
+        "layer:4": {
+          "first_moment_norm": 0.034613932102896726,
+          "second_moment_norm": 3.43379305910295e-05,
+          "first_moment_relative_to_parameter": 0.0008034005138281475,
+          "normalized_direction_norm": 299.21255439726764,
+          "lr_scaled_adaptive_direction_norm": 0.014960627719863381,
+          "relative_lr_scaled_direction_norm": 0.0003472409884436101
+        },
+        "layer:5": {
+          "first_moment_norm": 0.03393780158262408,
+          "second_moment_norm": 3.355741794079356e-05,
+          "first_moment_relative_to_parameter": 0.000769891496391997,
+          "normalized_direction_norm": 300.95119307815486,
+          "lr_scaled_adaptive_direction_norm": 0.015047559653907744,
+          "relative_lr_scaled_direction_norm": 0.0003413594186644756
+        },
+        "layer:6": {
+          "first_moment_norm": 0.031073704560451547,
+          "second_moment_norm": 2.191279125792731e-05,
+          "first_moment_relative_to_parameter": 0.0007016921986060541,
+          "normalized_direction_norm": 301.55003989778385,
+          "lr_scaled_adaptive_direction_norm": 0.015077501994889195,
+          "relative_lr_scaled_direction_norm": 0.0003404732610396945
+        },
+        "layer:7": {
+          "first_moment_norm": 0.029438087377097362,
+          "second_moment_norm": 1.8140549676981018e-05,
+          "first_moment_relative_to_parameter": 0.0006579746980953688,
+          "normalized_direction_norm": 303.02131662415167,
+          "lr_scaled_adaptive_direction_norm": 0.015151065831207585,
+          "relative_lr_scaled_direction_norm": 0.0003386435347653632
+        },
+        "layer:8": {
+          "first_moment_norm": 0.027235860985193067,
+          "second_moment_norm": 1.709198394527517e-05,
+          "first_moment_relative_to_parameter": 0.0006208535873205135,
+          "normalized_direction_norm": 301.0288642770466,
+          "lr_scaled_adaptive_direction_norm": 0.01505144321385233,
+          "relative_lr_scaled_direction_norm": 0.0003431043549073606
+        },
+        "layer:9": {
+          "first_moment_norm": 0.030091865321301495,
+          "second_moment_norm": 0.00018953381142057364,
+          "first_moment_relative_to_parameter": 0.0007477528661734683,
+          "normalized_direction_norm": 293.9013816204725,
+          "lr_scaled_adaptive_direction_norm": 0.014695069081023625,
+          "relative_lr_scaled_direction_norm": 0.00036515782277458627
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.01138464370060176,
+          "second_moment_norm": 0.0001853646415442651,
+          "first_moment_relative_to_parameter": 0.00011111095125866045,
+          "normalized_direction_norm": 29.622260097895495,
+          "lr_scaled_adaptive_direction_norm": 0.0014811130048947747,
+          "relative_lr_scaled_direction_norm": 1.4455250355066698e-05
+        }
+      }
+    },
+    "2026": {
+      "parent": {
+        "total": {
+          "first_moment_norm": 0.22483313653069778,
+          "second_moment_norm": 0.007427787035593313,
+          "first_moment_relative_to_parameter": 0.0013636131018956983,
+          "normalized_direction_norm": 962.3878550991465,
+          "lr_scaled_adaptive_direction_norm": 0.04811939275495734,
+          "relative_lr_scaled_direction_norm": 0.0002918441446328611
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.15843606095796298,
+          "second_moment_norm": 0.00406390006911628,
+          "first_moment_relative_to_parameter": 0.001804889827697607,
+          "normalized_direction_norm": 229.7645008224126,
+          "lr_scaled_adaptive_direction_norm": 0.011488225041120632,
+          "relative_lr_scaled_direction_norm": 0.00013087286057005074
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.1691636252051114,
+          "second_moment_norm": 0.00407167811375733,
+          "first_moment_relative_to_parameter": 0.0017284881833711464,
+          "normalized_direction_norm": 249.77443583057627,
+          "lr_scaled_adaptive_direction_norm": 0.012488721791528814,
+          "relative_lr_scaled_direction_norm": 0.00012760785905299358
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.05876050608132427,
+          "second_moment_norm": 0.00019752246802400312,
+          "first_moment_relative_to_parameter": 0.009002388711204108,
+          "normalized_direction_norm": 97.45898916269982,
+          "lr_scaled_adaptive_direction_norm": 0.004872949458134991,
+          "relative_lr_scaled_direction_norm": 0.0007465590090641706
+        },
+        "component:attention": {
+          "first_moment_norm": 0.11625033756213647,
+          "second_moment_norm": 0.006205761159559732,
+          "first_moment_relative_to_parameter": 0.0022726435065874608,
+          "normalized_direction_norm": 538.6488746715243,
+          "lr_scaled_adaptive_direction_norm": 0.026932443733576217,
+          "relative_lr_scaled_direction_norm": 0.0005265175538516453
+        },
+        "layer:0": {
+          "first_moment_norm": 0.113230562151102,
+          "second_moment_norm": 0.0062061149852697655,
+          "first_moment_relative_to_parameter": 0.002879112567795206,
+          "normalized_direction_norm": 291.10607982947346,
+          "lr_scaled_adaptive_direction_norm": 0.014555303991473673,
+          "relative_lr_scaled_direction_norm": 0.00037009759426972626
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09130898217245562,
+          "second_moment_norm": 0.00013877790418063697,
+          "first_moment_relative_to_parameter": 0.0011454795320295606,
+          "normalized_direction_norm": 756.9137394649042,
+          "lr_scaled_adaptive_direction_norm": 0.03784568697324521,
+          "relative_lr_scaled_direction_norm": 0.00047477760426210965
+        },
+        "layer:1": {
+          "first_moment_norm": 0.034982698601761744,
+          "second_moment_norm": 3.748188496182934e-05,
+          "first_moment_relative_to_parameter": 0.0009119157232493826,
+          "normalized_direction_norm": 298.48685033713986,
+          "lr_scaled_adaptive_direction_norm": 0.014924342516856995,
+          "relative_lr_scaled_direction_norm": 0.00038904210207487436
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03733673092289981,
+          "second_moment_norm": 5.761913312467431e-05,
+          "first_moment_relative_to_parameter": 0.0009498983897641936,
+          "normalized_direction_norm": 300.5139646064782,
+          "lr_scaled_adaptive_direction_norm": 0.015025698230323913,
+          "relative_lr_scaled_direction_norm": 0.0003822746716508424
+        },
+        "layer:3": {
+          "first_moment_norm": 0.036596061832819674,
+          "second_moment_norm": 3.943976285773374e-05,
+          "first_moment_relative_to_parameter": 0.0008736357221038574,
+          "normalized_direction_norm": 301.9127847807022,
+          "lr_scaled_adaptive_direction_norm": 0.015095639239035116,
+          "relative_lr_scaled_direction_norm": 0.00036036909510811277
+        },
+        "layer:4": {
+          "first_moment_norm": 0.033934907747869905,
+          "second_moment_norm": 3.2220245666879566e-05,
+          "first_moment_relative_to_parameter": 0.0007883062191135353,
+          "normalized_direction_norm": 296.2842395682832,
+          "lr_scaled_adaptive_direction_norm": 0.014814211978414163,
+          "relative_lr_scaled_direction_norm": 0.00034413340742271947
+        },
+        "layer:5": {
+          "first_moment_norm": 0.03187619739318537,
+          "second_moment_norm": 2.531213253595182e-05,
+          "first_moment_relative_to_parameter": 0.0007205897126941846,
+          "normalized_direction_norm": 294.5579917277567,
+          "lr_scaled_adaptive_direction_norm": 0.014727899586387833,
+          "relative_lr_scaled_direction_norm": 0.00033293723214968083
+        },
+        "layer:6": {
+          "first_moment_norm": 0.02813249739478373,
+          "second_moment_norm": 1.8119710252152658e-05,
+          "first_moment_relative_to_parameter": 0.000634271655048428,
+          "normalized_direction_norm": 290.338202823506,
+          "lr_scaled_adaptive_direction_norm": 0.0145169101411753,
+          "relative_lr_scaled_direction_norm": 0.00032729638226643306
+        },
+        "layer:7": {
+          "first_moment_norm": 0.026220284094362733,
+          "second_moment_norm": 1.7331538897094464e-05,
+          "first_moment_relative_to_parameter": 0.0005912086115051227,
+          "normalized_direction_norm": 288.1861995404535,
+          "lr_scaled_adaptive_direction_norm": 0.014409309977022677,
+          "relative_lr_scaled_direction_norm": 0.000324897629392735
+        },
+        "layer:8": {
+          "first_moment_norm": 0.026096494820307,
+          "second_moment_norm": 1.7383644158837222e-05,
+          "first_moment_relative_to_parameter": 0.0005944466902667865,
+          "normalized_direction_norm": 289.135361564113,
+          "lr_scaled_adaptive_direction_norm": 0.014456768078205649,
+          "relative_lr_scaled_direction_norm": 0.00032930774784959354
+        },
+        "layer:9": {
+          "first_moment_norm": 0.02877006937479339,
+          "second_moment_norm": 0.00026211500735801296,
+          "first_moment_relative_to_parameter": 0.0007152505088679208,
+          "normalized_direction_norm": 288.11528375640216,
+          "lr_scaled_adaptive_direction_norm": 0.01440576418782011,
+          "relative_lr_scaled_direction_norm": 0.0003581406089690251
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.011986892288752425,
+          "second_moment_norm": 0.0002949414735189705,
+          "first_moment_relative_to_parameter": 0.0001171657637004594,
+          "normalized_direction_norm": 28.97212556758435,
+          "lr_scaled_adaptive_direction_norm": 0.001448606278379217,
+          "relative_lr_scaled_direction_norm": 1.4159388173266565e-05
+        }
+      },
+      "candidate": {
+        "total": {
+          "first_moment_norm": 0.22827907239385298,
+          "second_moment_norm": 0.007922374270425626,
+          "first_moment_relative_to_parameter": 0.001384451537856766,
+          "normalized_direction_norm": 983.4967027551231,
+          "lr_scaled_adaptive_direction_norm": 0.049174835137756126,
+          "relative_lr_scaled_direction_norm": 0.00029823222696848773
+        },
+        "component:embedding_tied_head": {
+          "first_moment_norm": 0.15494821257960806,
+          "second_moment_norm": 0.003531888925006008,
+          "first_moment_relative_to_parameter": 0.0017652764001899893,
+          "normalized_direction_norm": 248.97945447927992,
+          "lr_scaled_adaptive_direction_norm": 0.012448972723963997,
+          "relative_lr_scaled_direction_norm": 0.00014182724273074102
+        },
+        "layer:outside_blocks": {
+          "first_moment_norm": 0.16677018018455989,
+          "second_moment_norm": 0.0035416884608808928,
+          "first_moment_relative_to_parameter": 0.0017037846082101128,
+          "normalized_direction_norm": 268.131598385043,
+          "lr_scaled_adaptive_direction_norm": 0.01340657991925215,
+          "relative_lr_scaled_direction_norm": 0.0001369664797980195
+        },
+        "component:position_embedding": {
+          "first_moment_norm": 0.061338362731652794,
+          "second_moment_norm": 0.00021067698889813154,
+          "first_moment_relative_to_parameter": 0.009397309968695295,
+          "normalized_direction_norm": 99.06602875999357,
+          "lr_scaled_adaptive_direction_norm": 0.004953301437999678,
+          "relative_lr_scaled_direction_norm": 0.0007588678097735863
+        },
+        "component:attention": {
+          "first_moment_norm": 0.12418217963144251,
+          "second_moment_norm": 0.007078932773971486,
+          "first_moment_relative_to_parameter": 0.0024281356223918877,
+          "normalized_direction_norm": 539.7996865717605,
+          "lr_scaled_adaptive_direction_norm": 0.026989984328588026,
+          "relative_lr_scaled_direction_norm": 0.0005277354817780155
+        },
+        "layer:0": {
+          "first_moment_norm": 0.12153981479462725,
+          "second_moment_norm": 0.007079225183640727,
+          "first_moment_relative_to_parameter": 0.003091144337597979,
+          "normalized_direction_norm": 290.3461181639128,
+          "lr_scaled_adaptive_direction_norm": 0.014517305908195643,
+          "relative_lr_scaled_direction_norm": 0.0003692212961746292
+        },
+        "component:FFN": {
+          "first_moment_norm": 0.09365817139904493,
+          "second_moment_norm": 0.00016323099768498147,
+          "first_moment_relative_to_parameter": 0.0011750886838544636,
+          "normalized_direction_norm": 776.6644343692835,
+          "lr_scaled_adaptive_direction_norm": 0.03883322171846417,
+          "relative_lr_scaled_direction_norm": 0.00048722368499545533
+        },
+        "layer:1": {
+          "first_moment_norm": 0.03567315011031562,
+          "second_moment_norm": 3.9979296170949864e-05,
+          "first_moment_relative_to_parameter": 0.0009300797338363219,
+          "normalized_direction_norm": 297.6903058448403,
+          "lr_scaled_adaptive_direction_norm": 0.014884515292242016,
+          "relative_lr_scaled_direction_norm": 0.00038807298986718604
+        },
+        "layer:2": {
+          "first_moment_norm": 0.03752136028459229,
+          "second_moment_norm": 6.010390298010126e-05,
+          "first_moment_relative_to_parameter": 0.0009547330594513148,
+          "normalized_direction_norm": 303.5653624681218,
+          "lr_scaled_adaptive_direction_norm": 0.015178268123406091,
+          "relative_lr_scaled_direction_norm": 0.0003862118604634519
+        },
+        "layer:3": {
+          "first_moment_norm": 0.03692627587778008,
+          "second_moment_norm": 4.166351480813083e-05,
+          "first_moment_relative_to_parameter": 0.0008815788123337465,
+          "normalized_direction_norm": 303.24533392801203,
+          "lr_scaled_adaptive_direction_norm": 0.015162266696400603,
+          "relative_lr_scaled_direction_norm": 0.00036198432549066305
+        },
+        "layer:4": {
+          "first_moment_norm": 0.03533104707211199,
+          "second_moment_norm": 3.270549244360353e-05,
+          "first_moment_relative_to_parameter": 0.0008207380583778055,
+          "normalized_direction_norm": 305.9173207580256,
+          "lr_scaled_adaptive_direction_norm": 0.01529586603790128,
+          "relative_lr_scaled_direction_norm": 0.00035532203072077476
+        },
+        "layer:5": {
+          "first_moment_norm": 0.032989985991380893,
+          "second_moment_norm": 2.642960233606039e-05,
+          "first_moment_relative_to_parameter": 0.0007457245380846391,
+          "normalized_direction_norm": 301.6142370656087,
+          "lr_scaled_adaptive_direction_norm": 0.015080711853280436,
+          "relative_lr_scaled_direction_norm": 0.00034089304808172056
+        },
+        "layer:6": {
+          "first_moment_norm": 0.029140890606969,
+          "second_moment_norm": 1.803933310527039e-05,
+          "first_moment_relative_to_parameter": 0.0006569559882132919,
+          "normalized_direction_norm": 301.7853816457363,
+          "lr_scaled_adaptive_direction_norm": 0.015089269082286817,
+          "relative_lr_scaled_direction_norm": 0.00034017442414746693
+        },
+        "layer:7": {
+          "first_moment_norm": 0.027402241685205202,
+          "second_moment_norm": 1.7816609907680072e-05,
+          "first_moment_relative_to_parameter": 0.0006177939013289213,
+          "normalized_direction_norm": 299.7656131828348,
+          "lr_scaled_adaptive_direction_norm": 0.01498828065914174,
+          "relative_lr_scaled_direction_norm": 0.0003379164554855889
+        },
+        "layer:8": {
+          "first_moment_norm": 0.026125285741950947,
+          "second_moment_norm": 1.737139904009855e-05,
+          "first_moment_relative_to_parameter": 0.0005950052475213364,
+          "normalized_direction_norm": 292.585454779982,
+          "lr_scaled_adaptive_direction_norm": 0.014629272738999098,
+          "relative_lr_scaled_direction_norm": 0.00033318273082647926
+        },
+        "layer:9": {
+          "first_moment_norm": 0.02939238633609458,
+          "second_moment_norm": 0.0003088175295903239,
+          "first_moment_relative_to_parameter": 0.0007307221299758765,
+          "normalized_direction_norm": 295.3718317648604,
+          "lr_scaled_adaptive_direction_norm": 0.01476859158824302,
+          "relative_lr_scaled_direction_norm": 0.0003671609572187826
+        },
+        "component:LayerNorm": {
+          "first_moment_norm": 0.012121252449890686,
+          "second_moment_norm": 0.000327805325548122,
+          "first_moment_relative_to_parameter": 0.00011844587433013642,
+          "normalized_direction_norm": 29.488511084708783,
+          "lr_scaled_adaptive_direction_norm": 0.0014744255542354394,
+          "relative_lr_scaled_direction_norm": 1.4407721036095372e-05
+        }
+      }
+    }
+  },
+  "cross_seed_update_vectors": {
+    "42:123": {
+      "total": {
+        "cosine": -0.001563439866092318,
+        "norm_ratio_first_over_second": 0.9941854616439348
+      },
+      "component:embedding_tied_head": {
+        "cosine": -0.012030040523477812,
+        "norm_ratio_first_over_second": 0.9743856002546581
+      },
+      "layer:outside_blocks": {
+        "cosine": -0.006364069016411278,
+        "norm_ratio_first_over_second": 0.9766779617826729
+      },
+      "component:position_embedding": {
+        "cosine": 0.003141000768935872,
+        "norm_ratio_first_over_second": 0.9963488923712128
+      },
+      "component:LayerNorm": {
+        "cosine": 0.4770545281364265,
+        "norm_ratio_first_over_second": 1.0046220486487105
+      },
+      "layer:0": {
+        "cosine": -4.591152101966533e-05,
+        "norm_ratio_first_over_second": 0.9976763721722282
+      },
+      "component:attention": {
+        "cosine": -0.0006623155434280984,
+        "norm_ratio_first_over_second": 0.9969173732414411
+      },
+      "component:FFN": {
+        "cosine": -0.001151738822860612,
+        "norm_ratio_first_over_second": 0.9962600893592084
+      },
+      "layer:1": {
+        "cosine": -0.0026510820351767933,
+        "norm_ratio_first_over_second": 1.0008469823295991
+      },
+      "layer:2": {
+        "cosine": -0.0043868133376954764,
+        "norm_ratio_first_over_second": 1.0026703527736882
+      },
+      "layer:3": {
+        "cosine": -0.001560592132195656,
+        "norm_ratio_first_over_second": 0.9728520649109913
+      },
+      "layer:4": {
+        "cosine": 0.0007857697612823957,
+        "norm_ratio_first_over_second": 0.9854093190185217
+      },
+      "layer:5": {
+        "cosine": 0.00028754119481735245,
+        "norm_ratio_first_over_second": 0.9963986721158433
+      },
+      "layer:6": {
+        "cosine": -0.0002800452707971836,
+        "norm_ratio_first_over_second": 1.0000384531912327
+      },
+      "layer:7": {
+        "cosine": 0.0007319128186821458,
+        "norm_ratio_first_over_second": 1.0020321616691847
+      },
+      "layer:8": {
+        "cosine": -0.0003952497608266619,
+        "norm_ratio_first_over_second": 1.0017280724882949
+      },
+      "layer:9": {
+        "cosine": -0.0025203213759800694,
+        "norm_ratio_first_over_second": 1.0040438713437148
+      }
+    },
+    "42:2026": {
+      "total": {
+        "cosine": 0.003552594918675932,
+        "norm_ratio_first_over_second": 0.9884538215106623
+      },
+      "component:embedding_tied_head": {
+        "cosine": 0.02155606966440006,
+        "norm_ratio_first_over_second": 0.9121207342668927
+      },
+      "layer:outside_blocks": {
+        "cosine": 0.023338762581800485,
+        "norm_ratio_first_over_second": 0.9199974776923932
+      },
+      "component:position_embedding": {
+        "cosine": 0.0004150643102694822,
+        "norm_ratio_first_over_second": 0.9957487140855825
+      },
+      "component:LayerNorm": {
+        "cosine": 0.49543068972137577,
+        "norm_ratio_first_over_second": 1.0247347456480256
+      },
+      "layer:0": {
+        "cosine": -7.55975798961714e-05,
+        "norm_ratio_first_over_second": 1.0006673405984305
+      },
+      "component:attention": {
+        "cosine": 3.0563912762091826e-05,
+        "norm_ratio_first_over_second": 1.0014320145694167
+      },
+      "component:FFN": {
+        "cosine": 0.001113585108008282,
+        "norm_ratio_first_over_second": 0.9967417526269283
+      },
+      "layer:1": {
+        "cosine": 0.0009207567503419736,
+        "norm_ratio_first_over_second": 1.014679332184491
+      },
+      "layer:2": {
+        "cosine": 0.0013964512140888564,
+        "norm_ratio_first_over_second": 1.0116265828204112
+      },
+      "layer:3": {
+        "cosine": 0.004102649003561444,
+        "norm_ratio_first_over_second": 0.9817959263872776
+      },
+      "layer:4": {
+        "cosine": 0.0004996656872284556,
+        "norm_ratio_first_over_second": 0.9939223889810435
+      },
+      "layer:5": {
+        "cosine": 0.0011477847661088157,
+        "norm_ratio_first_over_second": 0.9925139380200285
+      },
+      "layer:6": {
+        "cosine": 0.000598616058184721,
+        "norm_ratio_first_over_second": 1.000896683758138
+      },
+      "layer:7": {
+        "cosine": 0.0006348913324563047,
+        "norm_ratio_first_over_second": 0.9990664489505812
+      },
+      "layer:8": {
+        "cosine": -0.0002555467088813683,
+        "norm_ratio_first_over_second": 0.9897303408414039
+      },
+      "layer:9": {
+        "cosine": -0.0003407056413833717,
+        "norm_ratio_first_over_second": 1.0001223371362153
+      }
+    },
+    "123:2026": {
+      "total": {
+        "cosine": 0.00020150775936202364,
+        "norm_ratio_first_over_second": 0.9942348381117996
+      },
+      "component:embedding_tied_head": {
+        "cosine": 0.0011374892510249528,
+        "norm_ratio_first_over_second": 0.936098331121178
+      },
+      "layer:outside_blocks": {
+        "cosine": 0.004542098417686218,
+        "norm_ratio_first_over_second": 0.9419660458122511
+      },
+      "component:position_embedding": {
+        "cosine": -0.0018706521975362434,
+        "norm_ratio_first_over_second": 0.999397622368805
+      },
+      "component:LayerNorm": {
+        "cosine": 0.49055108016624716,
+        "norm_ratio_first_over_second": 1.020020162832747
+      },
+      "layer:0": {
+        "cosine": 7.895255964404297e-05,
+        "norm_ratio_first_over_second": 1.0029979345102562
+      },
+      "component:attention": {
+        "cosine": -0.00010551316394907864,
+        "norm_ratio_first_over_second": 1.0045286013155699
+      },
+      "component:FFN": {
+        "cosine": -0.0006561066466830163,
+        "norm_ratio_first_over_second": 1.0004834714075816
+      },
+      "layer:1": {
+        "cosine": 9.600856171493792e-05,
+        "norm_ratio_first_over_second": 1.0138206440136286
+      },
+      "layer:2": {
+        "cosine": -0.0016551867104360174,
+        "norm_ratio_first_over_second": 1.0089323774478294
+      },
+      "layer:3": {
+        "cosine": 0.0023222188510999982,
+        "norm_ratio_first_over_second": 1.0091934445111186
+      },
+      "layer:4": {
+        "cosine": 0.00021837876837693155,
+        "norm_ratio_first_over_second": 1.0086391206153813
+      },
+      "layer:5": {
+        "cosine": -0.0018502046026306765,
+        "norm_ratio_first_over_second": 0.996101225137559
+      },
+      "layer:6": {
+        "cosine": -0.0010354601853742656,
+        "norm_ratio_first_over_second": 1.00085819756647
+      },
+      "layer:7": {
+        "cosine": -0.001367591091330228,
+        "norm_ratio_first_over_second": 0.9970403018664955
+      },
+      "layer:8": {
+        "cosine": -0.0002632811891334423,
+        "norm_ratio_first_over_second": 0.9880229655368561
+      },
+      "layer:9": {
+        "cosine": -0.0004404244696940352,
+        "norm_ratio_first_over_second": 0.9960942601021494
+      }
+    }
+  },
+  "relative_direction_spread": {
+    "parent": {
+      "total": {
+        "min": 0.0002918441446328611,
+        "max": 0.00030104747626955665,
+        "max_min_ratio": 1.0315350909242098
+      },
+      "component:embedding_tied_head": {
+        "min": 0.00013087286057005074,
+        "max": 0.00014837012240712604,
+        "max_min_ratio": 1.1336966408532787
+      },
+      "layer:outside_blocks": {
+        "min": 0.00012760785905299358,
+        "max": 0.00014142120492597037,
+        "max_min_ratio": 1.1082483945384611
+      },
+      "component:position_embedding": {
+        "min": 0.0007433238268019777,
+        "max": 0.0007623378366136292,
+        "max_min_ratio": 1.0255797125372073
+      },
+      "component:attention": {
+        "min": 0.0005265175538516453,
+        "max": 0.0005352315608277683,
+        "max_min_ratio": 1.016550268670773
+      },
+      "layer:0": {
+        "min": 0.00037009759426972626,
+        "max": 0.0003824403702830595,
+        "max_min_ratio": 1.0333500574022587
+      },
+      "component:FFN": {
+        "min": 0.00047477760426210965,
+        "max": 0.0004808924935957975,
+        "max_min_ratio": 1.0128794814220259
+      },
+      "layer:1": {
+        "min": 0.00038567841191677925,
+        "max": 0.0003900324351388288,
+        "max_min_ratio": 1.0112892583238209
+      },
+      "layer:2": {
+        "min": 0.0003738708761930696,
+        "max": 0.0003822746716508424,
+        "max_min_ratio": 1.0224778018104652
+      },
+      "layer:3": {
+        "min": 0.00034967592411435863,
+        "max": 0.00036672230291576175,
+        "max_min_ratio": 1.0487490777198267
+      },
+      "layer:4": {
+        "min": 0.0003400146840448797,
+        "max": 0.0003530815365717724,
+        "max_min_ratio": 1.0384302594565826
+      },
+      "layer:5": {
+        "min": 0.00033293723214968083,
+        "max": 0.0003426367086575187,
+        "max_min_ratio": 1.0291330484284114
+      },
+      "layer:6": {
+        "min": 0.00032729638226643306,
+        "max": 0.0003369848239829673,
+        "max_min_ratio": 1.0296014323453395
+      },
+      "layer:7": {
+        "min": 0.000324897629392735,
+        "max": 0.00033838977945299035,
+        "max_min_ratio": 1.04152738844378
+      },
+      "layer:8": {
+        "min": 0.00032737463344379624,
+        "max": 0.0003393372023802481,
+        "max_min_ratio": 1.0365409158633103
+      },
+      "layer:9": {
+        "min": 0.0003581406089690251,
+        "max": 0.00037068582313423167,
+        "max_min_ratio": 1.0350287396933855
+      },
+      "component:LayerNorm": {
+        "min": 1.3702157669981421e-05,
+        "max": 1.4159388173266565e-05,
+        "max_min_ratio": 1.0333692338314602
+      }
+    },
+    "candidate": {
+      "total": {
+        "min": 0.00029818219105756416,
+        "max": 0.00030089176850847617,
+        "max_min_ratio": 1.009086986185533
+      },
+      "component:embedding_tied_head": {
+        "min": 0.00013455047148019136,
+        "max": 0.00014182724273074102,
+        "max_min_ratio": 1.0540820940313165
+      },
+      "layer:outside_blocks": {
+        "min": 0.00013079249748457002,
+        "max": 0.0001369664797980195,
+        "max_min_ratio": 1.0472044072266289
+      },
+      "component:position_embedding": {
+        "min": 0.0007588678097735863,
+        "max": 0.0007787160950406977,
+        "max_min_ratio": 1.0261551287476975
+      },
+      "component:attention": {
+        "min": 0.000526455424503056,
+        "max": 0.0005277354817780155,
+        "max_min_ratio": 1.002431463739153
+      },
+      "layer:0": {
+        "min": 0.0003692212961746292,
+        "max": 0.0003768995251516707,
+        "max_min_ratio": 1.0207957370189449
+      },
+      "component:FFN": {
+        "min": 0.00048701002053142456,
+        "max": 0.00048788947390281595,
+        "max_min_ratio": 1.0018058219221686
+      },
+      "layer:1": {
+        "min": 0.0003857976219737339,
+        "max": 0.0003924686099189421,
+        "max_min_ratio": 1.0172914180006594
+      },
+      "layer:2": {
+        "min": 0.00038215740446484903,
+        "max": 0.0003862118604634519,
+        "max_min_ratio": 1.0106093875226112
+      },
+      "layer:3": {
+        "min": 0.0003555099989390175,
+        "max": 0.0003701144353693086,
+        "max_min_ratio": 1.0410802409886544
+      },
+      "layer:4": {
+        "min": 0.0003472409884436101,
+        "max": 0.00035532203072077476,
+        "max_min_ratio": 1.0232721439752408
+      },
+      "layer:5": {
+        "min": 0.0003368682396714784,
+        "max": 0.0003413594186644756,
+        "max_min_ratio": 1.0133321532400237
+      },
+      "layer:6": {
+        "min": 0.0003356432339914454,
+        "max": 0.0003404732610396945,
+        "max_min_ratio": 1.0143903602370015
+      },
+      "layer:7": {
+        "min": 0.00033439174746896413,
+        "max": 0.0003386435347653632,
+        "max_min_ratio": 1.0127149887178173
+      },
+      "layer:8": {
+        "min": 0.00033318273082647926,
+        "max": 0.0003431043549073606,
+        "max_min_ratio": 1.0297783263144227
+      },
+      "layer:9": {
+        "min": 0.00036515782277458627,
+        "max": 0.0003706093722436236,
+        "max_min_ratio": 1.01492929667401
+      },
+      "component:LayerNorm": {
+        "min": 1.3935857052182212e-05,
+        "max": 1.4455250355066698e-05,
+        "max_min_ratio": 1.037270280610632
+      }
+    }
+  },
+  "classification": "OPTIMIZER_EVIDENCE_INSUFFICIENT",
+  "outlier_policy": "No registered quantitative outlier threshold; report complete layer distributions and extrema, do not invent a divergence gate.",
+  "tied_head_counted_once": true,
+  "interpretation": "Cosine is local coordinate update-direction similarity across different parent weights, not causal proof.",
+  "net_update_limit": "Endpoint delta over 122 steps; neither accumulated path length nor average per-step norm is recoverable.",
+  "moment_limit": "mhat/(sqrt(vhat)+eps) at saved endpoints; not a replayed optimizer step. Adaptive norm excludes decoupled weight decay. No optimizer steps executed."
+}

@@ -1,0 +1,1345 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "gate": "PHASE60_PREFLIGHT_PASS",
+  "cwd": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini",
+  "start_head": "c4253450dbcdbdd8aebbf4ebfd02aa7c67308624",
+  "origin_sha": "c4253450dbcdbdd8aebbf4ebfd02aa7c67308624",
+  "branch": "foundation-research",
+  "main_ref": "c1853a7e7b418145f75fafd8ebf3ec2a76e6b301",
+  "root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "checkpoint_operations": {
+    "copy": 0,
+    "move": 0,
+    "delete": 0,
+    "overwrite": 0,
+    "rename": 0
+  },
+  "checkpoints": [
+    {
+      "seed": 42,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 42,
+      "role": "candidate",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase57\\arm-control\\seed-42\\checkpoint-tokens-16446464.pt",
+      "sha256": "75848b7e79c5a9ff4aacce3230c374a32cb13c4978e591a743f683c2df6f3906",
+      "tokens": 16446464,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 123,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 123,
+      "role": "candidate",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase59\\control-stability\\seed-123\\checkpoint-tokens-16446464.pt",
+      "sha256": "620dcdab001304bec7e78d849ba5857fc60c28476a2d41d946e754383eb6c8c6",
+      "tokens": 16446464,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "candidate",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase59\\control-stability\\seed-2026\\checkpoint-tokens-16446464.pt",
+      "sha256": "81beefad437c235c42fa46297a64eebadba3dbf11bf54260a82656b2f4c43476",
+      "tokens": 16446464,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ],
+  "frozen": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase57\\arm-a-64k-summary.json",
+      "sha256": "e5b91c5177f5ca6591ccb21f1a470c0fd7922f4e9947250bd20e1a65447abc42"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase57\\cache-preflight.json",
+      "sha256": "276c8230f4ea2bf2dd329239cd6f563097c3a5e439e61fc184dfc7660b733c30"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase57\\control-64k-summary.json",
+      "sha256": "97f980105e205f090a032b2e6f4f9749c82c50c0a3a755cdd1523402d95b519c"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase57\\gate-64k.json",
+      "sha256": "31b27831c952213969f1bab360024f746acfb18aaf37c07f05ab40e934222c4f"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase57\\preflight.json",
+      "sha256": "c131b6feb87a97d50c4f1cfe4e2aa219d3facb9b4780597c960ba8a77213db6c"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\A-64k-training.json",
+      "sha256": "de41a94a63f0ef71cb464e750a064da8ee920eb214c84041743860ad88846f00"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\arm-a-64k-evaluation.json",
+      "sha256": "329998945dad4c43a73a128ed2014db4ee356610486056b2ab5ee4d4fcd5f5f1"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\cache-manifest.json",
+      "sha256": "edca148699f20858c9e3cdbd400991092917d706fe1c360e50324c6b027fc5c6"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\cache-raw.json",
+      "sha256": "4978d51cb66326bccee71a966d6337555387ce74f5ac2d4415506076a69416dc"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\control-64k-evaluation.json",
+      "sha256": "c922a9df958981d1813f78d339672c973431d79f4efc54048ab18cfb97665085"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\control-64k-training.json",
+      "sha256": "2c9cd95f15ac03a1bceeb1196a65fdca1a12b71ddfcb8725bc871d219e5a32c9"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\full-pytest-post-summary.xml",
+      "sha256": "f55a35a8d4faa1fe11a023fa8241a0d626224ba8c08c93578841c60777817781"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\full-pytest.xml",
+      "sha256": "021cad56cb90b4e11ff185c02638a461b495366eb7c1d069b4415999c6b98848"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\parent-evaluation.json",
+      "sha256": "efc58986da77345763eb10a98916bb0ca8fd3dcf7b8231bea346978d2391fd4f"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\control-drift-audit.json",
+      "sha256": "274951ad1b4a0b699b2b9ee8b690ea66d6330d965341f54ac8b9f8ee74e09c0f"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\core-frequency-decomposition.json",
+      "sha256": "1d721b86ec18a22d477229a3dcaeafc2edeeea92ec535ca69f828d0750524f0a"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\dry-run-preregistration.json",
+      "sha256": "22dcad649856e975c05f16bf76aaf6ebe0ce51fa75ba3632d705ef4a22fa99bd"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\evaluator-contract-audit.json",
+      "sha256": "807e75ca5a1c0beced180e955c1af2ef0f4c0ebcf2f3c6bda2db0a91fafe7937"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\evaluator-contract-final-audit.json",
+      "sha256": "c707acb693cac071d25a562bb446c5d2c1ccc0467a14cfdb32414219826ca4a6"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\evaluator-contract-v2.json",
+      "sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\final-qa.json",
+      "sha256": "3ee00548dbfb4b08b38bd54999a236f318b4f5b85508b433094e58190c2869f2"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\intervention-dose-audit.json",
+      "sha256": "4682170354bacee635daa22c7103b61b046ca64936ebb515044c5b27d936aeca"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\phase57-forensic-summary.json",
+      "sha256": "febebb020e9910571240ac2c37c5c0614162f4c0cdd1300bef5831e7f09794fd"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\phase59-control-stability-preregistration.json",
+      "sha256": "0a16e3e6e9589f984ad7d88039b0a28c91c430837170ec499106ab7cc9967261"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\phase59-registration-receipt.json",
+      "sha256": "8ab970d02d3a9b29160f7196f54297b974907fbfcc1bd72d3e9888ddd93a3dc7"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase58\\preflight.json",
+      "sha256": "c8f0ede4935f512d929aa465bcc01645b477808c6d6806c285e83a57c80f8b6f"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\core-contributions.json",
+      "sha256": "f0f70873aee877d5095956e553006f6e6a6bb0825d9e317e52ef5671426a5417"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\dose-by-update.json",
+      "sha256": "419574663694a139fa7f11601abc6ebabfe792591a0c89e2bfba5056e43fc757"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\full-tests.xml",
+      "sha256": "ef022950825cbef705436c98b6df4c82daaa6ad24c3b3a6087f015adb257ed78"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\parameter-deltas.json",
+      "sha256": "9d76d28ad33bb0016766c851b7da4c71ab0a834b685e2a87984c9300b5fff109"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\targeted-final.xml",
+      "sha256": "c9a5100d9f45290efda0f6e3d50e5632935ff1ee5954bad116703c48530a5b66"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\targeted-release.xml",
+      "sha256": "5370184e07f6eee3c0cc43c2e5a516b0628c06cbac61b86e1d829279f31cc710"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase58\\targeted-tests.xml",
+      "sha256": "bd6d58813258eea4a98ef76e3c2d422f39a3661b0d27c7a8a6098c2e7051564d"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\control-stability-gate.json",
+      "sha256": "2ad2c2470995b98bdc3c3721d03f621fcfa35c59308456a9e3efede8c9b83ff5"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\live-contract-dry-run.json",
+      "sha256": "76807a09ea24b42073a475d373e55f52744153927f7d2aba31580f6acad133c8"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\preflight.json",
+      "sha256": "6cc125e5171ce58aa2978603e4ebb165a896cc58a42b2ad3d47012e24f2d4299"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\seed123-evaluation-summary.json",
+      "sha256": "95f55769b52ad04167f0bbbba401202bf93fefda8f582c5ceedb76f72bdbd544"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\seed123-training-summary.json",
+      "sha256": "0584fa65fd408afcc8b868f334c02f4f3ffb9baf10fbf0d62e34b04924f6a2ec"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\seed2026-evaluation-summary.json",
+      "sha256": "357e3b0e30e8bb6825a24fae21a9a0de10a1a54a093b8171066fc002467e296f"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase59\\seed2026-training-summary.json",
+      "sha256": "a02dd1c8df11601def45376b34c4105050b837c6ea367cb85b0160c1cab77aac"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-123-candidate-evaluation-raw.json",
+      "sha256": "127684361c59ae04b9d5ea6cc1444f940f43386fb09331ad87ddec824cf24811"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-123-parent-evaluation-raw.json",
+      "sha256": "c2d08e25c76a413de89a3f31e005e6ea6dd19a2d2247b89ae4194c92b0e602ce"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-123-training-raw.json",
+      "sha256": "62aade297a5b0ec55bc6d83e71c25ea555a095705713670f0b0abba3f65e22f4"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-2026-candidate-evaluation-raw.json",
+      "sha256": "9b73431693d62544def4ef3f41eacfbb9d1c6ea4489bfa0850e84b54c561b36d"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-2026-parent-evaluation-raw.json",
+      "sha256": "110160adc89bd55e93495627e857e75a44e0d8beb11b7678007f169d59841d22"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase59\\seed-2026-training-raw.json",
+      "sha256": "17d56eac94c1b3397bbfb16952783c3acdd088a1761d34733ec12af7bf1653ae"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\foundation-v46-anti-loop-report.md",
+      "sha256": "888f2d058ddf54a2620b035118632345312c2a5ce3644a21d3589b697248821f"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\foundation-v46-anti-loop-summary.json",
+      "sha256": "e17748a6d0caea47752b45182a055f57bab94d40d4dff98af126359f9eddc9d6"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\foundation-v47-phase57-forensic-report.md",
+      "sha256": "f1dac7171898c2f33574c8f2d4928e388bf5a9493e83b9b28e99898e311aabdf"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\foundation-v48-control-stability-report.md",
+      "sha256": "858a123b81b29404bb62dcffab3c8b5d21e87a894f0ec3700259d3fb187f0c37"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\foundation-v48-control-stability-summary.json",
+      "sha256": "6b9f46dcac21f7b9453059418857294269151d514579a29f77fddd0c156544bc"
+    }
+  ],
+  "dirty": [
+    {
+      "path": ".gitignore",
+      "status": " M",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "checkpoints/foundation-v09-sanity/checkpoint-step-100.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v09-sanity/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-100.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-250.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-50.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/20m/checkpoint-step-500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/20m/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/30m/checkpoint-step-50.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/30m/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/46m/checkpoint-step-50.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v10-sanity/46m/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-10.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-100.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-25.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-50.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/checkpoint-step-75.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v11-clean-100/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-100.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-150.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-200.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-250.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/checkpoint-step-50.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v13-clean-250/training-log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/context128_constant.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/context256_constant.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/context256_long_cosine.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/context512_constant.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_1x.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_2x.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v14-investigation/effective_batch_4x.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/current_preln_gelu_tied.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/fewer_layers_wider.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/more_layers_narrower.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/pre_rmsnorm.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/tied_embedding_sqrt_scale.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v15-architecture-audit/untied_lm_head.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-123.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-2026.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/current_unscaled-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-123.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-2026.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-reproduction/sqrt_scaled_a-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-short-japanese/current_unscaled.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-short-japanese/sqrt_scaled_a.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-synthetic/current_unscaled.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v16-synthetic/sqrt_scaled_a.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-reproduction/balanced_position_sqrt-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-123.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-2026.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-reproduction/depth_scaled_residual_init-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-short-japanese/depth_scaled_residual_init.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-synthetic/balanced_position_sqrt-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-synthetic/current_unscaled-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-synthetic/depth_scaled_residual_init-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v17-synthetic/sqrt_scaled_a-seed-42.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-3em03.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_current-lr-9em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-3em03.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/custom_depth_init-lr-9em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-3em03.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-lr-pilot/reference_mha-lr-9em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-short-japanese/custom_current.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-short-japanese/custom_depth_init.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-short-japanese/reference_mha.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-synthetic/custom_current-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-synthetic/custom_depth_init-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v18-synthetic/reference_mha-lr-3em04.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-16x-markers.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-1x-markers.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-all-token-4x-markers.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-markers-long.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-markers.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/pilot-reference-answer-only-no-markers.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v19-benchmark-v3/reference_mha.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v20-benchmark-v31/lr3x/reference_mha-l3-standalone.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v20-benchmark-v31/reference_mha-l3-standalone.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v20-benchmark-v31/reference_mha-l4-standalone.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/foundation-v20-benchmark-v31/wd0/reference_mha-l3-standalone.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/sanity-100/training_history.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/sanity/training_history.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/unipilot-v02-step-100/training_log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/unipilot-v02-step-1000/training_log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/unipilot-v02-step-500/training_log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/best-checkpoints.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-a/checkpoint-step-1000.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-a/checkpoint-step-500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-1500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-b/checkpoint-step-2000.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-2500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-3000.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-3500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-4000.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-4500.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/stage-c/checkpoint-step-5000.manifest.json",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "checkpoints/v03-scratch-001/training_log.csv",
+      "status": " D",
+      "sha256": null
+    },
+    {
+      "path": "evaluation/analyze_foundation_v37_stability.py",
+      "status": " M",
+      "sha256": "6c9a092e8f81587848dfa6a9ba48fc8c10a35fa6e96cf4896012753774911a5f"
+    },
+    {
+      "path": "evaluation/analyze_foundation_v38_gate.py",
+      "status": " M",
+      "sha256": "88f10818c3695ef86f805e984436cf0c980583a3ea57c5ce5207d920f418f2da"
+    },
+    {
+      "path": "evaluation/campus-ai-quality-100.json",
+      "status": " M",
+      "sha256": "f4f4a46d73b031daf619571ef651ea60d25ab73c1bcf5533fe7873b5d83c43e3"
+    },
+    {
+      "path": "evaluation/campus-ai-quality-20.json",
+      "status": " M",
+      "sha256": "edcf8f3f850cbc1b0c15755e089a015e18c4edfb7e43c3b4e64f7f31a436003e"
+    },
+    {
+      "path": "evaluation/campus-ai-review-queue.json",
+      "status": " M",
+      "sha256": "58cd791042a32e5425e3066be124b846a4c4e742c131a1da9b9569d732844bf1"
+    },
+    {
+      "path": "evaluation/campus-v21-close-analysis.json",
+      "status": " M",
+      "sha256": "3ffbeca250bd1d6bb4c883fbc3504c3bcc3a0876e9361c46120482a47856ab3d"
+    },
+    {
+      "path": "evaluation/campus-v21-critical-failure.json",
+      "status": " M",
+      "sha256": "bb14c3880fe08879f773c88c0602bb14a94aec406221f3d2c0ca3463dfab4a08"
+    },
+    {
+      "path": "evaluation/campus-v21-human-results.json",
+      "status": " M",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "evaluation/campus-v21-quick-human-report.md",
+      "status": " M",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "evaluation/campus-v21-quick-human-results.json",
+      "status": " M",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "scripts/benchmark_quantization_v08.py",
+      "status": " M",
+      "sha256": "6755fdce1478c819dcf90673c302e3f7bdbfe4f6da59590773b3e02f0c106c26"
+    },
+    {
+      "path": "scripts/download_production_checkpoint.py",
+      "status": " M",
+      "sha256": "aacebb23e5705780b17bef8a15a9e7b1033c038fb64589ed2c73e5bbfed78427"
+    },
+    {
+      "path": "scripts/export_inference_checkpoint.py",
+      "status": " M",
+      "sha256": "8e92fe4d253a9e914842a35115faaa6f1bdff81f904c0852aa91ad4ec8b4f2a7"
+    },
+    {
+      "path": "tests/test_checkpoint_paths.py",
+      "status": " M",
+      "sha256": "302000cc59ce9e94feb06d97fe4ed1d02d836b3d147cd43f60b00d041280a9c6"
+    },
+    {
+      "path": "tests/test_foundation_v09.py",
+      "status": " M",
+      "sha256": "c223fb3d01c198920a80da5f5846d22b656803a4eba8d961fa5ca87c7802b562"
+    },
+    {
+      "path": "tests/test_foundation_v10.py",
+      "status": " M",
+      "sha256": "c2593c26bd2b89094f5931a2f3574944c31d9265bb2a7a3665b7f2b9a6786884"
+    },
+    {
+      "path": "tests/test_foundation_v11.py",
+      "status": " M",
+      "sha256": "fc74fb4009cec6968c8f9f389f7df47296af92b8ae6d62bfdd9c52c0999dd076"
+    },
+    {
+      "path": "tests/test_foundation_v13.py",
+      "status": " M",
+      "sha256": "cee35e0a66c884d6a4c083c20df2c10fbffaeec6f31391813ad50593bfde4d34"
+    },
+    {
+      "path": "tests/test_foundation_v14.py",
+      "status": " M",
+      "sha256": "15cfc36a3b44b2dccfd114284a50025abc38ee7815a5b116b97220aa9009bca4"
+    },
+    {
+      "path": "tests/test_foundation_v16_architecture_fix.py",
+      "status": " M",
+      "sha256": "2b2b97fdfa705d89246ce3ebd2e57e770a15849ad73283c77a803bf5b0f0834a"
+    },
+    {
+      "path": "tests/test_foundation_v17_isolation.py",
+      "status": " M",
+      "sha256": "f14d636260c3e441c031682b6e22001769dd5b8375e228b8718a53a1fdc6aeae"
+    },
+    {
+      "path": "tests/test_foundation_v36_lr_review.py",
+      "status": " M",
+      "sha256": "e46ec5e5c73f1feb2933c91f05d60cc6255af2ebdaa98b45bcdb190781dde3ea"
+    },
+    {
+      "path": "tests/test_foundation_v37_stability.py",
+      "status": " M",
+      "sha256": "439232bec132559931df244d6bd7c5664641c9eaab36c7f67486571dc62d9a44"
+    },
+    {
+      "path": "tests/test_foundation_v38_gate.py",
+      "status": " M",
+      "sha256": "7c01f1dcd208ece0fd5921746dca6209c7a0164b2a8821fcf5604529433c872f"
+    },
+    {
+      "path": "training/checkpoint_paths.py",
+      "status": " M",
+      "sha256": "d503b04ae1039cf850175b48b9282cec582b5ce02f442eecf5722790c7f4a9ed"
+    },
+    {
+      "path": "training/run_foundation_v30_eos_experiment.py",
+      "status": " M",
+      "sha256": "4045f05cac718e7fc0d0ee36e9881cd5f304e07b2d06d145e23b08b07ff3f115"
+    },
+    {
+      "path": "training/run_foundation_v31_pipeline.py",
+      "status": " M",
+      "sha256": "34cb4e66a18d00ba2c07618e0a21890770ab59548d8f241a7a89827deac1b7c7"
+    },
+    {
+      "path": "training/run_foundation_v32_maturity_pilot.py",
+      "status": " M",
+      "sha256": "a8c7317cee568e1a506e634b43819f52ed63348b21b54a041b963247390c88d2"
+    },
+    {
+      "path": "training/run_foundation_v33_context_gate.py",
+      "status": " M",
+      "sha256": "5f6482a0c7e1ad83465370267e31ed8c5d9c14153a1b484ed1a9e6756566f6c4"
+    },
+    {
+      "path": "training/run_foundation_v35_thermal_gate.py",
+      "status": " M",
+      "sha256": "2668cf45311eabd05e5b683170a70c786bbd34b04cd0f97774d5a44e87acc4ad"
+    },
+    {
+      "path": "training/run_foundation_v36_lr_review.py",
+      "status": " M",
+      "sha256": "c13d0f8d688c84f81e8d6c444e679c6f713e8b039e8773897ec9f066395301e2"
+    },
+    {
+      "path": "training/run_foundation_v37_stability.py",
+      "status": " M",
+      "sha256": "385f3e9657cc7388c8e5013f6cf76a576117c27f05c2461cdd105d72c7b3d11f"
+    },
+    {
+      "path": "training/run_foundation_v38_gate.py",
+      "status": " M",
+      "sha256": "ba891436acadf005d6b927fc098956c540cfd0bdfd9df47b774e40676b63c410"
+    },
+    {
+      "path": "training/train.py",
+      "status": " M",
+      "sha256": "da78318a044588dfd3856c1c693d95240b5dadaa303553d18bc9d926f3bf0476"
+    },
+    {
+      "path": "training/train_foundation_continue.py",
+      "status": " M",
+      "sha256": "de0d23f573e0f993a8e8157ccffacf3d4c830e7eb7dc479b2e6a2f6d5115cafa"
+    },
+    {
+      "path": "training/train_foundation_v21_ab.py",
+      "status": " M",
+      "sha256": "b39434deef8fa424a05c70f8c6c199b86d4440e8b0768fc6d1e9e1a8b8a36b4c"
+    },
+    {
+      "path": "training/train_foundation_v22_current.py",
+      "status": " M",
+      "sha256": "ba33b675b15b8fdfa58ba678a20a4d94d4c07e6f819ab1771d1d5cad453f963e"
+    },
+    {
+      "path": "training/train_foundation_v23_pilot.py",
+      "status": " M",
+      "sha256": "de641745071f1130e3a42a70f2f12039f208f6682aab9b1aa2e0bc7659991d75"
+    },
+    {
+      "path": "training/train_foundation_v24_current.py",
+      "status": " M",
+      "sha256": "e306bd13fc091862175ce2934653badeca94a2729c558e94fabdccff1e84c5d1"
+    },
+    {
+      "path": "training/train_foundation_v25_current.py",
+      "status": " M",
+      "sha256": "0cd8b24735dab2e2b64ff61e6be0d547f14551b67c7baade3180dd8f9af6c14a"
+    },
+    {
+      "path": "training/train_foundation_v26_current.py",
+      "status": " M",
+      "sha256": "3748cf3e7b0e9ad99b207edfe292c5d4d640efced95deb344183a10f6a13f9ea"
+    },
+    {
+      "path": "training/train_foundation_v27_current.py",
+      "status": " M",
+      "sha256": "ce35d22ed220dd7c48ff6f9182342e3ab11e44b27fa2535df8b421d904e7c681"
+    },
+    {
+      "path": "training/train_standard_short.py",
+      "status": " M",
+      "sha256": "b04e67bbb39e0a909ad9ef59018e274c1f4a6854ab84d04746efe08af0cbe895"
+    },
+    {
+      "path": "training/train_v08.py",
+      "status": " M",
+      "sha256": "098e70c9e7324d20ee9790cc9dc8db3021044fdf07b4238691614010d5388dc5"
+    },
+    {
+      "path": "training/validate_gpu_migration.py",
+      "status": " M",
+      "sha256": "1a4d60c5ae89cd502558d93ad8314fbee1b9881038bd03189da41c6ad57b2d34"
+    },
+    {
+      "path": "evaluation/phase51/raw/B-seed-123.json",
+      "status": "??",
+      "sha256": "0b84fd83e3e404f2ba44adc04f25056112952d791202a7f73a5683936ba8c02d"
+    },
+    {
+      "path": "evaluation/phase51/raw/B-seed-2026.json",
+      "status": "??",
+      "sha256": "14d58784cd7441d88f4666631cb48e4b8427fee30090b24cea50fb70474ef9a6"
+    },
+    {
+      "path": "evaluation/phase51/raw/B-seed-42.json",
+      "status": "??",
+      "sha256": "3033039b4390623468378ce066108bddd712eeed82ca3d3f3bb98e985d2a778e"
+    },
+    {
+      "path": "evaluation/phase51/raw/C-seed-123.json",
+      "status": "??",
+      "sha256": "5910778f01c40be84a12b30c22d4d7a6e8257d65db5411afb4e9787fd4b5eb16"
+    },
+    {
+      "path": "evaluation/phase51/raw/C-seed-2026.json",
+      "status": "??",
+      "sha256": "8efc614e902d8866bbc5e951cfeab761e12c6d9c36c64475cc2237777a60608e"
+    },
+    {
+      "path": "evaluation/phase51/raw/C-seed-42.json",
+      "status": "??",
+      "sha256": "1278366629418f7230f69450984a67f2583e10595b4fca7188e8886df1cc4d03"
+    },
+    {
+      "path": "evaluation/phase51/raw/baseline-seed-123.json",
+      "status": "??",
+      "sha256": "cb3b59b67b85a7f7943cafeb379c6cde7ae4532404e45187714fb2dd08acc3ea"
+    },
+    {
+      "path": "evaluation/phase51/raw/baseline-seed-2026.json",
+      "status": "??",
+      "sha256": "5848bda41e3616f03f0c073934239ccb65ef82853bb5e1ec505d34cd013a9a93"
+    },
+    {
+      "path": "evaluation/phase51/raw/baseline-seed-42.json",
+      "status": "??",
+      "sha256": "50acb458da2be6d6d5543555c37da2572cc4b9878283522c531a0438f03bde8b"
+    },
+    {
+      "path": "evaluation/phase52/raw/attractor-time-series.json",
+      "status": "??",
+      "sha256": "39f1790eb78a4e19aeae55010c5238dd4177995b3e985e7c48f8d1cd0cd699df"
+    },
+    {
+      "path": "evaluation/phase52/raw/pre-onset-logit-dynamics.json",
+      "status": "??",
+      "sha256": "ce93be6a28b549a5478ae3a568c1021c75db2d6a20e2b53978ac29084dc4b59e"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-greedy-53000.json",
+      "status": "??",
+      "sha256": "8f8ca2d95856f2a34046ff291bbe793fadc9199159da11150bea0a68a8e6e89e"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-greedy-53100.json",
+      "status": "??",
+      "sha256": "cd4a42d424fb3a9f7aae5d070b4d440595d9107a8daf376789a84169b690f23b"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-repetition_1.10-53000.json",
+      "status": "??",
+      "sha256": "0cda8b10f698828f99482ee252cb78fffbecb76a8ddcc285abc7867c555c102e"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-repetition_1.10-53100.json",
+      "status": "??",
+      "sha256": "4464f8425f48b07ec144a020458ce878f02b58d859b9cebf699501dabc613d80"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-temperature_0.7-53000.json",
+      "status": "??",
+      "sha256": "5f3c3fa8d0ed9aad070d01781d1f043d067d8d731317f594965f0d0fabf5346e"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-temperature_0.7-53100.json",
+      "status": "??",
+      "sha256": "e39f214c81f55df0286eb8c026df38dd448aa796cd6c7659b0b5d4b770988715"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-top_k_50-53000.json",
+      "status": "??",
+      "sha256": "84bd87d1358e8b2a9bfb9e586fa6d10753c766f0280d683e7383b43bec1af2b5"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-top_k_50-53100.json",
+      "status": "??",
+      "sha256": "5d78b7779678602b76c5dd8c4589538e366cc9d747c3e421491adc23e43a2261"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-top_p_0.90-53000.json",
+      "status": "??",
+      "sha256": "8503a9a0855dd822188588ba1f3bf16465271ecbe4db1f3973ba32e4eaee2302"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-B-top_p_0.90-53100.json",
+      "status": "??",
+      "sha256": "54d4fa8b024f8283e8140c57d505d92afc08820df04ab89267c4945e21dd2826"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-greedy-53000.json",
+      "status": "??",
+      "sha256": "3eb9d84d28d815b9148dd3aa6d2c4a0a2492957ad510148de978153baf605b7e"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-greedy-53100.json",
+      "status": "??",
+      "sha256": "65cb97842740956379303f44f8c4262adf6a19f9b552b25bef198bfaf6849ef6"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-repetition_1.10-53000.json",
+      "status": "??",
+      "sha256": "1519740b99ca69d7ef4b7334c54b51c14a3b2382170fb69c285426b0d8403e01"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-repetition_1.10-53100.json",
+      "status": "??",
+      "sha256": "142a72003bfaa345b5c4b8f30eaf854bf8eb6566a1e527acf30847424ee0cb6f"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-temperature_0.7-53000.json",
+      "status": "??",
+      "sha256": "5cccdc8c518a31133719d32cf962d97e93d05badca30e52c8ed36142747db13f"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-temperature_0.7-53100.json",
+      "status": "??",
+      "sha256": "087c26978486883c0c88301552f43c2991045f7f19dc04bb8ed861d9dcf4bd04"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-top_k_50-53000.json",
+      "status": "??",
+      "sha256": "84f6df0c68fe01daa436eed64f759c773f18304d897f080d3c71d5fe05f3e21d"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-top_k_50-53100.json",
+      "status": "??",
+      "sha256": "44872577df73054580b119b70deebdae7f0cba16220b10bef86654ed69ce9b8c"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-top_p_0.90-53000.json",
+      "status": "??",
+      "sha256": "9e0a4289ed43f9907840f6d2752e1a52fb5e056dd7492ecb5ce8ba4a5c137bc9"
+    },
+    {
+      "path": "evaluation/phase53/raw/generation-C-top_p_0.90-53100.json",
+      "status": "??",
+      "sha256": "e6aac7948de8574ed410493197e1cdd033a89db937308fd35bcd9b2fe6effe8e"
+    },
+    {
+      "path": "evaluation/phase55/lr-confirmatory-preregistration.json",
+      "status": "??",
+      "sha256": "d9e93c9854c2a44abd4dc4a1c6cd76022a79f40a036c3add345c4add36fe16c2"
+    },
+    {
+      "path": "scripts/storage_preflight_check.py",
+      "status": "??",
+      "sha256": "c316bca2793a0466866848e6307ac949feb2126db60784a86cc28512bc584b57"
+    },
+    {
+      "path": "tests/checkpoint_resolver.py",
+      "status": "??",
+      "sha256": "a3056128c1881e37b57389327e2c05de865d2fb4bb7a28b8df03be2237f93c44"
+    },
+    {
+      "path": "tests/test_checkpoint_storage_policy.py",
+      "status": "??",
+      "sha256": "191bcad0d3359fab922911bb662889a4e4b7a38a0856dcef0a5af7504467a994"
+    }
+  ],
+  "protected": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\.gitignore",
+      "sha256": "94d7df02039f0b6c16d3f8ae42f916bdf2113dafcce1124c58c6a737094d1376"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-human-results.json",
+      "sha256": "9fd8107bd6c44f0bfcf045a32ac211526558a969543ed86f1b98dfe102edf021"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-report.md",
+      "sha256": "2e92a2b6820e58d5dd2c8b5d9981e818e72ad39711d4be5425f6dd11a1e8f5eb"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-quick-human-results.json",
+      "sha256": "de7cbfbe6bfe2b8f46caa93fafc62f72b7d714f8142a8442bb1681691312f7c3"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-A\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "2da12b7d1e8e8721fd9d42ac1986a4c794fdfbc90fce1beea4a39db83e86af8b"
+    },
+    {
+      "path": "D:\\UniPilot\\active\\checkpoints\\experimental\\phase42\\arm-B\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "9fd953d86efce44792708ec2571b54583d382fc2180bd907a5920211f174be08"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-C\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "e5e8c44bab2997fc0ed1e056fd4e47c3f90212686b58b3901758630ba3a58084"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-D\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "874f49859cc8e64662ca84c43141982ba6be161006308169ff6a3e0fca65dbeb"
+    },
+    {
+      "path": "D:\\UniPilot\\archive\\checkpoints\\experimental\\phase42\\arm-E\\seed-42\\checkpoint-tokens-15616000.READY.json",
+      "sha256": "0a31eaa77d5037f6a122910661f1b038a6c6503baaea29ad7db13fec59d96b3b"
+    }
+  ],
+  "dirty5": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-quality-100.json",
+      "sha256": "f4f4a46d73b031daf619571ef651ea60d25ab73c1bcf5533fe7873b5d83c43e3",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-quality-20.json",
+      "sha256": "edcf8f3f850cbc1b0c15755e089a015e18c4edfb7e43c3b4e64f7f31a436003e",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-review-queue.json",
+      "sha256": "58cd791042a32e5425e3066be124b846a4c4e742c131a1da9b9569d732844bf1",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-close-analysis.json",
+      "sha256": "3ffbeca250bd1d6bb4c883fbc3504c3bcc3a0876e9361c46120482a47856ab3d",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-critical-failure.json",
+      "sha256": "bb14c3880fe08879f773c88c0602bb14a94aec406221f3d2c0ca3463dfab4a08",
+      "status": "USER_DIRTY_PRESERVED"
+    }
+  ],
+  "schema_sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b",
+  "seal_status": {
+    "reserve2": "SEALED_UNSCORED_HASH_ONLY",
+    "final_blind": "SHA_ONLY_PASS",
+    "phase53_reserve": "RETIRED_UNSCORABLE_NOT_OPENED"
+  },
+  "free_bytes": {
+    "C": 140588638208,
+    "Z": 77380292608
+  },
+  "optimizer_steps": 0,
+  "inference_calls": 0
+}

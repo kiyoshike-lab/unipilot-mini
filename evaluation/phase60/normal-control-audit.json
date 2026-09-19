@@ -1,0 +1,911 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "seeds": {
+    "42": {
+      "families": {
+        "math": {
+          "parent_ce": 4.054115653038025,
+          "candidate_ce": 4.106067419052124,
+          "delta": 0.05195176601409912,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "math-2",
+              "parent": 4.285270690917969,
+              "candidate": 4.325561046600342,
+              "delta": 0.04029035568237305
+            },
+            {
+              "id": "math-3",
+              "parent": 4.106017112731934,
+              "candidate": 4.181398868560791,
+              "delta": 0.07538175582885742
+            },
+            {
+              "id": "math-4",
+              "parent": 3.9813246726989746,
+              "candidate": 4.032559394836426,
+              "delta": 0.05123472213745117
+            },
+            {
+              "id": "math-5",
+              "parent": 3.8438501358032227,
+              "candidate": 3.8847503662109375,
+              "delta": 0.040900230407714844
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "math-2",
+              "remaining_mean_delta": 0.05583890279134115,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-3",
+              "remaining_mean_delta": 0.04414176940917969,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-4",
+              "remaining_mean_delta": 0.05219078063964844,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-5",
+              "remaining_mean_delta": 0.05563561121622721,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.3627487649236008
+        },
+        "code": {
+          "parent_ce": 2.630435883998871,
+          "candidate_ce": 2.6220264434814453,
+          "delta": -0.008409440517425537,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "code-2",
+              "parent": 2.838925361633301,
+              "candidate": 2.8598384857177734,
+              "delta": 0.020913124084472656
+            },
+            {
+              "id": "code-3",
+              "parent": 2.6301374435424805,
+              "candidate": 2.625819206237793,
+              "delta": -0.0043182373046875
+            },
+            {
+              "id": "code-4",
+              "parent": 2.5614192485809326,
+              "candidate": 2.540304660797119,
+              "delta": -0.021114587783813477
+            },
+            {
+              "id": "code-5",
+              "parent": 2.4912614822387695,
+              "candidate": 2.4621434211730957,
+              "delta": -0.029118061065673828
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "code-2",
+              "remaining_mean_delta": -0.01818362871805827,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-3",
+              "remaining_mean_delta": -0.009773174921671549,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-4",
+              "remaining_mean_delta": -0.004174391428629558,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-5",
+              "remaining_mean_delta": -0.0015065670013427734,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 1.0
+        },
+        "lists": {
+          "parent_ce": 4.5382853746414185,
+          "candidate_ce": 4.519807696342468,
+          "delta": -0.018477678298950195,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "lists-2",
+              "parent": 4.925808429718018,
+              "candidate": 4.924996852874756,
+              "delta": -0.0008115768432617188
+            },
+            {
+              "id": "lists-3",
+              "parent": 4.578575611114502,
+              "candidate": 4.564899921417236,
+              "delta": -0.013675689697265625
+            },
+            {
+              "id": "lists-4",
+              "parent": 4.384690761566162,
+              "candidate": 4.361949443817139,
+              "delta": -0.022741317749023438
+            },
+            {
+              "id": "lists-5",
+              "parent": 4.264066696166992,
+              "candidate": 4.227384567260742,
+              "delta": -0.03668212890625
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "lists-2",
+              "remaining_mean_delta": -0.024366378784179688,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-3",
+              "remaining_mean_delta": -0.020078341166178387,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-4",
+              "remaining_mean_delta": -0.01705646514892578,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-5",
+              "remaining_mean_delta": -0.012409528096516928,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": null
+        },
+        "definitions": {
+          "parent_ce": 4.733608722686768,
+          "candidate_ce": 4.825513243675232,
+          "delta": 0.09190452098846436,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "definitions-2",
+              "parent": 5.069545269012451,
+              "candidate": 5.208811283111572,
+              "delta": 0.1392660140991211
+            },
+            {
+              "id": "definitions-3",
+              "parent": 4.7504096031188965,
+              "candidate": 4.851781845092773,
+              "delta": 0.10137224197387695
+            },
+            {
+              "id": "definitions-4",
+              "parent": 4.569896221160889,
+              "candidate": 4.633388042449951,
+              "delta": 0.0634918212890625
+            },
+            {
+              "id": "definitions-5",
+              "parent": 4.544583797454834,
+              "candidate": 4.608071804046631,
+              "delta": 0.06348800659179688
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "definitions-2",
+              "remaining_mean_delta": 0.07611735661824544,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-3",
+              "remaining_mean_delta": 0.08874861399332683,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-4",
+              "remaining_mean_delta": 0.10137542088826497,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "definitions-5",
+              "remaining_mean_delta": 0.10137669245402019,
+              "diagnostic_pass": false
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.3788334148344058
+        },
+        "terminology": {
+          "parent_ce": 5.3013880252838135,
+          "candidate_ce": 5.393744587898254,
+          "delta": 0.09235656261444092,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "terminology-2",
+              "parent": 5.377859592437744,
+              "candidate": 5.498235702514648,
+              "delta": 0.1203761100769043
+            },
+            {
+              "id": "terminology-3",
+              "parent": 5.337321758270264,
+              "candidate": 5.421077728271484,
+              "delta": 0.0837559700012207
+            },
+            {
+              "id": "terminology-4",
+              "parent": 5.301241397857666,
+              "candidate": 5.392572402954102,
+              "delta": 0.09133100509643555
+            },
+            {
+              "id": "terminology-5",
+              "parent": 5.18912935256958,
+              "candidate": 5.263092517852783,
+              "delta": 0.07396316528320312
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "terminology-2",
+              "remaining_mean_delta": 0.08301671346028645,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-3",
+              "remaining_mean_delta": 0.09522342681884766,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-4",
+              "remaining_mean_delta": 0.0926984151204427,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-5",
+              "remaining_mean_delta": 0.09848769505818684,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.3258461192937529
+        }
+      },
+      "failed_families": [],
+      "mean": {
+        "parent": 4.251566731929779,
+        "candidate": 4.293431878089905,
+        "delta": 0.04186514616012538
+      },
+      "classification": "NORMAL_FAILURE_UNRESOLVED",
+      "loo_gate_crossing_families": [],
+      "formal_gate_changed": false,
+      "small_set_warning": "4 examples per family; leave-one-out is diagnostic, no new gate."
+    },
+    "123": {
+      "families": {
+        "math": {
+          "parent_ce": 4.656003832817078,
+          "candidate_ce": 4.591440558433533,
+          "delta": -0.06456327438354492,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "math-2",
+              "parent": 4.843906402587891,
+              "candidate": 4.770693778991699,
+              "delta": -0.0732126235961914
+            },
+            {
+              "id": "math-3",
+              "parent": 4.749020099639893,
+              "candidate": 4.681782245635986,
+              "delta": -0.06723785400390625
+            },
+            {
+              "id": "math-4",
+              "parent": 4.611432075500488,
+              "candidate": 4.54734992980957,
+              "delta": -0.06408214569091797
+            },
+            {
+              "id": "math-5",
+              "parent": 4.419656753540039,
+              "candidate": 4.365936279296875,
+              "delta": -0.05372047424316406
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "math-2",
+              "remaining_mean_delta": -0.06168015797932943,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-3",
+              "remaining_mean_delta": -0.06367174784342448,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-4",
+              "remaining_mean_delta": -0.06472365061442058,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "math-5",
+              "remaining_mean_delta": -0.0681775410970052,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": null
+        },
+        "code": {
+          "parent_ce": 2.4975061416625977,
+          "candidate_ce": 2.8151806592941284,
+          "delta": 0.31767451763153076,
+          "threshold": 0.1,
+          "pass": false,
+          "examples": [
+            {
+              "id": "code-2",
+              "parent": 2.7988526821136475,
+              "candidate": 3.1455252170562744,
+              "delta": 0.34667253494262695
+            },
+            {
+              "id": "code-3",
+              "parent": 2.531827211380005,
+              "candidate": 2.8501391410827637,
+              "delta": 0.3183119297027588
+            },
+            {
+              "id": "code-4",
+              "parent": 2.3780205249786377,
+              "candidate": 2.687938928604126,
+              "delta": 0.3099184036254883
+            },
+            {
+              "id": "code-5",
+              "parent": 2.2813241481781006,
+              "candidate": 2.5771193504333496,
+              "delta": 0.295795202255249
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "code-2",
+              "remaining_mean_delta": 0.30800851186116535,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "code-3",
+              "remaining_mean_delta": 0.3174620469411214,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "code-4",
+              "remaining_mean_delta": 0.32025988896687824,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "code-5",
+              "remaining_mean_delta": 0.324967622756958,
+              "diagnostic_pass": false
+            }
+          ],
+          "all_leave_one_out_fail": true,
+          "top_positive_example_share": 0.27282054091660796
+        },
+        "lists": {
+          "parent_ce": 4.545087814331055,
+          "candidate_ce": 4.6771674156188965,
+          "delta": 0.1320796012878418,
+          "threshold": 0.1,
+          "pass": false,
+          "examples": [
+            {
+              "id": "lists-2",
+              "parent": 4.901644229888916,
+              "candidate": 5.016259670257568,
+              "delta": 0.11461544036865234
+            },
+            {
+              "id": "lists-3",
+              "parent": 4.594394683837891,
+              "candidate": 4.726132869720459,
+              "delta": 0.13173818588256836
+            },
+            {
+              "id": "lists-4",
+              "parent": 4.404016971588135,
+              "candidate": 4.536864280700684,
+              "delta": 0.13284730911254883
+            },
+            {
+              "id": "lists-5",
+              "parent": 4.280295372009277,
+              "candidate": 4.429412841796875,
+              "delta": 0.14911746978759766
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "lists-2",
+              "remaining_mean_delta": 0.13790098826090494,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "lists-3",
+              "remaining_mean_delta": 0.13219340642293295,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "lists-4",
+              "remaining_mean_delta": 0.1318236986796061,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "lists-5",
+              "remaining_mean_delta": 0.1264003117879232,
+              "diagnostic_pass": false
+            }
+          ],
+          "all_leave_one_out_fail": true,
+          "top_positive_example_share": 0.28224924275517976
+        },
+        "definitions": {
+          "parent_ce": 4.78949248790741,
+          "candidate_ce": 4.806211233139038,
+          "delta": 0.016718745231628418,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "definitions-2",
+              "parent": 5.073220729827881,
+              "candidate": 5.103678226470947,
+              "delta": 0.030457496643066406
+            },
+            {
+              "id": "definitions-3",
+              "parent": 4.769355773925781,
+              "candidate": 4.792210102081299,
+              "delta": 0.022854328155517578
+            },
+            {
+              "id": "definitions-4",
+              "parent": 4.671137809753418,
+              "candidate": 4.684666156768799,
+              "delta": 0.01352834701538086
+            },
+            {
+              "id": "definitions-5",
+              "parent": 4.644255638122559,
+              "candidate": 4.644290447235107,
+              "delta": 3.4809112548828125e-05
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "definitions-2",
+              "remaining_mean_delta": 0.012139161427815756,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-3",
+              "remaining_mean_delta": 0.014673550923665365,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-4",
+              "remaining_mean_delta": 0.017782211303710938,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-5",
+              "remaining_mean_delta": 0.022280057271321613,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.45543933203562287
+        },
+        "terminology": {
+          "parent_ce": 4.9902790784835815,
+          "candidate_ce": 5.191816210746765,
+          "delta": 0.2015371322631836,
+          "threshold": 0.1,
+          "pass": false,
+          "examples": [
+            {
+              "id": "terminology-2",
+              "parent": 5.0675506591796875,
+              "candidate": 5.269678592681885,
+              "delta": 0.20212793350219727
+            },
+            {
+              "id": "terminology-3",
+              "parent": 5.013772010803223,
+              "candidate": 5.217092990875244,
+              "delta": 0.20332098007202148
+            },
+            {
+              "id": "terminology-4",
+              "parent": 4.981142520904541,
+              "candidate": 5.182778835296631,
+              "delta": 0.20163631439208984
+            },
+            {
+              "id": "terminology-5",
+              "parent": 4.898651123046875,
+              "candidate": 5.097714424133301,
+              "delta": 0.19906330108642578
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "terminology-2",
+              "remaining_mean_delta": 0.2013401985168457,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "terminology-3",
+              "remaining_mean_delta": 0.2009425163269043,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "terminology-4",
+              "remaining_mean_delta": 0.2015040715535482,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "terminology-5",
+              "remaining_mean_delta": 0.2023617426554362,
+              "diagnostic_pass": false
+            }
+          ],
+          "all_leave_one_out_fail": true,
+          "top_positive_example_share": 0.25221280290734266
+        }
+      },
+      "failed_families": [
+        "code",
+        "lists",
+        "terminology"
+      ],
+      "mean": {
+        "parent": 4.295673871040345,
+        "candidate": 4.416363215446472,
+        "delta": 0.12068934440612722
+      },
+      "classification": "NORMAL_FAILURE_BROAD",
+      "loo_gate_crossing_families": [],
+      "formal_gate_changed": false,
+      "small_set_warning": "4 examples per family; leave-one-out is diagnostic, no new gate."
+    },
+    "2026": {
+      "families": {
+        "math": {
+          "parent_ce": 4.476404666900635,
+          "candidate_ce": 4.626971125602722,
+          "delta": 0.1505664587020874,
+          "threshold": 0.1,
+          "pass": false,
+          "examples": [
+            {
+              "id": "math-2",
+              "parent": 4.757657527923584,
+              "candidate": 4.938956260681152,
+              "delta": 0.18129873275756836
+            },
+            {
+              "id": "math-3",
+              "parent": 4.550427436828613,
+              "candidate": 4.692834854125977,
+              "delta": 0.14240741729736328
+            },
+            {
+              "id": "math-4",
+              "parent": 4.35791540145874,
+              "candidate": 4.503861904144287,
+              "delta": 0.14594650268554688
+            },
+            {
+              "id": "math-5",
+              "parent": 4.239618301391602,
+              "candidate": 4.372231483459473,
+              "delta": 0.1326131820678711
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "math-2",
+              "remaining_mean_delta": 0.1403223673502604,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "math-3",
+              "remaining_mean_delta": 0.15328613917032877,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "math-4",
+              "remaining_mean_delta": 0.15210644404093424,
+              "diagnostic_pass": false
+            },
+            {
+              "excluded": "math-5",
+              "remaining_mean_delta": 0.15655088424682617,
+              "diagnostic_pass": false
+            }
+          ],
+          "all_leave_one_out_fail": true,
+          "top_positive_example_share": 0.30102775598297127
+        },
+        "code": {
+          "parent_ce": 2.3245564103126526,
+          "candidate_ce": 2.4135366082191467,
+          "delta": 0.08898019790649414,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "code-2",
+              "parent": 2.6641228199005127,
+              "candidate": 2.7264797687530518,
+              "delta": 0.06235694885253906
+            },
+            {
+              "id": "code-3",
+              "parent": 2.3333704471588135,
+              "candidate": 2.4163928031921387,
+              "delta": 0.0830223560333252
+            },
+            {
+              "id": "code-4",
+              "parent": 2.193345308303833,
+              "candidate": 2.293396234512329,
+              "delta": 0.1000509262084961
+            },
+            {
+              "id": "code-5",
+              "parent": 2.107387065887451,
+              "candidate": 2.2178776264190674,
+              "delta": 0.11049056053161621
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "code-2",
+              "remaining_mean_delta": 0.0978546142578125,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-3",
+              "remaining_mean_delta": 0.09096614519755046,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-4",
+              "remaining_mean_delta": 0.08528995513916016,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "code-5",
+              "remaining_mean_delta": 0.08181007703145345,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.31043581361699846
+        },
+        "lists": {
+          "parent_ce": 4.438135266304016,
+          "candidate_ce": 4.494446277618408,
+          "delta": 0.05631101131439209,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "lists-2",
+              "parent": 4.946366310119629,
+              "candidate": 4.974753379821777,
+              "delta": 0.028387069702148438
+            },
+            {
+              "id": "lists-3",
+              "parent": 4.483997821807861,
+              "candidate": 4.540257930755615,
+              "delta": 0.056260108947753906
+            },
+            {
+              "id": "lists-4",
+              "parent": 4.242953777313232,
+              "candidate": 4.3067169189453125,
+              "delta": 0.06376314163208008
+            },
+            {
+              "id": "lists-5",
+              "parent": 4.079223155975342,
+              "candidate": 4.156056880950928,
+              "delta": 0.07683372497558594
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "lists-2",
+              "remaining_mean_delta": 0.06561899185180664,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-3",
+              "remaining_mean_delta": 0.05632797876993815,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-4",
+              "remaining_mean_delta": 0.05382696787516276,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "lists-5",
+              "remaining_mean_delta": 0.049470106760660805,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": 0.34111323514779696
+        },
+        "definitions": {
+          "parent_ce": 4.903336405754089,
+          "candidate_ce": 4.876082420349121,
+          "delta": -0.02725398540496826,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "definitions-2",
+              "parent": 5.288191795349121,
+              "candidate": 5.268301010131836,
+              "delta": -0.019890785217285156
+            },
+            {
+              "id": "definitions-3",
+              "parent": 4.923182964324951,
+              "candidate": 4.900051593780518,
+              "delta": -0.023131370544433594
+            },
+            {
+              "id": "definitions-4",
+              "parent": 4.713369369506836,
+              "candidate": 4.689014911651611,
+              "delta": -0.02435445785522461
+            },
+            {
+              "id": "definitions-5",
+              "parent": 4.688601493835449,
+              "candidate": 4.6469621658325195,
+              "delta": -0.04163932800292969
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "definitions-2",
+              "remaining_mean_delta": -0.029708385467529297,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-3",
+              "remaining_mean_delta": -0.028628190358479817,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-4",
+              "remaining_mean_delta": -0.028220494588216145,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "definitions-5",
+              "remaining_mean_delta": -0.022458871205647785,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": null
+        },
+        "terminology": {
+          "parent_ce": 5.2870872020721436,
+          "candidate_ce": 5.187921524047852,
+          "delta": -0.09916567802429199,
+          "threshold": 0.1,
+          "pass": true,
+          "examples": [
+            {
+              "id": "terminology-2",
+              "parent": 5.355691432952881,
+              "candidate": 5.288607597351074,
+              "delta": -0.06708383560180664
+            },
+            {
+              "id": "terminology-3",
+              "parent": 5.340223789215088,
+              "candidate": 5.22775411605835,
+              "delta": -0.11246967315673828
+            },
+            {
+              "id": "terminology-4",
+              "parent": 5.28939151763916,
+              "candidate": 5.171672344207764,
+              "delta": -0.11771917343139648
+            },
+            {
+              "id": "terminology-5",
+              "parent": 5.163042068481445,
+              "candidate": 5.063652038574219,
+              "delta": -0.09939002990722656
+            }
+          ],
+          "leave_one_out": [
+            {
+              "excluded": "terminology-2",
+              "remaining_mean_delta": -0.10985962549845378,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-3",
+              "remaining_mean_delta": -0.09473101298014323,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-4",
+              "remaining_mean_delta": -0.09298117955525716,
+              "diagnostic_pass": true
+            },
+            {
+              "excluded": "terminology-5",
+              "remaining_mean_delta": -0.0990908940633138,
+              "diagnostic_pass": true
+            }
+          ],
+          "all_leave_one_out_fail": false,
+          "top_positive_example_share": null
+        }
+      },
+      "failed_families": [
+        "math"
+      ],
+      "mean": {
+        "parent": 4.285903990268707,
+        "candidate": 4.31979159116745,
+        "delta": 0.03388760089874232
+      },
+      "classification": "NORMAL_FAILURE_FAMILY_SPECIFIC",
+      "loo_gate_crossing_families": [],
+      "formal_gate_changed": false,
+      "small_set_warning": "4 examples per family; leave-one-out is diagnostic, no new gate."
+    }
+  },
+  "exposure_proxy_reference": "data-order-audit.json / family_exposure_proxies"
+}

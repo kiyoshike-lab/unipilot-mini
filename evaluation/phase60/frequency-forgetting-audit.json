@@ -1,0 +1,215 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "seeds": {
+    "42": {
+      "core_token_count": 236,
+      "worsened_fraction": 0.7330508474576272,
+      "ce_delta_distribution": {
+        "count": 236,
+        "mean": 0.12327609247347944,
+        "median": 0.1385619391997655,
+        "p75": 0.2523479610681534,
+        "p90": 0.38514232635498047,
+        "p95": 0.4510890080740577,
+        "max": 1.1926812392014723
+      },
+      "zero_exposure_fraction": 0.3220338983050847,
+      "zero_exposure_delta": {
+        "count": 76,
+        "mean": 0.24887390697832576,
+        "median": 0.24316316091713785,
+        "p75": 0.3727448687833898,
+        "p90": 0.44599783135373056,
+        "p95": 0.5886031353112423,
+        "max": 1.1926812392014723
+      },
+      "nonzero_exposure_delta": {
+        "count": 160,
+        "mean": 0.06361713058367743,
+        "median": 0.07124836921691895,
+        "p75": 0.19489519912879782,
+        "p90": 0.30861077618289307,
+        "p95": 0.3859146529017474,
+        "max": 0.6259096717834473
+      },
+      "spearman_exposure_vs_ce_delta": -0.41998877092958414,
+      "rank_groups": [
+        {
+          "rank_group": 1,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 0,
+          "mean_ce_delta": 0.26455291711708184,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 2,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 1,
+          "mean_ce_delta": 0.12398257061147892,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 3,
+          "tokens": 59,
+          "exposure_min": 1,
+          "exposure_max": 2,
+          "mean_ce_delta": 0.08706355383775713,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 4,
+          "tokens": 59,
+          "exposure_min": 2,
+          "exposure_max": 16,
+          "mean_ce_delta": 0.017505328327599816,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        }
+      ],
+      "zero_minus_nonzero_mean": 0.18525677639464833
+    },
+    "123": {
+      "core_token_count": 236,
+      "worsened_fraction": 0.5169491525423728,
+      "ce_delta_distribution": {
+        "count": 236,
+        "mean": 0.018791823375706087,
+        "median": 0.008554213322125949,
+        "p75": 0.14302216257367814,
+        "p90": 0.26917287591215855,
+        "p95": 0.371130593338905,
+        "max": 0.9584354218982515
+      },
+      "zero_exposure_fraction": 0.2754237288135593,
+      "zero_exposure_delta": {
+        "count": 65,
+        "mean": 0.12401423549069421,
+        "median": 0.12537131309509278,
+        "p75": 0.2585998296737671,
+        "p90": 0.4083590030670166,
+        "p95": 0.4864074446938254,
+        "max": 0.9584354218982515
+      },
+      "nonzero_exposure_delta": {
+        "count": 171,
+        "mean": -0.021204999942856663,
+        "median": -0.033407402038574216,
+        "p75": 0.09667773002927954,
+        "p90": 0.1927192631889792,
+        "p95": 0.2636441571371896,
+        "max": 0.7201849853291231
+      },
+      "spearman_exposure_vs_ce_delta": -0.3651839415557507,
+      "rank_groups": [
+        {
+          "rank_group": 1,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 0,
+          "mean_ce_delta": 0.11285833092956611,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 2,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 1,
+          "mean_ce_delta": 0.05053635045473082,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 3,
+          "tokens": 59,
+          "exposure_min": 1,
+          "exposure_max": 3,
+          "mean_ce_delta": -0.019224700021551862,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 4,
+          "tokens": 59,
+          "exposure_min": 3,
+          "exposure_max": 11,
+          "mean_ce_delta": -0.06900268785992074,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        }
+      ],
+      "zero_minus_nonzero_mean": 0.14521923543355086
+    },
+    "2026": {
+      "core_token_count": 236,
+      "worsened_fraction": 0.7288135593220338,
+      "ce_delta_distribution": {
+        "count": 236,
+        "mean": 0.15695181197016103,
+        "median": 0.11127893624313331,
+        "p75": 0.2633742690086365,
+        "p90": 0.48022966056034483,
+        "p95": 0.6850849825933755,
+        "max": 1.2274926980336507
+      },
+      "zero_exposure_fraction": 0.3983050847457627,
+      "zero_exposure_delta": {
+        "count": 94,
+        "mean": 0.26550782328938144,
+        "median": 0.2296390479261225,
+        "p75": 0.40310890210588035,
+        "p90": 0.6555276653885302,
+        "p95": 0.9021236593073063,
+        "max": 1.2274926980336507
+      },
+      "nonzero_exposure_delta": {
+        "count": 142,
+        "mean": 0.08509079039264895,
+        "median": 0.06547038798982446,
+        "p75": 0.1729194402694702,
+        "p90": 0.3232561643500078,
+        "p95": 0.4675723819272033,
+        "max": 0.8667724430561066
+      },
+      "spearman_exposure_vs_ce_delta": -0.3710625908126441,
+      "rank_groups": [
+        {
+          "rank_group": 1,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 0,
+          "mean_ce_delta": 0.28495469294189324,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 2,
+          "tokens": 59,
+          "exposure_min": 0,
+          "exposure_max": 1,
+          "mean_ce_delta": 0.16802511397832395,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 3,
+          "tokens": 59,
+          "exposure_min": 1,
+          "exposure_max": 2,
+          "mean_ce_delta": 0.1527773446701103,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        },
+        {
+          "rank_group": 4,
+          "tokens": 59,
+          "exposure_min": 2,
+          "exposure_max": 10,
+          "mean_ce_delta": 0.0220500962903167,
+          "ties_policy": "stable token ID order; ties may straddle groups"
+        }
+      ],
+      "zero_minus_nonzero_mean": 0.1804170328967325
+    }
+  },
+  "signature": "YES",
+  "reason": "All three seeds have negative exposure/CE rank association and greater mean worsening for unexposed tokens. FREQUENCY_FORGETTING_SIGNATURE is descriptive; rank grouping and zero-exposure comparisons are the same evidence stream, not independent causal confirmation.",
+  "unit": "236 token types within each seed; no significance claim based on N=3 seed correlation",
+  "raw_reference": "Z:\\AI\\unipilot-mini\\evaluation\\phase60"
+}

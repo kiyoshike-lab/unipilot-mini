@@ -1,0 +1,1421 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "seeds": {
+    "42": {
+      "scalars": {
+        "validation.ce": {
+          "parent": 4.431364018724482,
+          "candidate": 4.430690309014878,
+          "delta": -0.000673709709603898
+        },
+        "validation.top1": {
+          "parent": 0.2505757073971171,
+          "candidate": 0.25125477435483284,
+          "delta": 0.000679066957715746
+        },
+        "validation.top5": {
+          "parent": 0.43908855075971953,
+          "candidate": 0.4393370421385682,
+          "delta": 0.000248491378848692
+        },
+        "validation.top10": {
+          "parent": 0.5240169059824299,
+          "candidate": 0.5251072690154814,
+          "delta": 0.0010903630330515446
+        },
+        "context.128.ce": {
+          "parent": 4.537545787773097,
+          "candidate": 4.528853343401603,
+          "delta": -0.00869244437149419
+        },
+        "context.512.ce": {
+          "parent": 4.438465625384656,
+          "candidate": 4.433526529276491,
+          "delta": -0.004939096108165231
+        },
+        "eos.terminal_probability": {
+          "parent": 0.010557707718611685,
+          "candidate": 0.01427467200601438,
+          "delta": 0.003716964287402695
+        },
+        "eos.terminal_top1": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "eos.nonterminal_probability": {
+          "parent": 0.0003386068085305851,
+          "candidate": 0.0003879309563004654,
+          "delta": 4.9324147769880266e-05
+        },
+        "eos.premature_argmax": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "core.micro_ce": {
+          "parent": 9.195757383544493,
+          "candidate": 9.30216734335448,
+          "delta": 0.10640995980998724
+        },
+        "core.macro_ce": {
+          "parent": 9.205603495017298,
+          "candidate": 9.328879587490778,
+          "delta": 0.12327609247348015
+        },
+        "core.top1": {
+          "parent": 0.007889990982867448,
+          "candidate": 0.008340847610459874,
+          "delta": 0.0004508566275924254
+        },
+        "core.top5": {
+          "parent": 0.014427412082957619,
+          "candidate": 0.014652840396753831,
+          "delta": 0.0002254283137962127
+        },
+        "core.top10": {
+          "parent": 0.026149684400360685,
+          "candidate": 0.029531109107303877,
+          "delta": 0.0033814247069431924
+        },
+        "supported_tail.micro_ce": {
+          "parent": 9.800005726945338,
+          "candidate": 9.894146099140507,
+          "delta": 0.09414037219516835
+        },
+        "supported_tail.macro_ce": {
+          "parent": 10.027894635606671,
+          "candidate": 10.11158234629627,
+          "delta": 0.08368771068959902
+        },
+        "supported_tail.top1": {
+          "parent": 0.0006544502617801048,
+          "candidate": 0.001963350785340314,
+          "delta": 0.0013089005235602093
+        },
+        "supported_tail.top5": {
+          "parent": 0.014397905759162303,
+          "candidate": 0.01767015706806283,
+          "delta": 0.0032722513089005253
+        },
+        "supported_tail.top10": {
+          "parent": 0.024869109947643978,
+          "candidate": 0.0281413612565445,
+          "delta": 0.0032722513089005235
+        },
+        "normal.mean_ce": {
+          "parent": 4.251566731929779,
+          "candidate": 4.293431878089905,
+          "delta": 0.04186514616012538
+        },
+        "normal.terminal_probability": {
+          "parent": 0.007318056296207942,
+          "candidate": 0.0074957951961550865,
+          "delta": 0.00017773889994714479
+        },
+        "normal.math.ce": {
+          "parent": 4.054115653038025,
+          "candidate": 4.106067419052124,
+          "delta": 0.05195176601409912
+        },
+        "normal.code.ce": {
+          "parent": 2.630435883998871,
+          "candidate": 2.6220264434814453,
+          "delta": -0.008409440517425537
+        },
+        "normal.lists.ce": {
+          "parent": 4.5382853746414185,
+          "candidate": 4.519807696342468,
+          "delta": -0.018477678298950195
+        },
+        "normal.definitions.ce": {
+          "parent": 4.733608722686768,
+          "candidate": 4.825513243675232,
+          "delta": 0.09190452098846436
+        },
+        "normal.terminology.ce": {
+          "parent": 5.3013880252838135,
+          "candidate": 5.393744587898254,
+          "delta": 0.09235656261444092
+        },
+        "context.long_benefit": {
+          "parent": 0.0990801623884412,
+          "candidate": 0.09532681412511224,
+          "delta": -0.0037533482633289594
+        }
+      },
+      "bootstrap": {
+        "core": {
+          "mean": 0.10640995980998731,
+          "lower": 0.05227659745522194,
+          "upper": 0.16010384429745586
+        },
+        "supported_tail": {
+          "mean": 0.09414037219516894,
+          "lower": 0.04654744373114438,
+          "upper": 0.14483187772064776
+        }
+      },
+      "generation": {
+        "parent": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.02,
+              "naturalness_rate": 0.03,
+              "semantic_rate": 0.02,
+              "topic_retention_rate": 0.43440483833332133,
+              "japanese_validity_rate": 0.9,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.0004243395807567252,
+              "repetition_1": 0.91640625,
+              "repetition_2": 0.8881102362204725,
+              "repetition_3": 0.8634920634920635,
+              "repetition_4": 0.8412799999999998,
+              "unique_token_ratio": 0.08359375,
+              "loop_onset": 29.23,
+              "loop_cycle_length": 8.09
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9833333333333334,
+            "completion_rate": 0.05666666666666667,
+            "naturalness_rate": 0.68,
+            "semantic_rate": 0.61,
+            "topic_retention_rate": 0.1904463495873849,
+            "japanese_validity_rate": 0.77,
+            "eos_completion_rate": 0.016666666666666666,
+            "mean_eos_probability": 0.0005458231171011776,
+            "repetition_1": 0.33457829989079985,
+            "repetition_2": 0.12031003385346607,
+            "repetition_3": 0.05048387096774193,
+            "repetition_4": 0.017704918032786895,
+            "unique_token_ratio": 0.6654217001092001,
+            "loop_onset": 33.07666666666666,
+            "loop_cycle_length": 1.2066666666666668
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 0.99,
+            "51000": 0.98,
+            "52000": 0.98
+          }
+        },
+        "candidate": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.0,
+              "naturalness_rate": 0.0,
+              "semantic_rate": 0.0,
+              "topic_retention_rate": 0.44121470948044555,
+              "japanese_validity_rate": 0.89,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.000526015733627693,
+              "repetition_1": 0.909375,
+              "repetition_2": 0.8755905511811025,
+              "repetition_3": 0.8457142857142856,
+              "repetition_4": 0.8186399999999999,
+              "unique_token_ratio": 0.090625,
+              "loop_onset": 28.28,
+              "loop_cycle_length": 7.78
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9966666666666667,
+            "completion_rate": 0.09666666666666668,
+            "naturalness_rate": 0.7233333333333333,
+            "semantic_rate": 0.66,
+            "topic_retention_rate": 0.18631334307832847,
+            "japanese_validity_rate": 0.7866666666666666,
+            "eos_completion_rate": 0.0033333333333333335,
+            "mean_eos_probability": 0.0005548412743902857,
+            "repetition_1": 0.32953125,
+            "repetition_2": 0.10556238265915685,
+            "repetition_3": 0.04328673835125447,
+            "repetition_4": 0.016338797814207655,
+            "unique_token_ratio": 0.67046875,
+            "loop_onset": 33.61,
+            "loop_cycle_length": 1.2033333333333331
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 1.0,
+            "51000": 0.99,
+            "52000": 1.0
+          }
+        }
+      },
+      "checks": {
+        "validation.ce": {
+          "value": -0.000673709709604,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top1": {
+          "value": -0.00067906695771574,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top5": {
+          "value": -0.00024849137884867,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top10": {
+          "value": -0.0010903630330515,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.128.ce": {
+          "value": -0.008692444371494,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.512.ce": {
+          "value": -0.004939096108165,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.long_benefit": {
+          "value": 0.00375334826332896,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.terminal_probability": {
+          "value": 1.3520616772569138,
+          "threshold": 0.9,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.terminal_top1": {
+          "value": 0.0,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.nonterminal_probability": {
+          "value": 4.93241477698803e-05,
+          "threshold": 0.001,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.premature_argmax": {
+          "value": 0.0,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.micro_ce": {
+          "value": 0.106409959809987,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "core.macro_ce": {
+          "value": 0.12327609247348,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "core.top1": {
+          "value": -0.000450856627592426,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top5": {
+          "value": -0.000225428313796212,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top10": {
+          "value": -0.003381424706943192,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.paired_ce_ci95_upper": {
+          "value": 0.16010384429745586,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "supported_tail.micro_ce": {
+          "value": 0.094140372195169,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.macro_ce": {
+          "value": 0.083687710689599,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top1": {
+          "value": -0.0013089005235602093,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top5": {
+          "value": -0.003272251308900527,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top10": {
+          "value": -0.003272251308900522,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.paired_ce_ci95_upper": {
+          "value": 0.14483187772064776,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.mean_ce": {
+          "value": 0.041865146160126,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.terminal_probability": {
+          "value": 1.024287719683059,
+          "threshold": 0.9,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.math.ce": {
+          "value": 0.051951766014099,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.code.ce": {
+          "value": -0.0084094405174257,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.lists.ce": {
+          "value": -0.0184776782989505,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.definitions.ce": {
+          "value": 0.091904520988464,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.terminology.ce": {
+          "value": 0.0923565626144405,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.naturalness_rate": {
+          "value": -0.043333333333333335,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.semantic_rate": {
+          "value": -0.05,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.topic_retention_rate": {
+          "value": 0.00413300650905641,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.japanese_validity_rate": {
+          "value": -0.016666666666666666,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        }
+      },
+      "failed_checks": [
+        "core.micro_ce",
+        "core.macro_ce",
+        "core.paired_ce_ci95_upper"
+      ],
+      "historical_status": "EXPERIMENT_INVALID",
+      "seed42_comparisons": "DIAGNOSTIC_ONLY_NOT_FORMAL_EFFICACY_OR_GATE_RESCORING"
+    },
+    "123": {
+      "scalars": {
+        "validation.ce": {
+          "parent": 4.430803822164922,
+          "candidate": 4.428825361960127,
+          "delta": -0.00197846020479453
+        },
+        "validation.top1": {
+          "parent": 0.24895408693342358,
+          "candidate": 0.24932896616875563,
+          "delta": 0.00037487923533205403
+        },
+        "validation.top5": {
+          "parent": 0.43938631198092615,
+          "candidate": 0.4401553499551216,
+          "delta": 0.0007690379741954745
+        },
+        "validation.top10": {
+          "parent": 0.5248266451307472,
+          "candidate": 0.5257863359731972,
+          "delta": 0.0009596908424500672
+        },
+        "context.128.ce": {
+          "parent": 4.525261133737705,
+          "candidate": 4.534843343203037,
+          "delta": 0.00958220946533217
+        },
+        "context.512.ce": {
+          "parent": 4.440529166828989,
+          "candidate": 4.435919676636616,
+          "delta": -0.004609490192372334
+        },
+        "eos.terminal_probability": {
+          "parent": 0.01148220918869574,
+          "candidate": 0.020293532507672005,
+          "delta": 0.008811323318976265
+        },
+        "eos.terminal_top1": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "eos.nonterminal_probability": {
+          "parent": 0.0003821045186716674,
+          "candidate": 0.0005827565729381945,
+          "delta": 0.00020065205426652715
+        },
+        "eos.premature_argmax": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "core.micro_ce": {
+          "parent": 9.287453144864322,
+          "candidate": 9.28900177899926,
+          "delta": 0.0015486341349379984
+        },
+        "core.macro_ce": {
+          "parent": 9.329310108835116,
+          "candidate": 9.34810193221082,
+          "delta": 0.018791823375703842
+        },
+        "core.top1": {
+          "parent": 0.006762849413886384,
+          "candidate": 0.004959422903516681,
+          "delta": -0.0018034265103697026
+        },
+        "core.top5": {
+          "parent": 0.022091974752028856,
+          "candidate": 0.019612263300270515,
+          "delta": -0.0024797114517583416
+        },
+        "core.top10": {
+          "parent": 0.04147880973850315,
+          "candidate": 0.03967538322813345,
+          "delta": -0.0018034265103697017
+        },
+        "supported_tail.micro_ce": {
+          "parent": 9.78684291200644,
+          "candidate": 9.82375695197526,
+          "delta": 0.03691403996882059
+        },
+        "supported_tail.macro_ce": {
+          "parent": 10.00864281532506,
+          "candidate": 10.042373575891997,
+          "delta": 0.03373076056693591
+        },
+        "supported_tail.top1": {
+          "parent": 0.0058900523560209425,
+          "candidate": 0.006544502617801047,
+          "delta": 0.0006544502617801045
+        },
+        "supported_tail.top5": {
+          "parent": 0.020942408376963352,
+          "candidate": 0.022905759162303665,
+          "delta": 0.0019633507853403127
+        },
+        "supported_tail.top10": {
+          "parent": 0.030104712041884817,
+          "candidate": 0.0281413612565445,
+          "delta": -0.001963350785340316
+        },
+        "normal.mean_ce": {
+          "parent": 4.295673871040345,
+          "candidate": 4.416363215446472,
+          "delta": 0.12068934440612722
+        },
+        "normal.terminal_probability": {
+          "parent": 0.004911849621566944,
+          "candidate": 0.005253778815676924,
+          "delta": 0.0003419291941099802
+        },
+        "normal.math.ce": {
+          "parent": 4.656003832817078,
+          "candidate": 4.591440558433533,
+          "delta": -0.06456327438354492
+        },
+        "normal.code.ce": {
+          "parent": 2.4975061416625977,
+          "candidate": 2.8151806592941284,
+          "delta": 0.31767451763153076
+        },
+        "normal.lists.ce": {
+          "parent": 4.545087814331055,
+          "candidate": 4.6771674156188965,
+          "delta": 0.1320796012878418
+        },
+        "normal.definitions.ce": {
+          "parent": 4.78949248790741,
+          "candidate": 4.806211233139038,
+          "delta": 0.016718745231628418
+        },
+        "normal.terminology.ce": {
+          "parent": 4.9902790784835815,
+          "candidate": 5.191816210746765,
+          "delta": 0.2015371322631836
+        },
+        "context.long_benefit": {
+          "parent": 0.08473196690871632,
+          "candidate": 0.09892366656642082,
+          "delta": 0.014191699657704504
+        }
+      },
+      "bootstrap": {
+        "core": {
+          "mean": 0.001548634134938418,
+          "lower": -0.057131482412248545,
+          "upper": 0.060703928889190635
+        },
+        "supported_tail": {
+          "mean": 0.036914039968820145,
+          "lower": -0.0027494642642495438,
+          "upper": 0.07890800427539307
+        }
+      },
+      "generation": {
+        "parent": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.01,
+              "naturalness_rate": 0.01,
+              "semantic_rate": 0.0,
+              "topic_retention_rate": 0.461251577568166,
+              "japanese_validity_rate": 0.92,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.0004002613261310173,
+              "repetition_1": 0.9196875,
+              "repetition_2": 0.8937007874015748,
+              "repetition_3": 0.8726190476190477,
+              "repetition_4": 0.8536800000000001,
+              "unique_token_ratio": 0.0803125,
+              "loop_onset": 26.14,
+              "loop_cycle_length": 7.05
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9899999999999999,
+            "completion_rate": 0.05333333333333334,
+            "naturalness_rate": 0.6733333333333333,
+            "semantic_rate": 0.5866666666666668,
+            "topic_retention_rate": 0.2035402150058313,
+            "japanese_validity_rate": 0.79,
+            "eos_completion_rate": 0.01,
+            "mean_eos_probability": 0.000439192559295195,
+            "repetition_1": 0.37621700558213717,
+            "repetition_2": 0.1492151675485009,
+            "repetition_3": 0.06747311827956988,
+            "repetition_4": 0.030983606557377058,
+            "unique_token_ratio": 0.6237829944178629,
+            "loop_onset": 35.666666666666664,
+            "loop_cycle_length": 1.3833333333333335
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 1.0,
+            "51000": 0.98,
+            "52000": 0.99
+          }
+        },
+        "candidate": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.0,
+              "naturalness_rate": 0.0,
+              "semantic_rate": 0.0,
+              "topic_retention_rate": 0.45814731097649053,
+              "japanese_validity_rate": 0.92,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.0004116529197782692,
+              "repetition_1": 0.9190625,
+              "repetition_2": 0.8904724409448819,
+              "repetition_3": 0.8665873015873017,
+              "repetition_4": 0.8447199999999999,
+              "unique_token_ratio": 0.0809375,
+              "loop_onset": 31.28,
+              "loop_cycle_length": 7.82
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9899999999999999,
+            "completion_rate": 0.08,
+            "naturalness_rate": 0.6466666666666666,
+            "semantic_rate": 0.5466666666666667,
+            "topic_retention_rate": 0.20655931367195954,
+            "japanese_validity_rate": 0.7866666666666667,
+            "eos_completion_rate": 0.01,
+            "mean_eos_probability": 0.0007918753117266149,
+            "repetition_1": 0.3772790404040404,
+            "repetition_2": 0.1460497579646516,
+            "repetition_3": 0.06501612903225806,
+            "repetition_4": 0.02726775956284154,
+            "unique_token_ratio": 0.6227209595959595,
+            "loop_onset": 33.49666666666666,
+            "loop_cycle_length": 1.2433333333333334
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 0.99,
+            "51000": 0.99,
+            "52000": 0.99
+          }
+        }
+      },
+      "checks": {
+        "validation.ce": {
+          "value": -0.001978460204795,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top1": {
+          "value": -0.00037487923533205,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top5": {
+          "value": -0.00076903797419545,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top10": {
+          "value": -0.00095969084245,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.128.ce": {
+          "value": 0.009582209465332,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.512.ce": {
+          "value": -0.004609490192373,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.long_benefit": {
+          "value": -0.0141916996577045,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.terminal_probability": {
+          "value": 1.767389199602027,
+          "threshold": 0.9,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.terminal_top1": {
+          "value": 0.0,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.nonterminal_probability": {
+          "value": 0.0002006520542665271,
+          "threshold": 0.001,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.premature_argmax": {
+          "value": 0.0,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.micro_ce": {
+          "value": 0.001548634134938,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.macro_ce": {
+          "value": 0.018791823375704,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top1": {
+          "value": 0.001803426510369703,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top5": {
+          "value": 0.002479711451758341,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top10": {
+          "value": 0.0018034265103697,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.paired_ce_ci95_upper": {
+          "value": 0.060703928889190635,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.micro_ce": {
+          "value": 0.03691403996882,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.macro_ce": {
+          "value": 0.033730760566937,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top1": {
+          "value": -0.0006544502617801045,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top5": {
+          "value": -0.001963350785340313,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top10": {
+          "value": 0.001963350785340317,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.paired_ce_ci95_upper": {
+          "value": 0.07890800427539307,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.mean_ce": {
+          "value": 0.120689344406127,
+          "threshold": 0.05,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "normal.terminal_probability": {
+          "value": 1.06961312345733,
+          "threshold": 0.9,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.math.ce": {
+          "value": -0.064563274383545,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.code.ce": {
+          "value": 0.3176745176315307,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "normal.lists.ce": {
+          "value": 0.1320796012878415,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "normal.definitions.ce": {
+          "value": 0.016718745231628,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.terminology.ce": {
+          "value": 0.2015371322631835,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "sampling.naturalness_rate": {
+          "value": 0.02666666666666667,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.semantic_rate": {
+          "value": 0.04,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.topic_retention_rate": {
+          "value": -0.00301909866612823,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.japanese_validity_rate": {
+          "value": 0.0033333333333333335,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        }
+      },
+      "failed_checks": [
+        "normal.mean_ce",
+        "normal.code.ce",
+        "normal.lists.ce",
+        "normal.terminology.ce"
+      ],
+      "historical_status": "CONTROL_STABILITY_MIXED",
+      "seed42_comparisons": null
+    },
+    "2026": {
+      "scalars": {
+        "validation.ce": {
+          "parent": 4.431562342548629,
+          "candidate": 4.424945628337848,
+          "delta": -0.00661671421078136
+        },
+        "validation.top1": {
+          "parent": 0.24961173222054894,
+          "candidate": 0.2507192325900728,
+          "delta": 0.0011075003695238395
+        },
+        "validation.top5": {
+          "parent": 0.4387607991996864,
+          "candidate": 0.4395598275127084,
+          "delta": 0.0007990283130219766
+        },
+        "validation.top10": {
+          "parent": 0.5235499135635592,
+          "candidate": 0.5251758183613707,
+          "delta": 0.0016259047978115504
+        },
+        "context.128.ce": {
+          "parent": 4.526496791062687,
+          "candidate": 4.513378536206748,
+          "delta": -0.013118254855939426
+        },
+        "context.512.ce": {
+          "parent": 4.43473900157779,
+          "candidate": 4.419527316491917,
+          "delta": -0.015211685085873228
+        },
+        "eos.terminal_probability": {
+          "parent": 0.008186938927281841,
+          "candidate": 0.007246443476978042,
+          "delta": -0.000940495450303799
+        },
+        "eos.terminal_top1": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "eos.nonterminal_probability": {
+          "parent": 0.00037042975715144167,
+          "candidate": 0.00033465213748394264,
+          "delta": -3.577761966749903e-05
+        },
+        "eos.premature_argmax": {
+          "parent": 0.0,
+          "candidate": 0.0,
+          "delta": 0.0
+        },
+        "core.micro_ce": {
+          "parent": 9.26817004866327,
+          "candidate": 9.444680479868266,
+          "delta": 0.17651043120499565
+        },
+        "core.macro_ce": {
+          "parent": 9.272429664183695,
+          "candidate": 9.429381476153857,
+          "delta": 0.15695181197016161
+        },
+        "core.top1": {
+          "parent": 0.007213706041478809,
+          "candidate": 0.007439134355275023,
+          "delta": 0.00022542831379621358
+        },
+        "core.top5": {
+          "parent": 0.03764652840396754,
+          "candidate": 0.029531109107303877,
+          "delta": -0.008115419296663661
+        },
+        "core.top10": {
+          "parent": 0.047114517583408476,
+          "candidate": 0.0405770964833183,
+          "delta": -0.006537421100090174
+        },
+        "supported_tail.micro_ce": {
+          "parent": 9.768016546457538,
+          "candidate": 9.931048678790088,
+          "delta": 0.16303213233254965
+        },
+        "supported_tail.macro_ce": {
+          "parent": 9.995920474220641,
+          "candidate": 10.173922179699858,
+          "delta": 0.17800170547921645
+        },
+        "supported_tail.top1": {
+          "parent": 0.0058900523560209425,
+          "candidate": 0.006544502617801047,
+          "delta": 0.0006544502617801045
+        },
+        "supported_tail.top5": {
+          "parent": 0.015052356020942409,
+          "candidate": 0.014397905759162303,
+          "delta": -0.0006544502617801054
+        },
+        "supported_tail.top10": {
+          "parent": 0.034031413612565446,
+          "candidate": 0.032722513089005235,
+          "delta": -0.0013089005235602108
+        },
+        "normal.mean_ce": {
+          "parent": 4.285903990268707,
+          "candidate": 4.31979159116745,
+          "delta": 0.03388760089874232
+        },
+        "normal.terminal_probability": {
+          "parent": 0.0028547792782774193,
+          "candidate": 0.003171126640518196,
+          "delta": 0.0003163473622407767
+        },
+        "normal.math.ce": {
+          "parent": 4.476404666900635,
+          "candidate": 4.626971125602722,
+          "delta": 0.1505664587020874
+        },
+        "normal.code.ce": {
+          "parent": 2.3245564103126526,
+          "candidate": 2.4135366082191467,
+          "delta": 0.08898019790649414
+        },
+        "normal.lists.ce": {
+          "parent": 4.438135266304016,
+          "candidate": 4.494446277618408,
+          "delta": 0.05631101131439209
+        },
+        "normal.definitions.ce": {
+          "parent": 4.903336405754089,
+          "candidate": 4.876082420349121,
+          "delta": -0.02725398540496826
+        },
+        "normal.terminology.ce": {
+          "parent": 5.2870872020721436,
+          "candidate": 5.187921524047852,
+          "delta": -0.09916567802429199
+        },
+        "context.long_benefit": {
+          "parent": 0.09175778948489732,
+          "candidate": 0.09385121971483112,
+          "delta": 0.0020934302299338015
+        }
+      },
+      "bootstrap": {
+        "core": {
+          "mean": 0.17651043120499557,
+          "lower": 0.13066227658526477,
+          "upper": 0.22267614135722386
+        },
+        "supported_tail": {
+          "mean": 0.16303213233254968,
+          "lower": 0.13736681833666078,
+          "upper": 0.18911920290007025
+        }
+      },
+      "generation": {
+        "parent": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.01,
+              "naturalness_rate": 0.01,
+              "semantic_rate": 0.01,
+              "topic_retention_rate": 0.4519958801929289,
+              "japanese_validity_rate": 0.91,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.0004052565440194944,
+              "repetition_1": 0.925625,
+              "repetition_2": 0.9028346456692914,
+              "repetition_3": 0.8839682539682541,
+              "repetition_4": 0.86536,
+              "unique_token_ratio": 0.074375,
+              "loop_onset": 24.35,
+              "loop_cycle_length": 5.54
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9966666666666667,
+            "completion_rate": 0.05333333333333334,
+            "naturalness_rate": 0.59,
+            "semantic_rate": 0.49666666666666665,
+            "topic_retention_rate": 0.18940864353763764,
+            "japanese_validity_rate": 0.7466666666666667,
+            "eos_completion_rate": 0.0033333333333333335,
+            "mean_eos_probability": 0.0005339128448211775,
+            "repetition_1": 0.39114583333333336,
+            "repetition_2": 0.17497354497354498,
+            "repetition_3": 0.08962365591397847,
+            "repetition_4": 0.04278688524590165,
+            "unique_token_ratio": 0.6088541666666667,
+            "loop_onset": 34.77333333333333,
+            "loop_cycle_length": 1.38
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 1.0,
+            "51000": 0.99,
+            "52000": 1.0
+          }
+        },
+        "candidate": {
+          "greedy": {
+            "schema_version": "generation-eval-v2",
+            "examples": 100,
+            "metrics": {
+              "runaway_rate": 1.0,
+              "completion_rate": 0.0,
+              "naturalness_rate": 0.0,
+              "semantic_rate": 0.0,
+              "topic_retention_rate": 0.47416088639967086,
+              "japanese_validity_rate": 0.9,
+              "eos_completion_rate": 0.0,
+              "mean_eos_probability": 0.00038583069230514023,
+              "repetition_1": 0.92328125,
+              "repetition_2": 0.897244094488189,
+              "repetition_3": 0.8757142857142857,
+              "repetition_4": 0.85536,
+              "unique_token_ratio": 0.07671875,
+              "loop_onset": 22.47,
+              "loop_cycle_length": 7.02
+            }
+          },
+          "sampling_mean": {
+            "runaway_rate": 0.9966666666666667,
+            "completion_rate": 0.04666666666666667,
+            "naturalness_rate": 0.7133333333333333,
+            "semantic_rate": 0.6233333333333334,
+            "topic_retention_rate": 0.19208298581452588,
+            "japanese_validity_rate": 0.8066666666666666,
+            "eos_completion_rate": 0.0033333333333333335,
+            "mean_eos_probability": 0.00040516173462551555,
+            "repetition_1": 0.3634027777777778,
+            "repetition_2": 0.12987121892782272,
+            "repetition_3": 0.05231182795698924,
+            "repetition_4": 0.021967213114754105,
+            "unique_token_ratio": 0.6365972222222221,
+            "loop_onset": 35.78333333333333,
+            "loop_cycle_length": 1.2066666666666668
+          },
+          "sampling_runaway_by_rng": {
+            "44000": 1.0,
+            "51000": 1.0,
+            "52000": 0.99
+          }
+        }
+      },
+      "checks": {
+        "validation.ce": {
+          "value": -0.006616714210781,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top1": {
+          "value": -0.00110750036952386,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top5": {
+          "value": -0.000799028313022,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "validation.top10": {
+          "value": -0.0016259047978115,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.128.ce": {
+          "value": -0.013118254855939,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.512.ce": {
+          "value": -0.015211685085873,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "context.long_benefit": {
+          "value": -0.0020934302299338,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.terminal_probability": {
+          "value": 0.8851224543559586,
+          "threshold": 0.9,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "eos.terminal_top1": {
+          "value": 0.0,
+          "threshold": 0.02,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.nonterminal_probability": {
+          "value": -3.577761966749903e-05,
+          "threshold": 0.001,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "eos.premature_argmax": {
+          "value": 0.0,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.micro_ce": {
+          "value": 0.176510431204996,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "core.macro_ce": {
+          "value": 0.156951811970162,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "core.top1": {
+          "value": -0.000225428313796214,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top5": {
+          "value": 0.008115419296663663,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.top10": {
+          "value": 0.006537421100090176,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "core.paired_ce_ci95_upper": {
+          "value": 0.22267614135722386,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "supported_tail.micro_ce": {
+          "value": 0.16303213233255,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.macro_ce": {
+          "value": 0.178001705479217,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top1": {
+          "value": -0.0006544502617801045,
+          "threshold": 0.005,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top5": {
+          "value": 0.000654450261780106,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.top10": {
+          "value": 0.001308900523560211,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "supported_tail.paired_ce_ci95_upper": {
+          "value": 0.18911920290007025,
+          "threshold": 0.25,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.mean_ce": {
+          "value": 0.033887600898743,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.terminal_probability": {
+          "value": 1.110813247331563,
+          "threshold": 0.9,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.math.ce": {
+          "value": 0.150566458702087,
+          "threshold": 0.1,
+          "pass": false,
+          "signature": "FAIL"
+        },
+        "normal.code.ce": {
+          "value": 0.0889801979064941,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.lists.ce": {
+          "value": 0.056311011314392,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.definitions.ce": {
+          "value": -0.027253985404968,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "normal.terminology.ce": {
+          "value": -0.0991656780242916,
+          "threshold": 0.1,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.naturalness_rate": {
+          "value": -0.12333333333333334,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.semantic_rate": {
+          "value": -0.12666666666666668,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.topic_retention_rate": {
+          "value": -0.0026743422768882668,
+          "threshold": 0.05,
+          "pass": true,
+          "signature": "PASS"
+        },
+        "sampling.japanese_validity_rate": {
+          "value": -0.06,
+          "threshold": 0.01,
+          "pass": true,
+          "signature": "PASS"
+        }
+      },
+      "failed_checks": [
+        "eos.terminal_probability",
+        "core.micro_ce",
+        "core.macro_ce",
+        "core.paired_ce_ci95_upper",
+        "normal.math.ce"
+      ],
+      "historical_status": "CONTROL_STABILITY_MIXED",
+      "seed42_comparisons": null
+    }
+  },
+  "thresholds": {
+    "validation_ce_increase_max": 0.05,
+    "validation_top1_drop_absolute_max": 0.01,
+    "validation_top5_top10_drop_absolute_max": 0.02,
+    "context_ce_increase_each_128_512_max": 0.05,
+    "context_long_benefit_loss_max": 0.02,
+    "terminal_mean_eos_probability_ratio_min": 0.9,
+    "terminal_eos_top1_drop_absolute_max": 0.02,
+    "nonterminal_eos_probability_increase_max": 0.001,
+    "premature_argmax_eos_increase_max": 0.01,
+    "core_micro_macro_ce_increase_max": 0.1,
+    "supported_tail_micro_macro_ce_increase_max": 0.25,
+    "frequency_ce_paired_ci95_upper_max": {
+      "core": 0.1,
+      "supported_tail": 0.25
+    },
+    "frequency_top1_drop_absolute_max": 0.005,
+    "frequency_top5_top10_drop_absolute_max": 0.01,
+    "normal_mean_ce_increase_max": 0.05,
+    "normal_each_family_ce_increase_max": 0.1,
+    "normal_terminal_eos_probability_ratio_min": 0.9,
+    "sampling_naturalness_semantic_proxy_drop_max": 0.05,
+    "sampling_topic_retention_drop_max": 0.05,
+    "japanese_validity_drop_max": 0.01,
+    "missing_metric": "FAIL_CLOSED; no averaging away a failed safeguard; zero denominator or undefined ratio requires review, not PASS"
+  },
+  "schema_sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b",
+  "borderline_definition": "Exact equality to the existing inclusive threshold; counts as pass. No new tolerance."
+}

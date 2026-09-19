@@ -1,0 +1,131 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "seeds": {
+    "42": {
+      "raw_norm": {
+        "count": 122,
+        "mean": 4.028543827963657,
+        "median": 3.9593350887298584,
+        "p75": 4.278818964958191,
+        "p90": 4.658792114257813,
+        "p95": 4.944961690902709,
+        "max": 5.398578643798828
+      },
+      "clip_rate": 1.0,
+      "clip_scale": {
+        "count": 122,
+        "mean": 0.25129068519167364,
+        "median": 0.2525679793984465,
+        "p75": 0.27146262465954585,
+        "p90": 0.28134306839628537,
+        "p95": 0.28646868417782845,
+        "max": 0.3253855944669123
+      },
+      "clipped_norm": {
+        "count": 122,
+        "mean": 0.9999997487093147,
+        "median": 0.9999997474320206,
+        "p75": 0.9999997662873802,
+        "p90": 0.9999997853512894,
+        "p95": 0.999999797771669,
+        "max": 0.999999814766093
+      },
+      "loss": {
+        "count": 122,
+        "mean": 4.521952224559471,
+        "median": 4.5090651512146,
+        "p75": 4.7047343254089355,
+        "p90": 4.878082370758056,
+        "p95": 4.989567756652832,
+        "max": 5.431066989898682
+      },
+      "clipped_norm_provenance": "Derived from clip_grad_norm_(max_norm=1) scale min(1,1/(norm+1e-6)); post-clip norms not logged, not presented as measured."
+    },
+    "123": {
+      "raw_norm": {
+        "count": 122,
+        "mean": 4.068164843027709,
+        "median": 3.943644642829895,
+        "p75": 4.2971309423446655,
+        "p90": 4.5541184425354,
+        "p95": 4.82468090057373,
+        "max": 7.5777082443237305
+      },
+      "clip_rate": 1.0,
+      "clip_scale": {
+        "count": 122,
+        "mean": 0.24906218530617436,
+        "median": 0.253582877640002,
+        "p75": 0.267268894558504,
+        "p90": 0.27709944149864557,
+        "p95": 0.2823255277016294,
+        "max": 0.2928126437240313
+      },
+      "clipped_norm": {
+        "count": 122,
+        "mean": 0.9999997509378148,
+        "median": 0.9999997464171224,
+        "p75": 0.9999997672866425,
+        "p90": 0.9999997804185796,
+        "p95": 0.9999997927318554,
+        "max": 0.9999998680339971
+      },
+      "loss": {
+        "count": 122,
+        "mean": 4.581693530082703,
+        "median": 4.607664346694946,
+        "p75": 4.782737731933594,
+        "p90": 4.894932889938355,
+        "p95": 5.0616072654724125,
+        "max": 5.259631156921387
+      },
+      "clipped_norm_provenance": "Derived from clip_grad_norm_(max_norm=1) scale min(1,1/(norm+1e-6)); post-clip norms not logged, not presented as measured."
+    },
+    "2026": {
+      "raw_norm": {
+        "count": 122,
+        "mean": 4.1206503148938785,
+        "median": 3.9054099321365356,
+        "p75": 4.318369746208191,
+        "p90": 4.747050094604493,
+        "p95": 5.076166868209838,
+        "max": 14.61575698852539
+      },
+      "clip_rate": 1.0,
+      "clip_scale": {
+        "count": 122,
+        "mean": 0.24944180097321061,
+        "median": 0.2560550143604362,
+        "p75": 0.2685457854044333,
+        "p90": 0.2837237358662805,
+        "p95": 0.28783484034723067,
+        "max": 0.3069422795201339
+      },
+      "clipped_norm": {
+        "count": 122,
+        "mean": 0.9999997505581989,
+        "median": 0.9999997439449856,
+        "p75": 0.9999997684264423,
+        "p90": 0.9999997893348284,
+        "p95": 0.9999998029961992,
+        "max": 0.9999999315806953
+      },
+      "loss": {
+        "count": 122,
+        "mean": 4.549612203582388,
+        "median": 4.548569202423096,
+        "p75": 4.725600004196167,
+        "p90": 4.942996692657471,
+        "p95": 5.00444266796112,
+        "max": 5.245487213134766
+      },
+      "clipped_norm_provenance": "Derived from clip_grad_norm_(max_norm=1) scale min(1,1/(norm+1e-6)); post-clip norms not logged, not presented as measured."
+    }
+  },
+  "signature": "CLIPPING_SATURATION_SIGNATURE",
+  "causal_claim": false,
+  "effective_update_norms_reference": "optimizer-state-audit.json",
+  "limitations": "Clipped gradients precede AdamW preconditioning; clipping rate alone does not identify the cause or parameter update magnitude."
+}
