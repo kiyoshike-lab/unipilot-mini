@@ -1,0 +1,727 @@
+{
+  "phase": 61,
+  "new_training": false,
+  "diagnostic_only": true,
+  "schema_version": "phase61-continuation-stability-preregistration-v1",
+  "registered_in_phase": 60,
+  "status": "REGISTERED_REQUIRES_NEW_USER_TRAINING_AUTHORIZATION",
+  "training_authorized": false,
+  "training_executed": false,
+  "purpose": "Test short continuation safety at half the approved LR; not anti-loop efficacy or PHASE55 LR reselection.",
+  "audit_gate": "MIXED_CONTINUATION_INSTABILITY",
+  "audit_summary_sha256": "0625c5b21d57509ba96bd94c413506d8f807a7e60367b40136aed539df442514",
+  "intervention": "HALF_CONTINUATION_LR",
+  "mechanistic_rule": "Exactly approved5e-5 / 2 = 2.5e-5; a single predefined proportional displacement reduction. No LR sweep or outcome-dependent tuning.",
+  "rationale": "Similar endpoint update norms and pervasive clipping coexist with broad low-exposure forgetting and normal-family loss. Halving optimizer LR directly scales the adaptive and decoupled-decay step at a fixed moment/gradient state. This is a cautious testable displacement hypothesis, not proof that LR caused forgetting or that a nonlinear 122-step trajectory will halve.",
+  "alternatives_not_selected": {
+    "clipping": "100% clipping is descriptive; it does not establish a suitable new clip threshold with AdamW moments. Keep clip1.0.",
+    "moment_reset": "No strong gross moment-scale divergence and no evidence supporting reset. Preserve all moments.",
+    "data_balancing": "Exposure association is consistent but parent/permutation are confounded; no evaluation-token oversampling or outcome-selected sampling."
+  },
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "seed_budget_tradeoff": "All three are needed to cover seed42/2026 Core failures and seed123 normal-family failures. Six bounded fresh runs; no extra seeds.",
+  "arms": [
+    {
+      "id": "control",
+      "lr": 5e-05
+    },
+    {
+      "id": "half-lr",
+      "lr": 2.5e-05
+    }
+  ],
+  "run_order": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "cooldown_before": true
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "cooldown_before": true
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "cooldown_before": true
+    },
+    {
+      "seed": 123,
+      "arm": "half-lr",
+      "cooldown_before": true
+    },
+    {
+      "seed": 2026,
+      "arm": "control",
+      "cooldown_before": true
+    },
+    {
+      "seed": 2026,
+      "arm": "half-lr",
+      "cooldown_before": true
+    }
+  ],
+  "parents": [
+    {
+      "seed": 42,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 123,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "parent",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "tokens": 16384000,
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      }
+    }
+  ],
+  "parent_mutation_operations": {
+    "copy": 0,
+    "move": 0,
+    "delete": 0,
+    "overwrite": 0,
+    "rename": 0
+  },
+  "objective": {
+    "standard_LM": true,
+    "EOS_weight": 1.5,
+    "anti_loop": false,
+    "unlikelihood": false,
+    "phase42_auxiliary": false
+  },
+  "optimizer": {
+    "kind": "AdamW",
+    "strict_reload": true,
+    "reset_moments": false,
+    "clip_norm": 1.0,
+    "allowed_group_change": "Only lr=arm.lr after strict reload; all moments, step counters and other group fields byte-equivalent before first update.",
+    "before_first_step_assertions": [
+      "model equality",
+      "moments equality",
+      "non-LR groups equality",
+      "parent RNG restored exactly",
+      "full permutation unchanged",
+      "exact next122 hash"
+    ]
+  },
+  "scheduler": {
+    "start_global_step": 32000,
+    "end_global_step": 32122,
+    "warmup_restart": false,
+    "legacy_metadata": "Preserve parent scheduler fields except global_step. Its learning_rate/peak_learning_rate=1e-4 are historical metadata, not runtime authority.",
+    "runtime_lr_authority": "optimizer.param_groups[*].lr = registered arm.lr; assert every update; no scheduler.step.",
+    "output_metadata": "Include a separate phase61_runtime_lr_contract containing arm.lr, constant schedule, and preserved historical metadata warning."
+  },
+  "sampler": {
+    "rule": "Each fresh arm consumes its own parent.permutation[32000:32122] in order; macro_batch512 one row. No redraw/shuffle.",
+    "expected_next122_sha256": {
+      "42": "58551fa0110f3221caa72cd1382ce6e5ca05a0757bd88776071b5efeddb426f8",
+      "123": "685d76f443d25bd4d271e1550a174e0b6380ad5b8d47020607e12947eb3440c9",
+      "2026": "8e6cd015ea3e49605306d2be18a67e6c95b1126bcfdf82eb4e25bdda4efc136c"
+    }
+  },
+  "budget": {
+    "updates_per_run": 122,
+    "LM_gradient_tokens_per_run": 62464,
+    "matching_slots_per_run": 15,
+    "matching_charged_positions_per_run": 1440,
+    "conservative_positions_per_run": 63904,
+    "end_processed_tokens": 16446464,
+    "total_runs": 6,
+    "maximum_optimizer_updates": 732,
+    "total_LM_gradient_tokens": 374784,
+    "total_conservative_positions": 383424,
+    "extension": false,
+    "retry_after_started_training": false
+  },
+  "data": {
+    "path": "data/foundation_v11/packed/vocab-4096/train.bin",
+    "sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a"
+  },
+  "matching_no_grad_forward": {
+    "required": true,
+    "purpose": "Preserve PHASE57 Control exposure/order despite no observed RNG/state change; additional runtime only, no aux gradients",
+    "cache_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase57\\cache-raw.json",
+    "cache_sha256": "4978d51cb66326bccee71a966d6337555387ce74f5ac2d4415506076a69416dc",
+    "cadence": "absolute_update %8 ==0",
+    "episode_cursor": "(absolute_update//8-1)%128; exact indices32..46",
+    "inputs": "episode.prefix + episode.generated[:31]; actual length <=95, charge96 positions",
+    "mode": "eval(), torch.no_grad(), restore train(); assert no RNG or model-buffer change around matching forward",
+    "no_regeneration_no_new_negatives": true,
+    "state_assertions": [
+      "Python/NumPy/Torch CPU/all CUDA RNG",
+      "all model buffers and weights",
+      "optimizer",
+      "scheduler"
+    ],
+    "exact_indices": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "optimizer_gradients": "None from matching forward"
+  },
+  "hardware": {
+    "device": "CUDA",
+    "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+    "dtype": "float32",
+    "AMP": false,
+    "TF32": false,
+    "CPU_training_fallback": false,
+    "parallel_CPU_evaluation": false,
+    "parallel_build_browser_pytest": false,
+    "cooldown_target_c": 60,
+    "pause_c": 80,
+    "abort_c": 85,
+    "hardware_thermal_slowdown": "ABORT",
+    "telemetry_failure": "ABORT",
+    "settings_modification": false
+  },
+  "stop_conditions": [
+    "Any hash, state, RNG, geometry, nonfinite, telemetry or storage failure: abort; no retry or added budget.",
+    "Raw gradient norm >10 for three consecutive updates or >100 once: abort; clip1.0 unchanged.",
+    "Temperature >=80C pause, resume <=65C, pre-run target <=60C; >=85C or hardware thermal slowdown abort.",
+    "No CPU training fallback or concurrent GPU job/full pytest/build/browser QA.",
+    "No optimizer step until this registration is SHA-frozen and separately explicitly authorized; all 6 live CUDA contract dry runs must pass before training.",
+    "No existing/partial output collisions; atomic exclusive checkpoint save, SHA and full strict model/optimizer/scheduler/sampler/RNG reload.",
+    "Require 2x next checkpoint size plus2GiB reserve (and existing storage policy minimum), checked every update."
+  ],
+  "evaluation": {
+    "schema": "generation-eval-v2",
+    "schema_sha256": "6576428940779e2908a8aacc67c4fb6bd2ca8bdc945e6202b88d5116ec701c6b",
+    "quality_schema": "quality-safety-v2",
+    "sets": {
+      "generation": {
+        "path": "evaluation/phase51/preregistration.json",
+        "sha256": "e94c0205935d8ba3ad31ff1c76c1ca1f1d0b832a3389713c1905f5cb55139bb5"
+      },
+      "generation_contract": "All100 frozen legacy prompts; greedy128 tokens; sampling temperature0.7 max64, no topk/topp/rep controls, RNG bases44000/51000/52000 plus prompt index. Same loop_details and budget-exhaustion runaway definition. Parent+control+A paired. No repeat PHASE55 Confirmatory.",
+      "validation": {
+        "path": "data/foundation_v11/packed/vocab-4096/validation.bin",
+        "sha256": "b97ec15bbad08f0540017acf31de9ffb3ff13e3ac4d0b977555f17fa02f5a935"
+      },
+      "lm_contract": "All validation next-token positions1..N-1, nonoverlapping512-input blocks (short final block included), no dropped targets; token-weighted CE and Top1/5/10. Same parent/control/A geometry.",
+      "frequency_population": {
+        "path": "evaluation/foundation-v39-supported-tail.json",
+        "sha256": "7d4a890faf0b4d366ad147eb01fc7c2f4cfb7a4e610b305f616471e720cd2c85"
+      },
+      "frequency_contract": "Unchanged Core and disjoint Supported Tail membership/positions, same packed512 block geometry as evaluate_foundation_v39_gate; micro CE and macro-per-token CE, Top1/5/10 and paired document bootstrap10000 seed5701. Do not redefine old gates.",
+      "eos_contract": "PHASE51 frozen terminal and nonterminal positions, context128; P(EOS), rank, Top1/5/10, nonterminal argmax EOS rate. No terminal probability alone establishes useful generation.",
+      "context_contract": "Same PHASE56 selected24 Diagnostic IDs, consumed diagnostic only, never gradients. Entire each document, contexts128 and512 using existing document_metrics in confirm_foundation_v44.py; equal-document mean CE; relative long-context benefit compared with each comparator.",
+      "normal_controls": {
+        "path": "evaluation/phase55/normal-controls-preregistration.json",
+        "sha256": "003bcb811c2c1f2766b60ed1dcd8476f9b133617e905de5e2a69cbf90051b876"
+      },
+      "normal_contract": "All20 PHASE54-family/PHASE55-concretized controls; exact normal_truth from frozen PHASE56 runner, EOS appended, teacher-forced CE with identical prefix. Compare mean and each family CE plus terminal EOS. Also report output shape accuracy descriptively; PHASE55 floor0/60 forbids declaring non-degradation solely from accuracy."
+    },
+    "context_reference": {
+      "path": "evaluation/phase56/observability-preregistration.json",
+      "sha256": "6ead2d2d1a6385e43752b6b2a980a37c23531c8629cba555293d928a289199e9",
+      "selection": "identical24 consumed Diagnostic IDs, never gradient data"
+    },
+    "generation": "100 PHASE51 prompts. Greedy128. Sampling temp0.7/max64, RNG44000/51000/52000+index. Explicit legacy-v1 conversion. Safeguards read equal-size sampling means only, never greedy fallback.",
+    "bootstrap": "10000 paired document draws, seed5701, fixed sorted512-block population geometry, per seed comparator.",
+    "all_thresholds": {
+      "validation_ce_increase_max": 0.05,
+      "validation_top1_drop_absolute_max": 0.01,
+      "validation_top5_top10_drop_absolute_max": 0.02,
+      "context_ce_increase_each_128_512_max": 0.05,
+      "context_long_benefit_loss_max": 0.02,
+      "terminal_mean_eos_probability_ratio_min": 0.9,
+      "terminal_eos_top1_drop_absolute_max": 0.02,
+      "nonterminal_eos_probability_increase_max": 0.001,
+      "premature_argmax_eos_increase_max": 0.01,
+      "core_micro_macro_ce_increase_max": 0.1,
+      "supported_tail_micro_macro_ce_increase_max": 0.25,
+      "frequency_ce_paired_ci95_upper_max": {
+        "core": 0.1,
+        "supported_tail": 0.25
+      },
+      "frequency_top1_drop_absolute_max": 0.005,
+      "frequency_top5_top10_drop_absolute_max": 0.01,
+      "normal_mean_ce_increase_max": 0.05,
+      "normal_each_family_ce_increase_max": 0.1,
+      "normal_terminal_eos_probability_ratio_min": 0.9,
+      "sampling_naturalness_semantic_proxy_drop_max": 0.05,
+      "sampling_topic_retention_drop_max": 0.05,
+      "japanese_validity_drop_max": 0.01,
+      "missing_metric": "FAIL_CLOSED; no averaging away a failed safeguard; zero denominator or undefined ratio requires review, not PASS"
+    },
+    "all_34_mappings": [
+      {
+        "id": "validation.ce",
+        "producer_field": "validation.ce",
+        "consumer_field": "validation.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "validation_ce_increase_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "validation.top1",
+        "producer_field": "validation.top1",
+        "consumer_field": "validation.top1",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "validation_top1_drop_absolute_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "validation.top5",
+        "producer_field": "validation.top5",
+        "consumer_field": "validation.top5",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "validation_top5_top10_drop_absolute_max",
+        "threshold": 0.02,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "validation.top10",
+        "producer_field": "validation.top10",
+        "consumer_field": "validation.top10",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "validation_top5_top10_drop_absolute_max",
+        "threshold": 0.02,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "context.128.ce",
+        "producer_field": "context.128.mean_ce",
+        "consumer_field": "context.128.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "context_ce_increase_each_128_512_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "context.512.ce",
+        "producer_field": "context.512.mean_ce",
+        "consumer_field": "context.512.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "context_ce_increase_each_128_512_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "context.long_benefit",
+        "producer_field": "context.128.ce - context.512.ce",
+        "consumer_field": "context.long_benefit",
+        "unit": "CE_difference_nats",
+        "comparison": "drop",
+        "threshold_key": "context_long_benefit_loss_max",
+        "threshold": 0.02,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "eos.terminal_probability",
+        "producer_field": "eos.terminal_mean_probability",
+        "consumer_field": "eos.terminal_probability",
+        "unit": "probability",
+        "comparison": "ratio_min",
+        "threshold_key": "terminal_mean_eos_probability_ratio_min",
+        "threshold": 0.9,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "eos.terminal_top1",
+        "producer_field": "eos.terminal_top1",
+        "consumer_field": "eos.terminal_top1",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "terminal_eos_top1_drop_absolute_max",
+        "threshold": 0.02,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "eos.nonterminal_probability",
+        "producer_field": "eos.nonterminal_mean_probability",
+        "consumer_field": "eos.nonterminal_probability",
+        "unit": "probability",
+        "comparison": "increase",
+        "threshold_key": "nonterminal_eos_probability_increase_max",
+        "threshold": 0.001,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "eos.premature_argmax",
+        "producer_field": "eos.premature_argmax_eos",
+        "consumer_field": "eos.premature_argmax",
+        "unit": "ratio_0_1",
+        "comparison": "increase",
+        "threshold_key": "premature_argmax_eos_increase_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.micro_ce",
+        "producer_field": "core.metrics.micro_ce",
+        "consumer_field": "core.micro_ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "core_micro_macro_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.macro_ce",
+        "producer_field": "core.metrics.macro_per_token_ce",
+        "consumer_field": "core.macro_ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "core_micro_macro_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.top1",
+        "producer_field": "core.metrics.top1",
+        "consumer_field": "core.top1",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top1_drop_absolute_max",
+        "threshold": 0.005,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.top5",
+        "producer_field": "core.metrics.top5",
+        "consumer_field": "core.top5",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top5_top10_drop_absolute_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.top10",
+        "producer_field": "core.metrics.top10",
+        "consumer_field": "core.top10",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top5_top10_drop_absolute_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "core.paired_ce_ci95_upper",
+        "producer_field": "paired_document_bootstrap_10000_seed5701.core.upper",
+        "consumer_field": "core.paired_ce_ci95_upper",
+        "unit": "CE_difference_nats",
+        "comparison": "upper",
+        "threshold_key": "frequency_ce_paired_ci95_upper_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.micro_ce",
+        "producer_field": "supported_tail.metrics.micro_ce",
+        "consumer_field": "supported_tail.micro_ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "supported_tail_micro_macro_ce_increase_max",
+        "threshold": 0.25,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.macro_ce",
+        "producer_field": "supported_tail.metrics.macro_per_token_ce",
+        "consumer_field": "supported_tail.macro_ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "supported_tail_micro_macro_ce_increase_max",
+        "threshold": 0.25,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.top1",
+        "producer_field": "supported_tail.metrics.top1",
+        "consumer_field": "supported_tail.top1",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top1_drop_absolute_max",
+        "threshold": 0.005,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.top5",
+        "producer_field": "supported_tail.metrics.top5",
+        "consumer_field": "supported_tail.top5",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top5_top10_drop_absolute_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.top10",
+        "producer_field": "supported_tail.metrics.top10",
+        "consumer_field": "supported_tail.top10",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "frequency_top5_top10_drop_absolute_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "supported_tail.paired_ce_ci95_upper",
+        "producer_field": "paired_document_bootstrap_10000_seed5701.supported_tail.upper",
+        "consumer_field": "supported_tail.paired_ce_ci95_upper",
+        "unit": "CE_difference_nats",
+        "comparison": "upper",
+        "threshold_key": "frequency_ce_paired_ci95_upper_max",
+        "threshold": 0.25,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.mean_ce",
+        "producer_field": "normal_controls.mean_ce",
+        "consumer_field": "normal.mean_ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_mean_ce_increase_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.terminal_probability",
+        "producer_field": "normal_controls.terminal_eos_probability",
+        "consumer_field": "normal.terminal_probability",
+        "unit": "probability",
+        "comparison": "ratio_min",
+        "threshold_key": "normal_terminal_eos_probability_ratio_min",
+        "threshold": 0.9,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.math.ce",
+        "producer_field": "normal_controls.family_ce.math",
+        "consumer_field": "normal.math.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_each_family_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.code.ce",
+        "producer_field": "normal_controls.family_ce.code",
+        "consumer_field": "normal.code.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_each_family_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.lists.ce",
+        "producer_field": "normal_controls.family_ce.lists",
+        "consumer_field": "normal.lists.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_each_family_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.definitions.ce",
+        "producer_field": "normal_controls.family_ce.definitions",
+        "consumer_field": "normal.definitions.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_each_family_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "normal.terminology.ce",
+        "producer_field": "normal_controls.family_ce.terminology",
+        "consumer_field": "normal.terminology.ce",
+        "unit": "CE_nats",
+        "comparison": "increase",
+        "threshold_key": "normal_each_family_ce_increase_max",
+        "threshold": 0.1,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "sampling.naturalness_rate",
+        "producer_field": "sampling[*].metrics.naturalness_rate (equal 100-prompt RNG mean)",
+        "consumer_field": "sampling.naturalness_rate",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "sampling_naturalness_semantic_proxy_drop_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "sampling.semantic_rate",
+        "producer_field": "sampling[*].metrics.semantic_rate (equal 100-prompt RNG mean)",
+        "consumer_field": "sampling.semantic_rate",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "sampling_naturalness_semantic_proxy_drop_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "sampling.topic_retention_rate",
+        "producer_field": "sampling[*].metrics.topic_retention_rate (equal 100-prompt RNG mean)",
+        "consumer_field": "sampling.topic_retention_rate",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "sampling_topic_retention_drop_max",
+        "threshold": 0.05,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      },
+      {
+        "id": "sampling.japanese_validity_rate",
+        "producer_field": "sampling[*].metrics.japanese_validity_rate (equal 100-prompt RNG mean)",
+        "consumer_field": "sampling.japanese_validity_rate",
+        "unit": "ratio_0_1",
+        "comparison": "drop",
+        "threshold_key": "japanese_validity_drop_max",
+        "threshold": 0.01,
+        "missing_behavior": "EVALUATOR_CONTRACT_FAIL"
+      }
+    ],
+    "comparators": "Control vs own parent; half-lr vs own parent AND same-seed fresh control. Never average failed seeds away.",
+    "historical_controls": "PHASE57/59 control results are background only; fresh matched controls are required. PHASE57 remains INVALID.",
+    "primary": "All34 checks for half-lr against both comparators must pass in every seed, including Core micro/macro<=+0.1 and all normal safeguards."
+  },
+  "decision_rules": {
+    "EXPERIMENT_INVALID": "Any of six runs/evaluations incomplete, contract/hash/state/RNG/geometry/thermal failure, undefined ratio or nonfinite.",
+    "CONTINUATION_STABILIZATION_NOT_ESTABLISHED": "Valid complete study but any half-lr seed fails any registered safeguard against own parent or matched control.",
+    "BOTH_STABLE_NO_DIFFERENTIAL_EVIDENCE": "Half-lr passes all checks on all seeds and all fresh controls also pass all34 vs own parents.",
+    "CONTINUATION_STABILIZATION_SUPPORTED": "Half-lr passes all checks on all seeds and at least one fresh control fails safety vs its own parent."
+  },
+  "checkpoint_policy": {
+    "root_env": "UNIPILOT_CHECKPOINT_ROOT",
+    "root": "Z:\\AI\\unipilot-mini\\checkpoints",
+    "new_relative_root": "experimental/phase61/continuation-stability/{arm}/seed-{seed}",
+    "markers": [
+      "EXPERIMENTAL",
+      "NOT_CANONICAL",
+      "NOT_PRODUCTION"
+    ],
+    "atomic_exclusive": true,
+    "canonical_promotion": false
+  },
+  "sealed_sets": {
+    "reserve2_sha256": "516da7fd5e8f27006387ce4ba9fe441c531fe10decef3707fe1f32346ccff517",
+    "reserve2": "SEALED_UNSCORED_HASH_ONLY",
+    "phase53_reserve": "RETIRED_UNSCORABLE_NOT_OPENED",
+    "final_blind_sha256": "fa7912d58ce251bb10b513f59793bb8ca6c0023b4fe08d1c040b8ccbfe49845b",
+    "final_blind": "SHA_ONLY"
+  },
+  "approved_lr_status": "FORMAL_LR_APPROVED_5E5",
+  "generation_policy": "UNSAFE",
+  "phase57": "EXPERIMENT_INVALID",
+  "phase59": "CONTROL_STABILITY_MIXED",
+  "production": false,
+  "20m": false,
+  "foundation_base": false,
+  "source_sha256": {
+    "evaluation/generation_contract_v47.py": "634f5b25b0dfd5244a7539e16e532f3fd89c9bb1b5c5ab2064e9ca3785e1ac96",
+    "evaluation/audit_foundation_v47.py": "0f64512b68c1be7017caa7fd1eb8e71212791addb9604806a8c1780ba890bbeb",
+    "evaluation/register_foundation_v47_control.py": "d24e2eaa10bd1a4cd24abb312f7617316695d72f0f949988e64e12f31d0f6632",
+    "tests/test_foundation_v47_contract.py": "d2fbb99dc4ed9df490a3148f9ffb2db7f37ad5c4fe0c0469d4c8cd186fa19b4f",
+    "tests/test_foundation_v47_audit.py": "a14d42a5a3e9e5cebd3a964ae4bd1c93feaecead39fce89cca893c3b4ea363c5",
+    "evaluation/diagnose_foundation_v29_generation.py": "738e50126c9ca0d5bb7f2dce854acdc6c2fee978589380d7820d75e853dd8a24",
+    "evaluation/diagnose_foundation_v40.py": "8785bc8b85c45e7b663c1f83a0c678eb07c6f920c6a3a997b01e15a167e11f5f",
+    "evaluation/evaluate_foundation_v39_gate.py": "6e26796855ea366cafb5fbbcf14ffa1b736fa648620bbd03ce76edae4955aba1",
+    "evaluation/confirm_foundation_v44.py": "a58caba4f772669bbd451745b35a7e87546ee2844254d233cded6045b831643d",
+    "evaluation/run_foundation_v45_observatory.py": "05c357a5956ceb1299eec8df93f4dd1512f9efba5d9fc472ddd4ec88131fb96a",
+    "training/foundation_v31_objective.py": "e15cc2dc463a56d486488c831149ddc60e2f1f04bef7af3ff486cfdfe5e0af32",
+    "training/run_foundation_v30_eos_experiment.py": "4045f05cac718e7fc0d0ee36e9881cd5f304e07b2d06d145e23b08b07ff3f115",
+    "training/train_foundation_v15_controlled.py": "0dbfff60abec002522aeed6b9f49835d51c53f5dd71e17ef7c075a4e4b1c6681",
+    "training/train_foundation_v21_ab.py": "b39434deef8fa424a05c70f8c6c199b86d4440e8b0768fc6d1e9e1a8b8a36b4c",
+    "training/run_foundation_v35_thermal_gate.py": "2668cf45311eabd05e5b683170a70c786bbd34b04cd0f97774d5a44e87acc4ad",
+    "training/checkpoint_paths.py": "d503b04ae1039cf850175b48b9282cec582b5ce02f442eecf5722790c7f4a9ed",
+    "foundation/diagnostic_transformer_v17.py": "31c4ffbb2d174d728fe0a7f6f33a5bc32fe2a959ae38ca86af47db39ba30efec",
+    "tokenizer/foundation-v11-base-4096.json": "741e450a3b976ea21ccaf452c65181da47f198822f50c2e2b6bfb059e93aa13c",
+    "evaluation/audit_foundation_v49.py": "01d554edc5421d2ca155323415bc9efaab6efd74f552958ab94642cf08d0af92",
+    "evaluation/register_foundation_v49.py": "ee7d527c393b614e6fc01bdf215c8b1b906dc608ac47315194b5f899d8c06791"
+  }
+}
