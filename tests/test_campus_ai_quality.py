@@ -50,22 +50,23 @@ def test_improver_rewrites_at_most_once_and_does_not_train():
     assert result["external_ai_api"] == "OFF"
 
 
-def test_quality_evaluation_artifacts_and_review_filter():
+def test_quality_evaluation_artifacts_and_review_filter(isolated_campus_evaluation_outputs):
+    outputs = isolated_campus_evaluation_outputs
     summary = evaluate()
     assert summary["human"] == {"good": 4, "close": 15, "bad": 1}
     assert summary["agreement"] >= .70
     assert sum(summary["ai_20"].values()) == 20
     assert sum(summary["ai_100"].values()) == 100
-    output_20 = json.loads(Path("evaluation/campus-ai-quality-20.json").read_text(encoding="utf-8"))
+    output_20 = json.loads(outputs["OUTPUT_20"].read_text(encoding="utf-8"))
     assert output_20["summary"]["ai_improved"] == {"good": 20, "close": 0, "bad": 0}
     assert output_20["summary"]["average_score"]["improved"] >= 90
-    queue = json.loads(Path("evaluation/campus-ai-review-queue.json").read_text(encoding="utf-8"))
+    queue = json.loads(outputs["REVIEW_QUEUE"].read_text(encoding="utf-8"))
     assert queue["review_required"] == len(queue["items"])
     for item in queue["items"]:
         assert item["review_reasons"]
         assert item["review_status"] == "pending"
-    close = json.loads(Path("evaluation/campus-v21-close-analysis.json").read_text(encoding="utf-8"))
-    critical = json.loads(Path("evaluation/campus-v21-critical-failure.json").read_text(encoding="utf-8"))
+    close = json.loads(outputs["CLOSE_ANALYSIS"].read_text(encoding="utf-8"))
+    critical = json.loads(outputs["CRITICAL_FAILURE"].read_text(encoding="utf-8"))
     assert close["human_close_count"] == 15
     assert critical["count"] == 1
 

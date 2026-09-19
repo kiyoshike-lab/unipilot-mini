@@ -1,0 +1,29 @@
+{
+  "scope": "targeted",
+  "command": [
+    "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+    "tests/test_foundation_v49_audit.py",
+    "tests/test_foundation_v47_contract.py",
+    "tests/test_foundation_v47_audit.py",
+    "tests/test_evaluation_output_isolation.py",
+    "tests/test_campus_ai_quality.py"
+  ],
+  "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "exit_code": 0,
+  "passed": 229,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "warnings": 3,
+  "summary": "229 passed, 3 warnings in 5.31s",
+  "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.log",
+  "log_sha256": "60fc75285224cb86e83921ad33022422dc9475226ba4d9d20ea9d22d7dc2e664",
+  "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+  "junit_sha256": "ebbe3e765d344810063a1c83d1f943c7842d49bab914d9e64720fe3e612f066f",
+  "repo_fixtures_unchanged": true,
+  "new_training": false
+}

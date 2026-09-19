@@ -1,0 +1,24 @@
+{
+  "scope": "full",
+  "command": [
+    "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml"
+  ],
+  "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "exit_code": 0,
+  "passed": 755,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 4,
+  "warnings": 4,
+  "summary": "755 passed, 4 skipped, 4 warnings in 95.53s (0:01:35)",
+  "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.log",
+  "log_sha256": "0678a64baa17a7b84bca4410b5ab3d59fd98fe178737f76ed6bd8dc088f165ef",
+  "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml",
+  "junit_sha256": "4726261433db82c39b29467d0239aa4ac06872b58a239facded75ac020a23003",
+  "repo_fixtures_unchanged": true,
+  "new_training": false
+}

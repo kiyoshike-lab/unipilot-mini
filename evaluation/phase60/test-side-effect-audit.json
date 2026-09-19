@@ -1,0 +1,99 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "mutating_test": "tests/test_campus_ai_quality.py::test_quality_evaluation_artifacts_and_review_filter",
+  "writer": "evaluation.evaluate_campus_ai_quality.evaluate writes OUTPUT_20/OUTPUT_100/CLOSE_ANALYSIS/CRITICAL_FAILURE/REVIEW_QUEUE/REPORT",
+  "isolation": "Autouse pytest monkeypatch redirects all six outputs to tmp_path; production module is unchanged.",
+  "repo_sha_guard": "Session fixture asserts all six repository artifacts unchanged; external QA wrapper checks all pre-existing dirty/frozen/protected files before and after each pytest invocation.",
+  "new_test_behaviors": [
+    "Full real evaluator writes temporary artifacts only",
+    "Interrupted evaluator after first write leaves repo untouched"
+  ],
+  "dirty5_initial": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-quality-100.json",
+      "sha256": "f4f4a46d73b031daf619571ef651ea60d25ab73c1bcf5533fe7873b5d83c43e3",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-quality-20.json",
+      "sha256": "edcf8f3f850cbc1b0c15755e089a015e18c4edfb7e43c3b4e64f7f31a436003e",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-ai-review-queue.json",
+      "sha256": "58cd791042a32e5425e3066be124b846a4c4e742c131a1da9b9569d732844bf1",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-close-analysis.json",
+      "sha256": "3ffbeca250bd1d6bb4c883fbc3504c3bcc3a0876e9361c46120482a47856ab3d",
+      "status": "USER_DIRTY_PRESERVED"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\campus-v21-critical-failure.json",
+      "sha256": "bb14c3880fe08879f773c88c0602bb14a94aec406221f3d2c0ca3463dfab4a08",
+      "status": "USER_DIRTY_PRESERVED"
+    }
+  ],
+  "dirty5_preserved": true,
+  "restored": false,
+  "stage": false,
+  "isolation_gate": "PASS",
+  "pytest": {
+    "targeted": {
+      "scope": "targeted",
+      "command": [
+        "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+        "tests/test_foundation_v49_audit.py",
+        "tests/test_foundation_v47_contract.py",
+        "tests/test_foundation_v47_audit.py",
+        "tests/test_evaluation_output_isolation.py",
+        "tests/test_campus_ai_quality.py"
+      ],
+      "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "exit_code": 0,
+      "passed": 229,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "warnings": 3,
+      "summary": "229 passed, 3 warnings in 5.31s",
+      "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.log",
+      "log_sha256": "60fc75285224cb86e83921ad33022422dc9475226ba4d9d20ea9d22d7dc2e664",
+      "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+      "junit_sha256": "ebbe3e765d344810063a1c83d1f943c7842d49bab914d9e64720fe3e612f066f",
+      "repo_fixtures_unchanged": true,
+      "new_training": false
+    },
+    "full": {
+      "scope": "full",
+      "command": [
+        "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml"
+      ],
+      "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "exit_code": 0,
+      "passed": 755,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 4,
+      "warnings": 4,
+      "summary": "755 passed, 4 skipped, 4 warnings in 95.53s (0:01:35)",
+      "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.log",
+      "log_sha256": "0678a64baa17a7b84bca4410b5ab3d59fd98fe178737f76ed6bd8dc088f165ef",
+      "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml",
+      "junit_sha256": "4726261433db82c39b29467d0239aa4ac06872b58a239facded75ac020a23003",
+      "repo_fixtures_unchanged": true,
+      "new_training": false
+    }
+  }
+}

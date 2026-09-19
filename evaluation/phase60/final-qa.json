@@ -1,0 +1,139 @@
+{
+  "phase": 60,
+  "new_training": false,
+  "diagnostic_only": true,
+  "pytest": {
+    "targeted": {
+      "scope": "targeted",
+      "command": [
+        "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+        "tests/test_foundation_v49_audit.py",
+        "tests/test_foundation_v47_contract.py",
+        "tests/test_foundation_v47_audit.py",
+        "tests/test_evaluation_output_isolation.py",
+        "tests/test_campus_ai_quality.py"
+      ],
+      "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "exit_code": 0,
+      "passed": 229,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "warnings": 3,
+      "summary": "229 passed, 3 warnings in 5.31s",
+      "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.log",
+      "log_sha256": "60fc75285224cb86e83921ad33022422dc9475226ba4d9d20ea9d22d7dc2e664",
+      "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+      "junit_sha256": "ebbe3e765d344810063a1c83d1f943c7842d49bab914d9e64720fe3e612f066f",
+      "repo_fixtures_unchanged": true,
+      "new_training": false
+    },
+    "full": {
+      "scope": "full",
+      "command": [
+        "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml"
+      ],
+      "python": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "exit_code": 0,
+      "passed": 755,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 4,
+      "warnings": 4,
+      "summary": "755 passed, 4 skipped, 4 warnings in 95.53s (0:01:35)",
+      "log_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.log",
+      "log_sha256": "0678a64baa17a7b84bca4410b5ab3d59fd98fe178737f76ed6bd8dc088f165ef",
+      "junit_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml",
+      "junit_sha256": "4726261433db82c39b29467d0239aa4ac06872b58a239facded75ac020a23003",
+      "repo_fixtures_unchanged": true,
+      "new_training": false
+    }
+  },
+  "protected4_preserved": true,
+  "READY5_preserved": true,
+  "existing_dirty_preserved": true,
+  "dirty_count_untracked_expanded": 179,
+  "dirty5_preserved": true,
+  "old_phases_immutable": true,
+  "all6_checkpoint_SHA_unchanged": true,
+  "new_inference": false,
+  "optimizer_steps": 0,
+  "main_unchanged": true,
+  "production_operations": 0,
+  "raw_inventory": [
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.log",
+      "sha256": "0678a64baa17a7b84bca4410b5ab3d59fd98fe178737f76ed6bd8dc088f165ef"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-full.xml",
+      "sha256": "4726261433db82c39b29467d0239aa4ac06872b58a239facded75ac020a23003"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.log",
+      "sha256": "60fc75285224cb86e83921ad33022422dc9475226ba4d9d20ea9d22d7dc2e664"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\pytest-targeted.xml",
+      "sha256": "ebbe3e765d344810063a1c83d1f943c7842d49bab914d9e64720fe3e612f066f"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-123-candidate-moment-parameters.json",
+      "sha256": "79004e238a24c41b3eb6abb431a8e4bb1af42d690ed73aede893d59fbe2523f3"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-123-data-and-core-tokens.json",
+      "sha256": "f5e27885220831407c7553786f543a7d3158d99741ae759252db80a33d7321c0"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-123-gradient-series.json",
+      "sha256": "cce889687c352ac8be8dcf0a403c535d555a87eb53a95f481f2828c2fafeb68e"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-123-parent-moment-parameters.json",
+      "sha256": "802ab4b0a61c7553358caba5a11f7702050f50f62e6fcd63f15d0385d6fca2f8"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-2026-candidate-moment-parameters.json",
+      "sha256": "11801d13fd4c6ca398a374d7e0e6e1aaa0a912eb3c3d91a09c9c3b1d00b20622"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-2026-data-and-core-tokens.json",
+      "sha256": "493ca2d7ab7de764b6628bdc33fb3b0fffd0179de0e8028edcabc30ee1a638e5"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-2026-gradient-series.json",
+      "sha256": "21bc87832f4ebc741d966c389f4449950a7b841b83e6287e42b5719b3ae179e4"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-2026-parent-moment-parameters.json",
+      "sha256": "38b9abce85deb9de7eb07cd9a11dc1bee0940c64c52eeaf78046bc189aa9e8e2"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-42-candidate-moment-parameters.json",
+      "sha256": "3df8e2bbe27126889e3a3f6d3a07c55e9f0450b6839c1eff47ae0d69ca890388"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-42-data-and-core-tokens.json",
+      "sha256": "dd49ebbf3e8b8ccae0149895050b77058f6770aca4a6167a1405e14642bd4cdd"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-42-gradient-series.json",
+      "sha256": "806abcdb579097358ffeaa0adbf8af23027c57d2b4005cfdc38980bee1ec814e"
+    },
+    {
+      "path": "Z:\\AI\\unipilot-mini\\evaluation\\phase60\\seed-42-parent-moment-parameters.json",
+      "sha256": "c850fa395f72a711a0ba188785329101d9ee1ac39ab9c6b1460b652497c2e9d5"
+    }
+  ],
+  "npm_build": "NOT_REQUIRED_NO_WEB_CODE_CHANGE",
+  "browser_QA": "NOT_REQUIRED_NO_WEB_CODE_CHANGE"
+}
