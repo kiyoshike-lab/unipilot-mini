@@ -1,0 +1,233 @@
+{
+  "phase": 62,
+  "new_training": false,
+  "optimizer_steps": 0,
+  "events": [
+    {
+      "timestamp": "2026-09-19T14:10:05.237Z",
+      "event_type": "item_completed",
+      "id": "exec-edc2cfea-96aa-4556-bbac-15b43aee164e",
+      "process_id": "6982",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' 'evaluation\\run_foundation_v50_phase61.py' preflight"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:10:25.992Z",
+      "event_type": "item_completed",
+      "id": "exec-52e3abfa-5a52-44a3-a267-d0ed1080d206",
+      "process_id": "56784",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' 'evaluation\\run_foundation_v50_phase61.py' dry-run"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:10:34.535Z",
+      "event_type": "item_completed",
+      "id": "exec-a2575d40-a9af-4602-b1b6-acb561fe54d1",
+      "process_id": "18891",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; git diff --check -- evaluation/run_foundation_v50_phase61.py tests/test_foundation_v50_phase61.py; git add -- evaluation/run_foundation_v50_phase61.py tests/test_foundation_v50_phase61.py; git diff --cached --name-only; git commit -m 'research: implement phase61 continuation stability runner'"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:10:48.230Z",
+      "event_type": "item_completed",
+      "id": "exec-07086d24-59f8-4321-b274-23369a7bbae0",
+      "process_id": "39089",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; python -m pytest tests/test_foundation_v50_phase61.py tests/test_foundation_v49_registration.py -q"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:11:41.573Z",
+      "event_type": "item_completed",
+      "id": "exec-4a1c4005-f16c-4bc5-b258-eff605612852",
+      "process_id": "87461",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; Get-ChildItem -LiteralPath 'evaluation\\phase61' -File | Select-Object Name,Length; Get-ChildItem -LiteralPath 'Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability' -Recurse -File -ErrorAction SilentlyContinue | Select-Object FullName,Length; Get-ChildItem -LiteralPath 'Z:\\AI\\unipilot-mini\\evaluation\\phase61' -File -ErrorAction SilentlyContinue | Select-Object Name,Length"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:11:50.817Z",
+      "event_type": "item_completed",
+      "id": "exec-a6273579-899a-42ef-9774-8e06a86f1a6b",
+      "process_id": "23184",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; Get-Content 'evaluation\\run_foundation_v50_phase61.py' | Select-Object -Last 25; & '.\\.venv-gpu\\Scripts\\python.exe' -c \"import evaluation.run_foundation_v50_phase61 as p; print(p.__file__); print(p.main); print(p.train)\""
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:11:56.759Z",
+      "event_type": "item_completed",
+      "id": "exec-70d54320-0bc7-4353-8acf-c4da707b89de",
+      "process_id": "24350",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; rg -n \"^def train|^def train_one|for seed|for arm\" evaluation\\run_foundation_v50_phase61.py; Get-Content 'evaluation\\run_foundation_v50_phase61.py' | Select-Object -Skip 194 -First 30"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:13:05.973Z",
+      "event_type": "item_completed",
+      "id": "exec-adb5c139-dbec-45bc-84f9-ee069b336bdb",
+      "process_id": "29999",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' -u -c \"import evaluation.run_foundation_v50_phase61 as p; print(p.SEEDS,p.ARMS); p.train_one(42,'control',5e-5)\""
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:13:37.247Z",
+      "event_type": "item_completed",
+      "id": "exec-57ab147a-4671-4ca6-a83e-8d82b7797dd7",
+      "process_id": "77066",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; $p='Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability'; Get-Process python,pythonw -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,StartTime,CPU,Path; Get-ChildItem -LiteralPath $p -Recurse -Force -ErrorAction SilentlyContinue | Select-Object FullName,Length,LastWriteTime; Get-ChildItem -LiteralPath 'Z:\\AI\\unipilot-mini\\evaluation\\phase61' -Recurse -Force -ErrorAction SilentlyContinue | Select-Object FullName,Length,LastWriteTime; Set-Location -LiteralPath $repo; git status --porcelain=v1 --untracked-files=all | Select-String 'phase61|run_foundation_v50|test_foundation_v50'"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:13:48.469Z",
+      "event_type": "item_completed",
+      "id": "exec-47f8c85f-ea31-4020-86b3-ffe433997f15",
+      "process_id": "48866",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; Write-Output 'before'; & '.\\.venv-gpu\\Scripts\\python.exe' -u -c \"import evaluation.run_foundation_v50_phase61 as p; print('inside'); print(p.target(42,'control')); p.train_one(42,'control',5e-5); print('done')\"; Write-Output ('after exit='+$LASTEXITCODE)"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:13:48.579Z",
+      "event_type": "item_completed",
+      "id": "exec-582459ff-52f8-4f65-9c96-65936e77560f",
+      "process_id": "86220",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object {$_.ProcessId -in 2792,15076,15136,18700} | Select-Object ProcessId,ParentProcessId,CommandLine"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "timestamp": "2026-09-19T14:13:55.882Z",
+      "event_type": "item_completed",
+      "id": "exec-0848deb0-7637-4b7b-94c6-7c2f4e340437",
+      "process_id": "4359",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$targets=15136,18700,2792,15076; Get-Process -Id $targets -ErrorAction SilentlyContinue | Stop-Process -Force; Get-Process -Id $targets -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,StartTime,CPU"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:13:55.927Z",
+      "event_type": "item_completed",
+      "id": "exec-345089bf-47f6-4de7-9696-1e85fd0329d6",
+      "process_id": "18092",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' 'evaluation\\run_foundation_v50_phase61.py' train"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:14:20.248Z",
+      "event_type": "item_completed",
+      "id": "exec-728722a5-56a2-4304-a924-cbc08a4d0523",
+      "process_id": "79133",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' -c \"from evaluation import run_foundation_v50_phase61 as p; import json; rows=[]; [p.strict_parent(s) for s in p.SEEDS];\\nfor seed,arm,lr in [(42,'control',5e-5),(42,'half-lr',2.5e-5)]:\\n q=p.target(seed,arm); x=__import__('torch').load(q,map_location='cpu',weights_only=False); rows.append({'seed':seed,'arm':arm,'sha256':p.sha(q),'bytes':q.stat().st_size,'integrity':p.verify_payload(x,seed,16446464,lr),'runtime_lr':x['phase61_runtime_lr_contract'],'markers':{k:x[k] for k in ('EXPERIMENTAL','NOT_CANONICAL','NOT_PRODUCTION')}})\\nprint(json.dumps(rows,ensure_ascii=False))\"; Get-Process python,pythonw -ErrorAction SilentlyContinue | Where-Object {$_.Path -like '*unipilot-mini\\.venv-gpu*'} | Select-Object Id,ProcessName,StartTime,CPU"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:14:40.436Z",
+      "event_type": "item_completed",
+      "id": "exec-a24c6189-f7f4-436d-b0d0-43a02df0a475",
+      "process_id": "23050",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' -c \"from evaluation import run_foundation_v50_phase61 as p; import torch,json; [p.strict_parent(s) for s in p.SEEDS]; rows=[(lambda x,q:{'sha256':p.sha(q),'bytes':q.stat().st_size,'integrity':p.verify_payload(x,42,16446464,lr),'runtime_lr':x['phase61_runtime_lr_contract'],'markers':{k:x[k] for k in ('EXPERIMENTAL','NOT_CANONICAL','NOT_PRODUCTION')}})(torch.load(p.target(42,arm),map_location='cpu',weights_only=False),p.target(42,arm)) for arm,lr in p.ARMS]; print(json.dumps(rows))\"; Get-Process python,pythonw -ErrorAction SilentlyContinue | Where-Object {$_.Path -like '*unipilot-mini\\.venv-gpu*'} | Select-Object Id,ProcessName,StartTime,CPU"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "failed",
+      "exit_code": 1
+    },
+    {
+      "timestamp": "2026-09-19T14:15:52.975Z",
+      "event_type": "item_completed",
+      "id": "exec-5832a1c4-1c80-46bb-adb6-28a5fe40350e",
+      "process_id": "91171",
+      "command": [
+        "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-Command",
+        "$repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; python -m pytest tests/test_foundation_v50_phase61.py tests/test_foundation_v49_registration.py -q; & '.\\.venv-gpu\\Scripts\\python.exe' 'evaluation\\run_foundation_v50_phase61.py' invalidate"
+      ],
+      "cwd": "file:///C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+      "status": "completed",
+      "exit_code": 0
+    }
+  ],
+  "raw_path": "Z:\\AI\\unipilot-mini\\evaluation\\phase62\\host-command-events.json",
+  "raw_sha256": "3245d48c8e5440acd739c4d09622934636fbb5b59fde09c1bbb3afa78fc374b4"
+}

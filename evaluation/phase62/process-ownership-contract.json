@@ -1,0 +1,29 @@
+{
+  "phase": 62,
+  "new_training": false,
+  "optimizer_steps": 0,
+  "schema_version": "process-ownership-contract-v1",
+  "source_sha256": "62698095a30f508fce9e1224d96a1c5600607e127b5d98347a6167f97d8f9b12",
+  "states": [
+    "PREPARED",
+    "LOCKED",
+    "RUNNING",
+    "CHECKPOINT_SAVED",
+    "PROCESS_EXITED",
+    "RECEIPT_WRITTEN",
+    "RELEASED"
+  ],
+  "state_journal": "exclusive append-only numbered artifacts; no state skipping; completion predicate requires RELEASED and receipt SHA plus current artifact SHA",
+  "launch": "Windows Popen shell=False, CREATE_SUSPENDED; persist child identity, assign non-breakaway Job Object, then resume. Exactly one child tree per supervisor invocation.",
+  "wait": "OS process exit code 0 AND Job Object membership empty AND both captured pipes reached EOF and closed AND no child GPU contexts AND trusted artifact strict verifier PASS.",
+  "deadline_seconds": 3600,
+  "deadline_action": "INCOMPLETE/ABORTED ownership receipt; retain GPU lock and live Job handle; never terminate/kill; never start another run.",
+  "stdout_stderr": "separate flushed logs, joined drain threads, SHA in final receipt; shell status is not substituted for Python exit code",
+  "host_early_return": "Host yield is progress only. Preserve full exec result including session_id, poll write_stdin to terminal OS result, and verify RELEASED journal+receipt before next run. Never print only result.output. Direct legacy training invocation after an unobserved yield is prohibited.",
+  "host_parent_dies": "ABORTED, lock retained, no automatic child termination or next run.",
+  "checkpoint_receipt_atomicity": "No cross-file atomic transaction is claimed. Child saves exclusively+atomically; trusted verifier strict-reloads; supervisor observes process/tree/pipe/GPU exit before publishing receipt. RELEASED is the final commit marker. Checkpoint alone is incomplete.",
+  "next_run": "previous COMPLETE with valid receipt and artifact SHA, previous RELEASED, acquire single lock, foreign CUDA guard, temperature<=60, no full pytest/build/browser QA",
+  "cpu_heavy_jobs": "prelaunch command inventory refuses pytest/npm build/playwright; external noncooperating tools cannot be forcibly prevented",
+  "legacy_runner_policy": "Frozen historical source files remain unchanged. PHASE61 train_one/train must never be called for clean replication; they contain no ownership protection. All future GPU study actions must use this supervisor API.",
+  "worker_integration": "Future PHASE63 implementation supplies a bounded one-run worker and trusted strict artifact validator. It must be hashed, QA-verified and bound in an execution receipt before any optimizer step; this registration is not a training command or authorization."
+}

@@ -1,0 +1,158 @@
+{
+  "phase": 62,
+  "new_training": false,
+  "optimizer_steps": 0,
+  "checkpoints": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-42\\checkpoint-tokens-16446464.pt",
+      "sha256": "83cbafa7e3aba0850cba5bc08d8e236ca79c73aa839014699fe2e92ff2b8b0ee",
+      "size": 235702975,
+      "mtime_utc": "2026-09-19T14:11:58.180546+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "COMPLETED_BEFORE_ABORT",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\half-lr\\seed-42\\checkpoint-tokens-16446464.pt",
+      "sha256": "f86e69df68f964c8375185d3810cf8fd8a30a6d4cd6c0f6cfa9fbddeedd97edd",
+      "size": 235702975,
+      "mtime_utc": "2026-09-19T14:12:55.854321+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "COMPLETED_BEFORE_ABORT",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-123\\checkpoint-tokens-16446464.pt",
+      "sha256": "2ba2e6b38d92b2b3f6fc348437b8e98714afd5823e0e12c0cf0bbb2bbd4ac1b4",
+      "size": 234997503,
+      "mtime_utc": "2026-09-19T14:13:54.074801+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "INCOMPLETE_STUDY_RUN",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    }
+  ],
+  "remaining_runs": "NOT_RUN",
+  "phase61": "EXPERIMENT_INVALID",
+  "efficacy_claims": "NONE",
+  "half_lr_efficacy": "UNDETERMINED"
+}

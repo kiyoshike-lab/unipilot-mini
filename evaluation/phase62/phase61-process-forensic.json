@@ -1,0 +1,265 @@
+{
+  "phase": 62,
+  "new_training": false,
+  "optimizer_steps": 0,
+  "gate": "MIXED_PROCESS_LIFECYCLE_FAILURE",
+  "primary_mechanism": "HOST_RETURN_BEFORE_CHILD_EXIT; output-only tool wrapper discarded lifecycle/session metadata; assistant launched two duplicate training calls without waiting",
+  "secondary_mechanisms": [
+    "No common GPU lock or durable run-start claim",
+    "Output collision checked only after the 122-update loop",
+    "Receipt publication was inside a still-running multi-run process",
+    "PowerShell trailing Write-Output masked a child exit code 1 as shell exit code 0"
+  ],
+  "host_return_means": "asynchronous yield, NOT proof of process termination; no evidence of a forced 30-second kill",
+  "tree_A": {
+    "shell_pid": 13160,
+    "venv_launcher_pid": 15136,
+    "python_child_pid": 2792,
+    "start_local": "2026-09-19T23:11:04+09:00",
+    "command": "python evaluation/run_foundation_v50_phase61.py train",
+    "end_bound_utc": "2026-09-19T14:13:55.927Z",
+    "exact_os_exit_timestamp": null
+  },
+  "tree_B": {
+    "shell_pid": 7960,
+    "venv_launcher_pid": 18700,
+    "python_child_pid": 15076,
+    "start_local": "2026-09-19T23:12:48+09:00",
+    "command": "third invocation: python -u -c ... p.train_one(42, control, 5e-5)",
+    "association": "inferred from timestamp and logged command; CIM command line blank",
+    "exact_os_exit_timestamp": null,
+    "host_command_completion_utc": "2026-09-19T14:13:48.469Z"
+  },
+  "additional_duplicate": {
+    "command": "second invocation: python -u -c ... p.train_one(42, control, 5e-5)",
+    "os_pid": null,
+    "host_command_completion_utc": "2026-09-19T14:13:05.973Z",
+    "python_exit_code": 1,
+    "failure": "FileExistsError in save_checkpoint AFTER train_one finished 122 updates"
+  },
+  "overlap_runs": "Original seed42 Half-LR / seed123 Control overlapped duplicate seed42 Control executions; exact per-update time intersection is unavailable",
+  "proven_extra_optimizer_updates": 244,
+  "proven_minimum_total_updates": 610,
+  "count_basis": "Two duplicate tracebacks reached save_checkpoint after fixed 122-update loops, plus three saved 122-update original runs. No reliable complete ledger for any additional in-memory progress.",
+  "cuda_device": "RTX 2070 SUPER / cuda:0 from frozen runner; per-PID device ownership was not recorded",
+  "effective_cwd": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini",
+  "host_cwd": "C:/Users/nlgid/Documents/Codex/2026-09-05/yaml-phase-38-c-users-nlgid",
+  "stdout_stderr": "Initial partial stdout only was surfaced. Later persisted execution completion events contain two FileExistsError tracebacks and original TRAIN_PASS lines. No separate historic EOF or GPU release receipt exists.",
+  "candidates": {
+    "A_host_early_return": "OBSERVED_ASYNC_YIELD",
+    "B_detach_bug": "NOT_ESTABLISHED",
+    "C_missing_wait": "CONFIRMED_AT_ASSISTANT_ORCHESTRATION",
+    "D_shell_exit_before_child": "NOT_ESTABLISHED",
+    "E_background_creation": "NO_EXPLICIT_BACKGROUND_TRAIN_COMMAND_FOUND",
+    "F_Start_Process": "NOT_USED_FOR_THE_TRAINING_LAUNCHES",
+    "G_multiprocessing_orphan": "NO_EVIDENCE; venv launcher/child is not evidence of multiprocessing",
+    "H_runtime_timeout": "YIELD_OBSERVED; forced termination not established"
+  },
+  "timeline": [
+    {
+      "timestamp": "2026-09-19T14:13:05.973Z",
+      "event_type": "item_completed",
+      "exec_session_identifier": "29999",
+      "command": "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe -Command $repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' -u -c \"import evaluation.run_foundation_v50_phase61 as p; print(p.SEEDS,p.ARMS); p.train_one(42,'control',5e-5)\"",
+      "status": "failed",
+      "exit_code": 1,
+      "started_at_ms": 1789827124600,
+      "completed_at_ms": 1789827185973
+    },
+    {
+      "timestamp": "2026-09-19T14:13:48.469Z",
+      "event_type": "item_completed",
+      "exec_session_identifier": "48866",
+      "command": "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe -Command $repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; Write-Output 'before'; & '.\\.venv-gpu\\Scripts\\python.exe' -u -c \"import evaluation.run_foundation_v50_phase61 as p; print('inside'); print(p.target(42,'control')); p.train_one(42,'control',5e-5); print('done')\"; Write-Output ('after exit='+$LASTEXITCODE)",
+      "status": "completed",
+      "exit_code": 0,
+      "started_at_ms": 1789827168041,
+      "completed_at_ms": 1789827228469
+    },
+    {
+      "timestamp": "2026-09-19T14:13:55.882Z",
+      "event_type": "item_completed",
+      "exec_session_identifier": "4359",
+      "command": "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe -Command $targets=15136,18700,2792,15076; Get-Process -Id $targets -ErrorAction SilentlyContinue | Stop-Process -Force; Get-Process -Id $targets -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,StartTime,CPU",
+      "status": "failed",
+      "exit_code": 1,
+      "started_at_ms": 1789827235497,
+      "completed_at_ms": 1789827235882
+    },
+    {
+      "timestamp": "2026-09-19T14:13:55.927Z",
+      "event_type": "item_completed",
+      "exec_session_identifier": "18092",
+      "command": "C:\\Users\\nlgid\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe -Command $repo='C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini'; Set-Location -LiteralPath $repo; $env:UNIPILOT_CHECKPOINT_ROOT='Z:\\AI\\unipilot-mini\\checkpoints'; & '.\\.venv-gpu\\Scripts\\python.exe' 'evaluation\\run_foundation_v50_phase61.py' train",
+      "status": "failed",
+      "exit_code": 1,
+      "started_at_ms": 1789827064357,
+      "completed_at_ms": 1789827235927
+    }
+  ],
+  "launch_return_raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase62\\assistant-launch-and-return-evidence.json",
+  "launch_return_sha256": "5fb7e8bb1cca43475b5a76badb43e39cbb2b9c6703d2ad878dae65996c5517e8",
+  "checkpoint_timestamps": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-42\\checkpoint-tokens-16446464.pt",
+      "sha256": "83cbafa7e3aba0850cba5bc08d8e236ca79c73aa839014699fe2e92ff2b8b0ee",
+      "size": 235702975,
+      "mtime_utc": "2026-09-19T14:11:58.180546+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "COMPLETED_BEFORE_ABORT",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\half-lr\\seed-42\\checkpoint-tokens-16446464.pt",
+      "sha256": "f86e69df68f964c8375185d3810cf8fd8a30a6d4cd6c0f6cfa9fbddeedd97edd",
+      "size": 235702975,
+      "mtime_utc": "2026-09-19T14:12:55.854321+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "COMPLETED_BEFORE_ABORT",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase61\\continuation-stability\\control\\seed-123\\checkpoint-tokens-16446464.pt",
+      "sha256": "2ba2e6b38d92b2b3f6fc348437b8e98714afd5823e0e12c0cf0bbb2bbd4ac1b4",
+      "size": 234997503,
+      "mtime_utc": "2026-09-19T14:13:54.074801+00:00",
+      "processed_tokens": 16446464,
+      "optimizer_steps": [
+        32122
+      ],
+      "integrity": {
+        "checks": {
+          "strict_model_optimizer_reload": true,
+          "parameter_count": true,
+          "fp32": true,
+          "finite_weights": true,
+          "finite_optimizer": true,
+          "seed_tokens": true,
+          "scheduler": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "sampler": true,
+          "rng": true,
+          "eos_rep": true
+        },
+        "pass": true
+      },
+      "extra": {
+        "full_permutation": true,
+        "scheduler_preserved_except_step": true,
+        "python_numpy_cpu_rng_load": true,
+        "cuda_rng_present": true,
+        "cuda_rng_byte_tensors": true,
+        "all_adam_moments": true,
+        "parent_link": true,
+        "immutable": true
+      },
+      "cuda_rng_validation": "STRUCTURAL_ONLY_NO_CUDA_CONTEXT_CREATED",
+      "study_status": "INCOMPLETE_STUDY_RUN",
+      "custody_labels": [
+        "EXPERIMENTAL",
+        "NOT_CANONICAL",
+        "NOT_PRODUCTION",
+        "INVALID_STUDY_CONTEXT"
+      ],
+      "binary_labels_modified": false,
+      "efficacy_use": false
+    }
+  ],
+  "receipt_timestamps": [
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed42-control.json",
+      "mtime_utc": "2026-09-19T14:12:00.712752+00:00"
+    },
+    {
+      "path": "C:\\Users\\nlgid\\Documents\\Codex\\2026-08-15\\files-pasted-by-the-user-unipilot\\outputs\\unipilot-mini\\evaluation\\phase61\\run-seed42-half-lr.json",
+      "mtime_utc": "2026-09-19T14:12:58.568322+00:00"
+    }
+  ],
+  "phase61_status": "EXPERIMENT_INVALID",
+  "efficacy": "UNDETERMINED",
+  "valid_efficacy_claims": "NONE",
+  "historical_gates_recomputed": false
+}

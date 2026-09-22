@@ -1,0 +1,43 @@
+{
+  "phase": 62,
+  "new_training": false,
+  "optimizer_steps": 0,
+  "schema_version": "single-gpu-lock-contract-v1",
+  "path": "Z:\\AI\\unipilot-mini\\runtime\\gpu.lock",
+  "source_sha256": "1a1b508701cdc45b3a87e8ec6e0c1bcf177db20e27e9fdd60f1c2206e806439e",
+  "atomic_exclusive_create": true,
+  "device_scope": "single host, all CUDA work kinds, shared runtime derived from checkpoint root parent",
+  "owner_fields": [
+    "schema_version",
+    "pid",
+    "parent_pid",
+    "hostname",
+    "process_start_time",
+    "phase",
+    "run_id",
+    "cuda_device",
+    "command_hash",
+    "repo_head",
+    "checkpoint_parent_sha256",
+    "created_timestamp",
+    "nonce",
+    "job_name"
+  ],
+  "held_result": "GPU_LOCK_HELD",
+  "automatic_expiry": false,
+  "automatic_cleanup": false,
+  "automatic_kill": false,
+  "stale_cleanup": "Explicit fresh verification under the mutation guard: local owner PID absent AND start identity mismatch AND no foreign compute/GPU context AND known children absent AND Job Object clear AND persisted child-tree exit evidence (or child never started). Archive the verification before removing exactly this stale lock.",
+  "crashed_tree_uncertainty": "If owner crashed after starting a child without persisting child-tree exit, helper refuses cleanup even when nvidia-smi is empty. A separate forensic verification protocol is required; never guess or force-unlock.",
+  "pid_reuse": "Different creation time identifies another process; live reused PID still blocks cleanup.",
+  "release": "Only exact owner identity+nonce; verified normal completion and GPU release; persistent OS mutation guard serializes acquire/release/cleanup.",
+  "display_policy": "Pure G rows excluded. C rows never display-exempt. C+G excluded only with explicitly approved exact PID+creation time+hostname+exe baseline; no wildcard/basename exemptions. Unknown types/failed query/races fail closed.",
+  "current_WDDM_observation": "NVIDIA reports display applications as C+G with N/A memory. This is ambiguous, not proof that every row is a training process or proof that GPU is free.",
+  "display_allowlist_in_phase62": [],
+  "scope": [
+    "training",
+    "generation-evaluation",
+    "hidden-state-observatory",
+    "cuda-dry-run"
+  ]
+}
