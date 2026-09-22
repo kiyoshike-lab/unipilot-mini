@@ -25,3 +25,5 @@ def test_phase63_supervisor_routes_each_cuda_kind_through_exclusive_runner():
     assert "display=()" in source
     assert "C+G is deliberately *not* treated as a graphics allowlist" in source
     assert "phase63_worker" in source
+    assert "interpreter_metadata" in source
+    assert "sys.executable" in source

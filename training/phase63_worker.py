@@ -103,6 +103,8 @@ def read_binding(path: Path, seed: int, arm: str) -> dict:
         raise RuntimeError("PROCESS_ENV_RESOLVER_MISMATCH")
     if checkpoint_root(ROOT) != ZROOT:
         raise RuntimeError("PROCESS_ENV_RESOLVER_MISMATCH")
+    if Path(binding.get("interpreter", {}).get("executable", "")).resolve() != Path(sys.executable).resolve():
+        raise RuntimeError("WORKER_INTERPRETER_BINDING_MISMATCH")
     rows = {(row["seed"], row["arm"]): row for row in binding["runs"]}
     row = rows.get((seed, arm))
     if row is None or row["parent_sha256"] != PARENT_SHA[seed] or row["runtime_lr"] != ARMS[arm]:

@@ -1,0 +1,373 @@
+{
+  "phase": "63A",
+  "kind": "CUDA_ENVIRONMENT_RECOVERY",
+  "optimizer_steps": 0,
+  "training": false,
+  "generation_evaluation": false,
+  "checkpoints_created": 0,
+  "python_executable": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "pip_version": "26.1.1",
+  "packages": {
+    "torch": "2.12.0+cu130",
+    "torchvision": "0.27.0+cu130",
+    "torchaudio": null
+  },
+  "torch_file": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\torch\\__init__.py",
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "device_count": 1,
+  "gpu_name": "NVIDIA GeForce RTX 2070 SUPER",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "tensor_test": {
+    "pass": true,
+    "dtype": "torch.float32",
+    "sum": 3680.0
+  },
+  "rng_roundtrip": {
+    "pass": true,
+    "bytes": 16
+  },
+  "fp32_contract": {
+    "pass": true,
+    "amp": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false
+  },
+  "memory": {
+    "total_bytes": 8589606912,
+    "allocated_bytes": 8520704,
+    "reserved_bytes": 23068672
+  },
+  "project_imports": {
+    "model": "PASS",
+    "checkpoint_loader": "PASS",
+    "cuda_device": "PASS"
+  },
+  "parent_checkpoint_cuda_strict_load": {
+    "pass": true,
+    "sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+    "parameter_count": 19514880,
+    "fp32": true,
+    "checkpoint": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt"
+  },
+  "nvidia": {
+    "query_returncode": 2,
+    "query_stdout": "Field \"cuda_version\" is not a valid field to query.",
+    "xml_driver": "616.56",
+    "xml_cuda_compatibility": "13.4",
+    "processes": [
+      {
+        "pid": 2224,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934415,
+        "identity": {
+          "pid": 2224,
+          "parent_pid": 21160,
+          "process_start_time": 1790088245.03787,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+        }
+      },
+      {
+        "pid": 2908,
+        "process_name": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.915.4065.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934456,
+        "identity": {
+          "pid": 2908,
+          "parent_pid": 2096,
+          "process_start_time": 1790088188.341306,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.915.4065.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+        }
+      },
+      {
+        "pid": 5284,
+        "process_name": "C:\\Users\\nlgid\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\df473e5367fa2b42\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934475,
+        "identity": {
+          "pid": 5284,
+          "parent_pid": 2096,
+          "process_start_time": 1790088217.980828,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Users\\nlgid\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\df473e5367fa2b42\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe"
+        }
+      },
+      {
+        "pid": 5396,
+        "process_name": "C:\\Program Files\\Riot Vanguard\\vgtray.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934487,
+        "identity": {
+          "pid": 5396,
+          "parent_pid": 12032,
+          "process_start_time": 1790088227.2135203,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files\\Riot Vanguard\\vgtray.exe"
+        }
+      },
+      {
+        "pid": 7852,
+        "process_name": "C:\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.71.0_x64__kzh8wxbdkxb8p\\DCv2\\DCv2.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934506,
+        "identity": {
+          "pid": 7852,
+          "parent_pid": 3356,
+          "process_start_time": 1790088301.9515495,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files\\WindowsApps\\9426MICRO-STARINTERNATION.MSICenter_2.0.71.0_x64__kzh8wxbdkxb8p\\DCv2\\DCv2.exe"
+        }
+      },
+      {
+        "pid": 9488,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.293452,
+        "identity": {
+          "pid": 9488,
+          "parent_pid": 20264,
+          "process_start_time": 1790088272.101172,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe"
+        }
+      },
+      {
+        "pid": 10896,
+        "process_name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934532,
+        "identity": {
+          "pid": 10896,
+          "parent_pid": 9948,
+          "process_start_time": 1790088161.7825828,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe"
+        }
+      },
+      {
+        "pid": 12032,
+        "process_name": "C:\\Windows\\explorer.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934546,
+        "identity": {
+          "pid": 12032,
+          "parent_pid": 11940,
+          "process_start_time": 1790088161.5850632,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\explorer.exe"
+        }
+      },
+      {
+        "pid": 12144,
+        "process_name": "C:\\Windows\\System32\\ShellHost.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934558,
+        "identity": {
+          "pid": 12144,
+          "parent_pid": 9948,
+          "process_start_time": 1790088161.681039,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\System32\\ShellHost.exe"
+        }
+      },
+      {
+        "pid": 12444,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934575,
+        "identity": {
+          "pid": 12444,
+          "parent_pid": 25252,
+          "process_start_time": 1790088437.2093608,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+        }
+      },
+      {
+        "pid": 13576,
+        "process_name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.293459,
+        "identity": {
+          "pid": 13576,
+          "parent_pid": 1340,
+          "process_start_time": 1790088164.6625037,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"
+        }
+      },
+      {
+        "pid": 13588,
+        "process_name": "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934604,
+        "identity": {
+          "pid": 13588,
+          "parent_pid": 1340,
+          "process_start_time": 1790088164.664106,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe"
+        }
+      },
+      {
+        "pid": 14628,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.293462,
+        "identity": {
+          "pid": 14628,
+          "parent_pid": 19524,
+          "process_start_time": 1790088322.507388,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe"
+        }
+      },
+      {
+        "pid": 15568,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934632,
+        "identity": {
+          "pid": 15568,
+          "parent_pid": 15084,
+          "process_start_time": 1790088167.1868849,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe"
+        }
+      },
+      {
+        "pid": 16036,
+        "process_name": "C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934644,
+        "identity": {
+          "pid": 16036,
+          "parent_pid": 1340,
+          "process_start_time": 1790088167.3847659,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe"
+        }
+      },
+      {
+        "pid": 18040,
+        "process_name": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934656,
+        "identity": {
+          "pid": 18040,
+          "parent_pid": 1340,
+          "process_start_time": 1790088174.6297493,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe"
+        }
+      },
+      {
+        "pid": 18360,
+        "process_name": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.255.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934685,
+        "identity": {
+          "pid": 18360,
+          "parent_pid": 1340,
+          "process_start_time": 1790088202.8636532,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.255.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe"
+        }
+      },
+      {
+        "pid": 22648,
+        "process_name": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934697,
+        "identity": {
+          "pid": 22648,
+          "parent_pid": 21160,
+          "process_start_time": 1790088249.0243423,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+        }
+      },
+      {
+        "pid": 24092,
+        "process_name": "C:\\Program Files\\LGHUB\\system_tray\\lghub_system_tray.exe",
+        "gpu_memory": "N/A",
+        "type": "C+G",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934709,
+        "identity": {
+          "pid": 24092,
+          "parent_pid": 23264,
+          "process_start_time": 1790088290.6085408,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Program Files\\LGHUB\\system_tray\\lghub_system_tray.exe"
+        }
+      },
+      {
+        "pid": 25228,
+        "process_name": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "gpu_memory": "N/A",
+        "type": "C",
+        "cuda_device": "GPU-b462df6f-0c4c-6810-60eb-b8ad5623fa1f",
+        "timestamp": 1790090762.2934723,
+        "identity": {
+          "pid": 25228,
+          "parent_pid": 25236,
+          "process_start_time": 1790090756.6797247,
+          "hostname": "DESKTOP-NUG076O",
+          "exe": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+        }
+      }
+    ]
+  },
+  "c_plus_g_inventory_status": "CUDA_PROCESS_PREFLIGHT_REQUIRES_MANUAL_REVIEW",
+  "worker_no_train_spawn": "NOT_RUN_C+G_MANUAL_REVIEW",
+  "gpu_lock_lifecycle": "NOT_RUN_C+G_MANUAL_REVIEW",
+  "supervisor_interpreter_binding": {
+    "supervisor": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "worker_contract": "sys.executable; execution binding enforced"
+  },
+  "final_gate": "PHASE63_CUDA_ENV_REQUIRES_MANUAL_REVIEW"
+}

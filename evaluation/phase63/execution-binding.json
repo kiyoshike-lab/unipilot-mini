@@ -1,0 +1,117 @@
+{
+  "phase": 63,
+  "schema": "phase63-execution-binding-v1",
+  "execution_authorized": true,
+  "authorization_record": "explicit user PHASE63 instruction",
+  "authorization_start_head": "44d4caf132094ac1ba6567ebd3b8d963a4b2cfd8",
+  "implementation_head": "84f59fcced4cd95a43a5282970894d4723120043",
+  "branch": "foundation-research",
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "interpreter": {
+    "executable": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "torch_version": "2.12.0+cu130",
+    "torch_cuda": "13.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 2070 SUPER",
+    "driver_version": "616.56",
+    "validator": "scripts/run_phase63_study.py::verify",
+    "validator_sha256": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c"
+  },
+  "preregistration_path": "evaluation\\phase62\\phase63-clean-continuation-stability-preregistration.json",
+  "preregistration_sha256": "856ed78873b469100f4c6c34df1c4d05c19b540969453fba8e41315a478bc48f",
+  "source_manifest": {
+    "training/phase63_worker.py": "e9bba5b18a313973285a3708dde1709ece3b2fa90f7cb341e8c5cdd046279613",
+    "scripts/run_phase63_study.py": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c",
+    "training/exclusive_cuda_runner.py": "62698095a30f508fce9e1224d96a1c5600607e127b5d98347a6167f97d8f9b12",
+    "training/gpu_execution_lock.py": "1a1b508701cdc45b3a87e8ec6e0c1bcf177db20e27e9fdd60f1c2206e806439e"
+  },
+  "run_order": [
+    {
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr"
+    },
+    {
+      "seed": 123,
+      "arm": "control"
+    },
+    {
+      "seed": 123,
+      "arm": "half-lr"
+    },
+    {
+      "seed": 2026,
+      "arm": "control"
+    },
+    {
+      "seed": 2026,
+      "arm": "half-lr"
+    }
+  ],
+  "runs": [
+    {
+      "seed": 42,
+      "arm": "control",
+      "runtime_lr": 5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\control\\seed-42\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed42-control-training-raw.json",
+      "updates": 122
+    },
+    {
+      "seed": 42,
+      "arm": "half-lr",
+      "runtime_lr": 2.5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\half-lr\\seed-42\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed42-half-lr-training-raw.json",
+      "updates": 122
+    },
+    {
+      "seed": 123,
+      "arm": "control",
+      "runtime_lr": 5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\control\\seed-123\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed123-control-training-raw.json",
+      "updates": 122
+    },
+    {
+      "seed": 123,
+      "arm": "half-lr",
+      "runtime_lr": 2.5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\half-lr\\seed-123\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed123-half-lr-training-raw.json",
+      "updates": 122
+    },
+    {
+      "seed": 2026,
+      "arm": "control",
+      "runtime_lr": 5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\control\\seed-2026\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed2026-control-training-raw.json",
+      "updates": 122
+    },
+    {
+      "seed": 2026,
+      "arm": "half-lr",
+      "runtime_lr": 2.5e-05,
+      "parent": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "output": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\continuation-stability\\half-lr\\seed-2026\\checkpoint-tokens-16446464.pt",
+      "raw": "Z:\\AI\\unipilot-mini\\evaluation\\phase63\\run-seed2026-half-lr-training-raw.json",
+      "updates": 122
+    }
+  ]
+}

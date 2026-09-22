@@ -59,6 +59,19 @@ def source_manifest() -> dict:
     return {path: sha(ROOT / path) for path in paths}
 
 
+def interpreter_metadata() -> dict:
+    """Bind the child interpreter; PATH resolution is not an execution contract."""
+    driver = subprocess.check_output(
+        ["nvidia-smi", "--query-gpu=driver_version", "--format=csv,noheader"], text=True
+    ).strip().splitlines()[0]
+    return {"executable": str(Path(sys.executable).resolve()), "python_version": sys.version,
+            "torch_version": torch.__version__, "torch_cuda": torch.version.cuda,
+            "cuda_available": bool(torch.cuda.is_available()), "gpu_name": torch.cuda.get_device_name(0),
+            "driver_version": driver,
+            "validator": "scripts/run_phase63_study.py::verify",
+            "validator_sha256": sha(ROOT / "scripts/run_phase63_study.py")}
+
+
 def output_artifact(seed: int, arm: str) -> Path:
     return OUT / f"run-seed{seed}-{arm}.json"
 
@@ -103,7 +116,9 @@ def temperature() -> dict:
 
 def preflight() -> None:
     root_gate()
-    if OUT.exists() or (ZROOT.parent / "evaluation" / "phase63").exists():
+    allowed_environment_receipt = OUT / "cuda-environment-recovery.json"
+    existing_local = set(OUT.iterdir()) if OUT.exists() else set()
+    if existing_local - {allowed_environment_receipt} or (ZROOT.parent / "evaluation" / "phase63").exists():
         raise RuntimeError("PHASE63_ARTIFACT_OR_PARTIAL_EXISTS")
     if sha(SPEC) != SPEC_SHA:
         raise RuntimeError("PREREGISTRATION_INTEGRITY_FAIL")
@@ -133,6 +148,7 @@ def preflight() -> None:
     binding = {"phase": 63, "schema": "phase63-execution-binding-v1", "execution_authorized": True,
                "authorization_record": "explicit user PHASE63 instruction", "authorization_start_head": AUTHORIZATION_START,
                "implementation_head": git("rev-parse", "HEAD"), "branch": "foundation-research", "checkpoint_root": str(ZROOT),
+               "interpreter": interpreter_metadata(),
                "preregistration_path": str(SPEC.relative_to(ROOT)), "preregistration_sha256": sha(SPEC),
                "source_manifest": source_manifest(), "run_order": [{"seed": s, "arm": a} for s, a in RUN_ORDER],
                "runs": [{"seed": s, "arm": a, "runtime_lr": ARMS[a], "parent": str(parent(s)), "parent_sha256": PARENT_SHA[s], "output": str(output(s, a)), "raw": str(raw_output(s, a)), "updates": 122} for s, a in RUN_ORDER]}
