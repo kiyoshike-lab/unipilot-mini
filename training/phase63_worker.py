@@ -26,6 +26,8 @@ if str(ROOT) not in sys.path:
 from foundation.base_tokenizer import FoundationTokenizer
 from foundation.diagnostic_transformer_v17 import DiagnosticConfigV17, DiagnosticTransformerV17
 from training.checkpoint_paths import checkpoint_root, existing_checkpoint_path
+from training.gpu_execution_guard import GuardBlocked, assert_live_lock_owner, windows_current_process_in_job
+from training.gpu_execution_lock import identity
 from training.foundation_v31_objective import weighted_lm_loss
 from training.optimizer import create_optimizer
 from training.run_foundation_v30_eos_experiment import load
@@ -114,6 +116,29 @@ def read_binding(path: Path, seed: int, arm: str) -> dict:
     return binding
 
 
+def require_live_gpu_owner(binding: dict, *, owner_identity_provider=identity,
+                           parent_identity_provider=None, job_membership_provider=windows_current_process_in_job) -> dict:
+    """Require the suspended supervisor's current Job/lock before CUDA work.
+
+    This is intentionally invoked by both live worker modes before CUDA
+    availability, CUDA RNG restoration, model load, or tensor allocation.
+    """
+    if parent_identity_provider is None:
+        parent_identity_provider = lambda: identity(os.getppid())
+    try:
+        return assert_live_lock_owner(
+            os.environ.get("UNIPILOT_GPU_LOCK_PATH"),
+            expected_nonce=os.environ.get("UNIPILOT_GPU_OWNER_NONCE"),
+            expected_run_id=os.environ.get("UNIPILOT_GPU_RUN_ID"),
+            expected_phase=63,
+            owner_identity_provider=owner_identity_provider,
+            parent_identity_provider=parent_identity_provider,
+            job_membership_provider=job_membership_provider,
+        )
+    except GuardBlocked as exc:
+        raise RuntimeError(str(exc)) from exc
+
+
 def strict_parent(seed: int) -> tuple[dict, Path]:
     source = parent(seed)
     if source != ZROOT / "experimental" / "phase48" / "arm-C" / f"seed-{seed}" / "checkpoint-tokens-16384000.pt" or sha(source) != PARENT_SHA[seed]:
@@ -196,7 +221,8 @@ def save(seed: int, arm: str, payload: dict, model, optimizer, source_sha: str, 
 
 
 def dry_run(seed: int, arm: str, binding: Path) -> None:
-    read_binding(binding, seed, arm)
+    bound = read_binding(binding, seed, arm)
+    require_live_gpu_owner(bound)
     if not torch.cuda.is_available() or torch.version.cuda is None:
         raise RuntimeError("CUDA_REQUIRED")
     payload, source = strict_parent(seed)
@@ -219,7 +245,8 @@ def dry_run(seed: int, arm: str, binding: Path) -> None:
 
 
 def train(seed: int, arm: str, binding: Path) -> None:
-    read_binding(binding, seed, arm)
+    bound = read_binding(binding, seed, arm)
+    require_live_gpu_owner(bound)
     if not torch.cuda.is_available() or torch.version.cuda is None or torch.cuda.get_device_name(0) != "NVIDIA GeForce RTX 2070 SUPER":
         raise RuntimeError("CUDA_RTX2070_SUPER_REQUIRED")
     torch.backends.cuda.matmul.allow_tf32 = False; torch.backends.cudnn.allow_tf32 = False

@@ -54,7 +54,17 @@ def identity(pid=None):
 
 
 def same_process(a, b):
-    return bool(a and b and all(a[k] == b[k] for k in ('pid', 'hostname', 'process_start_time')))
+    """Compare a live process instance, not just a recyclable PID.
+
+    The lock schema predates executable hashes, so lock ownership binds the
+    canonical executable path in addition to PID/start-time/host.  Approval
+    matching with executable SHA256 lives in ``gpu_execution_guard``.
+    """
+    try:
+        return bool(a and b and all(a[k] == b[k] for k in ('pid', 'hostname', 'process_start_time')) and
+                    os.path.normcase(os.path.normpath(a['exe'])) == os.path.normcase(os.path.normpath(b['exe'])))
+    except (KeyError, TypeError):
+        return False
 
 
 def job_clear(name):

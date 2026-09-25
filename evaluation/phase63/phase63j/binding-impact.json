@@ -1,0 +1,9 @@
+{
+  "phase": "63J",
+  "result": "STALE_BINDING_REQUIRES_FRESH_REGENERATION_BEFORE_ANY_GPU_TEST",
+  "existing_binding": "evaluation/phase63/execution-binding.json",
+  "action_taken": "NOT_MODIFIED",
+  "reason": "The worker, supervisor, guard and strict receipt contract source changed. Existing binding hashes cannot authorize the revised implementation.",
+  "required_before_future_gpu_test": ["fresh source SHA256 manifest", "fresh validator/worker/supervisor/guard binding", "fresh process inventory and exact user-approved instances", "cooling gate resolution", "separate explicit live NO_TRAIN authorization"],
+  "not_authorized_by_phase63j": ["GPU worker", "CUDA context", "NO_TRAIN GPU supervisor", "training", "checkpoint creation"]
+}

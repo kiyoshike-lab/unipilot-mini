@@ -1,0 +1,46 @@
+{
+  "phase": "63J",
+  "gate": "PHASE63_GPU_GUARD_CPU_VALIDATED",
+  "test_environment": {
+    "python_executable": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "python_version": "3.14.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "CUDA_VISIBLE_DEVICES": "",
+    "production_environment_changed": false
+  },
+  "gpu_execution": "NOT_RUN",
+  "cuda_context": "NOT_CREATED",
+  "torch_cuda": {
+    "phase63j_guard_tests": "NOT_INVOKED",
+    "full_suite": "test_gpu_migration collection calls torch.cuda.is_available with CUDA_VISIBLE_DEVICES empty; no CUDA tensor, model load, kernel, synchronize path, or worker was executed by PHASE63J"
+  },
+  "targeted": {
+    "command": "python -m pytest -q tests/test_phase63_gpu_guard.py tests/test_gpu_execution_lock.py tests/test_exclusive_cuda_runner.py tests/test_phase63_supervision.py tests/test_phase63_cuda_environment.py",
+    "exit_code": 0,
+    "passed": 48,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "full": {
+    "command": "python -m pytest -q",
+    "execution_mode": "persistent terminal session; CUDA_VISIBLE_DEVICES empty",
+    "exit_code": 0,
+    "passed": 823,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 4,
+    "result": "PASS",
+    "warnings_summary": ["three pre-existing FastAPI/Starlette deprecations", "one existing low-space backup RuntimeWarning"]
+  },
+  "discarded_attempt": {
+    "result": "NOT_ACCEPTED_FOR_GATE",
+    "reason": "A detached background pytest shell exited before Windows Job Object integration tests completed, producing six parent-liveness failures. The guard was corrected to map missing parent identity to HOST_PARENT_EXITED_LOCK_RETAINED, then all QA was rerun in a persistent terminal session.",
+    "cuda_execution": "NOT_RUN"
+  },
+  "coverage": ["exact identity", "PID reuse", "approval scope/expiry/revocation", "new external process", "monitor query failure", "process disappearance", "TOCTOU", "lock owner and Job assertion", "strict NO_TRAIN zero-step receipt", "state machine"],
+  "training": false,
+  "optimizer_steps": 0,
+  "phase63_checkpoints": 0
+}

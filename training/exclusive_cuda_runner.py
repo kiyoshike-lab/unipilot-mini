@@ -20,6 +20,7 @@ import psutil
 
 from training.gpu_execution_lock import (ExecutionBlocked, GPULock, atomic_json,
                                         foreign_processes, identity, inventory, same_process, sha)
+from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked
 
 STATES = ('PREPARED', 'LOCKED', 'RUNNING', 'CHECKPOINT_SAVED', 'PROCESS_EXITED',
           'RECEIPT_WRITTEN', 'RELEASED')
@@ -108,10 +109,20 @@ def is_complete(directory):
                 receipt['verification']['strict_reload'] is True and
                 receipt['verification']['updates_complete'] is True and
                 sha(receipt['verification']['artifact_path']) == receipt['verification']['artifact_sha256'] and
+                sha(directory/'stdout.log') == receipt['stdout_sha256'] and
+                sha(directory/'stderr.log') == receipt['stderr_sha256'] and
                 events[-1]['receipt_sha256'] == sha(receipt_path) and
                 not (directory / 'aborted.json').exists())
     except (OSError, ValueError, KeyError, TypeError):
         return False
+
+
+def _monitor_observation(monitor):
+    """Translate a fail-closed monitor decision into the runner's contract."""
+    try:
+        return monitor.observe()
+    except GuardBlocked as exc:
+        raise ExecutionBlocked(str(exc)) from exc
 
 
 def heavy_jobs():
@@ -127,7 +138,8 @@ def heavy_jobs():
 
 def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_head,
             parent_sha, verifier, temperature, outputs, previous=None, query=inventory,
-            display=(), poll_seconds=.05, maximum_seconds=3600):
+            display=(), approvals=(), identity_provider=identity, compute_monitor=None,
+            poll_seconds=.05, maximum_seconds=3600):
     """No COMPLETE until tree accounting, pipe EOF and GPU release all agree.
 
     verifier is a trusted per-study strict checkpoint validator (no GPU inference).
@@ -160,7 +172,12 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         journal.advance('LOCKED', owner=lock.owner)
         if not outputs or any(Path(p).exists() or Path(str(p)+'.tmp').exists() for p in outputs):
             raise ExecutionBlocked('OUTPUT_COLLISION_OR_MISSING_DECLARATION')
-        before = query()
+        # A monitor observes during the child lifetime as well as before/after.
+        # With no approvals it preserves the existing policy: every C/C+G is a
+        # block. It never creates a name or OS-process allowlist.
+        monitor = compute_monitor or ExternalComputeMonitor(query, identity_provider, approvals=approvals)
+        before_monitor = _monitor_observation(monitor)
+        before = before_monitor['rows']
         if foreign_processes(before, display=display):
             raise ExecutionBlocked('FOREIGN_CUDA_PROCESS_PRESENT')
         sample = temperature()
@@ -176,7 +193,10 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
             raise ExecutionBlocked('CPU_HEAVY_JOB_PRESENT')
         tree = WindowsTree(lock.owner['job_name'])
         env = {**os.environ, 'UNIPILOT_CHECKPOINT_ROOT': str(root),
-               'UNIPILOT_GPU_OWNER_NONCE': lock.owner['nonce']}
+               'UNIPILOT_GPU_OWNER_NONCE': lock.owner['nonce'],
+               'UNIPILOT_GPU_LOCK_PATH': str(lock.path),
+               'UNIPILOT_GPU_RUN_ID': run_id,
+               'UNIPILOT_GPU_PHASE': str(phase)}
         proc = subprocess.Popen(command, cwd=cwd, env=env, stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE, stdin=subprocess.DEVNULL,
                                 creationflags=0x00000004, shell=False)  # Win32 CREATE_SUSPENDED
@@ -205,13 +225,16 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         start = time.monotonic()
         observed = {child['pid']: child}
         while True:
+            # Unknown inventory, a restarted approved process, a new C/C+G
+            # process, expiry, or provider failure retains the owner lock.
+            _monitor_observation(monitor)
             pids = tree.pids()
             for pid in pids:
                 current = identity(pid)
                 if current and pid not in observed:
                     observed[pid] = current
                     atomic_json(journal.directory/f'child-{pid}.json', current)
-            if not same_process(caller, identity(caller['pid'])):
+            if caller is None or not same_process(caller, identity(caller['pid'])):
                 raise ExecutionBlocked('HOST_PARENT_EXITED_LOCK_RETAINED')
             if stream_errors:
                 raise ExecutionBlocked('STDIO_CAPTURE_FAILED')
@@ -224,7 +247,8 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
             thread.join()
         if proc.returncode != 0:
             raise ExecutionBlocked('CHILD_EXIT_NONZERO:'+str(proc.returncode))
-        after = query()
+        after_monitor = _monitor_observation(monitor)
+        after = after_monitor['rows']
         # No allowed child after completion: every owned GPU context must vanish.
         if foreign_processes(after, display=display):
             raise ExecutionBlocked('GPU_CONTEXT_NOT_RELEASED')

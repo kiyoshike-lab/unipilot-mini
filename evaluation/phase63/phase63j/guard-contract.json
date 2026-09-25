@@ -1,0 +1,42 @@
+{
+  "phase": "63J",
+  "schema": "phase63-gpu-guard-contract-v2",
+  "authorization": {
+    "gpu_execution": "NOT_AUTHORIZED",
+    "cuda_context": "NOT_CREATED",
+    "training": false,
+    "optimizer_steps": 0,
+    "checkpoint_creation": false
+  },
+  "external_compute_monitor": {
+    "provider_injected_for_cpu_tests": true,
+    "observations": ["prelaunch", "during-child-lifetime", "post-child-exit"],
+    "identity": ["pid", "process_start_time", "hostname", "canonical_exe", "exe_sha256"],
+    "C": "always_blocked",
+    "C+G": "blocked unless exactly one current explicit approval validates",
+    "G": "retains legacy pure-graphics classification; not an OS-wide allowlist",
+    "fail_closed": ["query failure", "ambiguous inventory", "missing identity", "process disappearance", "restart", "PID reuse", "new process", "approval expiry", "approval revocation"]
+  },
+  "approval": {
+    "schema": "phase63-gpu-exception-approval-v1",
+    "required_fields": ["approval_id", "purpose", "process_identity", "created_at", "expires_at", "allowed_phase", "allowed_action", "single_use", "evidence_reference"],
+    "only_allowed_action": "no-train-gpu-supervisor",
+    "never_authorizes": ["training", "generation evaluation", "future restart", "future PID", "different executable hash"],
+    "no_blanket_windows_or_C_plus_G_allowlist": true
+  },
+  "worker_lock_assertion": {
+    "before": ["CUDA availability", "CUDA RNG restoration", "model load", "tensor allocation"],
+    "requires": ["live lock file", "nonce", "phase", "run id", "live owner identity", "parent identity", "current Job membership"],
+    "loss_of_evidence": "fail_closed_before_CUDA"
+  },
+  "no_train_receipt": {
+    "schema": "phase63-no-train-receipt-v1",
+    "legal_states": ["PREPARED", "LOCKED", "RUNNING", "PROCESS_EXITED", "RECEIPT_WRITTEN", "RELEASED"],
+    "does_not_require": "CHECKPOINT_SAVED",
+    "zero_required": ["optimizer_steps", "backward_calls", "checkpoint_count", "training_examples_consumed"],
+    "strict_evidence": ["clean exit", "empty child tree", "both EOF", "context released", "lock lifecycle", "approved identities", "no new unapproved compute", "source hashes", "stream hashes", "journal hash"],
+    "missing_or_nonfinite_data": "fail_closed"
+  },
+  "preserved_existing_controls": ["atomic exclusive lock", "exact-owner-only release", "no automatic kill", "no force unlock", "Job Object accounting", "receipt and RELEASED lifecycle"],
+  "hard_limit": "WDDM C+G is a context classification, not proof of a benign GUI or absence of CUDA activity. Monitoring reduces observation gaps but cannot prevent unrelated external work; unavailable or ambiguous detection keeps execution blocked."
+}
