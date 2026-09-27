@@ -1,0 +1,62 @@
+{
+  "current_implementation_head": "b7c4392d8930d6566f1456cd6afaa8ba2522939e",
+  "finding": "BINDING_RUNTIME_ENFORCEMENT_GAP",
+  "old_binding_path": "evaluation/phase63/execution-binding.json",
+  "old_binding_sha256": "dd37037e7a3ac0e53c2da3812722c859c0f3712fe9886912b2bb15471808795b",
+  "old_execution_authorized": true,
+  "old_implementation_head": "84f59fcced4cd95a43a5282970894d4723120043",
+  "scope": "No CUDA API, GPU lock, inventory, worker CLI, NO_TRAIN, or training was invoked.",
+  "source_comparison": [
+    {
+      "current_sha256": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c",
+      "match": true,
+      "old_sha256": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c",
+      "path": "scripts/run_phase63_study.py"
+    },
+    {
+      "current_sha256": "d503b04ae1039cf850175b48b9282cec582b5ce02f442eecf5722790c7f4a9ed",
+      "match": false,
+      "old_sha256": null,
+      "path": "training/checkpoint_paths.py"
+    },
+    {
+      "current_sha256": "31cf49b804bceb7c6d54ead7ac6993b5d4059de948da9c0433c67d3082ea994c",
+      "match": false,
+      "old_sha256": "62698095a30f508fce9e1224d96a1c5600607e127b5d98347a6167f97d8f9b12",
+      "path": "training/exclusive_cuda_runner.py"
+    },
+    {
+      "current_sha256": "38e35c472c25d22c43e4dcaaedef59b64d17eb42b82e356af86b26abd80c6874",
+      "match": false,
+      "old_sha256": null,
+      "path": "training/gpu_execution_guard.py"
+    },
+    {
+      "current_sha256": "5d95fb38def0bc6588eb13777b20b0e942db17927aecb8dbc7b9c444713f46c9",
+      "match": false,
+      "old_sha256": "1a1b508701cdc45b3a87e8ec6e0c1bcf177db20e27e9fdd60f1c2206e806439e",
+      "path": "training/gpu_execution_lock.py"
+    },
+    {
+      "current_sha256": "008867aecd6d870c124df4c9bc40a828f8a4e41783bf7a073e6f9f9b0bcf5c00",
+      "match": false,
+      "old_sha256": "e9bba5b18a313973285a3708dde1709ece3b2fa90f7cb341e8c5cdd046279613",
+      "path": "training/phase63_worker.py"
+    },
+    {
+      "current_sha256": "c13d0f8d688c84f81e8d6c444e679c6f713e8b039e8773897ec9f066395301e2",
+      "match": false,
+      "old_sha256": null,
+      "path": "training/run_foundation_v36_lr_review.py"
+    }
+  ],
+  "source_mismatch_present": true,
+  "supervisor_require_preflight_source_manifest_check": true,
+  "worker_read_binding_cpu_only": {
+    "accepted": true,
+    "cuda_context_created": false,
+    "lock_acquired": false,
+    "worker_mode_invoked": false
+  },
+  "worker_source_manifest_enforced": false
+}

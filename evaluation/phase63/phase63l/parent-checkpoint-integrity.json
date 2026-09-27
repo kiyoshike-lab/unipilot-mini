@@ -1,0 +1,87 @@
+{
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "parents": [
+    {
+      "actual_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "cpu_strict_state_validation": {
+        "checks": {
+          "eos_rep": true,
+          "finite_optimizer": true,
+          "finite_weights": true,
+          "fp32": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "parameter_count": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "seed_tokens": true,
+          "strict_model_optimizer_reload": true
+        },
+        "pass": true
+      },
+      "expected_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "file_size": 235702207,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "present": true,
+      "registered_tokens": 16384000,
+      "seed": 42,
+      "sha256_pass": true
+    },
+    {
+      "actual_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "cpu_strict_state_validation": {
+        "checks": {
+          "eos_rep": true,
+          "finite_optimizer": true,
+          "finite_weights": true,
+          "fp32": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "parameter_count": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "seed_tokens": true,
+          "strict_model_optimizer_reload": true
+        },
+        "pass": true
+      },
+      "expected_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "file_size": 234996799,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "present": true,
+      "registered_tokens": 16384000,
+      "seed": 123,
+      "sha256_pass": true
+    },
+    {
+      "actual_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "cpu_strict_state_validation": {
+        "checks": {
+          "eos_rep": true,
+          "finite_optimizer": true,
+          "finite_weights": true,
+          "fp32": true,
+          "lr": true,
+          "optimizer_steps": true,
+          "parameter_count": true,
+          "rng": true,
+          "sampler": true,
+          "scheduler": true,
+          "seed_tokens": true,
+          "strict_model_optimizer_reload": true
+        },
+        "pass": true
+      },
+      "expected_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "file_size": 234995455,
+      "path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "present": true,
+      "registered_tokens": 16384000,
+      "seed": 2026,
+      "sha256_pass": true
+    }
+  ],
+  "pass": true
+}

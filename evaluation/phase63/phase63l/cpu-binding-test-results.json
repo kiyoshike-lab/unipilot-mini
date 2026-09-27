@@ -1,0 +1,30 @@
+{
+  "cuda_context": "NOT_CREATED",
+  "cuda_visible_devices": "-1",
+  "gpu_execution": "NOT_RUN",
+  "pass": true,
+  "runs": {
+    "full": {
+      "errors": 0,
+      "exit_code": 0,
+      "failed": 0,
+      "junit_path": "full-pytest-final.xml",
+      "junit_sha256": "6ec87a9e8395fc37466ef698937c090a8d47f4e0ff926ece03e78b78e014ab48",
+      "passed": 841,
+      "skipped": 4,
+      "summary": "841 passed, 4 skipped, 4 warnings in 88.53s (0:01:28)",
+      "tests": 845
+    },
+    "targeted": {
+      "errors": 0,
+      "exit_code": 0,
+      "failed": 0,
+      "junit_path": "targeted-pytest-final.xml",
+      "junit_sha256": "60d23dcc95b9a4f46f6cfff27d0ce1bee5de53cdb82d597f1f3158f3a3b05a66",
+      "passed": 22,
+      "skipped": 0,
+      "summary": "22 passed in 2.95s",
+      "tests": 22
+    }
+  }
+}

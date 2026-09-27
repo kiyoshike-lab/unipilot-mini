@@ -1,0 +1,116 @@
+{
+  "approved_processes": [],
+  "branch": "foundation-research",
+  "checkpoint_root": "Z:\\AI\\unipilot-mini\\checkpoints",
+  "contracts": {
+    "approval_schema_version": "phase63-gpu-exception-approval-v1",
+    "guard_schema_version": "phase63-gpu-guard-contract-v2",
+    "no_train_receipt_schema_version": "phase63-no-train-receipt-v1"
+  },
+  "execution_authorized": false,
+  "gates": {
+    "cooling": "PHASE63_COOLING_REVIEW_REQUIRED",
+    "generation_policy": "UNSAFE",
+    "gpu_guard": "PHASE63_GPU_GUARD_CPU_VALIDATED",
+    "old_execution_binding": "OLD_STALE",
+    "phase61": "EXPERIMENT_INVALID",
+    "process_approvals": "NONE"
+  },
+  "implementation_source_commit": "b7c4392d8930d6566f1456cd6afaa8ba2522939e",
+  "inputs": {
+    "dataset_path": "data/foundation_v11/packed/vocab-4096/train.bin",
+    "dataset_sha256": "50ea18676e17091b08e974547bf1b4111b75a07fca231f52d87a51506dc4975a",
+    "matching_cache_sha256": "4978d51cb66326bccee71a966d6337555387ce74f5ac2d4415506076a69416dc",
+    "tokenizer_sha256": "741e450a3b976ea21ccaf452c65181da47f198822f50c2e2b6bfb059e93aa13c"
+  },
+  "interpreter": {
+    "actual_gpu_availability": "NOT_RECHECKED",
+    "cuda_api_calls": 0,
+    "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "sys_executable": "C:\\Users\\nlgid\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "torch_cuda_build": "13.0",
+    "torch_version": "2.12.0+cu130"
+  },
+  "no_train_gpu_authorized": false,
+  "phase": 63,
+  "runs": [
+    {
+      "arm": "control",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-42\\control\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 1,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "runtime_lr": 5e-05,
+      "seed": 42
+    },
+    {
+      "arm": "half-lr",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-42\\half-lr\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 2,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-42\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "a55369c0e98779839750d727517ce6621bc40b5746f975a96bd9cbc0574db2e8",
+      "runtime_lr": 2.5e-05,
+      "seed": 42
+    },
+    {
+      "arm": "control",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-123\\control\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 3,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "runtime_lr": 5e-05,
+      "seed": 123
+    },
+    {
+      "arm": "half-lr",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-123\\half-lr\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 4,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-123\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "78df96b70016dda180f4529833d904e2d448e11469a87278d4881ed09c93dc20",
+      "runtime_lr": 2.5e-05,
+      "seed": 123
+    },
+    {
+      "arm": "control",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-2026\\control\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 5,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "runtime_lr": 5e-05,
+      "seed": 2026
+    },
+    {
+      "arm": "half-lr",
+      "future_output_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase63\\seed-2026\\half-lr\\checkpoint-tokens-16777216.pt",
+      "optimizer_updates": 122,
+      "ordinal": 6,
+      "parent_path": "Z:\\AI\\unipilot-mini\\checkpoints\\experimental\\phase48\\arm-C\\seed-2026\\checkpoint-tokens-16384000.pt",
+      "parent_sha256": "7dcf5fa2da58777040cf9c03f1f513d707e6866f2eaf237bf203bd1b0135f069",
+      "runtime_lr": 2.5e-05,
+      "seed": 2026
+    }
+  ],
+  "schema_version": "phase63-execution-binding-candidate-v1",
+  "scientific_preregistration": {
+    "path": "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json",
+    "sha256": "856ed78873b469100f4c6c34df1c4d05c19b540969453fba8e41315a478bc48f"
+  },
+  "source_manifest": {
+    "checkpoint_path_contract": "d503b04ae1039cf850175b48b9282cec582b5ce02f442eecf5722790c7f4a9ed",
+    "exclusive_cuda_runner": "31cf49b804bceb7c6d54ead7ac6993b5d4059de948da9c0433c67d3082ea994c",
+    "gpu_execution_guard": "38e35c472c25d22c43e4dcaaedef59b64d17eb42b82e356af86b26abd80c6874",
+    "gpu_execution_lock": "5d95fb38def0bc6588eb13777b20b0e942db17927aecb8dbc7b9c444713f46c9",
+    "strict_checkpoint_validator": "c13d0f8d688c84f81e8d6c444e679c6f713e8b039e8773897ec9f066395301e2",
+    "supervisor": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c",
+    "validator": "499e159d74455b2224bcf70a35a2c739fe20d7ed9f0d356055109ea6151dff6c",
+    "worker": "008867aecd6d870c124df4c9bc40a828f8a4e41783bf7a073e6f9f9b0bcf5c00"
+  },
+  "source_manifest_sha256": "da7f814253ba5a9424afcb97693031575c82b37e2bfb3ef7c01ae99d2014b675",
+  "status": "CPU_PREPARATION_ONLY",
+  "training_authorized": false
+}
