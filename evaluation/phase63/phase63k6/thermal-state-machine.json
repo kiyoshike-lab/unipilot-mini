@@ -11,7 +11,7 @@
     {"from": "PAUSED", "condition": "valid fresh sample >65C", "to": "PAUSED", "action": "no update"},
     {"from": "PAUSED", "condition": "valid fresh sample <=65C and no hardware slowdown", "to": "RESUMING"},
     {"from": "RESUMING", "condition": "record resume event", "to": "RUNNING"},
-    {"from": "RUNNING", "condition": "bounded work complete", "to": "COMPLETE"},
+    {"from": "RUNNING|PAUSE_PENDING|PAUSED", "condition": "the fixed 122-update budget is already complete; no next update is permitted", "to": "COMPLETE"},
     {"from": "PRECHECK|RUNNING|PAUSE_PENDING|PAUSED|RESUMING", "condition": "85C+, hardware slowdown, malformed/stale telemetry, provider error/timeout, or watchdog internal error", "to": "ABORTED"}
   ],
   "invalid_transitions": "FAIL_CLOSED",

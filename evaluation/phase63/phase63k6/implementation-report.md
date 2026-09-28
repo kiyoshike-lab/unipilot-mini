@@ -26,3 +26,7 @@ only by a later fresh, unarmed binding phase.
 
 Cooling remains `PHASE63_COOLING_REVIEW_REQUIRED`. This implementation closes
 the K5 runtime-control gap but does not reclassify physical cooling evidence.
+
+If a pause is observed after the fixed final (122nd) update, the state machine
+may complete without a further update; it never treats that observation as
+permission for new data or optimizer work.

@@ -1,16 +1,16 @@
 {
   "phase": "63K6",
   "changed_sources": {
-    "training/phase63_thermal_guard.py": {"before": "ABSENT", "after": "e172c31a293f09986a9b9fb39298dd666c4ce3012f83673c956d2975103872b3"},
+    "training/phase63_thermal_guard.py": {"before": "ABSENT", "after": "b144c249fcae7e268c6565573808d5a6fc3771666824d6f7bd3879b7904eeb3c"},
     "training/phase63_worker.py": {"before": "43e4a784c86ded4d41d7a64fcb30bff12b80ceb73dec62c66699c75d25e6c586", "after": "8402cbb11b95b5575baa87617492e3601940670257886eac50b1c572a6d977f1"},
     "training/phase63_binding_contract.py": {"before": "67e2adb420b6754a383f9af37a9820493692cb27fdb78b97d33f1680bacc842f", "after": "08603120de565ed6fdcc4d3cf059d4842746fa04cc7b7641a8162a4e58334b39"},
-    "tests/test_phase63_thermal_guard.py": {"before": "ABSENT", "after": "a120f844ee31ba1a43e94c3a04052d91d4f59e76ac41f71e1462f89f97d5a450"}
+    "tests/test_phase63_thermal_guard.py": {"before": "ABSENT", "after": "76cc80b6390844c01ea11a8069800edb6d13684195e2243a9ebf6e47391439d5"}
   },
   "unchanged_runtime_sources": {
     "training/exclusive_cuda_runner.py": "31cf49b804bceb7c6d54ead7ac6993b5d4059de948da9c0433c67d3082ea994c",
     "training/run_foundation_v35_thermal_gate.py": "2668cf45311eabd05e5b683170a70c786bbd34b04cd0f97774d5a44e87acc4ad"
   },
-  "current_runtime_source_manifest_sha256": "9cad4a0e27a9a62ffbc86a587efcdab5ed5361ec7793c0e2808195b895dd7b20",
+  "current_runtime_source_manifest_sha256": "d206ed6ccd4e7a834445b76e0268ccd61ad3680c506999569452967a7ac02ff8",
   "preservation_check": {
     "dirty179": "PRESERVED",
     "protected4": "PRESERVED",

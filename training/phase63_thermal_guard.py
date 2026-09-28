@@ -231,7 +231,12 @@ class ThermalGuard:
 
     def complete(self) -> None:
         with self._lock:
-            self._transition(ThermalState.COMPLETE, allowed=(ThermalState.RUNNING,))
+            # At the registered final update, a >=80C observation may have
+            # already set PAUSE_PENDING.  There is no next update to permit,
+            # so completing the fixed 122-update budget is safe without
+            # consuming data or overriding a hard-abort condition.
+            self._transition(ThermalState.COMPLETE,
+                             allowed=(ThermalState.RUNNING, ThermalState.PAUSE_PENDING, ThermalState.PAUSED))
 
     def receipt(self) -> dict[str, Any]:
         with self._lock:

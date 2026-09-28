@@ -146,6 +146,12 @@ def test_yz_abort_and_complete_cannot_return_to_running():
         guard.before_update()
 
 
+def test_final_pause_may_complete_without_permitting_another_update():
+    feed = Feed([59, 80]); guard = feed.guard(); assert guard.precheck(); assert not guard.before_update()
+    guard.complete()
+    assert guard.receipt()["final_state"] == "COMPLETE"
+
+
 def test_wait_for_precheck_uses_existing_300_second_timeout_without_data_consumption():
     feed = Feed([61] * 62); guard = feed.guard()
     with pytest.raises(ThermalAbort, match="THERMAL_PRECHECK_TIMEOUT"):
