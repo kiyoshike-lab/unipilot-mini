@@ -20,6 +20,7 @@ AUTHORIZATION_SCHEMA = "phase63-execution-authorization-v1"
 PREREG_RELATIVE_PATH = "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json"
 RUNTIME_SOURCE_FILES = (
     "training/phase63_worker.py",
+    "training/phase63_thermal_guard.py",
     "scripts/run_phase63_study.py",
     "training/exclusive_cuda_runner.py",
     "training/gpu_execution_lock.py",

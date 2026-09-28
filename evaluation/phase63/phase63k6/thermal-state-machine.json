@@ -1,0 +1,19 @@
+{
+  "schema": "phase63-thermal-state-machine-v1",
+  "states": ["PRECHECK", "RUNNING", "PAUSE_PENDING", "PAUSED", "RESUMING", "ABORTED", "COMPLETE"],
+  "transitions": [
+    {"from": "PRECHECK", "condition": "valid fresh sample <=60C and no hardware slowdown", "to": "RUNNING"},
+    {"from": "PRECHECK", "condition": "61C to 84.9C", "to": "PRECHECK", "action": "bounded cooldown wait; no CUDA/model/update"},
+    {"from": "RUNNING", "condition": "boundary sample <80C", "to": "RUNNING", "action": "permit exactly next update"},
+    {"from": "RUNNING", "condition": "boundary sample 80C to 84.9C", "to": "PAUSED", "action": "deny next update"},
+    {"from": "RUNNING", "condition": "watchdog sample 80C to 84.9C", "to": "PAUSE_PENDING", "action": "deny next boundary update"},
+    {"from": "PAUSE_PENDING", "condition": "next boundary", "to": "PAUSED"},
+    {"from": "PAUSED", "condition": "valid fresh sample >65C", "to": "PAUSED", "action": "no update"},
+    {"from": "PAUSED", "condition": "valid fresh sample <=65C and no hardware slowdown", "to": "RESUMING"},
+    {"from": "RESUMING", "condition": "record resume event", "to": "RUNNING"},
+    {"from": "RUNNING", "condition": "bounded work complete", "to": "COMPLETE"},
+    {"from": "PRECHECK|RUNNING|PAUSE_PENDING|PAUSED|RESUMING", "condition": "85C+, hardware slowdown, malformed/stale telemetry, provider error/timeout, or watchdog internal error", "to": "ABORTED"}
+  ],
+  "invalid_transitions": "FAIL_CLOSED",
+  "terminal_states": ["ABORTED", "COMPLETE"]
+}

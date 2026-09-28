@@ -33,7 +33,8 @@ from training.gpu_execution_lock import identity
 from training.foundation_v31_objective import weighted_lm_loss
 from training.optimizer import create_optimizer
 from training.run_foundation_v30_eos_experiment import load
-from training.run_foundation_v35_thermal_gate import Monitor, cooldown, query_gpu
+from training.phase63_thermal_guard import (ThermalAbort, ThermalGuard, ThermalWatchdog,
+                                            production_sample_provider)
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 from training.train_foundation_v15_controlled import macro_batch
 from training.train_foundation_v21_ab import random_state, restore_random_state
@@ -181,9 +182,11 @@ def disk_guard(estimated: int) -> None:
     free = shutil.disk_usage(ZROOT).free
     if free < 2 * estimated + 2 * 1024**3:
         raise RuntimeError("DISK_RESERVE_STOP")
-    sample = query_gpu()
-    if sample["gpu_temperature_c"] >= 85 or sample["hardware_thermal_slowdown"]:
-        raise RuntimeError("THERMAL_STOP")
+
+
+def thermal_guard() -> ThermalGuard:
+    """Construct the strict live guard only after binding/lock/source validation."""
+    return ThermalGuard(production_sample_provider)
 
 
 def save(seed: int, arm: str, payload: dict, model, optimizer, source_sha: str, stats: list, telemetry: dict) -> dict:
@@ -232,13 +235,13 @@ def dry_run(seed: int, arm: str, binding: Path, authorization: Path | None, auth
                          authorization_sha256=authorization_sha256)
     require_live_gpu_owner(bound)
     assert_sources_unchanged(bound)
+    thermal = thermal_guard()
+    thermal.wait_for_precheck()
     if not torch.cuda.is_available() or torch.version.cuda is None:
         raise RuntimeError("CUDA_REQUIRED")
     payload, source = strict_parent(seed)
     source_sha = sha(source)
-    cool = cooldown()
-    if not cool["target_reached"]:
-        raise RuntimeError("THERMAL_COOLDOWN_FAILED")
+    watchdog = ThermalWatchdog(thermal); watchdog.start()
     _loaded, model, _optimizer = load(source, torch.device("cuda"))
     try:
         # Contract dry-run intentionally performs one FP32 no-grad CUDA forward only.
@@ -247,7 +250,10 @@ def dry_run(seed: int, arm: str, binding: Path, authorization: Path | None, auth
             model(torch.tensor([[1, 2, 3, 4]], device="cuda"))
         torch.cuda.synchronize()
     finally:
+        telemetry = watchdog.finish()
         del model; gc.collect(); torch.cuda.empty_cache()
+    if telemetry["final_state"] == "ABORTED":
+        raise RuntimeError("THERMAL_STOP:" + str(telemetry["abort_reason"]))
     if sha(source) != source_sha or payload["update"] != 32000:
         raise RuntimeError("DRY_RUN_PARENT_MUTATED")
     print(json.dumps({"phase": 63, "kind": "cuda-dry-run", "seed": seed, "arm": arm, "pass": True}), flush=True)
@@ -258,13 +264,12 @@ def train(seed: int, arm: str, binding: Path, authorization: Path | None, author
                          authorization_sha256=authorization_sha256)
     require_live_gpu_owner(bound)
     assert_sources_unchanged(bound)
+    thermal = thermal_guard()
+    thermal.wait_for_precheck()
     if not torch.cuda.is_available() or torch.version.cuda is None or torch.cuda.get_device_name(0) != "NVIDIA GeForce RTX 2070 SUPER":
         raise RuntimeError("CUDA_RTX2070_SUPER_REQUIRED")
     torch.backends.cuda.matmul.allow_tf32 = False; torch.backends.cudnn.allow_tf32 = False
     payload, source = strict_parent(seed); source_sha = sha(source)
-    cool = cooldown()
-    if not cool["target_reached"]:
-        raise RuntimeError("THERMAL_COOLDOWN_FAILED")
     if sha(CACHE) != CACHE_SHA:
         raise RuntimeError("MATCHING_CACHE_INTEGRITY_FAIL")
     episodes = json.loads(CACHE.read_text(encoding="utf-8"))["episodes"]
@@ -282,10 +287,13 @@ def train(seed: int, arm: str, binding: Path, authorization: Path | None, author
         raise RuntimeError("RUNTIME_LR_CONTRACT_FAIL")
     tokenizer = FoundationTokenizer.load(ROOT / "tokenizer/foundation-v11-base-4096.json")
     train_data = np.memmap(ROOT / "data/foundation_v11/packed/vocab-4096/train.bin", dtype=np.uint16, mode="r")
-    estimated = source.stat().st_size; model.train(); torch.cuda.reset_peak_memory_stats(); monitor = Monitor(); monitor.start()
+    estimated = source.stat().st_size; model.train(); torch.cuda.reset_peak_memory_stats(); watchdog = ThermalWatchdog(thermal); watchdog.start()
     stats = []; over10 = 0; started = time.perf_counter()
     try:
         for update in range(32001, 32123):
+            # This is before macro_batch/permutation indexing, CUDA tensors, RNG,
+            # backward, and optimizer.step; a pause therefore consumes nothing.
+            thermal.wait_for_update_permission()
             disk_guard(estimated)
             if not all(group["lr"] == ARMS[arm] for group in optimizer.param_groups):
                 raise RuntimeError("RUNTIME_LR_CONTRACT_FAIL")
@@ -296,15 +304,19 @@ def train(seed: int, arm: str, binding: Path, authorization: Path | None, author
             lm.backward(); norm = float(torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)); over10 = over10 + 1 if norm > 10 else 0
             if not math.isfinite(norm) or norm > 100 or over10 >= 3: raise RuntimeError("GRADIENT_STOP")
             optimizer.step()
+            thermal.observe_during_update()
+            if thermal.state.name == "ABORTED":
+                raise ThermalAbort(thermal.abort_reason or "THERMAL_ABORTED")
             if not finite(model.state_dict()) or not finite(optimizer.state_dict()): raise RuntimeError("NONFINITE_STATE")
             stats.append({"update": update, "lm_loss": float(lm.detach()), "eos_loss": float(eos.detach()), "non_eos_loss": float(non.detach()), "gradient_norm_raw": norm, "matching_forward": matching, "runtime_lr": ARMS[arm]})
         torch.cuda.synchronize()
     finally:
-        elapsed = time.perf_counter() - started; telemetry = monitor.finish()
+        elapsed = time.perf_counter() - started; telemetry = watchdog.finish()
     if len(stats) != 122 or sum(row["matching_forward"] is not None for row in stats) != 15:
         raise RuntimeError("TRAINING_BUDGET_OR_MATCHING_GEOMETRY_FAIL")
-    if not telemetry.get("samples") or telemetry["gpu_temperature_c_max"] >= 85 or telemetry["hardware_thermal_slowdown"]:
+    if telemetry["final_state"] == "ABORTED":
         raise RuntimeError("THERMAL_STOP")
+    thermal.complete(); telemetry = thermal.receipt()
     if sha(source) != source_sha:
         raise RuntimeError("PARENT_MUTATED")
     checkpoint = save(seed, arm, payload, model, optimizer, source_sha, stats, telemetry)

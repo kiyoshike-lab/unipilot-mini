@@ -1,0 +1,31 @@
+{
+  "phase": "63K6",
+  "execution_scope": "CPU_ONLY",
+  "environment": {"CUDA_VISIBLE_DEVICES": "-1", "PYTHONDONTWRITEBYTECODE": "1"},
+  "targeted": {
+    "command": "python -m pytest tests/test_phase63_thermal_guard.py tests/test_phase63_runtime_binding.py tests/test_phase63_gpu_guard.py tests/test_phase63_supervision.py -q",
+    "result": "PASS",
+    "passed": 60,
+    "duration_seconds": 3.32,
+    "coverage": ["A-Z exact-boundary state tests", "stale/nonadvancing/regressing timestamps", "provider exceptions and timeout", "NaN/Inf/missing/wrong-type validation", "watchdog pause-pending and abort", "fake optimizer/example invariants", "receipt", "binding TOCTOU/source checks", "worker ordering/static integration"]
+  },
+  "full": {
+    "command": "python -m pytest -q",
+    "result": "PASS",
+    "exit_code": 0,
+    "passed": 879,
+    "skipped": 4,
+    "warnings": 4,
+    "duration_seconds": 87.93,
+    "warning_categories": ["FastAPI/Starlette deprecation", "existing checkpoint backup RuntimeWarning"]
+  },
+  "runtime_assertions": {
+    "actual_gpu_inventory": "NOT_QUERIED",
+    "gpu_lock": "NOT_ACQUIRED",
+    "cuda_context": "NOT_CREATED",
+    "no_train": "NOT_RUN",
+    "training": "NOT_RUN",
+    "optimizer_steps": 0,
+    "phase63_checkpoints": 0
+  }
+}

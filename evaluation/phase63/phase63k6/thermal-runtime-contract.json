@@ -1,0 +1,54 @@
+{
+  "schema": "phase63-thermal-runtime-contract-v1",
+  "policy_version": "phase63-thermal-runtime-v1",
+  "execution_scope": "CPU_ONLY_IMPLEMENTATION_AND_SYNTHETIC_VALIDATION",
+  "threshold_contract": {
+    "pre_run_max_c": 60.0,
+    "pause_at_or_above_c": 80.0,
+    "resume_at_or_below_c": 65.0,
+    "abort_at_or_above_c": 85.0,
+    "hardware_thermal_slowdown": "ABORT",
+    "software_thermal_slowdown": "RECORD_REQUIRES_REVIEW"
+  },
+  "telemetry_contract": {
+    "required_fields": [
+      "timestamp_monotonic",
+      "gpu_temperature_c",
+      "hardware_thermal_slowdown",
+      "software_thermal_slowdown"
+    ],
+    "max_sample_age_seconds": 6.0,
+    "max_future_skew_seconds": 0.5,
+    "watchdog_interval_seconds": 0.25,
+    "cooldown_timeout_seconds": 300.0,
+    "stale_parameter_rationale": "The legacy nvidia-smi query timeout is five seconds. Six seconds permits one bounded query plus scheduling jitter and is an execution-safety parameter, not a scientific condition.",
+    "invalid_or_missing_or_nonfinite_or_unrealistic_or_nonadvancing_or_regressing_timestamp": "FAIL_CLOSED_ABORT",
+    "provider_exception_or_timeout_or_empty_sample": "FAIL_CLOSED_ABORT"
+  },
+  "boundary_semantics": {
+    "before_update": "The worker obtains permission before permutation indexing, macro_batch, CUDA tensors, RNG consumption, backward, and optimizer.step.",
+    "pause": "80C or greater prevents the next update; paused waiting consumes no training example, sampler/permutation position, optimizer state, scheduler state, or intentional RNG draw.",
+    "mid_update": "Watchdog observation at 80C sets PAUSE_PENDING. It cannot interrupt an in-flight kernel; the next boundary transitions to PAUSED before a new update.",
+    "hard_abort": "85C, hardware slowdown, invalid/stale telemetry, provider exception, timeout, or watchdog internal error puts the guard in ABORTED and prevents a new update or normal-completion checkpoint."
+  },
+  "receipt_fields": [
+    "policy_version",
+    "precheck_temperature",
+    "max_temperature",
+    "sample_count",
+    "pause_count",
+    "pause_events",
+    "resume_events",
+    "sensor_failure_count",
+    "stale_count",
+    "hardware_thermal_slowdown_seen",
+    "software_thermal_slowdown_seen",
+    "abort_reason",
+    "final_state"
+  ],
+  "gpu_execution": "NOT_RUN",
+  "cuda_context": "NOT_CREATED",
+  "training": "NO",
+  "optimizer_steps": 0,
+  "phase63_checkpoints": 0
+}

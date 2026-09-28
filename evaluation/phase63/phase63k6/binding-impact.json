@@ -1,0 +1,15 @@
+{
+  "phase": "63K6",
+  "change": "PHASE63 runtime source manifest now includes training/phase63_thermal_guard.py and worker/binding source changed.",
+  "phase63m_candidate": {
+    "path": "evaluation/phase63/phase63m/execution-binding-candidate.json",
+    "sha256": "40a6c57445dfb8dbd4b3067c8e4c05704a722115da604a3126e8036e5773960d",
+    "previous_source_manifest_sha256": "ae2f8ff1364bae2e6be204ca24e5fb7cadde06fced62b779c13549670733bc5b",
+    "current_source_manifest_sha256": "9cad4a0e27a9a62ffbc86a587efcdab5ed5361ec7793c0e2808195b895dd7b20",
+    "contains_thermal_guard": false,
+    "status": "STALE_AFTER_K6",
+    "candidate_modified": false,
+    "candidate_armed": false
+  },
+  "next_action": "PHASE63N must generate a fresh unarmed binding after independent review; K6 does not generate or arm one."
+}
