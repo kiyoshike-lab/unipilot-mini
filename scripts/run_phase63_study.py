@@ -25,6 +25,8 @@ from training.checkpoint_paths import checkpoint_root, existing_checkpoint_path
 from training.exclusive_cuda_runner import execute, is_complete
 from training.gpu_execution_lock import ExecutionBlocked, atomic_json, identity, inventory, sha
 from training.phase63_worker import ARMS, CACHE, CACHE_SHA, PARENT_SHA, PERM_SHA, SEEDS, output, parent, raw_output
+from training.phase63_binding_contract import (BindingContractError, current_source_manifest,
+                                               validate_execution)
 from training.run_foundation_v35_thermal_gate import query_gpu
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 
@@ -55,8 +57,7 @@ def emit(path: Path, value: dict) -> None:
 
 
 def source_manifest() -> dict:
-    paths = ("training/phase63_worker.py", "scripts/run_phase63_study.py", "training/exclusive_cuda_runner.py", "training/gpu_execution_lock.py")
-    return {path: sha(ROOT / path) for path in paths}
+    return current_source_manifest(ROOT)
 
 
 def interpreter_metadata() -> dict:
@@ -164,14 +165,19 @@ def preflight() -> None:
     print(pre["gate"], flush=True)
 
 
-def require_preflight() -> dict:
+def require_preflight(binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None,
+                      *, action: str, seed: int, arm: str) -> dict:
     pre = read(OUT / "preflight.json")
-    binding = read(OUT / "execution-binding.json")
-    if pre["gate"] != "PREFLIGHT_PASS" or sha(SPEC) != SPEC_SHA or binding["source_manifest"] != source_manifest():
+    if pre["gate"] != "PREFLIGHT_PASS" or sha(SPEC) != SPEC_SHA:
         raise RuntimeError("PHASE63_PRETRAINING_GATE_NOT_PASS")
     if read(OUT / "cuda-process-inventory.json")["safe_for_new_cuda_owner"] is not True:
         raise RuntimeError("FOREIGN_CUDA_PROCESS_PRESENT")
-    return binding
+    try:
+        return validate_execution(binding_path, authorization_path, authorization_sha256, action=action, seed=seed, arm=arm,
+                                  checkpoint_root=ZROOT, preregistration_path=SPEC,
+                                  expected_interpreter=Path(sys.executable), source_root=ROOT)
+    except BindingContractError as exc:
+        raise RuntimeError(str(exc)) from exc
 
 
 def verify(seed: int, arm: str, kind: str) -> dict:
@@ -196,29 +202,34 @@ def verify(seed: int, arm: str, kind: str) -> dict:
     return {"strict_reload": True, "updates_complete": True, "artifact_path": str(target), "artifact_sha256": sha(target), "resume_integrity": checks}
 
 
-def run(kind: str) -> None:
-    binding = require_preflight()
+def run(kind: str, binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None) -> None:
     prior = None
     for seed, arm in RUN_ORDER:
+        action = "no_train" if kind == "dry-run" else "training"
+        binding = require_preflight(binding_path, authorization_path, authorization_sha256, action=action, seed=seed, arm=arm)
         run_id = f"phase63-{kind}-seed{seed}-{arm}"
         directory = receipt_path(seed, arm, kind)
         if directory.exists():
             raise RuntimeError("RUN_DIRECTORY_COLLISION_OR_PRIOR_ATTEMPT")
         if kind == "train" and (output(seed, arm).exists() or raw_output(seed, arm).exists()):
             raise RuntimeError("OUTPUT_COLLISION_OR_PRIOR_ATTEMPT")
-        command = [sys.executable, "-m", "training.phase63_worker", "dry-run" if kind == "dry-run" else "train", "--seed", str(seed), "--arm", arm, "--binding", str(OUT / "execution-binding.json")]
+        command = [sys.executable, "-m", "training.phase63_worker", "dry-run" if kind == "dry-run" else "train", "--seed", str(seed), "--arm", arm, "--binding", str(binding_path), "--authorization", str(authorization_path), "--authorization-sha256", str(authorization_sha256)]
         receipt = execute(command, cwd=ROOT, root=ZROOT, runtime=RUNTIME, run_id=run_id, phase=63, kind="cuda-dry-run" if kind == "dry-run" else "training", device="cuda:0", repo_head=git("rev-parse", "HEAD"), parent_sha=PARENT_SHA[seed], verifier=lambda s=seed, a=arm, k=kind: verify(s, a, k), temperature=temperature, outputs=[output(seed, arm)] if kind == "train" else [directory / "stdout.log"], previous=prior, query=inventory, display=(), maximum_seconds=3600)
         if not is_complete(directory):
             raise RuntimeError("RECEIPT_NOT_COMPLETE")
         prior = directory
         print(json.dumps({"phase": 63, "kind": kind, "seed": seed, "arm": arm, "receipt": receipt["status"]}), flush=True)
     emit(OUT / ("live-contract-dry-runs.json" if kind == "dry-run" else "training-completion.json"),
-         {"phase": 63, "kind": kind, "all_six_complete": True, "receipts": [str(receipt_path(s, a, kind)) for s, a in RUN_ORDER], "binding_sha256": sha(OUT / "execution-binding.json")})
+         {"phase": 63, "kind": kind, "all_six_complete": True, "receipts": [str(receipt_path(s, a, kind)) for s, a in RUN_ORDER], "binding_sha256": sha(binding_path)})
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("action", choices=("preflight", "dry-run", "train")); args = parser.parse_args()
-    {"preflight": preflight, "dry-run": lambda: run("dry-run"), "train": lambda: run("train")}[args.action]()
+    parser = argparse.ArgumentParser(); parser.add_argument("action", choices=("preflight", "dry-run", "train")); parser.add_argument("--binding", type=Path); parser.add_argument("--authorization", type=Path); parser.add_argument("--authorization-sha256"); args = parser.parse_args()
+    if args.action == "preflight":
+        preflight(); return
+    if args.binding is None or args.authorization is None or args.authorization_sha256 is None:
+        raise RuntimeError("RUNTIME_BINDING_AND_EXTERNAL_AUTHORIZATION_REQUIRED")
+    run("dry-run" if args.action == "dry-run" else "train", args.binding, args.authorization, args.authorization_sha256)
 
 
 if __name__ == "__main__":

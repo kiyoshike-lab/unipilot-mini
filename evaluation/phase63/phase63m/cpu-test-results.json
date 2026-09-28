@@ -1,0 +1,35 @@
+{
+  "cpu_only": true,
+  "cuda_visible_devices": "-1",
+  "gpu_execution": "NOT_RUN",
+  "cuda_context": "NOT_CREATED",
+  "history": [
+    {
+      "label": "pre-fix full pytest",
+      "result": "FAILED",
+      "failures": 1,
+      "cause": "compatibility identifier absent from worker source"
+    },
+    {
+      "label": "post-fix targeted pytest",
+      "command": "python -B -m pytest -q tests/test_phase63_runtime_binding.py tests/test_phase63_supervision.py tests/test_phase63_cuda_environment.py tests/test_phase63l_binding.py",
+      "exit_code": 0,
+      "passed": 38,
+      "failed": 0,
+      "skipped": 0,
+      "warnings": 0
+    },
+    {
+      "label": "post-fix full pytest",
+      "command": "python -B -m pytest -q --junitxml=evaluation/phase63/phase63m/full-pytest-final.xml",
+      "exit_code": 0,
+      "passed": 852,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 4,
+      "warnings": 4,
+      "duration": "post-fix final run"
+    }
+  ],
+  "final_pass": true
+}

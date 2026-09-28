@@ -1,0 +1,27 @@
+{
+  "authorization_requirements": [
+    "binding_sha256",
+    "phase",
+    "action",
+    "allowed_runs",
+    "valid_from",
+    "valid_until",
+    "scope",
+    "target_gpu",
+    "approved_processes"
+  ],
+  "authorization_schema": "phase63-execution-authorization-v1",
+  "binding_is_unarmed": true,
+  "runtime_schema": "phase63-runtime-binding-v2",
+  "runtime_source_files": [
+    "scripts/run_phase63_study.py",
+    "training/checkpoint_paths.py",
+    "training/exclusive_cuda_runner.py",
+    "training/gpu_execution_guard.py",
+    "training/gpu_execution_lock.py",
+    "training/phase63_binding_contract.py",
+    "training/phase63_worker.py",
+    "training/run_foundation_v36_lr_review.py"
+  ],
+  "toctou_recheck": "source manifest is checked again immediately before CUDA initialization"
+}

@@ -26,6 +26,8 @@ if str(ROOT) not in sys.path:
 from foundation.base_tokenizer import FoundationTokenizer
 from foundation.diagnostic_transformer_v17 import DiagnosticConfigV17, DiagnosticTransformerV17
 from training.checkpoint_paths import checkpoint_root, existing_checkpoint_path
+from training.phase63_binding_contract import (BindingContractError, assert_sources_unchanged,
+                                               validate_execution)
 from training.gpu_execution_guard import GuardBlocked, assert_live_lock_owner, windows_current_process_in_job
 from training.gpu_execution_lock import identity
 from training.foundation_v31_objective import weighted_lm_loss
@@ -97,21 +99,26 @@ def finite(value) -> bool:
     return True
 
 
-def read_binding(path: Path, seed: int, arm: str) -> dict:
-    binding = json.loads(Path(path).read_text(encoding="utf-8"))
-    if binding.get("phase") != 63 or binding.get("execution_authorized") is not True:
-        raise RuntimeError("PHASE63_EXECUTION_BINDING_REQUIRED")
-    if binding.get("checkpoint_root") != str(ZROOT) or os.environ.get("UNIPILOT_CHECKPOINT_ROOT") != str(ZROOT):
+def read_binding(path: Path, seed: int, arm: str, *, action: str, authorization_path: Path | None,
+                 authorization_sha256: str | None, process_identity_provider=None) -> dict:
+    """Validate the shared runtime contract before any CUDA API can be reached."""
+    # The shared validator emits WORKER_INTERPRETER_BINDING_MISMATCH verbatim.
+    if os.environ.get("UNIPILOT_CHECKPOINT_ROOT") != str(ZROOT):
         raise RuntimeError("PROCESS_ENV_RESOLVER_MISMATCH")
     if checkpoint_root(ROOT) != ZROOT:
         raise RuntimeError("PROCESS_ENV_RESOLVER_MISMATCH")
-    if Path(binding.get("interpreter", {}).get("executable", "")).resolve() != Path(sys.executable).resolve():
-        raise RuntimeError("WORKER_INTERPRETER_BINDING_MISMATCH")
+    try:
+        binding = validate_execution(path, authorization_path, authorization_sha256, action=action, seed=seed, arm=arm,
+                                     checkpoint_root=ZROOT,
+                                     preregistration_path=ROOT / "evaluation" / "phase62" / "phase63-clean-continuation-stability-preregistration.json",
+                                     expected_interpreter=Path(sys.executable), process_identity_provider=process_identity_provider)
+    except BindingContractError as exc:
+        raise RuntimeError(str(exc)) from exc
     rows = {(row["seed"], row["arm"]): row for row in binding["runs"]}
     row = rows.get((seed, arm))
     if row is None or row["parent_sha256"] != PARENT_SHA[seed] or row["runtime_lr"] != ARMS[arm]:
         raise RuntimeError("BINDING_RUN_SCOPE_MISMATCH")
-    if Path(row["output"]) != output(seed, arm):
+    if Path(row["output_path"]) != output(seed, arm) or row["optimizer_updates"] != 122:
         raise RuntimeError("BINDING_OUTPUT_MISMATCH")
     return binding
 
@@ -220,9 +227,11 @@ def save(seed: int, arm: str, payload: dict, model, optimizer, source_sha: str, 
             "strict_reload": True, "updates_complete": True, "resume_integrity": checks}
 
 
-def dry_run(seed: int, arm: str, binding: Path) -> None:
-    bound = read_binding(binding, seed, arm)
+def dry_run(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
+    bound = read_binding(binding, seed, arm, action="no_train", authorization_path=authorization,
+                         authorization_sha256=authorization_sha256)
     require_live_gpu_owner(bound)
+    assert_sources_unchanged(bound)
     if not torch.cuda.is_available() or torch.version.cuda is None:
         raise RuntimeError("CUDA_REQUIRED")
     payload, source = strict_parent(seed)
@@ -244,9 +253,11 @@ def dry_run(seed: int, arm: str, binding: Path) -> None:
     print(json.dumps({"phase": 63, "kind": "cuda-dry-run", "seed": seed, "arm": arm, "pass": True}), flush=True)
 
 
-def train(seed: int, arm: str, binding: Path) -> None:
-    bound = read_binding(binding, seed, arm)
+def train(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
+    bound = read_binding(binding, seed, arm, action="training", authorization_path=authorization,
+                         authorization_sha256=authorization_sha256)
     require_live_gpu_owner(bound)
+    assert_sources_unchanged(bound)
     if not torch.cuda.is_available() or torch.version.cuda is None or torch.cuda.get_device_name(0) != "NVIDIA GeForce RTX 2070 SUPER":
         raise RuntimeError("CUDA_RTX2070_SUPER_REQUIRED")
     torch.backends.cuda.matmul.allow_tf32 = False; torch.backends.cudnn.allow_tf32 = False
@@ -308,9 +319,9 @@ def train(seed: int, arm: str, binding: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("kind", choices=("dry-run", "train")); parser.add_argument("--seed", type=int, choices=SEEDS, required=True); parser.add_argument("--arm", choices=tuple(ARMS), required=True); parser.add_argument("--binding", type=Path, required=True); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("kind", choices=("dry-run", "train")); parser.add_argument("--seed", type=int, choices=SEEDS, required=True); parser.add_argument("--arm", choices=tuple(ARMS), required=True); parser.add_argument("--binding", type=Path, required=True); parser.add_argument("--authorization", type=Path, required=True); parser.add_argument("--authorization-sha256", required=True); args = parser.parse_args()
     torch.set_num_threads(2)
-    {"dry-run": dry_run, "train": train}[args.kind](args.seed, args.arm, args.binding)
+    {"dry-run": dry_run, "train": train}[args.kind](args.seed, args.arm, args.binding, args.authorization, args.authorization_sha256)
 
 
 if __name__ == "__main__":

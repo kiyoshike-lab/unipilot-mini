@@ -100,7 +100,15 @@ def test_generated_candidate_is_strictly_unarmed_when_present(monkeypatch) -> No
     monkeypatch.setenv("CUDA_VISIBLE_DEVICES", "-1")
     prereg = binding.read_json(binding.PREREG_PATH)
     expected_actual = binding.expected_contract(prereg, binding.source_manifest(), binding.interpreter_metadata())
-    assert binding.validate_candidate(binding.read_json(candidate_path), expected_actual)["unarmed"] is True
+    candidate = binding.read_json(candidate_path)
+    # PHASE63M intentionally changes the runtime source after this historical
+    # PHASE63L candidate.  It must remain unarmed, but is no longer reusable.
+    if candidate["implementation_source_commit"] != expected_actual["implementation_source_commit"]:
+        assert candidate["execution_authorized"] is False
+        assert candidate["no_train_gpu_authorized"] is False
+        assert candidate["training_authorized"] is False
+        return
+    assert binding.validate_candidate(candidate, expected_actual)["unarmed"] is True
 
 
 def test_generator_source_has_no_gpu_entry_points() -> None:
