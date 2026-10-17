@@ -13,22 +13,18 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Callable
 
+from training.phase63_source_manifest import (
+    MANDATORY_EXECUTION_ROOTS,
+    SourceDependencyError,
+    source_manifest,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
-RUNTIME_SCHEMA = "phase63-runtime-binding-v2"
+RUNTIME_SCHEMA = "phase63-runtime-binding-v3"
 AUTHORIZATION_SCHEMA = "phase63-execution-authorization-v1"
 PREREG_RELATIVE_PATH = "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json"
-RUNTIME_SOURCE_FILES = (
-    "training/phase63_worker.py",
-    "training/phase63_thermal_guard.py",
-    "scripts/run_phase63_study.py",
-    "training/exclusive_cuda_runner.py",
-    "training/gpu_execution_lock.py",
-    "training/gpu_execution_guard.py",
-    "training/checkpoint_paths.py",
-    "training/run_foundation_v36_lr_review.py",
-    "training/phase63_binding_contract.py",
-)
+K11_EVIDENCE_RELATIVE_PATH = "evaluation/phase63/phase63k11/runtime-baseline-decision.json"
+RUNTIME_SOURCE_FILES = MANDATORY_EXECUTION_ROOTS
 
 
 class BindingContractError(RuntimeError):
@@ -58,14 +54,11 @@ def read_object(path: Path) -> dict[str, Any]:
     return value
 
 
-def current_source_manifest(root: Path = ROOT) -> dict[str, str]:
-    manifest: dict[str, str] = {}
-    for relative in RUNTIME_SOURCE_FILES:
-        path = root / relative
-        if not path.is_file():
-            raise BindingContractError("RUNTIME_SOURCE_MISSING:" + relative)
-        manifest[relative] = sha256_file(path)
-    return manifest
+def current_source_manifest(root: Path = ROOT) -> list[dict[str, int | str]]:
+    try:
+        return source_manifest(root, RUNTIME_SOURCE_FILES)
+    except SourceDependencyError as exc:
+        raise BindingContractError(str(exc)) from exc
 
 
 def _sha(value: Any, label: str) -> None:
@@ -77,6 +70,21 @@ def _exact_keys(value: Any, keys: set[str], label: str) -> dict[str, Any]:
     if not isinstance(value, dict) or set(value) != keys:
         raise BindingContractError("INVALID_FIELDS:" + label)
     return value
+
+
+def _validate_cooling_evidence(value: Any, path: Path) -> None:
+    evidence = _exact_keys(value, {"path", "sha256", "operational_gate", "runtime_baseline", "historical_profile"}, "cooling_evidence")
+    if evidence["path"] != K11_EVIDENCE_RELATIVE_PATH or evidence["sha256"] != sha256_file(path):
+        raise BindingContractError("COOLING_EVIDENCE_SHA_MISMATCH")
+    if (evidence["operational_gate"] != "PHASE63_COOLING_RUNTIME_VERIFIED"
+            or evidence["runtime_baseline"] != "ACCEPTED"
+            or evidence["historical_profile"] != "HISTORICAL_PROFILE_DRIFT_CAUSE_UNKNOWN"):
+        raise BindingContractError("COOLING_PREREQUISITE_MISMATCH")
+    artifact = read_object(path)
+    if (artifact.get("operational_cooling_gate") != evidence["operational_gate"]
+            or artifact.get("current_runtime_baseline") != evidence["runtime_baseline"]
+            or artifact.get("historical_profile_drift") != evidence["historical_profile"]):
+        raise BindingContractError("COOLING_EVIDENCE_CONTENT_MISMATCH")
 
 
 def _utc(value: Any, label: str) -> datetime:
@@ -92,11 +100,12 @@ def _utc(value: Any, label: str) -> datetime:
 
 
 def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistration_path: Path,
-                             expected_interpreter: Path = Path(sys.executable), source_root: Path = ROOT) -> dict[str, Any]:
+                             expected_interpreter: Path = Path(sys.executable), source_root: Path = ROOT,
+                             cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH) -> dict[str, Any]:
     binding = read_object(path)
     required = {"schema_version", "phase", "status", "branch", "implementation_source_commit", "source_manifest",
                 "source_manifest_sha256", "scientific_preregistration", "interpreter", "checkpoint_root", "runs",
-                "contracts", "gates", "approved_processes", "execution_authorized", "no_train_gpu_authorized",
+                "contracts", "gates", "cooling_evidence", "approved_processes", "execution_authorized", "no_train_gpu_authorized",
                 "training_authorized"}
     _exact_keys(binding, required, "binding")
     if binding["schema_version"] != RUNTIME_SCHEMA or binding["phase"] != 63 or binding["status"] != "UNARMED_CPU_VALIDATED":
@@ -120,8 +129,11 @@ def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistrati
     if contracts["approval_schema_version"] != AUTHORIZATION_SCHEMA:
         raise BindingContractError("AUTHORIZATION_SCHEMA_MISMATCH")
     gates = _exact_keys(binding["gates"], {"gpu_guard", "cooling", "process_approvals", "generation_policy", "phase61"}, "gates")
-    if gates["gpu_guard"] != "PHASE63_GPU_GUARD_CPU_VALIDATED" or gates["cooling"] != "PHASE63_COOLING_REVIEW_REQUIRED" or gates["process_approvals"] != "NONE":
+    if (gates["gpu_guard"] != "PHASE63_GPU_GUARD_CPU_VALIDATED"
+            or gates["cooling"] != "PHASE63_COOLING_RUNTIME_VERIFIED"
+            or gates["process_approvals"] != "NONE"):
         raise BindingContractError("RUNTIME_GATE_MISMATCH")
+    _validate_cooling_evidence(binding["cooling_evidence"], cooling_evidence_path)
     if not isinstance(binding["runs"], list) or len(binding["runs"]) != 6:
         raise BindingContractError("RUN_REGISTRY_MISMATCH")
     seen: set[tuple[Any, Any]] = set()
@@ -183,11 +195,13 @@ def authorize_execution(binding_path: Path, binding: dict[str, Any], authorizati
 def validate_execution(binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None, *,
                        action: str, seed: int, arm: str, checkpoint_root: Path, preregistration_path: Path,
                        expected_interpreter: Path = Path(sys.executable), source_root: Path = ROOT,
+                       cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH,
                        now: datetime | None = None,
                        process_identity_provider: Callable[[], list[dict[str, Any]]] | None = None) -> dict[str, Any]:
     binding = validate_unarmed_binding(binding_path, checkpoint_root=checkpoint_root,
                                        preregistration_path=preregistration_path,
-                                       expected_interpreter=expected_interpreter, source_root=source_root)
+                                       expected_interpreter=expected_interpreter, source_root=source_root,
+                                       cooling_evidence_path=cooling_evidence_path)
     authorize_execution(binding_path, binding, authorization_path, authorization_sha256, action=action, seed=seed,
                         arm=arm, now=now, process_identity_provider=process_identity_provider)
     # A second read closes the validation-to-launch source TOCTOU window.

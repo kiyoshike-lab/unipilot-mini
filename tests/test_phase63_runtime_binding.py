@@ -17,6 +17,7 @@ from training import phase63_worker as worker
 
 ROOT = Path(__file__).parents[1]
 PREREG = ROOT / "evaluation" / "phase62" / "phase63-clean-continuation-stability-preregistration.json"
+K11 = ROOT / "evaluation" / "phase63" / "phase63k11" / "runtime-baseline-decision.json"
 ZROOT = Path(r"Z:\AI\unipilot-mini\checkpoints")
 
 
@@ -41,8 +42,11 @@ def fixture_binding(source_root: Path = ROOT) -> dict:
             "checkpoint_root": str(ZROOT), "runs": rows,
             "contracts": {"guard_schema_version": "phase63-gpu-guard-contract-v2", "approval_schema_version": contract.AUTHORIZATION_SCHEMA,
                           "no_train_receipt_schema_version": "phase63-no-train-receipt-v1"},
-            "gates": {"gpu_guard": "PHASE63_GPU_GUARD_CPU_VALIDATED", "cooling": "PHASE63_COOLING_REVIEW_REQUIRED",
+            "gates": {"gpu_guard": "PHASE63_GPU_GUARD_CPU_VALIDATED", "cooling": "PHASE63_COOLING_RUNTIME_VERIFIED",
                       "process_approvals": "NONE", "generation_policy": "UNSAFE", "phase61": "EXPERIMENT_INVALID"},
+            "cooling_evidence": {"path": contract.K11_EVIDENCE_RELATIVE_PATH, "sha256": contract.sha256_file(K11),
+                                 "operational_gate": "PHASE63_COOLING_RUNTIME_VERIFIED", "runtime_baseline": "ACCEPTED",
+                                 "historical_profile": "HISTORICAL_PROFILE_DRIFT_CAUSE_UNKNOWN"},
             "approved_processes": [], "execution_authorized": False, "no_train_gpu_authorized": False, "training_authorized": False}
 
 
@@ -75,9 +79,9 @@ def test_a_old_binding_is_rejected(tmp_path: Path) -> None:
 
 
 @pytest.mark.parametrize("mutation", [
-    lambda x: x["source_manifest"].__setitem__("training/phase63_worker.py", "0" * 64),
-    lambda x: x["source_manifest"].__setitem__("scripts/run_phase63_study.py", "1" * 64),
-    lambda x: x["source_manifest"].__setitem__("training/gpu_execution_guard.py", "2" * 64),
+    lambda x: x["source_manifest"].pop(),
+    lambda x: x["source_manifest"].__setitem__(0, {**x["source_manifest"][0], "sha256": "0" * 64}),
+    lambda x: x["source_manifest"].append({"path": "README.md", "bytes": 1, "sha256": "1" * 64}),
 ])
 def test_bcd_source_mismatches_are_rejected(tmp_path: Path, mutation) -> None:
     value = fixture_binding(); mutation(value); path = tmp_path / "binding.json"; put(path, value)
@@ -116,7 +120,8 @@ def test_i_pid_reuse_identity_change_is_rejected(tmp_path: Path) -> None:
 
 def test_j_source_change_after_validation_is_rejected(tmp_path: Path) -> None:
     source_root = tmp_path / "source"
-    for relative in contract.RUNTIME_SOURCE_FILES:
+    for entry in contract.current_source_manifest(ROOT):
+        relative = entry["path"]
         destination = source_root / relative; destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / relative, destination)
     value = fixture_binding(source_root)
@@ -125,6 +130,29 @@ def test_j_source_change_after_validation_is_rejected(tmp_path: Path) -> None:
     (source_root / "training" / "phase63_worker.py").write_text("changed", encoding="utf-8")
     with pytest.raises(contract.BindingContractError, match="RUNTIME_SOURCE_CHANGED_AFTER_VALIDATION"):
         contract.assert_sources_unchanged(value, source_root=source_root)
+
+
+@pytest.mark.parametrize("cooling", [
+    "PHASE63_COOLING_REVIEW_REQUIRED",
+    "PHASE63_COOLING_UNSAFE",
+    "PHASE63_COOLING_RUNTIME_VERIFIED_FAKE",
+    "COOLING_OK",
+    "VERIFIED",
+])
+def test_k_cooling_literals_other_than_current_k11_gate_are_rejected(tmp_path: Path, cooling: str) -> None:
+    path = tmp_path / "binding.json"; value = fixture_binding()
+    value["gates"]["cooling"] = cooling
+    put(path, value)
+    with pytest.raises(contract.BindingContractError, match="RUNTIME_GATE_MISMATCH"):
+        contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
+
+
+def test_l_k11_evidence_tamper_is_rejected(tmp_path: Path) -> None:
+    path = tmp_path / "binding.json"; value = fixture_binding()
+    value["cooling_evidence"]["historical_profile"] = "EXPLAINED"
+    put(path, value)
+    with pytest.raises(contract.BindingContractError, match="COOLING_PREREQUISITE_MISMATCH"):
+        contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
 
 
 def test_worker_and_supervisor_share_the_contract() -> None:
