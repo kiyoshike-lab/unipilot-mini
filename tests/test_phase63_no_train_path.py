@@ -86,6 +86,10 @@ def test_no_train_supervisor_entrypoint_has_no_six_run_dispatch():
     section = text[text.index("def run_no_train_once("):text.index("def main()")]
     assert "RUN_ORDER" not in section
     assert '"no-train"' in section and "admit_execution" in section and "execute(" in section
+    assert "prepare_execution" in section and "validate_external_processes" in section
+    assert "approvals=exceptions" in section and "current_process_identity" in section
+    training = text[text.index("def run("):text.index("def run_no_train_once(")]
+    assert "approvals=exceptions" not in training
 
 
 def test_no_train_pre_model_gate_runs_after_lock_and_before_model_load():

@@ -1,0 +1,1 @@
+{"identity_fields":["pid","process_start_time","hostname","exe","exe_sha256"],"pid_only":"REJECT","restart_or_pid_reuse":"REJECT","path_or_hash_change":"REJECT","missing_approved_process":"PERMITTED_IF_NO_OTHER_BLOCKING_PROCESS","signature":"SUPPORTING_EVIDENCE_NOT_ALLOWLIST"}

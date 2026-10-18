@@ -35,6 +35,30 @@ def approval(current=None, **changes):
     return value
 
 
+def exact_exception(current=None, **changes):
+    """A synthetic, already-authorized O3 exception bundle.
+
+    These values are fixtures only: no production candidate, PID, executable,
+    or authorization record is embedded in this test source.
+    """
+    value = {"schema": guard.EXCEPTION_SCHEMA, "exception_id": "fixture-exception-01",
+             "authorization_id": "fixture-authority", "binding_sha256": HASH_A,
+             "implementation_head": "b" * 40, "source_manifest_sha256": "c" * 64,
+             "phase": 63, "action": guard.NO_TRAIN_ACTION, "gpu_uuid": "GPU-test",
+             "process_identity": process() if current is None else current,
+             "created_at": NOW - 10, "expires_at": NOW + 10, "single_use": True}
+    value.update(changes)
+    return value
+
+
+def checked_exception(current=None, **changes):
+    return guard.validate_external_process_exception(
+        exact_exception(current, **changes), authorization_id="fixture-authority",
+        binding_sha256=HASH_A, implementation_head="b" * 40,
+        source_manifest_sha256="c" * 64, action=guard.NO_TRAIN_ACTION,
+        authorization_expires_at=NOW + 20, now=NOW)
+
+
 def row(kind="C+G", pid=71):
     return {"pid": pid, "type": kind, "process_name": r"C:\\Program Files\\example.exe",
             "cuda_device": "GPU-test"}
@@ -70,6 +94,69 @@ def test_monitor_accepts_only_current_approved_c_plus_g_and_pure_graphics():
     assert monitor([row("G")], {}).observe()["approved"] == []
     result = monitor([row()], {71: process()}, [approval()]).observe()
     assert result["approved"][0]["approval"]["approval_id"] == "C63J-01-test"
+
+
+def test_o3_exact_exception_requires_authorization_bound_full_identity_and_scope():
+    assert checked_exception()["exception_id"] == "fixture-exception-01"
+    cases = [
+        {"process_identity": {"pid": 71}},  # PID-only is never sufficient.
+        {"authorization_id": "other"},
+        {"binding_sha256": HASH_B}, {"implementation_head": "d" * 40},
+        {"source_manifest_sha256": "d" * 64}, {"action": "training"},
+        {"expires_at": NOW}, {"single_use": False},
+    ]
+    for changes in cases:
+        with pytest.raises(guard.GuardBlocked):
+            checked_exception(**changes)
+
+
+def test_o3_monitor_accepts_only_exact_exception_and_allows_a_missing_approved_process():
+    accepted = checked_exception()
+    result = monitor([row()], {71: process()}, [accepted]).observe()
+    assert result["approved"][0]["approval"]["approval_id"] == "fixture-exception-01"
+    assert monitor([], {}, [accepted]).observe()["approved"] == []
+
+
+@pytest.mark.parametrize("changed", [
+    process(pid=72, start=101), process(start=101), process(digest=HASH_B),
+    process(exe=r"C:\\other.exe"),
+])
+def test_o3_restart_or_exact_instance_change_cannot_inherit_exception(changed):
+    with pytest.raises(guard.GuardBlocked, match="PROCESS_PRESENT"):
+        monitor([row()], {71: changed}, [checked_exception()]).observe()
+
+
+def test_o3_extra_unapproved_process_and_twelve_process_fixture_fail_closed():
+    exception = checked_exception()
+    with pytest.raises(guard.GuardBlocked, match="PROCESS_PRESENT"):
+        monitor([row(), row(pid=72)], {71: process(), 72: process(pid=72)}, [exception]).observe()
+    approvals = [checked_exception(process(pid=pid, start=float(pid))) for pid in range(1, 13)]
+    rows = [row(pid=pid) for pid in range(1, 13)]
+    identities = {pid: process(pid=pid, start=float(pid)) for pid in range(1, 13)}
+    # Distinct exception IDs are mandatory, even where all other bundle fields match.
+    for index, item in enumerate(approvals, 1):
+        item["exception_id"] = f"fixture-exception-{index}"
+    assert monitor(rows, identities, approvals).observe()["approved"]
+    with pytest.raises(guard.GuardBlocked, match="PROCESS_PRESENT"):
+        monitor(rows + [row(pid=99)], {**identities, 99: process(pid=99, start=99)}, approvals).observe()
+
+
+def test_o3_monitor_detects_process_toctou_after_exact_exception_precheck():
+    accepted = checked_exception()
+    snapshots = [[row()], [row()]]
+    identities = [{71: process()}, {71: process(start=101)}]
+    index = {"value": 0}
+    def get_rows():
+        value = snapshots[index["value"]]
+        return value
+    def get_identity(pid):
+        value = identities[index["value"]][pid]
+        index["value"] += 1
+        return value
+    value = guard.ExternalComputeMonitor(get_rows, get_identity, approvals=[accepted], now=lambda: NOW)
+    assert value.observe()["approved"]
+    with pytest.raises(guard.GuardBlocked, match="PROCESS_PRESENT"):
+        value.observe()
 
 
 @pytest.mark.parametrize("rows,identities,approvals", [

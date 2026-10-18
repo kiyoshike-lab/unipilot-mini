@@ -19,8 +19,9 @@ import time
 import psutil
 
 from training.gpu_execution_lock import (ExecutionBlocked, GPULock, atomic_json,
-                                        foreign_processes, identity, inventory, same_process, sha)
-from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked
+                                        identity, inventory, same_process, sha)
+from training.gpu_execution_guard import (ExternalComputeMonitor, GuardBlocked,
+                                         current_process_identity)
 
 STATES = ('PREPARED', 'LOCKED', 'RUNNING', 'CHECKPOINT_SAVED', 'PROCESS_EXITED',
           'RECEIPT_WRITTEN', 'RELEASED')
@@ -138,7 +139,7 @@ def heavy_jobs():
 
 def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_head,
             parent_sha, verifier, temperature, outputs, previous=None, query=inventory,
-            display=(), approvals=(), identity_provider=identity, compute_monitor=None,
+            display=(), approvals=(), identity_provider=current_process_identity, compute_monitor=None,
             poll_seconds=.05, maximum_seconds=3600):
     """No COMPLETE until tree accounting, pipe EOF and GPU release all agree.
 
@@ -149,6 +150,10 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
     """
     if kind not in KINDS or not command or not isinstance(command, list):
         raise ValueError('invalid execution contract')
+    # Legacy display exceptions carried only a PID/name and are intentionally
+    # unavailable. The strict monitor below is the sole C/C+G admission path.
+    if display:
+        raise ExecutionBlocked('LEGACY_DISPLAY_EXEMPTIONS_FORBIDDEN')
     if Path(run_id).name != run_id or run_id in ('', '.', '..'):
         raise ValueError('invalid run id')
     if os.environ.get('UNIPILOT_CHECKPOINT_ROOT') != str(root):
@@ -178,8 +183,6 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         monitor = compute_monitor or ExternalComputeMonitor(query, identity_provider, approvals=approvals)
         before_monitor = _monitor_observation(monitor)
         before = before_monitor['rows']
-        if foreign_processes(before, display=display):
-            raise ExecutionBlocked('FOREIGN_CUDA_PROCESS_PRESENT')
         sample = temperature()
         if type(sample['temperature_c']) not in (int,float) or not math.isfinite(sample['temperature_c']) or \
                 type(sample['hardware_thermal_slowdown']) is not bool or \
@@ -249,9 +252,9 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
             raise ExecutionBlocked('CHILD_EXIT_NONZERO:'+str(proc.returncode))
         after_monitor = _monitor_observation(monitor)
         after = after_monitor['rows']
-        # No allowed child after completion: every owned GPU context must vanish.
-        if foreign_processes(after, display=display):
-            raise ExecutionBlocked('GPU_CONTEXT_NOT_RELEASED')
+        # The strict monitor has already required every C/C+G row to be an
+        # exact, still-live exception. It is authoritative over the legacy
+        # PID-only display filter, which cannot defend against PID reuse.
         verification = verifier()
         if verification.get('strict_reload') is not True or verification.get('updates_complete') is not True:
             raise ExecutionBlocked('ARTIFACT_VERIFICATION_FAILED')

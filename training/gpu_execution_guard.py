@@ -16,6 +16,8 @@ from pathlib import Path
 import socket
 import time
 
+import psutil
+
 
 class GuardBlocked(RuntimeError):
     """The evidence is insufficient to safely continue."""
@@ -23,6 +25,7 @@ class GuardBlocked(RuntimeError):
 
 IDENTITY_FIELDS = ("pid", "process_start_time", "hostname", "exe", "exe_sha256")
 APPROVAL_SCHEMA = "phase63-gpu-exception-approval-v1"
+EXCEPTION_SCHEMA = "phase63-external-process-exception-v1"
 NO_TRAIN_ACTION = "no-train-gpu-supervisor"
 NO_TRAIN_STATES = ("PREPARED", "LOCKED", "RUNNING", "PROCESS_EXITED", "RECEIPT_WRITTEN", "RELEASED")
 
@@ -46,6 +49,25 @@ def sha256_file(path: object) -> str:
     except OSError as exc:
         raise GuardBlocked("PROCESS_IDENTITY_HASH_UNAVAILABLE") from exc
     return digest.hexdigest()
+
+
+def current_process_identity(pid: object) -> dict | None:
+    """Read a live Windows process identity suitable for exact C+G matching.
+
+    This helper intentionally collects no command line or user data.  A process
+    that disappears or whose executable cannot be hashed is unidentifiable and
+    therefore must fail closed in ``ExternalComputeMonitor``.
+    """
+    if type(pid) is not int or pid <= 0:
+        return None
+    try:
+        process = psutil.Process(pid)
+        executable = process.exe()
+        return {"pid": process.pid, "process_start_time": process.create_time(),
+                "hostname": socket.gethostname(), "exe": executable,
+                "exe_sha256": sha256_file(executable)}
+    except (psutil.Error, GuardBlocked, OSError):
+        return None
 
 
 def normalize_identity(value: object, *, require_hash: bool = True) -> dict:
@@ -114,6 +136,67 @@ def validate_approval(approval: object, observed: object, *, now: float | None =
             "identity": current, "purpose": approval["purpose"]}
 
 
+def validate_external_process_exception(value: object, *, authorization_id: str,
+                                        binding_sha256: str, implementation_head: str,
+                                        source_manifest_sha256: str, action: str,
+                                        authorization_expires_at: float, now: float) -> dict:
+    """Validate a user-authorized, exact-instance C+G exception.
+
+    The enclosing external authorization is the user-approval record.  This
+    object cannot be used independently: every scope field must agree with the
+    authorization and fresh runtime binding that admitted it.
+    """
+    if not isinstance(value, dict) or value.get("schema") != EXCEPTION_SCHEMA:
+        raise GuardBlocked("PROCESS_EXCEPTION_SCHEMA_INVALID")
+    fields = {"schema", "exception_id", "authorization_id", "binding_sha256",
+              "implementation_head", "source_manifest_sha256", "phase", "action",
+              "gpu_uuid", "process_identity", "created_at", "expires_at", "single_use"}
+    if set(value) != fields:
+        raise GuardBlocked("PROCESS_EXCEPTION_FIELDS_INVALID")
+    if (not isinstance(value["exception_id"], str) or not value["exception_id"] or
+            value["authorization_id"] != authorization_id or
+            value["binding_sha256"] != binding_sha256 or
+            value["implementation_head"] != implementation_head or
+            value["source_manifest_sha256"] != source_manifest_sha256 or
+            value["phase"] != 63 or value["action"] != action or
+            value["action"] != NO_TRAIN_ACTION or value["single_use"] is not True or
+            not isinstance(value["gpu_uuid"], str) or not value["gpu_uuid"]):
+        raise GuardBlocked("PROCESS_EXCEPTION_SCOPE_DENIED")
+    if (not _finite_number(value["created_at"]) or not _finite_number(value["expires_at"]) or
+            value["created_at"] > now or value["expires_at"] <= now or
+            value["expires_at"] > authorization_expires_at):
+        raise GuardBlocked("PROCESS_EXCEPTION_TIME_INVALID")
+    return {**value, "process_identity": normalize_identity(value["process_identity"])}
+
+
+def validate_external_process_exceptions(values: object, *, authorization_id: str,
+                                         binding_sha256: str, implementation_head: str,
+                                         source_manifest_sha256: str, action: str,
+                                         authorization_expires_at: float, now: float) -> list[dict]:
+    if not isinstance(values, list):
+        raise GuardBlocked("PROCESS_EXCEPTION_LIST_INVALID")
+    # The binding contract calls this with its public ``no_train`` action;
+    # exceptions themselves carry the more specific guard action literal.
+    if action != "no_train" and values:
+        raise GuardBlocked("PROCESS_EXCEPTION_ACTION_DENIED")
+    checked = [validate_external_process_exception(item, authorization_id=authorization_id,
+                                                    binding_sha256=binding_sha256,
+                                                    implementation_head=implementation_head,
+                                                    source_manifest_sha256=source_manifest_sha256,
+                                                    action=NO_TRAIN_ACTION,
+                                                    authorization_expires_at=authorization_expires_at,
+                                                    now=now)
+               for item in values]
+    ids = [item["exception_id"] for item in checked]
+    identities = [(item["gpu_uuid"], item["process_identity"]["pid"],
+                   item["process_identity"]["process_start_time"],
+                   item["process_identity"]["hostname"], item["process_identity"]["exe"],
+                   item["process_identity"]["exe_sha256"]) for item in checked]
+    if len(ids) != len(set(ids)) or len(identities) != len(set(identities)):
+        raise GuardBlocked("PROCESS_EXCEPTION_DUPLICATE")
+    return checked
+
+
 class ExternalComputeMonitor:
     """Re-query a supplied inventory and reject every unknown/unsafe observation."""
     def __init__(self, inventory_provider, identity_provider, *, approvals=(), now=time.time):
@@ -126,7 +209,18 @@ class ExternalComputeMonitor:
         matches = []
         for candidate in self.approvals:
             try:
-                matches.append(validate_approval(candidate, observed, now=self.now(), gpu_uuid=gpu_uuid))
+                expected = candidate.get("process_identity") if isinstance(candidate, dict) and candidate.get("schema") == EXCEPTION_SCHEMA else candidate
+                if isinstance(candidate, dict) and candidate.get("schema") == EXCEPTION_SCHEMA:
+                    if candidate.get("gpu_uuid") != gpu_uuid or candidate.get("action") != NO_TRAIN_ACTION:
+                        continue
+                    if candidate.get("expires_at") <= self.now():
+                        continue
+                    if not identities_match(expected, observed):
+                        continue
+                    matches.append({"approval_id": candidate["exception_id"], "expires_at": candidate["expires_at"],
+                                    "identity": normalize_identity(observed), "purpose": candidate["action"]})
+                else:
+                    matches.append(validate_approval(candidate, observed, now=self.now(), gpu_uuid=gpu_uuid))
             except GuardBlocked:
                 continue
         if len(matches) != 1:

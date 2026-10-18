@@ -26,7 +26,8 @@ from training.exclusive_cuda_runner import execute, is_complete
 from training.gpu_execution_lock import ExecutionBlocked, atomic_json, identity, inventory, sha
 from training.phase63_worker import ARMS, CACHE, CACHE_SHA, PARENT_SHA, PERM_SHA, SEEDS, output, parent, raw_output
 from training.phase63_binding_contract import (BindingContractError, current_source_manifest,
-                                               admit_execution)
+                                               admit_execution, prepare_execution)
+from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked, current_process_identity
 from training.run_foundation_v35_thermal_gate import query_gpu
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 
@@ -180,6 +181,20 @@ def require_preflight(binding_path: Path, authorization_path: Path | None, autho
         raise RuntimeError(str(exc)) from exc
 
 
+def validate_external_processes(exceptions: list[dict], *, inventory_provider=inventory,
+                                identity_provider=current_process_identity) -> dict:
+    """CPU-side pre-admission check for the exact NO_TRAIN exception bundle.
+
+    The runner creates a second monitor after it owns the exclusive lock, so a
+    process restart or late C+G arrival is fail-closed rather than grandfathered.
+    """
+    try:
+        return ExternalComputeMonitor(inventory_provider, identity_provider,
+                                      approvals=exceptions).observe()
+    except GuardBlocked as exc:
+        raise RuntimeError(str(exc)) from exc
+
+
 def verify(seed: int, arm: str, kind: str) -> dict:
     if kind == "no-train":
         path = receipt_path(seed, arm, kind) / "stdout.log"
@@ -228,6 +243,14 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
                       authorization_sha256: str | None) -> None:
     """The sole PHASE63O admission path: one claimed authorization, one child, one forward."""
     run_id = f"phase63-no-train-seed{seed}-{arm}"
+    # This invokes no CUDA API, lock, or worker. The persisted authorization is
+    # the only source of exact external C+G exceptions; O2 candidates are never
+    # embedded here and training has no corresponding parameter.
+    _, exceptions = prepare_execution(binding_path, authorization_path, authorization_sha256,
+                                      action="no_train", seed=seed, arm=arm, checkpoint_root=ZROOT,
+                                      preregistration_path=SPEC, expected_interpreter=Path(sys.executable),
+                                      source_root=ROOT)
+    validate_external_processes(exceptions)
     binding = admit_execution(binding_path, authorization_path, authorization_sha256, action="no_train", seed=seed, arm=arm,
                               execution_instance=run_id, checkpoint_root=ZROOT, preregistration_path=SPEC,
                               expected_interpreter=Path(sys.executable), source_root=ROOT)
@@ -240,7 +263,8 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
     receipt = execute(command, cwd=ROOT, root=ZROOT, runtime=RUNTIME, run_id=run_id, phase=63, kind="cuda-no-train",
                       device="cuda:0", repo_head=git("rev-parse", "HEAD"), parent_sha=PARENT_SHA[seed],
                       verifier=lambda: verify(seed, arm, "no-train"), temperature=temperature,
-                      outputs=[directory / "stdout.log"], query=inventory, display=(), maximum_seconds=3600)
+                      outputs=[directory / "stdout.log"], query=inventory, display=(), approvals=exceptions,
+                      identity_provider=current_process_identity, maximum_seconds=3600)
     if not is_complete(directory) or receipt["status"] != "COMPLETE":
         raise RuntimeError("NO_TRAIN_RECEIPT_NOT_COMPLETE")
 

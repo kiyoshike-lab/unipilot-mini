@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 import threading
+import time
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
@@ -53,14 +54,32 @@ def fixture_binding(source_root: Path = ROOT) -> dict:
             "approved_processes": [], "execution_authorized": False, "no_train_gpu_authorized": False, "training_authorized": False}
 
 
-def fixture_authorization(binding_path: Path, *, action="no_train", allowed_runs=None, processes=None) -> tuple[Path, str]:
+def fixture_authorization(binding_path: Path, *, action="no_train", allowed_runs=None,
+                          processes=None, exceptions=None) -> tuple[Path, str]:
     now = datetime.now(UTC)
     auth = {"schema_version": contract.AUTHORIZATION_SCHEMA, "authorization_id": "M-test", "binding_sha256": contract.sha256_file(binding_path),
             "phase": 63, "action": action, "allowed_runs": allowed_runs or [{"seed": 42, "arm": "control"}],
             "valid_from": (now - timedelta(minutes=1)).isoformat(), "valid_until": (now + timedelta(minutes=1)).isoformat(),
-            "scope": "PHASE63_SINGLE_ACTION_SINGLE_RUN", "target_gpu": {"pci": "test"}, "approved_processes": processes or []}
+            "scope": "PHASE63_SINGLE_ACTION_SINGLE_RUN", "target_gpu": {"uuid": "GPU-test"},
+            "approved_processes": processes or [], "external_process_exceptions": exceptions or []}
     path = binding_path.with_name("authorization.json"); put(path, auth)
     return path, contract.sha256_file(path)
+
+
+def fixture_exception(binding_path: Path, *, identity=None, **changes) -> dict:
+    binding = json.loads(binding_path.read_text(encoding="utf-8"))
+    now = time.time()
+    value = {"schema": "phase63-external-process-exception-v1", "exception_id": "fixture-exception",
+             "authorization_id": "M-test", "binding_sha256": contract.sha256_file(binding_path),
+             "implementation_head": binding["implementation_source_commit"],
+             "source_manifest_sha256": binding["source_manifest_sha256"], "phase": 63,
+             "action": "no-train-gpu-supervisor", "gpu_uuid": "GPU-test",
+             "process_identity": identity or {"pid": 71, "process_start_time": 100.0,
+                                                "hostname": "test-host", "exe": r"C:\\fixture.exe",
+                                                "exe_sha256": "a" * 64},
+             "created_at": now - 1, "expires_at": now + 30, "single_use": True}
+    value.update(changes)
+    return value
 
 
 def validate(path: Path, auth: Path | None = None, auth_sha: str | None = None, *, action="no_train", provider=None) -> dict:
@@ -79,6 +98,31 @@ def test_valid_external_no_train_authorization_passes_cpu_only(tmp_path: Path) -
     binding = tmp_path / "binding.json"; put(binding, fixture_binding())
     auth, digest = fixture_authorization(binding)
     assert validate(binding, auth, digest)["schema_version"] == contract.RUNTIME_SCHEMA
+
+
+def test_exact_exception_is_bound_to_external_authorization_binding_head_and_no_train_only(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    exception = fixture_exception(binding)
+    auth, digest = fixture_authorization(binding, exceptions=[exception])
+    _, exceptions = contract.prepare_execution(binding, auth, digest, action="no_train", seed=42,
+                                               arm="control", checkpoint_root=ZROOT, preregistration_path=PREREG,
+                                               expected_interpreter=Path(sys.executable))
+    assert exceptions[0]["exception_id"] == "fixture-exception"
+    assert exceptions[0]["process_identity"]["exe_sha256"] == "a" * 64
+    wrong_binding = fixture_exception(binding, binding_sha256="b" * 64)
+    auth, digest = fixture_authorization(binding, exceptions=[wrong_binding])
+    with pytest.raises(contract.BindingContractError, match="PROCESS_EXCEPTION_SCOPE_DENIED"):
+        validate(binding, auth, digest)
+    training_exception = fixture_exception(binding)
+    auth, digest = fixture_authorization(binding, action="training", exceptions=[training_exception])
+    with pytest.raises(contract.BindingContractError, match="PROCESS_EXCEPTION_(SCOPE_DENIED|ACTION_DENIED)"):
+        validate(binding, auth, digest, action="training")
+
+
+def test_candidate_or_exception_without_separate_external_authorization_is_rejected(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    with pytest.raises(contract.BindingContractError, match="EXTERNAL_EXECUTION_AUTHORIZATION_REQUIRED"):
+        validate(binding)
 
 
 def test_no_train_authorization_first_claim_passes_and_second_claim_is_rejected(tmp_path: Path) -> None:
@@ -196,11 +240,11 @@ def test_unknown_authorization_purpose_is_rejected(tmp_path: Path) -> None:
         validate(path, auth, digest, action="not-a-phase63-purpose")
 
 
-def test_i_pid_reuse_identity_change_is_rejected(tmp_path: Path) -> None:
+def test_i_legacy_process_approval_cannot_be_promoted_to_an_exception(tmp_path: Path) -> None:
     path = tmp_path / "binding.json"; put(path, fixture_binding())
     approved = [{"pid": 99, "started": "2026-01-01T00:00:00Z", "exe_sha256": "a" * 64}]
     auth, digest = fixture_authorization(path, processes=approved)
-    with pytest.raises(contract.BindingContractError, match="APPROVED_PROCESS_IDENTITY_CHANGED"):
+    with pytest.raises(contract.BindingContractError, match="LEGACY_PROCESS_APPROVALS_FORBIDDEN"):
         validate(path, auth, digest, provider=lambda: [{"pid": 99, "started": "later", "exe_sha256": "a" * 64}])
 
 

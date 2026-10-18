@@ -21,10 +21,11 @@ from training.phase63_source_manifest import (
     source_manifest,
 )
 from training.phase63_authorization_claim import AuthorizationClaimError, claim
+from training.gpu_execution_guard import GuardBlocked, NO_TRAIN_ACTION, validate_external_process_exceptions
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_SCHEMA = "phase63-runtime-binding-v3"
-AUTHORIZATION_SCHEMA = "phase63-execution-authorization-v1"
+AUTHORIZATION_SCHEMA = "phase63-execution-authorization-v2"
 AUTHORIZATION_ACTIONS = frozenset(("no_train", "training"))
 PREREG_RELATIVE_PATH = "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json"
 K11_EVIDENCE_RELATIVE_PATH = "evaluation/phase63/phase63k11/runtime-baseline-decision.json"
@@ -130,6 +131,10 @@ def _utc(value: Any, label: str) -> datetime:
     return result.astimezone(UTC)
 
 
+def _authorization_moment(value: datetime) -> float:
+    return value.timestamp()
+
+
 def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistration_path: Path,
                              expected_interpreter: Path = Path(sys.executable), source_root: Path = ROOT,
                              cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH) -> dict[str, Any]:
@@ -202,7 +207,8 @@ def authorize_execution(binding_path: Path, binding: dict[str, Any], authorizati
         raise BindingContractError("AUTHORIZATION_FILE_SHA_MISMATCH")
     auth = read_object(authorization_path)
     required = {"schema_version", "authorization_id", "binding_sha256", "phase", "action", "allowed_runs",
-                "valid_from", "valid_until", "scope", "target_gpu", "approved_processes"}
+                "valid_from", "valid_until", "scope", "target_gpu", "approved_processes",
+                "external_process_exceptions"}
     _exact_keys(auth, required, "authorization")
     if action not in AUTHORIZATION_ACTIONS or auth["schema_version"] != AUTHORIZATION_SCHEMA or auth["phase"] != 63 or auth["action"] != action:
         raise BindingContractError("AUTHORIZATION_ACTION_OR_SCHEMA_MISMATCH")
@@ -214,20 +220,51 @@ def authorize_execution(binding_path: Path, binding: dict[str, Any], authorizati
     moment = (now or datetime.now(UTC)).astimezone(UTC)
     if not (_utc(auth["valid_from"], "valid_from") <= moment <= _utc(auth["valid_until"], "valid_until")):
         raise BindingContractError("AUTHORIZATION_EXPIRED_OR_NOT_YET_VALID")
-    if auth["scope"] != "PHASE63_SINGLE_ACTION_SINGLE_RUN" or not isinstance(auth["target_gpu"], dict):
+    if (auth["scope"] != "PHASE63_SINGLE_ACTION_SINGLE_RUN" or not isinstance(auth["target_gpu"], dict) or
+            set(auth["target_gpu"]) != {"uuid"} or not isinstance(auth["target_gpu"]["uuid"], str) or
+            not auth["target_gpu"]["uuid"]):
         raise BindingContractError("AUTHORIZATION_SCOPE_OR_GPU_MISMATCH")
     if auth["allowed_runs"] != [{"seed": seed, "arm": arm}]:
         raise BindingContractError("AUTHORIZATION_RUN_SCOPE_MISMATCH")
     approvals = auth["approved_processes"]
+    if approvals != []:
+        raise BindingContractError("LEGACY_PROCESS_APPROVALS_FORBIDDEN")
     if not isinstance(approvals, list):
         raise BindingContractError("AUTHORIZATION_PROCESS_LIST_INVALID")
-    if approvals:
-        if process_identity_provider is None:
-            raise BindingContractError("CURRENT_PROCESS_IDENTITY_PROVIDER_REQUIRED")
-        actual = process_identity_provider()
-        if approvals != actual:
-            raise BindingContractError("APPROVED_PROCESS_IDENTITY_CHANGED")
+    try:
+        auth["external_process_exceptions"] = validate_external_process_exceptions(
+            auth["external_process_exceptions"], authorization_id=auth["authorization_id"],
+            binding_sha256=auth["binding_sha256"], implementation_head=binding["implementation_source_commit"],
+            source_manifest_sha256=binding["source_manifest_sha256"], action=auth["action"],
+            authorization_expires_at=_authorization_moment(_utc(auth["valid_until"], "valid_until")),
+            now=_authorization_moment(moment),
+        )
+    except GuardBlocked as exc:
+        raise BindingContractError(str(exc)) from exc
     return auth
+
+
+def prepare_execution(binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None, *,
+                      action: str, seed: int, arm: str, checkpoint_root: Path,
+                      preregistration_path: Path, expected_interpreter: Path = Path(sys.executable),
+                      source_root: Path = ROOT, cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH,
+                      now: datetime | None = None,
+                      process_identity_provider: Callable[[], list[dict[str, Any]]] | None = None) -> tuple[dict[str, Any], list[dict]]:
+    """Validate a no-CUDA execution request and return its exact C+G exceptions.
+
+    The enclosing external authorization is the user-approval record. Returned
+    exception records are inert until passed to the production process monitor.
+    """
+    binding = validate_unarmed_binding(binding_path, checkpoint_root=checkpoint_root,
+                                       preregistration_path=preregistration_path,
+                                       expected_interpreter=expected_interpreter, source_root=source_root,
+                                       cooling_evidence_path=cooling_evidence_path)
+    authorization = authorize_execution(binding_path, binding, authorization_path, authorization_sha256,
+                                        action=action, seed=seed, arm=arm, now=now,
+                                        process_identity_provider=process_identity_provider)
+    assert_sources_unchanged(binding, source_root=source_root)
+    assert_implementation_commit_unchanged(binding)
+    return binding, authorization["external_process_exceptions"]
 
 
 def validate_execution(binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None, *,
@@ -236,15 +273,11 @@ def validate_execution(binding_path: Path, authorization_path: Path | None, auth
                        cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH,
                        now: datetime | None = None,
                        process_identity_provider: Callable[[], list[dict[str, Any]]] | None = None) -> dict[str, Any]:
-    binding = validate_unarmed_binding(binding_path, checkpoint_root=checkpoint_root,
-                                       preregistration_path=preregistration_path,
-                                       expected_interpreter=expected_interpreter, source_root=source_root,
-                                       cooling_evidence_path=cooling_evidence_path)
-    authorize_execution(binding_path, binding, authorization_path, authorization_sha256, action=action, seed=seed,
-                        arm=arm, now=now, process_identity_provider=process_identity_provider)
-    # A second read closes the validation-to-launch source TOCTOU window.
-    assert_sources_unchanged(binding, source_root=source_root)
-    assert_implementation_commit_unchanged(binding)
+    binding, _ = prepare_execution(binding_path, authorization_path, authorization_sha256, action=action, seed=seed,
+                                   arm=arm, checkpoint_root=checkpoint_root, preregistration_path=preregistration_path,
+                                   expected_interpreter=expected_interpreter, source_root=source_root,
+                                   cooling_evidence_path=cooling_evidence_path, now=now,
+                                   process_identity_provider=process_identity_provider)
     return binding
 
 
