@@ -5,6 +5,7 @@ import copy
 import hashlib
 import json
 import shutil
+import subprocess
 import sys
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
@@ -35,7 +36,7 @@ def fixture_binding(source_root: Path = ROOT) -> dict:
                      "parent_path": f"Z:\\parent-{seed}.pt", "parent_sha256": "a" * 64,
                      "output_path": str(worker.output(seed, arm))})
     return {"schema_version": contract.RUNTIME_SCHEMA, "phase": 63, "status": "UNARMED_CPU_VALIDATED",
-            "branch": "foundation-research", "implementation_source_commit": "b" * 40,
+            "branch": "foundation-research", "implementation_source_commit": contract.trusted_current_implementation_commit(),
             "source_manifest": manifest, "source_manifest_sha256": contract.canonical_sha256(manifest),
             "scientific_preregistration": {"path": contract.PREREG_RELATIVE_PATH, "sha256": contract.sha256_file(PREREG)},
             "interpreter": {"executable": str(Path(sys.executable).resolve()), "python_version": "test", "torch_version": "test", "torch_cuda_build": "test"},
@@ -153,6 +154,52 @@ def test_l_k11_evidence_tamper_is_rejected(tmp_path: Path) -> None:
     put(path, value)
     with pytest.raises(contract.BindingContractError, match="COOLING_PREREQUISITE_MISMATCH"):
         contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
+
+
+@pytest.mark.parametrize("commit", [
+    "0" * 40,
+    "f" * 40,
+    contract.trusted_current_implementation_commit()[:12],
+    contract.trusted_current_implementation_commit().upper(),
+    "HEAD",
+    "foundation-research",
+    " " + contract.trusted_current_implementation_commit(),
+])
+def test_m_implementation_source_commit_requires_exact_trusted_head(tmp_path: Path, commit: str) -> None:
+    path = tmp_path / "binding.json"; value = fixture_binding()
+    value["implementation_source_commit"] = commit
+    put(path, value)
+    with pytest.raises(contract.BindingContractError, match="IMPLEMENTATION_SOURCE_COMMIT_(MISMATCH|FORMAT_INVALID)"):
+        contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
+
+
+def test_n_parent_commit_is_rejected_when_available(tmp_path: Path) -> None:
+    parent = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "HEAD^"],
+                            check=True, capture_output=True, text=True).stdout.strip()
+    path = tmp_path / "binding.json"; value = fixture_binding()
+    value["implementation_source_commit"] = parent
+    put(path, value)
+    with pytest.raises(contract.BindingContractError, match="IMPLEMENTATION_SOURCE_COMMIT_MISMATCH"):
+        contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
+
+
+def test_o_head_resolution_failure_fails_closed(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    path = tmp_path / "binding.json"; put(path, fixture_binding())
+    def fail() -> str:
+        raise contract.BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_UNRESOLVED")
+    monkeypatch.setattr(contract, "trusted_current_implementation_commit", fail)
+    with pytest.raises(contract.BindingContractError, match="IMPLEMENTATION_SOURCE_COMMIT_UNRESOLVED"):
+        contract.validate_unarmed_binding(path, checkpoint_root=ZROOT, preregistration_path=PREREG)
+
+
+def test_p_head_changes_between_admission_checks_are_rejected(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    path = tmp_path / "binding.json"; put(path, fixture_binding())
+    auth, digest = fixture_authorization(path)
+    trusted = contract.trusted_current_implementation_commit()
+    values = iter([trusted, "f" * 40])
+    monkeypatch.setattr(contract, "trusted_current_implementation_commit", lambda: next(values))
+    with pytest.raises(contract.BindingContractError, match="IMPLEMENTATION_SOURCE_COMMIT_MISMATCH"):
+        validate(path, auth, digest)
 
 
 def test_worker_and_supervisor_share_the_contract() -> None:

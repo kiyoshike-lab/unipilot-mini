@@ -8,6 +8,8 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import re
+import subprocess
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -42,6 +44,33 @@ def sha256_file(path: Path) -> str:
 def canonical_sha256(value: Any) -> str:
     encoded = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
+
+
+def trusted_current_implementation_commit() -> str:
+    """Resolve the exact Git HEAD for this source tree, or fail closed."""
+    try:
+        top_level = subprocess.run(
+            ["git", "-C", str(ROOT), "rev-parse", "--show-toplevel"],
+            check=True, capture_output=True, text=True, timeout=10,
+        ).stdout.strip()
+        if Path(top_level).resolve() != ROOT.resolve():
+            raise BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_UNRESOLVED")
+        value = subprocess.run(
+            ["git", "-C", str(ROOT), "rev-parse", "HEAD"],
+            check=True, capture_output=True, text=True, timeout=10,
+        ).stdout.strip()
+    except (OSError, subprocess.SubprocessError) as exc:
+        raise BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_UNRESOLVED") from exc
+    if re.fullmatch(r"[0-9a-f]{40}", value) is None:
+        raise BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_UNRESOLVED")
+    return value
+
+
+def _validate_implementation_source_commit(value: Any) -> None:
+    if not isinstance(value, str) or re.fullmatch(r"[0-9a-f]{40}", value) is None:
+        raise BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_FORMAT_INVALID")
+    if value != trusted_current_implementation_commit():
+        raise BindingContractError("IMPLEMENTATION_SOURCE_COMMIT_MISMATCH")
 
 
 def read_object(path: Path) -> dict[str, Any]:
@@ -116,6 +145,7 @@ def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistrati
         raise BindingContractError("BINDING_MUST_REMAIN_UNARMED")
     if binding["approved_processes"] != []:
         raise BindingContractError("BINDING_MUST_NOT_EMBED_PROCESS_APPROVALS")
+    _validate_implementation_source_commit(binding["implementation_source_commit"])
     expected_manifest = current_source_manifest(source_root)
     if binding["source_manifest"] != expected_manifest or binding["source_manifest_sha256"] != canonical_sha256(expected_manifest):
         raise BindingContractError("RUNTIME_SOURCE_MANIFEST_MISMATCH")
@@ -153,6 +183,10 @@ def assert_sources_unchanged(binding: dict[str, Any], *, source_root: Path = ROO
     current = current_source_manifest(source_root)
     if binding.get("source_manifest") != current or binding.get("source_manifest_sha256") != canonical_sha256(current):
         raise BindingContractError("RUNTIME_SOURCE_CHANGED_AFTER_VALIDATION")
+
+
+def assert_implementation_commit_unchanged(binding: dict[str, Any]) -> None:
+    _validate_implementation_source_commit(binding.get("implementation_source_commit"))
 
 
 def authorize_execution(binding_path: Path, binding: dict[str, Any], authorization_path: Path | None,
@@ -206,4 +240,5 @@ def validate_execution(binding_path: Path, authorization_path: Path | None, auth
                         arm=arm, now=now, process_identity_provider=process_identity_provider)
     # A second read closes the validation-to-launch source TOCTOU window.
     assert_sources_unchanged(binding, source_root=source_root)
+    assert_implementation_commit_unchanged(binding)
     return binding
