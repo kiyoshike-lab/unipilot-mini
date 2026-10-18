@@ -1,0 +1,22 @@
+{
+  "implementation": "training/phase63_no_train.py::execute_once",
+  "entrypoint": "scripts/run_phase63_study.py::run_no_train_once",
+  "worker_mode": "training/phase63_worker.py no-train",
+  "execution_instances": 1,
+  "maximum_forward_calls": 1,
+  "input_provenance": "SYNTHETIC_NO_TRAIN_FIXTURE",
+  "model_mode": "EVAL",
+  "inference_mode": "torch.inference_mode in production adapter",
+  "optimizer_construction": 0,
+  "optimizer_restore": 0,
+  "scheduler_training_state": 0,
+  "training_dataloader": 0,
+  "training_examples": 0,
+  "training_batches": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "checkpoint_writes": 0,
+  "six_run_dispatch": 0,
+  "thermal_guard": "preserved through production worker adapter",
+  "gpu_lock": "preserved through exclusive_cuda_runner after admission claim"
+}

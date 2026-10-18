@@ -1,0 +1,15 @@
+{
+  "happy_fixture": {"execution_instances": 1, "forward_calls": 1, "model_mode": "EVAL", "inference_mode": "PASS"},
+  "second_forward": "REJECT:NO_TRAIN_FORWARD_LIMIT_EXCEEDED",
+  "optimizer_constructor_calls": 0,
+  "optimizer_restore_calls": 0,
+  "scheduler_training_calls": 0,
+  "training_dataloader_calls": 0,
+  "training_examples_consumed": 0,
+  "training_batches_consumed": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "checkpoint_writes": 0,
+  "worker_unclaimed_authorization": "REJECT:AUTHORIZATION_NOT_CLAIMED",
+  "result": "PASS"
+}

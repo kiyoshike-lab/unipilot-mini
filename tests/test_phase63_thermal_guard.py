@@ -172,8 +172,10 @@ def test_receipt_records_software_slowdown_without_changing_abort_policy():
 
 def test_worker_integration_is_boundary_ordered_and_legacy_monitor_is_not_live_path():
     source = (Path(__file__).parents[1] / "training" / "phase63_worker.py").read_text(encoding="utf-8")
+    no_train_source = (Path(__file__).parents[1] / "training" / "phase63_no_train.py").read_text(encoding="utf-8")
     assert "from training.run_foundation_v35_thermal_gate import" not in source
-    assert source.index("thermal.wait_for_precheck()") < source.index("torch.cuda.is_available()")
+    assert "execute_no_train_once" in source
+    assert no_train_source.index("thermal_guard.wait_for_precheck()") < no_train_source.index("pre_model_gate()")
     assert source.index("thermal.wait_for_update_permission()") < source.index("macro_batch(train_data")
     disk_section = source[source.index("def disk_guard"):source.index("def thermal_guard")]
     assert "THERMAL" not in disk_section and "query_gpu" not in disk_section

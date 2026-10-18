@@ -7,6 +7,7 @@ import json
 import shutil
 import subprocess
 import sys
+import threading
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
@@ -14,6 +15,7 @@ import pytest
 
 from training import phase63_binding_contract as contract
 from training import phase63_worker as worker
+from training.phase63_authorization_claim import claim_path
 
 
 ROOT = Path(__file__).parents[1]
@@ -33,7 +35,7 @@ def fixture_binding(source_root: Path = ROOT) -> dict:
                                                  (123, "control", 5e-5), (123, "half-lr", 2.5e-5),
                                                  (2026, "control", 5e-5), (2026, "half-lr", 2.5e-5)), 1):
         rows.append({"ordinal": ordinal, "seed": seed, "arm": arm, "runtime_lr": lr, "optimizer_updates": 122,
-                     "parent_path": f"Z:\\parent-{seed}.pt", "parent_sha256": "a" * 64,
+                     "parent_path": f"Z:\\parent-{seed}.pt", "parent_sha256": worker.PARENT_SHA[seed],
                      "output_path": str(worker.output(seed, arm))})
     return {"schema_version": contract.RUNTIME_SCHEMA, "phase": 63, "status": "UNARMED_CPU_VALIDATED",
             "branch": "foundation-research", "implementation_source_commit": contract.trusted_current_implementation_commit(),
@@ -67,10 +69,86 @@ def validate(path: Path, auth: Path | None = None, auth_sha: str | None = None, 
                                        process_identity_provider=provider)
 
 
+def admit(path: Path, auth: Path, auth_sha: str, *, execution_instance="phase63-no-train-test") -> dict:
+    return contract.admit_execution(path, auth, auth_sha, action="no_train", seed=42, arm="control",
+                                    execution_instance=execution_instance, checkpoint_root=ZROOT,
+                                    preregistration_path=PREREG, expected_interpreter=Path(sys.executable))
+
+
 def test_valid_external_no_train_authorization_passes_cpu_only(tmp_path: Path) -> None:
     binding = tmp_path / "binding.json"; put(binding, fixture_binding())
     auth, digest = fixture_authorization(binding)
     assert validate(binding, auth, digest)["schema_version"] == contract.RUNTIME_SCHEMA
+
+
+def test_no_train_authorization_first_claim_passes_and_second_claim_is_rejected(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    assert admit(binding, auth, digest)["schema_version"] == contract.RUNTIME_SCHEMA
+    with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_ALREADY_CONSUMED"):
+        admit(binding, auth, digest)
+
+
+def test_consumed_no_train_authorization_rejects_after_new_validator_call(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    admit(binding, auth, digest, execution_instance="phase63-no-train-restart")
+    # A second admission is a new function invocation, so acceptance cannot be
+    # explained by an in-memory process-local set.
+    with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_ALREADY_CONSUMED"):
+        admit(binding, auth, digest, execution_instance="phase63-no-train-restart")
+
+
+def test_concurrent_no_train_claim_has_one_accept_and_one_reject(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    barrier = threading.Barrier(2)
+    results: list[str] = []
+
+    def attempt() -> None:
+        barrier.wait()
+        try:
+            admit(binding, auth, digest, execution_instance="phase63-no-train-concurrent")
+            results.append("ACCEPT")
+        except contract.BindingContractError as exc:
+            results.append(str(exc))
+
+    threads = [threading.Thread(target=attempt) for _ in range(2)]
+    for thread in threads: thread.start()
+    for thread in threads: thread.join()
+    assert results.count("ACCEPT") == 1
+    assert results.count("AUTHORIZATION_ALREADY_CONSUMED") == 1
+
+
+def test_claim_remains_consumed_after_simulated_failure(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    admit(binding, auth, digest, execution_instance="phase63-no-train-failure")
+    # The simulated stage failure occurs after admission; no recovery path may
+    # delete the durable claim.
+    with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_ALREADY_CONSUMED"):
+        admit(binding, auth, digest, execution_instance="phase63-no-train-failure")
+
+
+def test_malformed_durable_claim_state_fails_closed(tmp_path: Path) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    claim_path(auth).write_text("not json", encoding="utf-8")
+    with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_CLAIM_STATE_CORRUPT"):
+        admit(binding, auth, digest)
+
+
+def test_worker_requires_the_supervisors_durable_claim_before_any_cuda_stage(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    binding = tmp_path / "binding.json"; put(binding, fixture_binding())
+    auth, digest = fixture_authorization(binding)
+    monkeypatch.setenv("UNIPILOT_CHECKPOINT_ROOT", str(ZROOT))
+    monkeypatch.setenv("UNIPILOT_GPU_RUN_ID", "phase63-no-train-worker")
+    with pytest.raises(RuntimeError, match="AUTHORIZATION_NOT_CLAIMED"):
+        worker.read_binding(binding, 42, "control", action="no_train", authorization_path=auth,
+                            authorization_sha256=digest)
+    admit(binding, auth, digest, execution_instance="phase63-no-train-worker")
+    assert worker.read_binding(binding, 42, "control", action="no_train", authorization_path=auth,
+                               authorization_sha256=digest)["phase"] == 63
 
 
 def test_a_old_binding_is_rejected(tmp_path: Path) -> None:
@@ -109,6 +187,13 @@ def test_gh_authorization_action_cannot_be_missing_or_reused_for_training(tmp_pa
     auth, digest = fixture_authorization(path, action="no_train")
     with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_ACTION_OR_SCHEMA_MISMATCH"):
         validate(path, auth, digest, action="training")
+
+
+def test_unknown_authorization_purpose_is_rejected(tmp_path: Path) -> None:
+    path = tmp_path / "binding.json"; put(path, fixture_binding())
+    auth, digest = fixture_authorization(path, action="not-a-phase63-purpose")
+    with pytest.raises(contract.BindingContractError, match="AUTHORIZATION_ACTION_OR_SCHEMA_MISMATCH"):
+        validate(path, auth, digest, action="not-a-phase63-purpose")
 
 
 def test_i_pid_reuse_identity_change_is_rejected(tmp_path: Path) -> None:
@@ -206,6 +291,7 @@ def test_worker_and_supervisor_share_the_contract() -> None:
     worker_source = (ROOT / "training" / "phase63_worker.py").read_text(encoding="utf-8")
     supervisor_source = (ROOT / "scripts" / "run_phase63_study.py").read_text(encoding="utf-8")
     assert "validate_execution" in worker_source
-    assert "validate_execution" in supervisor_source
+    assert "admit_execution" in supervisor_source
+    assert "run_no_train_once" in supervisor_source
     assert "--authorization-sha256" in worker_source
     assert "--authorization-sha256" in supervisor_source

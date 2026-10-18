@@ -24,7 +24,7 @@ from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked
 
 STATES = ('PREPARED', 'LOCKED', 'RUNNING', 'CHECKPOINT_SAVED', 'PROCESS_EXITED',
           'RECEIPT_WRITTEN', 'RELEASED')
-KINDS = ('training', 'generation-evaluation', 'hidden-state-observatory', 'cuda-dry-run')
+KINDS = ('training', 'generation-evaluation', 'hidden-state-observatory', 'cuda-dry-run', 'cuda-no-train')
 # Retain Job handles for aborted live trees while this supervisor lives. A hard
 # supervisor crash requires explicit forensic cleanup; missing exit proof blocks.
 ABORTED_JOBS = []

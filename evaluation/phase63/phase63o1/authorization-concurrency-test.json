@@ -1,0 +1,8 @@
+{
+  "fixture": "two CPU threads, same authorization and execution instance",
+  "claim_backend": "exclusive durable file creation",
+  "accepts": 1,
+  "rejections": 1,
+  "rejection": "AUTHORIZATION_ALREADY_CONSUMED",
+  "result": "ONE_ACCEPT_ONE_REJECT"
+}

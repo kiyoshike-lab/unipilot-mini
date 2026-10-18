@@ -28,6 +28,8 @@ from foundation.diagnostic_transformer_v17 import DiagnosticConfigV17, Diagnosti
 from training.checkpoint_paths import checkpoint_root, existing_checkpoint_path
 from training.phase63_binding_contract import (BindingContractError, assert_sources_unchanged,
                                                validate_execution)
+from training.phase63_authorization_claim import AuthorizationClaimError, assert_claimed
+from training.phase63_no_train import execute_once as execute_no_train_once
 from training.gpu_execution_guard import GuardBlocked, assert_live_lock_owner, windows_current_process_in_job
 from training.gpu_execution_lock import identity
 from training.foundation_v31_objective import weighted_lm_loss
@@ -113,7 +115,13 @@ def read_binding(path: Path, seed: int, arm: str, *, action: str, authorization_
                                      checkpoint_root=ZROOT,
                                      preregistration_path=ROOT / "evaluation" / "phase62" / "phase63-clean-continuation-stability-preregistration.json",
                                      expected_interpreter=Path(sys.executable), process_identity_provider=process_identity_provider)
+        if authorization_path is None or authorization_sha256 is None:
+            raise RuntimeError("EXTERNAL_EXECUTION_AUTHORIZATION_REQUIRED")
+        assert_claimed(authorization_path, json.loads(authorization_path.read_text(encoding="utf-8")), authorization_sha256,
+                       execution_instance=os.environ.get("UNIPILOT_GPU_RUN_ID", ""))
     except BindingContractError as exc:
+        raise RuntimeError(str(exc)) from exc
+    except AuthorizationClaimError as exc:
         raise RuntimeError(str(exc)) from exc
     rows = {(row["seed"], row["arm"]): row for row in binding["runs"]}
     row = rows.get((seed, arm))
@@ -230,33 +238,69 @@ def save(seed: int, arm: str, payload: dict, model, optimizer, source_sha: str, 
             "strict_reload": True, "updates_complete": True, "resume_integrity": checks}
 
 
-def dry_run(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
+def no_train_parent(seed: int) -> Path:
+    source = parent(seed)
+    if source != ZROOT / "experimental" / "phase48" / "arm-C" / f"seed-{seed}" / "checkpoint-tokens-16384000.pt" or sha(source) != PARENT_SHA[seed]:
+        raise RuntimeError("PARENT_SHA_OR_PATH_MISMATCH")
+    return source
+
+
+def load_model_weights_only(source: Path, device):
+    """Load architecture and model weights only; never construct optimizer/RNG state."""
+    payload = torch.load(source, map_location="cpu", weights_only=False)
+    try:
+        model = DiagnosticTransformerV17(DiagnosticConfigV17(**payload["config"])).to(device)
+        model.load_state_dict(payload["model_state"], strict=True)
+    finally:
+        del payload
+    return model
+
+
+def validate_no_train_output(value) -> None:
+    logits = value[0] if isinstance(value, tuple) else value
+    if not torch.is_tensor(logits) or not bool(torch.isfinite(logits).all()):
+        raise RuntimeError("NO_TRAIN_FORWARD_OUTPUT_INVALID")
+
+
+def no_train(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
     bound = read_binding(binding, seed, arm, action="no_train", authorization_path=authorization,
                          authorization_sha256=authorization_sha256)
-    require_live_gpu_owner(bound)
+    lock_attestor = lambda: require_live_gpu_owner(bound)
     assert_sources_unchanged(bound)
     thermal = thermal_guard()
-    thermal.wait_for_precheck()
-    if not torch.cuda.is_available() or torch.version.cuda is None:
-        raise RuntimeError("CUDA_REQUIRED")
-    payload, source = strict_parent(seed)
-    source_sha = sha(source)
-    watchdog = ThermalWatchdog(thermal); watchdog.start()
-    _loaded, model, _optimizer = load(source, torch.device("cuda"))
+    source = parent(seed)
+    source_sha: str | None = None
+
+    def weights_only_loader():
+        nonlocal source, source_sha
+        source = no_train_parent(seed)
+        source_sha = sha(source)
+        return load_model_weights_only(source, torch.device("cuda"))
+
+    def require_cuda() -> None:
+        if not torch.cuda.is_available() or torch.version.cuda is None:
+            raise RuntimeError("CUDA_REQUIRED")
+
+    result = execute_no_train_once(
+        lock_attestor=lock_attestor,
+        thermal_guard=thermal,
+        watchdog_factory=ThermalWatchdog,
+        model_loader=weights_only_loader,
+        synthetic_input_factory=lambda: torch.tensor([[1, 2, 3, 4]], device="cuda"),
+        inference_context_factory=torch.inference_mode,
+        output_validator=validate_no_train_output,
+        pre_model_gate=require_cuda,
+    )
+    model = result["model"]
     try:
-        # Contract dry-run intentionally performs one FP32 no-grad CUDA forward only.
-        model.eval()
-        with torch.no_grad():
-            model(torch.tensor([[1, 2, 3, 4]], device="cuda"))
         torch.cuda.synchronize()
     finally:
-        telemetry = watchdog.finish()
         del model; gc.collect(); torch.cuda.empty_cache()
-    if telemetry["final_state"] == "ABORTED":
-        raise RuntimeError("THERMAL_STOP:" + str(telemetry["abort_reason"]))
-    if sha(source) != source_sha or payload["update"] != 32000:
+    if source_sha is None or sha(source) != source_sha:
         raise RuntimeError("DRY_RUN_PARENT_MUTATED")
-    print(json.dumps({"phase": 63, "kind": "cuda-dry-run", "seed": seed, "arm": arm, "pass": True}), flush=True)
+    print(json.dumps({"phase": 63, "kind": "cuda-no-train", "seed": seed, "arm": arm,
+                      "forward_calls": result["forward_calls"], "input_provenance": result["input_provenance"],
+                      "pass": True}), flush=True)
 
 
 def train(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
@@ -331,9 +375,9 @@ def train(seed: int, arm: str, binding: Path, authorization: Path | None, author
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("kind", choices=("dry-run", "train")); parser.add_argument("--seed", type=int, choices=SEEDS, required=True); parser.add_argument("--arm", choices=tuple(ARMS), required=True); parser.add_argument("--binding", type=Path, required=True); parser.add_argument("--authorization", type=Path, required=True); parser.add_argument("--authorization-sha256", required=True); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("kind", choices=("no-train", "train")); parser.add_argument("--seed", type=int, choices=SEEDS, required=True); parser.add_argument("--arm", choices=tuple(ARMS), required=True); parser.add_argument("--binding", type=Path, required=True); parser.add_argument("--authorization", type=Path, required=True); parser.add_argument("--authorization-sha256", required=True); args = parser.parse_args()
     torch.set_num_threads(2)
-    {"dry-run": dry_run, "train": train}[args.kind](args.seed, args.arm, args.binding, args.authorization, args.authorization_sha256)
+    {"no-train": no_train, "train": train}[args.kind](args.seed, args.arm, args.binding, args.authorization, args.authorization_sha256)
 
 
 if __name__ == "__main__":

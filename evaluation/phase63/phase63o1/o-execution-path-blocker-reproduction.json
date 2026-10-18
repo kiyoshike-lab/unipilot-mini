@@ -1,0 +1,10 @@
+{
+  "pre_fix_paths": {
+    "supervisor": {"file": "scripts/run_phase63_study.py", "lines": "205-223", "finding": "dry-run iterated fixed RUN_ORDER of six entries"},
+    "worker": {"file": "training/phase63_worker.py", "lines": "233-259", "finding": "dry_run loaded the existing parent through the generic optimizer-bearing loader"},
+    "generic_loader": {"file": "training/run_foundation_v30_eos_experiment.py", "lines": "24-29", "finding": "load constructed/restored/moved optimizer state and restored RNG"}
+  },
+  "result": "EXECUTION_PATH_BLOCKER_REPRODUCED",
+  "cuda_imported": false,
+  "cuda_context_created": false
+}

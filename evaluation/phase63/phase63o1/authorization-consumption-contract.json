@@ -1,0 +1,11 @@
+{
+  "implementation": "training/phase63_authorization_claim.py",
+  "claim_schema": "phase63-authorization-claim-v1",
+  "storage": "authorization-file-adjacent durable JSON sidecar",
+  "linearization_point": "exclusive x-mode creation of the claim file",
+  "claim_identity": ["authorization_sha256", "authorization_id", "binding_sha256", "phase", "action", "allowed_runs", "execution_instance"],
+  "order": ["immutable validation", "atomic durable claim", "source/HEAD revalidation", "GPU lock admission"],
+  "replay_result": "AUTHORIZATION_ALREADY_CONSUMED",
+  "corrupt_or_conflicting_claim": "FAIL_CLOSED",
+  "claim_release": "NONE; a claimed authorization remains consumed after abort"
+}

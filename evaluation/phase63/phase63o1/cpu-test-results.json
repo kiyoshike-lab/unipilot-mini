@@ -1,0 +1,19 @@
+{
+  "environment": {"cuda_visible_devices": "-1", "python_bytecode": "disabled"},
+  "guaranteed_cpu_only": true,
+  "test_modules": [
+    "test_phase63_runtime_binding.py",
+    "test_phase63_no_train_path.py",
+    "test_phase63_source_manifest.py",
+    "test_phase63_thermal_guard.py",
+    "test_phase63_gpu_guard.py",
+    "test_phase63_supervision.py",
+    "test_gpu_execution_lock.py",
+    "test_exclusive_cuda_runner.py"
+  ],
+  "collected": 122,
+  "passed": 122,
+  "failed": 0,
+  "full_suite": "NOT_RUN",
+  "full_suite_reason": "CUDA_NONINITIALIZATION_NOT_GUARANTEED"
+}

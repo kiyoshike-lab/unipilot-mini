@@ -1,0 +1,12 @@
+{
+  "first_claim": "ACCEPT",
+  "second_claim": "REJECT:AUTHORIZATION_ALREADY_CONSUMED",
+  "restart_equivalent_replay": "REJECT:AUTHORIZATION_ALREADY_CONSUMED",
+  "post_failure_replay": "REJECT:AUTHORIZATION_ALREADY_CONSUMED",
+  "malformed_claim_state": "REJECT:AUTHORIZATION_CLAIM_STATE_CORRUPT",
+  "absent_authorization": "REJECT:EXTERNAL_EXECUTION_AUTHORIZATION_REQUIRED",
+  "wrong_purpose": "REJECT:AUTHORIZATION_ACTION_OR_SCHEMA_MISMATCH",
+  "wrong_binding": "REJECT:AUTHORIZATION_BINDING_SHA_MISMATCH",
+  "head_and_source_toctou": "REJECT",
+  "result": "PASS"
+}

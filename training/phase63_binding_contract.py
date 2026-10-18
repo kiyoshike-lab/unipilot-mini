@@ -20,10 +20,12 @@ from training.phase63_source_manifest import (
     SourceDependencyError,
     source_manifest,
 )
+from training.phase63_authorization_claim import AuthorizationClaimError, claim
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_SCHEMA = "phase63-runtime-binding-v3"
 AUTHORIZATION_SCHEMA = "phase63-execution-authorization-v1"
+AUTHORIZATION_ACTIONS = frozenset(("no_train", "training"))
 PREREG_RELATIVE_PATH = "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json"
 K11_EVIDENCE_RELATIVE_PATH = "evaluation/phase63/phase63k11/runtime-baseline-decision.json"
 RUNTIME_SOURCE_FILES = MANDATORY_EXECUTION_ROOTS
@@ -202,8 +204,10 @@ def authorize_execution(binding_path: Path, binding: dict[str, Any], authorizati
     required = {"schema_version", "authorization_id", "binding_sha256", "phase", "action", "allowed_runs",
                 "valid_from", "valid_until", "scope", "target_gpu", "approved_processes"}
     _exact_keys(auth, required, "authorization")
-    if auth["schema_version"] != AUTHORIZATION_SCHEMA or auth["phase"] != 63 or auth["action"] != action:
+    if action not in AUTHORIZATION_ACTIONS or auth["schema_version"] != AUTHORIZATION_SCHEMA or auth["phase"] != 63 or auth["action"] != action:
         raise BindingContractError("AUTHORIZATION_ACTION_OR_SCHEMA_MISMATCH")
+    if not isinstance(auth["authorization_id"], str) or not auth["authorization_id"]:
+        raise BindingContractError("AUTHORIZATION_ID_INVALID")
     _sha(auth["binding_sha256"], "authorization_binding")
     if auth["binding_sha256"] != sha256_file(binding_path):
         raise BindingContractError("AUTHORIZATION_BINDING_SHA_MISMATCH")
@@ -239,6 +243,30 @@ def validate_execution(binding_path: Path, authorization_path: Path | None, auth
     authorize_execution(binding_path, binding, authorization_path, authorization_sha256, action=action, seed=seed,
                         arm=arm, now=now, process_identity_provider=process_identity_provider)
     # A second read closes the validation-to-launch source TOCTOU window.
+    assert_sources_unchanged(binding, source_root=source_root)
+    assert_implementation_commit_unchanged(binding)
+    return binding
+
+
+def admit_execution(binding_path: Path, authorization_path: Path | None, authorization_sha256: str | None, *,
+                    action: str, seed: int, arm: str, execution_instance: str, checkpoint_root: Path,
+                    preregistration_path: Path, expected_interpreter: Path = Path(sys.executable),
+                    source_root: Path = ROOT, cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH,
+                    now: datetime | None = None,
+                    process_identity_provider: Callable[[], list[dict[str, Any]]] | None = None) -> dict[str, Any]:
+    """Validate and atomically consume one authorization before GPU lock admission."""
+    binding = validate_execution(binding_path, authorization_path, authorization_sha256, action=action, seed=seed,
+                                 arm=arm, checkpoint_root=checkpoint_root, preregistration_path=preregistration_path,
+                                 expected_interpreter=expected_interpreter, source_root=source_root,
+                                 cooling_evidence_path=cooling_evidence_path, now=now,
+                                 process_identity_provider=process_identity_provider)
+    assert authorization_path is not None and authorization_sha256 is not None
+    authorization = read_object(authorization_path)
+    try:
+        claim(authorization_path, authorization, authorization_sha256, execution_instance=execution_instance)
+    except AuthorizationClaimError as exc:
+        raise BindingContractError(str(exc)) from exc
+    # Recheck source and trusted HEAD after durable claim, before any lock/CUDA stage.
     assert_sources_unchanged(binding, source_root=source_root)
     assert_implementation_commit_unchanged(binding)
     return binding

@@ -1,0 +1,20 @@
+{
+  "call_graph": [
+    "run_no_train_once",
+    "admit_execution",
+    "validate_execution",
+    "atomic authorization claim",
+    "exclusive_cuda_runner.execute",
+    "worker no_train",
+    "claimed authorization + live lock assertion",
+    "K6 thermal precheck",
+    "CUDA availability gate",
+    "weights-only model loader",
+    "eval + inference_mode + synthetic input",
+    "SingleForward.call exactly once",
+    "finite output validation",
+    "normal teardown and lock release"
+  ],
+  "excluded_from_no_train_branch": ["create_optimizer", "optimizer-state restore", "scheduler state", "macro_batch", "training dataloader", "backward", "optimizer.step", "checkpoint save", "six-run loop"],
+  "cpu_fixture_result": "PASS"
+}
