@@ -30,10 +30,24 @@ AUTHORIZATION_ACTIONS = frozenset(("no_train", "training"))
 PREREG_RELATIVE_PATH = "evaluation/phase62/phase63-clean-continuation-stability-preregistration.json"
 K11_EVIDENCE_RELATIVE_PATH = "evaluation/phase63/phase63k11/runtime-baseline-decision.json"
 RUNTIME_SOURCE_FILES = MANDATORY_EXECUTION_ROOTS
+RUN_IDENTITIES = frozenset(((42, "control"), (42, "half-lr"), (123, "control"),
+                            (123, "half-lr"), (2026, "control"), (2026, "half-lr")))
 
 
 class BindingContractError(RuntimeError):
     pass
+
+
+def expected_output_path(checkpoint_root: Path, seed: Any, arm: Any) -> Path:
+    """Return the sole registered checkpoint filename for a PHASE63 run.
+
+    This lives in the CPU-only admission contract so an invalid output binding
+    is rejected before an authorization claim, GPU lock, or child launch.
+    """
+    if (seed, arm) not in RUN_IDENTITIES:
+        raise BindingContractError("RUN_REGISTRY_MISMATCH")
+    return (Path(checkpoint_root) / "experimental" / "phase63" / "continuation-stability" /
+            arm / f"seed-{seed}" / "checkpoint-tokens-16446464.pt")
 
 
 def sha256_file(path: Path) -> str:
@@ -183,6 +197,10 @@ def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistrati
         if key in seen:
             raise BindingContractError("DUPLICATE_RUN")
         seen.add(key)
+        if not isinstance(row["output_path"], str) or Path(row["output_path"]) != expected_output_path(checkpoint_root, *key):
+            raise BindingContractError("BINDING_OUTPUT_MISMATCH")
+    if seen != RUN_IDENTITIES:
+        raise BindingContractError("RUN_REGISTRY_MISMATCH")
     return binding
 
 
