@@ -28,6 +28,7 @@ from training.phase63_worker import ARMS, CACHE, CACHE_SHA, PARENT_SHA, PERM_SHA
 from training.phase63_binding_contract import (BindingContractError, current_source_manifest,
                                                admit_execution, prepare_execution)
 from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked, current_process_identity
+from training.phase63_runtime_journal import RuntimeJournalError, build_contract as build_journal_contract, reserve as reserve_journal
 from training.run_foundation_v35_thermal_gate import query_gpu
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 
@@ -78,8 +79,8 @@ def output_artifact(seed: int, arm: str) -> Path:
     return OUT / f"run-seed{seed}-{arm}.json"
 
 
-def receipt_path(seed: int, arm: str, kind: str) -> Path:
-    return RUNTIME / "runs" / f"phase63-{kind}-seed{seed}-{arm}"
+def receipt_path(seed: int, arm: str, kind: str, *, execution_instance: str | None = None) -> Path:
+    return RUNTIME / "runs" / (execution_instance or f"phase63-{kind}-seed{seed}-{arm}")
 
 
 def root_gate() -> None:
@@ -242,21 +243,28 @@ def run(kind: str, binding_path: Path, authorization_path: Path | None, authoriz
 def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_path: Path | None,
                       authorization_sha256: str | None) -> None:
     """The sole PHASE63O admission path: one claimed authorization, one child, one forward."""
-    run_id = f"phase63-no-train-seed{seed}-{arm}"
     # This invokes no CUDA API, lock, or worker. The persisted authorization is
     # the only source of exact external C+G exceptions; O2 candidates are never
     # embedded here and training has no corresponding parameter.
-    _, exceptions = prepare_execution(binding_path, authorization_path, authorization_sha256,
+    binding, exceptions = prepare_execution(binding_path, authorization_path, authorization_sha256,
                                       action="no_train", seed=seed, arm=arm, checkpoint_root=ZROOT,
                                       preregistration_path=SPEC, expected_interpreter=Path(sys.executable),
                                       source_root=ROOT)
+    if authorization_path is None or authorization_sha256 is None:
+        raise RuntimeError("RUNTIME_BINDING_AND_EXTERNAL_AUTHORIZATION_REQUIRED")
+    try:
+        journal_contract = build_journal_contract(authorization_path, authorization_sha256, sha(binding_path),
+                                                  purpose="no_train", seed=seed, arm=arm,
+                                                  head=binding["implementation_source_commit"],
+                                                  source_manifest_sha256=binding["source_manifest_sha256"])
+        run_id = str(journal_contract["execution_instance"])
+        directory = reserve_journal(RUNTIME, journal_contract)
+    except RuntimeJournalError as exc:
+        raise RuntimeError(str(exc)) from exc
     validate_external_processes(exceptions)
     binding = admit_execution(binding_path, authorization_path, authorization_sha256, action="no_train", seed=seed, arm=arm,
                               execution_instance=run_id, checkpoint_root=ZROOT, preregistration_path=SPEC,
                               expected_interpreter=Path(sys.executable), source_root=ROOT)
-    directory = receipt_path(seed, arm, "no-train")
-    if directory.exists():
-        raise RuntimeError("RUN_DIRECTORY_COLLISION_OR_PRIOR_ATTEMPT")
     command = [sys.executable, "-m", "training.phase63_worker", "no-train", "--seed", str(seed), "--arm", arm,
                "--binding", str(binding_path), "--authorization", str(authorization_path),
                "--authorization-sha256", str(authorization_sha256)]
@@ -264,7 +272,8 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
                       device="cuda:0", repo_head=git("rev-parse", "HEAD"), parent_sha=PARENT_SHA[seed],
                       verifier=lambda: verify(seed, arm, "no-train"), temperature=temperature,
                       outputs=[directory / "stdout.log"], query=inventory, display=(), approvals=exceptions,
-                      identity_provider=current_process_identity, maximum_seconds=3600)
+                      identity_provider=current_process_identity, maximum_seconds=3600,
+                      journal_path=directory, journal_contract=journal_contract)
     if not is_complete(directory) or receipt["status"] != "COMPLETE":
         raise RuntimeError("NO_TRAIN_RECEIPT_NOT_COMPLETE")
 

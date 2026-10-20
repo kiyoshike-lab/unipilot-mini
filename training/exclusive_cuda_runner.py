@@ -32,9 +32,13 @@ ABORTED_JOBS = []
 
 
 class Journal:
-    def __init__(self, directory):
+    def __init__(self, directory, *, reserved=False):
         self.directory = Path(directory)
-        self.directory.mkdir(parents=True, exist_ok=False)  # No retries, even after crash.
+        if reserved:
+            if not self.directory.is_dir() or self.directory.is_symlink():
+                raise ExecutionBlocked('RUNTIME_JOURNAL_RESERVATION_INVALID')
+        else:
+            self.directory.mkdir(parents=True, exist_ok=False)  # No retries, even after crash.
         self.events = []
         self.advance('PREPARED')
 
@@ -140,7 +144,7 @@ def heavy_jobs():
 def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_head,
             parent_sha, verifier, temperature, outputs, previous=None, query=inventory,
             display=(), approvals=(), identity_provider=current_process_identity, compute_monitor=None,
-            poll_seconds=.05, maximum_seconds=3600):
+            poll_seconds=.05, maximum_seconds=3600, journal_path=None, journal_contract=None):
     """No COMPLETE until tree accounting, pipe EOF and GPU release all agree.
 
     verifier is a trusted per-study strict checkpoint validator (no GPU inference).
@@ -165,6 +169,17 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         raise ExecutionBlocked('SINGLE_RUNTIME_ROOT_REQUIRED')
     if previous is not None and not is_complete(previous):
         raise ExecutionBlocked('PREVIOUS_RUN_INCOMPLETE')
+    if (journal_path is None) != (journal_contract is None):
+        raise ExecutionBlocked('RUNTIME_JOURNAL_ARGUMENT_MISMATCH')
+    journal_directory = Path(runtime)/'runs'/run_id if journal_path is None else Path(journal_path)
+    if journal_contract is not None:
+        from training.phase63_runtime_journal import RuntimeJournalError, validate_reserved
+        try:
+            validate_reserved(Path(runtime), journal_directory, journal_contract)
+        except RuntimeJournalError as exc:
+            raise ExecutionBlocked(str(exc)) from exc
+        if journal_contract.get('execution_instance') != run_id:
+            raise ExecutionBlocked('RUNTIME_JOURNAL_EXECUTION_ID_MISMATCH')
     lock = GPULock(Path(runtime)/'gpu.lock', phase=phase, run_id=run_id, device=device,
                    command=command, repo_head=repo_head, parent_sha=parent_sha)
     # Acquire BEFORE any CUDA-related operation. All four kinds use this path.
@@ -173,7 +188,7 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
     tree = None
     proc = None
     try:
-        journal = Journal(Path(runtime)/'runs'/run_id)
+        journal = Journal(journal_directory, reserved=journal_contract is not None)
         journal.advance('LOCKED', owner=lock.owner)
         if not outputs or any(Path(p).exists() or Path(str(p)+'.tmp').exists() for p in outputs):
             raise ExecutionBlocked('OUTPUT_COLLISION_OR_MISSING_DECLARATION')
@@ -199,7 +214,9 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
                'UNIPILOT_GPU_OWNER_NONCE': lock.owner['nonce'],
                'UNIPILOT_GPU_LOCK_PATH': str(lock.path),
                'UNIPILOT_GPU_RUN_ID': run_id,
-               'UNIPILOT_GPU_PHASE': str(phase)}
+               'UNIPILOT_GPU_PHASE': str(phase),
+               'UNIPILOT_RUNTIME_JOURNAL_PATH': str(journal_directory),
+               'UNIPILOT_RUNTIME_JOURNAL_ID': run_id}
         proc = subprocess.Popen(command, cwd=cwd, env=env, stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE, stdin=subprocess.DEVNULL,
                                 creationflags=0x00000004, shell=False)  # Win32 CREATE_SUSPENDED

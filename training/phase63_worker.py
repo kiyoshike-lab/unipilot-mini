@@ -30,6 +30,7 @@ from training.phase63_binding_contract import (BindingContractError, assert_sour
                                                validate_execution)
 from training.phase63_authorization_claim import AuthorizationClaimError, assert_claimed
 from training.phase63_no_train import execute_once as execute_no_train_once
+from training.phase63_runtime_journal import RuntimeJournalError, build_contract as build_journal_contract, validate_reserved as validate_runtime_journal
 from training.gpu_execution_guard import GuardBlocked, assert_live_lock_owner, windows_current_process_in_job
 from training.gpu_execution_lock import identity
 from training.foundation_v31_objective import weighted_lm_loss
@@ -265,6 +266,18 @@ def validate_no_train_output(value) -> None:
 def no_train(seed: int, arm: str, binding: Path, authorization: Path | None, authorization_sha256: str | None) -> None:
     bound = read_binding(binding, seed, arm, action="no_train", authorization_path=authorization,
                          authorization_sha256=authorization_sha256)
+    if authorization is None or authorization_sha256 is None:
+        raise RuntimeError("EXTERNAL_EXECUTION_AUTHORIZATION_REQUIRED")
+    try:
+        journal_contract = build_journal_contract(authorization, authorization_sha256, sha(binding),
+                                                  purpose="no_train", seed=seed, arm=arm,
+                                                  head=bound["implementation_source_commit"],
+                                                  source_manifest_sha256=bound["source_manifest_sha256"])
+        if os.environ.get("UNIPILOT_RUNTIME_JOURNAL_ID") != journal_contract["execution_instance"]:
+            raise RuntimeJournalError("RUNTIME_JOURNAL_EXECUTION_ID_MISMATCH")
+        validate_runtime_journal(ZROOT.parent / "runtime", Path(os.environ.get("UNIPILOT_RUNTIME_JOURNAL_PATH", "")), journal_contract)
+    except RuntimeJournalError as exc:
+        raise RuntimeError(str(exc)) from exc
     lock_attestor = lambda: require_live_gpu_owner(bound)
     assert_sources_unchanged(bound)
     thermal = thermal_guard()
