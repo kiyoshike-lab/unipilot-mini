@@ -107,6 +107,12 @@ def is_complete(directory):
         events = [json.loads((directory / f'{i:02d}-{s}.json').read_text()) for i, s in enumerate(STATES)]
         receipt_path = directory / 'receipt.json'
         receipt = json.loads(receipt_path.read_text())
+        if receipt.get('kind') == 'cuda-no-train':
+            from training.phase63_runtime_journal import RuntimeJournalError, validate_current_receipt
+            try:
+                validate_current_receipt(directory.parents[1], directory, receipt['verification'])
+            except RuntimeJournalError:
+                return False
         return (all(e['state'] == s for e, s in zip(events, STATES)) and
                 receipt['status'] == 'COMPLETE' and receipt['exit_code'] == 0 and
                 receipt['child_tree_exited'] is True and receipt['gpu_context_released'] is True and
@@ -282,7 +288,7 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
                         note='durable artifact observation; actual save happened in child before exit')
         journal.advance('PROCESS_EXITED', exit_code=proc.returncode, children=list(observed.values()),
                         stdout_closed=True, stderr_closed=True, gpu_context_released=True)
-        receipt = {'status': 'COMPLETE', 'exit_code': proc.returncode, 'child_tree_exited': True,
+        receipt = {'status': 'COMPLETE', 'kind': kind, 'exit_code': proc.returncode, 'child_tree_exited': True,
                    'gpu_context_released': True, 'stdout_closed': True, 'stderr_closed': True,
                    'verification': verification, 'owner': lock.owner,
                    'stdout_sha256': sha(journal.directory/'stdout.log'),

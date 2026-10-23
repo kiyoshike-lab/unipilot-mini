@@ -113,3 +113,27 @@ def validate_reserved(runtime: Path, path: Path, contract: dict[str, Any]) -> No
         raise RuntimeJournalError("RUNTIME_JOURNAL_RESERVATION_MISSING") from exc
     if value != contract:
         raise RuntimeJournalError("RUNTIME_JOURNAL_CONTRACT_MISMATCH")
+
+
+def validate_current_receipt(runtime: Path, path: Path, verification: object) -> Path:
+    """Bind a no-train receipt artifact to its already-reserved journal.
+
+    The caller receives no free-form receipt location: both the directory and
+    contract must be the O8 reservation.  In particular, this function never
+    scans the runtime root or falls back to a historical run directory.
+    """
+    if not isinstance(verification, dict):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_RECEIPT_MALFORMED")
+    contract = verification.get("journal_contract")
+    if not isinstance(contract, dict):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_RECEIPT_CONTRACT_MISSING")
+    validate_reserved(runtime, path, contract)
+    if verification.get("execution_instance") != contract.get("execution_instance"):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_RECEIPT_EXECUTION_MISMATCH")
+    expected = Path(path) / "stdout.log"
+    artifact = verification.get("artifact_path")
+    if not isinstance(artifact, str) or Path(artifact) != expected or not expected.is_file() or expected.is_symlink():
+        raise RuntimeJournalError("RUNTIME_JOURNAL_RECEIPT_ARTIFACT_INVALID")
+    if verification.get("artifact_sha256") != _sha(expected):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_RECEIPT_ARTIFACT_HASH_MISMATCH")
+    return expected

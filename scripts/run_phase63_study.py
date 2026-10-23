@@ -28,7 +28,8 @@ from training.phase63_worker import ARMS, CACHE, CACHE_SHA, PARENT_SHA, PERM_SHA
 from training.phase63_binding_contract import (BindingContractError, current_source_manifest,
                                                admit_execution, prepare_execution)
 from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked, current_process_identity
-from training.phase63_runtime_journal import RuntimeJournalError, build_contract as build_journal_contract, reserve as reserve_journal
+from training.phase63_runtime_journal import (RuntimeJournalError, build_contract as build_journal_contract,
+                                              reserve as reserve_journal, validate_current_receipt)
 from training.run_foundation_v35_thermal_gate import query_gpu
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 
@@ -196,10 +197,21 @@ def validate_external_processes(exceptions: list[dict], *, inventory_provider=in
         raise RuntimeError(str(exc)) from exc
 
 
-def verify(seed: int, arm: str, kind: str) -> dict:
+def verify(seed: int, arm: str, kind: str, *, journal_path: Path | None = None,
+           journal_contract: dict | None = None) -> dict:
     if kind == "no-train":
-        path = receipt_path(seed, arm, kind) / "stdout.log"
-        return {"strict_reload": True, "updates_complete": True, "artifact_path": str(path), "artifact_sha256": sha(path), "kind": kind}
+        if journal_path is None or journal_contract is None:
+            raise RuntimeError("RUNTIME_JOURNAL_RECEIPT_CONTEXT_REQUIRED")
+        path = Path(journal_path) / "stdout.log"
+        verification = {"strict_reload": True, "updates_complete": True, "artifact_path": str(path),
+                        "artifact_sha256": sha(path), "kind": kind,
+                        "execution_instance": journal_contract.get("execution_instance"),
+                        "journal_contract": journal_contract}
+        try:
+            validate_current_receipt(RUNTIME, Path(journal_path), verification)
+        except RuntimeJournalError as exc:
+            raise RuntimeError(str(exc)) from exc
+        return verification
     target = output(seed, arm)
     if not target.exists() or target.with_name(target.name + ".tmp").exists():
         raise RuntimeError("MISSING_OR_PARTIAL_CHECKPOINT")
@@ -270,7 +282,8 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
                "--authorization-sha256", str(authorization_sha256)]
     receipt = execute(command, cwd=ROOT, root=ZROOT, runtime=RUNTIME, run_id=run_id, phase=63, kind="cuda-no-train",
                       device="cuda:0", repo_head=git("rev-parse", "HEAD"), parent_sha=PARENT_SHA[seed],
-                      verifier=lambda: verify(seed, arm, "no-train"), temperature=temperature,
+                      verifier=lambda: verify(seed, arm, "no-train", journal_path=directory,
+                                              journal_contract=journal_contract), temperature=temperature,
                       outputs=[directory / "stdout.log"], query=inventory, display=(), approvals=exceptions,
                       identity_provider=current_process_identity, maximum_seconds=3600,
                       journal_path=directory, journal_contract=journal_contract)
