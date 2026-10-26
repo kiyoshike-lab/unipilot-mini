@@ -17,6 +17,8 @@ from typing import Any
 
 SCHEMA = "phase63-runtime-journal-v1"
 MARKER = "journal-reservation.json"
+HANDOFF_SCHEMA = "phase63-runtime-journal-handoff-v1"
+HANDOFF = "journal-handoff.json"
 
 
 class RuntimeJournalError(RuntimeError):
@@ -99,6 +101,64 @@ def reserve(runtime: Path, contract: dict[str, Any]) -> Path:
         raise RuntimeJournalError("RUNTIME_JOURNAL_RESERVATION_INCOMPLETE")
     validate_reserved(runtime, result, contract)
     return result
+
+
+def handoff_path(runtime: Path, contract: dict[str, Any]) -> Path:
+    """Return the sole trusted handoff receipt location for a reservation."""
+    directory = journal_path(runtime, contract)
+    result = directory / HANDOFF
+    if result.parent != directory or result.is_symlink():
+        raise RuntimeJournalError("RUNTIME_JOURNAL_HANDOFF_PATH_INVALID")
+    return result
+
+
+def _handoff(runtime: Path, contract: dict[str, Any]) -> dict[str, Any]:
+    directory = journal_path(runtime, contract)
+    validate_reserved(runtime, directory, contract)
+    marker = directory / MARKER
+    return {"schema": HANDOFF_SCHEMA, "execution_instance": contract["execution_instance"],
+            "journal_path": str(directory), "reservation_marker_sha256": _sha(marker),
+            "authorization_id": contract["authorization_id"],
+            "authorization_sha256": contract["authorization_sha256"],
+            "binding_sha256": contract["binding_sha256"], "purpose": contract["purpose"],
+            "seed": contract["seed"], "arm": contract["arm"], "head": contract["head"],
+            "source_manifest_sha256": contract["source_manifest_sha256"]}
+
+
+def reserve_handoff(runtime: Path, contract: dict[str, Any]) -> tuple[Path, Path]:
+    """Reserve once, then persist the only receipt a runner may adopt.
+
+    ``reserve`` intentionally remains non-idempotent.  This function is the
+    explicit pre-claim handoff boundary, rather than an implicit exception for
+    an already-existing journal directory.
+    """
+    directory = reserve(runtime, contract)
+    target = handoff_path(runtime, contract)
+    try:
+        with target.open("xb") as handle:
+            handle.write(_canonical(_handoff(runtime, contract)))
+            handle.flush(); os.fsync(handle.fileno())
+    except BaseException as exc:
+        # Keep the reservation as auditable evidence; it must never be reused.
+        raise RuntimeJournalError("RUNTIME_JOURNAL_HANDOFF_INCOMPLETE") from exc
+    adopt_handoff(runtime, contract, target)
+    return directory, target
+
+
+def adopt_handoff(runtime: Path, contract: dict[str, Any], path: Path) -> Path:
+    """Validate, but never re-reserve, the exact pre-claim journal receipt."""
+    expected = handoff_path(runtime, contract)
+    actual = Path(path)
+    if (actual != expected or actual.is_symlink() or not actual.is_file() or
+            actual.resolve() != expected.resolve()):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_HANDOFF_PATH_INVALID")
+    try:
+        value = json.loads(actual.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeJournalError("RUNTIME_JOURNAL_HANDOFF_MALFORMED") from exc
+    if value != _handoff(runtime, contract):
+        raise RuntimeJournalError("RUNTIME_JOURNAL_HANDOFF_MISMATCH")
+    return journal_path(runtime, contract)
 
 
 def validate_reserved(runtime: Path, path: Path, contract: dict[str, Any]) -> None:

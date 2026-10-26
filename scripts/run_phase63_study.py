@@ -29,7 +29,8 @@ from training.phase63_binding_contract import (BindingContractError, current_sou
                                                admit_execution, prepare_execution)
 from training.gpu_execution_guard import ExternalComputeMonitor, GuardBlocked, current_process_identity
 from training.phase63_runtime_journal import (RuntimeJournalError, build_contract as build_journal_contract,
-                                              reserve as reserve_journal, validate_current_receipt)
+                                              adopt_handoff, reserve as reserve_journal,
+                                              reserve_handoff, validate_current_receipt)
 from training.run_foundation_v35_thermal_gate import query_gpu
 from training.run_foundation_v36_lr_review import fingerprint, verify_payload
 
@@ -253,7 +254,7 @@ def run(kind: str, binding_path: Path, authorization_path: Path | None, authoriz
 
 
 def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_path: Path | None,
-                      authorization_sha256: str | None) -> None:
+                      authorization_sha256: str | None, journal_handoff: Path | None = None) -> None:
     """The sole PHASE63O admission path: one claimed authorization, one child, one forward."""
     # This invokes no CUDA API, lock, or worker. The persisted authorization is
     # the only source of exact external C+G exceptions; O2 candidates are never
@@ -270,7 +271,8 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
                                                   head=binding["implementation_source_commit"],
                                                   source_manifest_sha256=binding["source_manifest_sha256"])
         run_id = str(journal_contract["execution_instance"])
-        directory = reserve_journal(RUNTIME, journal_contract)
+        directory = (reserve_journal(RUNTIME, journal_contract) if journal_handoff is None else
+                     adopt_handoff(RUNTIME, journal_contract, journal_handoff))
     except RuntimeJournalError as exc:
         raise RuntimeError(str(exc)) from exc
     validate_external_processes(exceptions)
@@ -291,16 +293,42 @@ def run_no_train_once(seed: int, arm: str, binding_path: Path, authorization_pat
         raise RuntimeError("NO_TRAIN_RECEIPT_NOT_COMPLETE")
 
 
+def reserve_no_train_journal(seed: int, arm: str, binding_path: Path, authorization_path: Path | None,
+                             authorization_sha256: str | None) -> dict:
+    """CPU-only pre-claim allocator for the one reservation/one runner handoff."""
+    binding, _ = prepare_execution(binding_path, authorization_path, authorization_sha256,
+                                   action="no_train", seed=seed, arm=arm, checkpoint_root=ZROOT,
+                                   preregistration_path=SPEC, expected_interpreter=Path(sys.executable),
+                                   source_root=ROOT)
+    if authorization_path is None or authorization_sha256 is None:
+        raise RuntimeError("RUNTIME_BINDING_AND_EXTERNAL_AUTHORIZATION_REQUIRED")
+    try:
+        contract = build_journal_contract(authorization_path, authorization_sha256, sha(binding_path),
+                                          purpose="no_train", seed=seed, arm=arm,
+                                          head=binding["implementation_source_commit"],
+                                          source_manifest_sha256=binding["source_manifest_sha256"])
+        directory, handoff = reserve_handoff(RUNTIME, contract)
+    except RuntimeJournalError as exc:
+        raise RuntimeError(str(exc)) from exc
+    return {"execution_instance": contract["execution_instance"], "journal_path": str(directory),
+            "journal_handoff": str(handoff), "claim_count": 0}
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("action", choices=("preflight", "no-train", "train")); parser.add_argument("--seed", type=int, choices=SEEDS); parser.add_argument("--arm", choices=tuple(ARMS)); parser.add_argument("--binding", type=Path); parser.add_argument("--authorization", type=Path); parser.add_argument("--authorization-sha256"); args = parser.parse_args()
+    parser = argparse.ArgumentParser(); parser.add_argument("action", choices=("preflight", "reserve-no-train-journal", "no-train", "train")); parser.add_argument("--seed", type=int, choices=SEEDS); parser.add_argument("--arm", choices=tuple(ARMS)); parser.add_argument("--binding", type=Path); parser.add_argument("--authorization", type=Path); parser.add_argument("--authorization-sha256"); parser.add_argument("--journal-handoff", type=Path); args = parser.parse_args()
     if args.action == "preflight":
         preflight(); return
     if args.binding is None or args.authorization is None or args.authorization_sha256 is None:
         raise RuntimeError("RUNTIME_BINDING_AND_EXTERNAL_AUTHORIZATION_REQUIRED")
-    if args.action == "no-train":
+    if args.action in ("reserve-no-train-journal", "no-train"):
         if args.seed is None or args.arm is None:
             raise RuntimeError("NO_TRAIN_SEED_AND_ARM_REQUIRED")
-        run_no_train_once(args.seed, args.arm, args.binding, args.authorization, args.authorization_sha256)
+        if args.action == "reserve-no-train-journal":
+            print(json.dumps(reserve_no_train_journal(args.seed, args.arm, args.binding, args.authorization,
+                                                       args.authorization_sha256), sort_keys=True))
+            return
+        run_no_train_once(args.seed, args.arm, args.binding, args.authorization, args.authorization_sha256,
+                          args.journal_handoff)
         return
     run("train", args.binding, args.authorization, args.authorization_sha256)
 
