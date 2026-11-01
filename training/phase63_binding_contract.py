@@ -149,6 +149,100 @@ def _authorization_moment(value: datetime) -> float:
     return value.timestamp()
 
 
+def canonical_authorization_time(value: datetime | str, label: str) -> tuple[str, float]:
+    """Return the sole serialized and parsed representation of an auth time.
+
+    Authorization timestamps cross two representations: the persisted ISO-8601
+    document and the epoch seconds used by the external-process guard.  The
+    epoch value must be derived *after* producing the persisted representation,
+    never from a separately retained higher-precision value.
+    """
+    if isinstance(value, datetime):
+        if value.tzinfo is None:
+            raise BindingContractError("INVALID_TIME:" + label)
+        moment = value.astimezone(UTC)
+    elif isinstance(value, str):
+        moment = _utc(value, label)
+    else:
+        raise BindingContractError("INVALID_TIME:" + label)
+    serialized = moment.isoformat(timespec="microseconds").replace("+00:00", "Z")
+    return serialized, _authorization_moment(_utc(serialized, label))
+
+
+def build_no_train_authorization(*, authorization_id: str, binding_sha256: str,
+                                 implementation_head: str, source_manifest_sha256: str,
+                                 target_gpu_uuid: str, allowed_runs: list[dict[str, Any]],
+                                 process_candidates: list[dict[str, Any]],
+                                 valid_from: datetime | str, valid_until: datetime | str,
+                                 created_at: float, requested_exception_expiry: float | None = None) -> dict[str, Any]:
+    """Build an unclaimed no-train authorization with canonical child expiry.
+
+    This is the production-side producer for O3 external-process exceptions.
+    Every exception expiry is derived from the canonicalized parent ``valid_until``
+    epoch and is clamped to it.  The strict consumer remains unchanged: a child
+    expiry later than its parent is still rejected.
+    """
+    if not isinstance(authorization_id, str) or not authorization_id:
+        raise BindingContractError("AUTHORIZATION_ID_INVALID")
+    _sha(binding_sha256, "authorization_binding")
+    _validate_implementation_source_commit(implementation_head)
+    _sha(source_manifest_sha256, "authorization_manifest")
+    if not isinstance(target_gpu_uuid, str) or not target_gpu_uuid:
+        raise BindingContractError("AUTHORIZATION_SCOPE_OR_GPU_MISMATCH")
+    if not isinstance(allowed_runs, list) or not isinstance(process_candidates, list):
+        raise BindingContractError("AUTHORIZATION_PROCESS_LIST_INVALID")
+    if isinstance(created_at, bool) or not isinstance(created_at, (int, float)) or not math.isfinite(created_at):
+        raise BindingContractError("INVALID_TIME:created_at")
+    canonical_from, from_epoch = canonical_authorization_time(valid_from, "valid_from")
+    canonical_until, until_epoch = canonical_authorization_time(valid_until, "valid_until")
+    if from_epoch > until_epoch or created_at > until_epoch:
+        raise BindingContractError("AUTHORIZATION_EXPIRED_OR_NOT_YET_VALID")
+    requested = until_epoch if requested_exception_expiry is None else requested_exception_expiry
+    if isinstance(requested, bool) or not isinstance(requested, (int, float)) or not math.isfinite(requested):
+        raise BindingContractError("INVALID_TIME:requested_exception_expiry")
+    exception_expiry = min(until_epoch, float(requested))
+    if exception_expiry <= created_at:
+        raise BindingContractError("PROCESS_EXCEPTION_TIME_INVALID")
+    exceptions: list[dict[str, Any]] = []
+    exception_ids: set[str] = set()
+    for candidate in process_candidates:
+        if not isinstance(candidate, dict) or set(candidate) != {"exception_id", "process_identity"}:
+            raise BindingContractError("PROCESS_EXCEPTION_CANDIDATE_INVALID")
+        exception_id = candidate["exception_id"]
+        if not isinstance(exception_id, str) or not exception_id or exception_id in exception_ids:
+            raise BindingContractError("PROCESS_EXCEPTION_CANDIDATE_INVALID")
+        exception_ids.add(exception_id)
+        exceptions.append({
+            "schema": "phase63-external-process-exception-v1",
+            "exception_id": exception_id,
+            "authorization_id": authorization_id,
+            "binding_sha256": binding_sha256,
+            "implementation_head": implementation_head,
+            "source_manifest_sha256": source_manifest_sha256,
+            "phase": 63,
+            "action": NO_TRAIN_ACTION,
+            "gpu_uuid": target_gpu_uuid,
+            "process_identity": candidate["process_identity"],
+            "created_at": float(created_at),
+            "expires_at": exception_expiry,
+            "single_use": True,
+        })
+    return {
+        "schema_version": AUTHORIZATION_SCHEMA,
+        "authorization_id": authorization_id,
+        "binding_sha256": binding_sha256,
+        "phase": 63,
+        "action": "no_train",
+        "allowed_runs": allowed_runs,
+        "valid_from": canonical_from,
+        "valid_until": canonical_until,
+        "scope": "PHASE63_SINGLE_ACTION_SINGLE_RUN",
+        "target_gpu": {"uuid": target_gpu_uuid},
+        "approved_processes": [],
+        "external_process_exceptions": exceptions,
+    }
+
+
 def validate_unarmed_binding(path: Path, *, checkpoint_root: Path, preregistration_path: Path,
                              expected_interpreter: Path = Path(sys.executable), source_root: Path = ROOT,
                              cooling_evidence_path: Path = ROOT / K11_EVIDENCE_RELATIVE_PATH) -> dict[str, Any]:
