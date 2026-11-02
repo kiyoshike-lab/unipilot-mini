@@ -311,6 +311,125 @@ def _expected_phase63_output(binding, seed, arm):
             arm / f'seed-{seed}' / 'checkpoint-tokens-16446464.pt')
 
 
+def _recovery_execution_chain(owner, execution_authorization_path, binding_path):
+    """Validate the immutable authorization and binding shared by both lifecycles."""
+    authorization = _read_json(execution_authorization_path, 'EXECUTION_AUTHORIZATION')
+    claim_path = Path(execution_authorization_path).with_name(
+        Path(execution_authorization_path).name + '.phase63-claim.json')
+    claim = _read_json(claim_path, 'EXECUTION_CLAIM')
+    binding = _read_json(binding_path, 'BINDING')
+    if (authorization.get('action') != 'no_train' or authorization.get('phase') != 63 or
+            authorization.get('binding_sha256') != sha(binding_path) or
+            claim.get('claim', {}).get('authorization_sha256') != sha(execution_authorization_path) or
+            claim.get('claim', {}).get('binding_sha256') != sha(binding_path) or
+            claim.get('claim', {}).get('execution_instance') != owner['run_id'] or
+            claim.get('claim', {}).get('action') != 'no_train'):
+        raise ExecutionBlocked('LOCK_RECOVERY_EXECUTION_AUTHORIZATION_NOT_TERMINAL')
+    if (binding.get('implementation_source_commit') != owner['repo_head'] or
+            not isinstance(binding.get('source_manifest_sha256'), str) or
+            not isinstance(binding.get('source_manifest'), list)):
+        raise ExecutionBlocked('LOCK_RECOVERY_BINDING_CHAIN_INVALID')
+    allowed_runs = authorization.get('allowed_runs')
+    if not isinstance(allowed_runs, list) or len(allowed_runs) != 1 or not isinstance(allowed_runs[0], dict):
+        raise ExecutionBlocked('LOCK_RECOVERY_BINDING_CHAIN_INVALID')
+    target = allowed_runs[0]
+    row = next((row for row in binding.get('runs', []) if isinstance(row, dict) and
+                row.get('seed') == target.get('seed') and row.get('arm') == target.get('arm')), None)
+    if row is None:
+        raise ExecutionBlocked('LOCK_RECOVERY_BINDING_CHAIN_INVALID')
+    return authorization, claim, binding, target, row, claim_path
+
+
+def _terminated_recovery_base(lock_path, owner, aborted_path, binding_path, binding, authorization,
+                              claim_path, *, identity_provider, job_clear_provider):
+    owner_now = identity_provider(owner['pid'])
+    if same_process(owner, owner_now):
+        raise ExecutionBlocked('LOCK_RECOVERY_OWNER_STILL_LIVE')
+    if job_clear_provider(owner['job_name']) is not True:
+        raise ExecutionBlocked('LOCK_RECOVERY_JOB_NOT_CLEAR')
+    return {'lock_path': _canonical_path(lock_path), 'lock_sha256': sha(lock_path),
+            'lock_owner_sha256': _canonical_sha(owner), 'run_id': owner['run_id'],
+            'binding_path': _canonical_path(binding_path), 'binding_sha256': sha(binding_path),
+            'implementation_head': binding['implementation_source_commit'],
+            'source_manifest_sha256': binding['source_manifest_sha256'],
+            'execution_authorization_path': _canonical_path(authorization),
+            'execution_authorization_sha256': sha(authorization),
+            'execution_claim_path': _canonical_path(claim_path),
+            'execution_claim_sha256': sha(claim_path),
+            'aborted_path': _canonical_path(aborted_path), 'aborted_sha256': sha(aborted_path),
+            'owner_gone': True, 'job_clear': True, 'authorization_consumed': True}
+
+
+def _pre_child_recovery_proof(lock_path, owner, aborted, aborted_path, run_dir, *,
+                              execution_authorization_path, binding_path, identity_provider, job_clear_provider):
+    """Prove a pre-child abort without turning a missing child record into proof.
+
+    New runs carry a dedicated final state record.  A narrow legacy-equivalent
+    branch exists only for historical journals with the complete LOCKED /
+    prelaunch / ABORTED sequence and no possible child-side artifacts.
+    """
+    if (aborted['status'] != 'INCOMPLETE' or aborted['ownership'] != 'ABORTED' or
+            aborted['owner'] != owner or aborted['child'] is not None or
+            aborted['lock_retained'] is not True or aborted['automatic_terminate'] is not False or
+            not isinstance(aborted['reason'], str) or not aborted['reason'].startswith("ExecutionBlocked('") or
+            not aborted['reason'].endswith("')")):
+        raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_ABORT_CHAIN_INVALID')
+    child_path = run_dir / 'child-created.json'
+    if child_path.exists():
+        raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_CHILD_RECORD_PRESENT')
+    # These records can only be produced after Popen/child identity capture.
+    if any((run_dir / name).exists() for name in ('02-RUNNING.json', 'stdout.log', 'stderr.log',
+                                                   'receipt.json', '03-CHECKPOINT_SAVED.json',
+                                                   '04-PROCESS_EXITED.json')) or any(run_dir.glob('child-*.json')):
+        raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_POST_CHILD_ARTIFACT_PRESENT')
+    authorization, _claim, binding, target, row, claim_path = _recovery_execution_chain(
+        owner, execution_authorization_path, binding_path)
+    expected_output = _expected_phase63_output(binding, target.get('seed'), target.get('arm'))
+    if Path(row.get('output_path', '')) != expected_output or expected_output.exists() or Path(str(expected_output)+'.tmp').exists():
+        raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_SIDE_EFFECT_UNPROVEN')
+    explicit_path = run_dir / 'pre-child-abort.json'
+    if explicit_path.exists():
+        evidence = _read_json(explicit_path, 'PRE_CHILD_ABORT')
+        _exact_keys(evidence, {'schema', 'child_creation_state', 'abort_boundary', 'reason', 'owner',
+                               'cuda_state', 'model_load', 'forward_calls', 'backward_calls',
+                               'optimizer_steps', 'checkpoint_writes', 'training'}, 'PRE_CHILD_ABORT')
+        if evidence != {'schema': 'phase63-pre-child-abort-v1',
+                        'child_creation_state': 'CHILD_NOT_CREATED_PROVEN',
+                        'abort_boundary': 'BEFORE_CHILD_PROCESS_CREATION', 'reason': aborted['reason'],
+                        'owner': owner, 'cuda_state': 'NOT_CREATED', 'model_load': 'NOT_STARTED',
+                        'forward_calls': 0, 'backward_calls': 0, 'optimizer_steps': 0,
+                        'checkpoint_writes': 0, 'training': 'NO'}:
+            raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_STATE_INVALID')
+        evidence_kind = 'EXPLICIT_CHILD_NOT_CREATED_PROVEN'
+    else:
+        # Historical compatibility is not a missing-file shortcut.  It needs
+        # all three persisted lifecycle boundaries plus the explicit null child
+        # in the abort record and absence of every post-child artifact.
+        locked_path = run_dir / '01-LOCKED.json'; prelaunch_path = run_dir / 'prelaunch.json'
+        locked = _read_json(locked_path, 'PRE_CHILD_LOCKED')
+        prelaunch = _read_json(prelaunch_path, 'PRE_CHILD_LAUNCH')
+        _exact_keys(locked, {'state', 'at', 'owner'}, 'PRE_CHILD_LOCKED')
+        _exact_keys(prelaunch, {'inventory', 'temperature', 'cpu_heavy_warnings', 'cwd', 'command', 'kind'},
+                    'PRE_CHILD_LAUNCH')
+        if locked['state'] != 'LOCKED' or locked['owner'] != owner or not isinstance(prelaunch['cpu_heavy_warnings'], list):
+            raise ExecutionBlocked('LOCK_RECOVERY_PRE_CHILD_LEGACY_EVIDENCE_INVALID')
+        explicit_path = prelaunch_path
+        evidence_kind = 'LEGACY_LIFECYCLE_EQUIVALENT'
+    proof = _terminated_recovery_base(lock_path, owner, aborted_path, binding_path, binding,
+                                      execution_authorization_path, claim_path,
+                                      identity_provider=identity_provider, job_clear_provider=job_clear_provider)
+    proof.update({'recovery_lifecycle': 'PRE_CHILD_ABORTED',
+                  'child_creation_state': 'CHILD_NOT_CREATED_PROVEN',
+                  'child_created_path': _canonical_path(child_path),
+                  'pre_child_evidence_path': _canonical_path(explicit_path),
+                  'pre_child_evidence_sha256': sha(explicit_path),
+                  'pre_child_evidence_kind': evidence_kind, 'failure_code': aborted['reason'],
+                  'child_gone': True, 'failure_before_cuda': True,
+                  'cuda_created': False, 'forward_calls': 0, 'optimizer_steps': 0,
+                  'checkpoint_writes': 0, 'training': 'NO'})
+    return proof
+
+
 def aborted_lock_recovery_proof(lock_path, *, execution_authorization_path, binding_path,
                                 identity_provider=identity, job_clear_provider=job_clear):
     """Build a no-GPU proof that this exact aborted execution is terminal.
@@ -332,6 +451,14 @@ def aborted_lock_recovery_proof(lock_path, *, execution_authorization_path, bind
     stderr_path = run_dir / 'stderr.log'; stdout_path = run_dir / 'stdout.log'
     aborted = _read_json(aborted_path, 'ABORTED')
     _exact_keys(aborted, {'status', 'ownership', 'reason', 'owner', 'child', 'lock_retained', 'automatic_terminate'}, 'ABORTED')
+    if aborted['reason'] != "ExecutionBlocked('CHILD_EXIT_NONZERO:1')":
+        return _pre_child_recovery_proof(
+            lock_path, owner, aborted, aborted_path, run_dir,
+            execution_authorization_path=execution_authorization_path, binding_path=binding_path,
+            identity_provider=identity_provider, job_clear_provider=job_clear_provider)
+    # Historical O5L child-exited lifecycle.  Keep this path byte-for-byte
+    # equivalent in semantics: a child record and its BINDING_OUTPUT_MISMATCH
+    # evidence remain mandatory.
     child_record = _read_json(child_path, 'CHILD')
     _exact_keys(child_record, {'child', 'suspended'}, 'CHILD')
     child = child_record['child']
@@ -341,54 +468,25 @@ def aborted_lock_recovery_proof(lock_path, *, execution_authorization_path, bind
             aborted['lock_retained'] is not True or aborted['automatic_terminate'] is not False or
             not isinstance(child, dict) or child.get('parent_pid') != owner['pid']):
         raise ExecutionBlocked('LOCK_RECOVERY_ABORT_CHAIN_INVALID')
-    authorization = _read_json(execution_authorization_path, 'EXECUTION_AUTHORIZATION')
-    claim = _read_json(Path(execution_authorization_path).with_name(Path(execution_authorization_path).name + '.phase63-claim.json'),
-                       'EXECUTION_CLAIM')
-    binding = _read_json(binding_path, 'BINDING')
-    if (authorization.get('action') != 'no_train' or authorization.get('phase') != 63 or
-            authorization.get('binding_sha256') != sha(binding_path) or
-            claim.get('claim', {}).get('authorization_sha256') != sha(execution_authorization_path) or
-            claim.get('claim', {}).get('binding_sha256') != sha(binding_path) or
-            claim.get('claim', {}).get('execution_instance') != owner['run_id'] or
-            claim.get('claim', {}).get('action') != 'no_train'):
-        raise ExecutionBlocked('LOCK_RECOVERY_EXECUTION_AUTHORIZATION_NOT_TERMINAL')
-    if (binding.get('implementation_source_commit') != owner['repo_head'] or
-            not isinstance(binding.get('source_manifest_sha256'), str) or
-            not isinstance(binding.get('source_manifest'), list)):
-        raise ExecutionBlocked('LOCK_RECOVERY_BINDING_CHAIN_INVALID')
-    allowed_runs = authorization.get('allowed_runs')
-    if not isinstance(allowed_runs, list) or len(allowed_runs) != 1 or not isinstance(allowed_runs[0], dict):
-        raise ExecutionBlocked('LOCK_RECOVERY_BINDING_CHAIN_INVALID')
-    target = allowed_runs[0]
-    row = next((row for row in binding.get('runs', []) if isinstance(row, dict) and
-                row.get('seed') == target.get('seed') and row.get('arm') == target.get('arm')), None)
+    authorization, _claim, binding, target, row, claim_path = _recovery_execution_chain(
+        owner, execution_authorization_path, binding_path)
     if row is None or Path(row.get('output_path', '')) == _expected_phase63_output(binding, target.get('seed'), target.get('arm')):
         raise ExecutionBlocked('LOCK_RECOVERY_PRE_CUDA_CHAIN_INVALID')
     stderr = stderr_path.read_text(encoding='utf8', errors='replace')
     if 'RuntimeError: ' + PRE_CUDA_FAILURE_CODE not in stderr:
         raise ExecutionBlocked('LOCK_RECOVERY_PRE_CUDA_CHAIN_INVALID')
-    owner_now = identity_provider(owner['pid']); child_now = identity_provider(child.get('pid'))
-    if same_process(owner, owner_now):
-        raise ExecutionBlocked('LOCK_RECOVERY_OWNER_STILL_LIVE')
+    proof = _terminated_recovery_base(lock_path, owner, aborted_path, binding_path, binding,
+                                      execution_authorization_path, claim_path,
+                                      identity_provider=identity_provider, job_clear_provider=job_clear_provider)
+    child_now = identity_provider(child.get('pid'))
     if same_process(child, child_now):
         raise ExecutionBlocked('LOCK_RECOVERY_CHILD_STILL_LIVE')
-    if job_clear_provider(owner['job_name']) is not True:
-        raise ExecutionBlocked('LOCK_RECOVERY_JOB_NOT_CLEAR')
-    return {'lock_path': _canonical_path(lock_path), 'lock_sha256': sha(lock_path),
-            'lock_owner_sha256': _canonical_sha(owner), 'run_id': owner['run_id'],
-            'binding_path': _canonical_path(binding_path), 'binding_sha256': sha(binding_path),
-            'implementation_head': binding['implementation_source_commit'],
-            'source_manifest_sha256': binding['source_manifest_sha256'],
-            'execution_authorization_path': _canonical_path(execution_authorization_path),
-            'execution_authorization_sha256': sha(execution_authorization_path),
-            'execution_claim_path': _canonical_path(Path(execution_authorization_path).with_name(Path(execution_authorization_path).name + '.phase63-claim.json')),
-            'execution_claim_sha256': sha(Path(execution_authorization_path).with_name(Path(execution_authorization_path).name + '.phase63-claim.json')),
-            'aborted_path': _canonical_path(aborted_path), 'aborted_sha256': sha(aborted_path),
-            'child_created_path': _canonical_path(child_path), 'child_created_sha256': sha(child_path),
-            'stderr_path': _canonical_path(stderr_path), 'stderr_sha256': sha(stderr_path),
-            'stdout_path': _canonical_path(stdout_path), 'stdout_sha256': sha(stdout_path),
-            'failure_code': PRE_CUDA_FAILURE_CODE, 'owner_gone': True, 'child_gone': True,
-            'job_clear': True, 'authorization_consumed': True, 'failure_before_cuda': True}
+    proof.update({'child_created_path': _canonical_path(child_path), 'child_created_sha256': sha(child_path),
+                  'stderr_path': _canonical_path(stderr_path), 'stderr_sha256': sha(stderr_path),
+                  'stdout_path': _canonical_path(stdout_path), 'stdout_sha256': sha(stdout_path),
+                  'failure_code': PRE_CUDA_FAILURE_CODE, 'child_gone': True,
+                  'failure_before_cuda': True})
+    return proof
 
 
 def validate_recovery_authorization(authorization_path, proof, *, now=None):
@@ -410,15 +508,34 @@ def validate_recovery_authorization(authorization_path, proof, *, now=None):
     execution = _exact_keys(authorization['execution'], {'run_id', 'binding_path', 'binding_sha256', 'implementation_head',
                                                           'source_manifest_sha256', 'authorization_path', 'authorization_sha256',
                                                           'claim_path', 'claim_sha256'}, 'RECOVERY_EXECUTION')
-    evidence = _exact_keys(authorization['evidence'], {'aborted_path', 'aborted_sha256', 'child_created_path',
-                                                        'child_created_sha256', 'stderr_path', 'stderr_sha256',
-                                                        'stdout_path', 'stdout_sha256', 'failure_code'}, 'RECOVERY_EVIDENCE')
+    pre_child = proof.get('recovery_lifecycle') == 'PRE_CHILD_ABORTED'
+    if pre_child:
+        evidence = _exact_keys(authorization['evidence'], {
+            'aborted_path', 'aborted_sha256', 'child_created_path', 'child_creation_state',
+            'pre_child_evidence_path', 'pre_child_evidence_sha256',
+            'pre_child_evidence_kind', 'failure_code',
+        }, 'RECOVERY_EVIDENCE')
+    else:
+        evidence = _exact_keys(authorization['evidence'], {'aborted_path', 'aborted_sha256', 'child_created_path',
+                                                            'child_created_sha256', 'stderr_path', 'stderr_sha256',
+                                                            'stdout_path', 'stdout_sha256', 'failure_code'}, 'RECOVERY_EVIDENCE')
     for value, label in ((lock['sha256'], 'LOCK_SHA'), (lock['owner_sha256'], 'OWNER_SHA'),
                          (execution['binding_sha256'], 'BINDING_SHA'), (execution['source_manifest_sha256'], 'MANIFEST_SHA'),
                          (execution['authorization_sha256'], 'AUTHORIZATION_SHA'), (execution['claim_sha256'], 'CLAIM_SHA'),
-                         (evidence['aborted_sha256'], 'ABORTED_SHA'), (evidence['child_created_sha256'], 'CHILD_SHA'),
-                         (evidence['stderr_sha256'], 'STDERR_SHA'), (evidence['stdout_sha256'], 'STDOUT_SHA')):
+                         (evidence['aborted_sha256'], 'ABORTED_SHA')):
         _assert_hex(value, label)
+    if pre_child:
+        _assert_hex(evidence['pre_child_evidence_sha256'], 'PRE_CHILD_SHA')
+        if (evidence['child_creation_state'] != 'CHILD_NOT_CREATED_PROVEN' or
+                evidence['pre_child_evidence_kind'] not in {
+                    'EXPLICIT_CHILD_NOT_CREATED_PROVEN', 'LEGACY_LIFECYCLE_EQUIVALENT'} or
+                not isinstance(evidence['failure_code'], str)):
+            raise ExecutionBlocked('LOCK_RECOVERY_AUTHORIZATION_TARGET_MISMATCH')
+    else:
+        for value, label in ((evidence['child_created_sha256'], 'CHILD_SHA'),
+                             (evidence['stderr_sha256'], 'STDERR_SHA'),
+                             (evidence['stdout_sha256'], 'STDOUT_SHA')):
+            _assert_hex(value, label)
     expected = {'path': proof['lock_path'], 'sha256': proof['lock_sha256'], 'owner_sha256': proof['lock_owner_sha256']}
     if lock != expected or evidence['failure_code'] != proof['failure_code']:
         raise ExecutionBlocked('LOCK_RECOVERY_AUTHORIZATION_TARGET_MISMATCH')
@@ -426,11 +543,22 @@ def validate_recovery_authorization(authorization_path, proof, *, now=None):
              'implementation_head': proof['implementation_head'], 'source_manifest_sha256': proof['source_manifest_sha256'],
              'authorization_path': proof['execution_authorization_path'], 'authorization_sha256': proof['execution_authorization_sha256'],
              'claim_path': proof['execution_claim_path'], 'claim_sha256': proof['execution_claim_sha256']}
-    if execution != pairs or {key: evidence[key] for key in evidence if key != 'failure_code'} != {
+    if pre_child:
+        expected_evidence = {
+            'aborted_path': proof['aborted_path'], 'aborted_sha256': proof['aborted_sha256'],
+            'child_created_path': proof['child_created_path'],
+            'child_creation_state': proof['child_creation_state'],
+            'pre_child_evidence_path': proof['pre_child_evidence_path'],
+            'pre_child_evidence_sha256': proof['pre_child_evidence_sha256'],
+            'pre_child_evidence_kind': proof['pre_child_evidence_kind'],
+        }
+    else:
+        expected_evidence = {
             'aborted_path': proof['aborted_path'], 'aborted_sha256': proof['aborted_sha256'],
             'child_created_path': proof['child_created_path'], 'child_created_sha256': proof['child_created_sha256'],
             'stderr_path': proof['stderr_path'], 'stderr_sha256': proof['stderr_sha256'],
-            'stdout_path': proof['stdout_path'], 'stdout_sha256': proof['stdout_sha256']}:
+            'stdout_path': proof['stdout_path'], 'stdout_sha256': proof['stdout_sha256']}
+    if execution != pairs or {key: evidence[key] for key in evidence if key != 'failure_code'} != expected_evidence:
         raise ExecutionBlocked('LOCK_RECOVERY_AUTHORIZATION_TARGET_MISMATCH')
     return authorization
 

@@ -1,0 +1,8 @@
+{
+  "pre_child_finalization": "PASS in CPU fixture",
+  "recovery_authorization_scope": "lock_recovery only",
+  "recovery_authorization_replay": "REJECT: LOCK_RECOVERY_AUTHORIZATION_ALREADY_CONSUMED",
+  "no_train_or_training_authority": "NOT GRANTED by recovery authorization",
+  "wrong_lock_execution_binding_authorization_or_tampered_lock": "REJECT by existing O5L regression suite",
+  "actual_o_retry_9_lock": "UNCHANGED"
+}

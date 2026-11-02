@@ -300,6 +300,22 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         return receipt
     except BaseException as exc:
         if journal is not None:
+            # ``proc is None`` is the only state in this supervisor where the
+            # child creation boundary was never crossed.  Persist that fact
+            # separately from the generic aborted receipt: absence of a
+            # child-created record is never, by itself, evidence that no child
+            # existed.
+            if proc is None:
+                atomic_json(journal.directory/'pre-child-abort.json', {
+                    'schema': 'phase63-pre-child-abort-v1',
+                    'child_creation_state': 'CHILD_NOT_CREATED_PROVEN',
+                    'abort_boundary': 'BEFORE_CHILD_PROCESS_CREATION',
+                    'reason': repr(exc), 'owner': lock.owner,
+                    'cuda_state': 'NOT_CREATED', 'model_load': 'NOT_STARTED',
+                    'forward_calls': 0, 'backward_calls': 0,
+                    'optimizer_steps': 0, 'checkpoint_writes': 0,
+                    'training': 'NO',
+                })
             atomic_json(journal.directory/'aborted.json', {'status': 'INCOMPLETE', 'ownership': 'ABORTED',
                         'reason': repr(exc), 'owner': lock.owner,
                         'child': identity(proc.pid) if proc is not None else None,

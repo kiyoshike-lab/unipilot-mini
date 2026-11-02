@@ -1,0 +1,25 @@
+{
+  "lifecycle": "PRE_CHILD_ABORTED",
+  "new_execution_evidence": "pre-child-abort.json",
+  "required_child_state": "CHILD_NOT_CREATED_PROVEN",
+  "missing_child_auto_accepted": false,
+  "new_evidence_requires": [
+    "BEFORE_CHILD_PROCESS_CREATION boundary",
+    "owner equality with the lock",
+    "abort-reason equality with aborted.json",
+    "CUDA NOT_CREATED, model NOT_STARTED, zero forward/backward/optimizer/checkpoint writes, Training NO"
+  ],
+  "legacy_compatibility_requires": [
+    "exact ABORTED record with child null",
+    "exact LOCKED record bound to the same owner",
+    "exact prelaunch record",
+    "no child-created, RUNNING, child descendant, stdout/stderr, receipt, checkpoint or process-exited artifacts",
+    "expected checkpoint output and temporary output absent"
+  ],
+  "common_requirements": [
+    "exact lock/execution/binding/HEAD/manifest/authorization chain",
+    "consumed original no_train authorization",
+    "owner GONE", "Job CLEAR", "mutation guard acquisition", "single-use lock_recovery authorization"
+  ],
+  "old_o5l_child_exited_path": "UNCHANGED"
+}

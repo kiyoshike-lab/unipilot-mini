@@ -1,0 +1,11 @@
+{
+  "source": "training/exclusive_cuda_runner.py:139-147 and 211-219",
+  "production_condition": "one psutil process-table scan finds any command line containing -m pytest, npm run build, or playwright, case-insensitively",
+  "actual_cpu_utilization_checked": false,
+  "process_count_threshold_checked": false,
+  "command_line_matching": true,
+  "executable_identity_checked": false,
+  "parent_process_checked": false,
+  "guard_changed_in_o20": false,
+  "emitted_error": "CPU_HEAVY_JOB_PRESENT"
+}

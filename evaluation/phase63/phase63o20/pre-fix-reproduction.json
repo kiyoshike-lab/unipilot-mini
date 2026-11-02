@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "scenario": "O-RETRY-9 ABORTED pre-child recovery submitted to the pre-O20 O5L proof",
+  "observed_error": "LOCK_RECOVERY_CHILD_UNREADABLE",
+  "owner": "GONE",
+  "child": "NONE",
+  "job": "CLEAR",
+  "mutation_guard": "NOT_HELD",
+  "lock": "ABORTED",
+  "abort_reason": "ExecutionBlocked('CPU_HEAVY_JOB_PRESENT')",
+  "root_cause": "The O5L proof unconditionally reads child-created.json before considering the abort lifecycle."
+}

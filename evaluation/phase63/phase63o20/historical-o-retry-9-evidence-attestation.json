@@ -1,0 +1,32 @@
+{
+  "execution_id": "phase63-no_train-seed42-control-15230beafd4b2ec99e54fe3c860d8f3aa7db3ccc9ab0b4365647cc3f3ae29b02",
+  "authorization_sha256": "85cd7c79196502563d167eef4a66fde666576daaa4efe69ef8ea9cc55062d4d1",
+  "authorization_claim_sha256": "fce3aca35d27a043210d92eb99df40b9bcdb3297531aa0f64323a0686fccb91c",
+  "authorization_replay_sha256": "676ddefdc421bd74443dc2749b60442cd3c561f39e4d1fe6c3b140fc33eefa2e",
+  "runtime_identity_sha256": "a539b11a2d4b6b13264880942adf97ea3fec1cf81262cbddec9415c698823489",
+  "checkpoint_delta_sha256": "3eeaf9209726d2539745a36196976bf047d01cae98d22b0d276d02ba17486214",
+  "o19_attestation_sha256": "469abddc3e1da6ea0837c9c174f90156046c1a8ff41b97912ba21a7fcaf88369",
+  "o19_recovery_result_sha256": "47cfa0302027f37ab193951b9876ad9a9391c0c30769ab0a6c4e639012fd648e",
+  "o19_death_proof_sha256": "c00361cc64897ab56d97af374645ffb3b1cec6cbf44de0da98e371b8b3645817",
+  "current_lock_sha256": "c91eace4324cfd00842d649db77b0640537b8c743428daa8fa1be2d6d2b825ce",
+  "aborted_json_sha256": "33674af77a60a797f9ee629eb9b3e8aa2c047466d7250450b996bc846eeb3145",
+  "prelaunch_json_sha256": "0266833359059dfbfc8e1d2ac7b6260e34b0576bdf79a18f8712cc9e8ddfc3c8",
+  "locked_event_sha256": "5853871a35f1a8ff6a7fb765b2a84f3e5f88cd8c4868b071cf9ebc48761e08e5",
+  "result": "UNCHANGED_DURING_O20",
+  "new_contract_readonly_proof": {
+    "recovery_lifecycle": "PRE_CHILD_ABORTED",
+    "child_creation_state": "CHILD_NOT_CREATED_PROVEN",
+    "evidence_kind": "LEGACY_LIFECYCLE_EQUIVALENT",
+    "owner_gone": true,
+    "child_gone": true,
+    "job_clear": true,
+    "authorization_consumed": true,
+    "cuda_created": false,
+    "forward_calls": 0,
+    "optimizer_steps": 0,
+    "checkpoint_writes": 0,
+    "training": "NO"
+  },
+  "real_lock_recovery_authorization_created": false,
+  "real_lock_modified": false
+}

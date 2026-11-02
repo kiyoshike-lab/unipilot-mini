@@ -1,0 +1,14 @@
+{
+  "command": "python -B -m pytest -q tests/test_phase63o20_pre_child_lock_recovery.py tests/test_phase63o5l_lock_recovery.py tests/test_exclusive_cuda_runner.py tests/test_phase63_source_manifest.py",
+  "result": "47 passed",
+  "mode": "CPU_ONLY",
+  "cuda": "NOT_CREATED",
+  "covered": [
+    "new explicit PRE_CHILD_ABORTED proof and finalization",
+    "legacy lifecycle equivalence without missing-child auto-acceptance",
+    "old O5L child-exited regression",
+    "single-use recovery claim", "owner, Job and mutation-guard rejection",
+    "CUDA/forward/optimizer/checkpoint/training side-effect rejection",
+    "runner persistence of explicit CHILD_NOT_CREATED_PROVEN evidence"
+  ]
+}

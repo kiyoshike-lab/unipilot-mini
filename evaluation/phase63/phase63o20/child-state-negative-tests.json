@@ -1,0 +1,15 @@
+{
+  "child_state_unknown": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "child_record_present": "REJECT: LOCK_RECOVERY_PRE_CHILD_CHILD_RECORD_PRESENT",
+  "child_record_missing_without_lifecycle_proof": "REJECT: LOCK_RECOVERY_PRE_CHILD_LAUNCH_UNREADABLE",
+  "post_child_artifact_present": "REJECT: LOCK_RECOVERY_PRE_CHILD_POST_CHILD_ARTIFACT_PRESENT",
+  "cuda_created": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "forward_nonzero": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "optimizer_steps_nonzero": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "checkpoint_writes_nonzero": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "training_yes": "REJECT: LOCK_RECOVERY_PRE_CHILD_STATE_INVALID",
+  "live_owner": "REJECT: LOCK_RECOVERY_OWNER_STILL_LIVE",
+  "job_not_clear": "REJECT: LOCK_RECOVERY_JOB_NOT_CLEAR",
+  "unconsumed_authorization": "REJECT: LOCK_RECOVERY_EXECUTION_CLAIM_UNREADABLE",
+  "mutation_guard_held": "REJECT: GPU_LOCK_HELD"
+}
