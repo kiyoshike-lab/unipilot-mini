@@ -128,10 +128,10 @@ def is_complete(directory):
         return False
 
 
-def _monitor_observation(monitor):
+def _monitor_observation(monitor, *, context=None):
     """Translate a fail-closed monitor decision into the runner's contract."""
     try:
-        return monitor.observe()
+        return monitor.observe(context=context)
     except GuardBlocked as exc:
         raise ExecutionBlocked(str(exc)) from exc
 
@@ -201,8 +201,15 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         # A monitor observes during the child lifetime as well as before/after.
         # With no approvals it preserves the existing policy: every C/C+G is a
         # block. It never creates a name or OS-process allowlist.
-        monitor = compute_monitor or ExternalComputeMonitor(query, identity_provider, approvals=approvals)
-        before_monitor = _monitor_observation(monitor)
+        def persist_monitor_violation(evidence):
+            # This is an immutable, first-failure audit record.  ``atomic_json``
+            # refuses replacement, so a later observation cannot rewrite which
+            # exact process instances caused this execution to abort.
+            atomic_json(journal.directory/'external-monitor-violation.json', evidence)
+        monitor = compute_monitor or ExternalComputeMonitor(
+            query, identity_provider, approvals=approvals, violation_recorder=persist_monitor_violation)
+        before_monitor = _monitor_observation(monitor, context={
+            'monitor_phase': 'PRE_CHILD_RESUME', 'owner': lock.owner, 'child': None})
         before = before_monitor['rows']
         sample = temperature()
         if type(sample['temperature_c']) not in (int,float) or not math.isfinite(sample['temperature_c']) or \
@@ -253,7 +260,8 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
         while True:
             # Unknown inventory, a restarted approved process, a new C/C+G
             # process, expiry, or provider failure retains the owner lock.
-            _monitor_observation(monitor)
+            _monitor_observation(monitor, context={
+                'monitor_phase': 'POST_CHILD_RESUME', 'owner': lock.owner, 'child': child})
             pids = tree.pids()
             for pid in pids:
                 current = identity(pid)
@@ -273,7 +281,8 @@ def execute(command, *, cwd, root, runtime, run_id, phase, kind, device, repo_he
             thread.join()
         if proc.returncode != 0:
             raise ExecutionBlocked('CHILD_EXIT_NONZERO:'+str(proc.returncode))
-        after_monitor = _monitor_observation(monitor)
+        after_monitor = _monitor_observation(monitor, context={
+            'monitor_phase': 'POST_CHILD_RESUME', 'owner': lock.owner, 'child': child})
         after = after_monitor['rows']
         # The strict monitor has already required every C/C+G row to be an
         # exact, still-live exception. It is authoritative over the legacy

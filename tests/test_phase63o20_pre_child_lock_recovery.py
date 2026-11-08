@@ -165,7 +165,7 @@ def test_execute_records_explicit_pre_child_proof(tmp_path, monkeypatch):
         def acquire(self): pass
     monkeypatch.setattr(runner, "GPULock", DummyLock)
     class Monitor:
-        def observe(self): return {"rows": []}
+        def observe(self, *, context=None): return {"rows": []}
     with pytest.raises(lock.ExecutionBlocked, match="CPU_HEAVY_JOB_PRESENT"):
         runner.execute(["test"], cwd=tmp_path, root=root, runtime=runtime, run_id="test", phase=63,
                        kind="cuda-no-train", device="cuda:0", repo_head="h", parent_sha="p", verifier=lambda: {},

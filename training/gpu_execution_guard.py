@@ -199,11 +199,13 @@ def validate_external_process_exceptions(values: object, *, authorization_id: st
 
 class ExternalComputeMonitor:
     """Re-query a supplied inventory and reject every unknown/unsafe observation."""
-    def __init__(self, inventory_provider, identity_provider, *, approvals=(), now=time.time):
+    def __init__(self, inventory_provider, identity_provider, *, approvals=(), now=time.time,
+                 violation_recorder=None):
         self.inventory_provider = inventory_provider
         self.identity_provider = identity_provider
         self.approvals = tuple(approvals)
         self.now = now
+        self.violation_recorder = violation_recorder
 
     def _approval_for(self, observed: dict, gpu_uuid: str | None) -> dict | None:
         matches = []
@@ -227,7 +229,35 @@ class ExternalComputeMonitor:
             return None
         return matches[0]
 
-    def observe(self) -> dict:
+    def _violation_evidence(self, blocking: list[dict], approved: list[dict], context: object) -> dict:
+        """Normalize an audit record without changing the monitor's decision.
+
+        This deliberately records the production child/owner as contextual
+        identities only.  It neither excludes them nor turns a record into an
+        approval; the existing exact-exception policy remains authoritative.
+        """
+        if context is None:
+            context = {}
+        if not isinstance(context, dict):
+            raise GuardBlocked('EXTERNAL_COMPUTE_VIOLATION_CONTEXT_INVALID')
+        phase = context.get('monitor_phase')
+        if phase not in {'PRE_CHILD_RESUME', 'POST_CHILD_RESUME', 'PRE_CUDA'}:
+            raise GuardBlocked('EXTERNAL_COMPUTE_VIOLATION_CONTEXT_INVALID')
+        owner = context.get('owner')
+        child = context.get('child')
+        if owner is not None and not isinstance(owner, dict):
+            raise GuardBlocked('EXTERNAL_COMPUTE_VIOLATION_CONTEXT_INVALID')
+        if child is not None and not isinstance(child, dict):
+            raise GuardBlocked('EXTERNAL_COMPUTE_VIOLATION_CONTEXT_INVALID')
+        return {
+            'schema': 'phase63-external-monitor-violation-v1',
+            'monitor_timestamp': self.now(), 'monitor_phase': phase,
+            'owner_identity': owner, 'execution_child_identity': child,
+            'approved_external_processes': [item['approval'] for item in approved],
+            'violating_processes': blocking,
+        }
+
+    def observe(self, *, context=None) -> dict:
         try:
             rows = self.inventory_provider()
         except BaseException as exc:
@@ -258,6 +288,14 @@ class ExternalComputeMonitor:
             else:
                 approved.append({"row": row, "approval": match})
         if blocking:
+            if self.violation_recorder is not None:
+                evidence = self._violation_evidence(blocking, approved, context)
+                try:
+                    self.violation_recorder(evidence)
+                except BaseException as exc:
+                    # A violation that cannot be durably recorded cannot safely
+                    # advance toward CUDA.  The policy still fails closed.
+                    raise GuardBlocked('EXTERNAL_COMPUTE_VIOLATION_EVIDENCE_WRITE_FAILED') from exc
             raise GuardBlocked("EXTERNAL_COMPUTE_PROCESS_PRESENT")
         return {"observed_at": self.now(), "approved": approved, "rows": rows}
 
